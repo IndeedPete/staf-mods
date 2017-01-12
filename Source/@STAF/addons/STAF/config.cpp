@@ -1,0 +1,7 @@
+#include "CfgFactionClasses.hpp"
+#include "CfgGroups.hpp"
+#include "CfgMods.hpp"
+#include "CfgPatches.hpp"
+#include "CfgVehicles.hpp"
+#include "CfgWorlds.hpp"
+#include "CfgEditorSubcategories.hpp"

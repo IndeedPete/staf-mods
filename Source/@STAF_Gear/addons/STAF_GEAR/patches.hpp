@@ -1,6 +1,6 @@
 class STAF_GEAR
 {
-	units[] = 
+	units[] =
 	{
 		"STAF_Dummy_Norwegian_Desert",
 		"STAF_Dummy_Norwegian_Desert_Vest",
@@ -101,9 +101,19 @@ class STAF_GEAR
 		"STAF_Dummy_Light_MARPAT_Altis",
 		"STAF_Dummy_Light_MARPAT_Altis_Shortsleeve",
 		"STAF_Dummy_Light_MARPAT_Altis_Sage",
-		"STAF_Dummy_Light_MARPAT_Altis_Sage_Shortsleeve"
+		"STAF_Dummy_Light_MARPAT_Altis_Sage_Shortsleeve",
+    "STAF_Kitbag_blk",
+    "STAF_Kitbag_medic_blk",
+    "STAF_Kitbag_medic_cbr",
+    "STAF_Kitbag_medic_rgr",
+    "STAF_Kitbag_exp_blk",
+    "STAF_Kitbag_exp_cbr",
+    "STAF_Kitbag_exp_rgr",
+    "STAF_Kitbag_engineer_blk",
+    "STAF_Kitbag_engineer_cbr",
+    "STAF_Kitbag_engineer_rgr"
 	};
-	weapons[] = 
+	weapons[] =
 	{
 		"STAF_H_HelmetSpecB_Pete_Arid",
 		"STAF_H_HelmetSpecB_Pete_Lush",
