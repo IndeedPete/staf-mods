@@ -25,7 +25,7 @@ class STAF_H_HelmetSpecB_Pete_Arid: H_HelmetSpecB
 {
 	displayName = "STAF Pete's Enhanced Combat Helmet (Arid)";
 	hiddenSelectionsTextures[] = {"\STAF_GEAR\txt\equip1_Pete_arid_co.paa"};
-	picture = "\IP_EUROFORCE\men\img\icon_h_helmetb_khaki_ca.paa";
+	// picture = "\IP_EUROFORCE\men\img\icon_h_helmetb_khaki_ca.paa";
 };
 
 class STAF_H_HelmetSpecB_Pete_Lush: H_HelmetSpecB
@@ -39,7 +39,7 @@ class STAF_H_HelmetSpecB_Pete_Winter: H_HelmetSpecB
 {
 	displayName = "STAF Pete's Enhanced Combat Helmet (Winter)";
 	hiddenSelectionsTextures[] = {"\STAF_GEAR\txt\equip1_Pete_Winter_co.paa"};
-	picture = "\IP_EUROFORCE\men\img\icon_h_helmetb_white_ca.paa";
+	// picture = "\IP_EUROFORCE\men\img\icon_h_helmetb_white_ca.paa";
 };
 
 class STAF_H_PilotHelmetHeli_Stroke_B: H_PilotHelmetHeli_B
