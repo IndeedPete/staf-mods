@@ -1578,7 +1578,7 @@ class CfgVehicles
 			    weapon = "STAF_rifle_scar_blk";
 			    count = 1;
 			  };
-			  class _xx_scar {
+			  class _xx_g36 {
 			    weapon = "hlc_rifle_G36KMLIC";
 			    count = 1;
 			  };
