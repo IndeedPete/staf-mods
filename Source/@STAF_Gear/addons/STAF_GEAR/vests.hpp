@@ -5,7 +5,7 @@ class V_PlateCarrier2_rgr;
 class IP_V_PlateCarrier2_khkEF;
 class ItemInfo;
 class VestItem;
-/*class 6094A_1;
+class 6094A_1;
 class 6094A_2;
 class 6094A_3;
 class 6094A_4;
@@ -14,15 +14,15 @@ class 6094A_6;
 class 6094A_7;
 class 6094A_8;
 class 6094A_9;
-class 6094A_10;*/
+class 6094A_10;
 
 class STAF_V_PlateCarrierL_Pete_Arid: V_PlateCarrierH_CTRG // V_PlateCarrierL_CTRG
 {
 	displayName = "STAF Pete's Plate Carrier Rig Mk.2 (Arid)";
 	hiddenSelectionsTextures[] = {"\STAF_GEAR\txt\vests_pete_Arid_co.paa"};
 	model = "\A3\Characters_F\BLUFOR\equip_b_vest02";
-	// picture = "\IP_EUROFORCE\men\img\icon_v_plate_carrier_1_khaki_ca.paa";
-
+	picture = "\IP_EUROFORCE\men\img\icon_v_plate_carrier_1_khaki_ca.paa";
+	
 	class ItemInfo: ItemInfo
 	{
 		uniformModel = "\A3\Characters_F\BLUFOR\equip_b_vest02.p3d";
@@ -39,7 +39,7 @@ class STAF_V_PlateCarrierL_Pete_Lush: STAF_V_PlateCarrierL_Pete_Arid // V_PlateC
 {
 	displayName = "STAF Pete's Plate Carrier Rig Mk.2 (Lush)";
 	hiddenSelectionsTextures[] = {"\STAF_GEAR\txt\vests_pete_lush_co.paa"};
-	// picture = "\IP_EUROFORCE\men\img\icon_v_plate_carrier_1_green_ca.paa";
+	picture = "\IP_EUROFORCE\men\img\icon_v_plate_carrier_1_green_ca.paa";
 };
 /*
 class STAF_V_PlateCarrierH_Pete_Lush: V_PlateCarrierH_CTRG
@@ -53,7 +53,7 @@ class STAF_V_PlateCarrierL_Pete_Winter: STAF_V_PlateCarrierL_Pete_Arid
 {
 	displayName = "STAF Pete's Plate Carrier Rig Mk.2 (Winter)";
 	hiddenSelectionsTextures[] = {"\STAF_GEAR\txt\vests_pete_Winter_co.paa"};
-	// picture = "\IP_EUROFORCE\men\img\icon_v_plate_carrier_1_grey_ca.paa";
+	picture = "\IP_EUROFORCE\men\img\icon_v_plate_carrier_1_grey_ca.paa";
 };
 
 class STAF_V_PlateCarrier2_Stroke_rgr: V_PlateCarrier2_rgr
@@ -61,7 +61,7 @@ class STAF_V_PlateCarrier2_Stroke_rgr: V_PlateCarrier2_rgr
 	displayName = "STAF StrokeUnit's Carrier Rig (Green)";
 	hiddenSelections[] = {"camo"};
 	hiddenSelectionsTextures[] = {"\STAF_GEAR\txt\vests_stroke_rgr_co.paa"};
-
+	
 	class ItemInfo: ItemInfo
 	{
 		hiddenSelections[] = {"camo"};
@@ -74,7 +74,7 @@ class STAF_V_PlateCarrier2_Stroke_khk: IP_V_PlateCarrier2_khkEF
 	hiddenSelectionsTextures[] = {"\STAF_GEAR\txt\vests_stroke_khk_co.paa"};
 };
 
-/* class STAF_V_6094_1_Base_Black: 6094A_1
+class STAF_V_6094_1_Base_Black: 6094A_1
 {
 	author = "Road Runner & IndeedPete";
 	displayName = "STAF 6094 [01] (Black)";
@@ -83,7 +83,7 @@ class STAF_V_PlateCarrier2_Stroke_khk: IP_V_PlateCarrier2_khkEF
 	hiddenSelectionsTextures[] = {"\STAF_Gear\txt\6094_Black_co.paa"};
 	picture = "\STAF_Gear\txt\ui\Icon_6094_black_ca.paa";
 	scope = 0;
-
+	
 	class ItemInfo: VestItem
 	{
 		containerClass = "Supply20";
@@ -94,7 +94,7 @@ class STAF_V_PlateCarrier2_Stroke_khk: IP_V_PlateCarrier2_khkEF
 		type = 701;
 		uniformModel = "\6094A\6094A\LBT_6094";
 		uniformType = "Default";
-
+		
 		class HitpointsProtectionInfo
 		{
 			class Abdomen
@@ -119,7 +119,7 @@ class STAF_V_PlateCarrier2_Stroke_khk: IP_V_PlateCarrier2_khkEF
 				armor = 15;
 				HitpointName = "HitDiaphragm";
 				passThrough = 0.4;
-			};
+			};			
 		};
 	};
 };
@@ -134,7 +134,7 @@ class STAF_V_6094_2_Base_Black: 6094A_2
 	hiddenSelectionsTextures[] = {"\STAF_Gear\txt\6094_Black_co.paa","\STAF_Gear\txt\6094_gear_Black_co.paa","\STAF_Gear\txt\radio_pouch_Black_co.paa","\STAF_Gear\txt\molle_belt_Black_co.paa"};
 	picture = "\STAF_Gear\txt\ui\Icon_6094_black_ca.paa";
 	scope = 0;
-
+	
 	class ItemInfo: VestItem
 	{
 		containerClass = "Supply140";
@@ -145,7 +145,7 @@ class STAF_V_6094_2_Base_Black: 6094A_2
 		type = 701;
 		uniformModel = "\6094A\6094A\LBT_6094_2";
 		uniformType = "Default";
-
+		
 		class HitpointsProtectionInfo
 		{
 			class Abdomen
@@ -170,7 +170,7 @@ class STAF_V_6094_2_Base_Black: 6094A_2
 				armor = 15;
 				HitpointName = "HitDiaphragm";
 				passThrough = 0.4;
-			};
+			};			
 		};
 	};
 };
@@ -182,7 +182,7 @@ class STAF_V_6094_3_Base_Black: 6094A_3
 	hiddenSelectionsTextures[] = {"\STAF_Gear\txt\6094_Black_co.paa","\STAF_Gear\txt\6094_gear_Black_co.paa","\STAF_Gear\txt\radio_pouch_Black_co.paa","\STAF_Gear\txt\comms_gear_Black_co.paa","\STAF_Gear\txt\molle_belt_Black_co.paa"};
 	picture = "\STAF_Gear\txt\ui\Icon_6094_black_ca.paa";
 	scope = 0;
-
+	
 	class ItemInfo: VestItem
 	{
 		containerClass = "Supply100";
@@ -193,7 +193,7 @@ class STAF_V_6094_3_Base_Black: 6094A_3
 		type = 701;
 		uniformModel = "\6094A\6094A\LBT_6094";
 		uniformType = "Default";
-
+		
 		class HitpointsProtectionInfo
 		{
 			class Abdomen
@@ -218,7 +218,7 @@ class STAF_V_6094_3_Base_Black: 6094A_3
 				armor = 15;
 				HitpointName = "HitDiaphragm";
 				passThrough = 0.4;
-			};
+			};			
 		};
 	};
 };
@@ -230,7 +230,7 @@ class STAF_V_6094_4_Base_Black: 6094A_4
 	hiddenSelectionsTextures[] = {"\STAF_Gear\txt\6094_Black_co.paa","\STAF_Gear\txt\6094_gear_Black_co.paa","\STAF_Gear\txt\radio_pouch_Black_co.paa","\STAF_Gear\txt\comms_gear_Black_co.paa","\STAF_Gear\txt\molle_belt_Black_co.paa","\STAF_Gear\txt\call_sign_staf_co.paa"};
 	picture = "\STAF_Gear\txt\ui\Icon_6094_black_ca.paa";
 	scope = 0;
-
+	
 	class ItemInfo: VestItem
 	{
 		containerClass = "Supply120";
@@ -241,7 +241,7 @@ class STAF_V_6094_4_Base_Black: 6094A_4
 		type = 701;
 		uniformModel = "\6094A\6094A\LBT_6094";
 		uniformType = "Default";
-
+		
 		class HitpointsProtectionInfo
 		{
 			class Abdomen
@@ -266,7 +266,7 @@ class STAF_V_6094_4_Base_Black: 6094A_4
 				armor = 15;
 				HitpointName = "HitDiaphragm";
 				passThrough = 0.4;
-			};
+			};			
 		};
 	};
 };
@@ -278,7 +278,7 @@ class STAF_V_6094_5_Base_Black: 6094A_5
 	hiddenSelectionsTextures[] = {"\STAF_Gear\txt\6094_Black_co.paa","\STAF_Gear\txt\6094_gear_Black_co.paa","\STAF_Gear\txt\radio_pouch_Black_co.paa","\STAF_Gear\txt\comms_gear_Black_co.paa","\STAF_Gear\txt\molle_belt_Black_co.paa"};
 	picture = "\STAF_Gear\txt\ui\Icon_6094_black_ca.paa";
 	scope = 0;
-
+	
 	class ItemInfo: VestItem
 	{
 		containerClass = "Supply140";
@@ -289,7 +289,7 @@ class STAF_V_6094_5_Base_Black: 6094A_5
 		type = 701;
 		uniformModel = "\6094A\6094A\LBT_6094";
 		uniformType = "Default";
-
+		
 		class HitpointsProtectionInfo
 		{
 			class Abdomen
@@ -314,7 +314,7 @@ class STAF_V_6094_5_Base_Black: 6094A_5
 				armor = 15;
 				HitpointName = "HitDiaphragm";
 				passThrough = 0.4;
-			};
+			};			
 		};
 	};
 };
@@ -326,7 +326,7 @@ class STAF_V_6094_6_Base_Black: 6094A_6
 	hiddenSelectionsTextures[] = {"\STAF_Gear\txt\6094_Black_co.paa","\STAF_Gear\txt\6094_gear_Black_co.paa","\STAF_Gear\txt\radio_pouch_Black_co.paa","\STAF_Gear\txt\comms_gear_Black_co.paa","\STAF_Gear\txt\molle_belt_Black_co.paa"};
 	picture = "\STAF_Gear\txt\ui\Icon_6094_black_ca.paa";
 	scope = 0;
-
+	
 	class ItemInfo: VestItem
 	{
 		containerClass = "Supply140";
@@ -337,7 +337,7 @@ class STAF_V_6094_6_Base_Black: 6094A_6
 		type = 701;
 		uniformModel = "\6094A\6094A\LBT_6094";
 		uniformType = "Default";
-
+		
 		class HitpointsProtectionInfo
 		{
 			class Abdomen
@@ -362,7 +362,7 @@ class STAF_V_6094_6_Base_Black: 6094A_6
 				armor = 15;
 				HitpointName = "HitDiaphragm";
 				passThrough = 0.4;
-			};
+			};			
 		};
 	};
 };
@@ -374,7 +374,7 @@ class STAF_V_6094_7_Base_Black: 6094A_7
 	hiddenSelectionsTextures[] = {"\STAF_Gear\txt\6094_Black_co.paa","\STAF_Gear\txt\6094_gear_Black_co.paa","\STAF_Gear\txt\radio_pouch_Black_co.paa","\STAF_Gear\txt\comms_gear_Black_co.paa","\STAF_Gear\txt\molle_belt_Black_co.paa"};
 	picture = "\STAF_Gear\txt\ui\Icon_6094_black_ca.paa";
 	scope = 0;
-
+	
 	class ItemInfo: VestItem
 	{
 		containerClass = "Supply140";
@@ -385,7 +385,7 @@ class STAF_V_6094_7_Base_Black: 6094A_7
 		type = 701;
 		uniformModel = "\6094A\6094A\LBT_6094";
 		uniformType = "Default";
-
+		
 		class HitpointsProtectionInfo
 		{
 			class Abdomen
@@ -410,7 +410,7 @@ class STAF_V_6094_7_Base_Black: 6094A_7
 				armor = 15;
 				HitpointName = "HitDiaphragm";
 				passThrough = 0.4;
-			};
+			};			
 		};
 	};
 };
@@ -422,7 +422,7 @@ class STAF_V_6094_8_Base_Black: 6094A_8
 	hiddenSelectionsTextures[] = {"\STAF_Gear\txt\6094_Black_co.paa","\STAF_Gear\txt\6094_gear_Black_co.paa","\STAF_Gear\txt\radio_pouch_Black_co.paa","\STAF_Gear\txt\comms_gear_Black_co.paa","\STAF_Gear\txt\molle_belt_Black_co.paa","\STAF_Gear\txt\call_sign_staf_co.paa"};
 	picture = "\STAF_Gear\txt\ui\Icon_6094_black_ca.paa";
 	scope = 0;
-
+	
 	class ItemInfo: VestItem
 	{
 		containerClass = "Supply140";
@@ -433,7 +433,7 @@ class STAF_V_6094_8_Base_Black: 6094A_8
 		type = 701;
 		uniformModel = "\6094A\6094A\LBT_6094";
 		uniformType = "Default";
-
+		
 		class HitpointsProtectionInfo
 		{
 			class Abdomen
@@ -458,7 +458,7 @@ class STAF_V_6094_8_Base_Black: 6094A_8
 				armor = 15;
 				HitpointName = "HitDiaphragm";
 				passThrough = 0.4;
-			};
+			};			
 		};
 	};
 };
@@ -470,7 +470,7 @@ class STAF_V_6094_9_Base_Black: 6094A_9
 	hiddenSelectionsTextures[] = {"\STAF_Gear\txt\6094_Black_co.paa","\STAF_Gear\txt\6094_gear_Black_co.paa","\STAF_Gear\txt\radio_pouch_Black_co.paa","\STAF_Gear\txt\comms_gear_Black_co.paa","\STAF_Gear\txt\molle_belt_Black_co.paa","\STAF_Gear\txt\call_sign_staf_co.paa"};
 	picture = "\STAF_Gear\txt\ui\Icon_6094_black_ca.paa";
 	scope = 0;
-
+	
 	class ItemInfo: VestItem
 	{
 		containerClass = "Supply120";
@@ -481,7 +481,7 @@ class STAF_V_6094_9_Base_Black: 6094A_9
 		type = 701;
 		uniformModel = "\6094A\6094A\LBT_6094";
 		uniformType = "Default";
-
+		
 		class HitpointsProtectionInfo
 		{
 			class Abdomen
@@ -506,7 +506,7 @@ class STAF_V_6094_9_Base_Black: 6094A_9
 				armor = 15;
 				HitpointName = "HitDiaphragm";
 				passThrough = 0.4;
-			};
+			};			
 		};
 	};
 };
@@ -518,7 +518,7 @@ class STAF_V_6094_10_Base_Black: 6094A_10
 	hiddenSelectionsTextures[] = {"\STAF_Gear\txt\6094_Black_co.paa","\STAF_Gear\txt\6094_gear_Black_co.paa","\STAF_Gear\txt\radio_pouch_Black_co.paa","\STAF_Gear\txt\comms_gear_Black_co.paa","\STAF_Gear\txt\molle_belt_Black_co.paa","\STAF_Gear\txt\call_sign_staf_co.paa"};
 	picture = "\STAF_Gear\txt\ui\Icon_6094_black_ca.paa";
 	scope = 0;
-
+	
 	class ItemInfo: VestItem
 	{
 		containerClass = "Supply100";
@@ -529,7 +529,7 @@ class STAF_V_6094_10_Base_Black: 6094A_10
 		type = 701;
 		uniformModel = "\6094A\6094A\LBT_6094";
 		uniformType = "Default";
-
+		
 		class HitpointsProtectionInfo
 		{
 			class Abdomen
@@ -554,7 +554,7 @@ class STAF_V_6094_10_Base_Black: 6094A_10
 				armor = 15;
 				HitpointName = "HitDiaphragm";
 				passThrough = 0.4;
-			};
+			};			
 		};
 	};
 };
@@ -607,4 +607,4 @@ class STAF_V_6094_9_Black: STAF_V_6094_9_Base_Black
 class STAF_V_6094_10_Black: STAF_V_6094_10_Base_Black
 {
 	scope = 2;
-}; */
+};

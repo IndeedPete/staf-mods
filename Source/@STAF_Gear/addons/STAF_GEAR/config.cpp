@@ -5,6 +5,15 @@ class CfgPatches
 
 class CfgVehicles
 {
+	// Cars (Altis)
+	class B_MRAP_01_F;
+
+	class STAF_B_MRAP_01_Sand_F: B_MRAP_01_F
+	{
+		displayName = "Hunter (Sand)";
+		hiddenSelectionsTextures[] = {"\STAF_GEAR\txt\mrap_01_base_sand_co.paa","\STAF_GEAR\txt\mrap_01_adds_sand_co.paa",""};
+	};
+
 	// Backpacks
 	class IP_B_Kitbag_blk;
 	class B_Kitbag_cbr;
@@ -1218,394 +1227,105 @@ class CfgVehicles
 			author = "STAF|Moony";
 			displayName = "Supply Box [STAF]";
 			class TransportItems {
-			  class _xx_bloodIv {
-			    name = "ACE_bloodIV";
-			    count = 15;
-			  };
-			  class _xx_bloodIV_500 {
-			    name = "ACE_bloodIV_500";
-			    count = 30;
-			  };
-			  class _xx_bloodIV_250 {
-			    name = "ACE_bloodIV_250";
-			    count = 60;
-			  };
-			  class _xx_bodybag {
-			    name = "ACE_bodyBag";
-			    count = 10;
-			  };
-			  class _xx_atropine {
-			    name = "ACE_adenosine";
-			    count = 20;
-			  };
-			  class _xx_epinephrine {
-			    name = "ACE_epinephrine";
-			    count = 20;
-			  };
-			  class _xx_morphine {
-			    name = "ACE_morphine";
-			    count = 20;
-			  };
-			  class _xx_fieldDressing {
-			    name = "ACE_fieldDressing";
-			    count = 50;
-			  };
-			  class _xx_elasticBandage {
-			    name = "ACE_elasticBandage";
-			    count = 50;
-			  };
-			  class _xx_quickclot {
-			    name = "ACE_quikclot";
-			    count = 50;
-			  };
-			  class _xx_packingBandage {
-			    name = "ACE_packingBandage";
-			    count = 50;
-			  };
-			  class _xx_personalAidKit {
-			    name = "ACE_personalAidKit";
-			    count = 15;
-			  };
-			  class _xx_tourniquet {
-			    name = "ACE_tourniquet";
-			    count = 20;
-			  };
-			  class _xx_sprayblack {
-			    name = "ACE_SpraypaintBlack";
-			    count = 5;
-			  };
-			  class _xx_sprayblue {
-			    name = "ACE_SpraypaintBlue";
-			    count = 5;
-			  };
-			  class _xx_spraygreen {
-			    name = "ACE_SpraypaintGreen";
-			    count = 5;
-			  };
-			  class _xx_sprayred {
-			    name = "ACE_SpraypaintRed";
-			    count = 5;
-			  };
-			  class _xx_cableTie {
-			    name = "ACE_CableTie";
-			    count = 10;
-			  };
-			  class _xx_uavBattery {
-			    name = "ACE_UAVBattery";
-			    count = 5;
-			  };
-			  class _xx_irstrobe {
-			    name = "ACE_IR_Strobe_Item";
-			    count = 10;
-			  };
-			  class _xx_EarPlugs {
-			    name = "ACE_EarPlugs";
-			    count = 5;
-			  };
+				MACRO_ADDITEM(ACE_bloodIV, 15);
+				MACRO_ADDITEM(ACE_bloodIV_500, 30);
+				MACRO_ADDITEM(ACE_bloodIV_250, 60);
+				MACRO_ADDITEM(ACE_bodyBag, 10);
+				MACRO_ADDITEM(ACE_atropine, 20);
+				MACRO_ADDITEM(ACE_epinephrine, 20);
+				MACRO_ADDITEM(ACE_morphine, 20);
+				MACRO_ADDITEM(ACE_fieldDressing, 50);
+				MACRO_ADDITEM(ACE_elasticBandage, 50);
+				MACRO_ADDITEM(ACE_quikclot, 50);
+				MACRO_ADDITEM(ACE_packingBandage, 50);
+				MACRO_ADDITEM(ACE_personalAidKit, 15);
+				MACRO_ADDITEM(ACE_tourniquet, 20);
+				MACRO_ADDITEM(ACE_SpraypaintBlack, 5);
+				MACRO_ADDITEM(ACE_SpraypaintBlue, 5);
+				MACRO_ADDITEM(ACE_SpraypaintGreen, 5);
+				MACRO_ADDITEM(ACE_SpraypaintRed, 5);
+				MACRO_ADDITEM(ACE_CableTie, 10);
+				MACRO_ADDITEM(ACE_UAVBattery, 5);
+				MACRO_ADDITEM(ACE_IR_Strobe_Item, 10);
+				MACRO_ADDITEM(ACE_EarPlugs, 5);
 			};
 			class TransportMagazines {
-			  class _xx_1HE {
-			    magazine = "1Rnd_HE_Grenade_shell";
-			    count = 10;
-			  };
-			  class _xx_flarewhite {
-			    magazine = "UGL_FlareWhite_F";
-			    count = 10;
-			  };
-			  class _xx_flaregreen {
-			    magazine = "UGL_FlareGreen_F";
-			    count = 10;
-			  };
-			  class _xx_flarered {
-			    magazine = "UGL_FlareRed_F";
-			    count = 10;
-			  };
-			  class _xx_flareyellow {
-			    magazine = "UGL_FlareYellow_F";
-			    count = 10;
-			  };
-			  class _xx_flareir {
-			    magazine = "UGL_FlareCIR_F";
-			    count = 10;
-			  };
-			  class _xx_1Smoke {
-			    magazine = "1Rnd_Smoke_Grenade_shell";
-			    count = 10;
-			  };
-			  class _xx_1Smokered {
-			    magazine = "1Rnd_SmokeRed_Grenade_shell";
-			    count = 10;
-			  };
-			  class _xx_1Smokegreen {
-			    magazine = "1Rnd_SmokeGreen_Grenade_shell";
-			    count = 10;
-			  };
-			  class v_1SmokeYellow {
-			    magazine = "1Rnd_SmokeYellow_Grenade_shell";
-			    count = 10;
-			  };
-			  class _xx_1smokepurple {
-			    magazine = "1Rnd_SmokePurple_Grenade_shell";
-			    count = 10;
-			  };
-			  class _xx_smokeblue {
-			    magazine = "1Rnd_SmokeBlue_Grenade_shell";
-			    count = 10;
-			  };
-			  class _xx_1smokeorange {
-			    magazine = "1Rnd_SmokeOrange_Grenade_shell";
-			    count = 10;
-			  };
-			  class _xx_3HE {
-			    magazine = "3Rnd_HE_Grenade_shell";
-			    count = 10;
-			  };
-			  class _xx_3flarewhite {
-			    magazine = "3Rnd_UGL_FlareWhite_F";
-			    count = 10;
-			  };
-			  class _xx_3flaregreen {
-			    magazine = "3Rnd_UGL_FlareGreen_F";
-			    count = 10;
-			  };
-			  class _xx_3flarered {
-			    magazine = "3Rnd_UGL_FlareRed_F";
-			    count = 10;
-			  };
-			  class _xx_3flareyellow {
-			    magazine = "3Rnd_UGL_FlareYellow_F";
-			    count = 10;
-			  };
-			  class _xx_3flareir {
-			    magazine = "3Rnd_UGL_FlareCIR_F";
-			    count = 10;
-			  };
-			  class _xx_3smoke {
-			    magazine = "3Rnd_Smoke_Grenade_shell";
-			    count = 10;
-			  };
-			  class _xx_3smokered {
-			    magazine = "3Rnd_SmokeRed_Grenade_shell";
-			    count = 10;
-			  };
-			  class _xx_3smokegreen {
-			    magazine = "3Rnd_SmokeGreen_Grenade_shell";
-			    count = 10;
-			  };
-			  class _xx_3smokeyellow {
-			    magazine = "3Rnd_SmokeYellow_Grenade_shell";
-			    count = 10;
-			  };
-			  class _xx_3smokepurple {
-			    magazine = "3Rnd_SmokePurple_Grenade_shell";
-			    count = 10;
-			  };
-			  class _xx_3smokeblue {
-			    magazine = "3Rnd_SmokeBlue_Grenade_shell";
-			    count = 10;
-			  };
-			  class _xx_3smokeorange {
-			    magazine = "3Rnd_SmokeOrange_Grenade_shell";
-			    count = 10;
-			  };
-			  class _xx_huntir {
-			    magazine = "ACE_HuntIR_M203";
-			    count = 5;
-			  };
-			  class _xx_rhs_hedp {
-			    magazine = "rhs_mag_M433_HEDP";
-			    count = 10;
-			  };
-			  class _xx_rhsm40009 {
-			    magazine = "rhs_mag_m4009";
-			    count = 10;
-			  };
-			  class _xx_rhs_m576 {
-			    magazine = "rhs_mag_m576";
-			    count = 10;
-			  };
-			  class _xx_claymore {
-			    magazine = "ClaymoreDirectionalMine_Remote_Mag";
-			    count = 5;
-			  };
-			  class _xx_DemoCharge {
-			    magazine = "DemoCharge_Remote_Mag";
-			    count = 5;
-			  };
-			  class _xx_TripMine {
-			    magazine = "APERSTripMine_Wire_Mag";
-			    count = 5;
-			  };
-			  class _xx_BoundingMine {
-			    magazine = "APERSBoundingMine_Range_Mag	";
-			    count = 3;
-			  };
-			  class _xx_atMine {
-			    magazine = "ATMine_Range_Mag";
-			    count = 5;
-			  };
-			  class _xx_satchel {
-			    magazine = "SatchelCharge_Remote_Mag";
-			    count = 10;
-			  };
-			  class _xx_rhs_smaw_HEAA {
-			    magazine = "rhs_mag_smaw_HEAA";
-			    count = 3;
-			  };
-			  class _xx_rhs_smaw_HEDP {
-			    magazine = "rhs_mag_smaw_HEDP";
-			    count = 3;
-			  };
-			  class _xx_rhs_smaw_sr {
-			    magazine = "rhs_mag_smaw_SR";
-			    count = 3;
-			  };
-			  class _xx_rhs_fim92 {
-			    magazine = "rhs_fim92_mag";
-			    count = 3;
-			  };
-			  class _xx_30_762 {
-			    magazine = "30Rnd_762x39_Mag_F";
-			    count = 15;
-			  };
-			  class _xx_30_762_tracer {
-			    magazine = "30Rnd_762x39_Mag_Tracer_F";
-			    count = 15;
-			  };
-			  class _xx_5_300 {
-			    magazine = "hlc_5rnd_300WM_AP_AWM";
-			    count = 5;
-			  };
-			  class _xx_6_45 {
-			    magazine = "6Rnd_45ACP_Cylinder";
-			    count = 5;
-			  };
-			  class _xx_7_50 {
-			    magazine = "7Rnd_50_AE";
-			    count = 5;
-			  };
-			  class _xx_20_762 {
-			    magazine = "20Rnd_762x51_Mag";
-			    count = 15;
-			  };
-			  class _xx_20_762_tracer {
-			    magazine = "ACE_20Rnd_762x51_Mag_Tracer";
-			    count = 15;
-			  };
-			  class _xx_10_338 {
-			    magazine = "10Rnd_338_Mag";
-			    count = 5;
-			  };
-			  class _xx_11_45 {
-			    magazine = "11Rnd_45ACP_Mag";
-			    count = 10;
-			  };
-			  class _xx_17_9 {
-			    magazine = "KA_17Rnd_9x19_Mag";
-			    count = 10;
-			  };
-			  class _xx_30_65 {
-			    magazine = "30Rnd_65x39_caseless_mag";
-			    count = 30;
-			  };
-			  class _xx_30_65_tracer {
-			    magazine = "30Rnd_65x39_caseless_mag_Tracer";
-			    count = 30;
-			  };
-			  class _xx_5_127 {
-			    magazine = "5Rnd_127x108_Mag";
-			    count = 5;
-			  };
-			  class _xx_7_408 {
-			    magazine = "7Rnd_408_Mag";
-			    count = 5;
-			  };
-			  class _xx_200_556 {
-			    magazine = "200Rnd_556x45_Box_F";
-			    count = 5;
-			  };
-			  class _xx_200_556_tracer {
-			    magazine = "200Rnd_556x45_Box_Tracer_F";
-			    count = 5;
-			  };
-			  class _xx_30_556 {
-			    magazine = "30Rnd_556x45_Stanag";
-			    count = 30;
-			  };
-			  class _xx_30_556_tracer {
-			    magazine = "30Rnd_556x45_Stanag_Tracer_Red";
-			    count = 30;
-			  };
-			  class _xx_30_9 {
-			    magazine = "hlc_30Rnd_9x19_B_MP5";
-			    count = 10;
-			  };
-			  class _xx_150_762 {
-			    magazine = "150Rnd_762x54_Box";
-			    count = 5;
-			  };
-			  class _xx_150_762_tracer {
-			    magazine = "150Rnd_762x54_Box_Tracer";
-			    count = 5;
-			  };
-			  class _xx_50_570 {
-			    magazine = "50Rnd_570x28_SMG_03";
-			    count = 10;
-			  };
-			  class _xx_5_HE {
-			    magazine = "rhsusf_5Rnd_HE";
-			    count = 7;
-			  };
-			  class _xx_5_slug {
-			    magazine = "rhsusf_5Rnd_Slug";
-			    count = 7;
-			  };
-			  class _xx_5_00Buck {
-			    magazine = "rhsusf_5Rnd_00Buck";
-			    count = 7;
-			  };
-			  class _xx_5_Frag {
-			    magazine = "rhsusf_5Rnd_FRAG";
-			    count = 7;
-			  };
+				MACRO_ADDMagazines(1Rnd_HE_Grenade_shell, 10);
+				MACRO_ADDMagazines(UGL_FlareWhite_F, 10);
+				MACRO_ADDMagazines(UGL_FlareGreen_F, 10);
+				MACRO_ADDMagazines(UGL_FlareRed_F, 10);
+				MACRO_ADDMagazines(UGL_FlareYellow_F, 10);
+				MACRO_ADDMagazines(UGL_FlareCIR_F, 10);
+				MACRO_ADDMagazines(1Rnd_Smoke_Grenade_shell, 10);
+				MACRO_ADDMagazines(1Rnd_SmokeRed_Grenade_shell, 10);
+				MACRO_ADDMagazines(1Rnd_SmokeGreen_Grenade_shell, 10);
+				MACRO_ADDMagazines(1Rnd_SmokeYellow_Grenade_shell, 10);
+				MACRO_ADDMagazines(1Rnd_SmokePurple_Grenade_shell, 10);
+				MACRO_ADDMagazines(1Rnd_SmokeBlue_Grenade_shell, 10);
+				MACRO_ADDMagazines(1Rnd_SmokeOrange_Grenade_shell, 10);
+				MACRO_ADDMagazines(3Rnd_HE_Grenade_shell, 10);
+				MACRO_ADDMagazines(3Rnd_UGL_FlareWhite_F, 10);
+				MACRO_ADDMagazines(3Rnd_UGL_FlareGreen_F, 10);
+				MACRO_ADDMagazines(3Rnd_UGL_FlareRed_F, 10);
+				MACRO_ADDMagazines(3Rnd_UGL_FlareYellow_F, 10);
+				MACRO_ADDMagazines(3Rnd_UGL_FlareCIR_F, 10);
+				MACRO_ADDMagazines(3Rnd_Smoke_Grenade_shell, 10);
+				MACRO_ADDMagazines(3Rnd_SmokeRed_Grenade_shell, 10);
+				MACRO_ADDMagazines(3Rnd_SmokeGreen_Grenade_shell, 10);
+				MACRO_ADDMagazines(3Rnd_SmokeYellow_Grenade_shell, 10);
+				MACRO_ADDMagazines(3Rnd_SmokePurple_Grenade_shell, 10);
+				MACRO_ADDMagazines(3Rnd_SmokeBlue_Grenade_shell, 10);
+				MACRO_ADDMagazines(3Rnd_SmokeOrange_Grenade_shell, 10);
+				MACRO_ADDMagazines(ACE_HuntIR_M203, 5);
+				MACRO_ADDMagazines(rhs_mag_M433_HEDP, 10);
+				MACRO_ADDMagazines(rhs_mag_m4009, 10);
+				MACRO_ADDMagazines(rhs_mag_m576, 10);
+				MACRO_ADDMagazines(ClaymoreDirectionalMine_Remote_Mag, 5);
+				MACRO_ADDMagazines(DemoCharge_Remote_Mag, 5);
+				MACRO_ADDMagazines(APERSTripMine_Wire_Mag, 5);
+				MACRO_ADDMagazines(APERSBoundingMine_Range_Mag	, 3);
+				MACRO_ADDMagazines(ATMine_Range_Mag, 5);
+				MACRO_ADDMagazines(SatchelCharge_Remote_Mag, 10);
+				MACRO_ADDMagazines(rhs_mag_smaw_HEAA, 3);
+				MACRO_ADDMagazines(rhs_mag_smaw_HEDP, 3);
+				MACRO_ADDMagazines(rhs_mag_smaw_SR, 3);
+				MACRO_ADDMagazines(rhs_fim92_mag, 3);
+				MACRO_ADDMagazines(30Rnd_762x39_Mag_F, 15);
+				MACRO_ADDMagazines(30Rnd_762x39_Mag_Tracer_F, 15);
+				MACRO_ADDMagazines(hlc_5rnd_300WM_AP_AWM, 5);
+				MACRO_ADDMagazines(6Rnd_45ACP_Cylinder, 5);
+				MACRO_ADDMagazines(7Rnd_50_AE, 5);
+				MACRO_ADDMagazines(20Rnd_762x51_Mag, 15);
+				MACRO_ADDMagazines(ACE_20Rnd_762x51_Mag_Tracer, 15);
+				MACRO_ADDMagazines(10Rnd_338_Mag, 5);
+				MACRO_ADDMagazines(11Rnd_45ACP_Mag, 10);
+				MACRO_ADDMagazines(KA_17Rnd_9x19_Mag, 10);
+				MACRO_ADDMagazines(30Rnd_65x39_caseless_mag, 30);
+				MACRO_ADDMagazines(30Rnd_65x39_caseless_mag_Tracer, 30);
+				MACRO_ADDMagazines(5Rnd_127x108_Mag, 5);
+				MACRO_ADDMagazines(7Rnd_408_Mag, 5);
+				MACRO_ADDMagazines(200Rnd_556x45_Box_F, 5);
+				MACRO_ADDMagazines(200Rnd_556x45_Box_Tracer_F, 5);
+				MACRO_ADDMagazines(30Rnd_556x45_Stanag, 30);
+				MACRO_ADDMagazines(30Rnd_556x45_Stanag_Tracer_Red, 30);
+				MACRO_ADDMagazines(hlc_30Rnd_9x19_B_MP5, 10);
+				MACRO_ADDMagazines(150Rnd_762x54_Box, 5);
+				MACRO_ADDMagazines(150Rnd_762x54_Box_Tracer, 5);
+				MACRO_ADDMagazines(50Rnd_570x28_SMG_03, 10);
+				MACRO_ADDMagazines(rhsusf_5Rnd_HE, 7);
+				MACRO_ADDMagazines(rhsusf_5Rnd_Slug, 7);
+				MACRO_ADDMagazines(rhsusf_5Rnd_00Buck, 7);
+				MACRO_ADDMagazines(rhsusf_5Rnd_FRAG, 7);
 			};
 			class TransportWeapons {
-			  class _xx_MX {
-			    weapon = "arifle_MX_Black_F";
-			    count = 1;
-			  };
-			  class _xx_scar {
-			    weapon = "STAF_rifle_scar_blk";
-			    count = 1;
-			  };
-			  class _xx_scar {
-			    weapon = "hlc_rifle_G36KMLIC";
-			    count = 1;
-			  };
-			  class _xx_mk18 {
-			    weapon = "rhs_weap_mk18";
-			    count = 1;
-			  };
-			  class _xx_m136 {
-			    weapon = "rhs_weap_M136";
-			    count = 2;
-			  };
-			  class _xx_m136_HEDP {
-			    weapon = "rhs_weap_M136_hedp";
-			    count = 2;
-			  };
-			  class _xx_m136_hp {
-			    weapon = "rhs_weap_M136_hp";
-			    count = 2;
-			  };
-			  class _xx_fim92_launcher {
-			    weapon = "rhs_weap_fim92";
-			    count = 1;
-			  };
-			  class _xx_smaw_launcher {
-			    weapon = "STAF_launcher_smaw";
-			    count = 1;
-			  };
+				MACRO_Weapons(arifle_MX_Black_F, 1);
+				MACRO_Weapons(STAF_rifle_scar_blk, 1);
+				MACRO_Weapons(STAF_rifle_scar_blk, 1);
+				MACRO_Weapons(rhs_weap_mk18, 1);
+				MACRO_Weapons(rhs_weap_M136, 2);
+				MACRO_Weapons(rhs_weap_M136_hedp, 2);
+				MACRO_Weapons(rhs_weap_M136_hp, 2);
+				MACRO_Weapons(rhs_weap_fim92, 1);
 			};
 			class TransportBackpacks {};
 	};
@@ -1680,309 +1400,48 @@ class CfgUnitInsignia
 	class STAF_Medic
 	{
 		displayName = "Medic";
-		author = "STAF|IndeedPete and STAF|Moony";
+		author = "STAF";
 		texture = "\STAF_GEAR\img\Medic.paa";
 		textureVehicle = "";
 	};
+
 	class STAF_India
 	{
-		displayName = "India";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\India.paa";
-		textureVehicle = "";
+		displayName = "India"; // Name displayed in Arsenal
+		author = "STAF|Moony"; // Author displayed in Arsenal
+		texture = "\STAF_GEAR\img\India.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
 	};
+
 	class STAF_USA
 	{
-		displayName = "USA";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\United_States_of_America.paa";
-		textureVehicle = "";
+		displayName = "USA"; // Name displayed in Arsenal
+		author = "STAF|Moony"; // Author displayed in Arsenal
+		texture = "\STAF_GEAR\img\United_States_of_America.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
 	};
+
 	class STAF_Israel
 	{
-		displayName = "Israel";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\Israel.paa";
-		textureVehicle = "";
+		displayName = "Israel"; // Name displayed in Arsenal
+		author = "STAF|Moony"; // Author displayed in Arsenal
+		texture = "\STAF_GEAR\img\Israel.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
 	};
+
 	class STAF_Ukraine
 	{
-		displayName = "Ukraine";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\Ukraine.paa";
-		textureVehicle = "";
+		displayName = "Ukraine"; // Name displayed in Arsenal
+		author = "STAF|Moony"; // Author displayed in Arsenal
+		texture = "\STAF_GEAR\img\Ukraine.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
 	};
+
 	class STAF_Faroes
 	{
-		displayName = "Faroes";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\Faroes.paa";
-		textureVehicle = "";
-	};
-	class STAF_albania
-	{
-		displayName = "Albania";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\albania.paa";
-		textureVehicle = "";
-	};
-	class STAF_austria
-	{
-		displayName = "Austria";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\austria.paa";
-		textureVehicle = "";
-	};
-	class STAF_belgium
-	{
-		displayName = "Belgium";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\belgium.paa";
-		textureVehicle = "";
-	};
-	class STAF_bosnia_and_herzegovina
-	{
-		displayName = "Bosnia and Herzegovina";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\bosnia_and_herzegovina.paa";
-		textureVehicle = "";
-	};
-	class STAF_bulgaria
-	{
-		displayName = "Bulgaria";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\bulgaria.paa";
-		textureVehicle = "";
-	};
-	class STAF_croatia
-	{
-		displayName = "Croatia";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\croatia.paa";
-		textureVehicle = "";
-	};
-	class STAF_cyprus
-	{
-		displayName = "Cyprus";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\cyprus.paa";
-		textureVehicle = "";
-	};
-	class STAF_czech_republic
-	{
-		displayName = "Czech Republic";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\czech_republic.paa";
-		textureVehicle = "";
-	};
-	class STAF_denmark
-	{
-		displayName = "Denmark";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\denmark.paa";
-		textureVehicle = "";
-	};
-	class STAF_england
-	{
-		displayName = "England";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\england.paa";
-		textureVehicle = "";
-	};
-	class STAF_estonia
-	{
-		displayName = "Estonia";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\estonia.paa";
-		textureVehicle = "";
-	};
-	class STAF_finland
-	{
-		displayName = "Finland";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\finland.paa";
-		textureVehicle = "";
-	};
-	class STAF_france
-	{
-		displayName = "France";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\france.paa";
-		textureVehicle = "";
-	};
-	class STAF_fyrom
-	{
-		displayName = "Fyrom";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\fyrom.paa";
-		textureVehicle = "";
-	};
-	class STAF_germany
-	{
-		displayName = "Germany";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\germany.paa";
-		textureVehicle = "";
-	};
-	class STAF_greece
-	{
-		displayName = "Greece";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\greece.paa";
-		textureVehicle = "";
-	};
-	class STAF_hungary
-	{
-		displayName = "Hungary";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\hungary.paa";
-		textureVehicle = "";
-	};
-	class STAF_iceland
-	{
-		displayName = "Iceland";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\iceland.paa";
-		textureVehicle = "";
-	};
-	class STAF_ireland
-	{
-		displayName = "Ireland";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\ireland.paa";
-		textureVehicle = "";
-	};
-	class STAF_italy
-	{
-		displayName = "Italy";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\italy.paa";
-		textureVehicle = "";
-	};
-	class STAF_latvia
-	{
-		displayName = "Latvia";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\latvia.paa";
-		textureVehicle = "";
-	};
-	class STAF_lithuania
-	{
-		displayName = "Lithuania";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\lithuania.paa";
-		textureVehicle = "";
-	};
-	class STAF_luxembourg
-	{
-		displayName = "Luxembourg";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\luxembourg.paa";
-		textureVehicle = "";
-	};
-	class STAF_malta
-	{
-		displayName = "Malta";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\malta.paa";
-		textureVehicle = "";
-	};
-	class STAF_montenegro
-	{
-		displayName = "Montenegro";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\montenegro.paa";
-		textureVehicle = "";
-	};
-	class STAF_netherlands
-	{
-		displayName = "Netherlands";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\netherlands.paa";
-		textureVehicle = "";
-	};
-	class STAF_norway
-	{
-		displayName = "Norway";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\norway.paa";
-		textureVehicle = "";
-	};
-	class STAF_poland
-	{
-		displayName = "Poland";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\poland.paa";
-		textureVehicle = "";
-	};
-	class STAF_portugal
-	{
-		displayName = "Portugal";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\portugal.paa";
-		textureVehicle = "";
-	};
-	class STAF_romania
-	{
-		displayName = "Romania";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\romania.paa";
-		textureVehicle = "";
-	};
-	class STAF_scotland
-	{
-		displayName = "Scotland";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\scotland.paa";
-		textureVehicle = "";
-	};
-	class STAF_serbia
-	{
-		displayName = "Serbia";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\serbia.paa";
-		textureVehicle = "";
-	};
-	class STAF_slovakia
-	{
-		displayName = "Slovakia";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\slovakia.paa";
-		textureVehicle = "";
-	};
-	class STAF_slovenia
-	{
-		displayName = "Slovenia";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\slovenia.paa";
-		textureVehicle = "";
-	};
-	class STAF_spain
-	{
-		displayName = "Spain";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\spain.paa";
-		textureVehicle = "";
-	};
-	class STAF_sweden
-	{
-		displayName = "Sweden";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\sweden.paa";
-		textureVehicle = "";
-	};
-	class STAF_united_kingdom
-	{
-		displayName = "United Kingdom";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\united_kingdom.paa";
-		textureVehicle = "";
-	};
-	class STAF_wales
-	{
-		displayName = "Wales";
-		author = "STAF|IndeedPete and STAF|Moony";
-		texture = "\STAF_GEAR\img\wales.paa";
-		textureVehicle = "";
+		displayName = "Faroes"; // Name displayed in Arsenal
+		author = "STAF|Moony"; // Author displayed in Arsenal
+		texture = "\STAF_GEAR\img\Faroes.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
 	};
 };
