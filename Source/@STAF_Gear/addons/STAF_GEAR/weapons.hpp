@@ -1,3 +1,4 @@
+/*
 // Weapons
 class srifle_DMR_03_F;
 class srifle_DMR_03_khaki_F;
@@ -102,7 +103,7 @@ class STAF_MMG_01_Splinter_Snow_F: MMG_01_tan_F
 			slot = "UnderBarrelSlot";
 		};
 	};
-};
+}; */
 
 // Mod Weapons
 
