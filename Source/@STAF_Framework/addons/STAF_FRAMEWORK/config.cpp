@@ -40,7 +40,7 @@ class RscDisplayLoadMission: RscStandardDisplay
     };
 };
 
-class CfgFactionClasses
+/*class CfgFactionClasses
 {
 	class NO_CATEGORY;
 
@@ -48,7 +48,7 @@ class CfgFactionClasses
 	{
 		displayName = "STAF";
 	};
-};
+};*/
 
 class CfgFunctions
 {

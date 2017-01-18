@@ -26,7 +26,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_fast_blk_co.paa"};
 	};
 
-	class STAF_B_Kitbag_medic_blk: STAF_B_Kitbag_blk
+	class STAF_B_Kitbag_medic_blk: B_Kitbag_rgr
 	{
 		baseBackpack = "STAF_B_Kitbag_medic_blk";
 		displayName = "STAF Medic Kitbag (Black)";
@@ -255,7 +255,7 @@ class CfgVehicles
 		};
 	};
 
-	class STAF_B_Kitbag_exp_blk: STAF_B_Kitbag_blk
+	class STAF_B_Kitbag_exp_blk: B_Kitbag_rgr
 	{
 		baseBackpack = "STAF_B_Kitbag_exp_blk";
 		displayName = "STAF Explosives Kitbag (Black)";
@@ -358,7 +358,7 @@ class CfgVehicles
 		};
 	};
 
-	class STAF_B_Kitbag_engineer_blk: STAF_B_Kitbag_blk
+	class STAF_B_Kitbag_engineer_blk: B_Kitbag_rgr
 	{
 		baseBackpack = "STAF_B_Kitbag_engineer_blk";
 		displayName = "STAF Engineer Kitbag (Black)";

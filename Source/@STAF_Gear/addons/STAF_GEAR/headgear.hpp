@@ -44,12 +44,12 @@ class STAF_H_HelmetSpecB_Pete_Winter: H_HelmetSpecB
 
 class STAF_H_PilotHelmetHeli_Stroke_B: H_PilotHelmetHeli_B
 {
-	displayName = "STAF StrokeUnit's Heli Pilot Helmet";
-	hiddenSelectionsTextures[] = {"\STAF_GEAR\txt\helmet_heli_blk_stroke_co.paa"};
+  displayName = "Heli Pilot Helmet (StrokeUnit)";
+  hiddenSelectionsTextures[] = {"\STAF_GEAR\txt\helmet_heli_blk_stroke_co.paa"};
 };
 
 class STAF_H_CrewHelmetHeli_Stroke_B: H_CrewHelmetHeli_B
 {
-	displayName = "STAF StrokeUnit's Heli Crew Helmet";
-	hiddenSelectionsTextures[] = {"\STAF_GEAR\txt\helmet_heli_blk_stroke_co.paa"};
+  displayName = "Heli Crew Helmet (StrokeUnit)";
+  hiddenSelectionsTextures[] = {"\STAF_GEAR\txt\helmet_heli_blk_stroke_co.paa"};
 };
