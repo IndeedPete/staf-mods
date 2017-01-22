@@ -1,6 +1,5 @@
 class CfgWeapons {
   class UniformItem;
-  class ItemInfo;
   class U_B_CombatUniform_mcam;
   class U_B_CombatUniform_mcam_vest;
   class U_BG_Guerilla1_1;
@@ -11,7 +10,7 @@ class CfgWeapons {
   class U_I_OfficerUniform;
   class U_I_CombatUniform;
   class U_I_CombatUniform_shortsleeve;
-
+  
   class STAF_U_B_CombatUniform_Norwegian_Desert: U_B_CombatUniform_mcam
   {
   	displayName = "STAF Combat Fatigues (Norwegian, M03 Desert)";

@@ -75,11 +75,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_4" , "VSM_Beanie_Black" };
-        weapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "HandGrenade" , "HandGrenade" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_4" , "VSM_Beanie_Black" };
-        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "HandGrenade" , "HandGrenade" };
 
         class EventHandlers : EventHandlers {
@@ -105,11 +105,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_4" , "VSM_Beanie_Black" };
-        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_4" , "VSM_Beanie_Black" };
-        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         class EventHandlers : EventHandlers {
@@ -135,11 +135,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_4" , "VSM_Beanie_Black" };
-        weapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_4" , "VSM_Beanie_Black" };
-        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         class EventHandlers : EventHandlers {
@@ -166,11 +166,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_4" , "VSM_Beanie_Black" };
-        weapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_4" , "VSM_Beanie_Black" };
-        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         class EventHandlers : EventHandlers {
@@ -196,11 +196,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_RAV_MG_M81" , "VSM_M81_OPS" };
-        weapons[] = { "STAF_rifle_g36_gl" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_g36_gl" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "1Rnd_SmokeRed_Grenade_shell" , "1Rnd_Smoke_Grenade_shell" , "Chemlight_green" , "Chemlight_green" , "3Rnd_HE_Grenade_shell" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_RAV_MG_M81" , "VSM_M81_OPS" };
-        respawnWeapons[] = { "STAF_rifle_g36_gl" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_g36_gl" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "1Rnd_SmokeRed_Grenade_shell" , "1Rnd_Smoke_Grenade_shell" , "Chemlight_green" , "Chemlight_green" , "3Rnd_HE_Grenade_shell" };
 
         class EventHandlers : EventHandlers {
@@ -226,11 +226,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_RAV_MG_M81" , "VSM_M81_OPS" };
-        weapons[] = { "STAF_rifle_scar_gl_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_scar_gl_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "1Rnd_SmokeRed_Grenade_shell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "1Rnd_Smoke_Grenade_shell" , "Chemlight_green" , "Chemlight_green" , "3Rnd_HE_Grenade_shell" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_RAV_MG_M81" , "VSM_M81_OPS" };
-        respawnWeapons[] = { "STAF_rifle_scar_gl_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_scar_gl_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "1Rnd_SmokeRed_Grenade_shell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "1Rnd_Smoke_Grenade_shell" , "Chemlight_green" , "Chemlight_green" , "3Rnd_HE_Grenade_shell" };
 
         class EventHandlers : EventHandlers {
@@ -256,11 +256,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_RAV_MG_M81" , "VSM_M81_OPS" };
-        weapons[] = { "STAF_rifle_mk18_gl" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mk18_gl" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "1Rnd_SmokeRed_Grenade_shell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "1Rnd_Smoke_Grenade_shell" , "Chemlight_green" , "Chemlight_green" , "3Rnd_HE_Grenade_shell" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_RAV_MG_M81" , "VSM_M81_OPS" };
-        respawnWeapons[] = { "STAF_rifle_mk18_gl" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mk18_gl" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "1Rnd_SmokeRed_Grenade_shell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "1Rnd_Smoke_Grenade_shell" , "Chemlight_green" , "Chemlight_green" , "3Rnd_HE_Grenade_shell" };
 
         class EventHandlers : EventHandlers {
@@ -286,11 +286,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_RAV_MG_M81" , "VSM_M81_OPS" };
-        weapons[] = { "STAF_rifle_mx_gl" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mx_gl" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "1Rnd_SmokeRed_Grenade_shell" , "1Rnd_Smoke_Grenade_shell" , "Chemlight_green" , "Chemlight_green" , "3Rnd_HE_Grenade_shell" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_RAV_MG_M81" , "VSM_M81_OPS" };
-        respawnWeapons[] = { "STAF_rifle_mx_gl" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mx_gl" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "1Rnd_SmokeRed_Grenade_shell" , "1Rnd_Smoke_Grenade_shell" , "Chemlight_green" , "Chemlight_green" , "3Rnd_HE_Grenade_shell" };
 
         class EventHandlers : EventHandlers {
@@ -316,11 +316,11 @@ class CfgVehicles {
         backpack = "tacs_Backpack_Kitbag_DarkBlack";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_5" , "MCB_Helmet2" };
-        weapons[] = { "STAF_rifle_g36" , "STAF_launcher_smaw" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_g36" , "STAF_launcher_smaw" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "rhs_mag_smaw_SR" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_5" , "MCB_Helmet2" };
-        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_launcher_smaw" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_launcher_smaw" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "rhs_mag_smaw_SR" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" };
 
         class EventHandlers : EventHandlers {
@@ -346,11 +346,11 @@ class CfgVehicles {
         backpack = "tacs_Backpack_Kitbag_DarkBlack";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_5" , "MCB_Helmet2" };
-        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_launcher_smaw" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_launcher_smaw" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "rhs_mag_smaw_SR" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_5" , "MCB_Helmet2" };
-        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_launcher_smaw" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_launcher_smaw" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "rhs_mag_smaw_SR" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" };
 
         class EventHandlers : EventHandlers {
@@ -376,11 +376,11 @@ class CfgVehicles {
         backpack = "tacs_Backpack_Kitbag_DarkBlack";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_5" , "MCB_Helmet2" };
-        weapons[] = { "STAF_rifle_mk18" , "STAF_launcher_smaw" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mk18" , "STAF_launcher_smaw" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "rhs_mag_smaw_SR" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_5" , "MCB_Helmet2" };
-        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_launcher_smaw" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_launcher_smaw" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "rhs_mag_smaw_SR" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" };
 
         class EventHandlers : EventHandlers {
@@ -406,11 +406,11 @@ class CfgVehicles {
         backpack = "tacs_Backpack_Kitbag_DarkBlack";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_5" , "MCB_Helmet2" };
-        weapons[] = { "STAF_rifle_mx" , "STAF_launcher_smaw" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mx" , "STAF_launcher_smaw" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "rhs_mag_smaw_SR" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_5" , "MCB_Helmet2" };
-        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_launcher_smaw" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_launcher_smaw" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "rhs_mag_smaw_SR" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" };
 
         class EventHandlers : EventHandlers {
@@ -436,11 +436,11 @@ class CfgVehicles {
         backpack = "STAF_B_Kitbag_medic_rgr";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_operator_OGA_OD" , "VSM_Bowman_cap_balaclava_Black" };
-        weapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_operator_OGA_OD" , "VSM_Bowman_cap_balaclava_Black" };
-        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         class EventHandlers : EventHandlers {
@@ -466,11 +466,11 @@ class CfgVehicles {
         backpack = "STAF_B_Kitbag_medic_rgr";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_operator_OGA_OD" , "VSM_Bowman_cap_balaclava_Black" };
-        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_operator_OGA_OD" , "VSM_Bowman_cap_balaclava_Black" };
-        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         class EventHandlers : EventHandlers {
@@ -496,11 +496,11 @@ class CfgVehicles {
         backpack = "STAF_B_Kitbag_medic_rgr";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_operator_OGA_OD" , "VSM_Bowman_cap_balaclava_Black" };
-        weapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_operator_OGA_OD" , "VSM_Bowman_cap_balaclava_Black" };
-        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         class EventHandlers : EventHandlers {
@@ -526,11 +526,11 @@ class CfgVehicles {
         backpack = "STAF_B_Kitbag_medic_rgr";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_operator_OGA_OD" , "VSM_Bowman_cap_balaclava_Black" };
-        weapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_operator_OGA_OD" , "VSM_Bowman_cap_balaclava_Black" };
-        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         class EventHandlers : EventHandlers {
@@ -556,11 +556,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "M90d_Vest_4" , "H_Watchcap_khk" };
-        weapons[] = { "STAF_rifle_hk417" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_hk417" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "M90d_Vest_4" , "H_Watchcap_khk" };
-        respawnWeapons[] = { "STAF_rifle_hk417" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_hk417" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         class EventHandlers : EventHandlers {
@@ -586,11 +586,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "M90d_Vest_4" , "H_Watchcap_khk" };
-        weapons[] = { "STAF_rifle_ak12" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_ak12" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "M90d_Vest_4" , "H_Watchcap_khk" };
-        respawnWeapons[] = { "STAF_rifle_ak12" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_ak12" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         class EventHandlers : EventHandlers {
@@ -616,11 +616,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "M90d_Vest_4" , "H_Watchcap_khk" };
-        weapons[] = { "STAF_rifle_ebr" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_ebr" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "M90d_Vest_4" , "H_Watchcap_khk" };
-        respawnWeapons[] = { "STAF_rifle_ebr" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_ebr" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         class EventHandlers : EventHandlers {
@@ -646,11 +646,11 @@ class CfgVehicles {
         backpack = "tacs_Backpack_Kitbag_DarkBlack";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_MG_OGA_OD" , "OGA_G_Helmet1" };
-        weapons[] = { "STAF_rifle_m249" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_m249" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "hlc_200rnd_556x45_M_SAW" , "hlc_200rnd_556x45_M_SAW" , "hlc_200rnd_556x45_M_SAW" , "hlc_200rnd_556x45_M_SAW" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_MG_OGA_OD" , "OGA_G_Helmet1" };
-        respawnWeapons[] = { "STAF_rifle_m249" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_m249" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "hlc_200rnd_556x45_M_SAW" , "hlc_200rnd_556x45_M_SAW" , "hlc_200rnd_556x45_M_SAW" , "hlc_200rnd_556x45_M_SAW" };
 
         class EventHandlers : EventHandlers {
@@ -676,11 +676,11 @@ class CfgVehicles {
         backpack = "tacs_Backpack_Kitbag_DarkBlack";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_MG_OGA_OD" , "OGA_G_Helmet1" };
-        weapons[] = { "STAF_rifle_negev" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_negev" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "150Rnd_762x54_Box_Tracer" , "150Rnd_762x54_Box_Tracer" , "150Rnd_762x54_Box_Tracer" , "150Rnd_762x54_Box_Tracer" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_MG_OGA_OD" , "OGA_G_Helmet1" };
-        respawnWeapons[] = { "STAF_rifle_negev" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_negev" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "150Rnd_762x54_Box_Tracer" , "150Rnd_762x54_Box_Tracer" , "150Rnd_762x54_Box_Tracer" , "150Rnd_762x54_Box_Tracer" };
 
         class EventHandlers : EventHandlers {
@@ -706,11 +706,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_CarrierRig_Gunner_OGA" , "MC_Helmet2" };
-        weapons[] = { "STAF_rifle_gm6" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_gm6" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "5Rnd_127x108_Mag" , "SmokeShell" , "5Rnd_127x108_Mag" , "5Rnd_127x108_Mag" , "5Rnd_127x108_Mag" , "5Rnd_127x108_Mag" , "5Rnd_127x108_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_CarrierRig_Gunner_OGA" , "MC_Helmet2" };
-        respawnWeapons[] = { "STAF_rifle_gm6" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_gm6" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "5Rnd_127x108_Mag" , "SmokeShell" , "5Rnd_127x108_Mag" , "5Rnd_127x108_Mag" , "5Rnd_127x108_Mag" , "5Rnd_127x108_Mag" , "5Rnd_127x108_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         class EventHandlers : EventHandlers {
@@ -736,11 +736,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_CarrierRig_Gunner_OGA" , "MC_Helmet2" };
-        weapons[] = { "STAF_rifle_mar10" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mar10" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "10Rnd_338_Mag" , "Chemlight_green" , "10Rnd_338_Mag" , "10Rnd_338_Mag" , "10Rnd_338_Mag" , "10Rnd_338_Mag" , "10Rnd_338_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_CarrierRig_Gunner_OGA" , "MC_Helmet2" };
-        respawnWeapons[] = { "STAF_rifle_mar10" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mar10" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "10Rnd_338_Mag" , "Chemlight_green" , "10Rnd_338_Mag" , "10Rnd_338_Mag" , "10Rnd_338_Mag" , "10Rnd_338_Mag" , "10Rnd_338_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" };
 
         class EventHandlers : EventHandlers {
@@ -766,11 +766,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_CarrierRig_Gunner_OGA" , "MC_Helmet2" };
-        weapons[] = { "STAF_rifle_m200" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_m200" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "7Rnd_408_Mag" , "Chemlight_green" , "7Rnd_408_Mag" , "7Rnd_408_Mag" , "7Rnd_408_Mag" , "7Rnd_408_Mag" , "7Rnd_408_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_CarrierRig_Gunner_OGA" , "MC_Helmet2" };
-        respawnWeapons[] = { "STAF_rifle_m200" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_m200" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "7Rnd_408_Mag" , "Chemlight_green" , "7Rnd_408_Mag" , "7Rnd_408_Mag" , "7Rnd_408_Mag" , "7Rnd_408_Mag" , "7Rnd_408_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" };
 
         class EventHandlers : EventHandlers {
@@ -796,11 +796,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemcTab" , "MCB_Vest_5" , "VSM_Black_OPS" };
-        weapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemcTab" , "MCB_Vest_5" , "VSM_Black_OPS" };
-        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         class EventHandlers : EventHandlers {
@@ -826,11 +826,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemcTab" , "MCB_Vest_5" , "VSM_Black_OPS" };
-        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemcTab" , "MCB_Vest_5" , "VSM_Black_OPS" };
-        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         class EventHandlers : EventHandlers {
@@ -856,11 +856,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemcTab" , "MCB_Vest_5" , "VSM_Black_OPS" };
-        weapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemcTab" , "MCB_Vest_5" , "VSM_Black_OPS" };
-        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         class EventHandlers : EventHandlers {
@@ -886,11 +886,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemcTab" , "MCB_Vest_5" , "VSM_Black_OPS" };
-        weapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemcTab" , "MCB_Vest_5" , "VSM_Black_OPS" };
-        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         class EventHandlers : EventHandlers {
@@ -916,11 +916,11 @@ class CfgVehicles {
         backpack = "STAF_B_Kitbag_exp_blk";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_1" , "VSM_Bowman_cap_Tan" };
-        weapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_65x39_caseless_mag" , "Chemlight_green" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "SatchelCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_1" , "VSM_Bowman_cap_Tan" };
-        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "Chemlight_green" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "SatchelCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" };
 
         class EventHandlers : EventHandlers {
@@ -946,11 +946,11 @@ class CfgVehicles {
         backpack = "STAF_B_Kitbag_exp_blk";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_1" , "VSM_Bowman_cap_Tan" };
-        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" , "SatchelCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_1" , "VSM_Bowman_cap_Tan" };
-        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" , "SatchelCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" };
 
         class EventHandlers : EventHandlers {
@@ -976,11 +976,11 @@ class CfgVehicles {
         backpack = "STAF_B_Kitbag_exp_blk";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_1" , "VSM_Bowman_cap_Tan" };
-        weapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" , "SatchelCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_1" , "VSM_Bowman_cap_Tan" };
-        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" , "SatchelCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" };
 
         class EventHandlers : EventHandlers {
@@ -1006,11 +1006,11 @@ class CfgVehicles {
         backpack = "STAF_B_Kitbag_exp_blk";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_1" , "VSM_Bowman_cap_Tan" };
-        weapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_65x39_caseless_mag" , "Chemlight_green" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "SatchelCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_1" , "VSM_Bowman_cap_Tan" };
-        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "Chemlight_green" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "SatchelCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" };
 
         class EventHandlers : EventHandlers {
@@ -1036,11 +1036,11 @@ class CfgVehicles {
         backpack = "B_UAV_01_backpack_F";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "M90_Vest_4" , "VSM_Beanie_OD" };
-        weapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "M90_Vest_4" , "VSM_Beanie_OD" };
-        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         class EventHandlers : EventHandlers {
@@ -1066,11 +1066,11 @@ class CfgVehicles {
         backpack = "B_UAV_01_backpack_F";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "M90_Vest_4" , "VSM_Beanie_OD" };
-        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "M90_Vest_4" , "VSM_Beanie_OD" };
-        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         class EventHandlers : EventHandlers {
@@ -1096,11 +1096,11 @@ class CfgVehicles {
         backpack = "B_UAV_01_backpack_F";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "M90_Vest_4" , "VSM_Beanie_OD" };
-        weapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "M90_Vest_4" , "VSM_Beanie_OD" };
-        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         class EventHandlers : EventHandlers {
@@ -1126,11 +1126,11 @@ class CfgVehicles {
         backpack = "B_UAV_01_backpack_F";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "M90_Vest_4" , "VSM_Beanie_OD" };
-        weapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "M90_Vest_4" , "VSM_Beanie_OD" };
-        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         class EventHandlers : EventHandlers {
@@ -1284,11 +1284,11 @@ class CfgVehicles {
         backpack = "B_AssaultPack_blk";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_RebreatherB" , "rhsusf_opscore_bk", "G_B_Diving" };
-        weapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_RebreatherB" , "rhsusf_opscore_bk", "G_B_Diving" };
-        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         class EventHandlers : EventHandlers {
@@ -1314,11 +1314,11 @@ class CfgVehicles {
         backpack = "B_AssaultPack_blk";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_RebreatherB" , "rhsusf_opscore_bk", "G_B_Diving" };
-        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_RebreatherB" , "rhsusf_opscore_bk", "G_B_Diving" };
-        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         class EventHandlers : EventHandlers {
@@ -1344,11 +1344,11 @@ class CfgVehicles {
         backpack = "B_AssaultPack_blk";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_RebreatherB" , "rhsusf_opscore_bk", "G_B_Diving" };
-        weapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_RebreatherB" , "rhsusf_opscore_bk", "G_B_Diving" };
-        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         class EventHandlers : EventHandlers {
@@ -1374,11 +1374,11 @@ class CfgVehicles {
         backpack = "B_AssaultPack_blk";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_RebreatherB" , "rhsusf_opscore_bk", "G_B_Diving" };
-        weapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_RebreatherB" , "rhsusf_opscore_bk", "G_B_Diving" };
-        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         class EventHandlers : EventHandlers {
@@ -1404,11 +1404,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk", "skn_m50_gas_mask_hood" };
-        weapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood" };
-        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         class EventHandlers : EventHandlers {
@@ -1434,11 +1434,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk"  , "skn_m50_gas_mask_hood" };
-        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood" };
-        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         class EventHandlers : EventHandlers {
@@ -1464,11 +1464,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood" };
-        weapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood" };
-        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         class EventHandlers : EventHandlers {
@@ -1495,11 +1495,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood" };
-        weapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood" };
-        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         class EventHandlers : EventHandlers {
@@ -1525,11 +1525,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood_wd" };
-        weapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood_wd" };
-        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         class EventHandlers : EventHandlers {
@@ -1555,11 +1555,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood_wd" };
-        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood_wd" };
-        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         class EventHandlers : EventHandlers {
@@ -1585,11 +1585,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood_wd" };
-        weapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood_wd" };
-        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         class EventHandlers : EventHandlers {
@@ -1616,11 +1616,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood_wd" };
-        weapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood_wd" };
-        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         class EventHandlers : EventHandlers {
@@ -1646,11 +1646,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "tacs_Vest_Tactical_DarkBlack" , "VSM_Bowman_cap_Black" };
-        weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "tacs_Vest_Tactical_DarkBlack" , "VSM_Bowman_cap_Black" };
-        respawnWeapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         class EventHandlers : EventHandlers {
@@ -1676,11 +1676,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "tacs_Vest_Tactical_DarkBlack" , "VSM_Bowman_cap_Black" };
-        weapons[] = { "STAF_rifle_p90" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_p90" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "SmokeShell" , "50Rnd_570x28_SMG_03" , "50Rnd_570x28_SMG_03" , "50Rnd_570x28_SMG_03" , "50Rnd_570x28_SMG_03" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "tacs_Vest_Tactical_DarkBlack" , "VSM_Bowman_cap_Black" };
-        respawnWeapons[] = { "STAF_rifle_p90" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_p90" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "SmokeShell" , "50Rnd_570x28_SMG_03" , "50Rnd_570x28_SMG_03" , "50Rnd_570x28_SMG_03" , "50Rnd_570x28_SMG_03" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         class EventHandlers : EventHandlers {
@@ -1706,11 +1706,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_TacVest_blk" , "VSM_Bowman_cap_Black" };
-        weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_TacVest_blk" , "VSM_Bowman_cap_Black" };
-        respawnWeapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         class EventHandlers : EventHandlers {
@@ -1736,11 +1736,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_TacVest_blk" , "H_Watchcap_khk" };
-        weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_TacVest_blk" , "H_Watchcap_khk" };
-        respawnWeapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         class EventHandlers : EventHandlers {
@@ -1766,11 +1766,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "tacs_Vest_Tactical_DarkBlack" , "H_PilotHelmetHeli_B" , "VSM_balaclava_Black_Skull" };
-        weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "tacs_Vest_Tactical_DarkBlack" , "H_PilotHelmetHeli_B" , "VSM_balaclava_Black_Skull" };
-        respawnWeapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         class EventHandlers : EventHandlers {
@@ -1796,11 +1796,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "tacs_Vest_Tactical_DarkBlack" , "H_CrewHelmetHeli_B" , "VSM_balaclava_Black_Skull" };
-        weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "tacs_Vest_Tactical_DarkBlack" , "H_CrewHelmetHeli_B" , "VSM_balaclava_Black_Skull" };
-        respawnWeapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         class EventHandlers : EventHandlers {
@@ -1826,11 +1826,11 @@ class CfgVehicles {
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_Peltor_OD" };
-        weapons[] = { "STAF_pistol_glock17" , "Throw" , "Put" };
+        weapons[] = { "STAF_pistol_glock18" , "Throw" , "Put" };
         magazines[] = { "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_Peltor_OD" };
-        respawnWeapons[] = { "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_pistol_glock18" , "Throw" , "Put" };
         respawnMagazines[] = { "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" };
 
         class EventHandlers : EventHandlers {

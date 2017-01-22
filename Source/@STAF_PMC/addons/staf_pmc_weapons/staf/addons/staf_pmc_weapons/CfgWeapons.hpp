@@ -19,7 +19,7 @@ class CfgWeapons {
   class srifle_GM6_F; //Vanilla GM6
   class srifle_LRR_F; //Vanilla M200
   class srifle_DMR_02_F; //Vanilla Bad News
-  class KA_Glock_17_Single; //KA Glock 17
+  class KA_Glock_18_Single; //KA Glock 17
   class rhs_weap_smaw; //RHS SMAW
   class rhs_weap_M136; //RHS M136 HEAT
   class rhs_weap_M136_hedp; //RHS M136 HEDP
@@ -225,7 +225,7 @@ class CfgWeapons {
     {
       class LinkedItemsOptic
       {
-        item = "rhsusf_acc_SpecterDR";
+        item = "rhsusf_acc_ACOG_MDO";
         slot = "CowsSlot";
       };
     };
@@ -356,7 +356,7 @@ class CfgWeapons {
     };
   };
 
-  class STAF_pistol_glock17: KA_Glock_17_Single
+  class STAF_pistol_glock18: KA_Glock_18_Single
   {
     class LinkedItems
     {

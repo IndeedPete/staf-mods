@@ -3,7 +3,6 @@ class CfgWeapons {
   class V_PlateCarrierH_CTRG;
   class V_PlateCarrier2_rgr;
   class IP_V_PlateCarrier2_khkEF;
-  class ItemInfo;
   class VestItem;
 
   class STAF_V_PlateCarrierL_Pete_Arid: V_PlateCarrierH_CTRG
@@ -13,7 +12,7 @@ class CfgWeapons {
   	model = "\A3\Characters_F\BLUFOR\equip_b_vest02";
   	// picture = "\IP_EUROFORCE\men\img\icon_v_plate_carrier_1_khaki_ca.paa";
 
-  	class ItemInfo: ItemInfo
+    class ItemInfo: VestItem
   	{
   		uniformModel = "\A3\Characters_F\BLUFOR\equip_b_vest02.p3d";
   	};
@@ -39,7 +38,7 @@ class CfgWeapons {
   	hiddenSelections[] = {"camo"};
   	hiddenSelectionsTextures[] = {"\staf_pmc_vests\staf\addons\staf_pmc_vests\txt\vests_stroke_rgr_co.paa"};
 
-  	class ItemInfo: ItemInfo
+        class ItemInfo: VestItem
   	{
   		hiddenSelections[] = {"camo"};
   	};

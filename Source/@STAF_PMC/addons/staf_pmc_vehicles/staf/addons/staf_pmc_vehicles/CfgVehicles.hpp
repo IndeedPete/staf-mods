@@ -214,6 +214,7 @@ class CfgVehicles {
             class MainTurret;
         };
     };
+
     class STAF_mh6 : B_Heli_Light_01_F_OCimport_02 {
         author = "STAF|Moony";
         scope = 2;
@@ -222,7 +223,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_helipilot";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\STAF_mh6.jpg";
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_mh6.jpg";
 
         class Turrets : Turrets {
             class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
@@ -253,7 +254,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_helipilot";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\STAF_ah6m_l.jpg";
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_ah6.jpg";
 
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
@@ -275,7 +276,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_helipilot_heavy";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\STAF_ka50.jpg";
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_ka50.jpg";
 
         class Turrets : Turrets {
             class CopilotTurret : CopilotTurret { gunnerType = ""; };
@@ -303,7 +304,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_pilot";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\STAF_falcon.jpg";
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_falcon.jpg";
 
         class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = ""; };
@@ -330,7 +331,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_helipilot_heavy";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\STAF_vtol_infantry.jpg";
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_vtol_infantry.jpg";
 
         class Turrets : Turrets {
             class GunnerTurret : GunnerTurret { gunnerType = ""; };
@@ -359,7 +360,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_helipilot_heavy";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\STAF_vtol_vehicle.jpg";
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_vtol_vehicle.jpg";
 
         class Turrets : Turrets {
             class GunnerTurret : GunnerTurret { gunnerType = ""; };
@@ -415,7 +416,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\STAFF_m1117.jpg";
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAFF_m1117.jpg";
 
         class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = "rhsusf_army_ucp_grenadier"; };
@@ -445,7 +446,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_diver_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\STAF_rubberboat.jpg";
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_rubberboat.jpg";
 
         class Turrets : Turrets {
             class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
@@ -476,7 +477,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\STAF_rhib.jpg";
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_rhib.jpg";
 
         class Turrets : Turrets {
             class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
@@ -510,7 +511,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_diver_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\STAF_sdv.jpg";
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_sdv.jpg";
 
         class Turrets : Turrets {
             class CommanderTurret : CommanderTurret { gunnerType = ""; };
@@ -538,7 +539,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\STAF_mrap.jpg";
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_mrap.jpg";
 
 
         class EventHandlers : EventHandlers {
@@ -561,7 +562,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\STAF_mrap_hmg.jpg";
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_mrap_hmg.jpg";
 
         class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = ""; };
@@ -589,7 +590,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\STAF_lsv.jpg";
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_lsv.jpg";
 
         class Turrets : Turrets {
             class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
@@ -622,7 +623,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\STAF_lsv_hmg.jpg";
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_lsv_hmg.jpg";
 
         class Turrets : Turrets {
             class TopTurret : TopTurret { gunnerType = ""; };
@@ -653,7 +654,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\STAF_quadbike.jpg";
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_quadbike.jpg";
 
 
         class EventHandlers : EventHandlers {
@@ -676,7 +677,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\STAF_truck.jpg";
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_truck.jpg";
 
         class Turrets : Turrets {
             class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
@@ -705,7 +706,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\STAF_offroad.jpg";
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_offroad.jpg";
 
         class Turrets : Turrets {
             class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
@@ -735,7 +736,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\STAF_offroad_hmg.jpg";
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_offroad_hmg.jpg";
 
         class Turrets : Turrets {
             class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
@@ -766,7 +767,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\STAF_suv.jpg";
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_suv.jpg";
 
 
         class EventHandlers : EventHandlers {
@@ -789,7 +790,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "B_UAV_AI";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\STAF_quadcopter.jpg";
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_quadcopter.jpg";
 
         class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = ""; };
