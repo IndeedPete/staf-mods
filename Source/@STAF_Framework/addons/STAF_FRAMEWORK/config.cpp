@@ -13,7 +13,7 @@ class CfgPatches
 		requiredVersion = 1.0;
 		requiredAddons[] = {"A3_Modules_F"};
 		author = "STAF";
-		authorUrl = "http://stafclan.com/index.php/BoardList/";
+		authorUrl = "http://www.stafclan.com/";
 		version = 1.0;
 		versionStr = "1.0";
 		versionAr[] = {1,0};
@@ -39,16 +39,6 @@ class RscDisplayLoadMission: RscStandardDisplay
         };
     };
 };
-
-/*class CfgFactionClasses
-{
-	class NO_CATEGORY;
-
-	class STAF: NO_CATEGORY
-	{
-		displayName = "STAF";
-	};
-};*/
 
 class CfgFunctions
 {
