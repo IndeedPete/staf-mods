@@ -104,8 +104,8 @@ class CfgVehicles {
 
 		class TransportMagazines
 		{
-			item_xx(SatchelCharge_Remote_Mag,3);
-      item_xx(DemoCharge_Remote_Mag,1);
+			mag_xx(SatchelCharge_Remote_Mag,3);
+      mag_xx(DemoCharge_Remote_Mag,1);
 		};
 
 		class TransportItems
@@ -122,8 +122,8 @@ class CfgVehicles {
 
     class TransportMagazines
 		{
-			item_xx(SatchelCharge_Remote_Mag,3);
-      item_xx(DemoCharge_Remote_Mag,1);
+			mag_xx(SatchelCharge_Remote_Mag,3);
+      mag_xx(DemoCharge_Remote_Mag,1);
 		};
 
 		class TransportItems
@@ -140,8 +140,8 @@ class CfgVehicles {
 
     class TransportMagazines
 		{
-			item_xx(SatchelCharge_Remote_Mag,3);
-      item_xx(DemoCharge_Remote_Mag,1);
+			mag_xx(SatchelCharge_Remote_Mag,3);
+      mag_xx(DemoCharge_Remote_Mag,1);
 		};
 
 		class TransportItems
