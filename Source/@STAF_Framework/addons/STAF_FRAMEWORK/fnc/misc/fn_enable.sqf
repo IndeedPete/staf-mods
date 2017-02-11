@@ -1,12 +1,23 @@
-params [["_objs", 0, [[], GrpNull, ObjNull]]];
-if (typeName _objs == "GROUP") then {_objs = units _objs};
+params [
+	["_objs", [], [[], GrpNull, ObjNull]],
+	["_setAllowDamage", false, [true]]
+];
 
-if (typeName _objs == "OBJECT") then {
-	_objs enableSimulationGlobal true;
-	_objs hideObjectGlobal false;
-} else {
-	{
-		_x enableSimulationGlobal true;
-		_x hideObjectGlobal false;
-	} forEach _objs;
+if ((typeName _objs) == (typeName GrpNull)) then {
+	_objs = units _objs;
 };
+
+if ((typeName _objs) == (typeName ObjNull)) then {
+	_objs = [_objs];
+};
+
+{	
+	_x enableSimulationGlobal true;
+	_x hideObjectGlobal false;
+	
+	if (_setAllowDamage) {
+		_x allowDamage true;
+	};
+	
+	true
+} count _objs;
