@@ -12,11 +12,11 @@ if ((typeName _objs) == (typeName ObjNull)) then {
 };
 
 {
-	if (_setAllowDamage) {
+	if (_setAllowDamage) then {
 		_x allowDamage false;
 	};
 	
 	_x enableSimulationGlobal false;
-	_x hideObjectGlobal true;	
+	_x hideObjectGlobal true;
 	true
 } count _objs;

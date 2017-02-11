@@ -15,7 +15,7 @@ if ((typeName _objs) == (typeName ObjNull)) then {
 	_x enableSimulationGlobal true;
 	_x hideObjectGlobal false;
 	
-	if (_setAllowDamage) {
+	if (_setAllowDamage) then {
 		_x allowDamage true;
 	};
 	
