@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class STAF_FRAMEWORK
 	{
-		units[] = 
+		units[] =
 		{
 			"STAF_Module_Radio_F",
 			"STAF_Module_Insignia_F",
@@ -43,14 +43,14 @@ class RscDisplayLoadMission: RscStandardDisplay
 class CfgFactionClasses
 {
 	class NO_CATEGORY;
-	
+
 	class STAF: NO_CATEGORY
 	{
 		displayName = "STAF";
 	};
 };
 
-class CfgFunctions 
+class CfgFunctions
 {
 	class STAF
 	{
@@ -133,7 +133,7 @@ class CfgFunctions
 			class viewRestrictions{};
 		};
 	};
-	
+
 	class CHSA
 	{
 		tag = "CHSA";
@@ -152,7 +152,7 @@ class CfgFunctions
 			class disconnectedEH {postInit = 1;};
 		};
 	};
-	
+
 	class ZBE
 	{
 		class ZBE_Cache
@@ -161,7 +161,7 @@ class CfgFunctions
 			{
 				file = "\STAF_FRAMEWORK\fnc\ZBE_Cache\main.sqf";
 			};
-		};		
+		};
 	};
 };
 
@@ -174,20 +174,20 @@ class CfgRemoteExecCommands
 class CfgVehicles
 {
 	class Logic;
-	
+
 	class Module_F: Logic
 	{
 		class ArgumentsBaseUnits
 		{
 			class Units;
 		};
-		
+
 		class ModuleDescription
 		{
 			class AnyBrain;
 		};
 	};
-	
+
 	class STAF_Module_Radio_F: Module_F
 	{
 		// Standard object definitions
@@ -208,14 +208,14 @@ class CfgVehicles
 		{
 			// Arguments shared by specific module type (have to be mentioned in order to be placed on top)
 			// class Units: Units {};
-			
+
 			// Module specific arguments
 			class Side
   			{
 				displayName = "Side"; // Argument label
 				description = "Side this module is managing."; // Tooltip description
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
-				
+
 				class values
 				{
 					class side1 {name = "BLUFOR"; value = "BLUFOR"; default = 1;}; // Listbox item
@@ -224,13 +224,13 @@ class CfgVehicles
 					class side4 {name = "CIVILIAN"; value = "CIVILIAN";};
 				};
 			};
-			
+
 			class BaseRadio
   			{
 				displayName = "Base Radio"; // Argument label
 				description = "Radio which will be linked to all players of the set side."; // Tooltip description
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
-				
+
 				class values
 				{
 					class radio1 {name = "RF-7800S-TR (BLUFOR, 2KM)"; value = "tf_rf7800str"; default = 1;}; // Listbox item
@@ -241,13 +241,13 @@ class CfgVehicles
 					class radio6 {name = "FADAK (OPFOR, 5KM)"; value = "tf_fadak";};
 				};
 			};
-			
+
 			class AdditionalRadio
   			{
 				displayName = "Additional Radio"; // Argument label
 				description = "Radio which will be added to all player objects defined below."; // Tooltip description
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
-				
+
 				class values
 				{
 					class radio0 {name = "NONE"; value = "";};
@@ -259,27 +259,27 @@ class CfgVehicles
 					class radio6 {name = "FADAK (OPFOR, 5KM)"; value = "tf_fadak";};
 				};
 			};
-			
+
 			class AdditionalObjects
   			{
 				displayName = "Additional Radio Objects"; // Argument label
 				description = "References to player objects of set side which will receive the additional radio. (Add array elements with ''.)"; // Tooltip description
 				defaultValue = "[]";
 			};
-			
+
 			class AdditionalClasses
   			{
 				displayName = "Additional Radio Classes"; // Argument label
 				description = "References to player classes of set side which will receive the additional radio. (Add array elements with ''.)"; // Tooltip description
 				defaultValue = "[]";
 			};
-			
+
 			class JIP
   			{
 				displayName = "Support JIP"; // Argument label
 				description = "Also handles players not present at mission start."; // Tooltip description
 				typeName = "BOOL"; // Value type, can be "NUMBER", "STRING" or "BOOL"
-				
+
 				class values
 				{
 					class yes {name = "Yes"; value = 1;  default = 1;};
@@ -293,7 +293,7 @@ class CfgVehicles
 		{
 			description = "Automatically adds and maintains radios from 'Task Force Radio' to synchronised units."; // Short description, will be formatted as structured text
 			sync[] = {"LocationArea_F"}; // Array of synced entities (can contain base classes)
-	 
+
 			class LocationArea_F
 			{
 				description[] = // Multi-line descriptions are supported
@@ -308,7 +308,7 @@ class CfgVehicles
 			};
 		};
 	};
-	
+
 	class STAF_Module_Insignia_F: Module_F
 	{
 		// Standard object definitions
@@ -329,21 +329,21 @@ class CfgVehicles
 		{
 			// Arguments shared by specific module type (have to be mentioned in order to be placed on top)
 			// class Units: Units {};
-			
+
 			/*/ Module specific arguments
 			class Activate
   			{
 				displayName = "Activate Automatic Insignias"; // Argument label
 				description = "Set whether the this system is activated at all."; // Tooltip description
 				typeName = "BOOL"; // Value type, can be "NUMBER", "STRING" or "BOOL"
-				
+
 				class values
 				{
 					class yes {name = "Yes"; value = 1;  default = 1;};
 					class no {name = "No"; value = 0;};
 				};
 			};*/
-			
+
 			class Key
   			{
 				displayName = "Key"; // Argument label
@@ -357,7 +357,7 @@ class CfgVehicles
 		{
 			description = "Automatically adds and maintains radios from 'Task Force Radio' to synchronised units."; // Short description, will be formatted as structured text
 			sync[] = {"LocationArea_F"}; // Array of synced entities (can contain base classes)
-	 
+
 			class LocationArea_F
 			{
 				description[] = // Multi-line descriptions are supported
@@ -372,7 +372,7 @@ class CfgVehicles
 			};
 		};
 	};
-	
+
 	class STAF_Module_Arsenal_F: Module_F
 	{
 		// Standard object definitions
@@ -404,7 +404,7 @@ class CfgVehicles
 		{
 			description = "Automatically adds XLA Fixed Arsenal functionality to synchronised objects."; // Short description, will be formatted as structured text
 			sync[] = {"LocationArea_F"}; // Array of synced entities (can contain base classes)
-	 
+
 			class LocationArea_F
 			{
 				description[] = // Multi-line descriptions are supported
@@ -419,7 +419,7 @@ class CfgVehicles
 			};
 		};
 	};
-	
+
 	class STAF_Module_Base_Medic_F: Module_F
 	{
 		category = "STAF";
@@ -436,7 +436,7 @@ class CfgVehicles
 		{
 			description = "Adds an ACE healing action to every synchronised object.";
 			sync[] = {"LocationArea_F"};
-	 
+
 			class LocationArea_F
 			{
 				description[] =
@@ -476,7 +476,7 @@ class CfgMusic
 	};
 };
 
-class CfgSounds 
+class CfgSounds
 {
 	class STAF_Pee_And_Fart
 	{
@@ -493,35 +493,60 @@ class CfgPostProcessTemplates
 		colorCorrections[] = {1, 1, 0, {0, 0, 0, 0}, {2, 0, 0, 1.25}, {2.5, -2.5, 0, 0}};
 		displayName = "Bright Snow";
 	};
-	
+
 	class STAF_FilmNoir
 	{
 		colorCorrections[] = {1, 1, -0.003, {0.0, 0.0, 0.0, 0.0}, {0.9, 0.9, 1, 0.4},  {0.199, 0.587, 0.114, 0.0}};
 		displayName = "Film Noir";
 		filmGrain[] = {0.03, 1, 1, 0.1, 1};
 	};
-	
+
 	class STAF_SurferClear
 	{
 		colorCorrections[] = {1.0, 1.0, 0.0, {0,0,0,0}, {0,0,0,1}, {0,0,0,0}};
 		displayName = "Surfer Clear";
 	};
-	
+
 	class STAF_SurferBlue
 	{
 		colorCorrections[] = {1.0, 1.0, 0.0, {0.0,0.0,0.0,0.0}, {0.0,0.5,0.7,0.7}, {0.199,0.587,0.114,0.0}};
 		displayName = "Surfer Blue";
 	};
-	
+
 	class STAF_GreenHell
 	{
 		colorCorrections[] = {1,1.08,-0.06, {0.5,0.5,0.5,0}, {1.2, 1.0, 0.2, 0.7}, {0.199, 0.587, 0.114, 0.0}};
 		displayName = "Green Hell";
 	};
-	
+
 	class STAF_RealIsBrown
 	{
 		colorCorrections[] = {1,1,0,{0.1,0.2,0.3,-0.5},{1,1,1,0.4},{0.5,0.2,0,1}};
 		displayName = "STAF 'Real is Brown' - No Film Grain";
 	};
+};
+
+class CfgMovesFatigue
+{
+		/* make sway recovery faster when changing stances, offset by weight */
+		aimPrecisionSpeedCoef = 20;  //default 5
+		/* disable sprinting for this amount of secs when stamina runs out */
+		staminaCooldown = 5;         //default 10
+		/* "amount" of stamina, how fast it drains (higher = slower) */
+		staminaDuration = 160;        //default 60
+		/* restore stamina from 0 to full in this amount of secs */
+		staminaRestoration = 50;     //default 30
+		/* when terrain gradient prevents sprinting (hill icon),
+		 * add this value to stamina gain */
+		terrainDrainSprint = -0.75;   //default -1
+		/* when terrain gradient forces you to walk (steep hill),
+		 * add this value to stamina gain (warning: too low negative values
+		 * actually restore stamina due to the character walking) */
+		terrainDrainRun = -1.75;      //default -1
+};
+
+class CfgInventoryGlobalVariable
+{
+		/* how much a soldier can carry (weight bar width) */
+		maxSoldierLoad = 2000;     //default 1000, ACE 1200
 };
