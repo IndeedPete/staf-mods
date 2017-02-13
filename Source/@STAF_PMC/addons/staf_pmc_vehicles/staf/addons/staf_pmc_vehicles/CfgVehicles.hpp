@@ -23,6 +23,11 @@ class CfgVehicles {
     class C_Offroad_01_F;
     class C_SUV_01_F;
     class B_UAV_01_F;
+    class RHS_M2StaticMG_MiniTripod_WD;
+    class RHS_M2StaticMG_WD;
+    class RHS_MK19_TriPod_WD;
+    class RHS_TOW_TriPod_WD;
+    class ACE_B_SpottingScope;
 
     class STAF_mh6 : B_Heli_Light_01_F {
         author = "STAF";
@@ -262,5 +267,61 @@ class CfgVehicles {
         faction = "STAF_PMC";
         crew = "B_UAV_AI";
         editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_quadcopter.jpg";
+    };
+
+    class STAF_static_HMG : RHS_M2StaticMG_MiniTripod_WD {
+        author = "Moony";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M2HB (M3)";
+        side = 1;
+        faction = "STAF_PMC";
+        crew = "STAF_contractor_mx";
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_Static_HMG.jpg";
+    };
+
+    class STAF_static_HMG_AA : RHS_M2StaticMG_WD {
+        author = "Moony";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M2HB (M3 AA)";
+        side = 1;
+        faction = "STAF_PMC";
+        crew = "STAF_contractor_mx";
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_Static_HMG_AA.jpg";
+    };
+
+    class STAF_static_GMG : RHS_MK19_TriPod_WD {
+        author = "Moony";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Mk. 19 (M3)";
+        side = 1;
+        faction = "STAF_PMC";
+        crew = "STAF_contractor_mx";
+
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_Static_GMG.jpg";
+    };
+
+    class STAF_static_AT : RHS_TOW_TriPod_WD {
+        author = "Moony";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M41A4 TOW";
+        side = 1;
+        faction = "STAF_PMC";
+        crew = "STAF_contractor_mx";
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_Static_AT.jpg";
+    };
+
+    class STAF_static_SS : ACE_B_SpottingScope {
+        author = "Moony";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Spotting Scope";
+        side = 1;
+        faction = "STAF_PMC";
+        crew = "STAF_sharpshooter_gm6";
+        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_Static_SS.jpg";
     };
 };
