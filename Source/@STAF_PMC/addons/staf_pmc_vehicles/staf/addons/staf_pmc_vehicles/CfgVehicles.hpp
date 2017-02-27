@@ -29,6 +29,10 @@ class CfgVehicles {
     class RHS_TOW_TriPod_WD;
     class ACE_B_SpottingScope;
 
+    class C_SUV_01_F_Base : C_SUV_01_F {
+      class EventHandlers;
+    };
+
     class STAF_mh6 : B_Heli_Light_01_F {
         author = "STAF";
         scope = 2;
@@ -234,6 +238,9 @@ class CfgVehicles {
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
         editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_offroad.jpg";
+
+
+        textureList[] = {"Black",1,"Blue",0,"Green",0,"Orange",0,"Red",0,"White",0};
     };
 
     class STAF_offroad_pickup : C_Offroad_01_F {
@@ -245,9 +252,11 @@ class CfgVehicles {
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
         editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_offroad_hmg.jpg";
+
+        textureList[] = {"Red",0,"Beige",0,"White",0,"Blue",0,"Darkred",0,"Bluecustom",1};
     };
 
-    class STAF_suv : C_SUV_01_F {
+    class STAF_suv : C_SUV_01_F_Base {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
@@ -256,6 +265,77 @@ class CfgVehicles {
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
         editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_suv.jpg";
+
+        acceleration = 5;
+        armor = 130;
+        armorStructural = 5;
+        armorGlass = 1.5;
+        armorWheels = 0.75;
+        Maxspeed = 120;
+        textureList[] = {"Red",0,"Black",1,"Gey",0,"Orange",0};
+
+      	class EventHandlers: EventHandlers {
+      		init = "(_this select 0) setMass [4200, 0]";
+      	};
+        class Wheels
+    		{
+    			class LF
+    			{
+    				boneName = "wheel_1_1_damper";
+    				steering = 1;
+    				side = "left";
+    				center = "wheel_1_1_axis";
+    				boundary = "stopa pll";
+    				width = "0.2";
+    				mass = 20;
+    				MOI = 78.625;
+    				dampingRate = 0.5;
+    				maxBrakeTorque = 105000;
+    				maxHandBrakeTorque = 0;
+    				suspTravelDirection[] = {0,-1,0};
+    				suspForceAppPointOffset = "wheel_1_1_axis";
+    				tireForceAppPointOffset = "wheel_1_1_axis";
+    				maxCompression = 0.1;
+    				maxDroop = 0.15;
+    				sprungMass = 1050.0;
+    				springStrength = 40000;
+    				springDamperRate = 5240;
+    				longitudinalStiffnessPerUnitGravity = 100000;
+    				latStiffX = 2.5;
+    				latStiffY = 180.0;
+    				frictionVsSlipGraph[] = {{ 0,1 },{ 0.5,1 },{ 1,1 }};
+    			};
+    			class LR: LF
+    			{
+    				boneName = "wheel_1_2_damper";
+    				steering = 0;
+    				center = "wheel_1_2_axis";
+    				boundary = "stopa zll";
+    				suspForceAppPointOffset = "wheel_1_2_axis";
+    				tireForceAppPointOffset = "wheel_1_2_axis";
+    				maxHandBrakeTorque = 12000;
+    			};
+    			class RF: LF
+    			{
+    				boneName = "wheel_2_1_damper";
+    				center = "wheel_2_1_axis";
+    				boundary = "stopa ppp";
+    				suspForceAppPointOffset = "wheel_2_1_axis";
+    				tireForceAppPointOffset = "wheel_2_1_axis";
+    				steering = 1;
+    				side = "right";
+    			};
+    			class RR: RF
+    			{
+    				boneName = "wheel_2_2_damper";
+    				steering = 0;
+    				center = "wheel_2_2_axis";
+    				boundary = "stopa zpp";
+    				suspForceAppPointOffset = "wheel_2_2_axis";
+    				tireForceAppPointOffset = "wheel_2_2_axis";
+    				maxHandBrakeTorque = 12000;
+    			};
+    		};
     };
 
     class STAF_quadcopter : B_UAV_01_F {
