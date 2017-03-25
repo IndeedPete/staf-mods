@@ -5,6 +5,6 @@ class CfgGlasses
 	class STAF_G_Bandanna_Punisher: G_Bandanna_blk
 	{
 		displayName = "STAF Bandana (Punisher)";
-		hiddenSelectionsTextures[] = {"\STAF_GEAR\txt\headgear_bandmask_punisher_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\headgear_bandmask_punisher_co.paa"};
 	};
 };

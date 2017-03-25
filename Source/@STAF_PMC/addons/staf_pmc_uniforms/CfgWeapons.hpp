@@ -10,12 +10,12 @@ class CfgWeapons {
   class U_I_OfficerUniform;
   class U_I_CombatUniform;
   class U_I_CombatUniform_shortsleeve;
-  
+
   class STAF_U_B_CombatUniform_Norwegian_Desert: U_B_CombatUniform_mcam
   {
   	displayName = "STAF Combat Fatigues (Norwegian, M03 Desert)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_norwegian_desert_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_norwegian_desert_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_norwegian_desert_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_norwegian_desert_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -30,8 +30,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_Norwegian_Desert_vest: U_B_CombatUniform_mcam_vest
   {
   	displayName = "STAF Recon Fatigues (Norwegian, M03 Desert)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_norwegian_desert_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_norwegian_desert_vest_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_norwegian_desert_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_norwegian_desert_vest_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -46,8 +46,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_Norwegian_woodland: U_B_CombatUniform_mcam
   {
   	displayName = "STAF Combat Fatigues (Norwegian, M98 Woodland)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_norwegian_woodland_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_norwegian_woodland_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_norwegian_woodland_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_norwegian_woodland_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -62,8 +62,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_Norwegian_woodland_vest: U_B_CombatUniform_mcam_vest
   {
   	displayName = "STAF Recon Fatigues (Norwegian, M98 Woodland)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_norwegian_woodland_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_norwegian_woodland_vest_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_norwegian_woodland_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_norwegian_woodland_vest_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -78,8 +78,8 @@ class CfgWeapons {
   class STAF_U_BG_Guerilla1_1_Flecktarn_Norwegian: U_BG_Guerilla1_1
   {
   	displayName = "STAF Guerilla Garment (German Flecktarn, Norwegian M98 Woodland)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\c_cloth1_norwegian_co.paa","\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_flecktarn_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_g_guerrilla1_1_flecktarn_norwegian_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\c_cloth1_norwegian_co.paa","\staf_pmc_uniforms\txt\ia_soldier_01_clothing_flecktarn_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_g_guerrilla1_1_flecktarn_norwegian_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -94,8 +94,8 @@ class CfgWeapons {
   class STAF_U_BG_Guerilla1_1_Mcam_Skull: U_BG_Guerilla1_1
   {
   	displayName = "STAF Guerilla Garment (MultiCam, Skull)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\c_cloth1_skull.paa","\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_mcam_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_g_guerrilla1_1_Mcam_Skull_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\c_cloth1_skull.paa","\staf_pmc_uniforms\txt\ia_soldier_01_clothing_mcam_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_g_guerrilla1_1_Mcam_Skull_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -110,8 +110,8 @@ class CfgWeapons {
   class STAF_U_BG_Guerilla1_1_US_Desert_Choc_Chip: U_BG_Guerilla1_1
   {
   	displayName = "STAF Guerilla Garment (US Desert, Choc Chip)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\c_cloth1_Choc_Chip_co.paa","\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_US_Desert_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_g_guerrilla1_1_US_Desert_Choc_Chip_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\c_cloth1_Choc_Chip_co.paa","\staf_pmc_uniforms\txt\ia_soldier_01_clothing_US_Desert_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_g_guerrilla1_1_US_Desert_Choc_Chip_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -126,8 +126,8 @@ class CfgWeapons {
   class STAF_U_BG_Guerilla2_1_Steppentarn: U_BG_Guerilla2_1
   {
   	displayName = "STAF Guerilla Outfit (Steppentarn, Dark)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ig_guerrilla2_1_BW_Tropen_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_g_guerrilla2_1_BW_Tropen_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ig_guerrilla2_1_BW_Tropen_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_g_guerrilla2_1_BW_Tropen_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -142,8 +142,8 @@ class CfgWeapons {
   class STAF_U_BG_Guerilla2_1_Flora_Coyote: U_BG_Guerilla2_1
   {
   	displayName = "STAF Guerilla Outfit (Flora, Coyote)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ig_guerrilla2_1_Flora_Coyote_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_g_guerrilla2_1_BW_Tropen_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ig_guerrilla2_1_Flora_Coyote_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_g_guerrilla2_1_BW_Tropen_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -158,8 +158,8 @@ class CfgWeapons {
   class STAF_U_BG_Guerilla2_1_Choc_Chip: U_BG_Guerilla2_1
   {
   	displayName = "STAF Guerilla Outfit (Choc Chip, Squares)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ig_guerrilla2_1_Choc_Chip_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_g_guerrilla2_1_BW_Tropen_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ig_guerrilla2_1_Choc_Chip_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_g_guerrilla2_1_BW_Tropen_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -174,8 +174,8 @@ class CfgWeapons {
   class STAF_U_BG_Guerrilla_4_1_US_Woodland: U_I_G_resistanceLeader_F
   {
   	displayName = "STAF Guerilla Fatigues (Green, US Woodland)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ig_guerrilla4_1_US_Woodland_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_i_g_resistanceleader_US_Woodland_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ig_guerrilla4_1_US_Woodland_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_i_g_resistanceleader_US_Woodland_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -190,8 +190,8 @@ class CfgWeapons {
   class STAF_U_BG_Guerrilla_4_1_tan_vegetato: U_I_G_resistanceLeader_F
   {
   	displayName = "STAF Guerilla Fatigues (Tan, Vegetato Desert)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ig_guerrilla4_1_tan_vegetato_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_i_g_resistanceleader_tan_vegetato_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ig_guerrilla4_1_tan_vegetato_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_i_g_resistanceleader_tan_vegetato_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -206,8 +206,8 @@ class CfgWeapons {
   class STAF_U_BG_Guerrilla_6_1_ERDL_Black: U_BG_Guerrilla_6_1
   {
   	displayName = "STAF Guerilla Apparel (ERDL, Black)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ig_guerrilla_6_1_ERDL_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_g_guerrilla_6_1_ERDL_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ig_guerrilla_6_1_ERDL_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_g_guerrilla_6_1_ERDL_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -222,8 +222,8 @@ class CfgWeapons {
   class STAF_U_BG_leader_DPM_MARPAT: U_BG_leader
   {
   	displayName = "STAF Guerilla Uniform (British DPM, MARPAT)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\officer_spc_DPM_MARPAT_co.paa","\A3\Characters_F\Civil\Data\c_cloth1_kabeiroi_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_g_ig_leader_DPM_MARPAT_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\officer_spc_DPM_MARPAT_co.paa","\A3\Characters_F\Civil\Data\c_cloth1_kabeiroi_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_g_ig_leader_DPM_MARPAT_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -238,8 +238,8 @@ class CfgWeapons {
   class STAF_U_I_OfficerUniform_Fabulous: U_I_OfficerUniform
   {
   	displayName = "STAF Absolutely Fa!-Bu!-Lous!";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\officer_spc_fabulous_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ir_officer_spc_fabulous_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\officer_spc_fabulous_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_ir_officer_spc_fabulous_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -254,8 +254,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_MCAM_Black: U_B_CombatUniform_mcam
   {
   	displayName = "STAF Combat Fatigues (Multicam Black)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_Black_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Black_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_Black_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Black_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -270,8 +270,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_MCAM_Black_vest: U_B_CombatUniform_mcam_vest
   {
   	displayName = "STAF Recon Fatigues (Multicam Black)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_Black_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Black_vest_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_Black_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Black_vest_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -286,8 +286,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_MCAM_Black_Black: U_B_CombatUniform_mcam
   {
   	displayName = "STAF Combat Fatigues (Multicam Black, Black)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_Black_Black_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Black_Black_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_Black_Black_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Black_Black_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -302,8 +302,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_MCAM_Black_Black_vest: U_B_CombatUniform_mcam_vest
   {
   	displayName = "STAF Recon Fatigues (Multicam Black, Black)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_Black_Black_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Black_Black_vest_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_Black_Black_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Black_Black_vest_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -318,8 +318,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_MCAM: U_B_CombatUniform_mcam
   {
   	displayName = "STAF Combat Fatigues (Multicam)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -334,8 +334,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_MCAM_vest: U_B_CombatUniform_mcam_vest
   {
   	displayName = "STAF Recon Fatigues (Multicam)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_vest_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_vest_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -350,8 +350,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_MCAM_Sage: U_B_CombatUniform_mcam
   {
   	displayName = "STAF Combat Fatigues (Multicam, Sage)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_Sage_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Sage_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_Sage_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Sage_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -366,8 +366,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_MCAM_Sage_vest: U_B_CombatUniform_mcam_vest
   {
   	displayName = "STAF Recon Fatigues (Multicam, Sage)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_Sage_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Sage_vest_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_Sage_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Sage_vest_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -382,8 +382,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_MCAM_Brown: U_B_CombatUniform_mcam
   {
   	displayName = "STAF Combat Fatigues (Multicam, Brown)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_Brown_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Brown_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_Brown_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Brown_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -398,8 +398,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_MCAM_Brown_vest: U_B_CombatUniform_mcam_vest
   {
   	displayName = "STAF Recon Fatigues (Multicam, Brown)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_Brown_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Brown_vest_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_Brown_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Brown_vest_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -414,8 +414,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_ATACS: U_B_CombatUniform_mcam
   {
   	displayName = "STAF Combat Fatigues (ATACS)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_ATACS_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_ATACS_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_ATACS_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_ATACS_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -430,8 +430,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_ATACS_vest: U_B_CombatUniform_mcam_vest
   {
   	displayName = "STAF Recon Fatigues (ATACS)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_ATACS_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_ATACS_vest_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_ATACS_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_ATACS_vest_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -446,8 +446,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_ATACS_Green: U_B_CombatUniform_mcam
   {
   	displayName = "STAF Combat Fatigues (ATACS, Green)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_ATACS_Green_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_ATACS_Green_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_ATACS_Green_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_ATACS_Green_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -462,8 +462,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_ATACS_Green_vest: U_B_CombatUniform_mcam_vest
   {
   	displayName = "STAF Recon Fatigues (ATACS, Green)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_ATACS_Green_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_ATACS_Green_vest_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_ATACS_Green_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_ATACS_Green_vest_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -478,8 +478,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_MCAM_Arid: U_B_CombatUniform_mcam
   {
   	displayName = "STAF Combat Fatigues (Multicam Arid)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_Arid_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Arid_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_Arid_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Arid_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -494,8 +494,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_MCAM_Arid_vest: U_B_CombatUniform_mcam_vest
   {
   	displayName = "STAF Recon Fatigues (Multicam Arid)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_Arid_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Arid_vest_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_Arid_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Arid_vest_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -510,8 +510,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_MCAM_Arid_Khaki: U_B_CombatUniform_mcam
   {
   	displayName = "STAF Combat Fatigues (Multicam Arid, Khaki)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_Arid_Khaki_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Arid_Khaki_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_Arid_Khaki_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Arid_Khaki_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -526,8 +526,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_MCAM_Arid_Khaki_vest: U_B_CombatUniform_mcam_vest
   {
   	displayName = "STAF Recon Fatigues (Multicam Arid, Khaki)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_Arid_Khaki_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Arid_Khaki_vest_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_Arid_Khaki_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Arid_Khaki_vest_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -542,8 +542,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_MCAM_Arid_Black: U_B_CombatUniform_mcam
   {
   	displayName = "STAF Combat Fatigues (Multicam Arid, Black)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_Arid_Black_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Arid_Black_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_Arid_Black_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Arid_Black_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -558,8 +558,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_MCAM_Arid_Black_vest: U_B_CombatUniform_mcam_vest
   {
   	displayName = "STAF Recon Fatigues (Multicam Arid, Black)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_Arid_Black_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Arid_Black_vest_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_Arid_Black_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Arid_Black_vest_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -574,8 +574,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_ATACS_EF_Snow: U_B_CombatUniform_mcam
   {
   	displayName = "STAF Combat Fatigues (ATACS Winter, EF Snow)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_ATACS_EF_Snow_Wolf_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_ATACS_EFSnow_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_ATACS_EF_Snow_Wolf_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_ATACS_EFSnow_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -590,8 +590,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_ATACS_EF_Snow_vest: U_B_CombatUniform_mcam_vest
   {
   	displayName = "STAF Recon Fatigues (ATACS Winter, EF Snow)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_ATACS_EF_Snow_Wolf_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_ATACS_EFSnow_vest_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_ATACS_EF_Snow_Wolf_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_ATACS_EFSnow_vest_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -606,8 +606,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_ATACS_Winter: U_B_CombatUniform_mcam
   {
   	displayName = "STAF Combat Fatigues (ATACS Winter)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_ATACS_Wolf_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_ATACS_winter_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_ATACS_Wolf_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_ATACS_winter_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -622,8 +622,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_ATACS_Winter_vest: U_B_CombatUniform_mcam_vest
   {
   	displayName = "STAF Recon Fatigues (ATACS Winter)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_ATACS_Wolf_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_ATACS_winter_vest_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_ATACS_Wolf_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_ATACS_winter_vest_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -638,8 +638,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_EF_Snow_ATACS: U_B_CombatUniform_mcam
   {
   	displayName = "STAF Combat Fatigues (EF Snow, ATACS Winter)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_EF_Snow_ATACS_Wolf_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_EFSnow_ATACS_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_EF_Snow_ATACS_Wolf_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_EFSnow_ATACS_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -654,8 +654,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_EF_Snow_ATACS_vest: U_B_CombatUniform_mcam_vest
   {
   	displayName = "STAF Recon Fatigues (EF Snow, ATACS Winter)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_EF_Snow_ATACS_Wolf_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_EFSnow_ATACS_vest_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_EF_Snow_ATACS_Wolf_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_EFSnow_ATACS_vest_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -670,8 +670,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_DPM_Snow: U_B_CombatUniform_mcam
   {
   	displayName = "STAF Combat Fatigues (British DPM Snow)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_DPM_Snow_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_DPM_Snow_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_DPM_Snow_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_DPM_Snow_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -686,8 +686,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_DPM_Snow_vest: U_B_CombatUniform_mcam_vest
   {
   	displayName = "STAF Recon Fatigues (British DPM Snow)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_DPM_Snow_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_DPM_Snow_vest_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_DPM_Snow_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_DPM_Snow_vest_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -702,8 +702,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_MCAM_Arctic: U_B_CombatUniform_mcam
   {
   	displayName = "STAF Combat Fatigues (Multicam Alpine)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_Arctic_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Arctic_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_Arctic_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Arctic_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -718,8 +718,8 @@ class CfgWeapons {
   class STAF_U_B_CombatUniform_MCAM_Arctic_vest: U_B_CombatUniform_mcam_vest
   {
   	displayName = "STAF Recon Fatigues (Multicam Alpine)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_Arctic_co.paa"};
-  	picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Arctic_vest_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_Arctic_co.paa"};
+  	picture = "\staf_pmc_uniforms\arsenal\icon_u_b_combatuniform_MCAM_Arctic_vest_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -735,8 +735,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (DPM Desert)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_DPM_Desert_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_DPM_Desert_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -749,8 +749,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (DPM Desert, Rolled-up)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_DPM_Desert_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_DPM_Desert_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -763,8 +763,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (DPM Desert, Sand)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_DPM_Desert_Sand_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_DPM_Desert_Sand_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -777,8 +777,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (DPM Desert, Sand, Rolled-up)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_DPM_Desert_Sand_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_DPM_Desert_Sand_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -791,8 +791,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (M81)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_M81_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_M81_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -805,8 +805,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (M81, Rolled-up)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_M81_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_M81_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -819,8 +819,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (M81, Black)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_M81_Black_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_M81_Black_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -833,8 +833,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (M81, Black, Rolled-up)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_M81_Black_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_M81_Black_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -847,8 +847,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (Choc Chip)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_choc_chip_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_choc_chip_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -861,8 +861,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (Choc Chip, Rolled-up)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_choc_chip_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_choc_chip_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -875,8 +875,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (Choc Chip, Brown)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_choc_chip_brown_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_choc_chip_brown_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -889,8 +889,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (Choc Chip, Brown, Rolled-up)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_choc_chip_brown_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_choc_chip_brown_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -903,8 +903,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (Coffee Stain)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_coffee_stain_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_coffee_stain_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -917,8 +917,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (Coffee Stain, Rolled-up)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_coffee_stain_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_coffee_stain_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -931,8 +931,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (Coffee Stain, Brown)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_coffee_stain_brown_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_coffee_stain_brown_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -945,8 +945,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (Coffee Stain, Brown, Rolled-up)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_coffee_stain_brown_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_coffee_stain_brown_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -959,8 +959,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (Tiger Stripe)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_tiger_stripe_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_tiger_stripe_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
   	scope = 1;
 
   	class ItemInfo: UniformItem
@@ -974,8 +974,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (Tiger Stripe, Rolled-up)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_tiger_stripe_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_tiger_stripe_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
   	scope = 1;
 
   	class ItemInfo: UniformItem
@@ -989,8 +989,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (Tiger Stripe, Black)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_tiger_stripe_Black_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_tiger_stripe_Black_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
   	scope = 1;
 
   	class ItemInfo: UniformItem
@@ -1004,8 +1004,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (Tiger Stripe, Black, Rolled-up)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_tiger_stripe_Black_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_tiger_stripe_Black_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
   	scope = 1;
 
   	class ItemInfo: UniformItem
@@ -1019,8 +1019,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (TTsKO Summer)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_TTsKO_summer_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_TTsKO_summer_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -1033,8 +1033,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (TTsKO Summer, Rolled-up)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_TTsKO_summer_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_TTsKO_summer_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -1047,8 +1047,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (TTsKO Summer, Green)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_TTsKO_summer_Green_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_TTsKO_summer_Green_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -1061,8 +1061,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (TTsKO Summer, Green, Rolled-up)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_TTsKO_summer_Green_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_TTsKO_summer_Green_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -1075,8 +1075,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (Choc Chip, Coffee Stain)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_choc_chip_coffee_stain_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_choc_chip_coffee_stain_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -1089,8 +1089,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (Choc Chip, Coffee Stain, Rolled-up)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_choc_chip_coffee_stain_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_choc_chip_coffee_stain_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -1103,8 +1103,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (Coffee Stain, Choc Chip)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_coffee_stain_choc_chip_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_coffee_stain_choc_chip_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -1117,8 +1117,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (Coffee Stain, Choc Chip, Rolled-up)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_coffee_stain_choc_chip_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_coffee_stain_choc_chip_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -1131,8 +1131,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (M81, TTsKO Summer)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_m81_TTsKO_Summer_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_m81_TTsKO_Summer_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -1145,8 +1145,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (M81, TTsKO Summer, Rolled-up)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_m81_TTsKO_Summer_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_m81_TTsKO_Summer_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -1159,8 +1159,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (TTsKO Summer, M81)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_TTsKO_Summer_m81_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_TTsKO_Summer_m81_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -1173,8 +1173,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (TTsKO Summer, M81, Rolled-up)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_TTsKO_Summer_m81_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_TTsKO_Summer_m81_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -1187,8 +1187,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (M81, Tiger Stripe)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_m81_tiger_stripe_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_m81_tiger_stripe_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
   	scope = 1;
 
   	class ItemInfo: UniformItem
@@ -1202,8 +1202,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (M81, Tiger Stripe, Rolled-up)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_m81_tiger_stripe_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_m81_tiger_stripe_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
   	scope = 1;
 
   	class ItemInfo: UniformItem
@@ -1217,8 +1217,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (Tiger Stripe, M81)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_tiger_stripe_m81_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_tiger_stripe_m81_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
   	scope = 1;
 
   	class ItemInfo: UniformItem
@@ -1232,8 +1232,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (Tiger Stripe, M81, Rolled-up)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_tiger_stripe_m81_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_tiger_stripe_m81_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
   	scope = 1;
 
   	class ItemInfo: UniformItem
@@ -1247,8 +1247,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (MARPAT Jungle)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Jungle_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Jungle_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -1261,8 +1261,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (MARPAT Jungle, Rolled-up)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Jungle_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Jungle_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -1275,8 +1275,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (MARPAT Jungle, Green)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Jungle_Green_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Jungle_Green_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -1289,8 +1289,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (MARPAT Jungle, Green, Rolled-up)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Jungle_Green_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Jungle_Green_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -1303,8 +1303,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (M81, MARPAT Jungle)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_m81_MARPAT_Jungle_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_m81_MARPAT_Jungle_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -1317,8 +1317,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (M81, MARPAT Jungle, Rolled-up)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_m81_MARPAT_Jungle_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_m81_MARPAT_Jungle_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -1331,8 +1331,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (MARPAT Jungle, M81)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Jungle_m81_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Jungle_m81_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -1345,8 +1345,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (MARPAT Jungle, M81, Rolled-up)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Jungle_m81_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Jungle_m81_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -1359,8 +1359,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (MARPAT Altis)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Altis_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Altis_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -1373,8 +1373,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (MARPAT Altis, Rolled-up)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Altis_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Altis_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -1387,8 +1387,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (MARPAT Altis, Sage)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Altis_Sage_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Altis_Sage_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -1401,8 +1401,8 @@ class CfgWeapons {
   {
   	author = "IndeedPete";
   	displayName = "STAF Light Combat Fatigues (MARPAT Altis, Sage, Rolled-up)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Altis_Sage_co.paa"};
-  	//picture = "\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Altis_Sage_co.paa"};
+  	//picture = "\staf_pmc_uniforms\arsenal\icon_u_ia_soldier_01_clothing_rolled_olive_ca.paa";
 
   	class ItemInfo: UniformItem
   	{

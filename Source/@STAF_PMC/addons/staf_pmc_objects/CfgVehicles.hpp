@@ -9,13 +9,13 @@ class CfgVehicles {
 	class STAF_MapBoard_CoC_F: Land_MapBoard_F
 	{
 		displayName = "STAF Whiteboard (Chain of Command)";
-		hiddenSelectionsTextures[] = {"\staf_pmc_main\staf\addons\staf_pmc_main\txt\WB_Chain_of_Command.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_main\txt\WB_Chain_of_Command.paa"};
 	};
 
 	class STAF_MapBoard_MHQ_F: Land_MapBoard_F
 	{
 		displayName = "STAF Whiteboard (MHQ)";
-		hiddenSelectionsTextures[] = {"\staf_pmc_main\staf\addons\staf_pmc_main\txt\WB_MHQ.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_main\txt\WB_MHQ.paa"};
 	};
 
 	class STAF_SupplyBox: B_supplyCrate_F

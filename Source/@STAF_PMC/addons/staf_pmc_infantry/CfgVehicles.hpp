@@ -22,7 +22,7 @@ class CfgVehicles {
         displayName = "Contractor (G36)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_contractor_g36.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_g36.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_GS_BP_BB";
@@ -44,7 +44,7 @@ class CfgVehicles {
         displayName = "Contractor (SCAR)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_contractor_scar.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_scar.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_GS_BP_BB";
@@ -66,7 +66,7 @@ class CfgVehicles {
         displayName = "Contractor (Mk18)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_contractor_mk18.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_mk18.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_GS_BP_BB";
@@ -88,7 +88,7 @@ class CfgVehicles {
         displayName = "Contractor (MX)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_contractor_mx.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_mx.jpg";
 
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
@@ -111,7 +111,7 @@ class CfgVehicles {
         displayName = "Contractor (G36) (GL)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_contractor_g36_GL.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_g36_GL.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Combat_LS_BS_GP_BB";
@@ -133,7 +133,7 @@ class CfgVehicles {
         displayName = "Contractor (SCAR) (GL)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_contractor_scar_GL.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_scar_GL.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Combat_LS_BS_GP_BB";
@@ -155,7 +155,7 @@ class CfgVehicles {
         displayName = "Contractor (Mk18) (GL)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_contractor_mk18_GL.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_mk18_GL.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Combat_LS_BS_GP_BB";
@@ -177,7 +177,7 @@ class CfgVehicles {
         displayName = "Contractor (MX) (GL)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_contractor_mx_GL.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_mx_GL.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Combat_LS_BS_GP_BB";
@@ -199,7 +199,7 @@ class CfgVehicles {
         displayName = "Contractor (G36) (AT)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_contractor_g36_AT.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_g36_AT.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Combat_LS_TS_BP_BB";
@@ -221,7 +221,7 @@ class CfgVehicles {
         displayName = "Contractor (SCAR) (AT)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_contractor_scar_AT.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_scar_AT.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Combat_LS_TS_BP_BB";
@@ -243,7 +243,7 @@ class CfgVehicles {
         displayName = "Contractor (Mk18) (AT)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_contractor_mk18_AT.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_mk18_AT.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Combat_LS_TS_BP_BB";
@@ -265,7 +265,7 @@ class CfgVehicles {
         displayName = "Contractor (MX) (AT)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_contractor_mx_AT.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_mx_AT.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Combat_LS_TS_BP_BB";
@@ -287,7 +287,7 @@ class CfgVehicles {
         displayName = "Field Medic (G36)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_medic_g36.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_medic_g36.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_ES_BP_BB";
@@ -309,7 +309,7 @@ class CfgVehicles {
         displayName = "Field medic (SCAR)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_medic_scar.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_medic_scar.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_ES_BP_BB";
@@ -331,7 +331,7 @@ class CfgVehicles {
         displayName = "Field Medic (Mk18)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_medic_mk18.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_medic_mk18.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_ES_BP_BB";
@@ -353,7 +353,7 @@ class CfgVehicles {
         displayName = "Field Medic (MX)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_medic_mx.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_medic_mx.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_ES_BP_BB";
@@ -375,7 +375,7 @@ class CfgVehicles {
         displayName = "Marksman (Spar-17)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_marksman_spar17.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_marksman_spar17.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Combat_RS_BS_TP_BB";
@@ -397,7 +397,7 @@ class CfgVehicles {
         displayName = "Marksman (Ak-12)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_marksman_ak12.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_marksman_ak12.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Combat_RS_BS_TP_BB";
@@ -419,7 +419,7 @@ class CfgVehicles {
         displayName = "Marksman (Emr-1)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_marksman_emr1.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_marksman_emr1.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Combat_RS_BS_TP_BB";
@@ -441,7 +441,7 @@ class CfgVehicles {
         displayName = "Machine Gunner (M249)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_mg_m249.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_mg_m249.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_OS_TP_TB";
@@ -463,7 +463,7 @@ class CfgVehicles {
         displayName = "Machine Gunner (Negev)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_mg_negev.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_mg_negev.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_OS_TP_TB";
@@ -485,7 +485,7 @@ class CfgVehicles {
         displayName = "Sharpshooter (Gm6)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_sharpshooter_gm6.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_sharpshooter_gm6.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_OS_EP_TB";
@@ -507,7 +507,7 @@ class CfgVehicles {
         displayName = "Sharpshooter (Mar-10)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_sharpshooter_mar10.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_sharpshooter_mar10.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_OS_EP_TB";
@@ -529,7 +529,7 @@ class CfgVehicles {
         displayName = "Sharpshooter (M200)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_sharpshooter_m200.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_sharpshooter_m200.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_OS_EP_TB";
@@ -551,7 +551,7 @@ class CfgVehicles {
         displayName = "Team Leader (G36)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_teamleader_g36.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_teamleader_g36.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_BS_BP_BB";
@@ -573,7 +573,7 @@ class CfgVehicles {
         displayName = "Team Leader (SCAR)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_teamleader_scar.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_teamleader_scar.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_BS_BP_BB";
@@ -595,7 +595,7 @@ class CfgVehicles {
         displayName = "Team Leader (Mk18)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_teamleader_mk18.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_teamleader_mk18.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_BS_BP_BB";
@@ -617,7 +617,7 @@ class CfgVehicles {
         displayName = "Team Leader (MX)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_teamleader_mx.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_teamleader_mx.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_BS_BP_BB";
@@ -639,7 +639,7 @@ class CfgVehicles {
         displayName = "Explosive Specialist (G36)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_exp_g36.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_exp_g36.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Combat_LS_CLRS_TP_BB";
@@ -661,7 +661,7 @@ class CfgVehicles {
         displayName = "Explosive Specialist (SCAR)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_exp_scar.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_exp_scar.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Combat_LS_CLRS_TP_BB";
@@ -683,7 +683,7 @@ class CfgVehicles {
         displayName = "Explosive Specialist (Mk18)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_exp_mk18.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_exp_mk18.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Combat_LS_CLRS_TP_BB";
@@ -705,7 +705,7 @@ class CfgVehicles {
         displayName = "Explosive Specialist (MX)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_exp_mx.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_exp_mx.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Combat_LS_CLRS_TP_BB";
@@ -727,7 +727,7 @@ class CfgVehicles {
         displayName = "UAV Specialist (G36)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_uav_g36.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_uav_g36.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Combat_RS_BS_DGP_BB";
@@ -749,7 +749,7 @@ class CfgVehicles {
         displayName = "UAV Specialist (SCAR)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_uav_scar.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_uav_scar.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Combat_RS_BS_DGP_BB";
@@ -771,7 +771,7 @@ class CfgVehicles {
         displayName = "UAV Specialist (Mk18)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_uav_mk18.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_uav_mk18.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Combat_RS_BS_DGP_BB";
@@ -793,7 +793,7 @@ class CfgVehicles {
         displayName = "UAV Specialist (MX)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_uav_mx.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_uav_mx.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Combat_RS_BS_DGP_BB";
@@ -815,7 +815,7 @@ class CfgVehicles {
         displayName = "Engineer (G36)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_engineer_g36.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_engineer_g36.jpg";
 
         identityTypes[] = { "Head_NATO" , "LanguageENG_F" };
         uniformClass = "MC_GS_Camo_SS";
@@ -837,7 +837,7 @@ class CfgVehicles {
         displayName = "Engineer (SCAR)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_engineer_scar.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_engineer_scar.jpg";
 
         identityTypes[] = { "Head_NATO" , "LanguageENG_F" };
         uniformClass = "MC_GS_Camo_SS";
@@ -859,7 +859,7 @@ class CfgVehicles {
         displayName = "Engineer (MK18)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_engineer_mk18.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_engineer_mk18.jpg";
 
         identityTypes[] = { "Head_NATO" , "LanguageENG_F" };
         uniformClass = "MC_GS_Camo_SS";
@@ -881,7 +881,7 @@ class CfgVehicles {
         displayName = "Engineer (MX)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_engineer_mx.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_engineer_mx.jpg";
 
         identityTypes[] = { "Head_NATO" , "LanguageENG_F" };
         uniformClass = "MC_GS_Camo_SS";
@@ -903,7 +903,7 @@ class CfgVehicles {
         displayName = "Diver (G36)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_diver_g36.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_diver_g36.jpg";
 
         identityTypes[] = { "Head_NATO" , "LanguageENG_F"};
         uniformClass = "U_B_survival_uniform";
@@ -925,7 +925,7 @@ class CfgVehicles {
         displayName = "Diver (SCAR)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_diver_scar.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_diver_scar.jpg";
 
         identityTypes[] = { "Head_NATO" , "LanguageENG_F"};
         uniformClass = "U_B_survival_uniform";
@@ -947,7 +947,7 @@ class CfgVehicles {
         displayName = "Diver (MK18)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_diver_mk18.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_diver_mk18.jpg";
 
         identityTypes[] = { "Head_NATO" , "LanguageENG_F"};
         uniformClass = "U_B_survival_uniform";
@@ -969,7 +969,7 @@ class CfgVehicles {
         displayName = "Diver (MX)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_diver_g36.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_diver_g36.jpg";
 
         identityTypes[] = { "Head_NATO" , "LanguageENG_F"};
         uniformClass = "U_B_survival_uniform";
@@ -991,7 +991,7 @@ class CfgVehicles {
         displayName = "CBRN Unit (G36) (MTP)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_cbrn_mtp_g36.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_cbrn_mtp_g36.jpg";
 
         identityTypes[] = { "skn_m50_gas_mask_hood", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "skn_u_nbc_bluf_mtp";
@@ -1013,7 +1013,7 @@ class CfgVehicles {
         displayName = "CBRN Unit (SCAR) (MTP)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_cbrn_mtp_scar.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_cbrn_mtp_scar.jpg";
 
         identityTypes[] = { "skn_m50_gas_mask_hood", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "skn_u_nbc_bluf_mtp";
@@ -1035,7 +1035,7 @@ class CfgVehicles {
         displayName = "CBRN Unit (Mk18) (MTP)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_cbrn_mtp_mk18.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_cbrn_mtp_mk18.jpg";
 
         identityTypes[] = { "skn_m50_gas_mask_hood", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "skn_u_nbc_bluf_mtp";
@@ -1057,7 +1057,7 @@ class CfgVehicles {
         displayName = "CBRN Unit (MX) (MTP)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_cbrn_mtp_mx.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_cbrn_mtp_mx.jpg";
 
 
         identityTypes[] = { "skn_m50_gas_mask_hood", "Head_NATO" , "LanguageENG_F"};
@@ -1080,7 +1080,7 @@ class CfgVehicles {
         displayName = "CBRN Unit (G36) (Woodland)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_cbrn_wd_g36.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_cbrn_wd_g36.jpg";
 
         identityTypes[] = { "skn_m50_gas_mask_hood_wd", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "skn_u_nbc_bluf_wd";
@@ -1102,7 +1102,7 @@ class CfgVehicles {
         displayName = "CBRN Unit (SCAR) (Woodland)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_cbrn_wd_scar.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_cbrn_wd_scar.jpg";
 
         identityTypes[] = { "skn_m50_gas_mask_hood_wd", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "skn_u_nbc_bluf_wd";
@@ -1124,7 +1124,7 @@ class CfgVehicles {
         displayName = "CBRN Unit (Mk18) (Woodland)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_cbrn_wd_mk18.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_cbrn_wd_mk18.jpg";
 
         identityTypes[] = { "skn_m50_gas_mask_hood_wd", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "skn_u_nbc_bluf_wd";
@@ -1146,7 +1146,7 @@ class CfgVehicles {
         displayName = "CBRN Unit (MX) (Woodland)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_cbrn_wd_mx.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_cbrn_wd_mx.jpg";
 
 
         identityTypes[] = { "skn_m50_gas_mask_hood_wd", "Head_NATO" , "LanguageENG_F"};
@@ -1169,7 +1169,7 @@ class CfgVehicles {
         displayName = "Bodyguard (MP5)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_bodyguard_mp5.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_bodyguard_mp5.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "U_Marshal";
@@ -1191,7 +1191,7 @@ class CfgVehicles {
         displayName = "Bodyguard (P90)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_bodyguard_p90.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_bodyguard_p90.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "U_Marshal";
@@ -1213,7 +1213,7 @@ class CfgVehicles {
         displayName = "Helicopter Pilot";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_helipilot.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_helipilot.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_OS_EP_TB";
@@ -1235,7 +1235,7 @@ class CfgVehicles {
         displayName = "Helicopter Crew";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_copilot.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_copilot.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_OS_EP_TB";
@@ -1257,7 +1257,7 @@ class CfgVehicles {
         displayName = "Helicopter Pilot (Heavy)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_helipilot_heavy.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_helipilot_heavy.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "MCB_Camo_Cyre_TS";
@@ -1279,7 +1279,7 @@ class CfgVehicles {
         displayName = "Helicopter Crew (Heavy)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_copilot_heavy.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_copilot_heavy.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "MCB_Camo_Cyre_TS";
@@ -1301,7 +1301,7 @@ class CfgVehicles {
         displayName = "Pilot";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_pilot.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_pilot.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "U_Marshal";
@@ -1323,7 +1323,7 @@ class CfgVehicles {
         displayName = "Boss";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_boss.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_boss.jpg";
         editorSubcategory = "EdSubcat_vip";
         genericNames = "STAF_VIPNames";
 
@@ -1347,7 +1347,7 @@ class CfgVehicles {
         displayName = "Client (American)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_client_american.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_client_american.jpg";
         editorSubcategory = "EdSubcat_client";
 
         identityTypes[] = { "NoGlasses" , "LanguageENG_F" ,"Head_NATO"};
@@ -1370,7 +1370,7 @@ class CfgVehicles {
         displayName = "Client (British)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_client_british.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_client_british.jpg";
         editorSubcategory = "EdSubcat_client";
 
         identityTypes[] = {"NoGlasses", "Head_Euro" , "LanguageENGB_F" };
@@ -1393,7 +1393,7 @@ class CfgVehicles {
         displayName = "Client (Chinese)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_client_chinese.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_client_chinese.jpg";
         editorSubcategory = "EdSubcat_client";
 
         identityTypes[] = { "Head_Asian" , "LanguageCHI_F" };
@@ -1416,7 +1416,7 @@ class CfgVehicles {
         displayName = "Client (African)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_client_african.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_client_african.jpg";
         editorSubcategory = "EdSubcat_client";
 
         identityTypes[] = {"NoGlasses", "Head_African" , "LanguageENGFRE_F" };
@@ -1439,7 +1439,7 @@ class CfgVehicles {
         displayName = "Client (Greek)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_client_greek.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_client_greek.jpg";
         editorSubcategory = "EdSubcat_client";
 
         identityTypes[] = {"NoGlasses", "Head_Greek" , "LanguageGRE_F" };
@@ -1462,7 +1462,7 @@ class CfgVehicles {
         displayName = "Client (Scientist)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_client_scientist.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_client_scientist.jpg";
         editorSubcategory = "EdSubcat_client";
 
         identityTypes[] = {"NoGlasses", "Head_Euro" , "LanguageENGB_F" };
@@ -1485,7 +1485,7 @@ class CfgVehicles {
         displayName = "Client (UN)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\staf\addons\staf_pmc_infantry\eden\STAF_client_un.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_client_un.jpg";
         editorSubcategory = "EdSubcat_client";
 
         identityTypes[] = {"NoGlasses", "Head_Euro" , "LanguageENGFRE_F" };

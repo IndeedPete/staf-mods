@@ -3,7 +3,7 @@ class CfgFactionClasses {
         displayName = "Security Tactics and Assault Force";
         side = 1;
         flag = "";
-        icon = "\staf_pmc_main\staf\addons\staf_pmc_main\icon\staf_iconsmall.paa";
+        icon = "\staf_pmc_main\icon\staf_iconsmall.paa";
         priority = 1;
     };
 };

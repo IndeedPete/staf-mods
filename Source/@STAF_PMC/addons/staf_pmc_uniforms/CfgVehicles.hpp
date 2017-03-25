@@ -4,7 +4,7 @@ class CfgVehicles {
 	class STAF_Dummy_Norwegian_Desert: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_norwegian_desert_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_norwegian_desert_co.paa"};
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_Norwegian_Desert";
@@ -19,7 +19,7 @@ class CfgVehicles {
 	class STAF_Dummy_Norwegian_woodland: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_norwegian_woodland_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_norwegian_woodland_co.paa"};
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_Norwegian_woodland";
@@ -34,7 +34,7 @@ class CfgVehicles {
 	class STAF_Dummy_Guerilla1_1_Flecktarn_Norwegian: B_Soldier_F
 	{
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\c_cloth1_norwegian_co.paa","\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_flecktarn_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\c_cloth1_norwegian_co.paa","\staf_pmc_uniforms\txt\ia_soldier_01_clothing_flecktarn_co.paa"};
 		model = "\A3\characters_F_gamma\Guerrilla\ig_guerrilla1_1.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_BG_Guerilla1_1_Flecktarn_Norwegian";
@@ -43,7 +43,7 @@ class CfgVehicles {
 	class STAF_Dummy_Guerilla1_1_Mcam_Skull: B_Soldier_F
 	{
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\c_cloth1_skull.paa","\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_mcam_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\c_cloth1_skull.paa","\staf_pmc_uniforms\txt\ia_soldier_01_clothing_mcam_co.paa"};
 		model = "\A3\characters_F_gamma\Guerrilla\ig_guerrilla1_1.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_BG_Guerilla1_1_Mcam_Skull";
@@ -52,7 +52,7 @@ class CfgVehicles {
 	class STAF_Dummy_Guerilla1_1_US_Desert_Choc_Chip: B_Soldier_F
 	{
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\c_cloth1_Choc_Chip_co.paa","\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_US_Desert_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\c_cloth1_Choc_Chip_co.paa","\staf_pmc_uniforms\txt\ia_soldier_01_clothing_US_Desert_co.paa"};
 		model = "\A3\characters_F_gamma\Guerrilla\ig_guerrilla1_1.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_BG_Guerilla1_1_US_Desert_Choc_Chip";
@@ -61,7 +61,7 @@ class CfgVehicles {
 	class STAF_Dummy_Guerilla2_1_Steppentarn: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ig_guerrilla2_1_BW_Tropen_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ig_guerrilla2_1_BW_Tropen_co.paa"};
 		model = "\A3\characters_F_gamma\Guerrilla\ig_guerrilla2_1.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_BG_Guerilla2_1_Steppentarn";
@@ -70,7 +70,7 @@ class CfgVehicles {
 	class STAF_Dummy_Guerilla2_1_Flora_Coyote: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ig_guerrilla2_1_Flora_Coyote_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ig_guerrilla2_1_Flora_Coyote_co.paa"};
 		model = "\A3\characters_F_gamma\Guerrilla\ig_guerrilla2_1.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_BG_Guerilla2_1_Flora_Coyote";
@@ -79,7 +79,7 @@ class CfgVehicles {
 	class STAF_Dummy_Guerilla2_1_Choc_Chip: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ig_guerrilla2_1_Choc_Chip_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ig_guerrilla2_1_Choc_Chip_co.paa"};
 		model = "\A3\characters_F_gamma\Guerrilla\ig_guerrilla2_1.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_BG_Guerilla2_1_Choc_Chip";
@@ -88,7 +88,7 @@ class CfgVehicles {
 	class STAF_Dummy_Guerrilla_4_1_US_Woodland: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ig_guerrilla4_1_US_Woodland_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ig_guerrilla4_1_US_Woodland_co.paa"};
 		model = "\A3\Characters_F_EPB\Guerrilla\ig_guerrilla4_1.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_BG_Guerrilla_4_1_US_Woodland";
@@ -97,7 +97,7 @@ class CfgVehicles {
 	class STAF_Dummy_Guerrilla_4_1_tan_vegetato: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ig_guerrilla4_1_tan_vegetato_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ig_guerrilla4_1_tan_vegetato_co.paa"};
 		model = "\A3\Characters_F_EPB\Guerrilla\ig_guerrilla4_1.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_BG_Guerrilla_4_1_tan_vegetato";
@@ -106,7 +106,7 @@ class CfgVehicles {
 	class STAF_Dummy_Guerrilla_6_1_ERDL_Black: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ig_guerrilla_6_1_ERDL_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ig_guerrilla_6_1_ERDL_co.paa"};
 		model = "\A3\Characters_F_Bootcamp\Guerrilla\ig_guerrilla_6_1.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_BG_Guerrilla_6_1_ERDL_Black";
@@ -115,7 +115,7 @@ class CfgVehicles {
 	class STAF_Dummy_leader_DPM_MARPAT: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo1","Camo2","insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\officer_spc_DPM_MARPAT_co.paa","\A3\Characters_F\Civil\Data\c_cloth1_kabeiroi_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\officer_spc_DPM_MARPAT_co.paa","\A3\Characters_F\Civil\Data\c_cloth1_kabeiroi_co.paa"};
 		model = "\A3\characters_F_gamma\Guerrilla\ig_leader.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_BG_leader_DPM_MARPAT";
@@ -124,7 +124,7 @@ class CfgVehicles {
 	class STAF_Dummy_OfficerUniform_Fabulous: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo1","Camo2","insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\officer_spc_fabulous_co.paa","\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_fabulous_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\officer_spc_fabulous_co.paa","\staf_pmc_uniforms\txt\ia_soldier_01_clothing_fabulous_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_officer.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_I_OfficerUniform_Fabulous";
@@ -133,7 +133,7 @@ class CfgVehicles {
 	class STAF_Dummy_MCAM_Black: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_Black_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_Black_co.paa"};
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_MCAM_Black";
@@ -148,7 +148,7 @@ class CfgVehicles {
 	class STAF_Dummy_MCAM_Black_Black: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_Black_Black_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_Black_Black_co.paa"};
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_MCAM_Black_Black";
@@ -163,7 +163,7 @@ class CfgVehicles {
 	class STAF_Dummy_MCAM: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_co.paa"};
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_MCAM";
@@ -178,7 +178,7 @@ class CfgVehicles {
 	class STAF_Dummy_MCAM_Sage: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_Sage_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_Sage_co.paa"};
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_MCAM_Sage";
@@ -193,7 +193,7 @@ class CfgVehicles {
 	class STAF_Dummy_MCAM_Brown: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_Brown_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_Brown_co.paa"};
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_MCAM_Brown";
@@ -208,7 +208,7 @@ class CfgVehicles {
 	class STAF_Dummy_ATACS: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_ATACS_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_ATACS_co.paa"};
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_ATACS";
@@ -223,7 +223,7 @@ class CfgVehicles {
 	class STAF_Dummy_ATACS_Green: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_ATACS_Green_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_ATACS_Green_co.paa"};
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_ATACS_Green";
@@ -238,7 +238,7 @@ class CfgVehicles {
 	class STAF_Dummy_MCAM_Arid: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_Arid_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_Arid_co.paa"};
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_MCAM_Arid";
@@ -253,7 +253,7 @@ class CfgVehicles {
 	class STAF_Dummy_MCAM_Arid_Khaki: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_Arid_Khaki_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_Arid_Khaki_co.paa"};
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_MCAM_Arid_Khaki";
@@ -268,7 +268,7 @@ class CfgVehicles {
 	class STAF_Dummy_MCAM_Arid_Black: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_Arid_Black_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_Arid_Black_co.paa"};
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_MCAM_Arid_Black";
@@ -283,7 +283,7 @@ class CfgVehicles {
 	class STAF_Dummy_ATACS_EF_Snow: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_ATACS_EF_Snow_Wolf_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_ATACS_EF_Snow_Wolf_co.paa"};
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_ATACS_EF_Snow";
@@ -298,7 +298,7 @@ class CfgVehicles {
 	class STAF_Dummy_ATACS_Winter: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_ATACS_Wolf_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_ATACS_Wolf_co.paa"};
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_ATACS_Winter";
@@ -313,7 +313,7 @@ class CfgVehicles {
 	class STAF_Dummy_EF_Snow_ATACS: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_EF_Snow_ATACS_Wolf_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_EF_Snow_ATACS_Wolf_co.paa"};
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_EF_Snow_ATACS";
@@ -328,7 +328,7 @@ class CfgVehicles {
 	class STAF_Dummy_DPM_Snow: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_DPM_Snow_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_DPM_Snow_co.paa"};
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_DPM_Snow";
@@ -343,7 +343,7 @@ class CfgVehicles {
 	class STAF_Dummy_MCAM_Arctic: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\clothing1_MCAM_Arctic_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_MCAM_Arctic_co.paa"};
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_MCAM_Arctic";
@@ -358,7 +358,7 @@ class CfgVehicles {
 	class STAF_Dummy_Light_DPM_Desert: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_DPM_Desert_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_DPM_Desert_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_I_CombatUniform_light_DPM_Desert";
@@ -373,7 +373,7 @@ class CfgVehicles {
 	class STAF_Dummy_Light_DPM_Desert_Sand: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_DPM_Desert_Sand_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_DPM_Desert_Sand_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_I_CombatUniform_light_DPM_Desert_Sand";
@@ -388,7 +388,7 @@ class CfgVehicles {
 	class STAF_Dummy_Light_M81: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_M81_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_M81_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_light_M81";
@@ -403,7 +403,7 @@ class CfgVehicles {
 	class STAF_Dummy_Light_M81_Black: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_M81_Black_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_M81_Black_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_light_M81_Black";
@@ -418,7 +418,7 @@ class CfgVehicles {
 	class STAF_Dummy_Light_choc_chip: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_choc_chip_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_choc_chip_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_light_choc_chip";
@@ -433,7 +433,7 @@ class CfgVehicles {
 	class STAF_Dummy_Light_choc_chip_brown: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_choc_chip_brown_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_choc_chip_brown_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_light_choc_chip_brown";
@@ -448,7 +448,7 @@ class CfgVehicles {
 	class STAF_Dummy_Light_coffee_stain: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_coffee_stain_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_coffee_stain_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_light_coffee_stain";
@@ -463,7 +463,7 @@ class CfgVehicles {
 	class STAF_Dummy_Light_coffee_stain_brown: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_coffee_stain_brown_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_coffee_stain_brown_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_light_coffee_stain_brown";
@@ -478,7 +478,7 @@ class CfgVehicles {
 	class STAF_Dummy_Light_tiger_stripe: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_tiger_stripe_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_tiger_stripe_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_light_tiger_stripe";
@@ -493,7 +493,7 @@ class CfgVehicles {
 	class STAF_Dummy_Light_tiger_stripe_Black: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_tiger_stripe_Black_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_tiger_stripe_Black_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_light_tiger_stripe_Black";
@@ -508,7 +508,7 @@ class CfgVehicles {
 	class STAF_Dummy_Light_TTsKO_summer: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_TTsKO_summer_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_TTsKO_summer_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_light_TTsKO_summer";
@@ -523,7 +523,7 @@ class CfgVehicles {
 	class STAF_Dummy_Light_TTsKO_summer_Green: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_TTsKO_summer_Green_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_TTsKO_summer_Green_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_light_TTsKO_summer_Green";
@@ -538,7 +538,7 @@ class CfgVehicles {
 	class STAF_Dummy_Light_choc_chip_coffee_stain: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_choc_chip_coffee_stain_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_choc_chip_coffee_stain_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_light_choc_chip_coffee_stain";
@@ -553,7 +553,7 @@ class CfgVehicles {
 	class STAF_Dummy_Light_coffee_stain_choc_chip: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_coffee_stain_choc_chip_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_coffee_stain_choc_chip_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_light_coffee_stain_choc_chip";
@@ -568,7 +568,7 @@ class CfgVehicles {
 	class STAF_Dummy_Light_m81_TTsKO_Summer: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_m81_TTsKO_Summer_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_m81_TTsKO_Summer_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_light_m81_TTsKO_Summer";
@@ -583,7 +583,7 @@ class CfgVehicles {
 	class STAF_Dummy_Light_TTsKO_Summer_m81: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_TTsKO_Summer_m81_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_TTsKO_Summer_m81_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_light_TTsKO_Summer_m81";
@@ -598,7 +598,7 @@ class CfgVehicles {
 	class STAF_Dummy_Light_m81_tiger_stripe: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_m81_tiger_stripe_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_m81_tiger_stripe_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_light_m81_tiger_stripe";
@@ -613,7 +613,7 @@ class CfgVehicles {
 	class STAF_Dummy_Light_tiger_stripe_m81: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_tiger_stripe_m81_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_tiger_stripe_m81_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_light_tiger_stripe_m81";
@@ -628,7 +628,7 @@ class CfgVehicles {
 	class STAF_Dummy_Light_MARPAT_Jungle: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Jungle_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Jungle_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_light_MARPAT_Jungle";
@@ -643,7 +643,7 @@ class CfgVehicles {
 	class STAF_Dummy_Light_MARPAT_Jungle_Green: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Jungle_Green_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Jungle_Green_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_light_MARPAT_Jungle_Green";
@@ -658,7 +658,7 @@ class CfgVehicles {
 	class STAF_Dummy_Light_m81_MARPAT_Jungle: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_m81_MARPAT_Jungle_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_m81_MARPAT_Jungle_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_light_m81_MARPAT_Jungle";
@@ -673,7 +673,7 @@ class CfgVehicles {
 	class STAF_Dummy_Light_MARPAT_Jungle_m81: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Jungle_m81_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Jungle_m81_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_light_MARPAT_Jungle_m81";
@@ -688,7 +688,7 @@ class CfgVehicles {
 	class STAF_Dummy_Light_MARPAT_Altis: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Altis_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Altis_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_light_MARPAT_Altis";
@@ -703,7 +703,7 @@ class CfgVehicles {
 	class STAF_Dummy_Light_MARPAT_Altis_Sage: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\staf\addons\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Altis_Sage_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ia_soldier_01_clothing_MARPAT_Altis_Sage_co.paa"};
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_light_MARPAT_Altis_Sage";

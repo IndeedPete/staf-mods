@@ -12,8 +12,8 @@ class CfgVehicles {
 	{
 		baseBackpack = "STAF_B_Carryall_MCAM_Black";
 		displayName = "STAF Carryall Backpack (MCAM Black)";
-		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\staf\addons\staf_pmc_backpacks\txt\backpack_tortila_MCAM_Black_co.paa"};
-		picture = "\staf_pmc_backpacks\staf\addons\staf_pmc_backpacks\arsenal\icon_b_c_tortila_MCAM_Black.paa";
+		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_tortila_MCAM_Black_co.paa"};
+		picture = "\staf_pmc_backpacks\arsenal\icon_b_c_tortila_MCAM_Black.paa";
 	};
 
 	class STAF_B_Kitbag_blk: B_Kitbag_rgr
@@ -27,7 +27,7 @@ class CfgVehicles {
 	{
 		baseBackpack = "STAF_B_Kitbag_medic_blk";
 		displayName = "STAF Medic Kitbag (Black)";
-		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\staf\addons\staf_pmc_backpacks\txt\backpack_fast_medic_blk_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_fast_medic_blk_co.paa"};
 		scope = 2;
 
 		class TransportItems
@@ -52,7 +52,7 @@ class CfgVehicles {
 	{
 		baseBackpack = "STAF_B_Kitbag_medic_cbr";
 		displayName = "STAF Medic Kitbag (Coyote)";
-		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\staf\addons\staf_pmc_backpacks\txt\backpack_fast_medic_cbr_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_fast_medic_cbr_co.paa"};
 
     class TransportItems
 		{
@@ -76,7 +76,7 @@ class CfgVehicles {
 	{
 		baseBackpack = "STAF_B_Kitbag_medic_rgr";
 		displayName = "STAF Medic Kitbag (Green)";
-		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\staf\addons\staf_pmc_backpacks\txt\backpack_fast_medic_rgr_co.paa"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_fast_medic_rgr_co.paa"};
 
     class TransportItems
 		{

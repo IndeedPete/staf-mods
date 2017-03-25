@@ -41,7 +41,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_helipilot";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_mh6.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_mh6.jpg";
     };
 
     class STAF_ah6 : B_Heli_Light_01_armed_F {
@@ -52,7 +52,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_helipilot";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_ah6.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_ah6.jpg";
     };
 
     class STAF_ka50 : O_Heli_Light_02_unarmed_F {
@@ -63,7 +63,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_helipilot_heavy";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_ka50.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_ka50.jpg";
     };
 
     class STAF_falcon : sab_falcon {
@@ -74,7 +74,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_pilot";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_falcon.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_falcon.jpg";
     };
 
     class STAF_vtol_infantry : O_T_VTOL_02_infantry_grey_F {
@@ -84,7 +84,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_helipilot_heavy";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_vtol_infantry.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_vtol_infantry.jpg";
     };
 
     class STAF_vtol_vehicle : O_T_VTOL_02_vehicle_grey_F {
@@ -94,7 +94,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_helipilot_heavy";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_vtol_vehicle.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_vtol_vehicle.jpg";
     };
 
     class STAF_m1117 : rhsusf_M1117_O {
@@ -105,7 +105,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAFF_m1117.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAFF_m1117.jpg";
     };
 
     class STAF_rubberboat : B_Boat_Transport_01_F {
@@ -116,7 +116,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_diver_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_rubberboat.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_rubberboat.jpg";
     };
 
     class STAF_rhib : I_C_Boat_Transport_02_F {
@@ -127,7 +127,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_rhib.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_rhib.jpg";
     };
 
     class STAF_sdv : B_SDV_01_F {
@@ -138,7 +138,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_diver_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_sdv.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_sdv.jpg";
     };
 
     class STAF_mrap : B_MRAP_01_F {
@@ -149,7 +149,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_mrap.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_mrap.jpg";
     };
 
     class STAF_mrap_hmg : B_MRAP_01_hmg_F {
@@ -160,7 +160,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_mrap_hmg.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_mrap_hmg.jpg";
     };
 
     class STAF_lsv : B_LSV_01_unarmed_F {
@@ -171,7 +171,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_lsv.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_lsv.jpg";
     };
 
     class STAF_lsv_hmg : B_LSV_01_armed_F {
@@ -182,7 +182,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_lsv_hmg.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_lsv_hmg.jpg";
     };
 
     class STAF_quadbike : B_Quadbike_01_F {
@@ -193,7 +193,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_quadbike.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_quadbike.jpg";
     };
 
     class STAF_truck_transport : C_Truck_02_transport_F {
@@ -204,7 +204,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_truck_transport.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_truck_transport.jpg";
     };
 
     class STAF_truck_box : C_Truck_02_box_F {
@@ -215,7 +215,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_truck_repair.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_truck_repair.jpg";
     };
 
     class STAF_truck_fuel : C_Truck_02_fuel_F {
@@ -226,7 +226,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_truck_fuel.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_truck_fuel.jpg";
     };
 
     class STAF_offroad : C_Offroad_02_unarmed_F {
@@ -237,7 +237,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_offroad.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_offroad.jpg";
 
 
         textureList[] = {"Black",1,"Blue",0,"Green",0,"Orange",0,"Red",0,"White",0};
@@ -251,7 +251,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_offroad_hmg.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_offroad_hmg.jpg";
 
         textureList[] = {"Red",0,"Beige",0,"White",0,"Blue",0,"Darkred",0,"Bluecustom",1};
     };
@@ -264,7 +264,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_suv.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_suv.jpg";
 
         acceleration = 5;
         armor = 130;
@@ -346,7 +346,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "B_UAV_AI";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_quadcopter.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_quadcopter.jpg";
     };
 
     class STAF_static_HMG : RHS_M2StaticMG_MiniTripod_WD {
@@ -357,7 +357,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_Static_HMG.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_Static_HMG.jpg";
     };
 
     class STAF_static_HMG_AA : RHS_M2StaticMG_WD {
@@ -368,7 +368,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_Static_HMG_AA.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_Static_HMG_AA.jpg";
     };
 
     class STAF_static_GMG : RHS_MK19_TriPod_WD {
@@ -380,7 +380,7 @@ class CfgVehicles {
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
 
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_Static_GMG.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_Static_GMG.jpg";
     };
 
     class STAF_static_AT : RHS_TOW_TriPod_WD {
@@ -391,7 +391,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_mx";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_Static_AT.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_Static_AT.jpg";
     };
 
     class STAF_static_SS : ACE_B_SpottingScope {
@@ -402,6 +402,6 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_sharpshooter_gm6";
-        editorPreview = "\staf_pmc_vehicles\staf\addons\staf_pmc_vehicles\eden\STAF_Static_SS.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_Static_SS.jpg";
     };
 };
