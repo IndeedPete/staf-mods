@@ -533,20 +533,20 @@ class CfgMovesFatigue
 		/* disable sprinting for this amount of secs when stamina runs out */
 		staminaCooldown = 5;         //default 10
 		/* "amount" of stamina, how fast it drains (higher = slower) */
-		staminaDuration = 160;        //default 60
+		staminaDuration = 140;        //default 60
 		/* restore stamina from 0 to full in this amount of secs */
-		staminaRestoration = 50;     //default 30
+		staminaRestoration = 35;     //default 30
 		/* when terrain gradient prevents sprinting (hill icon),
 		 * add this value to stamina gain */
-		terrainDrainSprint = -0.75;   //default -1
+		terrainDrainSprint = -0.85;   //default -1
 		/* when terrain gradient forces you to walk (steep hill),
 		 * add this value to stamina gain (warning: too low negative values
 		 * actually restore stamina due to the character walking) */
-		terrainDrainRun = -1.75;      //default -1
+		terrainDrainRun = -1.50;      //default -1
 };
 
 class CfgInventoryGlobalVariable
 {
 		/* how much a soldier can carry (weight bar width) */
-		maxSoldierLoad = 2000;     //default 1000, ACE 1200
+		maxSoldierLoad = 1750;     //default 1000, ACE 1200
 };
