@@ -1,843 +1,136 @@
 class CfgVehicles {
     class B_Soldier_F;
-    class B_Soldier_GL_F;
     class B_soldier_AT_F;
+    class B_soldier_AR_F;
     class B_medic_F;
     class B_soldier_M_F;
-    class B_soldier_AR_F;
-    class B_Sharpshooter_F;
-    class B_Soldier_TL_F;
-    class B_soldier_exp_F;
-    class B_soldier_UAV_F;
     class B_engineer_F;
+    class B_Sharpshooter_F;
     class B_Helipilot_F;
     class B_helicrew_F;
     class B_Pilot_F;
     class C_Man_1;
 
-    class STAF_contractor_g36 : B_Soldier_F {
+
+    //----------------------------Men------------------------------------------
+    class STAF_contractor : B_Soldier_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Contractor (G36)";
+        displayName = "Contractor";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_g36.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_GS_BP_BB";
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_4" , "VSM_Beanie_Black" };
-        weapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "HandGrenade" , "HandGrenade" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_4" , "VSM_Beanie_Black" };
-        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "HandGrenade" , "HandGrenade" };
-    };
-
-    class STAF_contractor_scar : B_Soldier_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Contractor (SCAR)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_scar.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Garment_LS_GS_BP_BB";
-        backpack = "";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_4" , "VSM_Beanie_Black" };
-        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
         magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_4" , "VSM_Beanie_Black" };
-        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
     };
 
-    class STAF_contractor_mk18 : B_Soldier_F {
+    class STAF_contractor_at : B_soldier_AT_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Contractor (Mk18)";
+        displayName = "Contractor (AT)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_mk18.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Garment_LS_GS_BP_BB";
-        backpack = "";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_4" , "VSM_Beanie_Black" };
-        weapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_4" , "VSM_Beanie_Black" };
-        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-    };
-
-    class STAF_contractor_mx : B_Soldier_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Contractor (MX)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_mx.jpg";
-
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Garment_LS_GS_BP_BB";
-        backpack = "";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_4" , "VSM_Beanie_Black" };
-        weapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_4" , "VSM_Beanie_Black" };
-        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-    };
-
-    class STAF_contractor_g36_GL : B_Soldier_GL_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Contractor (G36) (GL)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_g36_GL.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Combat_LS_BS_GP_BB";
-        backpack = "";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_RAV_MG_M81" , "VSM_M81_OPS" };
-        weapons[] = { "STAF_rifle_g36_gl" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "1Rnd_SmokeRed_Grenade_shell" , "1Rnd_Smoke_Grenade_shell" , "Chemlight_green" , "Chemlight_green" , "3Rnd_HE_Grenade_shell" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_RAV_MG_M81" , "VSM_M81_OPS" };
-        respawnWeapons[] = { "STAF_rifle_g36_gl" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "1Rnd_SmokeRed_Grenade_shell" , "1Rnd_Smoke_Grenade_shell" , "Chemlight_green" , "Chemlight_green" , "3Rnd_HE_Grenade_shell" };
-    };
-
-    class STAF_contractor_scar_GL : B_Soldier_GL_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Contractor (SCAR) (GL)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_scar_GL.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Combat_LS_BS_GP_BB";
-        backpack = "";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_RAV_MG_M81" , "VSM_M81_OPS" };
-        weapons[] = { "STAF_rifle_scar_gl_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "1Rnd_SmokeRed_Grenade_shell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "1Rnd_Smoke_Grenade_shell" , "Chemlight_green" , "Chemlight_green" , "3Rnd_HE_Grenade_shell" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_RAV_MG_M81" , "VSM_M81_OPS" };
-        respawnWeapons[] = { "STAF_rifle_scar_gl_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "1Rnd_SmokeRed_Grenade_shell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "1Rnd_Smoke_Grenade_shell" , "Chemlight_green" , "Chemlight_green" , "3Rnd_HE_Grenade_shell" };
-    };
-
-    class STAF_contractor_mk18_GL : B_Soldier_GL_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Contractor (Mk18) (GL)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_mk18_GL.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Combat_LS_BS_GP_BB";
-        backpack = "";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_RAV_MG_M81" , "VSM_M81_OPS" };
-        weapons[] = { "STAF_rifle_mk18_gl" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "1Rnd_SmokeRed_Grenade_shell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "1Rnd_Smoke_Grenade_shell" , "Chemlight_green" , "Chemlight_green" , "3Rnd_HE_Grenade_shell" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_RAV_MG_M81" , "VSM_M81_OPS" };
-        respawnWeapons[] = { "STAF_rifle_mk18_gl" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "1Rnd_SmokeRed_Grenade_shell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "1Rnd_Smoke_Grenade_shell" , "Chemlight_green" , "Chemlight_green" , "3Rnd_HE_Grenade_shell" };
-    };
-
-    class STAF_contractor_mx_GL : B_Soldier_GL_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Contractor (MX) (GL)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_mx_GL.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Combat_LS_BS_GP_BB";
-        backpack = "";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_RAV_MG_M81" , "VSM_M81_OPS" };
-        weapons[] = { "STAF_rifle_mx_gl" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "1Rnd_SmokeRed_Grenade_shell" , "1Rnd_Smoke_Grenade_shell" , "Chemlight_green" , "Chemlight_green" , "3Rnd_HE_Grenade_shell" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_RAV_MG_M81" , "VSM_M81_OPS" };
-        respawnWeapons[] = { "STAF_rifle_mx_gl" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "1Rnd_SmokeRed_Grenade_shell" , "1Rnd_Smoke_Grenade_shell" , "Chemlight_green" , "Chemlight_green" , "3Rnd_HE_Grenade_shell" };
-    };
-
-    class STAF_contractor_g36_AT : B_soldier_AT_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Contractor (G36) (AT)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_g36_AT.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_at.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Combat_LS_TS_BP_BB";
         backpack = "tacs_Backpack_Kitbag_DarkBlack";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_5" , "MCB_Helmet2" };
-        weapons[] = { "STAF_rifle_g36" , "STAF_launcher_smaw" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "rhs_mag_smaw_SR" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_5" , "MCB_Helmet2" };
-        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_launcher_smaw" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "rhs_mag_smaw_SR" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" };
-    };
-
-    class STAF_contractor_scar_AT : B_soldier_AT_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Contractor (SCAR) (AT)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_scar_AT.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Combat_LS_TS_BP_BB";
-        backpack = "tacs_Backpack_Kitbag_DarkBlack";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_5" , "MCB_Helmet2" };
-        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_launcher_smaw" , "STAF_pistol_glock18" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_launcher_smaw" , "STAF_pistol_glock17" , "Throw" , "Put" };
         magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "rhs_mag_smaw_SR" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_5" , "MCB_Helmet2" };
-        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_launcher_smaw" , "STAF_pistol_glock18" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_launcher_smaw" , "STAF_pistol_glock17" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "rhs_mag_smaw_SR" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" };
     };
 
-    class STAF_contractor_mk18_AT : B_soldier_AT_F {
+    class STAF_contractor_mg : B_soldier_AR_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Contractor (Mk18) (AT)";
+        displayName = "Contractor (MG)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_mk18_AT.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Combat_LS_TS_BP_BB";
-        backpack = "tacs_Backpack_Kitbag_DarkBlack";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_5" , "MCB_Helmet2" };
-        weapons[] = { "STAF_rifle_mk18" , "STAF_launcher_smaw" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "rhs_mag_smaw_SR" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_5" , "MCB_Helmet2" };
-        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_launcher_smaw" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "rhs_mag_smaw_SR" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" };
-    };
-
-    class STAF_contractor_mx_AT : B_soldier_AT_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Contractor (MX) (AT)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_mx_AT.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Combat_LS_TS_BP_BB";
-        backpack = "tacs_Backpack_Kitbag_DarkBlack";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_5" , "MCB_Helmet2" };
-        weapons[] = { "STAF_rifle_mx" , "STAF_launcher_smaw" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "rhs_mag_smaw_SR" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_5" , "MCB_Helmet2" };
-        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_launcher_smaw" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "rhs_mag_smaw_SR" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" };
-    };
-
-    class STAF_medic_g36 : B_medic_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Field Medic (G36)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_medic_g36.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Garment_LS_ES_BP_BB";
-        backpack = "STAF_B_Kitbag_medic_rgr";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_operator_OGA_OD" , "VSM_Bowman_cap_balaclava_Black" };
-        weapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_operator_OGA_OD" , "VSM_Bowman_cap_balaclava_Black" };
-        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-    };
-
-    class STAF_medic_scar : B_medic_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Field medic (SCAR)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_medic_scar.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Garment_LS_ES_BP_BB";
-        backpack = "STAF_B_Kitbag_medic_rgr";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_operator_OGA_OD" , "VSM_Bowman_cap_balaclava_Black" };
-        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_operator_OGA_OD" , "VSM_Bowman_cap_balaclava_Black" };
-        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-    };
-
-    class STAF_medic_mk18 : B_medic_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Field Medic (Mk18)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_medic_mk18.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Garment_LS_ES_BP_BB";
-        backpack = "STAF_B_Kitbag_medic_rgr";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_operator_OGA_OD" , "VSM_Bowman_cap_balaclava_Black" };
-        weapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_operator_OGA_OD" , "VSM_Bowman_cap_balaclava_Black" };
-        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-    };
-
-    class STAF_medic_mx : B_medic_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Field Medic (MX)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_medic_mx.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Garment_LS_ES_BP_BB";
-        backpack = "STAF_B_Kitbag_medic_rgr";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_operator_OGA_OD" , "VSM_Bowman_cap_balaclava_Black" };
-        weapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_operator_OGA_OD" , "VSM_Bowman_cap_balaclava_Black" };
-        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-    };
-
-    class STAF_marksman_spar17 : B_soldier_M_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Marksman (Spar-17)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_marksman_spar17.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Combat_RS_BS_TP_BB";
-        backpack = "";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "M90d_Vest_4" , "H_Watchcap_khk" };
-        weapons[] = { "STAF_rifle_hk417" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "M90d_Vest_4" , "H_Watchcap_khk" };
-        respawnWeapons[] = { "STAF_rifle_hk417" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-    };
-
-    class STAF_marksman_ak12 : B_soldier_M_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Marksman (Ak-12)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_marksman_ak12.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Combat_RS_BS_TP_BB";
-        backpack = "";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "M90d_Vest_4" , "H_Watchcap_khk" };
-        weapons[] = { "STAF_rifle_ak12" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "M90d_Vest_4" , "H_Watchcap_khk" };
-        respawnWeapons[] = { "STAF_rifle_ak12" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "30Rnd_762x39_Mag_F" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-    };
-
-    class STAF_marksman_emr1 : B_soldier_M_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Marksman (Emr-1)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_marksman_emr1.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Combat_RS_BS_TP_BB";
-        backpack = "";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "M90d_Vest_4" , "H_Watchcap_khk" };
-        weapons[] = { "STAF_rifle_ebr" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "M90d_Vest_4" , "H_Watchcap_khk" };
-        respawnWeapons[] = { "STAF_rifle_ebr" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-    };
-
-    class STAF_mg_m249 : B_soldier_AR_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Machine Gunner (M249)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_mg_m249.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_mg.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_OS_TP_TB";
         backpack = "tacs_Backpack_Kitbag_DarkBlack";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_MG_OGA_OD" , "OGA_G_Helmet1" };
-        weapons[] = { "STAF_rifle_m249" , "STAF_pistol_glock18" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_m249" , "STAF_pistol_glock17" , "Throw" , "Put" };
         magazines[] = { "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "hlc_200rnd_556x45_M_SAW" , "hlc_200rnd_556x45_M_SAW" , "hlc_200rnd_556x45_M_SAW" , "hlc_200rnd_556x45_M_SAW" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_MG_OGA_OD" , "OGA_G_Helmet1" };
-        respawnWeapons[] = { "STAF_rifle_m249" , "STAF_pistol_glock18" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_m249" , "STAF_pistol_glock17" , "Throw" , "Put" };
         respawnMagazines[] = { "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "hlc_200rnd_556x45_M_SAW" , "hlc_200rnd_556x45_M_SAW" , "hlc_200rnd_556x45_M_SAW" , "hlc_200rnd_556x45_M_SAW" };
     };
 
-    class STAF_mg_negev : B_soldier_AR_F {
+    class STAF_contractor_medic : B_medic_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Machine Gunner (Negev)";
+        displayName = "Field Medic";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_mg_negev.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_medic.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Garment_LS_OS_TP_TB";
-        backpack = "tacs_Backpack_Kitbag_DarkBlack";
+        uniformClass = "tacs_Uniform_Garment_LS_ES_BP_BB";
+        backpack = "STAF_B_Kitbag_medic_rgr";
 
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_MG_OGA_OD" , "OGA_G_Helmet1" };
-        weapons[] = { "STAF_rifle_negev" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "150Rnd_762x54_Box_Tracer" , "150Rnd_762x54_Box_Tracer" , "150Rnd_762x54_Box_Tracer" , "150Rnd_762x54_Box_Tracer" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_MG_OGA_OD" , "OGA_G_Helmet1" };
-        respawnWeapons[] = { "STAF_rifle_negev" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "150Rnd_762x54_Box_Tracer" , "150Rnd_762x54_Box_Tracer" , "150Rnd_762x54_Box_Tracer" , "150Rnd_762x54_Box_Tracer" };
-    };
-
-    class STAF_sharpshooter_gm6 : B_Sharpshooter_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Sharpshooter (Gm6)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_sharpshooter_gm6.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Garment_LS_OS_EP_TB";
-        backpack = "";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_CarrierRig_Gunner_OGA" , "MC_Helmet2" };
-        weapons[] = { "STAF_rifle_gm6" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "5Rnd_127x108_Mag" , "SmokeShell" , "5Rnd_127x108_Mag" , "5Rnd_127x108_Mag" , "5Rnd_127x108_Mag" , "5Rnd_127x108_Mag" , "5Rnd_127x108_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_CarrierRig_Gunner_OGA" , "MC_Helmet2" };
-        respawnWeapons[] = { "STAF_rifle_gm6" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "5Rnd_127x108_Mag" , "SmokeShell" , "5Rnd_127x108_Mag" , "5Rnd_127x108_Mag" , "5Rnd_127x108_Mag" , "5Rnd_127x108_Mag" , "5Rnd_127x108_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-    };
-
-    class STAF_sharpshooter_mar10 : B_Sharpshooter_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Sharpshooter (Mar-10)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_sharpshooter_mar10.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Garment_LS_OS_EP_TB";
-        backpack = "";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_CarrierRig_Gunner_OGA" , "MC_Helmet2" };
-        weapons[] = { "STAF_rifle_mar10" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "10Rnd_338_Mag" , "Chemlight_green" , "10Rnd_338_Mag" , "10Rnd_338_Mag" , "10Rnd_338_Mag" , "10Rnd_338_Mag" , "10Rnd_338_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_CarrierRig_Gunner_OGA" , "MC_Helmet2" };
-        respawnWeapons[] = { "STAF_rifle_mar10" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "10Rnd_338_Mag" , "Chemlight_green" , "10Rnd_338_Mag" , "10Rnd_338_Mag" , "10Rnd_338_Mag" , "10Rnd_338_Mag" , "10Rnd_338_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" };
-    };
-
-    class STAF_sharpshooter_m200 : B_Sharpshooter_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Sharpshooter (M200)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_sharpshooter_m200.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Garment_LS_OS_EP_TB";
-        backpack = "";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_CarrierRig_Gunner_OGA" , "MC_Helmet2" };
-        weapons[] = { "STAF_rifle_m200" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "7Rnd_408_Mag" , "Chemlight_green" , "7Rnd_408_Mag" , "7Rnd_408_Mag" , "7Rnd_408_Mag" , "7Rnd_408_Mag" , "7Rnd_408_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_CarrierRig_Gunner_OGA" , "MC_Helmet2" };
-        respawnWeapons[] = { "STAF_rifle_m200" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "7Rnd_408_Mag" , "Chemlight_green" , "7Rnd_408_Mag" , "7Rnd_408_Mag" , "7Rnd_408_Mag" , "7Rnd_408_Mag" , "7Rnd_408_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" };
-    };
-
-    class STAF_teamleader_g36 : B_Soldier_TL_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Team Leader (G36)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_teamleader_g36.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Garment_LS_BS_BP_BB";
-        backpack = "";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemcTab" , "MCB_Vest_5" , "VSM_Black_OPS" };
-        weapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemcTab" , "MCB_Vest_5" , "VSM_Black_OPS" };
-        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-    };
-
-    class STAF_teamleader_scar : B_Soldier_TL_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Team Leader (SCAR)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_teamleader_scar.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Garment_LS_BS_BP_BB";
-        backpack = "";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemcTab" , "MCB_Vest_5" , "VSM_Black_OPS" };
-        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
+        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_operator_OGA_OD" , "VSM_Bowman_cap_balaclava_Black" };
+        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
         magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemcTab" , "MCB_Vest_5" , "VSM_Black_OPS" };
-        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
+        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_operator_OGA_OD" , "VSM_Bowman_cap_balaclava_Black" };
+        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
     };
 
-    class STAF_teamleader_mk18 : B_Soldier_TL_F {
+    class STAF_contractor_marksman : B_soldier_M_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Team Leader (Mk18)";
+        displayName = "Marksman";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_teamleader_mk18.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_marksman.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Garment_LS_BS_BP_BB";
+        uniformClass = "tacs_Uniform_Combat_RS_BS_TP_BB";
         backpack = "";
 
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemcTab" , "MCB_Vest_5" , "VSM_Black_OPS" };
-        weapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
+        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "M90d_Vest_4" , "H_Watchcap_khk" };
+        weapons[] = { "STAF_rifle_m14" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        magazines[] = { "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemcTab" , "MCB_Vest_5" , "VSM_Black_OPS" };
-        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
+        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "M90d_Vest_4" , "H_Watchcap_khk" };
+        respawnWeapons[] = { "STAF_rifle_m14" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnMagazines[] = { "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
     };
 
-    class STAF_teamleader_mx : B_Soldier_TL_F {
+    class STAF_contractor_engineer : B_engineer_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Team Leader (MX)";
+        displayName = "Engineer";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_teamleader_mx.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Garment_LS_BS_BP_BB";
-        backpack = "";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemcTab" , "MCB_Vest_5" , "VSM_Black_OPS" };
-        weapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemcTab" , "MCB_Vest_5" , "VSM_Black_OPS" };
-        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-    };
-
-    class STAF_exp_g36 : B_soldier_exp_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Explosive Specialist (G36)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_exp_g36.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Combat_LS_CLRS_TP_BB";
-        backpack = "STAF_B_Kitbag_exp_blk";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_1" , "VSM_Bowman_cap_Tan" };
-        weapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_65x39_caseless_mag" , "Chemlight_green" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "SatchelCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_1" , "VSM_Bowman_cap_Tan" };
-        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "Chemlight_green" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "SatchelCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" };
-    };
-
-    class STAF_exp_scar : B_soldier_exp_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Explosive Specialist (SCAR)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_exp_scar.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Combat_LS_CLRS_TP_BB";
-        backpack = "STAF_B_Kitbag_exp_blk";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_1" , "VSM_Bowman_cap_Tan" };
-        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" , "SatchelCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_1" , "VSM_Bowman_cap_Tan" };
-        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" , "SatchelCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" };
-    };
-
-    class STAF_exp_mk18 : B_soldier_exp_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Explosive Specialist (Mk18)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_exp_mk18.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Combat_LS_CLRS_TP_BB";
-        backpack = "STAF_B_Kitbag_exp_blk";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_1" , "VSM_Bowman_cap_Tan" };
-        weapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" , "SatchelCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_1" , "VSM_Bowman_cap_Tan" };
-        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" , "SatchelCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" };
-    };
-
-    class STAF_exp_mx : B_soldier_exp_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Explosive Specialist (MX)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_exp_mx.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Combat_LS_CLRS_TP_BB";
-        backpack = "STAF_B_Kitbag_exp_blk";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_1" , "VSM_Bowman_cap_Tan" };
-        weapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_65x39_caseless_mag" , "Chemlight_green" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "SatchelCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_1" , "VSM_Bowman_cap_Tan" };
-        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "Chemlight_green" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "SatchelCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "DemoCharge_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" , "ClaymoreDirectionalMine_Remote_Mag" };
-    };
-
-    class STAF_uav_g36 : B_soldier_UAV_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "UAV Specialist (G36)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_uav_g36.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Combat_RS_BS_DGP_BB";
-        backpack = "B_UAV_01_backpack_F";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "M90_Vest_4" , "VSM_Beanie_OD" };
-        weapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "M90_Vest_4" , "VSM_Beanie_OD" };
-        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-    };
-
-    class STAF_uav_scar : B_soldier_UAV_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "UAV Specialist (SCAR)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_uav_scar.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Combat_RS_BS_DGP_BB";
-        backpack = "B_UAV_01_backpack_F";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "M90_Vest_4" , "VSM_Beanie_OD" };
-        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "M90_Vest_4" , "VSM_Beanie_OD" };
-        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-    };
-
-    class STAF_uav_mk18 : B_soldier_UAV_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "UAV Specialist (Mk18)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_uav_mk18.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Combat_RS_BS_DGP_BB";
-        backpack = "B_UAV_01_backpack_F";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "M90_Vest_4" , "VSM_Beanie_OD" };
-        weapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "M90_Vest_4" , "VSM_Beanie_OD" };
-        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-    };
-
-    class STAF_uav_mx : B_soldier_UAV_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "UAV Specialist (MX)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_uav_mx.jpg";
-
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Combat_RS_BS_DGP_BB";
-        backpack = "B_UAV_01_backpack_F";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "M90_Vest_4" , "VSM_Beanie_OD" };
-        weapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "M90_Vest_4" , "VSM_Beanie_OD" };
-        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-    };
-
-    class STAF_engineer_g36 : B_engineer_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Engineer (G36)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_engineer_g36.jpg";
-
-        identityTypes[] = { "Head_NATO" , "LanguageENG_F" };
-        uniformClass = "MC_GS_Camo_SS";
-        backpack = "STAF_B_Kitbag_engineer_cbr";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "VSM_MBSS_CB" , "VSM_BackwardsHat_Peltor_tan" , "VSM_Facemask_tan_Peltor_glasses" };
-        weapons[] = { "STAF_rifle_g36" , "ACE_VMM3" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "VSM_MBSS_CB" , "VSM_BackwardsHat_Peltor_tan" , "VSM_Facemask_tan_Peltor_glasses" };
-        respawnWeapons[] = { "STAF_rifle_g36" , "ACE_VMM3" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-    };
-
-    class STAF_engineer_scar : B_engineer_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Engineer (SCAR)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_engineer_scar.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_engineer.jpg";
 
         identityTypes[] = { "Head_NATO" , "LanguageENG_F" };
         uniformClass = "MC_GS_Camo_SS";
@@ -852,471 +145,216 @@ class CfgVehicles {
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
     };
 
-    class STAF_engineer_mk18 : B_engineer_F {
+    class STAF_contractor_bodyguard : B_Soldier_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Engineer (MK18)";
+        displayName = "Bodyguard";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_engineer_mk18.jpg";
-
-        identityTypes[] = { "Head_NATO" , "LanguageENG_F" };
-        uniformClass = "MC_GS_Camo_SS";
-        backpack = "STAF_B_Kitbag_engineer_cbr";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "VSM_MBSS_CB" , "VSM_BackwardsHat_Peltor_tan" , "VSM_Facemask_tan_Peltor_glasses" };
-        weapons[] = { "STAF_rifle_mk18" , "ACE_VMM3" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "VSM_MBSS_CB" , "VSM_BackwardsHat_Peltor_tan" , "VSM_Facemask_tan_Peltor_glasses" };
-        respawnWeapons[] = { "STAF_rifle_mk18" , "ACE_VMM3" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-    };
-
-    class STAF_engineer_mx : B_engineer_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Engineer (MX)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_engineer_mx.jpg";
-
-        identityTypes[] = { "Head_NATO" , "LanguageENG_F" };
-        uniformClass = "MC_GS_Camo_SS";
-        backpack = "STAF_B_Kitbag_engineer_cbr";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "VSM_MBSS_CB" , "VSM_BackwardsHat_Peltor_tan" , "VSM_Facemask_tan_Peltor_glasses" };
-        weapons[] = { "STAF_rifle_mx" , "ACE_VMM3" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "VSM_MBSS_CB" , "VSM_BackwardsHat_Peltor_tan" , "VSM_Facemask_tan_Peltor_glasses" };
-        respawnWeapons[] = { "STAF_rifle_mx" , "ACE_VMM3" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-    };
-
-    class STAF_diver_g36 : B_Soldier_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Diver (G36)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_diver_g36.jpg";
-
-        identityTypes[] = { "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "U_B_survival_uniform";
-        backpack = "B_AssaultPack_blk";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_RebreatherB" , "rhsusf_opscore_bk", "G_B_Diving" };
-        weapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_RebreatherB" , "rhsusf_opscore_bk", "G_B_Diving" };
-        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-    };
-
-    class STAF_diver_scar : B_Soldier_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Diver (SCAR)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_diver_scar.jpg";
-
-        identityTypes[] = { "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "U_B_survival_uniform";
-        backpack = "B_AssaultPack_blk";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_RebreatherB" , "rhsusf_opscore_bk", "G_B_Diving" };
-        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_RebreatherB" , "rhsusf_opscore_bk", "G_B_Diving" };
-        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-    };
-
-    class STAF_diver_mk18 : B_Soldier_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Diver (MK18)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_diver_mk18.jpg";
-
-        identityTypes[] = { "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "U_B_survival_uniform";
-        backpack = "B_AssaultPack_blk";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_RebreatherB" , "rhsusf_opscore_bk", "G_B_Diving" };
-        weapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_RebreatherB" , "rhsusf_opscore_bk", "G_B_Diving" };
-        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-    };
-
-    class STAF_diver_mx : B_Soldier_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Diver (MX)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_diver_g36.jpg";
-
-        identityTypes[] = { "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "U_B_survival_uniform";
-        backpack = "B_AssaultPack_blk";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_RebreatherB" , "rhsusf_opscore_bk", "G_B_Diving" };
-        weapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_RebreatherB" , "rhsusf_opscore_bk", "G_B_Diving" };
-        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-    };
-
-    class STAF_cbrn_mtp_g36 : B_Soldier_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "CBRN Unit (G36) (MTP)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_cbrn_mtp_g36.jpg";
-
-        identityTypes[] = { "skn_m50_gas_mask_hood", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "skn_u_nbc_bluf_mtp";
-        backpack = "";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk", "skn_m50_gas_mask_hood" };
-        weapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood" };
-        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-    };
-
-    class STAF_cbrn_mtp_scar : B_Soldier_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "CBRN Unit (SCAR) (MTP)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_cbrn_mtp_scar.jpg";
-
-        identityTypes[] = { "skn_m50_gas_mask_hood", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "skn_u_nbc_bluf_mtp";
-        backpack = "";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk"  , "skn_m50_gas_mask_hood" };
-        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood" };
-        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-    };
-
-    class STAF_cbrn_mtp_mk18 : B_Soldier_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "CBRN Unit (Mk18) (MTP)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_cbrn_mtp_mk18.jpg";
-
-        identityTypes[] = { "skn_m50_gas_mask_hood", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "skn_u_nbc_bluf_mtp";
-        backpack = "";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood" };
-        weapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood" };
-        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-    };
-
-    class STAF_cbrn_mtp_mx : B_Soldier_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "CBRN Unit (MX) (MTP)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_cbrn_mtp_mx.jpg";
-
-
-        identityTypes[] = { "skn_m50_gas_mask_hood", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "skn_u_nbc_bluf_mtp";
-        backpack = "";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood" };
-        weapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood" };
-        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-    };
-
-    class STAF_cbrn_wd_g36 : B_Soldier_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "CBRN Unit (G36) (Woodland)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_cbrn_wd_g36.jpg";
-
-        identityTypes[] = { "skn_m50_gas_mask_hood_wd", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "skn_u_nbc_bluf_wd";
-        backpack = "";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood_wd" };
-        weapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood_wd" };
-        respawnWeapons[] = { "STAF_rifle_g36" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-    };
-
-    class STAF_cbrn_wd_scar : B_Soldier_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "CBRN Unit (SCAR) (Woodland)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_cbrn_wd_scar.jpg";
-
-        identityTypes[] = { "skn_m50_gas_mask_hood_wd", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "skn_u_nbc_bluf_wd";
-        backpack = "";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood_wd" };
-        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood_wd" };
-        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-    };
-
-    class STAF_cbrn_wd_mk18 : B_Soldier_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "CBRN Unit (Mk18) (Woodland)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_cbrn_wd_mk18.jpg";
-
-        identityTypes[] = { "skn_m50_gas_mask_hood_wd", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "skn_u_nbc_bluf_wd";
-        backpack = "";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood_wd" };
-        weapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood_wd" };
-        respawnWeapons[] = { "STAF_rifle_mk18" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-    };
-
-    class STAF_cbrn_wd_mx : B_Soldier_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "CBRN Unit (MX) (Woodland)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_cbrn_wd_mx.jpg";
-
-
-        identityTypes[] = { "skn_m50_gas_mask_hood_wd", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "skn_u_nbc_bluf_wd";
-        backpack = "";
-
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood_wd" };
-        weapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blk" , "skn_m50_gas_mask_hood_wd" };
-        respawnWeapons[] = { "STAF_rifle_mx" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "30Rnd_65x39_caseless_mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
-    };
-
-    class STAF_bodyguard_mp5 : B_Soldier_F {
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Bodyguard (MP5)";
-        side = 1;
-        faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_bodyguard_mp5.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_bodyguard.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "U_Marshal";
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "tacs_Vest_Tactical_DarkBlack" , "VSM_Bowman_cap_Black" };
-        weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock18" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
         magazines[] = { "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "tacs_Vest_Tactical_DarkBlack" , "VSM_Bowman_cap_Black" };
-        respawnWeapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock18" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
         respawnMagazines[] = { "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
     };
 
-    class STAF_bodyguard_p90 : B_Soldier_F {
+    //---------------------------Special----------------------------------------
+    /*class STAF_contractor_cbrn : B_Soldier_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Bodyguard (P90)";
+        displayName = "CBRN Unit";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_bodyguard_p90.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_cbrn.jpg";
+        editorSubcategory = "EdSubcat_special";
 
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "U_Marshal";
+        identityTypes[] = { "skn_m04_gas_mask_blu", "Head_NATO" , "LanguageENG_F"};
+        uniformClass = "skn_u_nbc_indep_blk";
         backpack = "";
 
-        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "tacs_Vest_Tactical_DarkBlack" , "VSM_Bowman_cap_Black" };
-        weapons[] = { "STAF_rifle_p90" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        magazines[] = { "SmokeShell" , "50Rnd_570x28_SMG_03" , "50Rnd_570x28_SMG_03" , "50Rnd_570x28_SMG_03" , "50Rnd_570x28_SMG_03" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
+        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blu"  , "skn_m04_gas_mask_blu" };
+        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
 
-        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "tacs_Vest_Tactical_DarkBlack" , "VSM_Bowman_cap_Black" };
-        respawnWeapons[] = { "STAF_rifle_p90" , "STAF_pistol_glock18" , "Throw" , "Put" };
-        respawnMagazines[] = { "SmokeShell" , "50Rnd_570x28_SMG_03" , "50Rnd_570x28_SMG_03" , "50Rnd_570x28_SMG_03" , "50Rnd_570x28_SMG_03" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
+        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blu" , "skn_m04_gas_mask_blu" };
+        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
     };
 
-    class STAF_helipilot : B_Helipilot_F {
+    /*class STAF_contractor_sharpshooter : B_Sharpshooter_F {
+        author = "STAF";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Sharpshooter";
+        side = 1;
+        faction = "STAF_PMC";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_sharpshooter.jpg";
+        editorSubcategory = "EdSubcat_special";
+
+        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
+        uniformClass = "tacs_Uniform_Garment_LS_OS_EP_TB";
+        backpack = "";
+
+        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_CarrierRig_Gunner_OGA" , "MC_Helmet2" };
+        weapons[] = { "STAF_rifle_gm6" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        magazines[] = { "5Rnd_127x108_Mag" , "SmokeShell" , "5Rnd_127x108_Mag" , "5Rnd_127x108_Mag" , "5Rnd_127x108_Mag" , "5Rnd_127x108_Mag" , "5Rnd_127x108_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
+
+        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_CarrierRig_Gunner_OGA" , "MC_Helmet2" };
+        respawnWeapons[] = { "STAF_rifle_gm6" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnMagazines[] = { "5Rnd_127x108_Mag" , "SmokeShell" , "5Rnd_127x108_Mag" , "5Rnd_127x108_Mag" , "5Rnd_127x108_Mag" , "5Rnd_127x108_Mag" , "5Rnd_127x108_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
+    };*/
+
+    /*class STAF_contractor_diver : B_Soldier_F {
+        author = "STAF";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Diver";
+        side = 1;
+        faction = "STAF_PMC";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_diver.jpg";
+        editorSubcategory = "EdSubcat_special";
+
+        identityTypes[] = { "Head_NATO" , "LanguageENG_F"};
+        uniformClass = "U_B_survival_uniform";
+        backpack = "B_AssaultPack_blk";
+
+        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_RebreatherB" , "rhsusf_opscore_bk", "G_B_Diving" };
+        weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
+
+        respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_RebreatherB" , "rhsusf_opscore_bk", "G_B_Diving" };
+        respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
+        respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
+    };
+
+    /*class STAF_contractor_helipilot : B_Helipilot_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
         displayName = "Helicopter Pilot";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_helipilot.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_helipilot.jpg";
+        editorSubcategory = "EdSubcat_special";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_OS_EP_TB";
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_TacVest_blk" , "VSM_Bowman_cap_Black" };
-        weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock18" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
         magazines[] = { "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_TacVest_blk" , "VSM_Bowman_cap_Black" };
-        respawnWeapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock18" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
         respawnMagazines[] = { "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-    };
+    };*/
 
-    class STAF_copilot : B_helicrew_F {
+    /*class STAF_contractor_copilot : B_helicrew_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
         displayName = "Helicopter Crew";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_copilot.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_copilot.jpg";
+        editorSubcategory = "EdSubcat_special";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_OS_EP_TB";
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_TacVest_blk" , "H_Watchcap_khk" };
-        weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock18" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
         magazines[] = { "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_TacVest_blk" , "H_Watchcap_khk" };
-        respawnWeapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock18" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
         respawnMagazines[] = { "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-    };
+    };*/
 
-    class STAF_helipilot_heavy : B_Helipilot_F {
+    /*class STAF_contractor_helipilot_heavy : B_Helipilot_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
         displayName = "Helicopter Pilot (Heavy)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_helipilot_heavy.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_helipilot_heavy.jpg";
+        editorSubcategory = "EdSubcat_special";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "MCB_Camo_Cyre_TS";
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "tacs_Vest_Tactical_DarkBlack" , "H_PilotHelmetHeli_B" , "VSM_balaclava_Black_Skull" };
-        weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock18" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
         magazines[] = { "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "tacs_Vest_Tactical_DarkBlack" , "H_PilotHelmetHeli_B" , "VSM_balaclava_Black_Skull" };
-        respawnWeapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock18" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
         respawnMagazines[] = { "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-    };
+    };*/
 
-    class STAF_copilot_heavy : B_helicrew_F {
+    /*class STAF_contractor_copilot_heavy : B_helicrew_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
         displayName = "Helicopter Crew (Heavy)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_copilot_heavy.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_copilot_heavy.jpg";
+        editorSubcategory = "EdSubcat_special";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "MCB_Camo_Cyre_TS";
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "tacs_Vest_Tactical_DarkBlack" , "H_CrewHelmetHeli_B" , "VSM_balaclava_Black_Skull" };
-        weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock18" , "Throw" , "Put" };
+        weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
         magazines[] = { "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "tacs_Vest_Tactical_DarkBlack" , "H_CrewHelmetHeli_B" , "VSM_balaclava_Black_Skull" };
-        respawnWeapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock18" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
         respawnMagazines[] = { "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "hlc_30Rnd_9x19_B_MP5" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
-    };
+    };*/
 
-    class STAF_pilot : B_Pilot_F {
+    /*class STAF_contractor_pilot : B_Pilot_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
         displayName = "Pilot";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_pilot.jpg";
+        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_pilot.jpg";
+        editorSubcategory = "EdSubcat_special";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "U_Marshal";
         backpack = "";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_Peltor_OD" };
-        weapons[] = { "STAF_pistol_glock18" , "Throw" , "Put" };
+        weapons[] = { "STAF_pistol_glock17" , "Throw" , "Put" };
         magazines[] = { "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" };
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_Peltor_OD" };
-        respawnWeapons[] = { "STAF_pistol_glock18" , "Throw" , "Put" };
+        respawnWeapons[] = { "STAF_pistol_glock17" , "Throw" , "Put" };
         respawnMagazines[] = { "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" };
-    };
+    };*/
 
-    class STAF_boss : B_Soldier_TL_F {
+    //---------------------------VIP--------------------------------------------
+
+    class STAF_boss : B_Soldier_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
@@ -1363,7 +401,7 @@ class CfgVehicles {
         respawnMagazines[] = {};
     };
 
-    class STAF_client_british : STAF_client_american {
+    class STAF_client_british : C_Man_1 {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
@@ -1386,7 +424,7 @@ class CfgVehicles {
         respawnMagazines[] = {};
     };
 
-    class STAF_client_chinese : STAF_client_british {
+    class STAF_client_chinese : C_Man_1 {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
@@ -1409,7 +447,7 @@ class CfgVehicles {
         respawnMagazines[] = {};
     };
 
-    class STAF_client_african : STAF_client_chinese {
+    class STAF_client_african : C_Man_1 {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
@@ -1432,7 +470,7 @@ class CfgVehicles {
         respawnMagazines[] = {};
     };
 
-    class STAF_client_greek : STAF_client_african {
+    class STAF_client_greek : C_Man_1 {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
@@ -1455,7 +493,7 @@ class CfgVehicles {
         respawnMagazines[] = {};
     };
 
-    class STAF_client_scientist : STAF_client_greek {
+    class STAF_client_scientist : C_Man_1 {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
@@ -1467,7 +505,6 @@ class CfgVehicles {
 
         identityTypes[] = {"NoGlasses", "Head_Euro" , "LanguageENGB_F" };
         uniformClass = "U_C_Scientist";
-        backpack = "";
 
         linkedItems[] = { "ItemWatch" , "ItemRadio" , "ItemAndroid" , "H_Cap_blu" };
         weapons[] = { "Throw" , "Put" };
@@ -1478,7 +515,7 @@ class CfgVehicles {
         respawnMagazines[] = {};
     };
 
-    class STAF_client_un : STAF_client_scientist {
+    class STAF_client_un : C_Man_1 {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
