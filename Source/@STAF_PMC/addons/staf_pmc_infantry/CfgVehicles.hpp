@@ -11,9 +11,43 @@ class CfgVehicles {
     class B_Pilot_F;
     class C_Man_1;
 
+    class B_Soldier_F_base: B_Soldier_F
+    {
+      class EventHandlers;
+    };
+
+    class B_soldier_AT_F_base: B_soldier_AT_F
+    {
+      class EventHandlers;
+    };
+
+    class B_soldier_AR_F_base: B_soldier_AR_F
+    {
+      class EventHandlers;
+    };
+
+    class B_medic_F_base: B_medic_F
+    {
+      class EventHandlers;
+    };
+
+    class B_soldier_M_F_base: B_soldier_M_F
+    {
+      class EventHandlers;
+    };
+
+    class B_engineer_F_base: B_engineer_F
+    {
+      class EventHandlers;
+    };
+
+    class B_Sharpshooter_F: B_Sharpshooter_F
+    {
+      class EventHandlers;
+    };
 
     //----------------------------Men------------------------------------------
-    class STAF_contractor : B_Soldier_F {
+    class STAF_contractor : B_Soldier_F_base {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
@@ -23,8 +57,8 @@ class CfgVehicles {
         editorPreview = "\staf_pmc_infantry\eden\STAF_contractor.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Garment_LS_GS_BP_BB";
-        backpack = "";
+        uniformClass = "STAF_Scientist";
+
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_4" , "VSM_Beanie_Black" };
         weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
@@ -33,9 +67,21 @@ class CfgVehicles {
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_4" , "VSM_Beanie_Black" };
         respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
+
+        class Eventhandlers: Eventhandlers
+        {
+          class InitEH
+          {
+              init = "[(_this select 0)] execVM '\staf_pmc_infantry\scripts\random_uniform.sqf';";
+          };
+          class RespawnEH
+          {
+            respawn = "[(_this select 0), (_this select 1)] execVM '\staf_pmc_infantry\scripts\random_uniform_respawn.sqf';";
+          };
+        };
     };
 
-    class STAF_contractor_at : B_soldier_AT_F {
+    class STAF_contractor_at : B_soldier_AT_F_base {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
@@ -45,7 +91,7 @@ class CfgVehicles {
         editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_at.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Combat_LS_TS_BP_BB";
+        uniformClass = "STAF_Scientist";
         backpack = "tacs_Backpack_Kitbag_DarkBlack";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_5" , "MCB_Helmet2" };
@@ -55,9 +101,22 @@ class CfgVehicles {
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_5" , "MCB_Helmet2" };
         respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_launcher_smaw" , "STAF_pistol_glock17" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "rhs_mag_smaw_SR" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" };
+
+        class Eventhandlers: Eventhandlers
+        {
+          class InitEH
+          {
+              init = "[(_this select 0)] execVM '\staf_pmc_infantry\scripts\random_uniform.sqf';";
+          };
+          class RespawnEH
+          {
+
+            respawn = "[(_this select 0), (_this select 1)] execVM '\staf_pmc_infantry\scripts\random_uniform_respawn.sqf';";
+          };
+        };
     };
 
-    class STAF_contractor_mg : B_soldier_AR_F {
+    class STAF_contractor_mg : B_soldier_AR_F_base {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
@@ -67,7 +126,7 @@ class CfgVehicles {
         editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_mg.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Garment_LS_OS_TP_TB";
+        uniformClass = "STAF_Scientist";
         backpack = "tacs_Backpack_Kitbag_DarkBlack";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_MG_OGA_OD" , "OGA_G_Helmet1" };
@@ -77,9 +136,22 @@ class CfgVehicles {
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_MG_OGA_OD" , "OGA_G_Helmet1" };
         respawnWeapons[] = { "STAF_rifle_m249" , "STAF_pistol_glock17" , "Throw" , "Put" };
         respawnMagazines[] = { "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "hlc_200rnd_556x45_M_SAW" , "hlc_200rnd_556x45_M_SAW" , "hlc_200rnd_556x45_M_SAW" , "hlc_200rnd_556x45_M_SAW" };
+
+        class Eventhandlers: Eventhandlers
+        {
+          class InitEH
+          {
+              init = "[(_this select 0)] execVM '\staf_pmc_infantry\scripts\random_uniform.sqf';";
+          };
+          class RespawnEH
+          {
+
+            respawn = "[(_this select 0), (_this select 1)] execVM '\staf_pmc_infantry\scripts\random_uniform_respawn.sqf';";
+          };
+        };
     };
 
-    class STAF_contractor_medic : B_medic_F {
+    class STAF_contractor_medic : B_medic_F_base {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
@@ -89,7 +161,7 @@ class CfgVehicles {
         editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_medic.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Garment_LS_ES_BP_BB";
+        uniformClass = "STAF_Scientist";
         backpack = "STAF_B_Kitbag_medic_rgr";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_operator_OGA_OD" , "VSM_Bowman_cap_balaclava_Black" };
@@ -99,9 +171,22 @@ class CfgVehicles {
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_operator_OGA_OD" , "VSM_Bowman_cap_balaclava_Black" };
         respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
+
+        class Eventhandlers: Eventhandlers
+        {
+          class InitEH
+          {
+              init = "[(_this select 0)] execVM '\staf_pmc_infantry\scripts\random_uniform.sqf';";
+          };
+          class RespawnEH
+          {
+
+            respawn = "[(_this select 0), (_this select 1)] execVM '\staf_pmc_infantry\scripts\random_uniform_respawn.sqf';";
+          };
+        };
     };
 
-    class STAF_contractor_marksman : B_soldier_M_F {
+    class STAF_contractor_marksman : B_soldier_M_F_base {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
@@ -111,8 +196,8 @@ class CfgVehicles {
         editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_marksman.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "tacs_Uniform_Combat_RS_BS_TP_BB";
-        backpack = "";
+        uniformClass = "STAF_Scientist";
+
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "M90d_Vest_4" , "H_Watchcap_khk" };
         weapons[] = { "STAF_rifle_m14" , "STAF_pistol_glock17" , "Throw" , "Put" };
@@ -121,9 +206,22 @@ class CfgVehicles {
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "M90d_Vest_4" , "H_Watchcap_khk" };
         respawnWeapons[] = { "STAF_rifle_m14" , "STAF_pistol_glock17" , "Throw" , "Put" };
         respawnMagazines[] = { "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "20Rnd_762x51_Mag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" };
+
+        class Eventhandlers: Eventhandlers
+        {
+          class InitEH
+          {
+              init = "[(_this select 0)] execVM '\staf_pmc_infantry\scripts\random_uniform.sqf';";
+          };
+          class RespawnEH
+          {
+
+            respawn = "[(_this select 0), (_this select 1)] execVM '\staf_pmc_infantry\scripts\random_uniform_respawn.sqf';";
+          };
+        };
     };
 
-    class STAF_contractor_engineer : B_engineer_F {
+    class STAF_contractor_engineer : B_engineer_F_base {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
@@ -133,7 +231,7 @@ class CfgVehicles {
         editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_engineer.jpg";
 
         identityTypes[] = { "Head_NATO" , "LanguageENG_F" };
-        uniformClass = "MC_GS_Camo_SS";
+        uniformClass = "STAF_Scientist";
         backpack = "STAF_B_Kitbag_engineer_cbr";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "VSM_MBSS_CB" , "VSM_BackwardsHat_Peltor_tan" , "VSM_Facemask_tan_Peltor_glasses" };
@@ -143,6 +241,19 @@ class CfgVehicles {
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "VSM_MBSS_CB" , "VSM_BackwardsHat_Peltor_tan" , "VSM_Facemask_tan_Peltor_glasses" };
         respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "ACE_VMM3" , "Throw" , "Put" };
         respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "HandGrenade" , "HandGrenade" };
+
+        class Eventhandlers: Eventhandlers
+        {
+          class InitEH
+          {
+              init = "[(_this select 0)] execVM '\staf_pmc_infantry\scripts\random_uniform.sqf';";
+          };
+          class RespawnEH
+          {
+
+            respawn = "[(_this select 0), (_this select 1)] execVM '\staf_pmc_infantry\scripts\random_uniform_respawn.sqf';";
+          };
+        };
     };
 
     class STAF_contractor_bodyguard : B_Soldier_F {
@@ -155,8 +266,8 @@ class CfgVehicles {
         editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_bodyguard.jpg";
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
-        uniformClass = "U_Marshal";
-        backpack = "";
+        uniformClass = "STAF_Marshal";
+
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "tacs_Vest_Tactical_DarkBlack" , "VSM_Bowman_cap_Black" };
         weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
@@ -180,7 +291,7 @@ class CfgVehicles {
 
         identityTypes[] = { "skn_m04_gas_mask_blu", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "skn_u_nbc_indep_blk";
-        backpack = "";
+
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "skn_b_nbc_xrt_tac_blu"  , "skn_m04_gas_mask_blu" };
         weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
@@ -203,7 +314,7 @@ class CfgVehicles {
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_OS_EP_TB";
-        backpack = "";
+
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_CarrierRig_Gunner_OGA" , "MC_Helmet2" };
         weapons[] = { "STAF_rifle_gm6" , "STAF_pistol_glock17" , "Throw" , "Put" };
@@ -249,7 +360,7 @@ class CfgVehicles {
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_OS_EP_TB";
-        backpack = "";
+
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_TacVest_blk" , "VSM_Bowman_cap_Black" };
         weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
@@ -272,7 +383,7 @@ class CfgVehicles {
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "tacs_Uniform_Garment_LS_OS_EP_TB";
-        backpack = "";
+
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_TacVest_blk" , "H_Watchcap_khk" };
         weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
@@ -295,7 +406,7 @@ class CfgVehicles {
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "MCB_Camo_Cyre_TS";
-        backpack = "";
+
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "tacs_Vest_Tactical_DarkBlack" , "H_PilotHelmetHeli_B" , "VSM_balaclava_Black_Skull" };
         weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
@@ -318,7 +429,7 @@ class CfgVehicles {
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "MCB_Camo_Cyre_TS";
-        backpack = "";
+
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "tacs_Vest_Tactical_DarkBlack" , "H_CrewHelmetHeli_B" , "VSM_balaclava_Black_Skull" };
         weapons[] = { "STAF_rifle_mp5" , "STAF_pistol_glock17" , "Throw" , "Put" };
@@ -341,7 +452,7 @@ class CfgVehicles {
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "U_Marshal";
-        backpack = "";
+
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_Peltor_OD" };
         weapons[] = { "STAF_pistol_glock17" , "Throw" , "Put" };
@@ -367,7 +478,7 @@ class CfgVehicles {
 
         identityTypes[] = { "Syndikat_Boss_F" , "Male02ENGFRE" };
         uniformClass = "HITMAN_47_SUIT";
-        backpack = "";
+
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "HITMAN_47_Hidden_Vest" , "G_Aviator" };
         weapons[] = { "Desert_Eagle" , "Throw" , "Put" };
@@ -378,7 +489,7 @@ class CfgVehicles {
         respawnMagazines[] = { "7Rnd_50_AE" , "7Rnd_50_AE" };
     };
 
-    class STAF_client_american : C_Man_1 {
+    class STAF_client_american : B_Soldier_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
@@ -390,7 +501,7 @@ class CfgVehicles {
 
         identityTypes[] = { "NoGlasses" , "LanguageENG_F" ,"Head_NATO"};
         uniformClass = "tacs_Suit_VIP";
-        backpack = "";
+
 
         linkedItems[] = { "ItemWatch" , "ItemRadio" , "ItemAndroid" , "H_Cap_usblack" };
         weapons[] = { "Throw" , "Put" };
@@ -401,7 +512,7 @@ class CfgVehicles {
         respawnMagazines[] = {};
     };
 
-    class STAF_client_british : C_Man_1 {
+    class STAF_client_british : B_Soldier_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
@@ -413,7 +524,7 @@ class CfgVehicles {
 
         identityTypes[] = {"NoGlasses", "Head_Euro" , "LanguageENGB_F" };
         uniformClass = "tacs_Suit_VIP";
-        backpack = "";
+
 
         linkedItems[] = { "ItemWatch" , "ItemRadio" , "ItemAndroid" , "H_Hat_checker" };
         weapons[] = { "Throw" , "Put" };
@@ -424,7 +535,7 @@ class CfgVehicles {
         respawnMagazines[] = {};
     };
 
-    class STAF_client_chinese : C_Man_1 {
+    class STAF_client_chinese : B_Soldier_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
@@ -436,7 +547,7 @@ class CfgVehicles {
 
         identityTypes[] = { "Head_Asian" , "LanguageCHI_F" };
         uniformClass = "HITMAN_47_SUIT";
-        backpack = "";
+
 
         linkedItems[] = { "ItemWatch" , "ItemRadio" , "ItemAndroid" , "G_Aviator" };
         weapons[] = { "Throw" , "Put" };
@@ -447,7 +558,7 @@ class CfgVehicles {
         respawnMagazines[] = {};
     };
 
-    class STAF_client_african : C_Man_1 {
+    class STAF_client_african : B_Soldier_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
@@ -459,7 +570,7 @@ class CfgVehicles {
 
         identityTypes[] = {"NoGlasses", "Head_African" , "LanguageENGFRE_F" };
         uniformClass = "HITMAN_47_SUIT";
-        backpack = "";
+
 
         linkedItems[] = { "ItemWatch" , "ItemRadio" , "ItemAndroid" , "H_Bandanna_gry" };
         weapons[] = { "Throw" , "Put" };
@@ -470,7 +581,7 @@ class CfgVehicles {
         respawnMagazines[] = {};
     };
 
-    class STAF_client_greek : C_Man_1 {
+    class STAF_client_greek : B_Soldier_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
@@ -481,8 +592,8 @@ class CfgVehicles {
         editorSubcategory = "EdSubcat_client";
 
         identityTypes[] = {"NoGlasses", "Head_Greek" , "LanguageGRE_F" };
-        uniformClass = "U_Marshal";
-        backpack = "";
+        uniformClass = "STAF_Marshal";
+
 
         linkedItems[] = { "ItemWatch" , "ItemRadio" , "ItemAndroid" , "H_Bandanna_sgg" };
         weapons[] = { "Throw" , "Put" };
@@ -493,7 +604,7 @@ class CfgVehicles {
         respawnMagazines[] = {};
     };
 
-    class STAF_client_scientist : C_Man_1 {
+    class STAF_client_scientist : B_Soldier_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
@@ -504,7 +615,7 @@ class CfgVehicles {
         editorSubcategory = "EdSubcat_client";
 
         identityTypes[] = {"NoGlasses", "Head_Euro" , "LanguageENGB_F" };
-        uniformClass = "U_C_Scientist";
+        uniformClass = "STAF_Scientist";
 
         linkedItems[] = { "ItemWatch" , "ItemRadio" , "ItemAndroid" , "H_Cap_blu" };
         weapons[] = { "Throw" , "Put" };
@@ -515,7 +626,7 @@ class CfgVehicles {
         respawnMagazines[] = {};
     };
 
-    class STAF_client_un : C_Man_1 {
+    class STAF_client_un : B_Soldier_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
@@ -527,7 +638,7 @@ class CfgVehicles {
 
         identityTypes[] = {"NoGlasses", "Head_Euro" , "LanguageENGFRE_F" };
         uniformClass = "M81_Camo_crye";
-        backpack = "";
+
 
         linkedItems[] = { "ItemWatch" , "ItemRadio" , "ItemAndroid" , "LOP_V_Carrier_OLV" , "LOP_H_Beret_UN" };
         weapons[] = { "Throw" , "Put" };

@@ -239,7 +239,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor";
-        editorPreview = "\staf_pmc_vehicles\eden\STAF_offroad_hmg.jpg";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_offroad_pickup.jpg";
 
         textureList[] = {"Red",0,"Beige",0,"White",0,"Blue",0,"Darkred",0,"Bluecustom",1};
     };

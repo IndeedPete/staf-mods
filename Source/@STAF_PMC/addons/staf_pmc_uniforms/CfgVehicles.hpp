@@ -1,5 +1,21 @@
 class CfgVehicles {
   class B_Soldier_F;
+  class C_Marshal_F;
+  class C_scientist_F;
+
+  class STAF_Dummy_Marshal: C_Marshal_F
+  {
+		scope = 1;
+    uniformClass = "STAF_Marshal";
+    modelSides[] = {3, 2, 1, 0};
+  };
+
+  class STAF_Dummy_Scientist: C_scientist_F
+  {
+    scope = 1;
+    uniformClass = "STAF_Scientist";
+    modelSides[] = {3, 2, 1, 0};
+  };
 
 	class STAF_Dummy_Norwegian_Desert: B_Soldier_F
 	{

@@ -10,6 +10,38 @@ class CfgWeapons {
   class U_I_OfficerUniform;
   class U_I_CombatUniform;
   class U_I_CombatUniform_shortsleeve;
+  class U_Marshal;
+  class U_C_Scientist;
+
+  class STAF_Marshal: U_Marshal
+  {
+  	displayName = "STAF Marshal";
+    modelSides[] = {3, 2, 1, 0};
+
+  	class ItemInfo: UniformItem
+  	{
+  		containerClass = "Supply20";
+  		hiddenSelections[] = {"Camo"};
+  		mass = 30;
+  		uniformModel = "-";
+  		uniformClass = "STAF_Dummy_Marshal";
+  	};
+  };
+
+  class STAF_Scientist: U_C_Scientist
+  {
+    displayName = "STAF Scientist";
+    modelSides[] = {3, 2, 1, 0};
+
+    class ItemInfo: UniformItem
+    {
+      containerClass = "Supply40";
+      hiddenSelections[] = {"Camo"};
+      mass = 40;
+      uniformModel = "-";
+      uniformClass = "STAF_Dummy_Scientist";
+    };
+  };
 
   class STAF_U_B_CombatUniform_Norwegian_Desert: U_B_CombatUniform_mcam
   {
