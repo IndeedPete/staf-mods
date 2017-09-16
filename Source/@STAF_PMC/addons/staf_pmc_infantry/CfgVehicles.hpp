@@ -96,11 +96,11 @@ class CfgVehicles {
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_5" , "MCB_Helmet2" };
         weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_launcher_smaw" , "STAF_pistol_glock17" , "Throw" , "Put" };
-        magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "rhs_mag_smaw_SR" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" };
+        magazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "rhs_mag_smaw_SR" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA"};
 
         respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "MCB_Vest_5" , "MCB_Helmet2" };
         respawnWeapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_launcher_smaw" , "STAF_pistol_glock17" , "Throw" , "Put" };
-        respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "rhs_mag_smaw_SR" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA" };
+        respawnMagazines[] = { "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "SmokeShell" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "30Rnd_556x45_Stanag" , "KA_17Rnd_9x19_Mag" , "KA_17Rnd_9x19_Mag" , "rhs_mag_smaw_SR" , "SmokeShell" , "SmokeShellGreen" , "Chemlight_green" , "Chemlight_green" , "rhs_mag_smaw_HEAA" , "rhs_mag_smaw_HEAA"};
 
         class Eventhandlers: Eventhandlers
         {
@@ -162,7 +162,7 @@ class CfgVehicles {
 
         identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
         uniformClass = "STAF_Scientist";
-        backpack = "STAF_B_Kitbag_medic_rgr";
+        backpack = "STAF_B_Kitbag_medic_blk";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "VSM_LBT6094_operator_OGA_OD" , "VSM_Bowman_cap_balaclava_Black" };
         weapons[] = { "STAF_rifle_scar_blk_xps" , "STAF_pistol_glock17" , "Throw" , "Put" };
@@ -232,7 +232,7 @@ class CfgVehicles {
 
         identityTypes[] = { "Head_NATO" , "LanguageENG_F" };
         uniformClass = "STAF_Scientist";
-        backpack = "STAF_B_Kitbag_engineer_cbr";
+        backpack = "STAF_B_Kitbag_engineer_blk";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "B_UavTerminal" , "VSM_MBSS_CB" , "VSM_BackwardsHat_Peltor_tan" , "VSM_Facemask_tan_Peltor_glasses" };
         weapons[] = { "STAF_rifle_scar_blk_xps" , "ACE_VMM3" , "Throw" , "Put" };

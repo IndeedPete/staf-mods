@@ -97,7 +97,7 @@ class CfgGroups {
                 };
 
                 class STAF_Recon {
-                    name = "Recon Sentry (#4)";
+                    name = "Recon Sentry";
                     side = 1;
                     faction = "STAF_PMC";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
