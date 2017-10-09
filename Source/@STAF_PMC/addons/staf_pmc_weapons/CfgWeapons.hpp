@@ -20,6 +20,7 @@ class CfgWeapons {
   class arifle_AK12_F; //Vanilla AK12
   class srifle_EBR_F; //Vanilla Mk14 EBR
   class srifle_DMR_06_olive_F; //Vanilla M14
+  class srifle_DMR_06_camo_F; //Vanilla M14 Camo
   class srifle_GM6_F; //Vanilla GM6
   class srifle_LRR_F; //Vanilla M200
   class srifle_DMR_02_F; //Vanilla Bad News
@@ -99,7 +100,7 @@ class CfgWeapons {
       };
       class LinkedItemsAcc
       {
-        item = "KA_SCAR_H_Laser_Flashlight_Black_IR";
+        item = "KA_SCAR_H_Flashlight_Black";
         slot = "PointerSlot";
       };
       class LinkedItemsMuzzle
@@ -121,7 +122,51 @@ class CfgWeapons {
       };
       class LinkedItemsAcc
       {
-        item = "KA_SCAR_H_Laser_Flashlight_Black_IR";
+        item = "KA_SCAR_H_Flashlight_Black";
+        slot = "PointerSlot";
+      };
+      class LinkedItemsMuzzle
+      {
+        item = "SCAR_10_Inches_Barrel";
+        slot = "MuzzleSlot";
+      };
+    };
+  };
+
+  class STAF_rifle_scar_tan_xps: KA_SCAR_L_Tan_Hand
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "rhsusf_acc_eotech_xps3";
+        slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+        item = "KA_SCAR_H_Flashlight_Sand";
+        slot = "PointerSlot";
+      };
+      class LinkedItemsMuzzle
+      {
+        item = "SCAR_10_Inches_Barrel";
+        slot = "MuzzleSlot";
+      };
+    };
+  };
+
+  class STAF_rifle_scar_gl_tan_xps: KA_SCAR_L_Tan_EGLM
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "rhsusf_acc_eotech_xps3";
+        slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+        item = "KA_SCAR_H_Flashlight_Sand";
         slot = "PointerSlot";
       };
       class LinkedItemsMuzzle
@@ -367,6 +412,23 @@ class CfgWeapons {
   };
 
   class STAF_rifle_m14: srifle_DMR_06_olive_F
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "optic_DMS";
+        slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+        item = "acc_pointer_IR";
+        slot = "PointerSlot";
+      };
+    };
+  };
+
+  class STAF_rifle_m14_camo: srifle_DMR_06_camo_F
   {
     class LinkedItems
     {

@@ -7,6 +7,8 @@ class CfgVehicles {
   class B_Kitbag_cbr;
 	class B_Kitbag_rgr;
 	class B_Carryall_khk;
+  class B_AssaultPack_blk;
+  class B_Bergen_blk;
 
 	class STAF_B_Carryall_MCAM_Black: B_Carryall_khk
 	{
@@ -19,7 +21,7 @@ class CfgVehicles {
 	class STAF_B_Kitbag_blk: B_Kitbag_rgr
 	{
 		baseBackpack = "STAF_B_Kitbag_blk";
-		displayName = "Kitbag (Black, EF)";
+		displayName = "Kitbag (Dark Black)";
 		hiddenSelectionsTextures[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_fast_blk_co.paa"};
 	};
 
@@ -28,7 +30,6 @@ class CfgVehicles {
 		baseBackpack = "STAF_B_Kitbag_medic_blk";
 		displayName = "STAF Medic Kitbag (Black)";
 		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_fast_medic_blk_co.paa"};
-		scope = 2;
 
 		class TransportItems
 		{
@@ -199,4 +200,81 @@ class CfgVehicles {
 			item_xx(ACE_DefusalKit,1);
 		};
 	};
+
+  class STAF_B_Carryall_inv: STAF_B_Carryall_MCAM_Black
+  {
+    baseBackpack = "STAF_B_Carryall_Inv";
+    displayName = "STAF Carryall Backpack (Invisible)";
+    hiddenSelectionsTextures[] = {""};
+    picture = "";
+  };
+
+  class STAF_B_Kitbag_inv: STAF_B_Kitbag_blk
+  {
+    baseBackpack = "STAF_B_Kitbag_inv";
+    displayName = "Kitbag (Invisible)";
+    hiddenSelectionsTextures[] = {""};
+		picture = "";
+  };
+
+  class STAF_B_Kitbag_medic_inv: STAF_B_Kitbag_medic_blk
+  {
+    baseBackpack = "STAF_B_Kitbag_medic_inv";
+    displayName = "STAF Medic Kitbag (Invisible)";
+    hiddenSelectionsTextures[] = {""};
+		picture = "";
+
+    class TransportItems
+    {
+      item_xx(ACE_adenosine,3);
+      item_xx(ACE_epinephrine,7);
+      item_xx(ACE_morphine,10);
+      item_xx(ACE_elasticBandage,30);
+      item_xx(ACE_packingBandage,30);
+      item_xx(ACE_salineIV,4);
+      item_xx(ACE_salineIV_500,8);
+      item_xx(ACE_salineIV_250,12);
+      item_xx(ACE_tourniquet,5);
+      item_xx(ACE_surgicalKit,1)
+      item_xx(ACE_personalAidKit,5);
+      item_xx(ACE_EarPlugs,5);
+      item_xx(ACE_bodyBag,2);
+      };
+  };
+
+  class STAF_B_Kitbag_exp_inv: STAF_B_Kitbag_exp_blk
+  {
+    baseBackpack = "STAF_B_Kitbag_exp_inv";
+    displayName = "STAF Explosives Kitbag (Invisible)";
+    hiddenSelectionsTextures[] = {""};
+		picture = "";
+
+    class TransportMagazines
+    {
+      mag_xx(SatchelCharge_Remote_Mag,3);
+      mag_xx(DemoCharge_Remote_Mag,1);
+    };
+
+    class TransportItems
+    {
+      item_xx(ACE_Clacker,1);
+      item_xx(ACE_DefusalKit,1);
+    };
+  };
+
+  class STAF_B_AssaultPack_inv: B_AssaultPack_blk
+  {
+    baseBackpack = "STAF_B_AssaultPack_inv";
+    displayName = "Assault Pack (Invisible)";
+    hiddenSelectionsTextures[] = {""};
+		picture = "";
+  };
+
+  class STAF_B_Bergen_inv: B_Bergen_blk
+  {
+    baseBackpack = "STAF_B_Bergen_inv";
+    displayName = "Bergen (Invisible)";
+    hiddenSelectionsTextures[] = {""};
+		picture = "";
+  };
 };
