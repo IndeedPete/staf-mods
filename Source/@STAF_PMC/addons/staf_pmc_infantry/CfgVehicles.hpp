@@ -41,7 +41,7 @@ class CfgVehicles {
       class EventHandlers;
     };
 
-    class B_Sharpshooter_F: B_Sharpshooter_F
+    class B_Sharpshooter_F_base: B_Sharpshooter_F
     {
       class EventHandlers;
     };
