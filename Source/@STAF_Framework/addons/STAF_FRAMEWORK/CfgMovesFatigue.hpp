@@ -5,9 +5,9 @@ class CfgMovesFatigue
 		/* disable sprinting for this amount of secs when stamina runs out */
 		staminaCooldown = 5;         //default 10
 		/* "amount" of stamina, how fast it drains (higher = slower) */
-		staminaDuration = 120;        //default 60
+		staminaDuration = 90;        //default 60
 		/* restore stamina from 0 to full in this amount of secs (Total Stamina - Inventory Load)*/
-		staminaRestoration = 25;     //default 30
+		staminaRestoration = 30;     //default 30
 		/* when terrain gradient prevents sprinting (hill icon),
 		 * add this value to stamina gain */
 		terrainDrainSprint = -0.75;   //default -1

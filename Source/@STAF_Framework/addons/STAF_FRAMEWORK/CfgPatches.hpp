@@ -11,7 +11,7 @@ class CfgPatches
 		};
 		weapons[] = {};
 		requiredVersion = 1.0;
-		requiredAddons[] = {"A3_Modules_F"};
+		requiredAddons[] = {"A3_Modules_F","ace_movement"};
 		author = "STAF";
 		authorUrl = "http://stafclan.com/index.php/BoardList/";
 		version = 1.0;
