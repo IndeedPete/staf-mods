@@ -1,6 +1,6 @@
 params [
 	["_medic", ObjNull, [ObjNull]],
-	["_text", "Heal me.", [""]],
+	["_text", "Heal me", [""]],
 	["_condition", "true", [""]]
 ];
 
