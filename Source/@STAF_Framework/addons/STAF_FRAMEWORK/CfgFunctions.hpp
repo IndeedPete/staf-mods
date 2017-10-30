@@ -22,6 +22,8 @@ class CfgFunctions
 			class arsenalInit{};
 			class unpackOnContainerClosed{};
 			class vehicleLoadout{};
+			class pmcarsenalInit{};
+			class pmcarsenal{};
 		};
 		class ConvoyDefend
 		{
