@@ -257,9 +257,9 @@ class CfgVehicles {
         acceleration = 5;
         armor = 130;
         armorStructural = 5;
-        armorGlass = 1.5;
+        armorGlass = 2;
         armorWheels = 0.75;
-        Maxspeed = 120;
+        Maxspeed = 100;
         textureList[] = {"Red",0,"Black",1,"Gey",0,"Orange",0};
     };
 
