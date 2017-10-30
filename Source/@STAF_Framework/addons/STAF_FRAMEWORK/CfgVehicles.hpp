@@ -15,7 +15,7 @@ class CfgVehicles
 		};
 	};
 
-	class STAF_Module_Radio_F: Module_F
+	/*class STAF_Module_Radio_F: Module_F
 	{
 		// Standard object definitions
 		category = "STAF";
@@ -134,7 +134,7 @@ class CfgVehicles
 				synced[] = {"AnyBrain"}; // Pre-define entities like "AnyBrain" can be used. See the list below
 			};
 		};
-	};
+	};*/
 
 	class STAF_Module_Insignia_F: Module_F
 	{
@@ -200,7 +200,7 @@ class CfgVehicles
 		};
 	};
 
-	class STAF_Module_Arsenal_F: Module_F
+	/*class STAF_Module_Arsenal_F: Module_F
 	{
 		// Standard object definitions
 		category = "STAF";
@@ -245,7 +245,7 @@ class CfgVehicles
 				synced[] = {"AnyStaticObject", "AnyVehicle"}; // Pre-define entities like "AnyBrain" can be used. See the list below
 			};
 		};
-	};
+	};*/
 
 	class STAF_Module_Base_Medic_F: Module_F
 	{
@@ -262,6 +262,38 @@ class CfgVehicles
 		class ModuleDescription: ModuleDescription
 		{
 			description = "Adds an ACE healing action to every synchronised object.";
+			sync[] = {"LocationArea_F"};
+
+			class LocationArea_F
+			{
+				description[] =
+				{
+					"Synchronise any object to this module."
+				};
+				position = 0;
+				direction = 0;
+				optional = 0;
+				duplicate = 0;
+				synced[] = {"AnyStaticObject", "AnyVehicle"};
+			};
+		};
+	};
+
+	class STAF_Module_PMC_Arsenal_F: Module_F
+	{
+		category = "STAF";
+		displayName = "STAF PMC Arsenal";
+		function = "STAF_fnc_pmcarsenalInit";
+		functionPriority = 10;
+		isDisposable = 0;
+		is3DEN = 0;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		scope = 2;
+
+		class ModuleDescription: ModuleDescription
+		{
+			description = "This Adds the PMC Arsenal to any Synced Object.";
 			sync[] = {"LocationArea_F"};
 
 			class LocationArea_F
