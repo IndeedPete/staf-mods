@@ -16,6 +16,9 @@ class CfgVehicles {
     class B_LSV_01_unarmed_F;
     class B_LSV_01_armed_F;
     class B_Quadbike_01_F;
+    class C_Van_01_transport_F;
+    class C_Van_01_box_F;
+    class C_Van_01_fuel_F;
     class C_Truck_02_transport_F;
     class C_Truck_02_box_F;
     class C_Truck_02_fuel_F;
@@ -184,7 +187,46 @@ class CfgVehicles {
         editorPreview = "\staf_pmc_vehicles\eden\STAF_quadbike.jpg";
     };
 
-    /*class STAF_truck_transport : C_Truck_02_transport_F {
+    class STAF_truck_transport : C_Van_01_transport_F {
+        author = "STAF";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Truck Transport";
+        side = 1;
+        faction = "STAF_PMC";
+        crew = "STAF_contractor";
+        //editorPreview = "\staf_pmc_vehicles\eden\STAF_truck_transport.jpg";
+
+        textureList[] = {"Black",1,"White",0,"Red",0};
+    };
+
+    class STAF_truck_box : C_Van_01_box_F {
+        author = "STAF";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Truck Box";
+        side = 1;
+        faction = "STAF_PMC";
+        crew = "STAF_contractor";
+        //editorPreview = "\staf_pmc_vehicles\eden\STAF_truck_transport.jpg";
+
+        textureList[] = {"Black",1,"White",0,"Red",0};
+    };
+
+    class STAF_truck_fuel : C_Van_01_fuel_F {
+        author = "STAF";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Truck Fuel";
+        side = 1;
+        faction = "STAF_PMC";
+        crew = "STAF_contractor";
+        //editorPreview = "\staf_pmc_vehicles\eden\STAF_truck_transport.jpg";
+
+        textureList[] = {"Black",1,"White",0,"Red",0,"Black_v2",0,"White_v2",0,"Red_v2",0};
+    };
+
+    /*class STAF_zamak_transport : C_Truck_02_transport_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
@@ -195,7 +237,7 @@ class CfgVehicles {
         editorPreview = "\staf_pmc_vehicles\eden\STAF_truck_transport.jpg";
     };*/
 
-    /*class STAF_truck_box : C_Truck_02_box_F {
+    /*class STAF_zamak_box : C_Truck_02_box_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
@@ -206,7 +248,7 @@ class CfgVehicles {
         editorPreview = "\staf_pmc_vehicles\eden\STAF_truck_repair.jpg";
     };*/
 
-    /*class STAF_truck_fuel : C_Truck_02_fuel_F {
+    /*class STAF_zamak_fuel : C_Truck_02_fuel_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
