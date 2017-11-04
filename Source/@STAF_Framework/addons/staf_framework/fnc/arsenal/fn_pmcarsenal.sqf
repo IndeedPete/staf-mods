@@ -1,4 +1,3 @@
-// <img image='\a3\ui_f\data\IGUI\Cfg\Actions\gear_ca.paa' />
 //Init of the box and arsenal
 _box = _this select 0;
 

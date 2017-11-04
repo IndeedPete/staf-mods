@@ -1,3 +1,4 @@
+//Init
 params [
     ["_logic", ObjNull, [ObjNull]],
 	["_objs", [], [[]]]
