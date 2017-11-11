@@ -7,14 +7,14 @@ class CfgMovesFatigue
 		/* "amount" of stamina, how fast it drains (higher = slower) */
 		staminaDuration = 90;        //default 60
 		/* restore stamina from 0 to full in this amount of secs (Total Stamina - Inventory Load)*/
-		staminaRestoration = 30;     //default 30
+		staminaRestoration = 15;     //default 30
 		/* when terrain gradient prevents sprinting (hill icon),
 		 * add this value to stamina gain */
-		terrainDrainSprint = -0.75;   //default -1
+		terrainDrainSprint = 0.75;   //default -1
 		/* when terrain gradient forces you to walk (steep hill),
 		 * add this value to stamina gain (warning: too low negative values
 		 * actually restore stamina due to the character walking) */
-		terrainDrainRun = -0.90;      //default -1
+		terrainDrainRun = 0.90;      //default -1
 		/* when terrain gradient disable sprint, animation speed is multiplied by this value */
 		terrainSpeedCoef = 0.9;
 };

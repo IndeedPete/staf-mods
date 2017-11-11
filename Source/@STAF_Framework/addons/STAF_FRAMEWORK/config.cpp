@@ -1,7 +1,7 @@
 #include "CfgFactionClasses.hpp"
 #include "CfgFunctions.hpp"
 #include "CfgInventoryGlobalVariable.hpp"
-
+#include "CfgMovesFatigue.hpp"
 #include "CfgMusic.hpp"
 #include "CfgPatches.hpp"
 #include "CfgPostProcessTemplates.hpp"

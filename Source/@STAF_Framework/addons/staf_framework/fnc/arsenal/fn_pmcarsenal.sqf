@@ -777,7 +777,7 @@ _magazines = [
 ];
 
 //Adding Itemlists to the Arsenal
-[_box,(_backpacks)] call BIS_fnc_addVirtualBackpackCargo;
-[_box,(_items + _uniforms + _headgear + _vests)] call BIS_fnc_addVirtualItemCargo;
-[_box,(_magazines)] call BIS_fnc_addVirtualMagazineCargo;
-[_box,(_weapons)] call BIS_fnc_addVirtualWeaponCargo;
+[_box,(_backpacks),true] call BIS_fnc_addVirtualBackpackCargo;
+[_box,(_items + _uniforms + _headgear + _vests),true] call BIS_fnc_addVirtualItemCargo;
+[_box,(_magazines),true] call BIS_fnc_addVirtualMagazineCargo;
+[_box,(_weapons),true] call BIS_fnc_addVirtualWeaponCargo;
