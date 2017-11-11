@@ -1,36 +1,36 @@
 class CfgVehicles {
 
-    class B_Heli_Light_01_F;
-    class B_Heli_Light_01_armed_F;
-    class O_Heli_Light_02_unarmed_F;
-    class O_T_VTOL_02_infantry_grey_F;
-    class O_T_VTOL_02_vehicle_grey_F;
+    //class B_Heli_Light_01_F;
+    //class B_Heli_Light_01_armed_F;
+    //class O_Heli_Light_02_unarmed_F;
+    //class O_T_VTOL_02_infantry_grey_F;
+    //class O_T_VTOL_02_vehicle_grey_F;
     /*class sab_falcon;*/
-    class rhsusf_M1117_O;
+    //class rhsusf_M1117_O;
     class B_Boat_Transport_01_F;
-    class B_Boat_Armed_01_minigun_F;
-    class I_C_Boat_Transport_02_F;
-    class B_SDV_01_F;
-    class B_MRAP_01_F;
-    class B_MRAP_01_hmg_F;
-    class B_LSV_01_unarmed_F;
-    class B_LSV_01_armed_F;
+    //class B_Boat_Armed_01_minigun_F;
+    //class I_C_Boat_Transport_02_F;
+    //class B_SDV_01_F;
+    //class B_MRAP_01_F;
+    //class B_MRAP_01_hmg_F;
+    //class B_LSV_01_unarmed_F;
+    //class B_LSV_01_armed_F;
     class B_Quadbike_01_F;
     class C_Van_01_transport_F;
     class C_Van_01_box_F;
     class C_Van_01_fuel_F;
-    class C_Truck_02_transport_F;
-    class C_Truck_02_box_F;
-    class C_Truck_02_fuel_F;
+    //class C_Truck_02_transport_F;
+    //class C_Truck_02_box_F;
+    //class C_Truck_02_fuel_F;
     class C_Offroad_02_unarmed_F;
     class C_Offroad_01_F;
     class C_SUV_01_F;
     class B_UAV_01_F;
-    class RHS_M2StaticMG_MiniTripod_WD;
-    class RHS_M2StaticMG_WD;
-    class RHS_MK19_TriPod_WD;
-    class RHS_TOW_TriPod_WD;
-    class ACE_B_SpottingScope;
+    //class RHS_M2StaticMG_MiniTripod_WD;
+    //class RHS_M2StaticMG_WD;
+    //class RHS_MK19_TriPod_WD;
+    //class RHS_TOW_TriPod_WD;
+    //class ACE_B_SpottingScope;
 
     //----------------------------------Air------------------------------------
     /*class STAF_mh6 : B_Heli_Light_01_F {
@@ -306,7 +306,7 @@ class CfgVehicles {
     };
 
     //----------------------------------Drones----------------------------------
-    /*class STAF_quadcopter : B_UAV_01_F {
+    class STAF_quadcopter : B_UAV_01_F {
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
@@ -315,7 +315,7 @@ class CfgVehicles {
         faction = "STAF_PMC";
         crew = "B_UAV_AI";
         editorPreview = "\staf_pmc_vehicles\eden\STAF_quadcopter.jpg";
-    };*/
+    };
 
     //----------------------------------Turret----------------------------------
     /*class STAF_static_HMG : RHS_M2StaticMG_MiniTripod_WD {
