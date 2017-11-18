@@ -1,12 +1,9 @@
 class CfgGroups {
     class WEST {
-
         class STAF_PMC {
             name = "Security Tactics and Assault Force";
-
             class Infantry {
                 name = "Infantry";
-
                 class STAF_PMC_Sentry {
                     name = "Sentry";
                     side = 1;
@@ -27,7 +24,6 @@ class CfgGroups {
                         vehicle = "STAF_contractor";
                     };
                 };
-
                 class STAF_PMC_Fire_Team {
                     name = "Fire Team";
                     side = 1;
@@ -60,7 +56,6 @@ class CfgGroups {
                         vehicle = "STAF_contractor_mg";
                     };
                 };
-
                 class STAF_PMC_Squad {
                     name = "Squad";
                     side = 1;
@@ -111,12 +106,9 @@ class CfgGroups {
                         vehicle = "STAF_contractor";
                     };
                 };
-
             };
-
             class SpecOps {
                 name = "Special Forces";
-
                 class STAF_PMC_Engineer_Sentry {
                     name = "Engineer Sentry";
                     side = 1;
@@ -137,12 +129,9 @@ class CfgGroups {
                         vehicle = "STAF_contractor_engineer";
                     };
                 };
-
             };
-
             class Motorized {
                 name = "Motorized Infantry";
-
                 class STAF_PMC_SUV_Team {
                     name = "SUV Team";
                     side = 1;
@@ -175,7 +164,6 @@ class CfgGroups {
                         vehicle = "STAF_contractor";
                     };
                 };
-
                 class STAF_PMC_Jeep_Team {
                     name = "Jeep Team";
                     side = 1;
@@ -208,7 +196,6 @@ class CfgGroups {
                         vehicle = "STAF_contractor";
                     };
                 };
-
                 class STAF_PMC_Offroad_Team {
                     name = "Offroad Team";
                     side = 1;
@@ -259,37 +246,24 @@ class CfgGroups {
                         vehicle = "STAF_contractor";
                     };
                 };
-
             };
-
             class Motorized_MTP {
                 name = "Motorized Infantry (MTP)";
-
             };
-
             class Support {
                 name = "Support Infantry";
-
             };
-
             class Mechanized {
                 name = "Mechanized Infantry";
-
             };
-
             class Armored {
                 name = "Armor";
-
             };
-
             class Artillery {
                 name = "Artillery";
-
             };
-
             class Naval {
                 name = "Naval";
-
                 class STAF_PMC_Assault_Boat_Team {
                     name = "Assault Boat Team";
                     side = 1;
@@ -328,16 +302,10 @@ class CfgGroups {
                         vehicle = "STAF_contractor_mg";
                     };
                 };
-
             };
-
             class Air {
                 name = "Air";
-
             };
-
-
         };
-
     };
 };
