@@ -6,7 +6,10 @@ class CfgPatches {
       weapons[] = {
         "STAF_MapBoard_CoC_F",
         "STAF_MapBoard_MHQ_F",
-        "STAF_SupplyBox"
+        "STAF_SupplyBox_F",
+        "STAF_Ammobox_F",
+        "STAF_Weaponsbox_F",
+        "STAF_Launcherbox_F"
       };
       requiredAddons[] = {};
       requiredVersion = 1.62;

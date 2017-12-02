@@ -1,10 +1,14 @@
 #define mag_xx(a,b) class _xx_##a {magazine = a; count = b;}
 #define weap_xx(a,b) class _xx_##a {weapon = a; count = b;}
 #define item_xx(a,b) class _xx_##a {name = a; count = b;}
+#define back_xx(a,b) class _xx_##a {backpack = a; count = b;}
 
 class CfgVehicles {
 	class Land_MapBoard_F;
 	class B_supplyCrate_F;
+	class Box_NATO_Wps_F;
+	class Box_NATO_Ammo_F;
+	class Box_NATO_WpsLaunch_F;
 
 	class STAF_MapBoard_CoC_F: Land_MapBoard_F
 	{
@@ -18,7 +22,7 @@ class CfgVehicles {
 		hiddenSelectionsTextures[] = {"\staf_pmc_main\txt\WB_MHQ.paa"};
 	};
 
-	class STAF_SupplyBox: B_supplyCrate_F
+	/*class STAF_SupplyBox_F: B_supplyCrate_F
 	{
 			displayName = "Supply Box (STAF)";
 
@@ -114,16 +118,125 @@ class CfgVehicles {
 				mag_xx(rhsusf_5Rnd_FRAG,7);
 			};
 			class TransportWeapons {
-				weap_xx(arifle_MX_Black_F,1);
-				weap_xx(STAF_rifle_scar_blk,1);
-				weap_xx(hlc_rifle_G36KMLIC,1);
-				weap_xx(rhs_weap_mk18,1);
+				weap_xx(STAF_rifle_scar_blk,2);
 				weap_xx(rhs_weap_M136,2);
 				weap_xx(rhs_weap_M136_hedp,2);
 				weap_xx(rhs_weap_M136_hp,2);
-				weap_xx(rhs_weap_fim92,1);
 				weap_xx(STAF_launcher_smaw,1);
 			};
 			class TransportBackpacks {};
+	};*/
+
+	class STAF_Ammobox_F: Box_NATO_Ammo_F
+	{
+			displayName = "Basic Ammo (STAF)";
+			maximumLoad = 150;
+			model = "\a3\weapons_f\ammoboxes\AmmoBox_F.p3d";
+			hiddenSelections[] = {"Camo_Signs","Camo"};
+			hiddenSelectionsTextures[] = {"plp_containers\data\empty.paa","plp_containers\data\plasticBlack.paa"};
+
+			class TransportMagazines {
+				mag_xx(30Rnd_556x45_Stanag,30);
+				mag_xx(20Rnd_762x51_Mag,10);
+				mag_xx(KA_17Rnd_9x19_Mag,15);
+				mag_xx(hlc_30Rnd_9x19_B_MP5,10);
+				mag_xx(hlc_200rnd_556x45_M_SAW,2);
+				mag_xx(rhs_mag_smaw_HEAA,2);
+				mag_xx(rhs_mag_smaw_SR,1);
+				mag_xx(SmokeShell,15);
+				mag_xx(SmokeShellGreen,7);
+				mag_xx(SmokeShellRed,7);
+				mag_xx(HandGrenade,15);
+				mag_xx(ACE_M14,5);
+				mag_xx(ACE_M84,10);
+				mag_xx(1Rnd_HE_Grenade_shell,10);
+				mag_xx(3Rnd_HE_Grenade_shell,2);
+				mag_xx(1Rnd_SmokeGreen_Grenade_shell,5);
+				mag_xx(1Rnd_SmokeRed_Grenade_shell,5);
+				mag_xx(1Rnd_Smoke_Grenade_shell,10);
+				mag_xx(3Rnd_SmokeGreen_Grenade_shell,1);
+				mag_xx(3Rnd_SmokeRed_Grenade_shell,1);
+				mag_xx(3Rnd_Smoke_Grenade_shell,2);
+			};
 	};
+
+	class STAF_Weaponsbox_F: Box_NATO_Wps_F
+	{
+			displayName = "Basic Weapons (STAF)";
+			maximumLoad = 250;
+			model = "\a3\weapons_f\ammoboxes\WpnsBox_F.p3d";
+			hiddenSelections[] = {"Camo_Signs","Camo"};
+			hiddenSelectionsTextures[] = {"plp_containers\data\empty.paa","plp_containers\data\plasticBlack.paa"};
+
+			class TransportWeapons {
+				weap_xx(STAF_rifle_scar_blk_xps,3);
+				weap_xx(STAF_rifle_scar_gl_blk_xps,1);
+				weap_xx(STAF_rifle_m249,1);
+				weap_xx(STAF_rifle_mp5,2);
+				weap_xx(STAF_rifle_m14,1);
+				weap_xx(STAF_pistol_glock17,5);
+			};
+			class TransportMagazines {
+				mag_xx(30Rnd_556x45_Stanag,16);
+				mag_xx(20Rnd_762x51_Mag,6);
+				mag_xx(KA_17Rnd_9x19_Mag,9);
+				mag_xx(hlc_30Rnd_9x19_B_MP5,8);
+				mag_xx(hlc_200rnd_556x45_M_SAW,3);
+				mag_xx(SmokeShell,15);
+				mag_xx(SmokeShellGreen,7);
+				mag_xx(SmokeShellRed,7);
+				mag_xx(HandGrenade,15);
+				mag_xx(ACE_M14,5);
+				mag_xx(ACE_M84,10);
+				mag_xx(1Rnd_HE_Grenade_shell,10);
+				mag_xx(3Rnd_HE_Grenade_shell,2);
+				mag_xx(1Rnd_SmokeGreen_Grenade_shell,5);
+				mag_xx(1Rnd_SmokeRed_Grenade_shell,5);
+				mag_xx(1Rnd_Smoke_Grenade_shell,10);
+				mag_xx(3Rnd_SmokeGreen_Grenade_shell,1);
+				mag_xx(3Rnd_SmokeRed_Grenade_shell,1);
+				mag_xx(3Rnd_Smoke_Grenade_shell,2);
+			};
+	};
+
+	class STAF_Launcherbox_F: Box_NATO_WpsLaunch_F
+	{
+			displayName = "Launchers (STAF)";
+			model = "\a3\weapons_f\ammoboxes\WpnsBox_long_F.p3d";
+			maximumLoad = 350;
+			hiddenSelections[] = {"Camo_Signs","Camo"};
+			hiddenSelectionsTextures[] = {"plp_containers\data\empty.paa","plp_containers\data\plasticBlack.paa"};
+
+			class TransportWeapons {
+				weap_xx(STAF_launcher_smaw,2);
+				weap_xx(STAF_launcher_m136_heat,3);
+				weap_xx(STAF_launcher_m136_hedp,3);
+				weap_xx(STAF_launcher_m136_hp,3);
+			};
+			class TransportMagazines {
+				mag_xx(rhs_mag_smaw_HEAA,10);
+				mag_xx(rhs_mag_smaw_SR,2);
+			};
+	};
+
+	/*class STAF_SupplyBox_F: B_supplyCrate_F
+	{
+			displayName = "NAME";
+			model = "\a3\weapons_f\ammoboxes\AmmoBox_F.p3d";
+			hiddenSelections[] = {"Camo_Signs","Camo"};
+			hiddenSelectionsTextures[] = {"plp_containers\data\empty.paa","plp_containers\data\plasticBlack.paa"};
+
+			class TransportItems {
+				//item_xx(CLASS,COUNT);
+			};
+			class TransportMagazines {
+				//mag_xx(CLASS,COUNT);
+			};
+			class TransportWeapons {
+				//weap_xx(CLASS,COUNT);
+			};
+			class TransportBackpacks {
+				//back_xx(CLASS,COUNT);
+			};
+	};*/
 };
