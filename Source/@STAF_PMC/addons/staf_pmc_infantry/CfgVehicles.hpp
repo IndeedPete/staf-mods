@@ -476,7 +476,7 @@ class CfgVehicles {
         editorSubcategory = "EdSubcat_vip";
         genericNames = "STAF_VIPNames";
 
-        identityTypes[] = { "Syndikat_Boss_F" , "Male02ENGFRE" };
+        identityTypes[] = { "TanoanHead_A3_08" , "Male02ENGFRE" };
         uniformClass = "HITMAN_47_SUIT";
 
 
