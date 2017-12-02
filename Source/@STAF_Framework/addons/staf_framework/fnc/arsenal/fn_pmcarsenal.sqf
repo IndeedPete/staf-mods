@@ -6,19 +6,19 @@ _box = _this select 0;
 _weapons = [
             "Binocular",
 
-            "STAF_rifle_m249",
-            "STAF_pistol_glock17",
-            "STAF_rifle_scar_blk",
-            "STAF_rifle_scar_tan",
-            "STAF_rifle_scar_gl_blk",
-            "STAF_rifle_scar_gl_tan",
-            "STAF_rifle_m14",
-            "STAF_rifle_m14_camo",
-            "STAF_rifle_mp5",
-            "STAF_launcher_smaw",
-            "STAF_launcher_m136_hp",
-            "STAF_launcher_m136_heat",
-            "STAF_launcher_m136_hedp",
+            "hlc_m249_pip2",
+            "KA_glock_17_Single",
+            "KA_SCAR_L_Black_Hand",
+            "KA_SCAR_L_Tan_Hand",
+            "KA_SCAR_L_Black_EGLM",
+            "KA_SCAR_L_Tan_EGLM",
+            "srifle_DMR_06_camo_F",
+            "srifle_DMR_06_olive_F",
+            "hlc_smg_mp5a4",
+            "rhs_weap_smaw",
+            "rhs_weap_M136",
+            "rhs_weap_M136_hedp",
+            "rhs_weap_M136_hp",
 
             "ACE_VMM3"
 ];
@@ -132,6 +132,7 @@ _items = [
             "ACE_adenosine",
             "ACE_epinephrine",
             "ACE_quikclot",
+            "ACE_fieldDressing",
             "ACE_SpraypaintBlack",
             "ACE_bloodIV",
             "ACE_bloodIV_250",
@@ -414,6 +415,7 @@ _uniforms = [
             "U_B_T_Soldier_AR_F",
             "U_B_GEN_Commander_F",
             "U_B_GEN_Soldier_F",
+            "B_UAV_01_backpack_F",
             "STAF_U_BG_Guerilla2_1_Steppentarn",
             "STAF_U_BG_Guerilla2_1_Flora_Coyote",
             "STAF_U_BG_Guerilla2_1_Choc_Chip",
@@ -711,30 +713,14 @@ _vests = [
 ];
 
 _magazines = [
-            "SmokeShell",
-            "SmokeShellGreen",
-            "Chemlight_green",
-            "hlc_200rnd_556x45_M_SAW",
-            "30Rnd_556x45_Stanag",
+            //Grenades
             "HandGrenade",
-            "20Rnd_762x51_Mag",
-            "KA_17Rnd_9x19_Mag",
-            "hlc_30Rnd_9x19_B_MP5",
-            "rhs_mag_smaw_HEAA",
-            "rhs_mag_smaw_SR",
-            "1Rnd_HE_Grenade_shell",
-            "1Rnd_SmokeBlue_Grenade_shell",
-            "1Rnd_SmokeGreen_Grenade_shell",
-            "1Rnd_SmokeOrange_Grenade_shell",
-            "1Rnd_SmokePurple_Grenade_shell",
-            "1Rnd_SmokeRed_Grenade_shell",
-            "1Rnd_SmokeYellow_Grenade_shell",
-            "1Rnd_Smoke_Grenade_shell",
-            "3Rnd_HE_Grenade_shell",
-            "ClaymoreDirectionalMine_Remote_Mag",
-            "DemoCharge_Remote_Mag",
             "MiniGrenade",
-            "SatchelCharge_Remote_Mag",
+            "rhs_mag_m67",
+            "ACE_M14",
+            "ACE_M84",
+
+            //Smokes
             "SmokeShell",
             "SmokeShellBlue",
             "SmokeShellGreen",
@@ -742,13 +728,28 @@ _magazines = [
             "SmokeShellPurple",
             "SmokeShellRed",
             "SmokeShellYellow",
-            "UGL_FlareGreen_F",
-            "UGL_FlareWhite_F",
-            "3Rnd_UGL_FlareGreen_F",
-            "3Rnd_UGL_FlareCIR_F",
-            "3Rnd_UGL_FlareRed_F",
-            "3Rnd_UGL_FlareWhite_F",
-            "3Rnd_UGL_FlareYellow_F",
+
+            //Ammo
+            "30Rnd_556x45_Stanag",
+            "20Rnd_762x51_Mag",
+            "hlc_200rnd_556x45_M_SAW",
+            "hlc_30Rnd_9x19_B_MP5",
+            "KA_17Rnd_9x19_Mag",
+            "rhs_mag_smaw_HEAA",
+            "rhs_mag_smaw_SR",
+
+            //Underbarrel Grenade
+            "1Rnd_HE_Grenade_shell",
+            "3Rnd_HE_Grenade_shell",
+
+            //Underbarrel Smoke
+            "1Rnd_SmokeBlue_Grenade_shell",
+            "1Rnd_SmokeGreen_Grenade_shell",
+            "1Rnd_SmokeOrange_Grenade_shell",
+            "1Rnd_SmokePurple_Grenade_shell",
+            "1Rnd_SmokeRed_Grenade_shell",
+            "1Rnd_SmokeYellow_Grenade_shell",
+            "1Rnd_Smoke_Grenade_shell",
             "3Rnd_SmokeBlue_Grenade_shell",
             "3Rnd_SmokeGreen_Grenade_shell",
             "3Rnd_SmokeOrange_Grenade_shell",
@@ -756,24 +757,46 @@ _magazines = [
             "3Rnd_SmokeRed_Grenade_shell",
             "3Rnd_Smoke_Grenade_shell",
             "3Rnd_SmokeYellow_Grenade_shell",
-            "ACE_M14",
+
+            //Underbarrel Flare
+            "3Rnd_UGL_FlareGreen_F",
+            "3Rnd_UGL_FlareCIR_F",
+            "3Rnd_UGL_FlareRed_F",
+            "3Rnd_UGL_FlareWhite_F",
+            "3Rnd_UGL_FlareYellow_F",
+            "UGL_FlareGreen_F",
+            "UGL_FlareWhite_F",
+            "UGL_FlareCIR_F",
+            "UGL_FlareRed_F",
+            "UGL_FlareYellow_F",
+
+            //Explosives
+            "ClaymoreDirectionalMine_Remote_Mag",
+            "DemoCharge_Remote_Mag",
+            "SatchelCharge_Remote_Mag",
+
+            //Other
+            "Chemlight_green",
             "Chemlight_blue",
             "Chemlight_green",
+            "Chemlight_red",
+            "Chemlight_yellow",
             "ACE_Chemlight_HiOrange",
             "ACE_Chemlight_HiRed",
             "ACE_Chemlight_HiWhite",
             "ACE_Chemlight_HiYellow",
             "ACE_Chemlight_IR",
             "ACE_Chemlight_Orange",
-            "Chemlight_red",
             "ACE_Chemlight_White",
-            "Chemlight_yellow",
-            "UGL_FlareCIR_F",
-            "UGL_FlareRed_F",
-            "UGL_FlareYellow_F",
             "ACE_HuntIR_M203",
-            "rhs_mag_m67",
-            "ACE_M84"
+
+            // Cigs and Pops
+            "murshun_cigs_matches",
+            "murshun_cigs_lighter",
+            "murshun_cigs_cigpack",
+            "murshun_cigs_cig0",
+            "immersion_pops_poppack",
+            "immersion_pops_pop0"
 ];
 
 //Adding Itemlists to the Arsenal
