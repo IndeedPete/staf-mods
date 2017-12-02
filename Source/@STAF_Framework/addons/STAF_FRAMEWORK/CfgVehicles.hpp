@@ -1,14 +1,19 @@
 class CfgVehicles
 {
 	class Logic;
-
 	class Module_F: Logic
 	{
-		class ArgumentsBaseUnits
+		class AttributesBase
 		{
-			class Units;
+			class Default;
+			class Edit; // Default edit box (i.e., text input field)
+			class Combo; // Default combo box (i.e., drop-down menu)
+			class Checkbox; // Default checkbox (returned value is Bool)
+			class CheckboxNumber; // Default checkbox (returned value is Number)
+			class ModuleDescription; // Module description
+			class Units; // Selection of units on which the module is applied
 		};
-
+		// Description base classes, for more information see below
 		class ModuleDescription
 		{
 			class AnyBrain;
@@ -152,7 +157,7 @@ class CfgVehicles
 		scope = 2; // Editor visibility; 2 will show it in the menu, 1 will hide it.
 
 		// Module arguments
-		class Arguments: ArgumentsBaseUnits
+		class Arguments: AttributesBase
 		{
 			// Arguments shared by specific module type (have to be mentioned in order to be placed on top)
 			// class Units: Units {};
@@ -307,6 +312,83 @@ class CfgVehicles
 				optional = 0;
 				duplicate = 0;
 				synced[] = {"AnyStaticObject", "AnyVehicle"};
+			};
+		};
+	};
+
+	class STAF_Module_HideBody_F: Module_F
+	{
+		category = "STAF";
+		displayName = "STAF Hide Dead Bodies";
+		function = "STAF_fnc_hidebody";
+		functionPriority = 10;
+		isDisposable = 0;
+		is3DEN = 0;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		scope = 2;
+
+		class ModuleDescription: ModuleDescription
+		{
+			description = "This applies the ""Hide Body"" action to all dead units aside from players.";
+			//sync[] = {"LocationArea_F"};
+
+			/*class LocationArea_F
+			{
+				description[] =
+				{
+					"Synchronise any object to this module."
+				};
+				position = 0;
+				direction = 0;
+				optional = 0;
+				duplicate = 0;
+				synced[] = {"AnyStaticObject", "AnyVehicle"};
+			};*/
+		};
+	};
+
+	class STAF_Module_SpawnWreck_F: Module_F
+	{
+		category = "STAF";
+		displayName = "STAF Spawen Vehicle as Wreck";
+		function = "STAF_fnc_spawnwreck";
+		functionPriority = 10;
+		isDisposable = 0;
+		is3DEN = 0;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		scope = 2;
+
+		class Attributes: AttributesBase
+		{
+			class STAF_Module_SpawnWreck_ACE_Cooking_Off: Combo
+  			{
+				property = "STAF_Module_SpawnWreck_ACE_Cooking_Off_Combo";
+				displayName = "Should the Vehicle Cook off?";
+				typeName = "NUMBER";
+				defaultValue = "0";
+				class Values
+				{
+					class answer_no	{name = "No"; value = 0;};
+					class answer_yes	{name = "Yes";	value = 1;};
+				};
+			};
+		};
+
+		class ModuleDescription: ModuleDescription
+		{
+			description = "Sync a Vehicle to this module if you want it to spawn as a wreck (no explosion)";
+			sync[] = {"LocationArea_F"};
+
+			class LocationArea_F
+			{
+				description[] =	{"Synchronise any vehicle to this module."};
+				position = 0;
+				direction = 0;
+				optional = 0;
+				duplicate = 0;
+				synced[] = {"AnyVehicle"};
 			};
 		};
 	};

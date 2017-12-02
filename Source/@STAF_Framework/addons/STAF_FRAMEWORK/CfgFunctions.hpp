@@ -65,6 +65,8 @@ class CfgFunctions
 			class intLight{};
 			class launchFlare{};
 			class repetitiveCleanup{};
+			class hidebody {};
+			class spawnwreck {};
 		};
 		class Radio
 		{
@@ -81,25 +83,6 @@ class CfgFunctions
 		{
 			file = "\STAF_FRAMEWORK\fnc\view";
 			class viewRestrictions{};
-		};
-	};
-
-	class CHSA
-	{
-		tag = "CHSA";
-		class script
-		{
-			file = "\STAF_FRAMEWORK\fnc\CHSA";
-			class createLocalArsenal {};
-			class executeLocalArsenal {};
-			class onApply {};
-			class createDialog {};
-			class updateDialog {};
-			class updateLocalArsenal {};
-			class localize {};
-			class invRestriction {};
-			class conditionalIndex {}
-			class disconnectedEH {postInit = 1;};
 		};
 	};
 

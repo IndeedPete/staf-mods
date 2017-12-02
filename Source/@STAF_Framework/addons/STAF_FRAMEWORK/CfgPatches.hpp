@@ -4,10 +4,11 @@ class CfgPatches
 	{
 		units[] =
 		{
-			"STAF_Module_Radio_F",
 			"STAF_Module_Insignia_F",
-			"STAF_Module_Arsenal_F",
-			"STAF_Module_Base_Medic_F"
+			"STAF_Module_PMC_Arsenal_F",
+			"STAF_Module_HideBody_F",
+			"STAF_Module_Base_Medic_F",
+			"STAF_Module_Spawnwreck_F"
 		};
 		weapons[] = {};
 		requiredVersion = 1.0;
