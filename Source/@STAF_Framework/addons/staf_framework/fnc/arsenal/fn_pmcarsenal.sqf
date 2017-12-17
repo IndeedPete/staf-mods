@@ -221,14 +221,12 @@ _items = [
             "optic_DMS",
             "optic_Aco_smg",
             "acc_flashlight",
-            "acc_flashlight",
             "ItemGPS",
             "ToolKit",
             "TFAR_anprc152",
             "ItemCompass",
             "ItemAndroid",
             "ItemMap",
-            "TFAR_rf7800str",
             "ItemcTab",
             "optic_ACO_grn",
             "optic_Aco",
@@ -277,7 +275,6 @@ _items = [
             "KA_SCAR_H_Laser_Flashlight_Sand_IR",
             "KA_SCAR_H_Laser_Flashlight_Sand_UP_IR",
             "KA_SCAR_H_Laser_Sand_IR",
-            "acc_flashlight",
             "VSM_balaclava_Black_Skull",
             "VSM_balaclava_Black",
             "VSM_balaclava_olive_Skull",
@@ -478,7 +475,6 @@ _uniforms = [
             "tacs_Uniform_Garment_RS_TS_GP_BB",
             "tacs_Uniform_Garment_RS_OS_TP_TB",
             "tacs_Uniform_Garment_RS_TS_BP_BB",
-            "SAN_Headlamp_v1",
             "SAN_Headlamp_v2"
 ];
 
@@ -800,7 +796,6 @@ _magazines = [
 ];
 
 //Adding Itemlists to the Arsenal
-[_box,(_backpacks),true] call BIS_fnc_addVirtualBackpackCargo;
-[_box,(_items + _uniforms + _headgear + _vests),true] call BIS_fnc_addVirtualItemCargo;
-[_box,(_magazines),true] call BIS_fnc_addVirtualMagazineCargo;
-[_box,(_weapons),true] call BIS_fnc_addVirtualWeaponCargo;
+[_box,(_items + _uniforms + _headgear + _vests + _backpacks + _magazines + _weapons),true] call ace_arsenal_fnc_initBox;
+[_box, true] call ace_arsenal_fnc_initBox;
+_box addaction ["<img image='\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\box_ca.paa' /> Open Arsenal",{[(_this select 0), player] call ace_arsenal_fnc_openBox;}];
