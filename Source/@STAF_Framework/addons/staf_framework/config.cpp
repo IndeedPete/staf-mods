@@ -8,5 +8,6 @@
 #include "CfgRemoteExecCommands.hpp"
 #include "CfgSounds.hpp"
 #include "CfgVehicles.hpp"
+#include "CfgUnitInsignia.hpp"
 #include "RscDisplayLoadMission.hpp"
 #include "RscTitles.hpp"
