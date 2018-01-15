@@ -67,6 +67,7 @@ class CfgFunctions
 			class repetitiveCleanup{};
 			class hidebody {};
 			class spawnwreck {};
+			class ambientanimationmp {};
 		};
 		class Radio
 		{

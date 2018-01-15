@@ -17,129 +17,10 @@ class CfgVehicles
 		class ModuleDescription
 		{
 			class AnyBrain;
+			class AnyAI;
+			class AnyVehicle;
 		};
 	};
-
-	/*class STAF_Module_Radio_F: Module_F
-	{
-		// Standard object definitions
-		category = "STAF";
-		// curatorInfoType = "RscDisplayAttributeModuleNuke"; // Menu displayed when the module is placed or double-clicked on by Zeus
-		displayName = "STAF Radio Manager"; // Name displayed in the menu
-		function = "STAF_fnc_radioInit"; 	// Name of function triggered once conditions are met
-		functionPriority = 10; // Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
-		// icon = "\myTag_addonName\data\iconNuke_ca.paa"; // Map icon. Delete this entry to use the default icon
-		isDisposable = 0; // 1 if modules is to be disabled once it's activated (i.e., repeated trigger activation won't work)
-		is3DEN = 0; // 1 to run init function in Eden Editor as well
-		isGlobal = 0; // 0 for server only execution, 1 for global execution, 2 for persistent global execution
-		isTriggerActivated = 0; // 1 for module waiting until all synced triggers are activated
-		scope = 2; // Editor visibility; 2 will show it in the menu, 1 will hide it.
-
-		// Module arguments
-		class Arguments: ArgumentsBaseUnits
-		{
-			// Arguments shared by specific module type (have to be mentioned in order to be placed on top)
-			// class Units: Units {};
-
-			// Module specific arguments
-			class Side
-  			{
-				displayName = "Side"; // Argument label
-				description = "Side this module is managing."; // Tooltip description
-				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
-
-				class values
-				{
-					class side1 {name = "BLUFOR"; value = "BLUFOR"; default = 1;}; // Listbox item
-					class side2 {name = "OPFOR"; value = "OPFOR";};
-					class side3 {name = "INDEPENDENT"; value = "INDEPENDENT";};
-					class side4 {name = "CIVILIAN"; value = "CIVILIAN";};
-				};
-			};
-
-			class BaseRadio
-  			{
-				displayName = "Base Radio"; // Argument label
-				description = "Radio which will be linked to all players of the set side."; // Tooltip description
-				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
-
-				class values
-				{
-					class radio1 {name = "RF-7800S-TR (BLUFOR, 2KM)"; value = "tf_rf7800str"; default = 1;}; // Listbox item
-					class radio2 {name = "AN/PRC-154 (INDEPENDENT, 2KM)"; value = "tf_anprc154";};
-					class radio3 {name = "PNR-1000A (OPFOR, 2KM)"; value = "tf_pnr1000a";};
-					class radio4 {name = "AN/PRC-152 (BLUFOR, 5KM)"; value = "tf_anprc152";};
-					class radio5 {name = "AN/PRC148-JEM (INDEPENDENT, 5KM)"; value = "tf_anprc148jem";};
-					class radio6 {name = "FADAK (OPFOR, 5KM)"; value = "tf_fadak";};
-				};
-			};
-
-			class AdditionalRadio
-  			{
-				displayName = "Additional Radio"; // Argument label
-				description = "Radio which will be added to all player objects defined below."; // Tooltip description
-				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
-
-				class values
-				{
-					class radio0 {name = "NONE"; value = "";};
-					class radio1 {name = "RF-7800S-TR (BLUFOR, 2KM)"; value = "tf_rf7800str";};
-					class radio2 {name = "AN/PRC-154 (INDEPENDENT, 2KM)"; value = "tf_anprc154";};
-					class radio3 {name = "PNR-1000A (OPFOR, 2KM)"; value = "tf_pnr1000a";};
-					class radio4 {name = "AN/PRC-152 (BLUFOR, 5KM)"; value = "tf_anprc152"; default = 1;};
-					class radio5 {name = "AN/PRC148-JEM (INDEPENDENT, 5KM)"; value = "tf_anprc148jem";};
-					class radio6 {name = "FADAK (OPFOR, 5KM)"; value = "tf_fadak";};
-				};
-			};
-
-			class AdditionalObjects
-  			{
-				displayName = "Additional Radio Objects"; // Argument label
-				description = "References to player objects of set side which will receive the additional radio. (Add array elements with ''.)"; // Tooltip description
-				defaultValue = "[]";
-			};
-
-			class AdditionalClasses
-  			{
-				displayName = "Additional Radio Classes"; // Argument label
-				description = "References to player classes of set side which will receive the additional radio. (Add array elements with ''.)"; // Tooltip description
-				defaultValue = "[]";
-			};
-
-			class JIP
-  			{
-				displayName = "Support JIP"; // Argument label
-				description = "Also handles players not present at mission start."; // Tooltip description
-				typeName = "BOOL"; // Value type, can be "NUMBER", "STRING" or "BOOL"
-
-				class values
-				{
-					class yes {name = "Yes"; value = 1;  default = 1;};
-					class no {name = "No"; value = 0;};
-				};
-			};
-		};
-
-		// Module description. Must inherit from base class, otherwise pre-defined entities won't be available
-		class ModuleDescription: ModuleDescription
-		{
-			description = "Automatically adds and maintains radios from 'Task Force Radio' to synchronised units."; // Short description, will be formatted as structured text
-			sync[] = {"LocationArea_F"}; // Array of synced entities (can contain base classes)
-
-			class LocationArea_F
-			{
-				description[] = // Multi-line descriptions are supported
-				{
-					"Automatically adds and maintains radios from 'Task Force Radio' to given units."
-				};
-				position = 0; // Position is taken into effect
-				direction = 0; // Direction is taken into effect
-				optional = 0; // Synced entity is optional
-				duplicate = 1; // Multiple entities of this type can be synced
-				synced[] = {"AnyBrain"}; // Pre-define entities like "AnyBrain" can be used. See the list below
-			};
-		};
-	};*/
 
 	class STAF_Module_Insignia_F: Module_F
 	{
@@ -204,53 +85,6 @@ class CfgVehicles
 			};
 		};
 	};
-
-	/*class STAF_Module_Arsenal_F: Module_F
-	{
-		// Standard object definitions
-		category = "STAF";
-		// curatorInfoType = "RscDisplayAttributeModuleNuke"; // Menu displayed when the module is placed or double-clicked on by Zeus
-		displayName = "STAF Arsenal Manager"; // Name displayed in the menu
-		function = "STAF_fnc_arsenalInit"; 	// Name of function triggered once conditions are met
-		functionPriority = 10; // Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
-		// icon = "\myTag_addonName\data\iconNuke_ca.paa"; // Map icon. Delete this entry to use the default icon
-		isDisposable = 0; // 1 if modules is to be disabled once it's activated (i.e., repeated trigger activation won't work)
-		is3DEN = 0; // 1 to run init function in Eden Editor as well
-		isGlobal = 0; // 0 for server only execution, 1 for global execution, 2 for persistent global execution
-		isTriggerActivated = 0; // 1 for module waiting until all synced triggers are activated
-		scope = 2; // Editor visibility; 2 will show it in the menu, 1 will hide it.
-
-		// Module arguments
-		class Arguments: ArgumentsBaseUnits
-		{
-			class Config
-  			{
-				displayName = "Config"; // Argument label
-				description = "Enter the name of a custom config file if you set up a specific configuration in \userconfig\STAF\Arsenal\ or in the mission dir."; // Tooltip description
-				defaultValue = "\userconfig\STAF\Arsenal\defaultConfig.sqf";
-			};
-		};
-
-		// Module description. Must inherit from base class, otherwise pre-defined entities won't be available
-		class ModuleDescription: ModuleDescription
-		{
-			description = "Automatically adds XLA Fixed Arsenal functionality to synchronised objects."; // Short description, will be formatted as structured text
-			sync[] = {"LocationArea_F"}; // Array of synced entities (can contain base classes)
-
-			class LocationArea_F
-			{
-				description[] = // Multi-line descriptions are supported
-				{
-					"Synchronise ammo boxes or vehicles to this module."
-				};
-				position = 0; // Position is taken into effect
-				direction = 0; // Direction is taken into effect
-				optional = 0; // Synced entity is optional
-				duplicate = 0; // Multiple entities of this type can be synced
-				synced[] = {"AnyStaticObject", "AnyVehicle"}; // Pre-define entities like "AnyBrain" can be used. See the list below
-			};
-		};
-	};*/
 
 	class STAF_Module_Base_Medic_F: Module_F
 	{
@@ -324,7 +158,7 @@ class CfgVehicles
 		functionPriority = 10;
 		isDisposable = 0;
 		is3DEN = 0;
-		isGlobal = 0;
+		isGlobal = 1;
 		isTriggerActivated = 0;
 		scope = 2;
 
@@ -389,6 +223,87 @@ class CfgVehicles
 				optional = 0;
 				duplicate = 0;
 				synced[] = {"AnyVehicle"};
+			};
+		};
+	};
+
+	class STAF_Module_AmbientAnimationMP_F: Module_F
+	{
+		category = "STAF";
+		displayName = "STAF Ambient Animation MP";
+		function = "STAF_fnc_ambientanimationmp";
+		functionPriority = 10;
+		isDisposable = 0;
+		is3DEN = 0;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		scope = 2;
+
+		class Attributes: AttributesBase
+		{
+			class STAF_Module_AmbientAnimationMP: Combo
+  			{
+				property = "STAF_Module_AmbientAnimationMP_Combo";
+				displayName = "Choose a Ambient Animation";
+				typeName = "STRING";
+				defaultValue = "0";
+				class Values
+				{
+					class None	{name = "None"; value = None;};
+					class Stand1	{name = "STAND1";	value = STAND1;};
+					class Stand2	{name = "STAND2";	value = STAND2;};
+					class Stand_U1	{name = "STAND_U1";	value = STAND_U1;};
+					class Stand_U2	{name = "STAND_U2";	value = STAND_U2;};
+					class Stand_U3	{name = "STAND_U3";	value = STAND_U3;};
+					class WATCH	{name = "WATCH";	value = WATCH;};
+					class WATCH2	{name = "WATCH2";	value = WATCH2;};
+					class GUARD	{name = "GUARD";	value = GUARD;};
+					class LISTEN_BRIEFING	{name = "LISTEN_BRIEFING";	value = LISTEN_BRIEFING;};
+					class LEAN_ON_TABLE	{name = "LEAN_ON_TABLE";	value = LEAN_ON_TABLE;};
+					class LEAN	{name = "LEAN";	value = LEAN;};
+					class SIT_AT_TABLE	{name = "SIT_AT_TABLE";	value = SIT_AT_TABLE;};
+					class SIT1	{name = "SIT1";	value = SIT1;};
+					class SIT	{name = "SIT";	value = SIT;};
+					class SIT3	{name = "SIT3";	value = SIT3;};
+					class SIT_U1	{name = "SIT_U1";	value = SIT_U1;};
+					class SIT_U2	{name = "SIT_U2";	value = SIT_U2;};
+					class SIT_U3	{name = "SIT_U3";	value = SIT_U3;};
+					class SIT_HIGH1	{name = "SIT_HIGH1";	value = SIT_HIGH1;};
+					class SIT_HIGH	{name = "SIT_HIGH";	value = SIT_HIGH;};
+					class SIT_LOW	{name = "SIT_LOW";	value = SIT_LOW;};
+					class SIT_LOW_U	{name = "SIT_LOW_U";	value = SIT_LOW_U;};
+					class SIT_SAD1	{name = "SIT_SAD1";	value = SIT_SAD1;};
+					class SIT_SAD2	{name = "SIT_SAD2";	value = SIT_SAD2;};
+					class KNEEL	{name = "KNEEL";	value = KNEEL;};
+					class REPAIR_VEH_PRONE	{name = "REPAIR_VEH_PRONE";	value = REPAIR_VEH_PRONE;};
+					class REPAIR_VEH_KNEEL	{name = "REPAIR_VEH_KNEEL";	value = REPAIR_VEH_KNEEL;};
+					class REPAIR_VEH_STAND	{name = "REPAIR_VEH_STAND";	value = REPAIR_VEH_STAND;};
+					class PRONE_INJURED_U1	{name = "PRONE_INJURED_U1";	value = PRONE_INJURED_U1;};
+					class PRONE_INJURED_U2	{name = "PRONE_INJURED_U2";	value = PRONE_INJURED_U2;};
+					class PRONE_INJURED	{name = "PRONE_INJURED";	value = PRONE_INJURED;};
+					class KNEEL_TREAT	{name = "KNEEL_TREAT";	value = KNEEL_TREAT;};
+					class KNEEL_TREAT2	{name = "KNEEL_TREAT2";	value = KNEEL_TREAT2;};
+					class BRIEFING	{name = "BRIEFING";	value = BRIEFING;};
+					class BRIEFING_POINT_LEFT	{name = "BRIEFING_POINT_LEFT";	value = BRIEFING_POINT_LEFT;};
+					class BRIEFING_POINT_RIGHT	{name = "BRIEFING_POINT_RIGHT";	value = BRIEFING_POINT_RIGHT;};
+					class BRIEFING_POINT_TABLE	{name = "BRIEFING_POINT_TABLE";	value = BRIEFING_POINT_TABLE;};
+				};
+			};
+		};
+
+		class ModuleDescription: ModuleDescription
+		{
+			description = "Sync an AI Unit to this module to make it play the selected Ambient Animation";
+			sync[] = {"LocationArea_F"};
+
+			class LocationArea_F
+			{
+				description[] =	{"Synchronise any AI to this module"};
+				position = 0;
+				direction = 0;
+				optional = 0;
+				duplicate = 0;
+				synced[] = {"AnyAI"};
 			};
 		};
 	};
