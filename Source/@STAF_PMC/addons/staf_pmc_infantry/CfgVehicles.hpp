@@ -10,6 +10,7 @@ class CfgVehicles {
     class B_helicrew_F;
     class B_Pilot_F;
     class C_Man_1;
+    class EventHandlers;
 
     class B_Soldier_F_base: B_Soldier_F
     {

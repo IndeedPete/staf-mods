@@ -10,7 +10,7 @@ class CfgPatches {
         "STAF_suv"
       };
       weapons[] = {};
-      requiredAddons[] = {};
+      requiredAddons[] = {"A3_Soft_F_Gamma","A3_Functions_F"};
       requiredVersion = 1.62;
       author = "STAF";
       url = "http://www.stafclan.com";

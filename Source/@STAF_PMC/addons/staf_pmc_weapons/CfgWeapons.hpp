@@ -30,6 +30,7 @@ class CfgWeapons {
   class rhs_weap_M136; //RHS M136 HEAT
   class rhs_weap_M136_hedp; //RHS M136 HEDP
   class rhs_weap_M136_hp; //RHS M136 HP
+  class Xnooz_AppareilPhoto; //Press Assets Handheld Camera
 
   class STAF_rifle_g36: hlc_rifle_G36KMLIC
   {
@@ -556,5 +557,36 @@ class CfgWeapons {
         slot = "PointerSlot";
       };
     };
+  };
+
+  class STAF_Xnooz_AppareilPhoto: Xnooz_AppareilPhoto
+	{
+		author = "Xnooz";
+		displayname = "Photo Camera";
+		scope = 2;
+		model = "Xnooz_Press\AppareilPhoto.p3d";
+		descriptionShort = "Appareil Photo Minolta";
+		handAnim[] = {"OFP2_ManSkeleton","Xnooz_Press\rtm\AppareilPhoto.rtm"};
+		picture = "\Xnooz_Press\data\ui\AppareilPhoto";
+
+    class OpticsModes
+		{
+			class optic
+			{
+				opticsID = 1;
+				useModelOptics = 1;
+				opticsZoomMin = 0;
+				opticsZoomMax = 0.3;
+				opticsZoomInit = 2;
+				distanceZoomMin = 1;
+				distanceZoomMax = 500;
+				memoryPointCamera = "eye";
+				opticsFlare = 1;
+				opticsDisablePeripherialVision = 1;
+				cameraDir = "look";
+				visionMode[] = {"Normal","NVG"};
+				opticsPPEffects[] = {""};
+			};
+		};
   };
 };
