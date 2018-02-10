@@ -1,11 +1,20 @@
 //Init of the box and arsenal
 _box = _this select 0;
 
+//Picture on arsenal
+if (typeOf _box == "Portable_GCS_Base_CTRG_F") then {
+  _box setObjectTexture [2, "\staf_framework\img\terminalup.paa"];
+  _box setObjectTexture [3, "\staf_framework\img\terminaldown.paa"];
+};
+if (typeOf _box == "Portable_GCS_Base_F") then {
+  _box setObjectTexture [2, "\staf_framework\img\terminalup.paa"];
+  _box setObjectTexture [3, "\staf_framework\img\terminaldown.paa"];
+};
+
 //Itemlists
 
 _weapons = [
             "Binocular",
-
             "hlc_m249_pip2",
             "KA_glock_17_Single",
             "KA_SCAR_L_Black_Hand",
@@ -19,8 +28,8 @@ _weapons = [
             "rhs_weap_M136",
             "rhs_weap_M136_hedp",
             "rhs_weap_M136_hp",
-
-            "ACE_VMM3"
+            "ACE_VMM3",
+            "Press_Cam_F"
 ];
 
 _backpacks = [
@@ -67,7 +76,6 @@ _backpacks = [
             "B_TacticalPack_ocamo",
             "B_TacticalPack_mcamo",
             "B_TacticalPack_oli",
-
             "ABU_Backpack_Compact",
             "ABU_Backpack_Kitbag",
             "AOR1_Backpack_Compact",
@@ -86,14 +94,10 @@ _backpacks = [
             "OGA_Backpack_Compact",
             "OGA_G_Backpack_Kitbag",
             "OGA_Backpack_Kitbag",
-
             "rhs_medic_bag",
-
             "TFAR_rt1523g",
-
             "tacs_Backpack_Kitbag_DarkBlack",
             "tacs_Backpack_Carryall_DarkBlack",
-
             "STAF_B_Carryall_MCAM_Black",
             "STAF_B_Kitbag_engineer_blk",
             "STAF_B_Kitbag_engineer_cbr",
@@ -156,7 +160,8 @@ _items = [
             "ACE_acc_pointer_green",
             "ACE_optic_MRCO_2D",
             "ACE_SpareBarrel",
-
+            "adv_aceSplint_splint",
+            "adv_aceCPR_AED",
             "rhs_scarf",
             "rhs_balaclava1_olive",
             "rhs_googles_black",
@@ -209,7 +214,6 @@ _items = [
             "rhsusf_oakley_goggles_blk",
             "rhsusf_oakley_goggles_clr",
             "rhsusf_oakley_goggles_ylw",
-
             "KA_Flashlight",
             "ItemAndroid",
             "ItemMap",
@@ -567,7 +571,8 @@ _headgear = [
             "VSM_OGA_od_ops_2",
             "VSM_OGA_ops_2",
             "VSM_ProjectHonor_ops_2",
-            "VSM_tan_spray_ops_2"
+            "VSM_tan_spray_ops_2",
+            "immersion_cigs_cigar0"
 ];
 
 _vests = [
@@ -792,7 +797,10 @@ _magazines = [
             "murshun_cigs_cigpack",
             "murshun_cigs_cig0",
             "immersion_pops_poppack",
-            "immersion_pops_pop0"
+            "immersion_pops_pop0",
+
+            //Camera Tapes
+            "Tape_F"
 ];
 
 //Adding Itemlists to the Arsenal
