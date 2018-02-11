@@ -29,7 +29,7 @@ _weapons = [
             "rhs_weap_M136_hedp",
             "rhs_weap_M136_hp",
             "ACE_VMM3",
-            "Press_Cam_F"
+            "STAF_Xnooz_AppareilPhoto"
 ];
 
 _backpacks = [

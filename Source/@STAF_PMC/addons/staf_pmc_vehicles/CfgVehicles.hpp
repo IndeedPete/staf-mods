@@ -1,3 +1,6 @@
+class Eventhandlers;
+class CBA_Extended_EventHandlers_base;
+
 class CfgVehicles {
     class B_Boat_Transport_01_F;
     class B_Quadbike_01_F;
@@ -9,8 +12,6 @@ class CfgVehicles {
     class C_Offroad_01_F;
     class C_SUV_01_F;
     class B_UAV_01_F;
-    class EventHandlers;
-    class CBA_Extended_EventHandlers_base;
 
     //----------------------------------Air------------------------------------
 
@@ -225,5 +226,4 @@ class CfgVehicles {
     };
 
     //----------------------------------Turret----------------------------------
-
 };
