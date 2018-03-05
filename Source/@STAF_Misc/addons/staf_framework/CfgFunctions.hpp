@@ -18,10 +18,6 @@ class CfgFunctions
 		class Arsenal
 		{
 			file = "\STAF_FRAMEWORK\fnc\arsenal";
-			class arsenalClientInit{};
-			class arsenalInit{};
-			class unpackOnContainerClosed{};
-			class vehicleLoadout{};
 			class pmcarsenalInit{};
 			class pmcarsenal{};
 		};
@@ -45,6 +41,12 @@ class CfgFunctions
 		{
 			file = "\STAF_FRAMEWORK\fnc\keyValueMap";
 			class createKeyValueMap{};
+		};
+		class Light
+		{
+			file = "\STAF_FRAMEWORK\fnc\light";
+			class light{};
+			class lightinit{};
 		};
 		class Medical
 		{

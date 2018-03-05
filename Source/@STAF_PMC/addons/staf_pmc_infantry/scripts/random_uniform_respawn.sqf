@@ -3,9 +3,7 @@ _corpse = _this select 1;
 
 //Get loadout and Weapons
 _loadout = getUnitLoadout _corpse;
-_weapons = weapons _corpse;
 
 //Add Inventory Items and weapons
-{
-  _unit setUnitLoadout _x
-} forEach _weapons;
+waituntil {alive _unit};
+_unit setUnitLoadout [_loadout,true];

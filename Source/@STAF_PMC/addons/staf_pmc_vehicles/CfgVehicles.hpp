@@ -12,8 +12,32 @@ class CfgVehicles {
     class C_Offroad_01_F;
     class C_SUV_01_F;
     class B_UAV_01_F;
+    class B_Heli_Light_01_stripped_F;
 
     //----------------------------------Air------------------------------------
+    class STAF_md500 : B_Heli_Light_01_stripped_F {
+
+        author = "STAF";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "MD500 (Modified)";
+        side = 1;
+        faction = "STAF_PMC";
+        crew = "STAF_contractor_heli_pilot";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_md500.jpg";
+        animationList[] = {"AddDoors",0,"AddBenches",1,"AddBackseats",1,"BenchL_Up_instant",0,"BenchR_Up_instant",0,"AddHoldingFrame",1,"AddTread_Short",0,"AddTread",1};
+
+        hiddenSelections[] = {"Camo1","clan"};
+        selectionClan = "";
+        maximumLoad = 5000;
+
+        class EventHandlers: Eventhandlers {
+          class STAF {
+            init = "[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\blacktexture.sqf"";[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\standardloadout.sqf"";";
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+          };
+        };
+    };
 
     //----------------------------------Naval-----------------------------------
     class STAF_rubberboat : B_Boat_Transport_01_F {
@@ -29,23 +53,10 @@ class CfgVehicles {
 
         hiddenSelections[] = {"camo1","clan"};
         selectionClan = "";
+        maximumLoad = 5000;
     };
 
     //----------------------------------Ground----------------------------------
-    class STAF_quadbike : B_Quadbike_01_F {
-
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Quad Bike";
-        side = 1;
-        faction = "STAF_PMC";
-        crew = "STAF_contractor";
-        editorPreview = "\staf_pmc_vehicles\eden\STAF_quadbike.jpg";
-
-        hiddenSelections[] = {"camo1","camo2","clan"};
-        selectionClan = "";
-    };
 
     class STAF_truck_transport : C_Truck_02_transport_F {
 
@@ -60,6 +71,7 @@ class CfgVehicles {
 
         hiddenSelections[] = {"Camo1","Camo2","camo3","clan"};
         selectionClan = "";
+        maximumLoad = 20000;
 
         class EventHandlers: Eventhandlers {
           class STAF {
@@ -82,10 +94,11 @@ class CfgVehicles {
 
         hiddenSelections[] = {"Camo1","Camo2","camo3","clan"};
         selectionClan = "";
+        maximumLoad = 30000;
 
         class EventHandlers: Eventhandlers {
           class STAF {
-            init = "[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\blacktexture.sqf"";[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\standardloadout.sqf"";";
+            init = "[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\blacktexture.sqf"";[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\standardloadoutbig.sqf"";";
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
           };
         };
@@ -104,10 +117,11 @@ class CfgVehicles {
 
         hiddenSelections[] = {"Camo1","Camo2","camo3","clan"};
         selectionClan = "";
+        maximumLoad = 5000;
 
         class EventHandlers: Eventhandlers {
           class STAF {
-            init = "[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\blacktexture.sqf"";[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\standardloadout.sqf"";";
+            init = "[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\blacktexture.sqf"";";
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
           };
         };
@@ -126,6 +140,7 @@ class CfgVehicles {
 
         hiddenSelections[] = {"Camo1","Camo2","camo3","clan"};
         selectionClan = "";
+        maximumLoad = 20000;
 
         class EventHandlers: Eventhandlers {
           class STAF {
@@ -149,6 +164,7 @@ class CfgVehicles {
         hiddenSelections[] = {"camo1","camo2","camo3","camo4","clan"};
         selectionClan = "";
         textureList[] = {"Black",1,"Blue",0,"Green",0,"Orange",0,"Red",0,"White",0};
+        maximumLoad = 10000;
 
         class EventHandlers: Eventhandlers {
           class STAF {
@@ -172,6 +188,7 @@ class CfgVehicles {
         hiddenSelections[] = {"Camo","camo2","clan"};
         selectionClan = "";
         textureList[] = {"Red",0,"Beige",0,"White",0,"Blue",0,"Darkred",0,"Bluecustom",1};
+        maximumLoad = 10000;
 
         class EventHandlers: Eventhandlers {
           class STAF {
@@ -202,6 +219,7 @@ class CfgVehicles {
         hiddenSelections[] = {"Camo1","clan"};
         selectionClan = "";
         textureList[] = {"Red",0,"Black",1,"Gey",0,"Orange",0};
+        maximumLoad = 10000;
 
         class EventHandlers: EventHandlers {
           class STAF {

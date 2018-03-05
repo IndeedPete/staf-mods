@@ -2,28 +2,42 @@
 _box = _this select 0;
 
 //Picture on arsenal
-if (typeOf _box == "Portable_GCS_Base_CTRG_F") then {
-  _box setObjectTexture [2, "\staf_framework\img\terminalup.paa"];
-  _box setObjectTexture [3, "\staf_framework\img\terminaldown.paa"];
+if (isServer) then {
+  if ((typeOf _box) isEqualTo "Portable_GCS_Base_CTRG_F") then {
+    [_box,[2,"\staf_framework\img\terminaldown.paa"]] remoteExec ["setObjectTexture",0,true];
+    [_box,[3,"\staf_framework\img\terminalup.paa"]] remoteExec ["setObjectTexture",0,true];
+  };
+  if ((typeOf _box) isEqualTo "Portable_GCS_Base_F") then {
+    [_box,[2,"\staf_framework\img\terminaldown.paa"]] remoteExec ["setObjectTexture",0,true];
+    [_box,[3,"\staf_framework\img\terminalup.paa"]] remoteExec ["setObjectTexture",0,true];
+  };
+  if ((typeOf _box) isEqualTo "Land_Laptop_unfolded_F") then {
+    [_box,[0,"\staf_framework\img\terminalup.paa"]] remoteExec ["setObjectTexture",0,true];
+  };
+  if ((typeOf _box) isEqualTo "Land_Laptop_device_F") then {
+    [_box,[0,"\staf_framework\img\terminalup.paa"]] remoteExec ["setObjectTexture",0,true];
+  };
 };
-if (typeOf _box == "Portable_GCS_Base_F") then {
-  _box setObjectTexture [2, "\staf_framework\img\terminalup.paa"];
-  _box setObjectTexture [3, "\staf_framework\img\terminaldown.paa"];
-};
+
+
 
 //Itemlists
 
 _weapons = [
             "Binocular",
-            "hlc_m249_pip2",
+            "srifle_DMR_06_camo_F",
+            "srifle_DMR_06_olive_F",
             "KA_glock_17_Single",
             "KA_SCAR_L_Black_Hand",
             "KA_SCAR_L_Tan_Hand",
             "KA_SCAR_L_Black_EGLM",
             "KA_SCAR_L_Tan_EGLM",
-            "srifle_DMR_06_camo_F",
-            "srifle_DMR_06_olive_F",
+            "hlc_m249_pip2",
             "hlc_smg_mp5a4",
+            "hlc_rifle_G36MLIC",
+            "hlc_rifle_G36A1",
+            "hlc_rifle_G36MLIAG36",
+            "hlc_rifle_G36A1AG36",
             "rhs_weap_smaw",
             "rhs_weap_M136",
             "rhs_weap_M136_hedp",
@@ -572,7 +586,28 @@ _headgear = [
             "VSM_OGA_ops_2",
             "VSM_ProjectHonor_ops_2",
             "VSM_tan_spray_ops_2",
-            "immersion_cigs_cigar0"
+            "immersion_cigs_cigar0",
+            "rhsusf_hgu56p_black",
+            "rhsusf_hgu56p_mask_black",
+            "rhsusf_hgu56p_mask_black_skull",
+            "rhsusf_hgu56p_visor_black",
+            "rhsusf_hgu56p_visor_mask_black",
+            "rhsusf_hgu56p_visor_mask_black_skull",
+            "rhsusf_hgu56p_green",
+            "rhsusf_hgu56p_mask_green",
+            "rhsusf_hgu56p_mask_green_mo",
+            "rhsusf_hgu56p_visor_green",
+            "rhsusf_hgu56p_visor_mask_green",
+            "rhsusf_hgu56p_visor_mask_Empire_green",
+            "rhsusf_hgu56p_visor_mask_green_mo",
+            "rhsusf_hgu56p",
+            "rhsusf_hgu56p_mask",
+            "rhsusf_hgu56p_mask_mo",
+            "rhsusf_hgu56p_mask_skull",
+            "rhsusf_hgu56p_visor",
+            "rhsusf_hgu56p_visor_mask",
+            "rhsusf_hgu56p_visor_mask_mo",
+            "rhsusf_hgu56p_visor_mask_skull"
 ];
 
 _vests = [
@@ -805,5 +840,5 @@ _magazines = [
 
 //Adding Itemlists to the Arsenal
 [_box,(_items + _uniforms + _headgear + _vests + _backpacks + _magazines + _weapons),true] call ace_arsenal_fnc_initBox;
-[_box, true] call ace_arsenal_fnc_initBox;
-_box addaction ["<img image='\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\box_ca.paa' /> Open Arsenal",{[(_this select 0), player] call ace_arsenal_fnc_openBox;}];
+
+[_box,["<img image='\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\box_ca.paa' /> Open Arsenal",{[(_this select 0), player,false] call ace_arsenal_fnc_openBox;}]] remoteExec ["addAction",0,true];

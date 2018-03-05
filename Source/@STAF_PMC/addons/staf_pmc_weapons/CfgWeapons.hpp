@@ -1,5 +1,5 @@
 class CfgWeapons {
-  class hlc_rifle_G36KMLIC; //HLC G36
+  class hlc_rifle_G36MLIC; //HLC G36
   class hlc_rifle_G36MLIAG36; //HLC G36 GL
   class hlc_rifle_G36A1; //HLC G36A1
   class hlc_rifle_G36A1AG36; //HLC G36A1 GL
@@ -32,18 +32,19 @@ class CfgWeapons {
   class rhs_weap_M136_hp; //RHS M136 HP
   class Xnooz_AppareilPhoto; //Press Assets Handheld Camera
 
-  class STAF_rifle_g36: hlc_rifle_G36KMLIC
+  // Rifles
+  class STAF_rifle_g36: hlc_rifle_G36MLIC
   {
     class LinkedItems
     {
       class LinkedItemsOptic
       {
-      item = "rhsusf_acc_eotech_xps3";
+      item = "KA_557_Magnifier_UP";
       slot = "CowsSlot";
       };
       class LinkedItemsAcc
       {
-      item = "acc_pointer_IR";
+      item = "rhsusf_acc_anpeq15_bk_light";
       slot = "PointerSlot";
       };
     };
@@ -55,13 +56,13 @@ class CfgWeapons {
     {
       class LinkedItemsOptic
       {
-        item = "rhsusf_acc_eotech_xps3";
-        slot = "CowsSlot";
+      item = "KA_557_Magnifier_UP";
+      slot = "CowsSlot";
       };
       class LinkedItemsAcc
       {
-        item = "acc_pointer_IR";
-        slot = "PointerSlot";
+      item = "rhsusf_acc_anpeq15_bk_light";
+      slot = "PointerSlot";
       };
     };
   };
@@ -70,10 +71,10 @@ class CfgWeapons {
   {
     class LinkedItems
     {
-      class LinkedItemsAcc
+      class LinkedItemsOptic
       {
-      item = "acc_pointer_IR";
-      slot = "PointerSlot";
+      item = "HLC_Optic_G36Dualoptic15x2d";
+      slot = "CowsSlot";
       };
     };
   };
@@ -82,10 +83,10 @@ class CfgWeapons {
   {
     class LinkedItems
     {
-      class LinkedItemsAcc
+      class LinkedItemsOptic
       {
-        item = "acc_pointer_IR";
-        slot = "PointerSlot";
+      item = "HLC_Optic_G36Dualoptic15x2d";
+      slot = "CowsSlot";
       };
     };
   };
@@ -226,74 +227,7 @@ class CfgWeapons {
     };
   };
 
-  class STAF_rifle_m4: rhs_weap_m4a1_blockII_bk
-  {
-    class LinkedItems
-    {
-      class LinkedItemsOptic
-      {
-        item = "rhsusf_acc_eotech_xps3";
-        slot = "CowsSlot";
-      };
-      class LinkedItemsAcc
-      {
-        item = "acc_pointer_IR";
-        slot = "PointerSlot";
-      };
-    };
-  };
-
-  class STAF_rifle_m4_gl: rhs_weap_m4a1_blockII_M203_bk
-  {
-    class LinkedItems
-    {
-      class LinkedItemsOptic
-      {
-        item = "rhsusf_acc_eotech_xps3";
-        slot = "CowsSlot";
-      };
-      class LinkedItemsAcc
-      {
-        item = "acc_pointer_IR";
-        slot = "PointerSlot";
-      };
-    };
-  };
-
-  class STAF_rifle_mx: arifle_MX_Black_F
-  {
-    class LinkedItems
-    {
-      class LinkedItemsOptic
-      {
-        item = "rhsusf_acc_eotech_xps3";
-        slot = "CowsSlot";
-      };
-      class LinkedItemsAcc
-      {
-        item = "acc_pointer_IR";
-        slot = "PointerSlot";
-      };
-    };
-  };
-
-  class STAF_rifle_mx_gl: arifle_MX_GL_Black_F
-  {
-    class LinkedItems
-    {
-      class LinkedItemsOptic
-      {
-        item = "rhsusf_acc_eotech_xps3";
-        slot = "CowsSlot";
-      };
-      class LinkedItemsAcc
-      {
-        item = "acc_pointer_IR";
-        slot = "PointerSlot";
-      };
-    };
-  };
-
+  //Machine Guns
   class STAF_rifle_m249: hlc_m249_pip2
   {
     class LinkedItems
@@ -306,23 +240,7 @@ class CfgWeapons {
     };
   };
 
-  class STAF_rifle_negev: LMG_Zafir_F
-  {
-    class LinkedItems
-    {
-      class LinkedItemsOptic
-      {
-        item = "rhsusf_acc_SpecterDR";
-        slot = "CowsSlot";
-      };
-      class LinkedItemsAcc
-      {
-        item = "acc_pointer_IR";
-        slot = "PointerSlot";
-      };
-    };
-  };
-
+  //SMGs
   class STAF_rifle_mp5: hlc_smg_mp5a4
   {
     class LinkedItems
@@ -340,78 +258,7 @@ class CfgWeapons {
     };
   };
 
-  class STAF_rifle_mp7: rhsusf_weap_MP7A2
-  {
-    class LinkedItems
-      {
-      class LinkedItemsOptic
-      {
-        item = "optic_Aco_smg";
-        slot = "CowsSlot";
-      };
-      class LinkedItemsAcc
-      {
-        item = "acc_flashlight";
-        slot = "PointerSlot";
-      };
-    };
-  };
-
-  class STAF_rifle_p90: SMG_03C_black
-  {
-  };
-
-  class STAF_rifle_hk417: arifle_SPAR_03_blk_F
-  {
-    class LinkedItems
-    {
-      class LinkedItemsOptic
-      {
-        item = "optic_DMS";
-        slot = "CowsSlot";
-      };
-      class LinkedItemsAcc
-      {
-        item = "acc_pointer_IR";
-        slot = "PointerSlot";
-      };
-    };
-  };
-
-  class STAF_rifle_ak12: arifle_AK12_F
-  {
-    class LinkedItems
-      {
-      class LinkedItemsOptic
-      {
-        item = "optic_DMS";
-        slot = "CowsSlot";
-      };
-      class LinkedItemsAcc
-      {
-        item = "acc_pointer_IR";
-        slot = "PointerSlot";
-      };
-    };
-  };
-
-  class STAF_rifle_ebr: srifle_EBR_F
-  {
-    class LinkedItems
-    {
-      class LinkedItemsOptic
-      {
-        item = "optic_DMS";
-        slot = "CowsSlot";
-      };
-      class LinkedItemsAcc
-      {
-        item = "acc_pointer_IR";
-        slot = "PointerSlot";
-      };
-    };
-  };
-
+  //Snipers and Marksman Rifles
   class STAF_rifle_m14: srifle_DMR_06_olive_F
   {
     class LinkedItems
@@ -420,11 +267,6 @@ class CfgWeapons {
       {
         item = "optic_DMS";
         slot = "CowsSlot";
-      };
-      class LinkedItemsAcc
-      {
-        item = "acc_pointer_IR";
-        slot = "PointerSlot";
       };
     };
   };
@@ -438,50 +280,10 @@ class CfgWeapons {
         item = "optic_DMS";
         slot = "CowsSlot";
       };
-      class LinkedItemsAcc
-      {
-        item = "acc_pointer_IR";
-        slot = "PointerSlot";
-      };
     };
   };
 
-  class STAF_rifle_gm6: srifle_GM6_F
-  {
-    class LinkedItems
-    {
-      class LinkedItemsOptic
-      {
-        item = "optic_LRPS";
-        slot = "CowsSlot";
-      };
-    };
-  };
-
-  class STAF_rifle_m200: srifle_LRR_F
-  {
-    class LinkedItems
-      {
-      class LinkedItemsOptic
-      {
-        item = "optic_LRPS";
-        slot = "CowsSlot";
-      };
-    };
-  };
-
-  class STAF_rifle_mar10: srifle_DMR_02_F
-  {
-    class LinkedItems
-    {
-      class LinkedItemsOptic
-      {
-        item = "optic_LRPS";
-        slot = "CowsSlot";
-      };
-    };
-  };
-
+  //Sidearms
   class STAF_pistol_glock17: KA_glock_17_Single
   {
     class LinkedItems
@@ -494,18 +296,7 @@ class CfgWeapons {
     };
   };
 
-  class STAF_pistol_mk23: KA_Mk23_black
-  {
-    class LinkedItems
-    {
-      class LinkedItemsAcc
-      {
-        item = "KA_Flashlight";
-        slot = "PointerSlot";
-      };
-    };
-  };
-
+  //Launchers
   class STAF_launcher_smaw: rhs_weap_smaw
   {
     class LinkedItems
@@ -535,30 +326,7 @@ class CfgWeapons {
     };
   };
 
-  class STAF_launcher_m136_hedp: rhs_weap_M136_hedp
-  {
-    class LinkedItems
-    {
-      class LinkedItemsAcc
-      {
-        item = "rhs_acc_at4_handler";
-        slot = "PointerSlot";
-      };
-    };
-  };
-
-  class STAF_launcher_m136_hp: rhs_weap_M136_hp
-  {
-    class LinkedItems
-    {
-      class LinkedItemsAcc
-      {
-        item = "rhs_acc_at4_handler";
-        slot = "PointerSlot";
-      };
-    };
-  };
-
+  // Other Stuff
   class STAF_Xnooz_AppareilPhoto: Xnooz_AppareilPhoto
 	{
 		author = "Xnooz";

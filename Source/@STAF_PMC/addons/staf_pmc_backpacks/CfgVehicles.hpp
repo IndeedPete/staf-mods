@@ -33,19 +33,21 @@ class CfgVehicles {
 
 		class TransportItems
 		{
-			item_xx(ACE_adenosine,3);
-      item_xx(ACE_epinephrine,7);
-      item_xx(ACE_morphine,10);
-      item_xx(ACE_elasticBandage,30);
-      item_xx(ACE_packingBandage,30);
-      item_xx(ACE_salineIV,4);
-      item_xx(ACE_salineIV_500,8);
-      item_xx(ACE_salineIV_250,12);
-      item_xx(ACE_tourniquet,5);
+			item_xx(ACE_adenosine,5);
+      item_xx(ACE_epinephrine,5);
+      item_xx(ACE_morphine,5);
+      item_xx(ACE_fieldDressing,20);
+      item_xx(ACE_elasticBandage,20);
+      item_xx(ACE_packingBandage,20);
+      item_xx(ACE_quikclot,20);
+      item_xx(ACE_salineIV,3);
+      item_xx(ACE_salineIV_500,7);
+      item_xx(ACE_salineIV_250,10);
+      item_xx(ACE_tourniquet,8);
       item_xx(ACE_surgicalKit,1)
-      item_xx(ACE_personalAidKit,5);
-      item_xx(ACE_EarPlugs,5);
-      item_xx(ACE_bodyBag,2);
+      item_xx(ACE_personalAidKit,4);
+      item_xx(ACE_EarPlugs,2);
+      item_xx(adv_aceSplint_splint,10);
 			};
 	};
 
@@ -57,19 +59,21 @@ class CfgVehicles {
 
     class TransportItems
 		{
-			item_xx(ACE_adenosine,3);
-      item_xx(ACE_epinephrine,7);
-      item_xx(ACE_morphine,10);
-      item_xx(ACE_elasticBandage,30);
-      item_xx(ACE_packingBandage,30);
-      item_xx(ACE_salineIV,4);
-      item_xx(ACE_salineIV_500,8);
-      item_xx(ACE_salineIV_250,12);
-      item_xx(ACE_tourniquet,5);
+			item_xx(ACE_adenosine,5);
+      item_xx(ACE_epinephrine,5);
+      item_xx(ACE_morphine,5);
+      item_xx(ACE_fieldDressing,20);
+      item_xx(ACE_elasticBandage,20);
+      item_xx(ACE_packingBandage,20);
+      item_xx(ACE_quikclot,20);
+      item_xx(ACE_salineIV,3);
+      item_xx(ACE_salineIV_500,7);
+      item_xx(ACE_salineIV_250,10);
+      item_xx(ACE_tourniquet,8);
       item_xx(ACE_surgicalKit,1)
-      item_xx(ACE_personalAidKit,5);
-      item_xx(ACE_EarPlugs,5);
-      item_xx(ACE_bodyBag,2);
+      item_xx(ACE_personalAidKit,4);
+      item_xx(ACE_EarPlugs,2);
+      item_xx(adv_aceSplint_splint,10);
 			};
 	};
 
@@ -81,21 +85,50 @@ class CfgVehicles {
 
     class TransportItems
 		{
-			item_xx(ACE_adenosine,3);
-      item_xx(ACE_epinephrine,7);
-      item_xx(ACE_morphine,10);
-      item_xx(ACE_elasticBandage,30);
-      item_xx(ACE_packingBandage,30);
-      item_xx(ACE_salineIV,4);
-      item_xx(ACE_salineIV_500,8);
-      item_xx(ACE_salineIV_250,12);
-      item_xx(ACE_tourniquet,5);
+			item_xx(ACE_adenosine,5);
+      item_xx(ACE_epinephrine,5);
+      item_xx(ACE_morphine,5);
+      item_xx(ACE_fieldDressing,20);
+      item_xx(ACE_elasticBandage,20);
+      item_xx(ACE_packingBandage,20);
+      item_xx(ACE_quikclot,20);
+      item_xx(ACE_salineIV,3);
+      item_xx(ACE_salineIV_500,7);
+      item_xx(ACE_salineIV_250,10);
+      item_xx(ACE_tourniquet,8);
       item_xx(ACE_surgicalKit,1)
-      item_xx(ACE_personalAidKit,5);
-      item_xx(ACE_EarPlugs,5);
-      item_xx(ACE_bodyBag,2);
+      item_xx(ACE_personalAidKit,4);
+      item_xx(ACE_EarPlugs,2);
+      item_xx(adv_aceSplint_splint,10);
 			};
 	};
+
+  class STAF_B_Kitbag_medic_inv: STAF_B_Kitbag_medic_blk
+  {
+    baseBackpack = "STAF_B_Kitbag_medic_inv";
+    displayName = "STAF Medic Kitbag (Invisible)";
+    hiddenSelectionsTextures[] = {""};
+		picture = "";
+
+    class TransportItems
+		{
+			item_xx(ACE_adenosine,5);
+      item_xx(ACE_epinephrine,5);
+      item_xx(ACE_morphine,5);
+      item_xx(ACE_fieldDressing,20);
+      item_xx(ACE_elasticBandage,20);
+      item_xx(ACE_packingBandage,20);
+      item_xx(ACE_quikclot,20);
+      item_xx(ACE_salineIV,3);
+      item_xx(ACE_salineIV_500,7);
+      item_xx(ACE_salineIV_250,10);
+      item_xx(ACE_tourniquet,8);
+      item_xx(ACE_surgicalKit,1)
+      item_xx(ACE_personalAidKit,4);
+      item_xx(ACE_EarPlugs,2);
+      item_xx(adv_aceSplint_splint,10);
+			};
+  };
 
 	class STAF_B_Kitbag_exp_blk: STAF_B_Kitbag_blk
 	{
@@ -151,6 +184,26 @@ class CfgVehicles {
 			item_xx(ACE_DefusalKit,1);
 		};
 	};
+
+  class STAF_B_Kitbag_exp_inv: STAF_B_Kitbag_exp_blk
+  {
+    baseBackpack = "STAF_B_Kitbag_exp_inv";
+    displayName = "STAF Explosives Kitbag (Invisible)";
+    hiddenSelectionsTextures[] = {""};
+		picture = "";
+
+    class TransportMagazines
+    {
+      mag_xx(SatchelCharge_Remote_Mag,3);
+      mag_xx(DemoCharge_Remote_Mag,1);
+    };
+
+    class TransportItems
+    {
+      item_xx(ACE_Clacker,1);
+      item_xx(ACE_DefusalKit,1);
+    };
+  };
 
 	class STAF_B_Kitbag_engineer_blk: STAF_B_Kitbag_blk
 	{
@@ -215,51 +268,6 @@ class CfgVehicles {
     displayName = "Kitbag (Invisible)";
     hiddenSelectionsTextures[] = {""};
 		picture = "";
-  };
-
-  class STAF_B_Kitbag_medic_inv: STAF_B_Kitbag_medic_blk
-  {
-    baseBackpack = "STAF_B_Kitbag_medic_inv";
-    displayName = "STAF Medic Kitbag (Invisible)";
-    hiddenSelectionsTextures[] = {""};
-		picture = "";
-
-    class TransportItems
-    {
-      item_xx(ACE_adenosine,3);
-      item_xx(ACE_epinephrine,7);
-      item_xx(ACE_morphine,10);
-      item_xx(ACE_elasticBandage,30);
-      item_xx(ACE_packingBandage,30);
-      item_xx(ACE_salineIV,4);
-      item_xx(ACE_salineIV_500,8);
-      item_xx(ACE_salineIV_250,12);
-      item_xx(ACE_tourniquet,5);
-      item_xx(ACE_surgicalKit,1)
-      item_xx(ACE_personalAidKit,5);
-      item_xx(ACE_EarPlugs,5);
-      item_xx(ACE_bodyBag,2);
-      };
-  };
-
-  class STAF_B_Kitbag_exp_inv: STAF_B_Kitbag_exp_blk
-  {
-    baseBackpack = "STAF_B_Kitbag_exp_inv";
-    displayName = "STAF Explosives Kitbag (Invisible)";
-    hiddenSelectionsTextures[] = {""};
-		picture = "";
-
-    class TransportMagazines
-    {
-      mag_xx(SatchelCharge_Remote_Mag,3);
-      mag_xx(DemoCharge_Remote_Mag,1);
-    };
-
-    class TransportItems
-    {
-      item_xx(ACE_Clacker,1);
-      item_xx(ACE_DefusalKit,1);
-    };
   };
 
   class STAF_B_AssaultPack_inv: B_AssaultPack_blk
