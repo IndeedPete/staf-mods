@@ -411,7 +411,20 @@ _items = [
             "G_Tactical_Black",
             "G_Spectacles_Tinted",
             "G_WirelessEarpiece_F",
-            "H_WirelessEarpiece_F"
+            "H_WirelessEarpiece_F",
+            "hlc_muzzle_556NATO_KAC",
+            "HLC_Bipod_G36",
+            "hlc_muzzle_MAG58_Brake",
+            "HLC_bipod_UTGShooters",
+            "hlc_muzzle_300blk_KAC",
+            "HLC_Optic_G36Dualoptic15x",
+            "HLC_Optic_G36Dualoptic15x2d",
+            "HLC_Optic_G36Dualoptic35x",
+            "HLC_Optic_G36Dualoptic35x2d",
+            "HLC_Optic_G36export15x",
+            "HLC_Optic_G36export15x2d",
+            "HLC_Optic_G36export35x",
+            "HLC_Optic_G36export35x2d"
 ];
 
 _uniforms = [
@@ -773,6 +786,23 @@ _magazines = [
             "KA_17Rnd_9x19_Mag",
             "rhs_mag_smaw_HEAA",
             "rhs_mag_smaw_SR",
+            //G36A1
+            "rhssaf_30rnd_556x45_TDIM_G36",
+            "rhssaf_30rnd_556x45_MDIM_G36",
+            "rhssaf_30rnd_556x45_EPR_G36",
+            "rhssaf_30rnd_556x45_Tracers_G36",
+            "rhssaf_30rnd_556x45_SPR_G36",
+            "rhssaf_30rnd_556x45_SOST_G36",
+            "hlc_30rnd_556x45_MDIM_G36",
+            "hlc_30rnd_556x45_EPR_G36",
+            "hlc_30rnd_556x45_TDIM_G36",
+            "hlc_30rnd_556x45_SPR_G36",
+            "hlc_30rnd_556x45_SOST_G36",
+            "hlc_30rnd_556x45_Tracers_G36",
+            //G36MLI
+            "30Rnd_65x39_caseless_mag",
+            "ACE_30Rnd_65x39_caseless_mag_Tracer_Dim",
+            "30Rnd_65x39_caseless_mag_Tracer",
 
             //Underbarrel Grenade
             "1Rnd_HE_Grenade_shell",
