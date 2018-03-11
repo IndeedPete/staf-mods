@@ -87,6 +87,14 @@ class CfgFunctions
 			file = "\STAF_FRAMEWORK\fnc\view";
 			class viewRestrictions{};
 		};
+		class Weather
+		{
+			file = "\STAF_FRAMEWORK\fnc\weather";
+			class coldBreath{};
+			class coldBreathACE{};
+			class monitorLifeSigns{};
+			class snowFall{};
+		};
 	};
 
 	class ZBE
