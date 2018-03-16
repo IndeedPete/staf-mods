@@ -27,7 +27,7 @@ class CfgVehicles
 	{
 		category = "STAF";
 		displayName = "(WW2) USA Arsenal";
-		function = "STAF_fnc_ww2_usaarsenalInit";
+		function = "STAF_fnc_ww2usaarsenalInit";
 		functionPriority = 10;
 		isDisposable = 0;
 		is3DEN = 0;
@@ -60,8 +60,8 @@ class CfgVehicles
 	class STAF_Module_WW2_GermanArsenal_F: Module_F
 	{
 		category = "STAF";
-		displayName = "(WW2) USA Arsenal";
-		function = "STAF_fnc_ww2_germanarsenalInit";
+		displayName = "(WW2) German Arsenal";
+		function = "STAF_fnc_ww2germanarsenalInit";
 		functionPriority = 10;
 		isDisposable = 0;
 		is3DEN = 0;
@@ -77,40 +77,6 @@ class CfgVehicles
 		class ModuleDescription: ModuleDescription
 		{
 			description = "This Adds the (WW2) German Arsenal to any Synced Object.";
-			sync[] = {"LocationArea_F"};
-
-			class LocationArea_F
-			{
-				description[] =	{"Synchronise any object to this module."};
-				position = 0;
-				direction = 0;
-				optional = 0;
-				duplicate = 0;
-				synced[] = {"AnyStaticObject", "AnyVehicle"};
-			};
-		};
-	};
-
-	class STAF_Module_WW2_RussianArsenal_F: Module_F
-	{
-		category = "STAF";
-		displayName = "(WW2) USA Arsenal";
-		function = "STAF_fnc_ww2_russianarsenalInit";
-		functionPriority = 10;
-		isDisposable = 0;
-		is3DEN = 0;
-		isGlobal = 0;
-		isTriggerActivated = 0;
-		scope = 2;
-
-		class Attributes: AttributesBase
-		{
-			class ModuleDescription: ModuleDescription{};
-		};
-
-		class ModuleDescription: ModuleDescription
-		{
-			description = "This Adds the (WW2) Russian Arsenal to any Synced Object.";
 			sync[] = {"LocationArea_F"};
 
 			class LocationArea_F
