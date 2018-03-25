@@ -425,7 +425,9 @@ _magazines = [
   "LIB_100Rnd_762x63",
   "LIB_50Rnd_762x63",
   "LIB_M2_Flamethrower_Mag",
-  "LIB_1Rnd_60mm_M6"
+  "LIB_1Rnd_60mm_M6",
+  "ItemCompass",
+  "ItemWatch"
 ];
 
 _ACE = [

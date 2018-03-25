@@ -2252,7 +2252,9 @@ _items = [
   "H_HeadBandage_stained_F",
   "H_HeadBandage_bloody_F",
   "G_LIB_Dienst_Brille",
-  "G_LIB_Dienst_Brille2"
+  "G_LIB_Dienst_Brille2",
+  "ItemCompass",
+  "ItemWatch"
 ];
 
 _magazines = [
