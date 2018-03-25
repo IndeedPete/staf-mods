@@ -772,7 +772,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_DPM_Desert";
   	};
   };
@@ -786,7 +789,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_DPM_Desert_Shortsleeve";
   	};
   };
@@ -800,7 +806,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_DPM_Desert_Sand";
   	};
   };
@@ -814,7 +823,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_DPM_Desert_Sand_Shortsleeve";
   	};
   };
@@ -828,7 +840,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_M81";
   	};
   };
@@ -842,7 +857,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_M81_Shortsleeve";
   	};
   };
@@ -856,7 +874,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_M81_Black";
   	};
   };
@@ -870,7 +891,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_M81_Black_Shortsleeve";
   	};
   };
@@ -884,7 +908,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_choc_chip";
   	};
   };
@@ -898,7 +925,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_choc_chip_Shortsleeve";
   	};
   };
@@ -912,7 +942,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_choc_chip_brown";
   	};
   };
@@ -926,7 +959,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_choc_chip_brown_Shortsleeve";
   	};
   };
@@ -940,7 +976,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_coffee_stain";
   	};
   };
@@ -954,7 +993,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_coffee_stain_Shortsleeve";
   	};
   };
@@ -968,7 +1010,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_coffee_stain_brown";
   	};
   };
@@ -982,7 +1027,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_coffee_stain_brown_Shortsleeve";
   	};
   };
@@ -997,7 +1045,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_tiger_stripe";
   	};
   };
@@ -1012,7 +1063,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_tiger_stripe_Shortsleeve";
   	};
   };
@@ -1027,7 +1081,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_tiger_stripe_Black";
   	};
   };
@@ -1042,7 +1099,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_tiger_stripe_Black_Shortsleeve";
   	};
   };
@@ -1056,7 +1116,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_TTsKO_summer";
   	};
   };
@@ -1070,7 +1133,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_TTsKO_summer_Shortsleeve";
   	};
   };
@@ -1084,7 +1150,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_TTsKO_summer_Green";
   	};
   };
@@ -1098,7 +1167,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_TTsKO_summer_Green_Shortsleeve";
   	};
   };
@@ -1112,7 +1184,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_choc_chip_coffee_stain";
   	};
   };
@@ -1126,7 +1201,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_choc_chip_coffee_stain_Shortsleeve";
   	};
   };
@@ -1140,7 +1218,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_coffee_stain_choc_chip";
   	};
   };
@@ -1154,7 +1235,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_coffee_stain_choc_chip_Shortsleeve";
   	};
   };
@@ -1168,7 +1252,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_m81_TTsKO_Summer";
   	};
   };
@@ -1182,7 +1269,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_m81_TTsKO_Summer_Shortsleeve";
   	};
   };
@@ -1196,7 +1286,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_TTsKO_Summer_m81";
   	};
   };
@@ -1210,7 +1303,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_TTsKO_Summer_m81_Shortsleeve";
   	};
   };
@@ -1225,7 +1321,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_m81_tiger_stripe";
   	};
   };
@@ -1240,7 +1339,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_m81_tiger_stripe_Shortsleeve";
   	};
   };
@@ -1255,7 +1357,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_tiger_stripe_m81";
   	};
   };
@@ -1270,7 +1375,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_tiger_stripe_m81_Shortsleeve";
   	};
   };
@@ -1284,7 +1392,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_MARPAT_Jungle";
   	};
   };
@@ -1298,7 +1409,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_MARPAT_Jungle_Shortsleeve";
   	};
   };
@@ -1312,7 +1426,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_MARPAT_Jungle_Green";
   	};
   };
@@ -1326,7 +1443,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_MARPAT_Jungle_Green_Shortsleeve";
   	};
   };
@@ -1340,7 +1460,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_m81_MARPAT_Jungle";
   	};
   };
@@ -1354,7 +1477,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_m81_MARPAT_Jungle_Shortsleeve";
   	};
   };
@@ -1368,7 +1494,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_MARPAT_Jungle_m81";
   	};
   };
@@ -1382,7 +1511,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_MARPAT_Jungle_m81_Shortsleeve";
   	};
   };
@@ -1396,7 +1528,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_MARPAT_Altis";
   	};
   };
@@ -1410,7 +1545,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_MARPAT_Altis_Shortsleeve";
   	};
   };
@@ -1424,7 +1562,10 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_MARPAT_Altis_Sage";
   	};
   };
@@ -1438,9 +1579,11 @@ class CfgWeapons {
 
   	class ItemInfo: UniformItem
   	{
-  		hiddenSelections[] = {"Camo"};
+  		containerClass = "Supply40";
+		hiddenSelections[] = {"Camo"};
+		mass = 40;
+		uniformModel = "-";
   		uniformClass = "STAF_Dummy_Light_MARPAT_Altis_Sage_Shortsleeve";
   	};
   };
-
 };
