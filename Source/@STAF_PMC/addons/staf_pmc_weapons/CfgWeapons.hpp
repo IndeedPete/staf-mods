@@ -21,6 +21,11 @@ class CfgWeapons {
   class srifle_EBR_F; //Vanilla Mk14 EBR
   class srifle_DMR_06_olive_F; //Vanilla M14
   class srifle_DMR_06_camo_F; //Vanilla M14 Camo
+  class srifle_DMR_03_F; //Vanilla SIG DMR
+  class srifle_DMR_03_khaki_F; //Vanilla SIG DMR Khaki
+  class srifle_DMR_03_tan_F; //Vanilla SIG DMR Tan
+  class srifle_DMR_03_multicam_F; //Vanilla SIG DMR Multicam
+  class srifle_DMR_03_woodland_F; //Vanilla SIG DMR Woodland
   class srifle_GM6_F; //Vanilla GM6
   class srifle_LRR_F; //Vanilla M200
   class srifle_DMR_02_F; //Vanilla Bad News
@@ -272,6 +277,66 @@ class CfgWeapons {
   };
 
   class STAF_rifle_m14_camo: srifle_DMR_06_camo_F
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "optic_DMS";
+        slot = "CowsSlot";
+      };
+    };
+  };
+
+  class STAF_rifle_sig_blk: srifle_DMR_03_F
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "optic_DMS";
+        slot = "CowsSlot";
+      };
+    };
+  };
+
+  class STAF_rifle_sig_khaki: srifle_DMR_03_khaki_F
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "optic_DMS";
+        slot = "CowsSlot";
+      };
+    };
+  };
+
+  class STAF_rifle_sig_tan: srifle_DMR_03_tan_F
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "optic_DMS";
+        slot = "CowsSlot";
+      };
+    };
+  };
+
+  class STAF_rifle_sig_multicam: srifle_DMR_03_multicam_F
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "optic_DMS";
+        slot = "CowsSlot";
+      };
+    };
+  };
+
+  class STAF_rifle_sig_woodland: srifle_DMR_03_woodland_F
   {
     class LinkedItems
     {

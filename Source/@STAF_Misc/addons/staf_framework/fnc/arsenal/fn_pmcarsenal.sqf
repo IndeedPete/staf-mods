@@ -27,6 +27,11 @@ _weapons = [
             "Binocular",
             "srifle_DMR_06_camo_F",
             "srifle_DMR_06_olive_F",
+            "srifle_DMR_03_F",
+            "srifle_DMR_03_khaki_F",
+            "srifle_DMR_03_tan_F",
+            "srifle_DMR_03_multicam_F",
+            "srifle_DMR_03_woodland_F",
             "KA_glock_17_Single",
             "KA_SCAR_L_Black_Hand",
             "KA_SCAR_L_Tan_Hand",
@@ -780,12 +785,16 @@ _magazines = [
 
             //Ammo
             "30Rnd_556x45_Stanag",
-            "20Rnd_762x51_Mag",
             "hlc_200rnd_556x45_M_SAW",
             "hlc_30Rnd_9x19_B_MP5",
             "KA_17Rnd_9x19_Mag",
             "rhs_mag_smaw_HEAA",
             "rhs_mag_smaw_SR",
+            "20Rnd_762x51_Mag",
+            "ACE_20Rnd_762x51_Mag_Tracer",
+            "ACE_20Rnd_762x51_M118LR_Mag",
+            "ACE_20Rnd_762x51_Mag_SD",
+
             //G36A1
             "rhssaf_30rnd_556x45_TDIM_G36",
             "rhssaf_30rnd_556x45_MDIM_G36",
@@ -799,6 +808,7 @@ _magazines = [
             "hlc_30rnd_556x45_SPR_G36",
             "hlc_30rnd_556x45_SOST_G36",
             "hlc_30rnd_556x45_Tracers_G36",
+
             //G36MLI
             "30Rnd_65x39_caseless_mag",
             "ACE_30Rnd_65x39_caseless_mag_Tracer_Dim",

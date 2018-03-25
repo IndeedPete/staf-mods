@@ -309,7 +309,12 @@ _vest = [
         ] call BIS_fnc_selectRandom;
 _weapon = [
               "STAF_rifle_m14",
-              "STAF_rifle_m14_camo"
+              "STAF_rifle_m14_camo",
+              "STAF_rifle_sig_blk",
+              "STAF_rifle_sig_khaki",
+              "STAF_rifle_sig_tan",
+              "STAF_rifle_sig_multicam",
+              "STAF_rifle_sig_woodland"
 ] call BIS_fnc_selectRandom;
 _backpack = [
             "B_Kitbag_cbr",
@@ -338,6 +343,21 @@ if (_weapon == "STAF_rifle_m14") then {
   for "_i" from 1 to 6 do {_unit addMagazine "20Rnd_762x51_Mag";};
 };
 if (_weapon == "STAF_rifle_m14_camo") then {
+  for "_i" from 1 to 6 do {_unit addMagazine "20Rnd_762x51_Mag";};
+};
+if (_weapon == "STAF_rifle_sig_blk") then {
+  for "_i" from 1 to 6 do {_unit addMagazine "20Rnd_762x51_Mag";};
+};
+if (_weapon == "STAF_rifle_sig_khaki") then {
+  for "_i" from 1 to 6 do {_unit addMagazine "20Rnd_762x51_Mag";};
+};
+if (_weapon == "STAF_rifle_sig_tan") then {
+  for "_i" from 1 to 6 do {_unit addMagazine "20Rnd_762x51_Mag";};
+};
+if (_weapon == "STAF_rifle_sig_multicam") then {
+  for "_i" from 1 to 6 do {_unit addMagazine "20Rnd_762x51_Mag";};
+};
+if (_weapon == "STAF_rifle_sig_woodland") then {
   for "_i" from 1 to 6 do {_unit addMagazine "20Rnd_762x51_Mag";};
 };
 for "_i" from 1 to 2 do {_unit addMagazine "KA_17Rnd_9x19_Mag";};
