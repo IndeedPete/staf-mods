@@ -70,6 +70,7 @@ class CfgFunctions
 			class hidebody {};
 			class spawnwreck {};
 			class ambientanimationmp {};
+			class animation {};
 		};
 		class Radio
 		{
@@ -94,6 +95,12 @@ class CfgFunctions
 			class coldBreathACE{};
 			class monitorLifeSigns{};
 			class snowFall{};
+		};
+		class Zeus
+		{
+			file = "\STAF_FRAMEWORK\fnc_zeus";
+			class pmcarsenalzeus{};
+			class basemediczeus{};
 		};
 	};
 

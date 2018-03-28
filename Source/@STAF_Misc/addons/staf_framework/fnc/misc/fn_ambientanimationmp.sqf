@@ -7,8 +7,12 @@ params [
 _condition = _logic getVariable ["STAF_Module_AmbientAnimationMP","None"];
 _string = _logic getVariable "STAF_Module_AmbientAnimationMP_Snap_Object";
 _object = call compile _string;
+_ambient = {};
+_regular = {};
 
+//Checks if a snapping object name is provided
 if (isNil _string) then {
+  //Checks if "None" is chosen
   if (_condition isEqualTo "None") then {
     {
       _x call BIS_fnc_ambientAnim__terminate;
