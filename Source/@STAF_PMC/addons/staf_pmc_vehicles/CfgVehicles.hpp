@@ -27,6 +27,9 @@ class CfgVehicles {
         editorPreview = "\staf_pmc_vehicles\eden\STAF_md500.jpg";
         animationList[] = {"AddDoors",0,"AddBenches",1,"AddBackseats",1,"BenchL_Up_instant",0,"BenchR_Up_instant",0,"AddHoldingFrame",1,"AddTread_Short",0,"AddTread",1};
 
+    		weapons[] = {"CMFlareLauncher"};
+    		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
+
         hiddenSelections[] = {"Camo1","clan"};
         selectionClan = "";
         maximumLoad = 5000;
