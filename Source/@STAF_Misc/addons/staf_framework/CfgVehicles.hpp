@@ -131,6 +131,57 @@ class CfgVehicles
 		};
 	};
 
+	class STAF_Module_PMC_Vehicle_Equipment_F: Module_F
+	{
+		category = "STAF";
+		displayName = "PMC Vehicle Equipment";
+		function = "STAF_fnc_pmcvehicleequipment";
+		functionPriority = 10;
+		isDisposable = 0;
+		is3DEN = 0;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		scope = 2;
+
+		class Attributes: AttributesBase
+		{
+			class STAF_Module_PMC_Vehicle_Equipment_Type: Combo
+  		{
+				property = "STAF_Module_PMC_Vehicle_Equipment_Type_Combo";
+				displayName = "What Vehicle Type?";
+				typeName = "NUMBER";
+				defaultValue = "0";
+				class Values
+				{
+					class car	{name = "Car"; value = 0;};
+					class truck	{name = "Truck";	value = 1;};
+					class helicopter	{name = "Helicopter";	value = 2;};
+					class drone	{name = "Drone";	value = 3;};
+					class drone_medical	{name = "Drone (Medical)";	value = 4;};
+					class drone_ammo	{name = "Drone (Ammo)";	value = 4;};
+					class other_small	{name = "Other (Small)";	value = 6;};
+				};
+			};
+			class ModuleDescription: ModuleDescription{};
+		};
+
+		class ModuleDescription: ModuleDescription
+		{
+			description = "Sync a Vehicle to this module to add Equipment to it!";
+			sync[] = {"LocationArea_F"};
+
+			class LocationArea_F
+			{
+				description[] =	{"Synchronise any Vehicle to this module."};
+				position = 0;
+				direction = 0;
+				optional = 0;
+				duplicate = 0;
+				synced[] = {"AnyVehicle"};
+			};
+		};
+	};
+
 	/*class STAF_Module_HideBody_F: Module_F
 	{
 		category = "STAF";
@@ -443,7 +494,7 @@ class CfgVehicles
 		};
 	};
 
-// Zeus Modules
+	// Zeus Modules (Not functional atm)
 
 	class STAF_Module_Base_Medic_Zeus_F: Module_F
 	{

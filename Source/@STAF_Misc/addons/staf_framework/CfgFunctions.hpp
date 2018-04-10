@@ -71,6 +71,7 @@ class CfgFunctions
 			class spawnwreck {};
 			class ambientanimationmp {};
 			class animation {};
+			class pmcvehicleequipment {};
 		};
 		class Radio
 		{
