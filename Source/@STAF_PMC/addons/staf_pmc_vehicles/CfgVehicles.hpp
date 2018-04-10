@@ -13,6 +13,8 @@ class CfgVehicles {
     class C_SUV_01_F;
     class B_UAV_01_F;
     class B_Heli_Light_01_stripped_F;
+    class B_UAV_06_F;
+    class B_UAV_06_medical_F;
 
     //----------------------------------Air------------------------------------
     class STAF_md500 : B_Heli_Light_01_stripped_F {
@@ -36,7 +38,7 @@ class CfgVehicles {
 
         class EventHandlers: Eventhandlers {
           class STAF {
-            init = "[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\blacktexture.sqf"";[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\standardloadout.sqf"";";
+            init = "[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\blacktexture.sqf"";[(_this select 0)] execVM '\staf_pmc_vehicles\scripts\standardloadout.sqf';";
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
           };
         };
@@ -57,6 +59,13 @@ class CfgVehicles {
         hiddenSelections[] = {"camo1","clan"};
         selectionClan = "";
         maximumLoad = 5000;
+
+        class EventHandlers: Eventhandlers {
+          class STAF {
+            init = "[(_this select 0)] execVM '\staf_pmc_vehicles\scripts\standardloadout.sqf';";
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+          };
+        };
     };
 
     //----------------------------------Ground----------------------------------
@@ -78,7 +87,7 @@ class CfgVehicles {
 
         class EventHandlers: Eventhandlers {
           class STAF {
-            init = "[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\blacktexture.sqf"";[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\standardloadout.sqf"";";
+            init = "[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\blacktexture.sqf"";[(_this select 0)] execVM '\staf_pmc_vehicles\scripts\standardloadout.sqf';";
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
           };
         };
@@ -101,7 +110,7 @@ class CfgVehicles {
 
         class EventHandlers: Eventhandlers {
           class STAF {
-            init = "[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\blacktexture.sqf"";[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\standardloadoutbig.sqf"";";
+            init = "[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\blacktexture.sqf"";[(_this select 0)] execVM '\staf_pmc_vehicles\scripts\standardloadout.sqf';";
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
           };
         };
@@ -147,7 +156,7 @@ class CfgVehicles {
 
         class EventHandlers: Eventhandlers {
           class STAF {
-            init = "[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\blacktexture.sqf"";[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\standardloadout.sqf"";";
+            init = "[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\blacktexture.sqf"";[(_this select 0)] execVM '\staf_pmc_vehicles\scripts\standardloadout.sqf';";
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
           };
         };
@@ -171,7 +180,7 @@ class CfgVehicles {
 
         class EventHandlers: Eventhandlers {
           class STAF {
-            init = "[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\standardloadout.sqf"";";
+            init = "[(_this select 0)] execVM '\staf_pmc_vehicles\scripts\standardloadout.sqf';";
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
           };
         };
@@ -195,7 +204,7 @@ class CfgVehicles {
 
         class EventHandlers: Eventhandlers {
           class STAF {
-            init = "[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\blacktexture.sqf"";[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\standardloadout.sqf"";";
+            init = "[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\blacktexture.sqf"";[(_this select 0)] execVM '\staf_pmc_vehicles\scripts\standardloadout.sqf';";
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
           };
         };
@@ -224,9 +233,9 @@ class CfgVehicles {
         textureList[] = {"Red",0,"Black",1,"Gey",0,"Orange",0};
         maximumLoad = 10000;
 
-        class EventHandlers: EventHandlers {
+        class EventHandlers: Eventhandlers {
           class STAF {
-            init = "[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\standardloadout.sqf"";";
+            init = "[(_this select 0)] execVM '\staf_pmc_vehicles\scripts\standardloadout.sqf';";
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
           };
         };
@@ -244,6 +253,66 @@ class CfgVehicles {
         selectionClan = "";
         crew = "B_UAV_AI";
         editorPreview = "\staf_pmc_vehicles\eden\STAF_quadcopter.jpg";
+    };
+
+    class STAF_hexacopter : B_UAV_06_F {
+
+        author = "STAF";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "AL-6 Pelican";
+        side = 1;
+        faction = "STAF_PMC";
+        selectionClan = "";
+        crew = "B_UAV_AI";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_quadcopter.jpg";
+
+        class EventHandlers: Eventhandlers {
+          class STAF {
+            init = "[(_this select 0)] execVM '\staf_pmc_vehicles\scripts\standardloadout.sqf';";
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+          };
+        };
+    };
+
+    class STAF_hexacopter_ammo : B_UAV_06_F {
+
+        author = "STAF";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "AL-6 Pelican (Ammo)";
+        side = 1;
+        faction = "STAF_PMC";
+        selectionClan = "";
+        crew = "B_UAV_AI";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_quadcopter.jpg";
+
+        class EventHandlers: Eventhandlers {
+          class STAF {
+            init = "[(_this select 0)] execVM '\staf_pmc_vehicles\scripts\standardloadout.sqf';";
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+          };
+        };
+    };
+
+    class STAF_hexacopter_medical : B_UAV_06_medical_F {
+
+        author = "STAF";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "AL-6 Pelican (Medical)";
+        side = 1;
+        faction = "STAF_PMC";
+        selectionClan = "";
+        crew = "B_UAV_AI";
+        editorPreview = "\staf_pmc_vehicles\eden\STAF_quadcopter.jpg";
+
+        class EventHandlers: Eventhandlers {
+          class STAF {
+            init = "[(_this select 0)] execVM '\staf_pmc_vehicles\scripts\standardloadout.sqf';";
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+          };
+        };
     };
 
     //----------------------------------Turret----------------------------------
