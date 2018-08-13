@@ -1,6 +1,7 @@
 #include "CfgPatches.hpp"
 #include "CfgFaces.hpp"
 #include "CfgFactionClasses.hpp"
+#include "CfgFunctions.hpp"
 #include "CfgGroups.hpp"
 #include "CfgWorlds.hpp"
 #include "CfgEditorSubcategories.hpp"

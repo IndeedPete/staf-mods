@@ -9,6 +9,7 @@ class CfgVehicles {
     class B_Sharpshooter_F;
     class B_Helipilot_F;
     class B_helicrew_F;
+    class B_Assault_Diver;
     class B_Pilot_F;
     class C_Man_1;
 
@@ -20,9 +21,10 @@ class CfgVehicles {
         displayName = "Contractor";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_contractor.jpg";
 
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
+        //identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"}; // Just as a working Backup
+        identityTypes[] = { "NoGlasses", "Head_African" , "Head_Asian" , "female_01" , "female_02" , "female_03" , "female_04" , "female_05" , "female2_01" , "female2_02" , "female2_03" , "female2_04" , "female3_01" , "female3_02" , "female3_03" , "female3_04" , "Head_Russian" , "Head_Euro" , "LanguageENG_F", "LanguageENGB_F"};
         uniformClass = "STAF_Scientist";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid"};
@@ -33,12 +35,12 @@ class CfgVehicles {
         {
           class InitEH
           {
-              init = "[(_this select 0)] execVM '\staf_pmc_infantry\scripts\random_uniform.sqf';";
+              init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\random_uniform.sqf';";
           };
-          class RespawnEH
+          /*class RespawnEH
           {
             respawn = "[(_this select 0), (_this select 1)] execVM '\staf_pmc_infantry\scripts\random_uniform_respawn.sqf';";
-          };
+          };*/
         };
     };
 
@@ -49,9 +51,9 @@ class CfgVehicles {
         displayName = "Contractor (AT)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_at.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_contractor_at.jpg";
 
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
+        identityTypes[] = { "NoGlasses", "Head_African" , "Head_Asian" , "female_01" , "female_02" , "female_03" , "female_04" , "female_05" , "female2_01" , "female2_02" , "female2_03" , "female2_04" , "female3_01" , "female3_02" , "female3_03" , "female3_04" , "Head_Russian" , "Head_Euro" , "LanguageENG_F", "LanguageENGB_F"};
         uniformClass = "STAF_Scientist";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid"};
@@ -62,11 +64,7 @@ class CfgVehicles {
         {
           class InitEH
           {
-              init = "[(_this select 0)] execVM '\staf_pmc_infantry\scripts\random_uniform.sqf';";
-          };
-          class RespawnEH
-          {
-            respawn = "[(_this select 0), (_this select 1)] execVM '\staf_pmc_infantry\scripts\random_uniform_respawn.sqf';";
+              init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\random_uniform.sqf';";
           };
         };
     };
@@ -78,9 +76,9 @@ class CfgVehicles {
         displayName = "Contractor (MG)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_mg.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_contractor_mg.jpg";
 
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
+        identityTypes[] = { "NoGlasses", "Head_African" , "Head_Asian" , "female_01" , "female_02" , "female_03" , "female_04" , "female_05" , "female2_01" , "female2_02" , "female2_03" , "female2_04" , "female3_01" , "female3_02" , "female3_03" , "female3_04" , "Head_Russian" , "Head_Euro" , "LanguageENG_F", "LanguageENGB_F"};
         uniformClass = "STAF_Scientist";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid"};
@@ -91,11 +89,7 @@ class CfgVehicles {
         {
           class InitEH
           {
-              init = "[(_this select 0)] execVM '\staf_pmc_infantry\scripts\random_uniform.sqf';";
-          };
-          class RespawnEH
-          {
-            respawn = "[(_this select 0), (_this select 1)] execVM '\staf_pmc_infantry\scripts\random_uniform_respawn.sqf';";
+              init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\random_uniform.sqf';";
           };
         };
     };
@@ -107,9 +101,9 @@ class CfgVehicles {
         displayName = "Field Medic";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_medic.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_contractor_medic.jpg";
 
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
+        identityTypes[] = { "NoGlasses", "Head_African" , "Head_Asian" , "female_01" , "female_02" , "female_03" , "female_04" , "female_05" , "female2_01" , "female2_02" , "female2_03" , "female2_04" , "female3_01" , "female3_02" , "female3_03" , "female3_04" , "Head_Russian" , "Head_Euro" , "LanguageENG_F", "LanguageENGB_F"};
         uniformClass = "STAF_Scientist";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid"};
@@ -120,11 +114,7 @@ class CfgVehicles {
         {
           class InitEH
           {
-              init = "[(_this select 0)] execVM '\staf_pmc_infantry\scripts\random_uniform.sqf';";
-          };
-          class RespawnEH
-          {
-            respawn = "[(_this select 0), (_this select 1)] execVM '\staf_pmc_infantry\scripts\random_uniform_respawn.sqf';";
+              init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\random_uniform.sqf';";
           };
         };
     };
@@ -136,9 +126,9 @@ class CfgVehicles {
         displayName = "Marksman";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_marksman.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_contractor_marksman.jpg";
 
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
+        identityTypes[] = { "NoGlasses", "Head_African" , "Head_Asian" , "female_01" , "female_02" , "female_03" , "female_04" , "female_05" , "female2_01" , "female2_02" , "female2_03" , "female2_04" , "female3_01" , "female3_02" , "female3_03" , "female3_04" , "Head_Russian" , "Head_Euro" , "LanguageENG_F", "LanguageENGB_F"};
         uniformClass = "STAF_Scientist";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid"};
@@ -149,11 +139,7 @@ class CfgVehicles {
         {
           class InitEH
           {
-              init = "[(_this select 0)] execVM '\staf_pmc_infantry\scripts\random_uniform.sqf';";
-          };
-          class RespawnEH
-          {
-            respawn = "[(_this select 0), (_this select 1)] execVM '\staf_pmc_infantry\scripts\random_uniform_respawn.sqf';";
+              init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\random_uniform.sqf';";
           };
         };
     };
@@ -165,7 +151,7 @@ class CfgVehicles {
         displayName = "Engineer";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_engineer.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_contractor_engineer.jpg";
 
         identityTypes[] = { "Head_NATO" , "LanguageENG_F" };
         uniformClass = "STAF_Scientist";
@@ -178,11 +164,7 @@ class CfgVehicles {
         {
           class InitEH
           {
-              init = "[(_this select 0)] execVM '\staf_pmc_infantry\scripts\random_uniform.sqf';";
-          };
-          class RespawnEH
-          {
-            respawn = "[(_this select 0), (_this select 1)] execVM '\staf_pmc_infantry\scripts\random_uniform_respawn.sqf';";
+              init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\random_uniform.sqf';";
           };
         };
     };
@@ -194,9 +176,9 @@ class CfgVehicles {
         displayName = "Bodyguard";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_bodyguard.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_contractor_bodyguard.jpg";
 
-        identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"};
+        identityTypes[] = { "NoGlasses", "Head_African" , "Head_Asian" , "female_01" , "female_02" , "female_03" , "female_04" , "female_05" , "female2_01" , "female2_02" , "female2_03" , "female2_04" , "female3_01" , "female3_02" , "female3_03" , "female3_04" , "Head_Russian" , "Head_Euro" , "LanguageENG_F", "LanguageENGB_F"};
         uniformClass = "STAF_Scientist";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid"};
@@ -207,11 +189,7 @@ class CfgVehicles {
         {
           class InitEH
           {
-              init = "[(_this select 0)] execVM '\staf_pmc_infantry\scripts\random_uniform.sqf';";
-          };
-          class RespawnEH
-          {
-            respawn = "[(_this select 0), (_this select 1)] execVM '\staf_pmc_infantry\scripts\random_uniform_respawn.sqf';";
+              init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\random_uniform.sqf';";
           };
         };
     };
@@ -223,9 +201,9 @@ class CfgVehicles {
         displayName = "Helicopter Pilot";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_contractor_heli_pilot.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_contractor_heli_pilot.jpg";
 
-        identityTypes[] = { "Head_NATO" , "LanguageENG_F" };
+        identityTypes[] = {"Head_African" , "Head_Asian" , "female_01" , "female_02" , "female_03" , "female_04" , "female_05" , "female2_01" , "female2_02" , "female2_03" , "female2_04" , "female3_01" , "female3_02" , "female3_03" , "female3_04" , "Head_Russian" , "Head_Euro" , "LanguageENG_F", "LanguageENGB_F"};
         uniformClass = "STAF_Scientist";
 
         linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid"};
@@ -236,11 +214,32 @@ class CfgVehicles {
         {
           class InitEH
           {
-              init = "[(_this select 0)] execVM '\staf_pmc_infantry\scripts\random_uniform.sqf';";
+              init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\random_uniform.sqf';";
           };
-          class RespawnEH
+        };
+    };
+
+    class STAF_contractor_diver : B_Assault_Diver {
+        author = "STAF";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Diver";
+        side = 1;
+        faction = "STAF_PMC";
+        editorPreview = "\staf_pmc_main\eden\STAF_contractor_diver.jpg";
+
+        identityTypes[] = {"Head_African" , "Head_Asian" , "female_01" , "female_02" , "female_03" , "female_04" , "female_05" , "female2_01" , "female2_02" , "female2_03" , "female2_04" , "female3_01" , "female3_02" , "female3_03" , "female3_04" , "Head_Russian" , "Head_Euro" , "LanguageENG_F", "LanguageENGB_F"};
+        uniformClass = "STAF_Scientist";
+
+        linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid", "G_Diving"};
+        weapons[] = {"Throw","Put" };
+        magazines[] = {};
+
+        class Eventhandlers: Eventhandlers
+        {
+          class InitEH
           {
-            respawn = "[(_this select 0), (_this select 1)] execVM '\staf_pmc_infantry\scripts\random_uniform_respawn.sqf';";
+              init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\random_uniform.sqf';";
           };
         };
     };
@@ -254,7 +253,7 @@ class CfgVehicles {
         displayName = "Boss";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_boss.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_boss.jpg";
         editorSubcategory = "EdSubcat_vip";
         genericNames = "STAF_VIPNames";
 
@@ -278,7 +277,7 @@ class CfgVehicles {
         displayName = "Client (American)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_client_american.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_client_american.jpg";
         editorSubcategory = "EdSubcat_client";
 
         identityTypes[] = { "NoGlasses" , "LanguageENG_F" ,"Head_NATO"};
@@ -301,7 +300,7 @@ class CfgVehicles {
         displayName = "Client (British)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_client_british.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_client_british.jpg";
         editorSubcategory = "EdSubcat_client";
 
         identityTypes[] = {"NoGlasses", "Head_Euro" , "LanguageENGB_F" };
@@ -324,7 +323,7 @@ class CfgVehicles {
         displayName = "Client (Chinese)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_client_chinese.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_client_chinese.jpg";
         editorSubcategory = "EdSubcat_client";
 
         identityTypes[] = { "Head_Asian" , "LanguageCHI_F" };
@@ -347,7 +346,7 @@ class CfgVehicles {
         displayName = "Client (African)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_client_african.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_client_african.jpg";
         editorSubcategory = "EdSubcat_client";
 
         identityTypes[] = {"NoGlasses", "Head_African" , "LanguageENGFRE_F" };
@@ -370,7 +369,7 @@ class CfgVehicles {
         displayName = "Client (Greek)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_client_greek.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_client_greek.jpg";
         editorSubcategory = "EdSubcat_client";
 
         identityTypes[] = {"NoGlasses", "Head_Greek" , "LanguageGRE_F" };
@@ -393,7 +392,7 @@ class CfgVehicles {
         displayName = "Client (Scientist)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_client_scientist.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_client_scientist.jpg";
         editorSubcategory = "EdSubcat_client";
 
         identityTypes[] = {"NoGlasses", "Head_Euro" , "LanguageENGB_F" };
@@ -415,7 +414,7 @@ class CfgVehicles {
         displayName = "Client (UN)";
         side = 1;
         faction = "STAF_PMC";
-        editorPreview = "\staf_pmc_infantry\eden\STAF_client_un.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_client_un.jpg";
         editorSubcategory = "EdSubcat_client";
 
         identityTypes[] = {"NoGlasses", "Head_Euro" , "LanguageENGFRE_F" };

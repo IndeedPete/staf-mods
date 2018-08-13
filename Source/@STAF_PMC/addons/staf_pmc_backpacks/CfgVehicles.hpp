@@ -9,21 +9,131 @@ class CfgVehicles {
 	class B_Carryall_khk;
   class B_AssaultPack_blk;
   class B_Bergen_blk;
+  class B_UAV_01_backpack_F;
+  class B_AssaultPack_rgr;
+  class B_FieldPack_blk;
+
+  // Assault Pack
+
+  class STAF_B_AssaultPack_white_hex: B_AssaultPack_rgr
+  {
+    baseBackpack = "STAF_B_AssaultPack_white_hex";
+		displayName = "STAF Assault Pack (White, HEX)";
+		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_compact_hex_co.paa"};
+		picture = "\staf_pmc_main\arsenal\icon_b_c_compact_white_ca.paa";
+  };
+
+  class STAF_B_AssaultPack_white_MCAM: B_AssaultPack_rgr
+  {
+    baseBackpack = "STAF_B_AssaultPack_white_MCAM";
+		displayName = "STAF Assault Pack (White, MCAM)";
+		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_compact_mcam_co.paa"};
+		picture = "\staf_pmc_main\arsenal\icon_b_c_compact_white_ca.paa";
+  };
+
+  class STAF_B_AssaultPack_white_splinter: B_AssaultPack_rgr
+  {
+    baseBackpack = "STAF_B_AssaultPack_white_splinter";
+		displayName = "STAF Assault Pack (White, Splinter)";
+		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_compact_splinter_co.paa"};
+		picture = "\staf_pmc_main\arsenal\icon_b_c_compact_white_ca.paa";
+  };
+
+  class STAF_B_AssaultPack_white: B_AssaultPack_rgr
+  {
+    baseBackpack = "STAF_B_AssaultPack_white";
+		displayName = "STAF Assault Pack (White)";
+		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_compact_white_co.paa"};
+		picture = "\staf_pmc_main\arsenal\icon_b_c_compact_white_ca.paa";
+  };
+
+  // Carry-All
 
 	class STAF_B_Carryall_MCAM_Black: B_Carryall_khk
 	{
 		baseBackpack = "STAF_B_Carryall_MCAM_Black";
 		displayName = "STAF Carryall Backpack (MCAM Black)";
 		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_tortila_MCAM_Black_co.paa"};
-		picture = "\staf_pmc_backpacks\arsenal\icon_b_c_tortila_MCAM_Black.paa";
+		picture = "\staf_pmc_main\arsenal\icon_b_c_tortila_MCAM_Black.paa";
 	};
+  class STAF_B_Carryall_white_hex: B_Carryall_khk
+  {
+    baseBackpack = "STAF_B_Carryall_white_hex";
+		displayName = "STAF Carryall Backpack (White, HEX)";
+		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_tortila_hex_co.paa"};
+		picture = "\staf_pmc_main\arsenal\icon_b_c_tortila_white_ca.paa";
+  };
+  class STAF_B_Carryall_white_MCAM: B_Carryall_khk
+  {
+    baseBackpack = "STAF_B_Carryall_white_MCAM";
+		displayName = "STAF Carryall Backpack (White, MCAM)";
+		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_tortila_mcam_co.paa"};
+		picture = "\staf_pmc_main\arsenal\icon_b_c_tortila_white_ca.paa";
+  };
+  class STAF_B_Carryall_white_splinter: B_Carryall_khk
+  {
+    baseBackpack = "STAF_B_Carryall_white_splinter";
+		displayName = "STAF Carryall Backpack (White, Splinter)";
+		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_tortila_splinter_co.paa"};
+		picture = "\staf_pmc_main\arsenal\icon_b_c_tortila_white_ca.paa";
+  };
+  class STAF_B_Carryall_white: B_Carryall_khk
+  {
+    baseBackpack = "STAF_B_Carryall_white";
+		displayName = "STAF Carryall Backpack (White)";
+		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_tortila_white_co.paa"};
+		picture = "\staf_pmc_main\arsenal\icon_b_c_tortila_white_ca.paa";
+  };
+  class STAF_B_Carryall_inv: STAF_B_Carryall_MCAM_Black
+  {
+    baseBackpack = "STAF_B_Carryall_Inv";
+    displayName = "STAF Carryall Backpack (Invisible)";
+    hiddenSelectionsTextures[] = {""};
+    picture = "";
+    model ="";
+  };
+
+
+  //Kitbag
 
 	class STAF_B_Kitbag_blk: B_Kitbag_rgr
 	{
 		baseBackpack = "STAF_B_Kitbag_blk";
-		displayName = "Kitbag (Dark Black)";
+		displayName = "STAF Kitbag (Dark Black)";
 		hiddenSelectionsTextures[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_fast_blk_co.paa"};
 	};
+
+  class STAF_B_Kitbag_white_hex: B_Kitbag_rgr
+  {
+    baseBackpack = "STAF_B_Kitbag_white_hex";
+		displayName = "STAF Kitbag (White, HEX)";
+		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_fast_hex_co.paa"};
+		picture = "\staf_pmc_main\arsenal\icon_b_c_kitbag_white_ca.paa";
+  };
+
+  class STAF_B_Kitbag_white_MCAM: B_Kitbag_rgr
+  {
+    baseBackpack = "STAF_B_Kitbag_white_MCAM";
+		displayName = "STAF Kitbag (White, MCAM)";
+		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_fast_mcam_co.paa"};
+		picture = "\staf_pmc_main\arsenal\icon_b_c_kitbag_white_ca.paa";
+  };
+
+  class STAF_B_Kitbag_white_splinter: B_Kitbag_rgr
+  {
+    baseBackpack = "STAF_B_Kitbag_white_splinter";
+		displayName = "STAF Kitbag (White, Splinter)";
+		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_fast_splinter_co.paa"};
+		picture = "\staf_pmc_main\arsenal\icon_b_c_kitbag_white_ca.paa";
+  };
+
+  class STAF_B_Kitbag_white: B_Kitbag_rgr
+  {
+    baseBackpack = "STAF_B_Kitbag_white";
+		displayName = "STAF Kitbag (White)";
+		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_fast_white_co.paa"};
+		picture = "\staf_pmc_main\arsenal\icon_b_c_kitbag_white_ca.paa";
+  };
 
 	class STAF_B_Kitbag_medic_blk: B_Kitbag_rgr
 	{
@@ -253,36 +363,65 @@ class CfgVehicles {
 			item_xx(ACE_DefusalKit,1);
 		};
 	};
-
-  class STAF_B_Carryall_inv: STAF_B_Carryall_MCAM_Black
-  {
-    baseBackpack = "STAF_B_Carryall_Inv";
-    displayName = "STAF Carryall Backpack (Invisible)";
-    hiddenSelectionsTextures[] = {""};
-    picture = "";
-  };
-
   class STAF_B_Kitbag_inv: STAF_B_Kitbag_blk
   {
     baseBackpack = "STAF_B_Kitbag_inv";
-    displayName = "Kitbag (Invisible)";
+    displayName = "STAF Kitbag (Invisible)";
     hiddenSelectionsTextures[] = {""};
 		picture = "";
+    model ="";
   };
+
+  //Assault Pack
 
   class STAF_B_AssaultPack_inv: B_AssaultPack_blk
   {
     baseBackpack = "STAF_B_AssaultPack_inv";
-    displayName = "Assault Pack (Invisible)";
+    displayName = "STAF Assault Pack (Invisible)";
     hiddenSelectionsTextures[] = {""};
 		picture = "";
+    model ="";
   };
 
-  class STAF_B_Bergen_inv: B_Bergen_blk
+  //Bergen
+  class STAF_B_UAV_01_backpack_white_F: B_UAV_01_backpack_F
   {
-    baseBackpack = "STAF_B_Bergen_inv";
-    displayName = "Bergen (Invisible)";
-    hiddenSelectionsTextures[] = {""};
-		picture = "";
+    baseBackpack = "STAF_B_UAV_01_backpack_F";
+		displayName = "STAF UAV Bagpack (White)";
+		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\uav_backpack_white_co.paa"};
+  };
+
+  // Field Pack
+
+  class STAF_B_FieldPack_white_hex: B_FieldPack_blk
+  {
+    baseBackpack = "STAF_B_FieldPack_white_hex";
+		displayName = "STAF Field Pack (White, HEX)";
+		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_gorod_hex_co.paa"};
+		//picture = "\staf_pmc_main\arsenal\icon_b_c_tortila_MCAM_Black.paa";
+  };
+
+  class STAF_B_FieldPack_white_mcam: B_FieldPack_blk
+  {
+    baseBackpack = "STAF_B_FieldPack_white_mcam";
+		displayName = "STAF Field Pack (White, MCAM)";
+		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_gorod_mcam_co.paa"};
+		//picture = "\staf_pmc_main\arsenal\icon_b_c_tortila_MCAM_Black.paa";
+  };
+
+  class STAF_B_FieldPack_white_splinter: B_FieldPack_blk
+  {
+    baseBackpack = "STAF_B_FieldPack_white_splinter";
+		displayName = "STAF Field Pack (White, Splinter)";
+		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_gorod_splinter_co.paa"};
+		//picture = "\staf_pmc_main\arsenal\icon_b_c_tortila_MCAM_Black.paa";
+  };
+
+  class STAF_B_FieldPack_white: B_FieldPack_blk
+  {
+    baseBackpack = "STAF_B_FieldPack_white";
+		displayName = "STAF Field Pack (White)";
+		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_gorod_white_co.paa"};
+		//picture = "\staf_pmc_main\arsenal\icon_b_c_tortila_MCAM_Black.paa";
   };
 };

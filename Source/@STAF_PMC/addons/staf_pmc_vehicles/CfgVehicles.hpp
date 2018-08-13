@@ -1,5 +1,6 @@
 class Eventhandlers;
 class CBA_Extended_EventHandlers_base;
+class TransportPylonsComponent_base;
 
 class CfgVehicles {
     class B_Boat_Transport_01_F;
@@ -12,25 +13,32 @@ class CfgVehicles {
     class C_Offroad_01_F;
     class C_SUV_01_F;
     class B_UAV_01_F;
-    class B_Heli_Light_01_stripped_F;
+    class B_Heli_Light_01_F;
     class B_UAV_06_F;
     class B_UAV_06_medical_F;
+    class Heli_Light_01_dynamicLoadout_base_F;
+    class B_Heli_Light_01_dynamicLoadout_F: Heli_Light_01_dynamicLoadout_base_F
+    {
+        class Components;
+    };
 
     //----------------------------------Air------------------------------------
-    class STAF_md500 : B_Heli_Light_01_stripped_F {
+    class STAF_md500 : B_Heli_Light_01_F {
 
         author = "STAF";
         scope = 2;
         scopeCurator = 2;
-        displayName = "MD500 (Modified)";
+        displayName = "MD-500 (Modified)";
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor_heli_pilot";
-        editorPreview = "\staf_pmc_vehicles\eden\STAF_md500.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_md500.jpg";
         animationList[] = {"AddDoors",0,"AddBenches",1,"AddBackseats",1,"BenchL_Up_instant",0,"BenchR_Up_instant",0,"AddHoldingFrame",1,"AddTread_Short",0,"AddTread",1};
 
     		weapons[] = {"CMFlareLauncher"};
     		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
+        memoryPointCM[] = {"flare_launcher1","flare_launcher2"};
+        memoryPointCMDir[] = {"flare_launcher1_dir","flare_launcher2_dir"};
 
         hiddenSelections[] = {"Camo1","clan"};
         selectionClan = "";
@@ -38,11 +46,48 @@ class CfgVehicles {
 
         class EventHandlers: Eventhandlers {
           class STAF {
-            init = "[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\blacktexture.sqf"";[(_this select 0)] execVM '\staf_pmc_vehicles\scripts\standardloadout.sqf';";
+            init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
           };
         };
     };
+
+    /*class STAF_md500_defender : B_Heli_Light_01_dynamicLoadout_F {
+
+        author = "STAF";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "MD-500 Defender";
+        side = 1;
+        faction = "STAF_PMC";
+        crew = "STAF_contractor_heli_pilot";
+        editorPreview = "\staf_pmc_main\eden\STAF_md500.jpg";
+        animationList[] = {"AddTread_Short",0,"AddTread",1};
+
+    		weapons[] = {"CMFlareLauncher","M134_minigun"};
+    		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","5000Rnd_762x51_Belt"};
+        memoryPointCM[] = {"flare_launcher1","flare_launcher2"};
+        memoryPointCMDir[] = {"flare_launcher1_dir","flare_launcher2_dir"};
+
+        hiddenSelections[] = {"Camo1","clan"};
+        selectionClan = "";
+        maximumLoad = 5000;
+
+        class EventHandlers: Eventhandlers {
+          class STAF {
+            init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";";
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+          };
+        };
+
+        class Components: Components
+        {
+          class TransportPylonsComponent{
+            uiPicture = "\A3\Air_F\Heli_Light_01\Data\UI\Heli_Light_01_3DEN_CA.paa";
+            class Pylons{};
+          };
+        };
+    };*/
 
     //----------------------------------Naval-----------------------------------
     class STAF_rubberboat : B_Boat_Transport_01_F {
@@ -53,8 +98,8 @@ class CfgVehicles {
         displayName = "Assault Boat";
         side = 1;
         faction = "STAF_PMC";
-        crew = "STAF_diver_mx";
-        editorPreview = "\staf_pmc_vehicles\eden\STAF_rubberboat.jpg";
+        crew = "STAF_contractor";
+        editorPreview = "\staf_pmc_main\eden\STAF_rubberboat.jpg";
 
         hiddenSelections[] = {"camo1","clan"};
         selectionClan = "";
@@ -62,7 +107,7 @@ class CfgVehicles {
 
         class EventHandlers: Eventhandlers {
           class STAF {
-            init = "[(_this select 0)] execVM '\staf_pmc_vehicles\scripts\standardloadout.sqf';";
+            init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
           };
         };
@@ -79,7 +124,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor";
-        editorPreview = "\staf_pmc_vehicles\eden\STAF_truck_transport.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_truck_transport.jpg";
 
         hiddenSelections[] = {"Camo1","Camo2","camo3","clan"};
         selectionClan = "";
@@ -87,7 +132,7 @@ class CfgVehicles {
 
         class EventHandlers: Eventhandlers {
           class STAF {
-            init = "[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\blacktexture.sqf"";[(_this select 0)] execVM '\staf_pmc_vehicles\scripts\standardloadout.sqf';";
+            init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
           };
         };
@@ -102,7 +147,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor";
-        editorPreview = "\staf_pmc_vehicles\eden\STAF_truck_box.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_truck_box.jpg";
 
         hiddenSelections[] = {"Camo1","Camo2","camo3","clan"};
         selectionClan = "";
@@ -110,7 +155,7 @@ class CfgVehicles {
 
         class EventHandlers: Eventhandlers {
           class STAF {
-            init = "[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\blacktexture.sqf"";[(_this select 0)] execVM '\staf_pmc_vehicles\scripts\standardloadout.sqf';";
+            init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
           };
         };
@@ -125,7 +170,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor";
-        editorPreview = "\staf_pmc_vehicles\eden\STAF_truck_fuel.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_truck_fuel.jpg";
 
         hiddenSelections[] = {"Camo1","Camo2","camo3","clan"};
         selectionClan = "";
@@ -133,7 +178,7 @@ class CfgVehicles {
 
         class EventHandlers: Eventhandlers {
           class STAF {
-            init = "[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\blacktexture.sqf"";";
+            init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";";
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
           };
         };
@@ -148,7 +193,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor";
-        editorPreview = "\staf_pmc_vehicles\eden\STAF_truck_covered.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_truck_covered.jpg";
 
         hiddenSelections[] = {"Camo1","Camo2","camo3","clan"};
         selectionClan = "";
@@ -156,7 +201,7 @@ class CfgVehicles {
 
         class EventHandlers: Eventhandlers {
           class STAF {
-            init = "[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\blacktexture.sqf"";[(_this select 0)] execVM '\staf_pmc_vehicles\scripts\standardloadout.sqf';";
+            init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
           };
         };
@@ -171,7 +216,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor";
-        editorPreview = "\staf_pmc_vehicles\eden\STAF_offroad.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_offroad.jpg";
 
         hiddenSelections[] = {"camo1","camo2","camo3","camo4","clan"};
         selectionClan = "";
@@ -180,7 +225,7 @@ class CfgVehicles {
 
         class EventHandlers: Eventhandlers {
           class STAF {
-            init = "[(_this select 0)] execVM '\staf_pmc_vehicles\scripts\standardloadout.sqf';";
+            init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
           };
         };
@@ -195,7 +240,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor";
-        editorPreview = "\staf_pmc_vehicles\eden\STAF_offroad_pickup.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_offroad_pickup.jpg";
 
         hiddenSelections[] = {"Camo","camo2","clan"};
         selectionClan = "";
@@ -204,7 +249,7 @@ class CfgVehicles {
 
         class EventHandlers: Eventhandlers {
           class STAF {
-            init = "[(_this select 0)] execVM ""\staf_pmc_vehicles\scripts\blacktexture.sqf"";[(_this select 0)] execVM '\staf_pmc_vehicles\scripts\standardloadout.sqf';";
+            init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
           };
         };
@@ -219,7 +264,7 @@ class CfgVehicles {
         side = 1;
         faction = "STAF_PMC";
         crew = "STAF_contractor";
-        editorPreview = "\staf_pmc_vehicles\eden\STAF_suv.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_suv.jpg";
 
         acceleration = 5;
         armor = 130;
@@ -235,7 +280,7 @@ class CfgVehicles {
 
         class EventHandlers: Eventhandlers {
           class STAF {
-            init = "[(_this select 0)] execVM '\staf_pmc_vehicles\scripts\standardloadout.sqf';";
+            init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
           };
         };
@@ -252,7 +297,7 @@ class CfgVehicles {
         faction = "STAF_PMC";
         selectionClan = "";
         crew = "B_UAV_AI";
-        editorPreview = "\staf_pmc_vehicles\eden\STAF_quadcopter.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_quadcopter.jpg";
     };
 
     class STAF_hexacopter : B_UAV_06_F {
@@ -265,11 +310,11 @@ class CfgVehicles {
         faction = "STAF_PMC";
         selectionClan = "";
         crew = "B_UAV_AI";
-        editorPreview = "\staf_pmc_vehicles\eden\STAF_quadcopter.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_quadcopter.jpg";
 
         class EventHandlers: Eventhandlers {
           class STAF {
-            init = "[(_this select 0)] execVM '\staf_pmc_vehicles\scripts\standardloadout.sqf';";
+            init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
           };
         };
@@ -285,11 +330,11 @@ class CfgVehicles {
         faction = "STAF_PMC";
         selectionClan = "";
         crew = "B_UAV_AI";
-        editorPreview = "\staf_pmc_vehicles\eden\STAF_quadcopter.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_quadcopter.jpg";
 
         class EventHandlers: Eventhandlers {
           class STAF {
-            init = "[(_this select 0)] execVM '\staf_pmc_vehicles\scripts\standardloadout.sqf';";
+            init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
           };
         };
@@ -305,11 +350,11 @@ class CfgVehicles {
         faction = "STAF_PMC";
         selectionClan = "";
         crew = "B_UAV_AI";
-        editorPreview = "\staf_pmc_vehicles\eden\STAF_quadcopter.jpg";
+        editorPreview = "\staf_pmc_main\eden\STAF_quadcopter.jpg";
 
         class EventHandlers: Eventhandlers {
           class STAF {
-            init = "[(_this select 0)] execVM '\staf_pmc_vehicles\scripts\standardloadout.sqf';";
+            init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
           };
         };

@@ -29,7 +29,8 @@ class CfgWeapons {
   class srifle_GM6_F; //Vanilla GM6
   class srifle_LRR_F; //Vanilla M200
   class srifle_DMR_02_F; //Vanilla Bad News
-  class KA_glock_17_Single; //KA Glock 17
+  class KA_glock_18_Single; //KA Glock 18
+  class KA_glock_18; //KA Glock 18 Modular
   class KA_Mk23_black; //HK MK23
   class rhs_weap_smaw; //RHS SMAW
   class rhs_weap_M136; //RHS M136 HEAT
@@ -78,7 +79,7 @@ class CfgWeapons {
     {
       class LinkedItemsOptic
       {
-      item = "HLC_Optic_G36Dualoptic15x2d";
+      item = "HLC_Optic_G36Export15x2d";
       slot = "CowsSlot";
       };
     };
@@ -90,7 +91,7 @@ class CfgWeapons {
     {
       class LinkedItemsOptic
       {
-      item = "HLC_Optic_G36Dualoptic15x2d";
+      item = "HLC_Optic_G36Export15x2d";
       slot = "CowsSlot";
       };
     };
@@ -245,6 +246,18 @@ class CfgWeapons {
     };
   };
 
+  class STAF_rifle_ng7: LMG_Zafir_F
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "rhsusf_acc_SpecterDR_A";
+        slot = "CowsSlot";
+      };
+    };
+  };
+
   //SMGs
   class STAF_rifle_mp5: hlc_smg_mp5a4
   {
@@ -349,7 +362,18 @@ class CfgWeapons {
   };
 
   //Sidearms
-  class STAF_pistol_glock17: KA_glock_17_Single
+  class STAF_pistol_glock18: KA_glock_18_Single
+  {
+    class LinkedItems
+    {
+      class LinkedItemsAcc
+      {
+        item = "KA_Flashlight";
+        slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_pistol_glock18_modular: KA_glock_18
   {
     class LinkedItems
     {

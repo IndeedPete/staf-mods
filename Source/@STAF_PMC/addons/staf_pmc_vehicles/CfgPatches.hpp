@@ -3,6 +3,11 @@
 class CfgPatches {
     class STAF_pmc_vehicles {
       units[] = {
+        "STAF_md500",
+        "STAF_md500_defender",
+        "STAF_hexacopter",
+        "STAF_hexacopter_ammo",
+        "STAF_hexacopter_medical",
         "STAF_rubberboat",
         "STAF_quadbike",
         "STAF_truck_transport",

@@ -10,6 +10,8 @@ class CfgPatches {
         "STAF_contractor_marksman",
         "STAF_contractor_engineer",
         "STAF_contractor_bodyguard",
+        "STAF_contractor_heli_pilot",
+        "STAF_contractor_diver",
         "STAF_boss",
         "STAF_client_american",
         "STAF_client_british",
