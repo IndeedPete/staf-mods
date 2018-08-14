@@ -10,7 +10,8 @@ class CfgPatches {
       "STAF_V_TacVest_white_arctic",
       "STAF_V_PlateCarrier1_grey_arctic",
       "STAF_V_PlateCarrier2_grey_arctic",
-      "STAF_V_PlateCarrier2_medic_arctic"
+      "STAF_V_PlateCarrier2_medic_arctic",
+      "STAF_V_TacVest_hidden"
       };
       requiredAddons[] = {"A3_Characters_F"};
       requiredVersion = 1.62;

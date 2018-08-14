@@ -222,15 +222,6 @@ class CfgVehicles {
 		uniformClass = "STAF_U_B_CombatUniform_Hex_Arctic";
 	};
 
-  class STAF_Dummy_MCAM_Arctic: B_Soldier_F
-	{
-		hiddenSelections[] = {"Camo","Insignia"};
-		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_mcam_white_co.paa"};
-		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
-		scope = 1;
-		uniformClass = "STAF_U_B_CombatUniform_MCAM_Arctic";
-	};
-
   class STAF_Dummy_Splinter_Arctic: B_Soldier_F
 	{
 		hiddenSelections[] = {"Camo","Insignia"};
@@ -247,5 +238,41 @@ class CfgVehicles {
 		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 		scope = 1;
 		uniformClass = "STAF_U_B_CombatUniform_White_Arctic";
+	};
+
+  class STAF_Dummy_MCAM_Alpine: B_Soldier_F
+	{
+		hiddenSelections[] = {"Camo","Insignia"};
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_mcam_alpine_co.paa"};
+		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+		scope = 1;
+		uniformClass = "STAF_U_B_CombatUniform_MCAM_Alpine";
+	};
+
+  class STAF_Dummy_MCAM_Mountain: B_Soldier_F
+	{
+		hiddenSelections[] = {"Camo","Insignia"};
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_mcam_mountain_co.paa"};
+		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+		scope = 1;
+		uniformClass = "STAF_U_B_CombatUniform_MCAM_Mountain";
+	};
+
+  class STAF_Dummy_MCAM_M85: B_Soldier_F
+	{
+		hiddenSelections[] = {"Camo","Insignia"};
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_m85_snow_co.paa"};
+		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+		scope = 1;
+		uniformClass = "STAF_U_B_CombatUniform_M85_Arctic";
+	};
+
+  class STAF_Dummy_MCAM_Tiger: B_Soldier_F
+	{
+		hiddenSelections[] = {"Camo","Insignia"};
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_snow_tiger_co.paa"};
+		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+		scope = 1;
+		uniformClass = "STAF_U_B_CombatUniform_Tiger_Arctic";
 	};
 };

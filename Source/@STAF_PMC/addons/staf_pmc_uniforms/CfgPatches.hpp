@@ -28,9 +28,12 @@ class CfgPatches {
         "STAF_Dummy_Digital_Arctic",
         "STAF_Dummy_Fleckentarn_Arctic",
         "STAF_Dummy_Hex_Arctic",
-        "STAF_Dummy_MCAM_Arctic",
         "STAF_Dummy_Splinter_Arctic",
-        "STAF_Dummy_White_Arctic"
+        "STAF_Dummy_White_Arctic",
+        "STAF_Dummy_MCAM_Alpine",
+        "STAF_Dummy_MCAM_Mountain",
+        "STAF_Dummy_MCAM_M85",
+        "STAF_Dummy_MCAM_Tiger"
       };
       weapons[] = {
         "STAF_Marshal",
@@ -58,9 +61,12 @@ class CfgPatches {
         "STAF_U_B_CombatUniform_Digital_Arctic",
         "STAF_U_B_CombatUniform_Fleckentarn_Arctic",
         "STAF_U_B_CombatUniform_Hex_Arctic",
-        "STAF_U_B_CombatUniform_MCAM_Arctic",
         "STAF_U_B_CombatUniform_Splinter_Arctic",
-        "STAF_U_B_CombatUniform_White_Arctic"
+        "STAF_U_B_CombatUniform_White_Arctic",
+        "STAF_U_B_CombatUniform_MCAM_Alpine",
+        "STAF_U_B_CombatUniform_MCAM_Mountain",
+        "STAF_U_B_CombatUniform_M85_Arctic",
+        "STAF_U_B_CombatUniform_Tiger_Arctic"
       };
       requiredAddons[] = {};
       requiredVersion = 1.62;

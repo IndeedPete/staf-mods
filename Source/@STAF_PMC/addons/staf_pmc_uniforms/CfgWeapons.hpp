@@ -417,22 +417,6 @@ class CfgWeapons {
   	};
   };
 
-  class STAF_U_B_CombatUniform_MCAM_Arctic: U_B_CombatUniform_mcam
-  {
-  	displayName = "STAF Combat Fatigues (Arctic, MCAM)";
-  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_mcam_white_co.paa"};
-  	picture = "\staf_pmc_main\arsenal\icon_u_b_combatuniform_mcam_arctic_ca.paa";
-
-  	class ItemInfo: UniformItem
-  	{
-  		containerClass = "Supply40";
-  		hiddenSelections[] = {"Camo"};
-  		mass = 40;
-  		uniformModel = "-";
-  		uniformClass = "STAF_Dummy_MCAM_Arctic";
-  	};
-  };
-
   class STAF_U_B_CombatUniform_Splinter_Arctic: U_B_CombatUniform_mcam
   {
   	displayName = "STAF Combat Fatigues (Arctic, Splinter)";
@@ -462,6 +446,70 @@ class CfgWeapons {
   		mass = 40;
   		uniformModel = "-";
   		uniformClass = "STAF_Dummy_White_Arctic";
+  	};
+  };
+
+  class STAF_U_B_CombatUniform_MCAM_Alpine: U_B_CombatUniform_mcam
+  {
+  	displayName = "STAF Combat Fatigues (Arctic, MCAM Alpine)";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_mcam_alpine_co.paa"};
+  	picture = "\staf_pmc_main\arsenal\icon_u_b_combatuniform_mcam_arctic_ca.paa";
+
+  	class ItemInfo: UniformItem
+  	{
+  		containerClass = "Supply40";
+  		hiddenSelections[] = {"Camo"};
+  		mass = 40;
+  		uniformModel = "-";
+  		uniformClass = "STAF_Dummy_MCAM_Alpine";
+  	};
+  };
+
+  class STAF_U_B_CombatUniform_MCAM_Mountain: U_B_CombatUniform_mcam
+  {
+  	displayName = "STAF Combat Fatigues (Arctic, MCAM Mountain)";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_mcam_mountain_co.paa"};
+  	picture = "\staf_pmc_main\arsenal\icon_u_b_combatuniform_mcam_arctic_ca.paa";
+
+  	class ItemInfo: UniformItem
+  	{
+  		containerClass = "Supply40";
+  		hiddenSelections[] = {"Camo"};
+  		mass = 40;
+  		uniformModel = "-";
+  		uniformClass = "STAF_Dummy_MCAM_Mountain";
+  	};
+  };
+
+  class STAF_U_B_CombatUniform_M85_Arctic: U_B_CombatUniform_mcam
+  {
+  	displayName = "STAF Combat Fatigues (Arctic, M85)";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_m85_snow_co.paa"};
+  	picture = "\staf_pmc_main\arsenal\icon_u_b_combatuniform_mcam_arctic_ca.paa";
+
+  	class ItemInfo: UniformItem
+  	{
+  		containerClass = "Supply40";
+  		hiddenSelections[] = {"Camo"};
+  		mass = 40;
+  		uniformModel = "-";
+  		uniformClass = "STAF_Dummy_MCAM_M85";
+  	};
+  };
+
+  class STAF_U_B_CombatUniform_Tiger_Arctic: U_B_CombatUniform_mcam
+  {
+  	displayName = "STAF Combat Fatigues (Arctic, Tiger)";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_snow_tiger_co.paa"};
+  	picture = "\staf_pmc_main\arsenal\icon_u_b_combatuniform_mcam_arctic_ca.paa";
+
+  	class ItemInfo: UniformItem
+  	{
+  		containerClass = "Supply40";
+  		hiddenSelections[] = {"Camo"};
+  		mass = 40;
+  		uniformModel = "-";
+  		uniformClass = "STAF_Dummy_MCAM_Tiger";
   	};
   };
 };

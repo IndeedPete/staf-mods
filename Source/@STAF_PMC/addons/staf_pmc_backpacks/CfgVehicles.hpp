@@ -47,6 +47,15 @@ class CfgVehicles {
 		picture = "\staf_pmc_main\arsenal\icon_b_c_compact_white_ca.paa";
   };
 
+  class STAF_B_AssaultPack_inv: B_AssaultPack_blk
+  {
+    baseBackpack = "STAF_B_AssaultPack_inv";
+    displayName = "STAF Assault Pack (Invisible)";
+    hiddenSelectionsTextures[] = {""};
+		picture = "";
+    model ="";
+  };
+
   // Carry-All
 
 	class STAF_B_Carryall_MCAM_Black: B_Carryall_khk
@@ -83,14 +92,6 @@ class CfgVehicles {
 		displayName = "STAF Carryall Backpack (White)";
 		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_tortila_white_co.paa"};
 		picture = "\staf_pmc_main\arsenal\icon_b_c_tortila_white_ca.paa";
-  };
-  class STAF_B_Carryall_inv: STAF_B_Carryall_MCAM_Black
-  {
-    baseBackpack = "STAF_B_Carryall_Inv";
-    displayName = "STAF Carryall Backpack (Invisible)";
-    hiddenSelectionsTextures[] = {""};
-    picture = "";
-    model ="";
   };
 
 
@@ -213,33 +214,6 @@ class CfgVehicles {
 			};
 	};
 
-  class STAF_B_Kitbag_medic_inv: STAF_B_Kitbag_medic_blk
-  {
-    baseBackpack = "STAF_B_Kitbag_medic_inv";
-    displayName = "STAF Medic Kitbag (Invisible)";
-    hiddenSelectionsTextures[] = {""};
-		picture = "";
-
-    class TransportItems
-		{
-			item_xx(ACE_adenosine,5);
-      item_xx(ACE_epinephrine,5);
-      item_xx(ACE_morphine,5);
-      item_xx(ACE_fieldDressing,20);
-      item_xx(ACE_elasticBandage,20);
-      item_xx(ACE_packingBandage,20);
-      item_xx(ACE_quikclot,20);
-      item_xx(ACE_salineIV,3);
-      item_xx(ACE_salineIV_500,7);
-      item_xx(ACE_salineIV_250,10);
-      item_xx(ACE_tourniquet,8);
-      item_xx(ACE_surgicalKit,1)
-      item_xx(ACE_personalAidKit,4);
-      item_xx(ACE_EarPlugs,2);
-      item_xx(adv_aceSplint_splint,10);
-			};
-  };
-
 	class STAF_B_Kitbag_exp_blk: STAF_B_Kitbag_blk
 	{
 		baseBackpack = "STAF_B_Kitbag_exp_blk";
@@ -295,26 +269,6 @@ class CfgVehicles {
 		};
 	};
 
-  class STAF_B_Kitbag_exp_inv: STAF_B_Kitbag_exp_blk
-  {
-    baseBackpack = "STAF_B_Kitbag_exp_inv";
-    displayName = "STAF Explosives Kitbag (Invisible)";
-    hiddenSelectionsTextures[] = {""};
-		picture = "";
-
-    class TransportMagazines
-    {
-      mag_xx(SatchelCharge_Remote_Mag,3);
-      mag_xx(DemoCharge_Remote_Mag,1);
-    };
-
-    class TransportItems
-    {
-      item_xx(ACE_Clacker,1);
-      item_xx(ACE_DefusalKit,1);
-    };
-  };
-
 	class STAF_B_Kitbag_engineer_blk: STAF_B_Kitbag_blk
 	{
 		baseBackpack = "STAF_B_Kitbag_engineer_blk";
@@ -363,25 +317,6 @@ class CfgVehicles {
 			item_xx(ACE_DefusalKit,1);
 		};
 	};
-  class STAF_B_Kitbag_inv: STAF_B_Kitbag_blk
-  {
-    baseBackpack = "STAF_B_Kitbag_inv";
-    displayName = "STAF Kitbag (Invisible)";
-    hiddenSelectionsTextures[] = {""};
-		picture = "";
-    model ="";
-  };
-
-  //Assault Pack
-
-  class STAF_B_AssaultPack_inv: B_AssaultPack_blk
-  {
-    baseBackpack = "STAF_B_AssaultPack_inv";
-    displayName = "STAF Assault Pack (Invisible)";
-    hiddenSelectionsTextures[] = {""};
-		picture = "";
-    model ="";
-  };
 
   //Bergen
   class STAF_B_UAV_01_backpack_white_F: B_UAV_01_backpack_F

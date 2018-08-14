@@ -53,35 +53,134 @@ class CfgWeapons {
     model = "A3\Characters_F\BLUFOR\equip_b_Vest01";
     hiddenSelectionsTextures[] = {"\staf_pmc_vests\txt\V_PlateCarrier1_grey_co.paa"};
 
-    class ItemInfo: VestItem
-    {
-        uniformModel = "A3\Characters_F\BLUFOR\equip_b_Vest01.p3d";
-        containerClass = "Supply120";
-        mass = 80;
-        armor = "5";
-        passThrough = 0.3;
-        hiddenSelections[] = {"camo"};
-    };
+    class ItemInfo: ItemInfo
+        {
+            uniformModel = "A3\Characters_F\BLUFOR\equip_b_Vest01.p3d";
+            containerClass = Supply120;
+            mass = 80;
+
+            class HitpointsProtectionInfo
+            {
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 16;
+                    passThrough = 0.3;
+                };
+
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 16;
+                    passThrough = 0.3;
+                };
+
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 16;
+                    passThrough = 0.3;
+                };
+
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.3;
+                };
+            };
+        };
   };
 
   class STAF_V_PlateCarrier2_grey_arctic: STAF_V_PlateCarrier1_grey_arctic
   {
     displayName = "STAF Carrier Lite (Arctic, Grey)";
 
-    class ItemInfo: VestItem
-    {
-        uniformModel = "A3\Characters_F\BLUFOR\equip_b_Vest02.p3d";
-        containerClass = "Supply120";
-        mass = 80;
-        armor = "5";
-        passThrough = 0.3;
-        hiddenSelections[] = {"camo"};
-    };
+    class ItemInfo: ItemInfo
+        {
+            uniformModel = "A3\Characters_F\BLUFOR\equip_b_Vest02.p3d";
+            containerClass = Supply120;
+            mass = 80;
+
+            class HitpointsProtectionInfo
+            {
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 16;
+                    passThrough = 0.3;
+                };
+
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 16;
+                    passThrough = 0.3;
+                };
+
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 16;
+                    passThrough = 0.3;
+                };
+
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.3;
+                };
+            };
+        };
   };
 
   class STAF_V_PlateCarrier2_medic_arctic: STAF_V_PlateCarrier2_grey_arctic
   {
   	displayName = "STAF Carrier Lite (Arctic, Medic)";
   	hiddenSelectionsTextures[] = {"\staf_pmc_vests\txt\V_PlateCarrier1_medic_co.paa"};
+  };
+
+  //Hidden Vest
+  class STAF_V_TacVest_hidden: Vest_Camo_Base
+  {
+  	displayName = "STAF Bulletproof Vest (Hidden)";
+  	hiddenSelectionsTextures[] = {""};
+  	picture = "";
+
+    class ItemInfo: ItemInfo
+        {
+            uniformModel = "";
+            containerClass = Supply100;
+            mass = 60;
+
+            class HitpointsProtectionInfo
+            {
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 11;
+                    passThrough = 0.5;
+                };
+
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 11;
+                    passThrough = 0.5;
+                };
+
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 11;
+                    passThrough = 0.5;
+                };
+
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.5;
+                };
+            };
+        };
   };
 };

@@ -792,9 +792,12 @@ _uniforms = [
             "STAF_U_B_CombatUniform_Digital_Arctic",
             "STAF_U_B_CombatUniform_Fleckentarn_Arctic",
             "STAF_U_B_CombatUniform_Hex_Arctic",
-            "STAF_U_B_CombatUniform_MCAM_Arctic",
             "STAF_U_B_CombatUniform_Splinter_Arctic",
             "STAF_U_B_CombatUniform_White_Arctic",
+            "STAF_U_B_CombatUniform_MCAM_Alpine",
+            "STAF_U_B_CombatUniform_MCAM_Mountain",
+            "STAF_U_B_CombatUniform_M85_Arctic",
+            "STAF_U_B_CombatUniform_Tiger_Arctic",
             //Female
             "B_FEM_NATO_M81",
             "B_FEM_NATO_M81_rolled",
@@ -1264,7 +1267,8 @@ _vests = [
             "STAF_V_TacVest_white_arctic",
             "STAF_V_PlateCarrier1_grey_arctic",
             "STAF_V_PlateCarrier2_grey_arctic",
-            "STAF_V_PlateCarrier2_medic_arctic"
+            "STAF_V_PlateCarrier2_medic_arctic",
+            "STAF_V_TacVest_hidden"
 ];
 
 _magazines = [
@@ -1400,6 +1404,11 @@ _magazines = [
             //Glock 18
             "KA_17Rnd_9x19_Mag",
             "KA_17Rnd_9x19_Subsonic_Mag",
+
+            //SMAW
+            "rhs_mag_smaw_HEDP",
+            "rhs_mag_smaw_HEAA",
+            "rhs_mag_smaw_SR",
 
             //Underbarrel Grenades
             "1Rnd_HE_Grenade_shell",
