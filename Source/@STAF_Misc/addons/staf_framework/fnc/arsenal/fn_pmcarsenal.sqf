@@ -98,6 +98,9 @@ _backpacks = [
             "B_TacticalPack_ocamo",
             "B_TacticalPack_mcamo",
             "B_TacticalPack_oli",
+            "B_UAV_01_backpack_F",
+            "I_UAV_01_backpack_F",
+            "O_UAV_01_backpack_F",
             //VSM
             "ABU_Backpack_Compact",
             "ABU_Backpack_Kitbag",
@@ -145,6 +148,8 @@ _backpacks = [
             "STAF_B_Kitbag_white_splinter",
             "STAF_B_Kitbag_white",
             "STAF_B_UAV_01_backpack_white_F",
+            "STAF_O_UAV_01_backpack_white_F",
+            "STAF_I_UAV_01_backpack_white_F",
             "STAF_B_FieldPack_white_hex",
             "STAF_B_FieldPack_white_mcam",
             "STAF_B_FieldPack_white_splinter",
@@ -250,6 +255,8 @@ _items = [
             "ItemCompass",
             "ItemWatch",
             "B_UavTerminal",
+            "O_UavTerminal",
+            "I_UavTerminal",
             "ItemGPS",
             "ToolKit",
             "TFAR_anprc152",
@@ -397,7 +404,6 @@ _uniforms = [
             "U_B_T_Soldier_SL_F",
             "U_B_GEN_Commander_F",
             "U_B_GEN_Soldier_F",
-            "B_UAV_01_backpack_F",
             "U_B_survival_uniform",
             "U_B_Wetsuit",
             "U_O_Wetsuit",
@@ -776,8 +782,10 @@ _uniforms = [
             "STAF_Marshal",
             "STAF_U_B_CombatUniform_Norwegian_Desert",
       	    "STAF_U_B_CombatUniform_Norwegian_Desert_vest",
-      	    "STAF_U_B_CombatUniform_Norwegian_woodland",
-      	    "STAF_U_B_CombatUniform_Norwegian_woodland_vest",
+      	    "STAF_U_B_CombatUniform_Norwegian_Woodland",
+      	    "STAF_U_B_CombatUniform_Norwegian_Woodland_vest",
+      	    "STAF_U_B_CombatUniform_Norwegian_Snow",
+      	    "STAF_U_B_CombatUniform_Norwegian_Snow_vest",
       	    "STAF_U_BG_Guerilla1_1_Flecktarn_Norwegian",
       	    "STAF_U_BG_Guerilla1_1_Mcam_Skull",
       	    "STAF_U_BG_Guerilla1_1_US_Desert_Choc_Chip",
@@ -805,6 +813,7 @@ _uniforms = [
             "B_rolled_NATO_02",
             "B_rolled_NATO_03",
             "B_rolled_NATO_04",
+            "B_rolled_NATO_088",
             "B_FEM_NATO_01",
             "B_FEM_NATO_02",
             "B_FEM_NATO_03",
@@ -815,6 +824,9 @@ _uniforms = [
             "FEMALE_jeanshoodie_1",
             "FEMALE_jeanshoodie_2",
             "FEMALE_jeanshoodie_3",
+            "FEMALE_reb_01",
+            "FEMALE_boss_01",
+            "FEMALE_boss_02",
             "FEMALE_reb_1"
 ];
 
@@ -1268,6 +1280,8 @@ _vests = [
             "STAF_V_PlateCarrier1_grey_arctic",
             "STAF_V_PlateCarrier2_grey_arctic",
             "STAF_V_PlateCarrier2_medic_arctic",
+            "STAF_V_PlateCarrier1_mcam_alpine",
+            "STAF_V_PlateCarrier2_mcam_alpine",
             "STAF_V_TacVest_hidden"
 ];
 
