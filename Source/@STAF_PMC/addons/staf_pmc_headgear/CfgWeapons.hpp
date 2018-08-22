@@ -10,21 +10,21 @@ class CfgWeapons {
 	{
 		displayName = "STAF Pete's Enhanced Combat Helmet (Arid)";
 		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\equip1_Pete_arid_co.paa"};
-		//picture = "\staf_pmc_headgear\arsenal\icon_h_helmetb_khaki_ca.paa";
+  	picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
 	};
 
 	class STAF_H_HelmetSpecB_Pete_Lush: H_HelmetSpecB
 	{
 		displayName = "STAF Pete's Enhanced Combat Helmet (Lush)";
 		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\equip1_Pete_lush_co.paa"};
-		//picture = "\staf_pmc_headgear\arsenal\icon_h_helmetb_Pete_ca.paa";
+  	picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
 	};
 
 	class STAF_H_HelmetSpecB_Pete_Winter: H_HelmetSpecB
 	{
 		displayName = "STAF Pete's Enhanced Combat Helmet (Winter)";
 		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\equip1_Pete_Winter_co.paa"};
-		//picture = "\staf_pmc_headgear\arsenal\icon_h_helmetb_white_ca.paa";
+  	picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
 	};
 
 	class STAF_H_HelmetSpecB_white: H_HelmetSpecB

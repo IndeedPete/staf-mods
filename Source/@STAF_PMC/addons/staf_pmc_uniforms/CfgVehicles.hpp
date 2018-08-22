@@ -63,6 +63,21 @@ class CfgVehicles {
 		uniformClass = "STAF_U_B_CombatUniform_Norwegian_woodland_vest";
 	};
 
+	class STAF_Dummy_Norwegian_Snow: B_Soldier_F
+	{
+		hiddenSelections[] = {"Camo","Insignia"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_m98_snow_co.paa"};
+		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+		scope = 1;
+		uniformClass = "STAF_U_B_CombatUniform_Norwegian_Snow";
+	};
+
+	class STAF_Dummy_Norwegian_Snow_Vest: STAF_Dummy_Norwegian_Woodland
+	{
+		model = "\A3\characters_F\BLUFOR\b_soldier_03.p3d";
+		uniformClass = "STAF_U_B_CombatUniform_Norwegian_Snow_vest";
+	};
+
   // Guerilla
 
 	class STAF_Dummy_Guerilla1_1_Flecktarn_Norwegian: B_Soldier_F

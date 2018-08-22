@@ -138,13 +138,13 @@ class CfgWeapons {
   	displayName = "STAF Carrier Rig (Arctic, Medic)";
   	hiddenSelectionsTextures[] = {"\staf_pmc_vests\txt\V_PlateCarrier1_medic_co.paa"};
   };
-  
+
   class STAF_V_PlateCarrier1_mcam_alpine: STAF_V_PlateCarrier1_grey_arctic
   {
 	displayName = "STAF Carrier Lite (Arctic, MCAM Alpine)";
 	hiddenSelectionsTextures[] = {"\staf_pmc_vests\txt\vests_pmc_mcam_alpine_co.paa"};
   };
-  
+
   class STAF_V_PlateCarrier2_mcam_alpine: STAF_V_PlateCarrier2_grey_arctic
   {
 	displayName = "STAF Carrier Rig (Arctic, MCAM Alpine)";
@@ -156,7 +156,7 @@ class CfgWeapons {
   {
   	displayName = "STAF Bulletproof Vest (Hidden)";
   	hiddenSelectionsTextures[] = {""};
-  	picture = "";
+  	picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
 
     class ItemInfo: ItemInfo
         {

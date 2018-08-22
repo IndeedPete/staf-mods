@@ -17,6 +17,10 @@ class CfgVehicles {
     class B_UAV_06_F;
     class B_UAV_06_medical_F;
     class Heli_Light_01_dynamicLoadout_base_F;
+    class rhsusf_M1220_M2_usarmy_wd;
+    class rhsusf_M1220_M2_usarmy_d;
+    class burnes_husky_W;
+    class burnes_husky;
     class B_Heli_Light_01_dynamicLoadout_F: Heli_Light_01_dynamicLoadout_base_F
     {
         class Components;
@@ -276,6 +280,74 @@ class CfgVehicles {
         hiddenSelections[] = {"Camo1","clan"};
         selectionClan = "";
         textureList[] = {"Red",0,"Black",1,"Gey",0,"Orange",0};
+        maximumLoad = 10000;
+
+        class EventHandlers: Eventhandlers {
+          class STAF {
+            init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+          };
+        };
+    };
+
+    class STAF_caiman_woodland_opf : rhsusf_M1220_M2_usarmy_wd {
+
+        scope = 2;
+        scopeCurator = 2;
+        side = 2;
+        faction = "STAF_PMC_OPF";
+        crew = "STAF_contractor_opf";
+        maximumLoad = 10000;
+
+        class EventHandlers: Eventhandlers {
+          class STAF {
+            init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+          };
+        };
+    };
+
+    class STAF_caiman_desert_opf : rhsusf_M1220_M2_usarmy_d {
+
+        scope = 2;
+        scopeCurator = 2;
+        side = 2;
+        faction = "STAF_PMC_OPF";
+        crew = "STAF_contractor_opf";
+        maximumLoad = 10000;
+
+        class EventHandlers: Eventhandlers {
+          class STAF {
+            init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+          };
+        };
+    };
+
+    class STAF_husky_woodland_opf : burnes_husky_W {
+
+        scope = 2;
+        scopeCurator = 2;
+        side = 2;
+        faction = "STAF_PMC_OPF";
+        crew = "STAF_contractor_opf";
+        maximumLoad = 10000;
+
+        class EventHandlers: Eventhandlers {
+          class STAF {
+            init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+          };
+        };
+    };
+
+    class STAF_husky_desert_opf : burnes_husky {
+
+        scope = 2;
+        scopeCurator = 2;
+        side = 2;
+        faction = "STAF_PMC_OPF";
+        crew = "STAF_contractor_opf";
         maximumLoad = 10000;
 
         class EventHandlers: Eventhandlers {

@@ -139,6 +139,38 @@ class CfgWeapons {
   	};
   };
 
+  class STAF_U_B_CombatUniform_Norwegian_Snow: U_B_CombatUniform_mcam
+  {
+  	displayName = "STAF Combat Fatigues (Norwegian, M98 Snow)";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_m98_snow_co.paa"};
+  	picture = "\staf_pmc_main\arsenal\icon_u_b_combatuniform_norwegian_woodland_ca.paa";
+
+  	class ItemInfo: UniformItem
+  	{
+  		containerClass = "Supply40";
+  		hiddenSelections[] = {"Camo"};
+  		mass = 40;
+  		uniformModel = "-";
+  		uniformClass = "STAF_Dummy_Norwegian_Snow";
+  	};
+  };
+
+  class STAF_U_B_CombatUniform_Norwegian_Snow_vest: U_B_CombatUniform_mcam_vest
+  {
+  	displayName = "STAF Recon Fatigues (Norwegian, M98 Snow)";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\clothing1_m98_snow_co.paa"};
+  	picture = "\staf_pmc_main\arsenal\icon_u_b_combatuniform_Norwegian_woodland_vest_ca.paa";
+
+  	class ItemInfo: UniformItem
+  	{
+  		containerClass = "Supply40";
+  		hiddenSelections[] = {"Camo"};
+  		mass = 40;
+  		uniformModel = "-";
+  		uniformClass = "STAF_Dummy_Norwegian_Snow_Vest";
+  	};
+  };
+
   //Guerilla
 
   class STAF_U_BG_Guerilla1_1_Flecktarn_Norwegian: U_BG_Guerilla1_1
@@ -161,7 +193,7 @@ class CfgWeapons {
   {
   	displayName = "STAF Guerilla Garment (MultiCam, Skull)";
   	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\c_cloth1_skull.paa","\staf_pmc_uniforms\txt\ia_soldier_01_clothing_mcam_co.paa"};
-  	//picture = "\staf_pmc_main\arsenal\icon_u_g_guerrilla1_1_Mcam_Skull_ca.paa";
+  	picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -177,7 +209,7 @@ class CfgWeapons {
   {
   	displayName = "STAF Guerilla Garment (US Desert, Choc Chip)";
   	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\c_cloth1_Choc_Chip_co.paa","\staf_pmc_uniforms\txt\ia_soldier_01_clothing_US_Desert_co.paa"};
-  	//picture = "\staf_pmc_main\arsenal\icon_u_g_guerrilla1_1_US_Desert_Choc_Chip_ca.paa";
+  	picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -209,7 +241,7 @@ class CfgWeapons {
   {
   	displayName = "STAF Guerilla Outfit (Flora, Coyote)";
   	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ig_guerrilla2_1_Flora_Coyote_co.paa"};
-  	//picture = "\staf_pmc_main\arsenal\icon_u_g_guerrilla2_1_BW_Tropen_ca.paa";
+  	picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -225,7 +257,7 @@ class CfgWeapons {
   {
   	displayName = "STAF Guerilla Outfit (Choc Chip, Squares)";
   	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ig_guerrilla2_1_Choc_Chip_co.paa"};
-  	//picture = "\staf_pmc_main\arsenal\icon_u_g_guerrilla2_1_BW_Tropen_ca.paa";
+    picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -241,7 +273,7 @@ class CfgWeapons {
   {
   	displayName = "STAF Guerilla Fatigues (Green, US Woodland)";
   	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ig_guerrilla4_1_US_Woodland_co.paa"};
-  	//picture = "\staf_pmc_main\arsenal\icon_u_i_g_resistanceleader_US_Woodland_ca.paa";
+  	picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
 
   	class ItemInfo: UniformItem
   	{
@@ -257,7 +289,7 @@ class CfgWeapons {
   {
   	displayName = "STAF Guerilla Fatigues (Tan, Vegetato Desert)";
   	hiddenSelectionsTextures[] = {"\staf_pmc_uniforms\txt\ig_guerrilla4_1_tan_vegetato_co.paa"};
-  	//picture = "\staf_pmc_main\arsenal\icon_u_i_g_resistanceleader_tan_vegetato_ca.paa";
+  	picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
 
   	class ItemInfo: UniformItem
   	{
