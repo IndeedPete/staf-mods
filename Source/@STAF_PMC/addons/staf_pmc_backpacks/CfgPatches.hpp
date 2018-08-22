@@ -28,6 +28,8 @@ class CfgPatches {
         "STAF_B_Kitbag_engineer_cbr",
         "STAF_B_Kitbag_engineer_rgr",
         "STAF_B_UAV_01_backpack_white_F",
+        "STAF_O_UAV_01_backpack_white_F",
+        "STAF_I_UAV_01_backpack_white_F",
         "STAF_B_FieldPack_white_hex",
         "STAF_B_FieldPack_white_mcam",
         "STAF_B_FieldPack_white_splinter",
