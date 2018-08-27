@@ -1,24 +1,34 @@
 class CfgWeapons {
-  class hlc_rifle_G36MLIC; //HLC G36
-  class hlc_rifle_G36MLIAG36; //HLC G36 GL
-  class hlc_rifle_G36A1; //HLC G36A1
-  class hlc_rifle_G36A1AG36; //HLC G36A1 GL
+  class hlc_rifle_G36MLIC; //with Rail
+  class hlc_rifle_G36C;
+  class hlc_rifle_G36CMLIC;
+  class hlc_rifle_G36CV;
+  class hlc_rifle_G36CTac;
+  class hlc_rifle_G36KMLIC;
+  class hlc_rifle_G36KA1KSK;
+  class hlc_Rifle_G36KSKAG36;
+  class hlc_rifle_G36KV;
+  class hlc_rifle_g36KTac;
+  class hlc_rifle_G36MLIAG36;
+  class hlc_rifle_G36V;
+  class hlc_rifle_G36VAG36;
+  class hlc_rifle_G36TAC;
+  class hlc_rifle_G36A1; //without Rail
+  class hlc_rifle_G36A1AG36;
+  class hlc_rifle_G36E1;
+  class hlc_rifle_G36E1AG36;
+  class hlc_rifle_G36KA1;
+  class hlc_rifle_G36KE1;
+  class hlc_rifle_MG36;
   class KA_SCAR_L_Black_Hand; //KA SCAR
   class KA_SCAR_L_Black_EGLM; //KA SCAR GL
   class KA_SCAR_L_Tan_Hand; //KA SCAR
   class KA_SCAR_L_Tan_EGLM; //KA SCAR GL
-  class rhs_weap_m4a1_blockII_bk; // RHS M4
-  class rhs_weap_m4a1_blockII_M203_bk; // RHS M4 GL
-  class arifle_MX_Black_F; //Vanilla MX Black
-  class arifle_MX_GL_Black_F; //Vanilla MX Black GL
   class hlc_m249_pip2; //HLC M249
   class LMG_Zafir_F;  //Vanilla Negev
   class hlc_smg_mp5a4; // HLC MP5
-  class rhsusf_weap_MP7A2; //RHS MP7
-  class SMG_03C_black; //BI P90
-  class arifle_SPAR_03_blk_F; //Vanilla HK417
   class arifle_AK12_F; //Vanilla AK12
-  class srifle_EBR_F; //Vanilla Mk14 EBR
+  class arifle_AK12_GL_F; //Vanilla AK12 GL
   class srifle_DMR_06_olive_F; //Vanilla M14
   class srifle_DMR_06_camo_F; //Vanilla M14 Camo
   class srifle_DMR_03_F; //Vanilla SIG DMR
@@ -26,26 +36,21 @@ class CfgWeapons {
   class srifle_DMR_03_tan_F; //Vanilla SIG DMR Tan
   class srifle_DMR_03_multicam_F; //Vanilla SIG DMR Multicam
   class srifle_DMR_03_woodland_F; //Vanilla SIG DMR Woodland
-  class srifle_GM6_F; //Vanilla GM6
-  class srifle_LRR_F; //Vanilla M200
-  class srifle_DMR_02_F; //Vanilla Bad News
+  class rhs_weap_t5000; //RHS T-5000
   class KA_glock_18_Single; //KA Glock 18
   class KA_glock_18; //KA Glock 18 Modular
-  class KA_Mk23_black; //HK MK23
   class rhs_weap_smaw; //RHS SMAW
   class rhs_weap_M136; //RHS M136 HEAT
-  class rhs_weap_M136_hedp; //RHS M136 HEDP
-  class rhs_weap_M136_hp; //RHS M136 HP
   class Xnooz_AppareilPhoto; //Press Assets Handheld Camera
 
   // Rifles
-  class STAF_rifle_g36: hlc_rifle_G36MLIC
+  class STAF_rifle_G36MLIC: hlc_rifle_G36MLIC
   {
     class LinkedItems
     {
       class LinkedItemsOptic
       {
-      item = "KA_557_Magnifier_UP";
+      item = "rhsusf_acc_g33_xps3";
       slot = "CowsSlot";
       };
       class LinkedItemsAcc
@@ -55,14 +60,13 @@ class CfgWeapons {
       };
     };
   };
-
-  class STAF_rifle_g36_gl: hlc_rifle_G36MLIAG36
+  class STAF_rifle_G36C: hlc_rifle_G36C
   {
     class LinkedItems
     {
       class LinkedItemsOptic
       {
-      item = "KA_557_Magnifier_UP";
+      item = "rhsusf_acc_g33_xps3";
       slot = "CowsSlot";
       };
       class LinkedItemsAcc
@@ -72,8 +76,232 @@ class CfgWeapons {
       };
     };
   };
+  class STAF_rifle_G36CMLIC: hlc_rifle_G36CMLIC
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+      item = "rhsusf_acc_g33_xps3";
+      slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+      item = "rhsusf_acc_anpeq15_bk_light";
+      slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_rifle_G36CV: hlc_rifle_G36CV
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+      item = "rhsusf_acc_g33_xps3";
+      slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+      item = "rhsusf_acc_anpeq15_bk_light";
+      slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_rifle_G36CTac: hlc_rifle_G36CTac
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+      item = "rhsusf_acc_g33_xps3";
+      slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+      item = "rhsusf_acc_anpeq15_bk_light";
+      slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_rifle_G36KMLIC: hlc_rifle_G36KMLIC
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+      item = "rhsusf_acc_g33_xps3";
+      slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+      item = "rhsusf_acc_anpeq15_bk_light";
+      slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_rifle_G36KA1KSK: hlc_rifle_G36KA1KSK
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+      item = "rhsusf_acc_g33_xps3";
+      slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+      item = "rhsusf_acc_anpeq15_bk_light";
+      slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_Rifle_G36KSKAG36: HLC_Rifle_G36KSKAG36
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+      item = "rhsusf_acc_g33_xps3";
+      slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+      item = "rhsusf_acc_anpeq15_bk_light";
+      slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_rifle_G36KV: hlc_rifle_G36KV
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+      item = "rhsusf_acc_g33_xps3";
+      slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+      item = "rhsusf_acc_anpeq15_bk_light";
+      slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_rifle_g36KTac: hlc_rifle_g36KTac
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+      item = "rhsusf_acc_g33_xps3";
+      slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+      item = "rhsusf_acc_anpeq15_bk_light";
+      slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_rifle_G36MLIAG36: hlc_rifle_G36MLIAG36
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+      item = "rhsusf_acc_g33_xps3";
+      slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+      item = "rhsusf_acc_anpeq15_bk_light";
+      slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_rifle_G36V: hlc_rifle_G36V
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+      item = "rhsusf_acc_g33_xps3";
+      slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+      item = "rhsusf_acc_anpeq15_bk_light";
+      slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_rifle_G36VAG36: hlc_rifle_G36VAG36
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+      item = "rhsusf_acc_g33_xps3";
+      slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+      item = "rhsusf_acc_anpeq15_bk_light";
+      slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_rifle_G36TAC: hlc_rifle_G36TAC
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+      item = "rhsusf_acc_g33_xps3";
+      slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+      item = "rhsusf_acc_anpeq15_bk_light";
+      slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_rifle_ak12: arifle_AK12_F
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+      item = "rhs_acc_perst3";
+      slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+      item = "rhsusf_acc_RX01";
+      slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_rifle_ak12_gl: arifle_AK12_GL_F
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+      item = "rhs_acc_perst3";
+      slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+      item = "rhsusf_acc_RX01";
+      slot = "PointerSlot";
+      };
+    };
+  };
 
-  class STAF_rifle_g36a1: hlc_rifle_G36A1
+  class STAF_rifle_G36A1: hlc_rifle_G36A1
   {
     class LinkedItems
     {
@@ -84,8 +312,7 @@ class CfgWeapons {
       };
     };
   };
-
-  class STAF_rifle_g36a1_gl: hlc_rifle_G36A1AG36
+  class STAF_rifle_G36A1AG36: hlc_rifle_G36A1AG36
   {
     class LinkedItems
     {
@@ -96,6 +323,61 @@ class CfgWeapons {
       };
     };
   };
+  class STAF_rifle_G36E1: hlc_rifle_G36E1
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+      item = "HLC_Optic_G36Export15x2d";
+      slot = "CowsSlot";
+      };
+    };
+  };
+  class STAF_rifle_G36E1AG36: hlc_rifle_G36E1AG36
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+      item = "HLC_Optic_G36Export15x2d";
+      slot = "CowsSlot";
+      };
+    };
+  };
+  class STAF_rifle_G36KA1: hlc_rifle_G36KA1
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+      item = "HLC_Optic_G36Export15x2d";
+      slot = "CowsSlot";
+      };
+    };
+  };
+  class STAF_rifle_G36KE1: hlc_rifle_G36KE1
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+      item = "HLC_Optic_G36Export15x2d";
+      slot = "CowsSlot";
+      };
+    };
+  };
+  class STAF_rifle_MG36: hlc_rifle_MG36
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+      item = "HLC_Optic_G36Export15x2d";
+      slot = "CowsSlot";
+      };
+    };
+  };;
 
   class STAF_rifle_scar_blk_xps: KA_SCAR_L_Black_Hand
   {
@@ -356,6 +638,18 @@ class CfgWeapons {
       class LinkedItemsOptic
       {
         item = "optic_DMS";
+        slot = "CowsSlot";
+      };
+    };
+  };
+
+  class STAF_rifle_t5000: rhs_weap_t5000
+  {
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "rhsusf_acc_M8541";
         slot = "CowsSlot";
       };
     };
