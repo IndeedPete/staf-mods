@@ -770,11 +770,40 @@ _vest = [
               "VSM_FAPC_MG_MulticamTropic"
         ] call BIS_fnc_selectRandom;
 _weapon = [
-              "STAF_rifle_g36",
-              "STAF_rifle_g36a1",
-              "STAF_rifle_scar_blk_xps",
-              "STAF_rifle_scar_tan_xps"
-          ] call BIS_fnc_selectRandom;
+            "STAF_rifle_G36MLIC",
+            "STAF_rifle_G36C",
+            "STAF_rifle_G36CMLIC",
+            "STAF_rifle_G36CV",
+            "STAF_rifle_G36CTac",
+            "STAF_rifle_G36KMLIC",
+            "STAF_rifle_G36KA1KSK",
+            "STAF_rifle_G36KV",
+            "STAF_rifle_g36KTac",
+            "STAF_rifle_G36V",
+            "STAF_rifle_G36TAC",
+            "STAF_rifle_G36A1",
+            "STAF_rifle_G36E1",
+            "STAF_rifle_G36KA1",
+            "STAF_rifle_G36KE1",
+            "STAF_rifle_scar_blk_xps",
+            "STAF_rifle_scar_tan_xps",
+            "STAF_rifle_scar_blk_xps",
+            "STAF_rifle_scar_tan_xps",
+            "STAF_rifle_scar_blk_xps",
+            "STAF_rifle_scar_tan_xps",
+            "STAF_rifle_scar_blk_xps",
+            "STAF_rifle_scar_tan_xps",
+            "STAF_rifle_scar_blk_xps",
+            "STAF_rifle_scar_tan_xps",
+            "STAF_rifle_scar_blk_xps",
+            "STAF_rifle_scar_tan_xps",
+            "STAF_rifle_ak12",
+            "STAF_rifle_ak12",
+            "STAF_rifle_ak12",
+            "STAF_rifle_ak12",
+            "STAF_rifle_ak12",
+            "STAF_rifle_ak12"
+        ] call BIS_fnc_selectRandom;
 _unit addHeadgear _headGear;
 _unit addUniform _uniform;
 _unit addvest _vest;
@@ -786,11 +815,53 @@ if (_weapon == "STAF_rifle_scar_blk_xps") then {
 if (_weapon == "STAF_rifle_scar_tan_xps") then {
   for "_i" from 1 to 10 do {_unit addMagazine "30Rnd_556x45_Stanag";};
 };
-if (_weapon == "STAF_rifle_g36a1") then {
+if (_weapon == "STAF_rifle_G36C") then {
   for "_i" from 1 to 8 do {_unit addMagazine "hlc_30rnd_556x45_EPR_G36";};
 };
-if (_weapon == "STAF_rifle_g36") then {
+if (_weapon == "STAF_rifle_G36CV") then {
+  for "_i" from 1 to 8 do {_unit addMagazine "hlc_30rnd_556x45_EPR_G36";};
+};
+if (_weapon == "STAF_rifle_G36CTac") then {
+  for "_i" from 1 to 8 do {_unit addMagazine "hlc_30rnd_556x45_EPR_G36";};
+};
+if (_weapon == "STAF_rifle_G36KA1KSK") then {
+  for "_i" from 1 to 8 do {_unit addMagazine "hlc_30rnd_556x45_EPR_G36";};
+};
+if (_weapon == "STAF_rifle_G36KV") then {
+  for "_i" from 1 to 8 do {_unit addMagazine "hlc_30rnd_556x45_EPR_G36";};
+};
+if (_weapon == "STAF_rifle_g36KTac") then {
+  for "_i" from 1 to 8 do {_unit addMagazine "hlc_30rnd_556x45_EPR_G36";};
+};
+if (_weapon == "STAF_rifle_G36V") then {
+  for "_i" from 1 to 8 do {_unit addMagazine "hlc_30rnd_556x45_EPR_G36";};
+};
+if (_weapon == "STAF_rifle_G36TAC") then {
+  for "_i" from 1 to 8 do {_unit addMagazine "hlc_30rnd_556x45_EPR_G36";};
+};
+if (_weapon == "STAF_rifle_G36A1") then {
+  for "_i" from 1 to 8 do {_unit addMagazine "hlc_30rnd_556x45_EPR_G36";};
+};
+if (_weapon == "STAF_rifle_G36E1") then {
+  for "_i" from 1 to 8 do {_unit addMagazine "hlc_30rnd_556x45_EPR_G36";};
+};
+if (_weapon == "STAF_rifle_G36KA1") then {
+  for "_i" from 1 to 8 do {_unit addMagazine "hlc_30rnd_556x45_EPR_G36";};
+};
+if (_weapon == "STAF_rifle_G36KE1") then {
+  for "_i" from 1 to 8 do {_unit addMagazine "hlc_30rnd_556x45_EPR_G36";};
+};
+if (_weapon == "STAF_rifle_G36MLIC") then {
   for "_i" from 1 to 8 do {_unit addMagazine "30Rnd_65x39_caseless_mag";};
+};
+if (_weapon == "STAF_rifle_G36CMLIC") then {
+  for "_i" from 1 to 8 do {_unit addMagazine "30Rnd_65x39_caseless_mag";};
+};
+if (_weapon == "STAF_rifle_G36KMLIC") then {
+  for "_i" from 1 to 8 do {_unit addMagazine "30Rnd_65x39_caseless_mag";};
+};
+if (_weapon == "STAF_rifle_ak12") then {
+  for "_i" from 1 to 7 do {_unit addMagazine "30Rnd_762x39_Mag_F";};
 };
 for "_i" from 1 to 2 do {_unit addMagazine "KA_17Rnd_9x19_Mag";};
 
