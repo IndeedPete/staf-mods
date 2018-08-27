@@ -30,84 +30,84 @@ class CfgWeapons {
 	class STAF_H_HelmetSpecB_white: H_HelmetSpecB
 	{
 		displayName = "STAF Enhanced Combat Helmet (White)";
-		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\equip1_white_white_co"};
-		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\equip1_white_white_co.paa"};
+		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca.paa";
 	};
 
 	class STAF_H_HelmetSpecB_white_hex: H_HelmetSpecB
 	{
 		displayName = "STAF Enhanced Combat Helmet (White, HEX)";
-		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\equip1_white_hex_co"};
-		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\equip1_white_hex_co.paa"};
+		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca.paa";
 	};
 
 	class STAF_H_HelmetSpecB_white_mcam: H_HelmetSpecB
 	{
 		displayName = "STAF Enhanced Combat Helmet (White, MCAM)";
-		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\equip1_white_mcam_co"};
-		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\equip1_white_mcam_co.paa"};
+		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca.paa";
 	};
 
 	class STAF_H_HelmetSpecB_white_splinter: H_HelmetSpecB
 	{
 		displayName = "STAF Enhanced Combat Helmet (White, Splinter)";
-		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\equip1_white_splinter_co"};
-		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\equip1_white_splinter_co.paa"};
+		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca.paa";
 	};
 
 	class STAF_H_HelmetB_white: H_HelmetB
 	{
 		displayName = "STAF Enhanced Combat Helmet (White)";
-		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\equip1_white_white_co"};
-		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\equip1_white_white_co.paa"};
+		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca.paa";
 	};
 
 	class STAF_H_HelmetB_white_hex: H_HelmetB
 	{
 		displayName = "STAF Enhanced Combat Helmet (White, HEX)";
-		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\equip1_white_hex_co"};
-		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\equip1_white_hex_co.paa"};
+		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca.paa";
 	};
 
 	class STAF_H_HelmetB_white_mcam: H_HelmetB
 	{
 		displayName = "STAF Enhanced Combat Helmet (White, MCAM)";
-		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\equip1_white_mcam_co"};
-		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\equip1_white_mcam_co.paa"};
+		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca.paa";
 	};
 
 	class STAF_H_HelmetB_white_splinter: H_HelmetB
 	{
 		displayName = "STAF Enhanced Combat Helmet (White, Splinter)";
-		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\equip1_white_splinter_co"};
-		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\equip1_white_splinter_co.paa"};
+		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca.paa";
 	};
 
 	class STAF_H_HelmetIA_white: H_HelmetIA
 	{
 		displayName = "STAF MICH (White)";
-		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\headgear_helmet_canvas_white_white_co"};
-		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\headgear_helmet_canvas_white_white_co.paa"};
+		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca.paa";
 	};
 
 	class STAF_H_HelmetIA_white_hex: H_HelmetIA
 	{
 		displayName = "STAF MICH (White, HEX)";
-		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\headgear_helmet_canvas_white_hex_co"};
-		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\headgear_helmet_canvas_white_hex_co.paa"};
+		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca.paa";
 	};
 
 	class STAF_H_HelmetIA_white_mcam: H_HelmetIA
 	{
 		displayName = "STAF MICH (White, MCAM)";
-		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\headgear_helmet_canvas_white_mcam_co"};
-		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\headgear_helmet_canvas_white_mcam_co.paa"};
+		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca.paa";
 	};
 
 	class STAF_H_HelmetIA_white_splinter: H_HelmetIA
 	{
 		displayName = "STAF MICH (White, Splinter)";
-		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\headgear_helmet_canvas_white_splinter_co"};
-		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\headgear_helmet_canvas_white_splinter_co.paa"};
+		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca.paa";
 	};
 };
