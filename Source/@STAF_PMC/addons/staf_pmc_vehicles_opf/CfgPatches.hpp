@@ -4,7 +4,6 @@ class CfgPatches {
     class STAF_pmc_vehicles_opf {
       units[] = {
         "STAF_md500_opf",
-        //"STAF_md500_defender_opf",
         "STAF_hexacopter_opf",
         "STAF_hexacopter_ammo_opf",
         "STAF_hexacopter_medical_opf",
@@ -17,6 +16,10 @@ class CfgPatches {
         "STAF_offroad_opf",
         "STAF_offroad_pickup_opf",
         "STAF_suv_opf",
+        "STAF_caiman_woodland_opf",
+        "STAF_caiman_desert_opf",
+        "STAF_husky_woodland_opf",
+        "STAF_husky_desert_opf",
         "STAF_quadcopter_opf"
       };
       weapons[] = {};

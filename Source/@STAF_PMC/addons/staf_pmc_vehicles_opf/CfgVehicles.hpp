@@ -294,7 +294,7 @@ class CfgVehicles {
 
         scope = 2;
         scopeCurator = 2;
-        side = 2;
+        side = 0;
         faction = "STAF_PMC_OPF";
         crew = "STAF_contractor_opf";
         maximumLoad = 10000;
@@ -311,7 +311,7 @@ class CfgVehicles {
 
         scope = 2;
         scopeCurator = 2;
-        side = 2;
+        side = 0;
         faction = "STAF_PMC_OPF";
         crew = "STAF_contractor_opf";
         maximumLoad = 10000;
@@ -328,7 +328,7 @@ class CfgVehicles {
 
         scope = 2;
         scopeCurator = 2;
-        side = 2;
+        side = 0;
         faction = "STAF_PMC_OPF";
         crew = "STAF_contractor_opf";
         maximumLoad = 10000;
@@ -345,7 +345,7 @@ class CfgVehicles {
 
         scope = 2;
         scopeCurator = 2;
-        side = 2;
+        side = 0;
         faction = "STAF_PMC_OPF";
         crew = "STAF_contractor_opf";
         maximumLoad = 10000;

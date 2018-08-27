@@ -17,6 +17,10 @@ class CfgPatches {
         "STAF_offroad_ind",
         "STAF_offroad_pickup_ind",
         "STAF_suv_ind",
+        "STAF_caiman_woodland_ind",
+        "STAF_caiman_desert_ind",
+        "STAF_husky_woodland_ind",
+        "STAF_husky_desert_ind",
         "STAF_quadcopter_ind"
       };
       weapons[] = {};
