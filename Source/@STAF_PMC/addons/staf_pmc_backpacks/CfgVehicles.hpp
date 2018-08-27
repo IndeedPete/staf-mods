@@ -7,7 +7,6 @@ class CfgVehicles {
   class B_Kitbag_cbr;
 	class B_Kitbag_rgr;
 	class B_Carryall_khk;
-  class B_AssaultPack_blk;
   class B_Bergen_blk;
   class B_UAV_01_backpack_F;
   class O_UAV_01_backpack_F;
@@ -49,7 +48,7 @@ class CfgVehicles {
 		picture = "\staf_pmc_main\arsenal\icon_b_c_compact_white_ca.paa";
   };
 
-  class STAF_B_AssaultPack_inv: B_AssaultPack_blk
+  class STAF_B_AssaultPack_inv: B_AssaultPack_rgr
   {
     baseBackpack = "STAF_B_AssaultPack_inv";
     displayName = "STAF Assault Pack (Invisible)";
@@ -65,7 +64,7 @@ class CfgVehicles {
 		baseBackpack = "STAF_B_Carryall_MCAM_Black";
 		displayName = "STAF Carryall Backpack (MCAM Black)";
 		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_tortila_MCAM_Black_co.paa"};
-		picture = "\staf_pmc_main\arsenal\icon_b_c_tortila_MCAM_Black.paa";
+		picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
 	};
   class STAF_B_Carryall_white_hex: B_Carryall_khk
   {
@@ -161,7 +160,7 @@ class CfgVehicles {
       item_xx(ACE_personalAidKit,4);
       item_xx(ACE_EarPlugs,2);
       item_xx(adv_aceSplint_splint,10);
-			};
+		};
 	};
 
 	class STAF_B_Kitbag_medic_cbr: B_Kitbag_cbr
@@ -187,7 +186,7 @@ class CfgVehicles {
       item_xx(ACE_personalAidKit,4);
       item_xx(ACE_EarPlugs,2);
       item_xx(adv_aceSplint_splint,10);
-			};
+		};
 	};
 
 	class STAF_B_Kitbag_medic_rgr: B_Kitbag_rgr
@@ -213,7 +212,7 @@ class CfgVehicles {
       item_xx(ACE_personalAidKit,4);
       item_xx(ACE_EarPlugs,2);
       item_xx(adv_aceSplint_splint,10);
-			};
+		};
 	};
 
 	class STAF_B_Kitbag_exp_blk: STAF_B_Kitbag_blk
