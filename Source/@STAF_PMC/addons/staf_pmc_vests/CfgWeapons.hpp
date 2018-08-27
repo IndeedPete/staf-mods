@@ -9,6 +9,9 @@ class CfgWeapons {
 
   class Vest_Camo_Base: ItemCore
   {
+    scope = 2;
+    scopeArsenal = 2;
+
       class ItemInfo;
   };
 
@@ -141,14 +144,14 @@ class CfgWeapons {
 
   class STAF_V_PlateCarrier1_mcam_alpine: STAF_V_PlateCarrier1_grey_arctic
   {
-	displayName = "STAF Carrier Lite (Arctic, MCAM Alpine)";
-	hiddenSelectionsTextures[] = {"\staf_pmc_vests\txt\vests_pmc_mcam_alpine_co.paa"};
+  	displayName = "STAF Carrier Lite (Arctic, MCAM Alpine)";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_vests\txt\vests_pmc_mcam_alpine_co.paa"};
   };
 
   class STAF_V_PlateCarrier2_mcam_alpine: STAF_V_PlateCarrier2_grey_arctic
   {
-	displayName = "STAF Carrier Rig (Arctic, MCAM Alpine)";
-	hiddenSelectionsTextures[] = {"\staf_pmc_vests\txt\vests_pmc_mcam_alpine_co.paa"};
+  	displayName = "STAF Carrier Rig (Arctic, MCAM Alpine)";
+  	hiddenSelectionsTextures[] = {"\staf_pmc_vests\txt\vests_pmc_mcam_alpine_co.paa"};
   };
 
   //Hidden Vest
