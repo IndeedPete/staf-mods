@@ -21,31 +21,31 @@
 
 	// Sets the Respawn Time
 	if ((_dialogResult select 0) == 0) then {
-		[5] remoteExec ["setPlayerRespawnTime", 0, true];
-		_respawntime = [player,["Respawn", {params ["_unit", "_corpse"];setPlayerRespawnTime 5;}]] remoteExec ["addEventHandler", 0, true];
+		[5] remoteExec ["setPlayerRespawnTime", [0, -2] select isDedicated, false];
+		[player,["Respawn", {params ["_unit", "_corpse"];setPlayerRespawnTime 5;}]] remoteExec ["addEventHandler", 0, true];
 	};
 	if ((_dialogResult select 0) == 1) then {
-		[30] remoteExec ["setPlayerRespawnTime", 0, true];
-		_respawntime = [player,["Respawn", {params ["_unit", "_corpse"];setPlayerRespawnTime 30;}]] remoteExec ["addEventHandler", 0, true];
+		[30] remoteExec ["setPlayerRespawnTime", [0, -2] select isDedicated, false];
+		[player,["Respawn", {params ["_unit", "_corpse"];setPlayerRespawnTime 30;}]] remoteExec ["addEventHandler", 0, true];
 	};
 	if ((_dialogResult select 0) == 2) then {
-		[60] remoteExec ["setPlayerRespawnTime", 0, true];
-		_respawntime = [player,["Respawn", {params ["_unit", "_corpse"];setPlayerRespawnTime 60;}]] remoteExec ["addEventHandler", 0, true];
+		[60] remoteExec ["setPlayerRespawnTime", [0, -2] select isDedicated, false];
+		[player,["Respawn", {params ["_unit", "_corpse"];setPlayerRespawnTime 60;}]] remoteExec ["addEventHandler", 0, true];
 	};
 	if ((_dialogResult select 0) == 3) then {
-		[90] remoteExec ["setPlayerRespawnTime", 0, true];
-		_respawntime = [player,["Respawn", {params ["_unit", "_corpse"];setPlayerRespawnTime 90;}]] remoteExec ["addEventHandler", 0, true];
+		[90] remoteExec ["setPlayerRespawnTime", [0, -2] select isDedicated, false];
+		[player,["Respawn", {params ["_unit", "_corpse"];setPlayerRespawnTime 90;}]] remoteExec ["addEventHandler", 0, true];
 	};
 	if ((_dialogResult select 0) == 4) then {
-		[120] remoteExec ["setPlayerRespawnTime", 0, true];
-		_respawntime = [player,["Respawn", {params ["_unit", "_corpse"];setPlayerRespawnTime 120;}]] remoteExec ["addEventHandler", 0, true];
+		[120] remoteExec ["setPlayerRespawnTime", [0, -2] select isDedicated, false];
+		[player,["Respawn", {params ["_unit", "_corpse"];setPlayerRespawnTime 120;}]] remoteExec ["addEventHandler", 0, true];
 	};
 	if ((_dialogResult select 0) == 5) then {
-		[180] remoteExec ["setPlayerRespawnTime", 0, true];
-		_respawntime = [player,["Respawn", {params ["_unit", "_corpse"];setPlayerRespawnTime 180;}]] remoteExec ["addEventHandler", 0, true];
+		[180] remoteExec ["setPlayerRespawnTime", [0, -2] select isDedicated, false];
+		[player,["Respawn", {params ["_unit", "_corpse"];setPlayerRespawnTime 180;}]] remoteExec ["addEventHandler", 0, true];
 	};
 	if ((_dialogResult select 0) == 6) then {
-		[300] remoteExec ["setPlayerRespawnTime", 0, true];
-		_respawntime = [player,["Respawn", {params ["_unit", "_corpse"];setPlayerRespawnTime 300;}]] remoteExec ["addEventHandler", 0, true];
+		[300] remoteExec ["setPlayerRespawnTime", [0, -2] select isDedicated, false];
+		[player,["Respawn", {params ["_unit", "_corpse"];setPlayerRespawnTime 300;}]] remoteExec ["addEventHandler", 0, true];
 	};
-}] call Ares_fnc_RegisterCustomModule;
+}] remoteexeccall ["Ares_fnc_RegisterCustomModule", 0, true];

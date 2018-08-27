@@ -31,4 +31,4 @@
 	{
 		[_x] call STAF_fnc_pmcarsenal;
 	} forEach _selectedObjects;
-}] call Ares_fnc_RegisterCustomModule;
+}] remoteexeccall ["Ares_fnc_RegisterCustomModule", 0, true];
