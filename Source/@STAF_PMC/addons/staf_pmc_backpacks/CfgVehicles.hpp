@@ -94,7 +94,14 @@ class CfgVehicles {
 		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\backpack_tortila_white_co.paa"};
 		picture = "\staf_pmc_main\arsenal\icon_b_c_tortila_white_ca.paa";
   };
-
+  class STAF_B_Carryall_dev: B_Carryall_khk
+  {
+    baseBackpack = "STAF_B_Carryall_dev";
+		displayName = "STAF DEV Pack";
+		hiddenSelectionsTextures[] = {""};
+		picture = "";
+    maximumLoad = 999999999999;
+  };
 
   //Kitbag
 
