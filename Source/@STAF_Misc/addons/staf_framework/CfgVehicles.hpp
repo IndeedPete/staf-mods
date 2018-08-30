@@ -494,7 +494,7 @@ class CfgVehicles
 		};
 	};
 
-	// Zeus Modules (Not functional atm)
+	/* Zeus Modules (Not functional atm)
 
 	class STAF_Module_Base_Medic_Zeus_F: Module_F
 	{
@@ -524,5 +524,73 @@ class CfgVehicles
 		scope = 0;
 		scopeCurator = 2;
 		curatorCanAttach = 1;
+	};*/
+
+	class STAF_Module_Unlimited_Fuel_F: Module_F
+	{
+		category = "STAF";
+		displayName = "Unlimited Fuel";
+		function = "STAF_fnc_unlimitedFuelInit";
+		functionPriority = 10;
+		isDisposable = 0;
+		is3DEN = 0;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		scope = 2;
+
+		class Attributes: AttributesBase
+		{
+			class ModuleDescription: ModuleDescription{};
+		};
+
+		class ModuleDescription: ModuleDescription
+		{
+			description = "Gives the Vehicle unlimited Fuel.";
+			sync[] = {"LocationArea_F"};
+
+			class LocationArea_F
+			{
+				description[] =	{"Synchronise any object to this module."};
+				position = 0;
+				direction = 0;
+				optional = 0;
+				duplicate = 0;
+				synced[] = {"AnyStaticObject", "AnyVehicle"};
+			};
+		};
+	};
+
+	class STAF_Module_Unlimited_Ammo_F: Module_F
+	{
+		category = "STAF";
+		displayName = "Unlimited Ammo";
+		function = "STAF_fnc_unlimitedAmmoInit";
+		functionPriority = 10;
+		isDisposable = 0;
+		is3DEN = 0;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		scope = 2;
+
+		class Attributes: AttributesBase
+		{
+			class ModuleDescription: ModuleDescription{};
+		};
+
+		class ModuleDescription: ModuleDescription
+		{
+			description = "Gives the Vehicle unlimited Ammo.";
+			sync[] = {"LocationArea_F"};
+
+			class LocationArea_F
+			{
+				description[] =	{"Synchronise any object to this module."};
+				position = 0;
+				direction = 0;
+				optional = 0;
+				duplicate = 0;
+				synced[] = {"AnyStaticObject", "AnyVehicle"};
+			};
+		};
 	};
 };
