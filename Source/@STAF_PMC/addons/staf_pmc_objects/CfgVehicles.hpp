@@ -16,11 +16,11 @@ class CfgVehicles {
 		hiddenSelectionsTextures[] = {"\staf_pmc_main\txt\WB_Chain_of_Command.paa"};
 	};
 
-	class STAF_MapBoard_MHQ_F: Land_MapBoard_F
+	/*class STAF_MapBoard_MHQ_F: Land_MapBoard_F
 	{
 		displayName = "STAF Whiteboard (MHQ)";
 		hiddenSelectionsTextures[] = {"\staf_pmc_main\txt\WB_MHQ.paa"};
-	};
+	};*/
 
 	/*class STAF_SupplyBox_F: B_supplyCrate_F
 	{
@@ -127,7 +127,7 @@ class CfgVehicles {
 			class TransportBackpacks {};
 	};*/
 
-	class STAF_Ammobox_F: Box_NATO_Ammo_F
+	/*class STAF_Ammobox_F: Box_NATO_Ammo_F
 	{
 			displayName = "Basic Ammo (STAF)";
 			maximumLoad = 150;
@@ -158,9 +158,9 @@ class CfgVehicles {
 				mag_xx(3Rnd_SmokeRed_Grenade_shell,1);
 				mag_xx(3Rnd_Smoke_Grenade_shell,2);
 			};
-	};
+	};*/
 
-	class STAF_Weaponsbox_F: Box_NATO_Wps_F
+	/*class STAF_Weaponsbox_F: Box_NATO_Wps_F
 	{
 			displayName = "Basic Weapons (STAF)";
 			maximumLoad = 250;
@@ -197,9 +197,9 @@ class CfgVehicles {
 				mag_xx(3Rnd_SmokeRed_Grenade_shell,1);
 				mag_xx(3Rnd_Smoke_Grenade_shell,2);
 			};
-	};
+	};*/
 
-	class STAF_Launcherbox_F: Box_NATO_WpsLaunch_F
+	/*class STAF_Launcherbox_F: Box_NATO_WpsLaunch_F
 	{
 			displayName = "Launchers (STAF)";
 			model = "\a3\weapons_f\ammoboxes\WpnsBox_long_F.p3d";
@@ -217,7 +217,7 @@ class CfgVehicles {
 				mag_xx(rhs_mag_smaw_HEAA,10);
 				mag_xx(rhs_mag_smaw_SR,2);
 			};
-	};
+	};*/
 
 	/*class STAF_SupplyBox_F: B_supplyCrate_F
 	{

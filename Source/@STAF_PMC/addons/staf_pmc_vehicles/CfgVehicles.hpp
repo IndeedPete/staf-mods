@@ -4,7 +4,6 @@ class TransportPylonsComponent_base;
 
 class CfgVehicles {
     class B_Boat_Transport_01_F;
-    class B_Quadbike_01_F;
     class C_Truck_02_transport_F;
     class C_Truck_02_covered_F;
     class C_Truck_02_box_F;
@@ -26,411 +25,690 @@ class CfgVehicles {
         class Components;
     };
 
-    //----------------------------------Air------------------------------------
-    class STAF_md500 : B_Heli_Light_01_F {
+    //----------------------------------BLUFOR---------------------------------
+      //----------------------------------Air------------------------------------
+        class STAF_md500 : B_Heli_Light_01_F {
 
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "MD-500 (Modified)";
-        side = 1;
-        faction = "STAF_PMC";
-        crew = "STAF_contractor_heli_pilot";
-        editorPreview = "\staf_pmc_main\eden\STAF_md500.jpg";
-        animationList[] = {"AddDoors",0,"AddBenches",1,"AddBackseats",1,"BenchL_Up_instant",0,"BenchR_Up_instant",0,"AddHoldingFrame",1,"AddTread_Short",0,"AddTread",1};
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "MD-500 (Modified)";
+            side = 1;
+            faction = "STAF_PMC";
+            crew = "STAF_contractor_heli_pilot";
+            editorPreview = "\staf_pmc_main\eden\STAF_md500.jpg";
+            animationList[] = {"AddDoors",0,"AddBenches",1,"AddBackseats",1,"BenchL_Up_instant",0,"BenchR_Up_instant",0,"AddHoldingFrame",1,"AddTread_Short",0,"AddTread",1};
 
-    		weapons[] = {"CMFlareLauncher"};
-    		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
-        memoryPointCM[] = {"flare_launcher1","flare_launcher2"};
-        memoryPointCMDir[] = {"flare_launcher1_dir","flare_launcher2_dir"};
+        		weapons[] = {"CMFlareLauncher"};
+        		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
+            memoryPointCM[] = {"flare_launcher1","flare_launcher2"};
+            memoryPointCMDir[] = {"flare_launcher1_dir","flare_launcher2_dir"};
 
-        hiddenSelections[] = {"Camo1","clan"};
-        selectionClan = "";
-        maximumLoad = 5000;
+            hiddenSelections[] = {"Camo1","clan"};
+            selectionClan = "";
+            maximumLoad = 600;
 
-        class EventHandlers: Eventhandlers {
-          class STAF {
-            init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-          };
-        };
-    };
-
-    /*class STAF_md500_defender : B_Heli_Light_01_dynamicLoadout_F {
-
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "MD-500 Defender";
-        side = 1;
-        faction = "STAF_PMC";
-        crew = "STAF_contractor_heli_pilot";
-        editorPreview = "\staf_pmc_main\eden\STAF_md500.jpg";
-        animationList[] = {"AddTread_Short",0,"AddTread",1};
-
-    		weapons[] = {"CMFlareLauncher","M134_minigun"};
-    		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","5000Rnd_762x51_Belt"};
-        memoryPointCM[] = {"flare_launcher1","flare_launcher2"};
-        memoryPointCMDir[] = {"flare_launcher1_dir","flare_launcher2_dir"};
-
-        hiddenSelections[] = {"Camo1","clan"};
-        selectionClan = "";
-        maximumLoad = 5000;
-
-        class EventHandlers: Eventhandlers {
-          class STAF {
-            init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";";
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-          };
+            class EventHandlers: Eventhandlers {
+              class STAF {
+                init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_helismallequipment.sqf"";";
+                class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+              };
+            };
         };
 
-        class Components: Components
-        {
-          class TransportPylonsComponent{
-            uiPicture = "\A3\Air_F\Heli_Light_01\Data\UI\Heli_Light_01_3DEN_CA.paa";
-            class Pylons{};
-          };
+        /*class STAF_md500_defender : B_Heli_Light_01_dynamicLoadout_F {
+
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "MD-500 Defender";
+            side = 1;
+            faction = "STAF_PMC";
+            crew = "STAF_contractor_heli_pilot";
+            editorPreview = "\staf_pmc_main\eden\STAF_md500.jpg";
+            animationList[] = {"AddTread_Short",0,"AddTread",1};
+
+        		weapons[] = {"CMFlareLauncher","M134_minigun"};
+        		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","5000Rnd_762x51_Belt"};
+            memoryPointCM[] = {"flare_launcher1","flare_launcher2"};
+            memoryPointCMDir[] = {"flare_launcher1_dir","flare_launcher2_dir"};
+
+            hiddenSelections[] = {"Camo1","clan"};
+            selectionClan = "";
+            maximumLoad = 5000;
+
+            class EventHandlers: Eventhandlers {
+              class STAF {
+                init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";";
+                class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+              };
+            };
+
+            class Components: Components
+            {
+              class TransportPylonsComponent{
+                uiPicture = "\A3\Air_F\Heli_Light_01\Data\UI\Heli_Light_01_3DEN_CA.paa";
+                class Pylons{};
+              };
+            };
+        };*/
+
+      //----------------------------------Naval-----------------------------------
+        class STAF_rubberboat : B_Boat_Transport_01_F {
+
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "Assault Boat";
+            side = 1;
+            faction = "STAF_PMC";
+            crew = "STAF_contractor";
+            editorPreview = "\staf_pmc_main\eden\STAF_rubberboat.jpg";
+
+            hiddenSelections[] = {"camo1","clan"};
+            selectionClan = "";
+            maximumLoad = 160;
+
+            class EventHandlers: Eventhandlers {
+              class STAF {
+                init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_boatequipment.sqf"";";
+                class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+              };
+            };
         };
-    };*/
 
-    //----------------------------------Naval-----------------------------------
-    class STAF_rubberboat : B_Boat_Transport_01_F {
+      //----------------------------------Ground----------------------------------
 
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Assault Boat";
-        side = 1;
-        faction = "STAF_PMC";
-        crew = "STAF_contractor";
-        editorPreview = "\staf_pmc_main\eden\STAF_rubberboat.jpg";
+        class STAF_truck_transport : C_Truck_02_transport_F {
 
-        hiddenSelections[] = {"camo1","clan"};
-        selectionClan = "";
-        maximumLoad = 5000;
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "KamaZ Transport";
+            side = 1;
+            faction = "STAF_PMC";
+            crew = "STAF_contractor";
+            editorPreview = "\staf_pmc_main\eden\STAF_truck_transport.jpg";
 
-        class EventHandlers: Eventhandlers {
-          class STAF {
-            init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-          };
+            hiddenSelections[] = {"Camo1","Camo2","camo3","clan"};
+            selectionClan = "";
+            maximumLoad = 4000;
+
+            class EventHandlers: Eventhandlers {
+              class STAF {
+                init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_mrapequipment.sqf"";";
+                class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+              };
+            };
         };
-    };
 
-    //----------------------------------Ground----------------------------------
+        class STAF_truck_box : C_Truck_02_box_F {
 
-    class STAF_truck_transport : C_Truck_02_transport_F {
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "KamaZ Box";
+            side = 1;
+            faction = "STAF_PMC";
+            crew = "STAF_contractor";
+            editorPreview = "\staf_pmc_main\eden\STAF_truck_box.jpg";
 
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "KamaZ Transport";
-        side = 1;
-        faction = "STAF_PMC";
-        crew = "STAF_contractor";
-        editorPreview = "\staf_pmc_main\eden\STAF_truck_transport.jpg";
+            hiddenSelections[] = {"Camo1","Camo2","camo3","clan"};
+            selectionClan = "";
+            maximumLoad = 4000;
 
-        hiddenSelections[] = {"Camo1","Camo2","camo3","clan"};
-        selectionClan = "";
-        maximumLoad = 20000;
-
-        class EventHandlers: Eventhandlers {
-          class STAF {
-            init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-          };
+            class EventHandlers: Eventhandlers {
+              class STAF {
+                init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_mrapequipment.sqf"";";
+                class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+              };
+            };
         };
-    };
 
-    class STAF_truck_box : C_Truck_02_box_F {
+        class STAF_truck_fuel : C_Truck_02_fuel_F {
 
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "KamaZ Box";
-        side = 1;
-        faction = "STAF_PMC";
-        crew = "STAF_contractor";
-        editorPreview = "\staf_pmc_main\eden\STAF_truck_box.jpg";
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "KamaZ Fuel";
+            side = 1;
+            faction = "STAF_PMC";
+            crew = "STAF_contractor";
+            editorPreview = "\staf_pmc_main\eden\STAF_truck_fuel.jpg";
 
-        hiddenSelections[] = {"Camo1","Camo2","camo3","clan"};
-        selectionClan = "";
-        maximumLoad = 30000;
+            hiddenSelections[] = {"Camo1","Camo2","camo3","clan"};
+            selectionClan = "";
+            maximumLoad = 500;
 
-        class EventHandlers: Eventhandlers {
-          class STAF {
-            init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-          };
+            class EventHandlers: Eventhandlers {
+              class STAF {
+                init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_mrapequipment.sqf"";";
+                class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+              };
+            };
         };
-    };
 
-    class STAF_truck_fuel : C_Truck_02_fuel_F {
+        class STAF_truck_covered : C_Truck_02_covered_F {
 
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "KamaZ Fuel";
-        side = 1;
-        faction = "STAF_PMC";
-        crew = "STAF_contractor";
-        editorPreview = "\staf_pmc_main\eden\STAF_truck_fuel.jpg";
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "KamaZ Transport (Covered)";
+            side = 1;
+            faction = "STAF_PMC";
+            crew = "STAF_contractor";
+            editorPreview = "\staf_pmc_main\eden\STAF_truck_covered.jpg";
 
-        hiddenSelections[] = {"Camo1","Camo2","camo3","clan"};
-        selectionClan = "";
-        maximumLoad = 5000;
+            hiddenSelections[] = {"Camo1","Camo2","camo3","clan"};
+            selectionClan = "";
+            maximumLoad = 4000;
 
-        class EventHandlers: Eventhandlers {
-          class STAF {
-            init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";";
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-          };
+            class EventHandlers: Eventhandlers {
+              class STAF {
+                init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_mrapequipment.sqf"";";
+                class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+              };
+            };
         };
-    };
 
-    class STAF_truck_covered : C_Truck_02_covered_F {
+        class STAF_offroad : C_Offroad_02_unarmed_F {
 
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "KamaZ Transport (Covered)";
-        side = 1;
-        faction = "STAF_PMC";
-        crew = "STAF_contractor";
-        editorPreview = "\staf_pmc_main\eden\STAF_truck_covered.jpg";
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "Jeep Wrangler";
+            side = 1;
+            faction = "STAF_PMC";
+            crew = "STAF_contractor";
+            editorPreview = "\staf_pmc_main\eden\STAF_offroad.jpg";
 
-        hiddenSelections[] = {"Camo1","Camo2","camo3","clan"};
-        selectionClan = "";
-        maximumLoad = 20000;
+            hiddenSelections[] = {"camo1","camo2","camo3","camo4","clan"};
+            selectionClan = "";
+            textureList[] = {"Black",1,"Blue",0,"Green",0,"Orange",0,"Red",0,"White",0};
+            maximumLoad = 1500;
 
-        class EventHandlers: Eventhandlers {
-          class STAF {
-            init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-          };
+            class EventHandlers: Eventhandlers {
+              class STAF {
+                init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_carequipment.sqf"";";
+                class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+              };
+            };
         };
-    };
 
-    class STAF_offroad : C_Offroad_02_unarmed_F {
+        class STAF_offroad_pickup : C_Offroad_01_F {
 
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Jeep Wrangler";
-        side = 1;
-        faction = "STAF_PMC";
-        crew = "STAF_contractor";
-        editorPreview = "\staf_pmc_main\eden\STAF_offroad.jpg";
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "Offroad";
+            side = 1;
+            faction = "STAF_PMC";
+            crew = "STAF_contractor";
+            editorPreview = "\staf_pmc_main\eden\STAF_offroad_pickup.jpg";
 
-        hiddenSelections[] = {"camo1","camo2","camo3","camo4","clan"};
-        selectionClan = "";
-        textureList[] = {"Black",1,"Blue",0,"Green",0,"Orange",0,"Red",0,"White",0};
-        maximumLoad = 10000;
+            hiddenSelections[] = {"Camo","camo2","clan"};
+            selectionClan = "";
+            textureList[] = {"Red",0,"Beige",0,"White",0,"Blue",0,"Darkred",0,"Bluecustom",1};
+            maximumLoad = 1500;
 
-        class EventHandlers: Eventhandlers {
-          class STAF {
-            init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-          };
+            class EventHandlers: Eventhandlers {
+              class STAF {
+                init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf""; [(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_carequipment.sqf"";";
+                class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+              };
+            };
         };
-    };
 
-    class STAF_offroad_pickup : C_Offroad_01_F {
+        class STAF_suv : C_SUV_01_F {
 
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Offroad";
-        side = 1;
-        faction = "STAF_PMC";
-        crew = "STAF_contractor";
-        editorPreview = "\staf_pmc_main\eden\STAF_offroad_pickup.jpg";
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "SUV";
+            side = 1;
+            faction = "STAF_PMC";
+            crew = "STAF_contractor";
+            editorPreview = "\staf_pmc_main\eden\STAF_suv.jpg";
 
-        hiddenSelections[] = {"Camo","camo2","clan"};
-        selectionClan = "";
-        textureList[] = {"Red",0,"Beige",0,"White",0,"Blue",0,"Darkred",0,"Bluecustom",1};
-        maximumLoad = 10000;
+            acceleration = 5;
+            armor = 130;
+            armorStructural = 5;
+            armorGlass = 2;
+            armorWheels = 0.75;
+            Maxspeed = 100;
 
-        class EventHandlers: Eventhandlers {
-          class STAF {
-            init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-          };
+            hiddenSelections[] = {"Camo1","clan"};
+            selectionClan = "";
+            textureList[] = {"Red",0,"Black",1,"Gey",0,"Orange",0};
+            maximumLoad = 1500;
+
+            class EventHandlers: Eventhandlers {
+              class STAF {
+                init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_carequipment.sqf"";";
+                class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+              };
+            };
         };
-    };
 
-    class STAF_suv : C_SUV_01_F {
+        class STAF_caiman_woodland : rhsusf_M1220_M2_usarmy_wd {
 
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "SUV";
-        side = 1;
-        faction = "STAF_PMC";
-        crew = "STAF_contractor";
-        editorPreview = "\staf_pmc_main\eden\STAF_suv.jpg";
+            scope = 2;
+            scopeCurator = 2;
+            side = 1;
+            displayName = "BAE Caiman (Woodland)";
+            faction = "STAF_PMC";
+            crew = "STAF_contractor";
+            editorPreview = "\staf_pmc_main\eden\STAF_caiman_woodland.jpg";
+            editorSubcategory = "EdSubcat_Cars";
+            maximumLoad = 2800;
 
-        acceleration = 5;
-        armor = 130;
-        armorStructural = 5;
-        armorGlass = 2;
-        armorWheels = 0.75;
-        Maxspeed = 100;
-
-        hiddenSelections[] = {"Camo1","clan"};
-        selectionClan = "";
-        textureList[] = {"Red",0,"Black",1,"Gey",0,"Orange",0};
-        maximumLoad = 10000;
-
-        class EventHandlers: Eventhandlers {
-          class STAF {
-            init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-          };
+            class EventHandlers: Eventhandlers {
+              class STAF {
+                init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_mrapequipment.sqf"";";
+                class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+              };
+            };
         };
-    };
 
-    class STAF_caiman_woodland : rhsusf_M1220_M2_usarmy_wd {
+        class STAF_caiman_desert : rhsusf_M1220_M2_usarmy_d {
 
-        scope = 2;
-        scopeCurator = 2;
-        side = 1;
-        faction = "STAF_PMC";
-        crew = "STAF_contractor";
-        maximumLoad = 10000;
+            scope = 2;
+            scopeCurator = 2;
+            side = 1;
+            displayName = "BAE Caiman (Desert)";
+            faction = "STAF_PMC";
+            crew = "STAF_contractor";
+            editorPreview = "\staf_pmc_main\eden\STAF_caiman_desert.jpg";
+            editorSubcategory = "EdSubcat_Cars";
+            maximumLoad = 2800;
 
-        class EventHandlers: Eventhandlers {
-          class STAF {
-            init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-          };
+            class EventHandlers: Eventhandlers {
+              class STAF {
+                init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_mrapequipment.sqf"";";
+                class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+              };
+            };
         };
-    };
 
-    class STAF_caiman_desert : rhsusf_M1220_M2_usarmy_d {
+        class STAF_husky_woodland : burnes_husky_W {
 
-        scope = 2;
-        scopeCurator = 2;
-        side = 1;
-        faction = "STAF_PMC";
-        crew = "STAF_contractor";
-        maximumLoad = 10000;
+            scope = 2;
+            scopeCurator = 2;
+            side = 1;
+            displayName = "Husky TSV (Woodland)";
+            faction = "STAF_PMC";
+            crew = "STAF_contractor";
+            editorPreview = "\staf_pmc_main\eden\STAF_husky_woodland.jpg";
+            maximumLoad = 2800;
 
-        class EventHandlers: Eventhandlers {
-          class STAF {
-            init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-          };
+            class EventHandlers: Eventhandlers {
+              class STAF {
+                init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_mrapequipment.sqf"";";
+                class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+              };
+            };
         };
-    };
 
-    class STAF_husky_woodland : burnes_husky_W {
+        class STAF_husky_desert : burnes_husky {
 
-        scope = 2;
-        scopeCurator = 2;
-        side = 1;
-        faction = "STAF_PMC";
-        crew = "STAF_contractor";
-        maximumLoad = 10000;
+            scope = 2;
+            scopeCurator = 2;
+            side = 1;
+            displayName = "Husky TSV (Desert)";
+            faction = "STAF_PMC";
+            crew = "STAF_contractor";
+            editorPreview = "\staf_pmc_main\eden\STAF_husky_desert.jpg";
+            maximumLoad = 2800;
 
-        class EventHandlers: Eventhandlers {
-          class STAF {
-            init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-          };
+            class EventHandlers: Eventhandlers {
+              class STAF {
+                init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_mrapequipment.sqf"";";
+                class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+              };
+            };
         };
-    };
 
-    class STAF_husky_desert : burnes_husky {
+      //----------------------------------Drones----------------------------------
+        class STAF_quadcopter : B_UAV_01_F {
 
-        scope = 2;
-        scopeCurator = 2;
-        side = 1;
-        faction = "STAF_PMC";
-        crew = "STAF_contractor";
-        maximumLoad = 10000;
-
-        class EventHandlers: Eventhandlers {
-          class STAF {
-            init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-          };
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "AR-2 Darter";
+            side = 1;
+            faction = "STAF_PMC";
+            selectionClan = "";
+            crew = "B_UAV_AI";
+            editorPreview = "\staf_pmc_main\eden\STAF_quadcopter.jpg";
         };
-    };
 
-    //----------------------------------Drones----------------------------------
-    class STAF_quadcopter : B_UAV_01_F {
+        class STAF_hexacopter : B_UAV_06_F {
 
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "AR-2 Darter";
-        side = 1;
-        faction = "STAF_PMC";
-        selectionClan = "";
-        crew = "B_UAV_AI";
-        editorPreview = "\staf_pmc_main\eden\STAF_quadcopter.jpg";
-    };
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "AL-6 Pelican";
+            Side = 1;
+            faction = "STAF_PMC";
+            selectionClan = "";
+            crew = "B_UAV_AI";
+            editorPreview = "\staf_pmc_main\eden\STAF_hexacopter.jpg";
+            maximumLoad = 500;
 
-    class STAF_hexacopter : B_UAV_06_F {
-
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "AL-6 Pelican";
-        side = 1;
-        faction = "STAF_PMC";
-        selectionClan = "";
-        crew = "B_UAV_AI";
-        editorPreview = "\staf_pmc_main\eden\STAF_quadcopter.jpg";
-
-        class EventHandlers: Eventhandlers {
-          class STAF {
-            init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-          };
+            class EventHandlers: Eventhandlers {
+              class STAF {
+                init = "(_this select 0) setcaptive true;";
+                class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+              };
+            };
         };
-    };
 
-    class STAF_hexacopter_ammo : B_UAV_06_F {
+        class STAF_hexacopter_ammo : B_UAV_06_F {
 
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "AL-6 Pelican (Ammo)";
-        side = 1;
-        faction = "STAF_PMC";
-        selectionClan = "";
-        crew = "B_UAV_AI";
-        editorPreview = "\staf_pmc_main\eden\STAF_quadcopter.jpg";
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "AL-6 Pelican (Ammo)";
+            side = 1;
+            faction = "STAF_PMC";
+            selectionClan = "";
+            crew = "B_UAV_AI";
+            editorPreview = "\staf_pmc_main\eden\STAF_hexacopter_ammo.jpg";
+            maximumLoad = 2500;
 
-        class EventHandlers: Eventhandlers {
-          class STAF {
-            init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-          };
+            class EventHandlers: Eventhandlers {
+              class STAF {
+                init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_droneammoequipment.sqf""; (_this select 0) setcaptive true;";
+                class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+              };
+            };
         };
-    };
 
-    class STAF_hexacopter_medical : B_UAV_06_medical_F {
+        class STAF_hexacopter_medical : B_UAV_06_medical_F {
 
-        author = "STAF";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "AL-6 Pelican (Medical)";
-        side = 1;
-        faction = "STAF_PMC";
-        selectionClan = "";
-        crew = "B_UAV_AI";
-        editorPreview = "\staf_pmc_main\eden\STAF_quadcopter.jpg";
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "AL-6 Pelican (Medical)";
+            side = 1;
+            faction = "STAF_PMC";
+            selectionClan = "";
+            crew = "B_UAV_AI";
+            editorPreview = "\staf_pmc_main\eden\STAF_hexacopter_medical.jpg";
+            maximumLoad = 300;
 
-        class EventHandlers: Eventhandlers {
-          class STAF {
-            init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\standardloadout.sqf';";
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-          };
+            class EventHandlers: Eventhandlers {
+              class STAF {
+                init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_droneamedicequipment.sqf""; (_this select 0) setcaptive true;";
+                class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+              };
+            };
         };
-    };
 
-    //----------------------------------Turret----------------------------------
+        class STAF_hexacopter_explosive : B_UAV_06_F {
+
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "AL-6 Pelican (Explosives)";
+            side = 1;
+            faction = "STAF_PMC";
+            selectionClan = "";
+            crew = "B_UAV_AI";
+            editorPreview = "\staf_pmc_main\eden\STAF_hexacopter.jpg";
+            maximumLoad = 800;
+
+            class EventHandlers: Eventhandlers {
+              class STAF {
+                init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_droneexplosionequipment.sqf""; (_this select 0) setcaptive true;";
+                class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+              };
+            };
+        };
+
+
+    //----------------------------------OPFOR---------------------------------
+      //----------------------------------Air------------------------------------
+        class STAF_md500_opf : STAF_md500 {
+            displayName = "MD-500 (Modified)";
+            Side = 0;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_heli_pilot_opf";
+        };
+
+        /*class STAF_md500_defender_opf : B_Heli_Light_01_dynamicLoadout_F {
+            displayName = "MD-500 (Modified)";
+            Side = 0;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_heli_pilot_opf";
+        };*/
+
+      //----------------------------------Naval-----------------------------------
+        class STAF_rubberboat_opf : STAF_rubberboat {
+            Side = 0;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_opf";
+        };
+
+      //----------------------------------Ground----------------------------------
+
+        class STAF_truck_transport_opf : STAF_truck_transport {
+            Side = 0;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_opf";
+        };
+
+        class STAF_truck_box_opf : STAF_truck_box {
+            Side = 0;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_opf";
+        };
+
+        class STAF_truck_fuel_opf : STAF_truck_fuel {
+            Side = 0;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_opf";
+        };
+
+        class STAF_truck_covered_opf : STAF_truck_covered {
+            Side = 0;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_opf";
+        };
+
+        class STAF_offroad_opf : STAF_offroad {
+            Side = 0;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_opf";
+        };
+
+        class STAF_offroad_pickup_opf : STAF_offroad_pickup {
+            Side = 0;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_opf";
+        };
+
+        class STAF_suv_opf : STAF_suv {
+            Side = 0;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_opf";
+        };
+
+        class STAF_caiman_woodland_opf : STAF_caiman_woodland {
+            Side = 0;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_opf";
+        };
+
+        class STAF_caiman_desert_opf : STAF_caiman_desert {
+            Side = 0;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_opf";
+        };
+
+        class STAF_husky_woodland_opf : STAF_husky_woodland {
+            Side = 0;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_opf";
+        };
+
+        class STAF_husky_desert_opf : STAF_husky_desert {
+            Side = 0;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_opf";
+        };
+
+      //----------------------------------Drones----------------------------------
+        class STAF_quadcopter_opf : STAF_quadcopter {
+            Side = 0;
+            faction = "STAF_PMC_OPF";
+            crew = "I_UAV_AI";
+        };
+
+        class STAF_hexacopter_opf : STAF_hexacopter {
+            Side = 0;
+            faction = "STAF_PMC_OPF";
+            crew = "I_UAV_AI";
+        };
+
+        class STAF_hexacopter_ammo_opf : STAF_hexacopter_ammo {
+            Side = 0;
+            faction = "STAF_PMC_OPF";
+            crew = "I_UAV_AI";
+        };
+
+        class STAF_hexacopter_medical_opf : STAF_hexacopter_medical {
+            Side = 0;
+            faction = "STAF_PMC_OPF";
+            crew = "I_UAV_AI";
+        };
+
+        class STAF_hexacopter_explosive_opf : STAF_hexacopter_explosive {
+            Side = 0;
+            faction = "STAF_PMC_OPF";
+            crew = "I_UAV_AI";
+        };
+
+
+    //----------------------------------OPFOR---------------------------------
+      //----------------------------------Air------------------------------------
+        class STAF_md500_ind : STAF_md500 {
+            displayName = "MD-500 (Modified)";
+            Side = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_heli_pilot_ind";
+        };
+
+        /*class STAF_md500_defender_ind : B_Heli_Light_01_dynamicLoadout_F {
+            displayName = "MD-500 (Modified)";
+            Side = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_heli_pilot_ind";
+        };*/
+
+      //----------------------------------Naval-----------------------------------
+        class STAF_rubberboat_ind : STAF_rubberboat {
+            Side = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_ind";
+        };
+
+      //----------------------------------Ground----------------------------------
+
+        class STAF_truck_transport_ind : STAF_truck_transport {
+            Side = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_ind";
+        };
+
+        class STAF_truck_box_ind : STAF_truck_box {
+            Side = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_ind";
+        };
+
+        class STAF_truck_fuel_ind : STAF_truck_fuel {
+            Side = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_ind";
+        };
+
+        class STAF_truck_covered_ind : STAF_truck_covered {
+            Side = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_ind";
+        };
+
+        class STAF_offroad_ind : STAF_offroad {
+            Side = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_ind";
+        };
+
+        class STAF_offroad_pickup_ind : STAF_offroad_pickup {
+            Side = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_ind";
+        };
+
+        class STAF_suv_ind : STAF_suv {
+            Side = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_ind";
+        };
+
+        class STAF_caiman_woodland_ind : STAF_caiman_woodland {
+            Side = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_ind";
+        };
+
+        class STAF_caiman_desert_ind : STAF_caiman_desert {
+            Side = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_ind";
+        };
+
+        class STAF_husky_woodland_ind : STAF_husky_woodland {
+            Side = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_ind";
+        };
+
+        class STAF_husky_desert_ind : STAF_husky_desert {
+            Side = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_ind";
+        };
+
+      //----------------------------------Drones----------------------------------
+        class STAF_quadcopter_ind : STAF_quadcopter {
+            Side = 2;
+            faction = "STAF_PMC_IND";
+            crew = "I_UAV_AI";
+        };
+
+        class STAF_hexacopter_ind : STAF_hexacopter {
+            Side = 2;
+            faction = "STAF_PMC_IND";
+            crew = "I_UAV_AI";
+        };
+
+        class STAF_hexacopter_ammo_ind : STAF_hexacopter_ammo {
+            Side = 2;
+            faction = "STAF_PMC_IND";
+            crew = "I_UAV_AI";
+        };
+
+        class STAF_hexacopter_medical_ind : STAF_hexacopter_medical {
+            Side = 2;
+            faction = "STAF_PMC_IND";
+            crew = "I_UAV_AI";
+        };
+
+        class STAF_hexacopter_explosive_ind : STAF_hexacopter_explosive {
+            Side = 2;
+            faction = "STAF_PMC_IND";
+            crew = "I_UAV_AI";
+        };
 };
