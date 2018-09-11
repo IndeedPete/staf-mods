@@ -2,17 +2,13 @@ class CfgWeapons {
 
   class VestItem;
   class ItemCore;
-  class V_PlateCarrierH_CTRG;
+  class ItemInfo;
   class V_PlateCarrier1_rgr;
   class V_PlateCarrier2_rgr;
   class V_TacVest_khk;
-
   class Vest_Camo_Base: ItemCore
   {
-    scope = 2;
-    scopeArsenal = 2;
-
-      class ItemInfo;
+    class ItemInfo;
   };
 
   // Tactical
@@ -46,7 +42,6 @@ class CfgWeapons {
   };
 
   //Carrier Vests
-
   class STAF_V_PlateCarrier1_grey_arctic: Vest_Camo_Base
   {
 
@@ -155,47 +150,53 @@ class CfgWeapons {
   };
 
   //Hidden Vest
-  class STAF_V_TacVest_hidden: Vest_Camo_Base
+  class STAF_V_TacVest_hidden: V_TacVest_khk
   {
   	displayName = "STAF Bulletproof Vest (Hidden)";
   	hiddenSelectionsTextures[] = {""};
   	picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+    model = "\A3\weapons_f\empty";
+    scope = 2;
+    scopeArsenal = 2;
 
     class ItemInfo: ItemInfo
-        {
-            uniformModel = "";
-            containerClass = Supply100;
-            mass = 60;
+    {
+      uniformModel = "\A3\weapons_f\empty";
+      containerClass = Supply100;
+      mass = 60;
 
-            class HitpointsProtectionInfo
-            {
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 11;
-                    passThrough = 0.5;
-                };
+      class HitpointsProtectionInfo
+      {
+          class Chest
+          {
+              hitpointName = "HitChest";
+              armor = 11;
+              passThrough = 0.5;
+          };
 
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 11;
-                    passThrough = 0.5;
-                };
+          class Diaphragm
+          {
+              hitpointName = "HitDiaphragm";
+              armor = 11;
+              passThrough = 0.5;
+          };
 
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 11;
-                    passThrough = 0.5;
-                };
+          class Abdomen
+          {
+              hitpointName = "HitAbdomen";
+              armor = 11;
+              passThrough = 0.5;
+          };
 
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.5;
-                };
-            };
-        };
+          class Body
+          {
+              hitpointName = "HitBody";
+              passThrough = 0.5;
+          };
+      };
+    };
   };
+
+  //GSG9 Vests
+
 };

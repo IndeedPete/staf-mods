@@ -15,7 +15,7 @@ class CfgPatches {
   	  "STAF_V_PlateCarrier1_mcam_alpine",
   	  "STAF_V_PlateCarrier2_mcam_alpine"
       };
-      requiredAddons[] = {"A3_Characters_F"};
+      requiredAddons[] = {"A3_Characters_F","A3_Weapons_F"};
       requiredVersion = 1.62;
       author = "STAF";
       url = "http://www.stafclan.com";
