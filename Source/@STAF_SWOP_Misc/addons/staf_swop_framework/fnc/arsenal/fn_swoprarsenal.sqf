@@ -191,7 +191,14 @@ _ACE = [
   "adv_aceSplint_splint"
 ];
 
+_attachments = [];
+{
+    {
+        _attachments pushBackUnique _x;
+    } forEach ([_x] call CBA_fnc_compatibleItems);
+} forEach _weapons;
+
 //Adding Itemlists to the Arsenal
-[_box,(_items + _backpacks + _magazines + _weapons + _ACE),true] call ace_arsenal_fnc_initBox;
+[_box,(_items + _backpacks + _magazines + _weapons + _ACE + _attachments),true] call ace_arsenal_fnc_initBox;
 
 [_box,["<img image='\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\box_ca.paa' /> Open Arsenal",{[(_this select 0), player,false] call ace_arsenal_fnc_openBox;}]] remoteExec ["addAction",0,true];
