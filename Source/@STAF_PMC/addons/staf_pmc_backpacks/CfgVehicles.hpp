@@ -3,7 +3,7 @@
 #define item_xx(a,b) class _xx_##a {name = a; count = b;}
 
 class CfgVehicles {
-
+  class Bag_Base;
   class B_Kitbag_cbr;
 	class B_Kitbag_rgr;
 	class B_Carryall_khk;
@@ -12,6 +12,7 @@ class CfgVehicles {
   class O_UAV_01_backpack_F;
   class I_UAV_01_backpack_F;
   class B_AssaultPack_rgr;
+  class B_AssaultPack_blk;
   class B_FieldPack_blk;
 
   // Assault Pack
@@ -48,13 +49,26 @@ class CfgVehicles {
 		picture = "\staf_pmc_main\arsenal\icon_b_c_compact_white_ca.paa";
   };
 
-  class STAF_B_AssaultPack_inv: B_AssaultPack_rgr
+  /*class STAF_B_AssaultPack_inv: B_AssaultPack_rgr
   {
     baseBackpack = "STAF_B_AssaultPack_inv";
     displayName = "STAF Assault Pack (Invisible)";
     hiddenSelectionsTextures[] = {""};
   	picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
-    model ="";
+    model = "\A3\weapons_f\empty";
+    maximumLoad = 160;
+    mass = 20;
+  };*/
+
+  class STAF_B_RepairBag: B_AssaultPack_blk
+  {
+    baseBackpack = "STAF_B_RepairBag";
+		displayName = "STAF Mechanic Bagpack";
+
+		class TransportItems
+		{
+			item_xx(ToolKit,1);
+		};
   };
 
   // Carry-All

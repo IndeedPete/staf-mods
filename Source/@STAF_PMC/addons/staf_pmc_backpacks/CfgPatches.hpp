@@ -33,10 +33,11 @@ class CfgPatches {
         "STAF_B_FieldPack_white_hex",
         "STAF_B_FieldPack_white_mcam",
         "STAF_B_FieldPack_white_splinter",
-        "STAF_B_FieldPack_white"
+        "STAF_B_FieldPack_white",
+        "STAF_B_RepairBag"
       };
       weapons[] = {};
-      requiredAddons[] = {};
+      requiredAddons[] = {"A3_Weapons_F"};
       requiredVersion = 1.62;
       author = "STAF";
       url = "http://www.stafclan.com";
