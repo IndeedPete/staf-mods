@@ -5,6 +5,20 @@ class CfgWeapons {
 	class H_HelmetIA;
 	class H_PilotHelmetHeli_B;
 	class H_CrewHelmetHeli_B;
+	class VSM_Beanie_Black;
+	class H_Watchcap_blk;
+	class milgp_h_airframe_01_khk;
+	class milgp_h_airframe_01_goggles_khk;
+	class milgp_h_airframe_02_khk;
+	class milgp_h_airframe_03_khk;
+	class milgp_h_airframe_02_goggles_khk;
+	class milgp_h_airframe_03_goggles_khk;
+	class milgp_h_airframe_04_khk;
+	class milgp_h_airframe_04_goggles_khk;
+	class milgp_h_airframe_05_khk;
+	class milgp_h_airframe_05_goggles_khk;
+	class milgp_h_airframe_06_khk;
+	class milgp_h_airframe_06_goggles_khk;
 
 	class STAF_H_HelmetSpecB_Pete_Arid: H_HelmetSpecB
 	{
@@ -109,5 +123,392 @@ class CfgWeapons {
 		displayName = "STAF MICH (White, Splinter)";
 		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\headgear_helmet_canvas_white_splinter_co.paa"};
 		picture = "\staf_pmc_main\arsenal\icon_h_helmetb_white_ca.paa";
+	};
+
+	class STAF_H_Watchcap_white: H_Watchcap_blk
+	{
+		displayName = "STAF Beanie (White, Microphone)";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\woolhat_white_co.paa"};
+		picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	};
+
+	class STAF_H_Beanie_White: VSM_Beanie_Black
+	{
+		displayName = "STAF Beanie (White)";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\VSM_Beanie_White.paa"};
+		picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	};
+
+
+
+
+
+
+
+
+
+
+
+
+
+	class STAF_h_airframe_01_white: milgp_h_airframe_01_khk
+	{
+		displayName = "Airframe 01 (White)";
+		picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_white_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_01_goggles_white: milgp_h_airframe_01_goggles_khk
+	{
+		displayName = "Airframe 01 + Goggles (White)";
+		picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_white_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_02_white: milgp_h_airframe_02_khk
+	{
+		displayName = "Airframe 02 (White)";
+		picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_white_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_02_goggles_white: milgp_h_airframe_02_goggles_khk
+	{
+		displayName = "Airframe 02 + Goggles (White)";
+		picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_white_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_03_white: milgp_h_airframe_03_khk
+	{
+		displayName = "Airframe 03 (White)";
+		picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_white_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_03_goggles_white: milgp_h_airframe_03_goggles_khk
+	{
+		displayName = "Airframe 03 + Goggles (White)";
+		picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_white_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_04_white: milgp_h_airframe_04_khk
+	{
+		displayName = "Airframe 04 (White)";
+		picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_white_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_04_goggles_white: milgp_h_airframe_04_goggles_khk
+	{
+		displayName = "Airframe 04 + Goggles (White)";
+		picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_white_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_05_white: milgp_h_airframe_05_khk
+	{
+		displayName = "Airframe 05 (White)";
+		picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_white_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_05_goggles_white: milgp_h_airframe_05_goggles_khk
+	{
+		displayName = "Airframe 05 + Goggles (White)";
+		picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_white_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_06_white: milgp_h_airframe_06_khk
+	{
+		displayName = "Airframe 06 (White)";
+		picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_white_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_06_goggles_white: milgp_h_airframe_06_goggles_khk
+	{
+		displayName = "Airframe 06 + Goggles (White)";
+		picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_white_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_01_white_splinter: milgp_h_airframe_01_khk
+	{
+	  displayName = "Airframe 01 (White, Splinter)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_splinter_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_01_goggles_white_splinter: milgp_h_airframe_01_goggles_khk
+	{
+	  displayName = "Airframe 01 + Goggles (White, Splinter)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_splinter_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_02_white_splinter: milgp_h_airframe_02_khk
+	{
+	  displayName = "Airframe 02 (White, Splinter)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_splinter_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_02_goggles_white_splinter: milgp_h_airframe_02_goggles_khk
+	{
+	  displayName = "Airframe 02 + Goggles (White, Splinter)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_splinter_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_03_white_splinter: milgp_h_airframe_03_khk
+	{
+	  displayName = "Airframe 03 (White, Splinter)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_splinter_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_03_goggles_white_splinter: milgp_h_airframe_03_goggles_khk
+	{
+	  displayName = "Airframe 03 + Goggles (White, Splinter)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_splinter_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_04_white_splinter: milgp_h_airframe_04_khk
+	{
+	  displayName = "Airframe 04 (White, Splinter)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_splinter_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_04_goggles_white_splinter: milgp_h_airframe_04_goggles_khk
+	{
+	  displayName = "Airframe 04 + Goggles (White, Splinter)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_splinter_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_05_white_splinter: milgp_h_airframe_05_khk
+	{
+	  displayName = "Airframe 05 (White, Splinter)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_splinter_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_05_goggles_white_splinter: milgp_h_airframe_05_goggles_khk
+	{
+	  displayName = "Airframe 05 + Goggles (White, Splinter)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_splinter_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_06_white_splinter: milgp_h_airframe_06_khk
+	{
+	  displayName = "Airframe 06 (White, Splinter)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_splinter_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_06_goggles_white_splinter: milgp_h_airframe_06_goggles_khk
+	{
+	  displayName = "Airframe 06 + Goggles (White, Splinter)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_splinter_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_01_white_hex: milgp_h_airframe_01_khk
+	{
+	  displayName = "Airframe 01 (White, HEX)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_hex_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_01_goggles_white_hex: milgp_h_airframe_01_goggles_khk
+	{
+	  displayName = "Airframe 01 + Goggles (White, HEX)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_hex_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_02_white_hex: milgp_h_airframe_02_khk
+	{
+	  displayName = "Airframe 02 (White, HEX)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_hex_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_02_goggles_white_hex: milgp_h_airframe_02_goggles_khk
+	{
+	  displayName = "Airframe 02 + Goggles (White, HEX)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_hex_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_03_white_hex: milgp_h_airframe_03_khk
+	{
+	  displayName = "Airframe 03 (White, HEX)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_hex_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_03_goggles_white_hex: milgp_h_airframe_03_goggles_khk
+	{
+	  displayName = "Airframe 03 + Goggles (White, HEX)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_hex_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_04_white_hex: milgp_h_airframe_04_khk
+	{
+	  displayName = "Airframe 04 (White, HEX)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_hex_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_04_goggles_white_hex: milgp_h_airframe_04_goggles_khk
+	{
+	  displayName = "Airframe 04 + Goggles (White, HEX)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_hex_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_05_white_hex: milgp_h_airframe_05_khk
+	{
+	  displayName = "Airframe 05 (White, HEX)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_hex_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_05_goggles_white_hex: milgp_h_airframe_05_goggles_khk
+	{
+	  displayName = "Airframe 05 + Goggles (White, HEX)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_hex_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_06_white_hex: milgp_h_airframe_06_khk
+	{
+	  displayName = "Airframe 06 (White, HEX)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_hex_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_06_goggles_white_hex: milgp_h_airframe_06_goggles_khk
+	{
+	  displayName = "Airframe 06 + Goggles (White, HEX)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_hex_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_01_white_mcam: milgp_h_airframe_01_khk
+	{
+	  displayName = "Airframe 01 (White, MCAM)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_mcam_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_01_goggles_white_mcam: milgp_h_airframe_01_goggles_khk
+	{
+	  displayName = "Airframe 01 + Goggles (White, MCAM)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_mcam_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_02_white_mcam: milgp_h_airframe_02_khk
+	{
+	  displayName = "Airframe 02 (White, MCAM)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_mcam_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_02_goggles_white_mcam: milgp_h_airframe_02_goggles_khk
+	{
+	  displayName = "Airframe 02 + Goggles (White, MCAM)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_mcam_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_03_white_mcam: milgp_h_airframe_03_khk
+	{
+	  displayName = "Airframe 03 (White, MCAM)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_mcam_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_03_goggles_white_mcam: milgp_h_airframe_03_goggles_khk
+	{
+	  displayName = "Airframe 03 + Goggles (White, MCAM)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_mcam_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_04_white_mcam: milgp_h_airframe_04_khk
+	{
+	  displayName = "Airframe 04 (White, MCAM)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_mcam_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_04_goggles_white_mcam: milgp_h_airframe_04_goggles_khk
+	{
+	  displayName = "Airframe 04 + Goggles (White, MCAM)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_mcam_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_05_white_mcam: milgp_h_airframe_05_khk
+	{
+	  displayName = "Airframe 05 (White, MCAM)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_mcam_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_05_goggles_white_mcam: milgp_h_airframe_05_goggles_khk
+	{
+	  displayName = "Airframe 05 + Goggles (White, MCAM)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_mcam_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_06_white_mcam: milgp_h_airframe_06_khk
+	{
+	  displayName = "Airframe 06 (White, MCAM)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_mcam_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_06_goggles_white_mcam: milgp_h_airframe_06_goggles_khk
+	{
+	  displayName = "Airframe 06 + Goggles (White, MCAM)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_mcam_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	};
+	class STAF_h_airframe_01_black: milgp_h_airframe_01_khk
+	{
+	  displayName = "Airframe 01 (Black)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_black_co.paa","\staf_pmc_headgear\txt\h_opscore_black_co.paa","\staf_pmc_headgear\txt\h_gear_01_black_co.paa"};
+	};
+	class STAF_h_airframe_01_goggles_black: milgp_h_airframe_01_goggles_khk
+	{
+	  displayName = "Airframe 01 + Goggles (Black)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_black_co.paa","\staf_pmc_headgear\txt\h_opscore_black_co.paa","\staf_pmc_headgear\txt\h_gear_01_black_co.paa"};
+	};
+	class STAF_h_airframe_02_black: milgp_h_airframe_02_khk
+	{
+	  displayName = "Airframe 02 (Black)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_black_co.paa","\staf_pmc_headgear\txt\h_opscore_black_co.paa","\staf_pmc_headgear\txt\h_gear_01_black_co.paa"};
+	};
+	class STAF_h_airframe_02_goggles_black: milgp_h_airframe_02_goggles_khk
+	{
+	  displayName = "Airframe 02 + Goggles (Black)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_black_co.paa","\staf_pmc_headgear\txt\h_opscore_black_co.paa","\staf_pmc_headgear\txt\h_gear_01_black_co.paa"};
+	};
+	class STAF_h_airframe_03_black: milgp_h_airframe_03_khk
+	{
+	  displayName = "Airframe 03 (Black)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_black_co.paa","\staf_pmc_headgear\txt\h_opscore_black_co.paa","\staf_pmc_headgear\txt\h_gear_01_black_co.paa"};
+	};
+	class STAF_h_airframe_03_goggles_black: milgp_h_airframe_03_goggles_khk
+	{
+	  displayName = "Airframe 03 + Goggles (Black)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_black_co.paa","\staf_pmc_headgear\txt\h_opscore_black_co.paa","\staf_pmc_headgear\txt\h_gear_01_black_co.paa"};
+	};
+	class STAF_h_airframe_04_black: milgp_h_airframe_04_khk
+	{
+	  displayName = "Airframe 04 (Black)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_black_co.paa","\staf_pmc_headgear\txt\h_opscore_black_co.paa","\staf_pmc_headgear\txt\h_gear_01_black_co.paa"};
+	};
+	class STAF_h_airframe_04_goggles_black: milgp_h_airframe_04_goggles_khk
+	{
+	  displayName = "Airframe 04 + Goggles (Black)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_black_co.paa","\staf_pmc_headgear\txt\h_opscore_black_co.paa","\staf_pmc_headgear\txt\h_gear_01_black_co.paa"};
+	};
+	class STAF_h_airframe_05_black: milgp_h_airframe_05_khk
+	{
+	  displayName = "Airframe 05 (Black)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_black_co.paa","\staf_pmc_headgear\txt\h_opscore_black_co.paa","\staf_pmc_headgear\txt\h_gear_01_black_co.paa"};
+	};
+	class STAF_h_airframe_05_goggles_black: milgp_h_airframe_05_goggles_khk
+	{
+	  displayName = "Airframe 05 + Goggles (Black)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_black_co.paa","\staf_pmc_headgear\txt\h_opscore_black_co.paa","\staf_pmc_headgear\txt\h_gear_01_black_co.paa"};
+	};
+	class STAF_h_airframe_06_black: milgp_h_airframe_06_khk
+	{
+	  displayName = "Airframe 06 (Black)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_black_co.paa","\staf_pmc_headgear\txt\h_opscore_black_co.paa","\staf_pmc_headgear\txt\h_gear_01_black_co.paa"};
+	};
+	class STAF_h_airframe_06_goggles_black: milgp_h_airframe_06_goggles_khk
+	{
+	  displayName = "Airframe 06 + Goggles (Black)";
+	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_black_co.paa","\staf_pmc_headgear\txt\h_opscore_black_co.paa","\staf_pmc_headgear\txt\h_gear_01_black_co.paa"};
 	};
 };
