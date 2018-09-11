@@ -154,12 +154,14 @@ class CfgVehicles
 				class Values
 				{
 					class car	{name = "Car"; value = 0;};
-					class truck	{name = "Truck";	value = 1;};
-					class helicopter	{name = "Helicopter";	value = 2;};
-					class drone	{name = "Drone";	value = 3;};
-					class drone_medical	{name = "Drone (Medical)";	value = 4;};
-					class drone_ammo	{name = "Drone (Ammo)";	value = 4;};
-					class other_small	{name = "Other (Small)";	value = 6;};
+					class mrap	{name = "MRAP"; value = 1;};
+					class truck	{name = "Truck"; value = 1;};
+					class helismall	{name = "Heli (Small)"; value = 2;};
+					class helibig	{name = "Heli (Big)"; value = 3;};
+					class boat {name = "Boat"; value = 4;};
+					class droneammo {name = "Drone (Ammo)"; value = 5;};
+					class dronemedic {name = "Drone (Medical)"; value = 6;};
+					class droneexplosive {name = "Drone (Explosive)"; value = 7;};
 				};
 			};
 			class ModuleDescription: ModuleDescription{};
@@ -493,38 +495,6 @@ class CfgVehicles
 			};
 		};
 	};
-
-	/* Zeus Modules (Not functional atm)
-
-	class STAF_Module_Base_Medic_Zeus_F: Module_F
-	{
-		category = "STAF";
-		displayName = "Base Medic";
-		function = "STAF_fnc_basemediczeus";
-		functionPriority = 10;
-		isDisposable = 0;
-		is3DEN = 0;
-		isGlobal = 1;
-		isTriggerActivated = 0;
-		scope = 0;
-		scopeCurator = 2;
-		curatorCanAttach = 1;
-	};
-
-	class STAF_Module_PMC_Arsenal_Zeus_F: Module_F
-	{
-		category = "STAF";
-		displayName = "PMC Arsenal";
-		function = "STAF_fnc_pmcarsenalzeus";
-		functionPriority = 10;
-		isDisposable = 0;
-		is3DEN = 0;
-		isGlobal = 1;
-		isTriggerActivated = 0;
-		scope = 0;
-		scopeCurator = 2;
-		curatorCanAttach = 1;
-	};*/
 
 	class STAF_Module_Unlimited_Fuel_F: Module_F
 	{

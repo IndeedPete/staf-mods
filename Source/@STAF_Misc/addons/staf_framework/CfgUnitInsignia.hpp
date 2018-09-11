@@ -14,6 +14,23 @@ class CfgUnitInsignia
 		texture = "\staf_framework\img\archangel.paa";
 		textureVehicle = "";
 	};
+	class STAF_what_is_life
+	{
+		displayName = "What is Life?";
+		author = "STAF|Liffy";
+		texture = "\staf_framework\img\whatislife.paa";
+		textureVehicle = "";
+	};
+	class STAF_capybara
+	{
+		displayName = "Capybara";
+		author = "STAF|Liffy";
+		texture = "\staf_framework\img\capybara.paa";
+		textureVehicle = "";
+	};
+
+	// Country
+
 	class STAF_india
 	{
 		displayName = "India";

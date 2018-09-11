@@ -9,4 +9,5 @@
 #include "CfgSounds.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgUnitInsignia.hpp"
+#include "CfgNotifications.hpp"
 #include "RscDisplayLoadMission.hpp"

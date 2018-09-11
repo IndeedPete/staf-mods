@@ -189,7 +189,8 @@ _backpacks = [
             "STAF_B_Carryall_inv",
             "STAF_B_AssaultPack_inv",
             "STAF_B_Bergen_inv",
-            "STAF_B_Kitbag_blk"
+            "STAF_B_Kitbag_blk",
+            "STAF_B_RepairBag"
 ];
 
 _items = [
@@ -235,6 +236,8 @@ _items = [
             "ACE_UAVBattery",
             "ACE_DAGR",
             "ACE_Kestrel4500",
+            "ACE_ATragMX",
+            "ACE_RangeCard",
             "adv_aceSplint_splint",
             "adv_aceCPR_AED",
             "rhs_scarf",
@@ -425,6 +428,22 @@ _uniforms = [
             "U_B_T_Soldier_SL_F",
             "U_B_GEN_Commander_F",
             "U_B_GEN_Soldier_F",
+            "U_I_FullGhillie_ard",
+            "U_O_FullGhillie_ard",
+            "U_B_FullGhillie_ard",
+            "U_O_T_FullGhillie_tna_F",
+            "U_B_T_FullGhillie_tna_F",
+            "U_I_FullGhillie_lsh",
+            "U_O_FullGhillie_lsh",
+            "U_B_FullGhillie_lsh",
+            "U_I_FullGhillie_sard",
+            "U_O_FullGhillie_sard",
+            "U_B_FullGhillie_sard",
+            "U_O_T_Sniper_F",
+            "U_B_T_Sniper_F",
+            "U_I_GhillieSuit",
+            "U_O_GhillieSuit",
+            "U_B_GhillieSuit",
             "U_B_survival_uniform",
             "U_B_Wetsuit",
             "U_O_Wetsuit",
@@ -1118,7 +1137,69 @@ _headgear = [
             "STAF_H_HelmetIA_white_splinter",
             "STAF_H_HelmetSpecB_Pete_Arid",
             "STAF_H_HelmetSpecB_Pete_Lush",
-            "STAF_H_HelmetSpecB_Pete_Winter"
+            "STAF_H_HelmetSpecB_Pete_Winter",
+            "STAF_H_Watchcap_white",
+            "STAF_H_Beanie_White",
+            "STAF_h_airframe_01_white",
+            "STAF_h_airframe_01_goggles_white",
+            "STAF_h_airframe_02_white",
+            "STAF_h_airframe_02_goggles_white",
+            "STAF_h_airframe_03_white",
+            "STAF_h_airframe_03_goggles_white",
+            "STAF_h_airframe_04_white",
+            "STAF_h_airframe_04_goggles_white",
+            "STAF_h_airframe_05_white",
+            "STAF_h_airframe_05_goggles_white",
+            "STAF_h_airframe_06_white",
+            "STAF_h_airframe_06_goggles_white",
+            "STAF_h_airframe_01_white_splinter",
+            "STAF_h_airframe_01_goggles_white_splinter",
+            "STAF_h_airframe_02_white_splinter",
+            "STAF_h_airframe_02_goggles_white_splinter",
+            "STAF_h_airframe_03_white_splinter",
+            "STAF_h_airframe_03_goggles_white_splinter",
+            "STAF_h_airframe_04_white_splinter",
+            "STAF_h_airframe_04_goggles_white_splinter",
+            "STAF_h_airframe_05_white_splinter",
+            "STAF_h_airframe_05_goggles_white_splinter",
+            "STAF_h_airframe_06_white_splinter",
+            "STAF_h_airframe_06_goggles_white_splinter",
+            "STAF_h_airframe_01_white_hex",
+            "STAF_h_airframe_01_goggles_white_hex",
+            "STAF_h_airframe_02_white_hex",
+            "STAF_h_airframe_02_goggles_white_hex",
+            "STAF_h_airframe_03_white_hex",
+            "STAF_h_airframe_03_goggles_white_hex",
+            "STAF_h_airframe_04_white_hex",
+            "STAF_h_airframe_04_goggles_white_hex",
+            "STAF_h_airframe_05_white_hex",
+            "STAF_h_airframe_05_goggles_white_hex",
+            "STAF_h_airframe_06_white_hex",
+            "STAF_h_airframe_06_goggles_white_hex",
+            "STAF_h_airframe_01_white_mcam",
+            "STAF_h_airframe_01_goggles_white_mcam",
+            "STAF_h_airframe_02_white_mcam",
+            "STAF_h_airframe_02_goggles_white_mcam",
+            "STAF_h_airframe_03_white_mcam",
+            "STAF_h_airframe_03_goggles_white_mcam",
+            "STAF_h_airframe_04_white_mcam",
+            "STAF_h_airframe_04_goggles_white_mcam",
+            "STAF_h_airframe_05_white_mcam",
+            "STAF_h_airframe_05_goggles_white_mcam",
+            "STAF_h_airframe_06_white_mcam",
+            "STAF_h_airframe_06_goggles_white_mcam",
+            "STAF_h_airframe_01_black",
+            "STAF_h_airframe_01_goggles_black",
+            "STAF_h_airframe_02_black",
+            "STAF_h_airframe_02_goggles_black",
+            "STAF_h_airframe_03_black",
+            "STAF_h_airframe_03_goggles_black",
+            "STAF_h_airframe_04_black",
+            "STAF_h_airframe_04_goggles_black",
+            "STAF_h_airframe_05_black",
+            "STAF_h_airframe_05_goggles_black",
+            "STAF_h_airframe_06_black",
+            "STAF_h_airframe_06_goggles_black"
 ];
 
 _vests = [
@@ -1540,12 +1621,14 @@ _magazines = [
     [_x] call CBA_fnc_compatibleMagazines;
 } forEach _weapons;*/
 
-_attachments = {
-    [_x] call CBA_fnc_compatibleItems;
+_attachments = [];
+{
+    {
+        _attachments pushBackUnique _x;
+    } forEach ([_x] call CBA_fnc_compatibleItems);
 } forEach _weapons;
 
-
 //Adding Itemlists to the Arsenal
-[_box,(_items + _uniforms + _headgear + _vests + _backpacks + _magazines + _weapons + _attachments),true] call ace_arsenal_fnc_initBox;
+[_box,(_weapons + _backpacks + _items + _uniforms + _headgear + _vests + _magazines + _attachments),true] call ace_arsenal_fnc_initBox;
 
 [_box,["<img image='\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\box_ca.paa' /> Open Arsenal",{[(_this select 0), player,false] call ace_arsenal_fnc_openBox;}]] remoteExec ["addAction",0,true];
