@@ -47,6 +47,15 @@ class CfgVehicles {
             hiddenSelections[] = {"Camo1","clan"};
             selectionClan = "";
             maximumLoad = 600;
+            ace_fastroping_enabled = 1;
+            ace_fastroping_ropeOrigins[] = {
+                {1.111,-0.075,-0.903},
+                {1.111,1.237,-0.903},
+                {-1.111,-0.075,-0.903},
+                {-1.111,1.237,-0.903}
+            };
+
+
 
             class EventHandlers: Eventhandlers {
               class STAF {
@@ -414,7 +423,7 @@ class CfgVehicles {
             selectionClan = "";
             crew = "B_UAV_AI";
             editorPreview = "\staf_pmc_main\eden\STAF_hexacopter_ammo.jpg";
-            maximumLoad = 2500;
+            maximumLoad = 2700;
 
             class EventHandlers: Eventhandlers {
               class STAF {
