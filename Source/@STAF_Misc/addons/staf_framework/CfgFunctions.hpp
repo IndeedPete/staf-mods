@@ -179,7 +179,9 @@ class CfgFunctions
 			class coldBreath{};
 			class coldBreathACE{};
 			class monitorLifeSigns{};
-			class snowFall{};
+			class snowFalllight{};
+			class snowFallmedium{};
+			class snowFallheavy{};
 		};
 	};
 

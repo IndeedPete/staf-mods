@@ -22,8 +22,8 @@ class CfgNotifications
 
 	class STAF_notification_sombodyhealed
 	{
-		title = "Somebody called the Medic"; // Tile displayed as text on black background. Filled by arguments.
-		description = "Somebody thought you need a Medic!"; // Brief description displayed as structured text. Colored by "color", filled by arguments
+		title = "You healed your Team Mates"; // Tile displayed as text on black background. Filled by arguments.
+		description = """These c*nts should be fine now!"""; // Brief description displayed as structured text. Colored by "color", filled by arguments
 		iconPicture = "\staf_framework\img\icon_medical_white.paa";
 		color[] = {1,1,1,1};
 		duration = 5; // How many seconds will the notification be displayed

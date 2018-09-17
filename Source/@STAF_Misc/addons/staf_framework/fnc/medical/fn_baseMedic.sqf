@@ -39,9 +39,9 @@ if (!(isServer) && {_medic getVariable ["STAF_BaseMedic", false]}) exitWith {};
 			{
 				if(_x distance (getPos (_this select 0)) < 10) then {
 					[_x] call STAF_fnc_ACEHeal;
-					["STAF_notification_sombodyhealed",[]] call bis_fnc_showNotification;
 				}
 			} forEach allUnits;
+			["STAF_notification_sombodyhealed",[]] call bis_fnc_showNotification;
 		},
 		[],
 		6,
