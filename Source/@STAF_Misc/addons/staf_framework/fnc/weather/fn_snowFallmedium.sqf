@@ -22,16 +22,6 @@ _handle = [_unit, _condition] spawn {
 	if (!(isNil "IP_snowFallRunning") && {IP_snowFallRunning}) exitWith {["Already running!"] call BIS_fnc_error};
 	IP_snowFallRunning = true;
 
-	//Change Wheater. Diable Rain and adjust the overcast + fog.
-	[0,0] remoteExec ["setRain", 2];
-	[0,0.25] remoteExec ["setFog", 2];
-	[0,0.65] remoteExec ["setOvercast", 2];
-	[0,0] remoteExec ["setLightnings", 2];
-	[0,0] remoteExec ["setWaves", 2];
-	[[0,0, true]] remoteExec ["setWind", 2];
-	remoteExec ["forceWeatherChange", 2];
-	[999999,0] remoteExec ["setRain", 2];
-
 	while {(alive _unit) && (call _condition)} do {
 		_obj = vehicle _unit;
 		_pos = if (_obj == _unit) then {
@@ -64,16 +54,6 @@ _handle = [_unit, _condition] spawn {
 	if (!isNull(_unit getVariable ["IP_Snow", ObjNull])) then {
 		deleteVehicle (_unit getVariable "IP_Snow");
 		_unit setVariable ["IP_Snow", ObjNull];
-
-		//Change Wheater. Diable Rain and adjust the overcast + fog.
-		[0,0] remoteExec ["setRain", 2];
-		[0,0] remoteExec ["setFog", 2];
-		[0,0] remoteExec ["setOvercast", 2];
-		[0,0] remoteExec ["setLightnings", 2];
-		[0,0] remoteExec ["setWaves", 2];
-		[[0,0, true]] remoteExec ["setWind", 2];
-		remoteExec ["forceWeatherChange", 2];
-		[999999,0] remoteExec ["setRain", 2];
 	};
 };
 
