@@ -8,6 +8,8 @@ class CfgWeapons {
   class V_TacVest_khk;
   class Vest_Camo_Base: ItemCore
   {
+    scope = 2;
+    scopeArsenal = 2;
     class ItemInfo;
   };
 
