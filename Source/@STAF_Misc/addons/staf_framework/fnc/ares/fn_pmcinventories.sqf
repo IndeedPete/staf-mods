@@ -31,11 +31,7 @@
 		"Apply Inventory",
 		[
 			// The last number is optional! If you want the first selection you can remove the number.
-				//["Combo Box Control", ["Choice 1","Choice 2"], 1],
-				["Which Inventory Loadout do you want to apply?", ["Car","MRAP","Truck","Heli (Small)","Heli (Big)","Boat","Drone (Ammo)","Drone (Medical)","Drone (Explosives)"], 0]
-				//["Text Control", "", "default text"],
-				//["Slider Control", "SLIDER", 1],
-				//["Side Control", "SIDE", 2]
+				["Which Loadout do you want to apply?", ["Car","MRAP","Truck","Heli (Small)","Heli (Big)","Boat","Drone (Ammo)","Drone (Medical)","Drone (Explosives)"], 0]
 		]
 	] call Ares_fnc_showChooseDialog;
 

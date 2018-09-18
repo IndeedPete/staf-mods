@@ -19,8 +19,8 @@ _handle = [_unit, _condition] spawn {
 	_unit = _this select 0;
 	_condition = _this select 1;
 
-	if (!(isNil "IP_snowFallRunning") && {IP_snowFallRunning}) exitWith {["Already running!"] call BIS_fnc_error};
-	IP_snowFallRunning = true;
+	if (!(isNil "STAF_snowFallRunning") && {STAF_snowFallRunning}) exitWith {["Already running!"] call BIS_fnc_error};
+	STAF_snowFallRunning = true;
 
 	while {(alive _unit) && (call _condition)} do {
 		_obj = vehicle _unit;
@@ -33,27 +33,27 @@ _handle = [_unit, _condition] spawn {
 		};
 
 		if (count(lineIntersectsObjs [_pos, [(_pos select 0),(_pos select 1),((_pos select 2) + 20)]]) == 0) then {
-			if (isNull(_unit getVariable ["IP_Snow", ObjNull])) then {
+			if (isNull(_unit getVariable ["STAF_Snow", ObjNull])) then {
 				_snow = "#particleSource" createVehicleLocal (getPos _obj);
 				_snow setParticleParams [["\A3\data_f\ParticleEffects\Universal\smoke.p3d", 1,0,1,0],"","Billboard",1,10,[0,0,0],[0,0,-10],10,1,0,1,[0.12,0.12],[[1,1,1,0.5],[1,1,1,0.5]],[0,1],0.25,1,"","", _obj];
 				_snow setParticleRandom [0, [25, 25, 18], [0, 0, 0], 0, 0.01, [0, 0, 0, 0.1], 0, 0];
 				_snow setParticleCircle [0.0, [0, 0, 0]];
 				_snow setDropInterval 0.0003;
-				_unit setVariable ["IP_Snow", _snow];
+				_unit setVariable ["STAF_Snow", _snow];
 			};
 		} else {
-			if (!isNull(_unit getVariable ["IP_Snow", ObjNull])) then {
-				deleteVehicle (_unit getVariable "IP_Snow");
-				_unit setVariable ["IP_Snow", ObjNull];
+			if (!isNull(_unit getVariable ["STAF_Snow", ObjNull])) then {
+				deleteVehicle (_unit getVariable "STAF_Snow");
+				_unit setVariable ["STAF_Snow", ObjNull];
 			};
 		};
 		sleep 0.03;
 	};
 
-	IP_snowFallRunning = false;
-	if (!isNull(_unit getVariable ["IP_Snow", ObjNull])) then {
-		deleteVehicle (_unit getVariable "IP_Snow");
-		_unit setVariable ["IP_Snow", ObjNull];
+	STAF_snowFallRunning = false;
+	if (!isNull(_unit getVariable ["STAF_Snow", ObjNull])) then {
+		deleteVehicle (_unit getVariable "STAF_Snow");
+		_unit setVariable ["STAF_Snow", ObjNull];
 	};
 };
 
