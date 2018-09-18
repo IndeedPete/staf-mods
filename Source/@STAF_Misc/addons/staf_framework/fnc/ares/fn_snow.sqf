@@ -1,4 +1,4 @@
-["STAF", "Creat Snow Fall",
+["STAF", "Create Snow Fall",
 {
 	private _dialogResult =
 	[
@@ -27,7 +27,9 @@
 		remoteExec ["forceWeatherChange", 2];
 		[999999,0] remoteExec ["setRain", 2];
 
-		//Code to stop Snowfall
+		STAF_breath = false;
+		STAF_monitor = false;
+		STAF_snowfall = false;
 	};
 
 	// Light
@@ -42,7 +44,20 @@
 		remoteExec ["forceWeatherChange", 2];
 		[999999,0] remoteExec ["setRain", 2];
 
-		//Code to create light snowfall
+		STAF_monitor = false;
+		STAF_monitor = true;
+    waitUntil {!(player getVariable ["IP_MonitorLifeSignsRunning", false])};
+    [player, {STAF_monitor}] remoteExecCall ["STAF_fnc_monitorLifeSigns", -2, true];
+
+		STAF_breath = false;
+		STAF_breath = true;
+    waitUntil {!(player getVariable ["IP_ColdBreath", false])};
+    [player, {STAF_breath}] remoteExecCall ["STAF_fnc_coldBreathACE", -2, true];
+
+		STAF_snowfall = false;
+		STAF_snowfall = true;
+    waitUntil {((isNil "IP_snowFallRunning") OR {!(isNil "IP_snowFallRunning") && {!IP_snowFallRunning}})};
+    [player, {STAF_snowfall}] remoteExecCall ["STAF_fnc_snowFalllight", -2, true];
 	};
 
 	// Medium
@@ -57,7 +72,20 @@
 		remoteExec ["forceWeatherChange", 2];
 		[999999,0] remoteExec ["setRain", 2];
 
-		//Code to create medium snowfall
+		STAF_monitor = false;
+		STAF_monitor = true;
+    waitUntil {!(player getVariable ["IP_MonitorLifeSignsRunning", false])};
+    [player, {STAF_monitor}] remoteExecCall ["STAF_fnc_monitorLifeSigns", -2, true];
+
+		STAF_breath = false;
+		STAF_breath = true;
+    waitUntil {!(player getVariable ["IP_ColdBreath", false])};
+    [player, {STAF_breath}] remoteExecCall ["STAF_fnc_coldBreathACE", -2, true];
+
+		STAF_snowfall = false;
+		STAF_snowfall = true;
+    waitUntil {((isNil "IP_snowFallRunning") OR {!(isNil "IP_snowFallRunning") && {!IP_snowFallRunning}})};
+    [player, {STAF_snowfall}] remoteExecCall ["STAF_fnc_snowFallmedium", -2, true];
 	};
 
 	// Heavy
@@ -77,6 +105,19 @@
 		remoteExec ["forceWeatherChange", 2];
 		[999999,0] remoteExec ["setRain", 2];
 
-		//Code to create heavy snowfall
+		STAF_monitor = false;
+		STAF_monitor = true;
+    waitUntil {!(player getVariable ["IP_MonitorLifeSignsRunning", false])};
+    [player, {STAF_monitor}] remoteExecCall ["STAF_fnc_monitorLifeSigns", -2, true];
+
+		STAF_breath = false;
+		STAF_breath = true;
+    waitUntil {!(player getVariable ["IP_ColdBreath", false])};
+    [player, {STAF_breath}] remoteExecCall ["STAF_fnc_coldBreathACE", -2, true];
+
+		STAF_snowfall = false;
+		STAF_snowfall = true;
+    waitUntil {((isNil "IP_snowFallRunning") OR {!(isNil "IP_snowFallRunning") && {!IP_snowFallRunning}})};
+    [player, {STAF_snowfall}] remoteExecCall ["STAF_fnc_snowFallheavy", -2, true];
 	};
 }] remoteexeccall ["Ares_fnc_RegisterCustomModule", 0, true];
