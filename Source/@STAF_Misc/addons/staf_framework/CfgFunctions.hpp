@@ -190,6 +190,7 @@ class CfgFunctions
 			class snowFalllight{};
 			class snowFallmedium{};
 			class snowFallheavy{};
+			class snowFallblizzard{};
 		};
 	};
 

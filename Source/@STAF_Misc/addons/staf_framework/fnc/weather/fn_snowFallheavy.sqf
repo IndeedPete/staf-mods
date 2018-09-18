@@ -19,7 +19,7 @@ _handle = [_unit, _condition] spawn {
 	_unit = _this select 0;
 	_condition = _this select 1;
 
-	if (!(isNil "STAF_snowFallRunning") && {STAF_snowFallRunning}) exitWith {["Already running!"] call BIS_fnc_error};
+	if (!(isNil "STAF_snowFallRunning") && {STAF_snowFallRunning}) exitWith {["Snow Falling (Heavy): Already running!"] call BIS_fnc_error};
 	STAF_snowFallRunning = true;
 
 	while {(alive _unit) && (call _condition)} do {
@@ -35,9 +35,9 @@ _handle = [_unit, _condition] spawn {
 		if (count(lineIntersectsObjs [_pos, [(_pos select 0),(_pos select 1),((_pos select 2) + 20)]]) == 0) then {
 			if (isNull(_unit getVariable ["STAF_Snow", ObjNull])) then {
 				_snow = "#particleSource" createVehicleLocal (getPos _obj);
-				_snow setParticleParams [["a3\data_f\ParticleEffects\Universal\Universal.p3d",16,13,6,0],"","Billboard",1,10,[0,0,0],[0,0,0],(0),1.59,1,1.5,[3],[[1,1,1,.15],[1,1,1,0.25]],[1000],0, 0,"","",_obj];
+				_snow setParticleParams [["a3\data_f\ParticleEffects\Universal\Universal.p3d",16,13,6,0],"","Billboard",1,10,[0,0,0],[0,0,0],(0),1.59,1,1.5,[3],[[1,1,1,.35],[1,1,1,0.45]],[1000],0, 0,"","",_obj];
 				_snow setParticleCircle [0,[0,0,0]];
-				_snow setParticleRandom [0, [50,50, 18], [0, 0, 0], 0, .5, [0,0,0,0.03], 0, 0];
+				_snow setParticleRandom [0, [30,30, 18], [0, 0, 0], 0, .5, [0,0,0,0.03], 0, 0];
 				_snow setDropInterval 0.0001;
 				_unit setVariable ["STAF_Snow", _snow];
 			};

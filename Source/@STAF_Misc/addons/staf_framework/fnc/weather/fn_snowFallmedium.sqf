@@ -19,7 +19,7 @@ _handle = [_unit, _condition] spawn {
 	_unit = _this select 0;
 	_condition = _this select 1;
 
-	if (!(isNil "STAF_snowFallRunning") && {STAF_snowFallRunning}) exitWith {["Already running!"] call BIS_fnc_error};
+	if (!(isNil "STAF_snowFallRunning") && {STAF_snowFallRunning}) exitWith {["Snow Falling (Medium): Already running!"] call BIS_fnc_error};
 	STAF_snowFallRunning = true;
 
 	while {(alive _unit) && (call _condition)} do {
