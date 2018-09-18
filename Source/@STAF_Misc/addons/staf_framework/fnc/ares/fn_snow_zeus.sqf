@@ -27,21 +27,7 @@
 		remoteExec ["forceWeatherChange", 2];
 		[999999,0] remoteExec ["setRain", 2];
 
-
-		if (isnil (STAF_var_monitor)) then {
-		  STAF_var_monitor = false
-		};
-		if (isnil (STAF_var_breath)) then {
-		  STAF_var_monitor = false
-		};
-		if (isnil (STAF_var_snowfall)) then {
-		  STAF_var_monitor = false
-		};
-
-		player setVariable ["STAF_var_monitor", false];
-		player setVariable ["STAF_var_breath", false];
-		player setVariable ["STAF_var_snowfall", false];
-
+		// Everything Should be disabled here
 	};
 
 	// Light
@@ -56,29 +42,16 @@
 		remoteExec ["forceWeatherChange", 2];
 		[999999,0] remoteExec ["setRain", 2];
 
-		if (isnil (STAF_var_monitor)) then {
-		  STAF_var_monitor = false
-		};
-		player setVariable ["STAF_var_monitor", false];
-		player setVariable ["STAF_var_monitor", true];
+		// First disable the previous functions and then enable these
+
 		waitUntil {!(player getVariable ["STAF_MonitorLifeSignsRunning", false])};
-		[[player, {STAF_var_monitor}], "STAF_fnc_monitorLifeSigns", true, true, true] call BIS_fnc_MP;
+		[[player], "STAF_fnc_monitorLifeSigns", true, true, true] call BIS_fnc_MP;
 
-		if (isnil (STAF_var_breath)) then {
-		  STAF_var_monitor = false
-		};
-		player setVariable ["STAF_var_breath", false];
-		player setVariable ["STAF_var_breath", true];
 		waitUntil {!(player getVariable ["STAF_ColdBreath", false])};
-		[[player, {STAF_var_breath}], "STAF_fnc_coldBreathACE", true, true, true] call BIS_fnc_MP;
+		[[player], "STAF_fnc_coldBreathACE", true, true, true] call BIS_fnc_MP;
 
-		if (isnil (STAF_var_snowfall)) then {
-			STAF_var_monitor = false
-		};
-		player setVariable ["STAF_var_snowfall", false];
-		player setVariable ["STAF_var_snowfall", true];
 		waitUntil {((isNil "STAF_snowFallRunning") OR {!(isNil "STAF_snowFallRunning") && {!STAF_snowFallRunning}})};
-		[[player, {STAF_var_snowfall}], "STAF_fnc_snowFalllight", true, true, true] call BIS_fnc_MP;
+		[[player], "STAF_fnc_snowFalllight", true, true, true] call BIS_fnc_MP;
 	};
 
 	// Medium
@@ -93,29 +66,16 @@
 		remoteExec ["forceWeatherChange", 2];
 		[999999,0] remoteExec ["setRain", 2];
 
-		if (isnil (STAF_var_monitor)) then {
-		  STAF_var_monitor = false
-		};
-		player setVariable ["STAF_var_monitor", false];
-		player setVariable ["STAF_var_monitor", true];
+		// First disable the previous functions and then enable these
+
 		waitUntil {!(player getVariable ["STAF_MonitorLifeSignsRunning", false])};
-		[[player, {STAF_var_monitor}], "STAF_fnc_monitorLifeSigns", true, true, true] call BIS_fnc_MP;
+		[[player], "STAF_fnc_monitorLifeSigns", true, true, true] call BIS_fnc_MP;
 
-		if (isnil (STAF_var_breath)) then {
-		  STAF_var_monitor = false
-		};
-		player setVariable ["STAF_var_breath", false];
-		player setVariable ["STAF_var_breath", true];
 		waitUntil {!(player getVariable ["STAF_ColdBreath", false])};
-		[[player, {STAF_var_breath}], "STAF_fnc_coldBreathACE", true, true, true] call BIS_fnc_MP;
+		[[player], "STAF_fnc_coldBreathACE", true, true, true] call BIS_fnc_MP;
 
-		if (isnil (STAF_var_snowfall)) then {
-			STAF_var_monitor = false
-		};
-		player setVariable ["STAF_var_snowfall", false];
-		player setVariable ["STAF_var_snowfall", true];
 		waitUntil {((isNil "STAF_snowFallRunning") OR {!(isNil "STAF_snowFallRunning") && {!STAF_snowFallRunning}})};
-		[[player, {STAF_var_snowfall}], "STAF_fnc_snowFallmedium", true, true, true] call BIS_fnc_MP;
+		[[player], "STAF_fnc_snowFallmedium", true, true, true] call BIS_fnc_MP;
 	};
 
 	// Heavy
@@ -132,32 +92,16 @@
 		_rany = random[-3,0,3];
 		[[if (_ranx >= 0) then {_ranx+5} else {_ranx -5}, if (_rany >= 0) then {_rany+5} else {_rany -5},true]] remoteExec ["setWind", 2]; //I'm suprised this worked on my first try!
 
-		remoteExec ["forceWeatherChange", 2];
-		[999999,0] remoteExec ["setRain", 2];
+		// First disable the previous functions and then enable these
 
-		if (isnil (STAF_var_monitor)) then {
-		  STAF_var_monitor = false
-		};
-		player setVariable ["STAF_var_monitor", false];
-		player setVariable ["STAF_var_monitor", true];
 		waitUntil {!(player getVariable ["STAF_MonitorLifeSignsRunning", false])};
-		[[player, {STAF_var_monitor}], "STAF_fnc_monitorLifeSigns", true, true, true] call BIS_fnc_MP;
+		[[player], "STAF_fnc_monitorLifeSigns", true, true, true] call BIS_fnc_MP;
 
-		if (isnil (STAF_var_breath)) then {
-		  STAF_var_monitor = false
-		};
-		player setVariable ["STAF_var_breath", false];
-		player setVariable ["STAF_var_breath", true];
 		waitUntil {!(player getVariable ["STAF_ColdBreath", false])};
-		[[player, {STAF_var_breath}], "STAF_fnc_coldBreathACE", true, true, true] call BIS_fnc_MP;
+		[[player], "STAF_fnc_coldBreathACE", true, true, true] call BIS_fnc_MP;
 
-		if (isnil (STAF_var_snowfall)) then {
-			STAF_var_monitor = false
-		};
-		player setVariable ["STAF_var_snowfall", false];
-		player setVariable ["STAF_var_snowfall", true];
 		waitUntil {((isNil "STAF_snowFallRunning") OR {!(isNil "STAF_snowFallRunning") && {!STAF_snowFallRunning}})};
-		[[player, {STAF_var_snowfall}], "STAF_fnc_snowFallheavy", true, true, true] call BIS_fnc_MP;
+		[[player], "STAF_fnc_snowFallheavy", true, true, true] call BIS_fnc_MP;
 	};
 
 	// Heavy (No Storm)
@@ -172,28 +116,15 @@
 		remoteExec ["forceWeatherChange", 2];
 		[999999,0] remoteExec ["setRain", 2];
 
-		if (isnil (STAF_var_monitor)) then {
-		  STAF_var_monitor = false
-		};
-		player setVariable ["STAF_var_monitor", false];
-		player setVariable ["STAF_var_monitor", true];
+		// First disable the previous functions and then enable these
+
 		waitUntil {!(player getVariable ["STAF_MonitorLifeSignsRunning", false])};
-		[[player, {STAF_var_monitor}], "STAF_fnc_monitorLifeSigns", true, true, true] call BIS_fnc_MP;
+		[[player], "STAF_fnc_monitorLifeSigns", true, true, true] call BIS_fnc_MP;
 
-		if (isnil (STAF_var_breath)) then {
-		  STAF_var_monitor = false
-		};
-		player setVariable ["STAF_var_breath", false];
-		player setVariable ["STAF_var_breath", true];
 		waitUntil {!(player getVariable ["STAF_ColdBreath", false])};
-		[[player, {STAF_var_breath}], "STAF_fnc_coldBreathACE", true, true, true] call BIS_fnc_MP;
+		[[player], "STAF_fnc_coldBreathACE", true, true, true] call BIS_fnc_MP;
 
-		if (isnil (STAF_var_snowfall)) then {
-			STAF_var_monitor = false
-		};
-		player setVariable ["STAF_var_snowfall", false];
-		player setVariable ["STAF_var_snowfall", true];
 		waitUntil {((isNil "STAF_snowFallRunning") OR {!(isNil "STAF_snowFallRunning") && {!STAF_snowFallRunning}})};
-		[[player, {STAF_var_snowfall}], "STAF_fnc_snowFallheavy", true, true, true] call BIS_fnc_MP;
+		[[player], "STAF_fnc_snowFallheavy", true, true, true] call BIS_fnc_MP;
 	};
 }] remoteexeccall ["Ares_fnc_RegisterCustomModule", 0, true];

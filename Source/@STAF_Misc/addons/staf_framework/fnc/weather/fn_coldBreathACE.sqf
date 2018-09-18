@@ -58,7 +58,7 @@ _handle = [_unit, _condition] spawn {
 		_fog setDropInterval 0.001;
 		_source attachTo [_unit, [0,0.15,0], "neck"];
 
-		//waitUntil {!(_unit getVariable ["STAF_SimpleSentence_Talking", false])};
+		waitUntil {!(_unit call TFAR_fnc_isSpeaking)};
 		sleep 0.5;
 
 		deleteVehicle _source;
@@ -66,7 +66,7 @@ _handle = [_unit, _condition] spawn {
 
 		_breathing = ((_unit getVariable [QGVAR(heartRate), 80]) * 0.5625) - 30;
 		_delay = time + (60 / _breathing);
-		waitUntil {((time > _delay)/* OR (_unit getVariable ["STAF_SimpleSentence_Talking", false])*/)};
+		waitUntil {((time > _delay) OR (_unit call TFAR_fnc_isSpeaking))};
 	};
 
 	_unit setVariable ["STAF_ColdBreath", false];
