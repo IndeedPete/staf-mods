@@ -423,7 +423,7 @@ class CfgVehicles {
             selectionClan = "";
             crew = "B_UAV_AI";
             editorPreview = "\staf_pmc_main\eden\STAF_hexacopter_ammo.jpg";
-            maximumLoad = 2700;
+            maximumLoad = 3000;
 
             class EventHandlers: Eventhandlers {
               class STAF {
@@ -481,6 +481,8 @@ class CfgVehicles {
         class STAF_md500_opf : STAF_md500 {
             displayName = "MD-500 (Modified)";
             Side = 0;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_heli_pilot_opf";
         };
@@ -488,6 +490,8 @@ class CfgVehicles {
         /*class STAF_md500_defender_opf : B_Heli_Light_01_dynamicLoadout_F {
             displayName = "MD-500 (Modified)";
             Side = 0;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_heli_pilot_opf";
         };*/
@@ -495,6 +499,8 @@ class CfgVehicles {
       //----------------------------------Naval-----------------------------------
         class STAF_rubberboat_opf : STAF_rubberboat {
             Side = 0;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_opf";
         };
@@ -503,66 +509,88 @@ class CfgVehicles {
 
         class STAF_truck_transport_opf : STAF_truck_transport {
             Side = 0;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_opf";
         };
 
         class STAF_truck_box_opf : STAF_truck_box {
             Side = 0;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_opf";
         };
 
         class STAF_truck_fuel_opf : STAF_truck_fuel {
             Side = 0;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_opf";
         };
 
         class STAF_truck_covered_opf : STAF_truck_covered {
             Side = 0;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_opf";
         };
 
         class STAF_offroad_opf : STAF_offroad {
             Side = 0;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_opf";
         };
 
         class STAF_offroad_pickup_opf : STAF_offroad_pickup {
             Side = 0;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_opf";
         };
 
         class STAF_suv_opf : STAF_suv {
             Side = 0;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_opf";
         };
 
         class STAF_caiman_woodland_opf : STAF_caiman_woodland {
             Side = 0;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_opf";
         };
 
         class STAF_caiman_desert_opf : STAF_caiman_desert {
             Side = 0;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_opf";
         };
 
         class STAF_husky_woodland_opf : STAF_husky_woodland {
             Side = 0;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_opf";
         };
 
         class STAF_husky_desert_opf : STAF_husky_desert {
             Side = 0;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_opf";
         };
@@ -570,30 +598,40 @@ class CfgVehicles {
       //----------------------------------Drones----------------------------------
         class STAF_quadcopter_opf : STAF_quadcopter {
             Side = 0;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "I_UAV_AI";
         };
 
         class STAF_hexacopter_opf : STAF_hexacopter {
             Side = 0;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "I_UAV_AI";
         };
 
         class STAF_hexacopter_ammo_opf : STAF_hexacopter_ammo {
             Side = 0;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "I_UAV_AI";
         };
 
         class STAF_hexacopter_medical_opf : STAF_hexacopter_medical {
             Side = 0;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "I_UAV_AI";
         };
 
         class STAF_hexacopter_explosive_opf : STAF_hexacopter_explosive {
             Side = 0;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "I_UAV_AI";
         };
@@ -604,6 +642,8 @@ class CfgVehicles {
         class STAF_md500_ind : STAF_md500 {
             displayName = "MD-500 (Modified)";
             Side = 2;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_heli_pilot_ind";
         };
@@ -611,6 +651,8 @@ class CfgVehicles {
         /*class STAF_md500_defender_ind : B_Heli_Light_01_dynamicLoadout_F {
             displayName = "MD-500 (Modified)";
             Side = 2;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_heli_pilot_ind";
         };*/
@@ -618,6 +660,8 @@ class CfgVehicles {
       //----------------------------------Naval-----------------------------------
         class STAF_rubberboat_ind : STAF_rubberboat {
             Side = 2;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_ind";
         };
@@ -626,66 +670,88 @@ class CfgVehicles {
 
         class STAF_truck_transport_ind : STAF_truck_transport {
             Side = 2;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_ind";
         };
 
         class STAF_truck_box_ind : STAF_truck_box {
             Side = 2;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_ind";
         };
 
         class STAF_truck_fuel_ind : STAF_truck_fuel {
             Side = 2;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_ind";
         };
 
         class STAF_truck_covered_ind : STAF_truck_covered {
             Side = 2;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_ind";
         };
 
         class STAF_offroad_ind : STAF_offroad {
             Side = 2;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_ind";
         };
 
         class STAF_offroad_pickup_ind : STAF_offroad_pickup {
             Side = 2;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_ind";
         };
 
         class STAF_suv_ind : STAF_suv {
             Side = 2;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_ind";
         };
 
         class STAF_caiman_woodland_ind : STAF_caiman_woodland {
             Side = 2;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_ind";
         };
 
         class STAF_caiman_desert_ind : STAF_caiman_desert {
             Side = 2;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_ind";
         };
 
         class STAF_husky_woodland_ind : STAF_husky_woodland {
             Side = 2;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_ind";
         };
 
         class STAF_husky_desert_ind : STAF_husky_desert {
             Side = 2;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_ind";
         };
@@ -693,30 +759,40 @@ class CfgVehicles {
       //----------------------------------Drones----------------------------------
         class STAF_quadcopter_ind : STAF_quadcopter {
             Side = 2;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "I_UAV_AI";
         };
 
         class STAF_hexacopter_ind : STAF_hexacopter {
             Side = 2;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "I_UAV_AI";
         };
 
         class STAF_hexacopter_ammo_ind : STAF_hexacopter_ammo {
             Side = 2;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "I_UAV_AI";
         };
 
         class STAF_hexacopter_medical_ind : STAF_hexacopter_medical {
             Side = 2;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "I_UAV_AI";
         };
 
         class STAF_hexacopter_explosive_ind : STAF_hexacopter_explosive {
             Side = 2;
+            scope = 2;
+            scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "I_UAV_AI";
         };
