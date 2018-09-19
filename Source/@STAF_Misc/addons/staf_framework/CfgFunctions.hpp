@@ -156,6 +156,7 @@ class CfgFunctions
 			class launchFlare{};
 			class repetitiveCleanup{};
 			class hidebody {};
+			class inHouse {};
 			class spawnwreck {};
 			class ambientanimationmp {};
 			class animation {};
@@ -186,6 +187,7 @@ class CfgFunctions
 			file = "\STAF_FRAMEWORK\fnc\weather";
 			class coldBreath{};
 			class coldBreathACE{};
+			class coldBreathTalking{};
 			class monitorLifeSigns{};
 			class snowFalllight{};
 			class snowFallmedium{};
