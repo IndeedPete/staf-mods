@@ -1,7 +1,7 @@
 /*
 Name: snowFall
-Author: IndeedPete
-Purpose: Creates light snow fall around unit. Also checks if unit is inside a vehicle or building / under a roof.
+Author: IndeedPete and Moony
+Purpose: Creates light snow fall around unit. Also checks if unit is inside a vehicle or building.
 ----------
 Parameters:
 _unit - OBJECT (OPTIONAL): Unit to simulate snow around. - MyUnit - DEFAULT: Player
@@ -32,7 +32,7 @@ _handle = [_unit, _condition] spawn {
 			_res
 		};
 
-		if (count(lineIntersectsObjs [_pos, [(_pos select 0),(_pos select 1),((_pos select 2) + 20)]]) == 0) then {
+		if (!(_unit call STAF_fnc_inHouse)) then {
 			if (isNull(_unit getVariable ["STAF_Snow", ObjNull])) then {
 				_snow = "#particleSource" createVehicleLocal (getPos _obj);
 				_snow setParticleParams [["\A3\data_f\ParticleEffects\Universal\smoke.p3d", 1,0,1,0],"","Billboard",1,10,[0,0,0],[0,0,-10],10,1,0,1,[0.12,0.12],[[1,1,1,0.5],[1,1,1,0.5]],[0,1],0.25,1,"","", _obj];

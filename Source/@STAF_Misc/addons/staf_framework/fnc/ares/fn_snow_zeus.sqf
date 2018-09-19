@@ -15,6 +15,17 @@
 	// Get the selected data
 	_dialogResult params ["_comboBoxResult"];
 
+	// Enable Cold Breath
+	STAF_checkvar_breath = true;
+	waitUntil {!(player getVariable ["STAF_MonitorLifeSignsRunning", false])};
+	[[player,{STAF_checkvar_breath}], "STAF_fnc_monitorLifeSigns", true, true, true] call BIS_fnc_MP;
+
+	waitUntil {!(player getVariable ["STAF_ColdBreath", false])};
+	[[player,{STAF_checkvar_breath}], "STAF_fnc_coldBreathACE", true, true, true] call BIS_fnc_MP;
+
+	waitUntil {!(player getVariable ["STAF_ColdBreathTalking", false])};
+	[[player,{STAF_checkvar_breath}], "STAF_fnc_coldBreathTalking", true, true, true] call BIS_fnc_MP;
+
 	// Off
 	if ((_dialogResult select 0) == 0) then {
 		//Change Wheater. Diable Rain and adjust the overcast + fog.
@@ -28,6 +39,7 @@
 		[999999,0] remoteExec ["setRain", 2];
 
 		STAF_checkvar_snow = false;
+		STAF_checkvar_breath = false;
 	};
 
 	// Light
@@ -44,12 +56,6 @@
 
 		// First disable the previous functions and then enable these
 		STAF_checkvar_snow = true;
-
-		waitUntil {!(player getVariable ["STAF_MonitorLifeSignsRunning", false])};
-		[[player,{STAF_checkvar_snow}], "STAF_fnc_monitorLifeSigns", true, true, true] call BIS_fnc_MP;
-
-		waitUntil {!(player getVariable ["STAF_ColdBreath", false])};
-		[[player,{STAF_checkvar_snow}], "STAF_fnc_coldBreathACE", true, true, true] call BIS_fnc_MP;
 
 		waitUntil {((isNil "STAF_snowFallRunning") OR {!(isNil "STAF_snowFallRunning") && {!STAF_snowFallRunning}})};
 		[[player,{STAF_checkvar_snow}], "STAF_fnc_snowFalllight", true, true, true] call BIS_fnc_MP;
@@ -70,12 +76,6 @@
 		// First disable the previous functions and then enable these
 		STAF_checkvar_snow = true;
 
-		waitUntil {!(player getVariable ["STAF_MonitorLifeSignsRunning", false])};
-		[[player,{STAF_checkvar_snow}], "STAF_fnc_monitorLifeSigns", true, true, true] call BIS_fnc_MP;
-
-		waitUntil {!(player getVariable ["STAF_ColdBreath", false])};
-		[[player,{STAF_checkvar_snow}], "STAF_fnc_coldBreathACE", true, true, true] call BIS_fnc_MP;
-
 		waitUntil {((isNil "STAF_snowFallRunning") OR {!(isNil "STAF_snowFallRunning") && {!STAF_snowFallRunning}})};
 		[[player,{STAF_checkvar_snow}], "STAF_fnc_snowFallmedium", true, true, true] call BIS_fnc_MP;
 	};
@@ -94,12 +94,6 @@
 
 		// First disable the previous functions and then enable these
 		STAF_checkvar_snow = true;
-
-		waitUntil {!(player getVariable ["STAF_MonitorLifeSignsRunning", false])};
-		[[player,{STAF_checkvar_snow}], "STAF_fnc_monitorLifeSigns", true, true, true] call BIS_fnc_MP;
-
-		waitUntil {!(player getVariable ["STAF_ColdBreath", false])};
-		[[player,{STAF_checkvar_snow}], "STAF_fnc_coldBreathACE", true, true, true] call BIS_fnc_MP;
 
 		waitUntil {((isNil "STAF_snowFallRunning") OR {!(isNil "STAF_snowFallRunning") && {!STAF_snowFallRunning}})};
 		[[player,{STAF_checkvar_snow}], "STAF_fnc_snowFallheavy", true, true, true] call BIS_fnc_MP;
@@ -122,12 +116,6 @@
 
 		// First disable the previous functions and then enable these
 		STAF_checkvar_snow = true;
-
-		waitUntil {!(player getVariable ["STAF_MonitorLifeSignsRunning", false])};
-		[[player,{STAF_checkvar_snow}], "STAF_fnc_monitorLifeSigns", true, true, true] call BIS_fnc_MP;
-
-		waitUntil {!(player getVariable ["STAF_ColdBreath", false])};
-		[[player,{STAF_checkvar_snow}], "STAF_fnc_coldBreathACE", true, true, true] call BIS_fnc_MP;
 
 		waitUntil {((isNil "STAF_snowFallRunning") OR {!(isNil "STAF_snowFallRunning") && {!STAF_snowFallRunning}})};
 		[[player,{STAF_checkvar_snow}], "STAF_fnc_snowFallblizzard", true, true, true] call BIS_fnc_MP;

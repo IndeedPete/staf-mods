@@ -15,7 +15,7 @@ private ["_unit", "_condition", "_handle"];
 _unit = [_this, 0, player, [ObjNull]] call BIS_fnc_param;
 _condition = [_this, 1, {true}, [{}]] call BIS_fnc_param;
 
-if (_unit getVariable ["STAF_ColdBreath", false]) exitWith {["Already running!"] call BIS_fnc_error};
+if (_unit getVariable ["STAF_ColdBreath", false]) exitWith {};
 _unit setVariable ["STAF_ColdBreath", true];
 if (!(_unit getVariable ["STAF_MonitorLifeSignsRunning", false])) then {[_unit] call STAF_fnc_monitorLifeSigns};
 
