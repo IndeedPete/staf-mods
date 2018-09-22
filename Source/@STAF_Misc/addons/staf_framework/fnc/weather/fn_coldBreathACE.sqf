@@ -17,10 +17,6 @@ private ["_unit", "_condition", "_handle"];
 _unit = [_this, 0, player, [ObjNull]] call BIS_fnc_param;
 _condition = [_this, 1, {true}, [{}]] call BIS_fnc_param;
 
-if (_unit getVariable ["STAF_ColdBreath", false]) exitWith {};
-_unit setVariable ["STAF_ColdBreath", true];
-// if (!(_unit getVariable ["STAF_MonitorLifeSignsRunning", false])) then {[_unit] call STAF_fnc_monitorLifeSigns};
-
 _handle = [_unit, _condition] spawn {
 	_unit = _this select 0;
 	_condition = _this select 1;
@@ -68,8 +64,6 @@ _handle = [_unit, _condition] spawn {
 		_delay = time + (60 / _breathing);
 		waitUntil {((time > _delay) OR (_unit call TFAR_fnc_isSpeaking))};
 	};
-
-	_unit setVariable ["STAF_ColdBreath", false];
 };
 
 _handle

@@ -13,9 +13,6 @@ Script handle.
 private ["_unit", "_handle"];
 _unit = [_this, 0, player, [ObjNull]] call BIS_fnc_param;
 
-if (_unit getVariable ["STAF_MonitorLifeSignsRunning", false]) exitWith {};
-_unit setVariable ["STAF_MonitorLifeSignsRunning", true];
-
 _handle = _unit spawn {
 	while {alive _this} do {
 		_fatigue = getFatigue _this;
@@ -47,8 +44,6 @@ _handle = _unit spawn {
 
 		sleep 0.5;
 	};
-
-	_this setVariable ["STAF_MonitorLifeSignsRunning", false];
 };
 
 _handle

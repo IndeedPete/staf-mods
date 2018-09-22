@@ -15,9 +15,6 @@ private ["_unit", "_condition", "_handle"];
 _unit = [_this, 0, player, [ObjNull]] call BIS_fnc_param;
 _condition = [_this, 1, {true}, [{}]] call BIS_fnc_param;
 
-if (_unit getVariable ["STAF_ColdBreathTalking", false]) exitWith {};
-_unit setVariable ["STAF_ColdBreathTalking", true];
-
 _handle = [_unit, _condition] spawn {
 	_unit = _this select 0;
 	_condition = _this select 1;
@@ -60,11 +57,10 @@ _handle = [_unit, _condition] spawn {
 
 			deleteVehicle _source;
 			deleteVehicle _fog;
-		};
+		} else {};
+
 		sleep 0.05
 	};
-
-	_unit setVariable ["STAF_ColdBreathTalking", false];
 };
 
 _handle
