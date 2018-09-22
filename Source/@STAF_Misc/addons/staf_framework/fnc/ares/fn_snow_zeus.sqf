@@ -22,13 +22,11 @@
 		missionNamespace setVariable ["STAF_snow_init", false];
 		_snowinit = false;
 	};
-	if (!(_snowinit)) then {
+	if (!(missionNamespace getVariable "STAF_snow_init")) then {
 		missionNamespace setVariable ["STAF_snow_init", true];
 		missionNamespace setVariable ["STAF_snow_condition", true];
-		[player,{STAF_snow_condition}] call STAF_fnc_snowFall;
+		[[player,{STAF_snow_condition}],STAF_fnc_snowFall] remoteexec ["call", -2, true];
 	};
-
-	//[player,{STAF_snow_condition}] remoteexecCall ["STAF_fnc_snowFall",-2,true];
 
   //==============================================================================================
 
@@ -43,8 +41,8 @@
 		remoteExec ["forceWeatherChange", 2];
 		[999999,0] remoteExec ["setRain", 2];
 
-		missionNamespace setVariable ["STAF_Snow_init",false];
-		missionNamespace setVariable ["STAF_Snow_condition",false];
+		missionNamespace getVariable "STAF_case_Snow";
+		missionNamespace setVariable ["STAF_case_Snow","off"];
 	};
 
   //==============================================================================================
