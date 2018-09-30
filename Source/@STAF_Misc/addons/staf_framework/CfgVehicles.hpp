@@ -184,38 +184,6 @@ class CfgVehicles
 		};
 	};
 
-	/*class STAF_Module_HideBody_F: Module_F
-	{
-		category = "STAF";
-		displayName = "Hide Dead Bodies";
-		function = "STAF_fnc_hidebody";
-		functionPriority = 10;
-		isDisposable = 0;
-		is3DEN = 0;
-		isGlobal = 1;
-		isTriggerActivated = 0;
-		scope = 2;
-
-		class ModuleDescription: ModuleDescription
-		{
-			description = "This applies the ""Hide Body"" action to all dead units aside from players.";
-			//sync[] = {"LocationArea_F"};
-
-			class LocationArea_F
-			{
-				description[] =
-				{
-					"Synchronise any object to this module."
-				};
-				position = 0;
-				direction = 0;
-				optional = 0;
-				duplicate = 0;
-				synced[] = {"AnyStaticObject", "AnyVehicle"};
-			};
-		};
-	};*/
-
 	class STAF_Module_SpawnWreck_F: Module_F
 	{
 		category = "STAF";

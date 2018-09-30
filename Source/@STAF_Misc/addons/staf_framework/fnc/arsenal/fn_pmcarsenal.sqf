@@ -203,7 +203,6 @@ _items = [
             "ACE_wirecutter",
             "ACE_Clacker",
             "ACE_Flashlight_XL50",
-            "ACE_EntrenchingTool",
             "ACE_DefusalKit",
             "ACE_salineIV",
             "ACE_salineIV_500",

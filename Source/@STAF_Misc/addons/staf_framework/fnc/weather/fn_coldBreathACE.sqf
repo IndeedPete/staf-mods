@@ -4,8 +4,8 @@ Author: IndeedPete
 Purpose: Simulates cold breath based on given life signs. Modification of a script by Ruebe.
 ----------
 Parameters:
-_unit - OBJECT (OPTIONAL): Unit to simulate cold breath on. - MyUnit - DEFAULT: Player
-_condition - CODE (OPTIONAL): While condition that is being checked in addition to (alive _unit). - {SomeVariable > 0} - DEFAULT: {true}
+player - OBJECT (OPTIONAL): Unit to simulate cold breath on. - MyUnit - DEFAULT: Player
+_condition - CODE (OPTIONAL): While condition that is being checked in addition to (alive player). - {SomeVariable > 0} - DEFAULT: {true}
 
 Returns:
 Script handle.
@@ -13,24 +13,22 @@ Script handle.
 
 #include "\z\ace\addons\medical\script_component.hpp"
 
-private ["_unit", "_condition", "_handle"];
-_unit = [_this, 0, player, [ObjNull]] call BIS_fnc_param;
-_condition = [_this, 1, {true}, [{}]] call BIS_fnc_param;
+if (!hasInterface) exitWith {};
 
-_handle = [_unit, _condition] spawn {
-	_unit = _this select 0;
-	_condition = _this select 1;
+private ["_condition", "_handle"];
+_condition = [_this, 0, {true}, [{}]] call BIS_fnc_param;
+
+_handle = [_condition] spawn {
+	_condition = _this select 0;
 	_strength = 0.1;
 
-	sleep (random 3);
-
-	while {(alive _unit) && {!(isNull _unit)} && {call _condition}} do {
-		if (!(simulationEnabled _unit) OR {(vehicle _unit) != _unit} OR {underwater _unit}) then {
-			waitUntil {sleep 5; (simulationEnabled _unit) && {(vehicle _unit) == _unit} && {!(underwater _unit)}};
+	while {(alive player) && {!(isNull player)} && {call _condition}} do {
+		if (!(simulationEnabled player) OR {(vehicle player) != player} OR {underwater player}) then {
+			waitUntil {sleep 5; (simulationEnabled player) && {(vehicle player) == player} && {!(underwater player)}};
 			sleep (random 3);
 		};
 
-		_source = "logic" createVehicleLocal (getPos _unit);
+		_source = "logic" createVehicleLocal (getPos player);
 		_fog = "#particlesource" createVehicleLocal getPos _source;
 		_fog setParticleParams [
 			["\A3\data_f\ParticleEffects\Universal\Universal", 16, 12, 13,0],
@@ -52,17 +50,17 @@ _handle = [_unit, _condition] spawn {
 		];
 		_fog setParticleRandom [2, [0, 0, 0], [0.25, 0.25, 0.25], 0, 0.5, [0, 0, 0, 0.1], 0, 0, 10];
 		_fog setDropInterval 0.001;
-		_source attachTo [_unit, [0,0.15,0], "neck"];
+		_source attachTo [player, [0,0.15,0], "neck"];
 
-		waitUntil {!(_unit call TFAR_fnc_isSpeaking)};
+		//waitUntil {!(player call TFAR_fnc_isSpeaking)};
 		sleep 0.5;
 
 		deleteVehicle _source;
 		deleteVehicle _fog;
 
-		_breathing = ((_unit getVariable [QGVAR(heartRate), 80]) * 0.5625) - 30;
+		_breathing = ((player getVariable [QGVAR(heartRate), 80]) * 0.5625) - 30;
 		_delay = time + (60 / _breathing);
-		waitUntil {((time > _delay) OR (_unit call TFAR_fnc_isSpeaking))};
+		waitUntil {((time > _delay) /*OR (player call TFAR_fnc_isSpeaking)*/)};
 	};
 };
 
