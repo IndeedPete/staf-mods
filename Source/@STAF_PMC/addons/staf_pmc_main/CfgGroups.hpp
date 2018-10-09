@@ -1,7 +1,7 @@
 class CfgGroups {
     class WEST {
         class STAF_PMC {
-            name = "Security Tactics and Assault Force (STAF)";
+            name = "STAF Faction";
             class Infantry {
                 name = "Infantry";
                 class STAF_PMC_Sentry {
@@ -310,7 +310,7 @@ class CfgGroups {
     };
     class EAST {
         class STAF_PMC_OPF {
-            name = "Security Tactics and Assault Force (STAF)";
+            name = "STAF Faction";
             class Infantry {
                 name = "Infantry";
                 class STAF_PMC_OPF_Sentry {
@@ -619,7 +619,7 @@ class CfgGroups {
     };
     class INDEP {
         class STAF_PMC_IND {
-            name = "Security Tactics and Assault Force (STAF)";
+            name = "STAF Faction";
             class Infantry {
                 name = "Infantry";
                 class STAF_PMC_IND_Sentry {

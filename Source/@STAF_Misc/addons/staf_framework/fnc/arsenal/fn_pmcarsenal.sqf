@@ -70,7 +70,8 @@ _weapons = [
             "rhs_weap_M136_hp",
             "rhs_weap_t5000",
             "ACE_VMM3",
-            "STAF_Xnooz_AppareilPhoto"
+            "STAF_Xnooz_AppareilPhoto",
+            "KA_TL_122_flashlight"
 ];
 
 _backpacks = [
