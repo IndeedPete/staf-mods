@@ -2,3 +2,4 @@
 #include "CfgPatches.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
+#include "ACE_Medical_Treatments.hpp"

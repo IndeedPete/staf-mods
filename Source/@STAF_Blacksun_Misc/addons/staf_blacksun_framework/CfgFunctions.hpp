@@ -2,7 +2,6 @@ class CfgFunctions
 {
 	class STAF_Horror
 	{
-
 		class Ares
 		{
 			file = "\staf_blacksun_framework\fnc\ares";
@@ -22,6 +21,13 @@ class CfgFunctions
 				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
 				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
 			};
+		};
+		class Zombies
+		{
+			file = "\staf_blacksun_framework\fnc\zombies";
+			class useantiviruscure{};
+			class useantiviruspills{};
+			class testforinfection{};
 		};
 	};
 };

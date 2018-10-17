@@ -16,4 +16,11 @@ class CfgVehicles {
             MACRO_ADDITEM(STAF_geiger_counter,1);
         };
 	};
+
+  class STAF_Item_TestingKit: STAF_Item_geiger_counter {
+        displayName = "Infection Testing Kit";
+        class TransportItems {
+            MACRO_ADDITEM(STAF_TestingKit,1);
+        };
+	};
 };

@@ -15,4 +15,16 @@ class CfgWeapons
             mass = 1;
         };
 	};
+
+	class STAF_TestingKit: STAF_geiger_counter
+	{
+			displayName = "Infection Testing Kit";
+			descriptionShort = "A kit to quickly test for viruses.";
+			picture = "\staf_blacksun_framework\img\testingkit.paa";
+			model = "\A3\Structures_F_EPA\Items\Medical\Antibiotic_F.p3d";
+			class ItemInfo: CBA_MiscItem_ItemInfo
+			{
+					mass = 2;
+			};
+};
 };
