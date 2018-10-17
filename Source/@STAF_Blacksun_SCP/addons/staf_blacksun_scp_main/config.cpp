@@ -1,0 +1,5 @@
+#include "CfgPatches.hpp"
+#include "CfgFactionClasses.hpp"
+#include "CfgFunctions.hpp"
+#include "CfgGroups.hpp"
+#include "CfgEditorSubcategories.hpp"
