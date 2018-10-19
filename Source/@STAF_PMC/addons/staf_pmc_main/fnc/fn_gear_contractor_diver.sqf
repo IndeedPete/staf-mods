@@ -2,9 +2,11 @@ _unit = _this select 0;
 
 removeUniform _unit;
 removeHeadgear _unit;
-removeVest _unit;
+removeGoggles _unit;
+removevest _unit;
 removeBackpack _unit;
 removeAllWeapons _unit;
+removeAllItems _unit;
 
 _uniform = [
               "U_B_survival_uniform",
@@ -129,60 +131,60 @@ _unit addbackpack _backpack;
 
 //Ammo
 if (_weapon == "STAF_rifle_scar_blk_xps") then {
-  for "_i" from 1 to 10 do {_unit addMagazine "30Rnd_556x45_Stanag";};
+  for "_i" from 1 to 10 do {_unit addItem "30Rnd_556x45_Stanag";};
 };
 if (_weapon == "STAF_rifle_scar_tan_xps") then {
-  for "_i" from 1 to 10 do {_unit addMagazine "30Rnd_556x45_Stanag";};
+  for "_i" from 1 to 10 do {_unit addItem "30Rnd_556x45_Stanag";};
 };
 if (_weapon == "STAF_rifle_G36C") then {
-  for "_i" from 1 to 8 do {_unit addMagazine "hlc_30rnd_556x45_EPR_G36";};
+  for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
 };
 if (_weapon == "STAF_rifle_G36CV") then {
-  for "_i" from 1 to 8 do {_unit addMagazine "hlc_30rnd_556x45_EPR_G36";};
+  for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
 };
 if (_weapon == "STAF_rifle_G36CTac") then {
-  for "_i" from 1 to 8 do {_unit addMagazine "hlc_30rnd_556x45_EPR_G36";};
+  for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
 };
 if (_weapon == "STAF_rifle_G36KA1KSK") then {
-  for "_i" from 1 to 8 do {_unit addMagazine "hlc_30rnd_556x45_EPR_G36";};
+  for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
 };
 if (_weapon == "STAF_rifle_G36KV") then {
-  for "_i" from 1 to 8 do {_unit addMagazine "hlc_30rnd_556x45_EPR_G36";};
+  for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
 };
 if (_weapon == "STAF_rifle_g36KTac") then {
-  for "_i" from 1 to 8 do {_unit addMagazine "hlc_30rnd_556x45_EPR_G36";};
+  for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
 };
 if (_weapon == "STAF_rifle_G36V") then {
-  for "_i" from 1 to 8 do {_unit addMagazine "hlc_30rnd_556x45_EPR_G36";};
+  for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
 };
 if (_weapon == "STAF_rifle_G36TAC") then {
-  for "_i" from 1 to 8 do {_unit addMagazine "hlc_30rnd_556x45_EPR_G36";};
+  for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
 };
 if (_weapon == "STAF_rifle_G36A1") then {
-  for "_i" from 1 to 8 do {_unit addMagazine "hlc_30rnd_556x45_EPR_G36";};
+  for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
 };
 if (_weapon == "STAF_rifle_G36E1") then {
-  for "_i" from 1 to 8 do {_unit addMagazine "hlc_30rnd_556x45_EPR_G36";};
+  for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
 };
 if (_weapon == "STAF_rifle_G36KA1") then {
-  for "_i" from 1 to 8 do {_unit addMagazine "hlc_30rnd_556x45_EPR_G36";};
+  for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
 };
 if (_weapon == "STAF_rifle_G36KE1") then {
-  for "_i" from 1 to 8 do {_unit addMagazine "hlc_30rnd_556x45_EPR_G36";};
+  for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
 };
 if (_weapon == "STAF_rifle_G36MLIC") then {
-  for "_i" from 1 to 8 do {_unit addMagazine "30Rnd_65x39_caseless_mag";};
+  for "_i" from 1 to 8 do {_unit addItem "30Rnd_65x39_caseless_mag";};
 };
 if (_weapon == "STAF_rifle_G36CMLIC") then {
-  for "_i" from 1 to 8 do {_unit addMagazine "30Rnd_65x39_caseless_mag";};
+  for "_i" from 1 to 8 do {_unit addItem "30Rnd_65x39_caseless_mag";};
 };
 if (_weapon == "STAF_rifle_G36KMLIC") then {
-  for "_i" from 1 to 8 do {_unit addMagazine "30Rnd_65x39_caseless_mag";};
+  for "_i" from 1 to 8 do {_unit addItem "30Rnd_65x39_caseless_mag";};
 };
 if (_weapon == "STAF_rifle_ak12") then {
-  for "_i" from 1 to 7 do {_unit addMagazine "30Rnd_762x39_Mag_F";};
+  for "_i" from 1 to 7 do {_unit addItem "30Rnd_762x39_Mag_F";};
 };
-for "_i" from 1 to 2 do {_unit addMagazine "KA_17Rnd_9x19_Mag";};
+for "_i" from 1 to 2 do {_unit addItem "KA_17Rnd_9x19_Mag";};
 
 //Addweapons
 _unit addweapon _weapon;
@@ -190,20 +192,20 @@ _unit selectWeapon _weapon;
 _unit addweapon "STAF_pistol_glock18";
 
 //Items
-for "_i" from 1 to 3 do {_unit addItemToBackpack "ACE_fieldDressing";};
-for "_i" from 1 to 3 do {_unit addItemToBackpack "ACE_elasticBandage";};
-for "_i" from 1 to 3 do {_unit addItemToBackpack "ACE_quikclot";};
-for "_i" from 1 to 3 do {_unit addItemToBackpack "ACE_packingBandage";};
-for "_i" from 1 to 2 do {_unit addItemToBackpack "ACE_tourniquet";};
-for "_i" from 1 to 2 do {_unit addItemToBackpack "ACE_CableTie";};
-for "_i" from 1 to 2 do {_unit addMagazine "HandGrenade";};
-for "_i" from 1 to 2 do {_unit addMagazine "SmokeShell";};
-_unit addItemToBackpack "ACE_epinephrine";
-_unit addItemToBackpack "ACE_morphine";
-_unit addItemToBackpack "ACE_EarPlugs";
-_unit addItemToBackpack "ACE_Flashlight_XL50";
-_unit addMagazine "SmokeShellGreen";
-_unit addMagazine "SmokeShellRed";
+for "_i" from 1 to 3 do {_unit addItem "ACE_fieldDressing";};
+for "_i" from 1 to 3 do {_unit addItem "ACE_elasticBandage";};
+for "_i" from 1 to 3 do {_unit addItem "ACE_quikclot";};
+for "_i" from 1 to 3 do {_unit addItem "ACE_packingBandage";};
+for "_i" from 1 to 2 do {_unit addItem "ACE_tourniquet";};
+for "_i" from 1 to 2 do {_unit addItem "ACE_CableTie";};
+for "_i" from 1 to 2 do {_unit addItem "HandGrenade";};
+for "_i" from 1 to 2 do {_unit addItem "SmokeShell";};
+_unit addItem "ACE_epinephrine";
+_unit addItem "ACE_morphine";
+_unit addItem "ACE_EarPlugs";
+_unit addItem "ACE_Flashlight_XL50";
+_unit addItem "SmokeShellGreen";
+_unit addItem "SmokeShellRed";
 
 
 //Save loadout in Eden
