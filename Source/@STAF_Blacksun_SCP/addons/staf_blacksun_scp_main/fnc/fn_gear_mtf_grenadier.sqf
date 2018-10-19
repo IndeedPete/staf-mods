@@ -38,6 +38,7 @@ _unit addItem "STAF_geiger_counter";
 
 //Ammo
 if (_weapon == "rhs_weap_vhsd2_ct15x") then {
+  for "_i" from 1 to 10 do {_unit addItem "rhsgref_30rnd_556x45_vhs2_t";};
   for "_i" from 1 to 15 do {_unit addItem "1Rnd_HE_Grenade_shell";};
   for "_i" from 1 to 3 do {_unit addItem "SmokeShell";};
   for "_i" from 1 to 5 do {_unit addItem "1Rnd_Smoke_Grenade_shell";};

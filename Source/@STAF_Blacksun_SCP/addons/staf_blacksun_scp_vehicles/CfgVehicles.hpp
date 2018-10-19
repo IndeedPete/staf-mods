@@ -240,7 +240,7 @@ class CfgVehicles {
 
     //----------------------------------OPFOR---------------------------------
     class STAF_Blacksun_MTF_MRAP_ind : STAF_Blacksun_MTF_MRAP {
-            Side = 0;
+            Side = 2;
             scope = 2;
             scopeCurator = 2;
             faction = "staf_blacksun_scp_ind";
@@ -248,7 +248,7 @@ class CfgVehicles {
     };
 
     class STAF_Blacksun_MTF_Truck_ind : STAF_Blacksun_MTF_Truck {
-            Side = 0;
+            Side = 2;
             scope = 2;
             scopeCurator = 2;
             faction = "staf_blacksun_scp_ind";
@@ -256,7 +256,7 @@ class CfgVehicles {
     };
 
     class STAF_Blacksun_MTF_Truck_Covered_ind : STAF_Blacksun_MTF_Truck_Covered {
-            Side = 0;
+            Side = 2;
             scope = 2;
             scopeCurator = 2;
             faction = "staf_blacksun_scp_ind";
@@ -264,7 +264,7 @@ class CfgVehicles {
     };
 
     class STAF_Blacksun_MTF_Quad_ind : STAF_Blacksun_MTF_Quad {
-            Side = 0;
+            Side = 2;
             scope = 2;
             scopeCurator = 2;
             faction = "staf_blacksun_scp_ind";
@@ -272,7 +272,7 @@ class CfgVehicles {
     };
 
     class STAF_Blacksun_Orca_ind : STAF_Blacksun_Orca {
-            Side = 0;
+            Side = 2;
             scope = 2;
             scopeCurator = 2;
             faction = "staf_blacksun_scp_ind";
@@ -280,7 +280,7 @@ class CfgVehicles {
     };
 
     class STAF_Blacksun_Taru_ind : STAF_Blacksun_Taru {
-            Side = 0;
+            Side = 2;
             scope = 2;
             scopeCurator = 2;
             faction = "staf_blacksun_scp_ind";
@@ -288,7 +288,7 @@ class CfgVehicles {
     };
 
     class STAF_Blacksun_Merlin_ind : STAF_Blacksun_Merlin {
-            Side = 0;
+            Side = 2;
             scope = 2;
             scopeCurator = 2;
             faction = "staf_blacksun_scp_ind";
@@ -296,7 +296,7 @@ class CfgVehicles {
     };
 
     class STAF_Blacksun_RHIB_ind : STAF_Blacksun_RHIB {
-            Side = 0;
+            Side = 2;
             scope = 2;
             scopeCurator = 2;
             faction = "staf_blacksun_scp_ind";
@@ -304,7 +304,7 @@ class CfgVehicles {
     };
 
     class STAF_Blacksun_Rubber_ind : STAF_Blacksun_Rubber {
-            Side = 0;
+            Side = 2;
             scope = 2;
             scopeCurator = 2;
             faction = "staf_blacksun_scp_ind";

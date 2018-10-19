@@ -20,28 +20,28 @@ _unit addGoggles _facewear;
 _weapon = ["rhs_weap_vhsd2_ct15x"] call BIS_fnc_selectRandom;
 
 //Items
-for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_elasticBandage";};
-for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_quikclot";};
-for "_i" from 1 to 2 do {_unit addItemToUniform "ACE_CableTie";};
-for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_packingBandage";};
-for "_i" from 1 to 3 do {_unit addItemToUniform "SmokeShell";};
-_unit addItemToVest "ACE_epinephrine";
-_unit addItemToVest "ACE_morphine";
-_unit addItemToVest "ACE_tourniquet";
-_unit addItemToVest "MiniGrenade";
+for "_i" from 1 to 3 do {_unit addItem "ACE_elasticBandage";};
+for "_i" from 1 to 3 do {_unit addItem "ACE_quikclot";};
+for "_i" from 1 to 2 do {_unit addItem "ACE_CableTie";};
+for "_i" from 1 to 3 do {_unit addItem "ACE_packingBandage";};
+for "_i" from 1 to 3 do {_unit addItem "SmokeShell";};
+_unit addItem "ACE_epinephrine";
+_unit addItem "ACE_morphine";
+_unit addItem "ACE_tourniquet";
+_unit addItem "MiniGrenade";
 
-for "_i" from 1 to 3 do {_unit addItemToVest "RyanZombiesAntiVirusTemporary_Item";};
-for "_i" from 1 to 3 do {_unit addItemToVest "ACE_M84";};
-_unit addItemToVest "STAF_TestingKit";
-_unit addItemToVest "STAF_geiger_counter";
+for "_i" from 1 to 3 do {_unit addItem "RyanZombiesAntiVirusTemporary_Item";};
+for "_i" from 1 to 3 do {_unit addItem "ACE_M84";};
+_unit addItem "STAF_TestingKit";
+_unit addItem "STAF_geiger_counter";
 
 //Ammo
 if (_weapon == "rhs_weap_vhsd2_ct15x") then {
-  for "_i" from 1 to 10 do {_unit addMagazine "rhsgref_30rnd_556x45_vhs2_t";};
+  for "_i" from 1 to 10 do {_unit addItem "rhsgref_30rnd_556x45_vhs2_t";};
   _unit addPrimaryWeaponItem "acc_flashlight";
 };
 
-for "_i" from 1 to 3 do {_unit addMagazine "hlc_13Rnd_9x19_B_P228";};
+for "_i" from 1 to 3 do {_unit addItem "hlc_13Rnd_9x19_B_P228";};
 _unit addHandgunItem "hlc_acc_DBALPL_FL";
 
 //Addweapons

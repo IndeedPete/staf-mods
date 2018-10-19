@@ -24,20 +24,20 @@ _weapon = ["SMG_03_TR_black"] call BIS_fnc_selectRandom;
 for "_i" from 1 to 2 do {_unit addItem "ACE_M84";};
 _unit addItem "SmokeShell";
 
-for "_i" from 1 to 20 do {_unit addItemToBackpack "ACE_elasticBandage";};
-for "_i" from 1 to 15 do {_unit addItemToBackpack "ACE_quikclot";};
-for "_i" from 1 to 15 do {_unit addItemToBackpack "ACE_packingBandage";};
-for "_i" from 1 to 2 do {_unit addItemToBackpack "ACE_bodyBag";};
-for "_i" from 1 to 3 do {_unit addItemToBackpack "ACE_epinephrine";};
-for "_i" from 1 to 3 do {_unit addItemToBackpack "RyanZombiesAntiVirusTemporary_Item";};
-for "_i" from 1 to 3 do {_unit addItemToBackpack "ACE_morphine";};
-for "_i" from 1 to 3 do {_unit addItemToBackpack "ACE_tourniquet";};
-for "_i" from 1 to 3 do {_unit addItemToBackpack "ACE_salineIV_250";};
-for "_i" from 1 to 2 do {_unit addItemToBackpack "ACE_salineIV_500";};
-_unit addItemToBackpack "ACE_EntrenchingTool";
-_unit addItemToBackpack "adv_aceCPR_AED";
-_unit addItemToBackpack "STAF_TestingKit";
-_unit addItemToBackpack "adv_aceSplint_splint";
+for "_i" from 1 to 20 do {_unit addItem "ACE_elasticBandage";};
+for "_i" from 1 to 15 do {_unit addItem "ACE_quikclot";};
+for "_i" from 1 to 15 do {_unit addItem "ACE_packingBandage";};
+for "_i" from 1 to 2 do {_unit addItem "ACE_bodyBag";};
+for "_i" from 1 to 3 do {_unit addItem "ACE_epinephrine";};
+for "_i" from 1 to 3 do {_unit addItem "RyanZombiesAntiVirusTemporary_Item";};
+for "_i" from 1 to 3 do {_unit addItem "ACE_morphine";};
+for "_i" from 1 to 3 do {_unit addItem "ACE_tourniquet";};
+for "_i" from 1 to 3 do {_unit addItem "ACE_salineIV_250";};
+for "_i" from 1 to 2 do {_unit addItem "ACE_salineIV_500";};
+_unit addItem "ACE_EntrenchingTool";
+_unit addItem "adv_aceCPR_AED";
+_unit addItem "STAF_TestingKit";
+_unit addItem "adv_aceSplint_splint";
 
 //Ammo
 if (_weapon == "SMG_03_TR_black") then {

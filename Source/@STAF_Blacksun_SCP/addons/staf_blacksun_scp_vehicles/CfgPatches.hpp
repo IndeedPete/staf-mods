@@ -32,7 +32,7 @@ class CfgPatches {
         "STAF_Blacksun_Rubber_ind"
       };
       weapons[] = {};
-      requiredAddons[] = {};
+      requiredAddons[] = {"STAF_blacksun_scp_main"};
       requiredVersion = 1.62;
       author = "STAF";
       url = "http://www.stafclan.com";

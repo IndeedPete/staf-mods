@@ -35,7 +35,7 @@ class CfgPatches {
         "STAF_Blacksun_MTF_Pilot_ind"
       };
       weapons[] = {};
-      requiredAddons[] = {};
+      requiredAddons[] = {"STAF_blacksun_scp_main"};
       requiredVersion = 1.62;
       author = "STAF";
       url = "http://www.stafclan.com";
