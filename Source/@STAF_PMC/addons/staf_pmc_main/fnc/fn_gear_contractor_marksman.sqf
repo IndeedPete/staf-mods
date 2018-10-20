@@ -935,6 +935,13 @@ _unit addItem "ACE_Flashlight_XL50";
 _unit addItem "SmokeShellGreen";
 _unit addItem "SmokeShellRed";
 
+_unit linkItem "ItemMap";
+_unit linkItem "ItemGPS";
+_unit linkItem "ItemCompass";
+_unit linkItem "ItemWatch";
+_unit linkItem "TFAR_anprc152";
+
+_unit switchmove "";
 
 //Save loadout in Eden
 save3DENInventory [_unit];

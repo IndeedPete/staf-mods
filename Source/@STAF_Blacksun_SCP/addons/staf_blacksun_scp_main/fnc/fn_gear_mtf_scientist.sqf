@@ -57,5 +57,7 @@ _unit linkItem "ItemCompass";
 _unit linkItem "ItemWatch";
 [_unit, "scp_foundation"] call BIS_fnc_setUnitInsignia;
 
+_unit switchmove "";
+
 //Save loadout in Eden
 save3DENInventory [_unit];

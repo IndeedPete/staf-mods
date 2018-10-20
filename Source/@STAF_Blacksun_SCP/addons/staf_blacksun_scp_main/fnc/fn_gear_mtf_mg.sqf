@@ -1,4 +1,9 @@
-_unit = _this select 0;
+
+
+_unit switchmove "";
+
+//Save loadout in Eden
+save3DENInventory [_unit];_unit = _this select 0;
 
 removeUniform _unit;
 removeHeadgear _unit;
@@ -56,6 +61,8 @@ _unit linkItem "ItemGPS";
 _unit linkItem "ItemCompass";
 _unit linkItem "ItemWatch";
 [_unit, "scp_foundation"] call BIS_fnc_setUnitInsignia;
+
+_unit switchmove "";
 
 //Save loadout in Eden
 save3DENInventory [_unit];

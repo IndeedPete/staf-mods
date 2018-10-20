@@ -972,6 +972,13 @@ for "_i" from 1 to 2 do {_unit addItem "SmokeShellRed";};
 _unit addItem "ACE_EarPlugs";
 _unit addItem "ACE_Flashlight_XL50";
 
+_unit linkItem "ItemMap";
+_unit linkItem "ItemGPS";
+_unit linkItem "ItemCompass";
+_unit linkItem "ItemWatch";
+_unit linkItem "TFAR_anprc152";
+
+_unit switchmove "";
 
 //Save loadout in Eden
 save3DENInventory [_unit];
