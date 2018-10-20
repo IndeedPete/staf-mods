@@ -105,6 +105,7 @@ class CfgVehicles {
         faction = "staf_blacksun_scp";
         editorSubcategory = "EdSubcat_blacksun_mtf_heli";
         crew = "STAF_Blacksun_MTF_Pilot_no_mask";
+        gunnerType = "STAF_Blacksun_MTF_Pilot_no_mask";
         editorPreview = "\staf_blacksun_scp_main\eden\STAF_Blacksun_Taru.jpg";
 
         class EventHandlers: Eventhandlers {
@@ -258,6 +259,7 @@ class CfgVehicles {
         faction = "staf_blacksun_scp";
         editorSubcategory = "EdSubcat_blacksun_mtf_cbrn_heli";
         crew = "STAF_Blacksun_MTF_CBRN_Pilot";
+        gunnerType = "STAF_Blacksun_MTF_CBRN_Pilot";
         editorPreview = "\staf_blacksun_scp_main\eden\STAF_Blacksun_Taru.jpg";
 
         class EventHandlers: Eventhandlers {
@@ -356,7 +358,7 @@ class CfgVehicles {
             scope = 2;
             scopeCurator = 2;
             faction = "staf_blacksun_scp_opf";
-            crew = "STAF_Blacksun_MTF_Pilot_no_mask";
+            crew = "STAF_Blacksun_MTF_Pilot_no_mask_opf";
     };
 
     class STAF_Blacksun_MTF_Taru_opf : STAF_Blacksun_MTF_Taru {
@@ -364,7 +366,8 @@ class CfgVehicles {
             scope = 2;
             scopeCurator = 2;
             faction = "staf_blacksun_scp_opf";
-            crew = "STAF_Blacksun_MTF_Pilot_no_mask";
+            crew = "STAF_Blacksun_MTF_Pilot_no_mask_opf";
+            gunnerType = "STAF_Blacksun_MTF_Pilot_no_mask_opf";
     };
 
     class STAF_Blacksun_MTF_Merlin_opf : STAF_Blacksun_MTF_Merlin {
@@ -372,7 +375,7 @@ class CfgVehicles {
             scope = 2;
             scopeCurator = 2;
             faction = "staf_blacksun_scp_opf";
-            crew = "STAF_Blacksun_MTF_Pilot_no_mask";
+            crew = "STAF_Blacksun_MTF_Pilot_no_mask_opf";
     };
 
     class STAF_Blacksun_MTF_RHIB_opf : STAF_Blacksun_MTF_RHIB {
@@ -437,6 +440,7 @@ class CfgVehicles {
             scopeCurator = 2;
             faction = "staf_blacksun_scp_opf";
             crew = "STAF_Blacksun_MTF_CBRN_Pilot_opf";
+            gunnerType = "STAF_Blacksun_MTF_CBRN_Pilot";
     };
 
     class STAF_Blacksun_MTF_CBRN_Merlin_opf : STAF_Blacksun_MTF_CBRN_Merlin {
@@ -509,7 +513,8 @@ class CfgVehicles {
             scope = 2;
             scopeCurator = 2;
             faction = "staf_blacksun_scp_ind";
-            crew = "STAF_Blacksun_MTF_Pilot_no_mask";
+            crew = "STAF_Blacksun_MTF_Pilot_no_mask_ind";
+            gunnerType = "STAF_Blacksun_MTF_Pilot_no_mask_ind";
     };
 
     class STAF_Blacksun_MTF_Merlin_ind : STAF_Blacksun_MTF_Merlin {
@@ -537,7 +542,7 @@ class CfgVehicles {
     };
 
     class STAF_Blacksun_MTF_CBRN_MRAP_ind : STAF_Blacksun_MTF_CBRN_MRAP {
-            Side = 0;
+            Side = 2;
             scope = 2;
             scopeCurator = 2;
             faction = "staf_blacksun_scp_ind";
@@ -545,7 +550,7 @@ class CfgVehicles {
     };
 
     class STAF_Blacksun_MTF_CBRN_Truck_ind : STAF_Blacksun_MTF_CBRN_Truck {
-            Side = 0;
+            Side = 2;
             scope = 2;
             scopeCurator = 2;
             faction = "staf_blacksun_scp_ind";
@@ -553,7 +558,7 @@ class CfgVehicles {
     };
 
     class STAF_Blacksun_MTF_CBRN_Truck_Covered_ind : STAF_Blacksun_MTF_CBRN_Truck_Covered {
-            Side = 0;
+            Side = 2;
             scope = 2;
             scopeCurator = 2;
             faction = "staf_blacksun_scp_ind";
@@ -561,7 +566,7 @@ class CfgVehicles {
     };
 
     class STAF_Blacksun_MTF_CBRN_Quad_ind : STAF_Blacksun_MTF_CBRN_Quad {
-            Side = 0;
+            Side = 2;
             scope = 2;
             scopeCurator = 2;
             faction = "staf_blacksun_scp_ind";
@@ -569,7 +574,7 @@ class CfgVehicles {
     };
 
     class STAF_Blacksun_MTF_CBRN_Orca_ind : STAF_Blacksun_MTF_CBRN_Orca {
-            Side = 0;
+            Side = 2;
             scope = 2;
             scopeCurator = 2;
             faction = "staf_blacksun_scp_ind";
@@ -577,15 +582,16 @@ class CfgVehicles {
     };
 
     class STAF_Blacksun_MTF_CBRN_Taru_ind : STAF_Blacksun_MTF_CBRN_Taru {
-            Side = 0;
+            Side = 2;
             scope = 2;
             scopeCurator = 2;
             faction = "staf_blacksun_scp_ind";
             crew = "STAF_Blacksun_MTF_CBRN_Pilot_ind";
+            gunnerType = "STAF_Blacksun_MTF_CBRN_Pilot_ind";
     };
 
     class STAF_Blacksun_MTF_CBRN_Merlin_ind : STAF_Blacksun_MTF_CBRN_Merlin {
-            Side = 0;
+            Side = 2;
             scope = 2;
             scopeCurator = 2;
             faction = "staf_blacksun_scp_ind";
@@ -593,7 +599,7 @@ class CfgVehicles {
     };
 
     class STAF_Blacksun_MTF_CBRN_RHIB_ind : STAF_Blacksun_MTF_CBRN_RHIB {
-            Side = 0;
+            Side = 2;
             scope = 2;
             scopeCurator = 2;
             faction = "staf_blacksun_scp_ind";
@@ -601,7 +607,7 @@ class CfgVehicles {
     };
 
     class STAF_Blacksun_MTF_CBRN_Rubber_ind : STAF_Blacksun_MTF_CBRN_Rubber {
-            Side = 0;
+            Side = 2;
             scope = 2;
             scopeCurator = 2;
             faction = "staf_blacksun_scp_ind";

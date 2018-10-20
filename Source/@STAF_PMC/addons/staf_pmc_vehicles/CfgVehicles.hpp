@@ -112,6 +112,7 @@ class CfgVehicles {
             side = 1;
             faction = "STAF_PMC";
             crew = "STAF_contractor_heli_pilot";
+            gunnerType = "STAF_contractor_heli_pilot";
             editorPreview = "\staf_pmc_main\eden\STAF_md500.jpg";
             animationList[] = {"AddDoors",0,"AddBenches",1,"AddBackseats",1,"BenchL_Up_instant",0,"BenchR_Up_instant",0,"AddHoldingFrame",1,"AddTread_Short",0,"AddTread",1};
 
@@ -559,6 +560,7 @@ class CfgVehicles {
             scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_heli_pilot_opf";
+            gunnerType = "STAF_contractor_heli_pilot_opf";
         };
 
       //----------------------------------Naval-----------------------------------
@@ -737,6 +739,7 @@ class CfgVehicles {
             scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_heli_pilot_ind";
+            gunnerType = "STAF_contractor_heli_pilot_ind";
         };
 
       //----------------------------------Naval-----------------------------------

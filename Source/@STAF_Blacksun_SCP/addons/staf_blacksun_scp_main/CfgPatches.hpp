@@ -2,7 +2,7 @@ class CfgPatches {
     class STAF_blacksun_scp_main {
       units[] = {};
       weapons[] = {};
-      requiredAddons[] = {"STAF_blacksun_scp_infantry","STAF_blacksun_scp_vehicles"};
+      requiredAddons[] = {};
       requiredVersion = 1.62;
       author = "STAF";
       url = "http://www.stafclan.com";
