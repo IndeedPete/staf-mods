@@ -225,7 +225,7 @@ class CfgVehicles {
 
             class EventHandlers: Eventhandlers {
               class STAF {
-                init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_mrapequipment.sqf"";";
+                init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_mrapequipment.sqf"";[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_mrapequipment.sqf"";";
                 class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
               };
             };
