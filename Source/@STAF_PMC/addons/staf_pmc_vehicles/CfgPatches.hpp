@@ -5,6 +5,7 @@ class CfgPatches {
       units[] = {
         "STAF_md500",
         //"STAF_md500_defender",
+        "STAF_uh60m",
         "STAF_hexacopter",
         "STAF_hexacopter_ammo",
         "STAF_hexacopter_medical",
