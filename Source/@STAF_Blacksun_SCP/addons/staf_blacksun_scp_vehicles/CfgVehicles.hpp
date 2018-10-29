@@ -88,7 +88,7 @@ class CfgVehicles {
         faction = "staf_blacksun_scp";
         editorSubcategory = "EdSubcat_blacksun_mtf_heli";
         crew = "STAF_Blacksun_MTF_Pilot_no_mask";
-        editorPreview = "\staf_blacksun_scp_main\eden\STAF_Blacksun_Orca.jpg";
+        editorPreview = "\staf_blacksun_scp_main\eden\STAF_Blacksun_MTF_Orca.jpg";
 
         class EventHandlers: Eventhandlers {
           class STAF {
@@ -106,7 +106,7 @@ class CfgVehicles {
         editorSubcategory = "EdSubcat_blacksun_mtf_heli";
         crew = "STAF_Blacksun_MTF_Pilot_no_mask";
         gunnerType = "STAF_Blacksun_MTF_Pilot_no_mask";
-        editorPreview = "\staf_blacksun_scp_main\eden\STAF_Blacksun_Taru.jpg";
+        editorPreview = "\staf_blacksun_scp_main\eden\STAF_Blacksun_MTF_Taru.jpg";
 
         class EventHandlers: Eventhandlers {
           class STAF {
@@ -123,7 +123,7 @@ class CfgVehicles {
         faction = "staf_blacksun_scp";
         editorSubcategory = "EdSubcat_blacksun_mtf_heli";
         crew = "STAF_Blacksun_MTF_Pilot_no_mask";
-        editorPreview = "\staf_blacksun_scp_main\eden\STAF_Blacksun_Merlin.jpg";
+        editorPreview = "\staf_blacksun_scp_main\eden\STAF_Blacksun_MTF_Merlin.jpg";
 
         class EventHandlers: Eventhandlers {
           class STAF {
@@ -140,7 +140,7 @@ class CfgVehicles {
         faction = "staf_blacksun_scp";
         editorSubcategory = "EdSubcat_blacksun_mtf_boat";
         crew = "STAF_Blacksun_MTF_Rifleman_no_mask";
-        editorPreview = "\staf_blacksun_scp_main\eden\STAF_Blacksun_RHIB.jpg";
+        editorPreview = "\staf_blacksun_scp_main\eden\STAF_Blacksun_MTF_RHIB.jpg";
 
         class EventHandlers: Eventhandlers {
           class STAF {
@@ -157,7 +157,7 @@ class CfgVehicles {
         faction = "staf_blacksun_scp";
         editorSubcategory = "EdSubcat_blacksun_mtf_boat";
         crew = "STAF_Blacksun_MTF_Rifleman_no_mask";
-        editorPreview = "\staf_blacksun_scp_main\eden\STAF_Blacksun_Rubber.jpg";
+        editorPreview = "\staf_blacksun_scp_main\eden\STAF_Blacksun_MTF_Rubber.jpg";
 
         class EventHandlers: Eventhandlers {
           class STAF {
@@ -242,7 +242,7 @@ class CfgVehicles {
         faction = "staf_blacksun_scp";
         editorSubcategory = "EdSubcat_blacksun_mtf_cbrn_heli";
         crew = "STAF_Blacksun_MTF_CBRN_Pilot";
-        editorPreview = "\staf_blacksun_scp_main\eden\STAF_Blacksun_Orca.jpg";
+        editorPreview = "\staf_blacksun_scp_main\eden\STAF_Blacksun_MTF_Orca.jpg";
 
         class EventHandlers: Eventhandlers {
           class STAF {
@@ -260,7 +260,7 @@ class CfgVehicles {
         editorSubcategory = "EdSubcat_blacksun_mtf_cbrn_heli";
         crew = "STAF_Blacksun_MTF_CBRN_Pilot";
         gunnerType = "STAF_Blacksun_MTF_CBRN_Pilot";
-        editorPreview = "\staf_blacksun_scp_main\eden\STAF_Blacksun_Taru.jpg";
+        editorPreview = "\staf_blacksun_scp_main\eden\STAF_Blacksun_MTF_Taru.jpg";
 
         class EventHandlers: Eventhandlers {
           class STAF {
@@ -277,7 +277,7 @@ class CfgVehicles {
         faction = "staf_blacksun_scp";
         editorSubcategory = "EdSubcat_blacksun_mtf_cbrn_heli";
         crew = "STAF_Blacksun_MTF_CBRN_Pilot";
-        editorPreview = "\staf_blacksun_scp_main\eden\STAF_Blacksun_Merlin.jpg";
+        editorPreview = "\staf_blacksun_scp_main\eden\STAF_Blacksun_MTF_Merlin.jpg";
 
         class EventHandlers: Eventhandlers {
           class STAF {
@@ -294,7 +294,7 @@ class CfgVehicles {
         faction = "staf_blacksun_scp";
         editorSubcategory = "EdSubcat_blacksun_mtf_cbrn_boat";
         crew = "STAF_Blacksun_MTF_CBRN_Rifleman";
-        editorPreview = "\staf_blacksun_scp_main\eden\STAF_Blacksun_RHIB.jpg";
+        editorPreview = "\staf_blacksun_scp_main\eden\STAF_Blacksun_MTF_RHIB.jpg";
 
         class EventHandlers: Eventhandlers {
           class STAF {
@@ -311,7 +311,7 @@ class CfgVehicles {
         faction = "staf_blacksun_scp";
         editorSubcategory = "EdSubcat_blacksun_mtf_cbrn_boat";
         crew = "STAF_Blacksun_MTF_CBRN_Rifleman";
-        editorPreview = "\staf_blacksun_scp_main\eden\STAF_Blacksun_Rubber.jpg";
+        editorPreview = "\staf_blacksun_scp_main\eden\STAF_Blacksun_MTF_Rubber.jpg";
 
         class EventHandlers: Eventhandlers {
           class STAF {
