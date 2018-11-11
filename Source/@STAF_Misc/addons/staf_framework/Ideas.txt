@@ -1,0 +1,24 @@
+
+_______________________________________________________________________________
+
+Add ACE Interaction Module (Eden):
+
+- Where?
+- Progress Bar?
+-> Duration
+-> Success Code
+-> Abort Code
+- Code on Interaction
+
+_______________________________________________________________________________
+
+Add ACE Self-Interaction Module (Eden):
+
+- Where?
+- Progress Bar?
+-> Duration
+-> Success Code
+-> Abort Code
+- Code on Interaction
+
+_______________________________________________________________________________

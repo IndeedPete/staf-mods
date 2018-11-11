@@ -1,9 +1,4 @@
-
-
-_unit switchmove "";
-
-//Save loadout in Eden
-save3DENInventory [_unit];_unit = _this select 0;
+_unit = _this select 0;
 
 removeUniform _unit;
 removeHeadgear _unit;

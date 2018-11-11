@@ -87,7 +87,7 @@ _unit linkItem "TFAR_anprc152";
 _unit linkItem "NVGoggles_OPFOR";
 [_unit, ""] call BIS_fnc_setUnitInsignia;
 
-_unit switchmove "";
+if (isNull objectParent player) then {_unit switchmove ""};
 
 //Save loadout in Eden
 save3DENInventory [_unit];

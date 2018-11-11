@@ -37,7 +37,8 @@
 	_object allowDamage true;
 	_object enableSimulation false;
 	_object setVehicleVarName _nameobject;
-	{_x addCuratorEditableObjects [[_object],true]} forEach allCurators;
+	_objectarray = [_object];
+	{_x addCuratorEditableObjects [_objectarray,true]} forEach allCurators;
 
 	// Creates a the Marker
 	_marker = createMarker [_name, _position];
@@ -164,20 +165,11 @@
 			_color = "ColorCivilian";
 			_marker setMarkerColor _color;
 		};
-	_sizeX = parseNumber (_dialogResult select 3);
-	_sizeY = parseNumber (_dialogResult select 4);
-	_marker	setMarkerSize [_sizeX, _sizeY];
-	_marker setMarkerAlpha (_dialogResult select 5);
+		_sizeX = parseNumber (_dialogResult select 3);
+		_sizeY = parseNumber (_dialogResult select 4);
+		_marker	setMarkerSize [_sizeX, _sizeY];
+		_marker setMarkerAlpha (_dialogResult select 5);
 
-	if(isServer) then{
-   [_object, _marker] spawn {
-       While {!isNull (_this select 0)} do {
-           (_this select 1) setMarkerPos (getPos (_this select 0));
-					 (_this select 1) setMarkerDir (getDir (_this select 0));
-					 sleep 0.1;
-					 if (!alive (_this select 0)) exitWith {deleteMarker (_this select 1)};
-					 if (isNull (_this select 0)) exitWith {deleteMarker (_this select 1)};
-       };
-   };
-};
+		[_object, _marker] remoteExec ["STAF_fnc_trackmarker", 0, true];
+
 }] remoteexeccall ["Ares_fnc_RegisterCustomModule", 0, true];

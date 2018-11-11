@@ -127,6 +127,17 @@ class CfgVehicles {
             maximumLoad = 600;
 
 
+            typicalCargo[] = {"STAF_contractor"};
+
+            class MainTurret
+            {
+              gunnerType = "STAF_contractor_heli_pilot";
+            };
+
+            class RightDoorGun
+            {
+              gunnerType = "STAF_contractor_heli_pilot";
+            };
 
             class EventHandlers: Eventhandlers {
               class STAF {
@@ -560,7 +571,17 @@ class CfgVehicles {
             scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_heli_pilot_opf";
-            gunnerType = "STAF_contractor_heli_pilot_opf";
+            typicalCargo[] = {"STAF_contractor_opf"};
+
+            class MainTurret
+            {
+              gunnerType = "STAF_contractor_heli_pilot_opf";
+            };
+
+            class RightDoorGun
+        		{
+              gunnerType = "STAF_contractor_heli_pilot_opf";
+            };
         };
 
       //----------------------------------Naval-----------------------------------
@@ -739,7 +760,17 @@ class CfgVehicles {
             scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_heli_pilot_ind";
-            gunnerType = "STAF_contractor_heli_pilot_ind";
+            typicalCargo[] = {"STAF_contractor_ind"};
+
+            class MainTurret
+            {
+              gunnerType = "STAF_contractor_heli_pilot_ind";
+            };
+
+            class RightDoorGun
+        		{
+              gunnerType = "STAF_contractor_heli_pilot_ind";
+            };
         };
 
       //----------------------------------Naval-----------------------------------

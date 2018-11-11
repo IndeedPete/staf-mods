@@ -57,7 +57,7 @@ _unit linkItem "ItemCompass";
 _unit linkItem "ItemWatch";
 _unit linkItem "TFAR_anprc152";
 
-_unit switchmove "";
+if (isNull objectParent player) then {_unit switchmove ""};
 
 //Save loadout in Eden
 save3DENInventory [_unit];
