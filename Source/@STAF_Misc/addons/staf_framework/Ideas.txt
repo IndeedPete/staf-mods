@@ -22,3 +22,14 @@ Add ACE Self-Interaction Module (Eden):
 - Code on Interaction
 
 _______________________________________________________________________________
+
+Add ACE Interaction "Gag":
+
+- It mutes the player so he can not talk (TFAR)
+- Add a gag Object?
+- When gaged add (self-)Interaction to remove the gag
+
+0.2 call TFAR_fnc_setVoiceVolume;
+
+
+_______________________________________________________________________________

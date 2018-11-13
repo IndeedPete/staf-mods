@@ -11,6 +11,33 @@ class CfgVehicles {
   class B_Boat_Transport_01_F;
   class C_Boat_Transport_02_F;
 
+  class Air;
+	class Helicopter: Air
+	{
+		class Turrets;
+	};
+	class Helicopter_Base_F: Helicopter
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};
+	};
+	class Helicopter_Base_H: Helicopter_Base_F
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};
+	};
+	class Heli_Transport_04_base_F: Helicopter_Base_H
+	{
+		class Turrets: Turrets
+		{
+			class LoadmasterTurret;
+		};
+	};
+
   //----------------------------------BLUFOR---------------------------------
     class STAF_Blacksun_MTF_MRAP: O_MRAP_02_F {
         author = "STAF";
@@ -107,6 +134,14 @@ class CfgVehicles {
         crew = "STAF_Blacksun_MTF_Pilot_no_mask";
       	typicalCargo[] = {"STAF_Blacksun_MTF_Rifleman_no_mask"};
         editorPreview = "\staf_blacksun_scp_main\eden\STAF_Blacksun_MTF_Taru.jpg";
+
+        class Turrets: Turrets
+    		{
+    			class LoadmasterTurret: LoadmasterTurret
+    			{
+    				gunnerType = "STAF_Blacksun_MTF_Pilot_no_mask";
+    			};
+    		};
 
         class EventHandlers: Eventhandlers {
           class STAF {
