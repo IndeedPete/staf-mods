@@ -88,18 +88,18 @@ _weapon = [
             "STAF_rifle_G36E1",
             "STAF_rifle_G36KA1",
             "STAF_rifle_G36KE1",
-            "STAF_rifle_scar_blk_xps",
-            "STAF_rifle_scar_tan_xps",
-            "STAF_rifle_scar_blk_xps",
-            "STAF_rifle_scar_tan_xps",
-            "STAF_rifle_scar_blk_xps",
-            "STAF_rifle_scar_tan_xps",
-            "STAF_rifle_scar_blk_xps",
-            "STAF_rifle_scar_tan_xps",
-            "STAF_rifle_scar_blk_xps",
-            "STAF_rifle_scar_tan_xps",
-            "STAF_rifle_scar_blk_xps",
-            "STAF_rifle_scar_tan_xps",
+            "STAF_rifle_scar_blk",
+            "STAF_rifle_scar_tan",
+            "STAF_rifle_scar_wld",
+            "STAF_rifle_scar_blk",
+            "STAF_rifle_scar_tan",
+            "STAF_rifle_scar_wld",
+            "STAF_rifle_scar_blk",
+            "STAF_rifle_scar_tan",
+            "STAF_rifle_scar_wld",
+            "STAF_rifle_scar_blk",
+            "STAF_rifle_scar_tan",
+            "STAF_rifle_scar_wld",
             "STAF_rifle_ak12",
             "STAF_rifle_ak12",
             "STAF_rifle_ak12",
@@ -130,11 +130,14 @@ _unit addvest _vest;
 _unit addbackpack _backpack;
 
 //Ammo
-if (_weapon == "STAF_rifle_scar_blk_xps") then {
-  for "_i" from 1 to 10 do {_unit addItem "30Rnd_556x45_Stanag";};
+if (_weapon == "STAF_rifle_scar_blk") then {
+  for "_i" from 1 to 10 do {_unit addItem "ACE_30Rnd_556x45_Stanag_Mk318_mag";};
 };
-if (_weapon == "STAF_rifle_scar_tan_xps") then {
-  for "_i" from 1 to 10 do {_unit addItem "30Rnd_556x45_Stanag";};
+if (_weapon == "STAF_rifle_scar_tan") then {
+  for "_i" from 1 to 10 do {_unit addItem "ACE_30Rnd_556x45_Stanag_Mk318_mag";};
+};
+if (_weapon == "STAF_rifle_scar_wld") then {
+  for "_i" from 1 to 10 do {_unit addItem "ACE_30Rnd_556x45_Stanag_Mk318_mag";};
 };
 if (_weapon == "STAF_rifle_G36C") then {
   for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};

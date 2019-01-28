@@ -33,12 +33,14 @@
 	// Create an Object the Marker is linked to
 	//_object = ["Land_TacticalBacon_F", _position] call BIS_fnc_createSimpleObject;
 	_object = "VR_3DSelector_01_default_F" createVehicle _position;
-	hideObjectGlobal _object;
-	_object allowDamage true;
-	_object enableSimulation false;
-	_object setVehicleVarName _nameobject;
+
+	[_object] remoteExec ["hideObject", 0, true];
+	[_object, true] remoteExec ["allowDamage", 0, true];
+	[_object, false] remoteExec ["enableSimulation", 0, true];
+	[_object, _nameobject] remoteExec ["setVehicleVarName", 0, true];
+
 	_objectarray = [_object];
-	{_x addCuratorEditableObjects [_objectarray,true]} forEach allCurators;
+	{[_x, [_objectarray,true]] remoteExec ["addCuratorEditableObjects", 0, true];} forEach allCurators;
 
 	// Creates a the Marker
 	_marker = createMarker [_name, _position];

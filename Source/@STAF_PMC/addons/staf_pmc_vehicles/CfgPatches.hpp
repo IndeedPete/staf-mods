@@ -4,7 +4,7 @@ class CfgPatches {
     class STAF_pmc_vehicles {
       units[] = {
         "STAF_md500",
-        //"STAF_md500_defender",
+        "STAF_md500_defender",
         "STAF_uh60m",
         "STAF_hexacopter",
         "STAF_hexacopter_ammo",
@@ -23,9 +23,10 @@ class CfgPatches {
         "STAF_caiman_desert",
         "STAF_husky_woodland",
         "STAF_husky_desert",
+        "STAF_lsv",
         "STAF_quadcopter",
         "STAF_md500_opf",
-        //"STAF_md500_defender_opf",
+        "STAF_md500_defender_opf",
         "STAF_uh60m_opf",
         "STAF_hexacopter_opf",
         "STAF_hexacopter_ammo_opf",
@@ -44,9 +45,10 @@ class CfgPatches {
         "STAF_caiman_desert_opf",
         "STAF_husky_woodland_opf",
         "STAF_husky_desert_opf",
+        "STAF_lsv_opf",
         "STAF_quadcopter_opf",
         "STAF_md500_ind",
-        //"STAF_md500_defender_ind",
+        "STAF_md500_defender_ind",
         "STAF_uh60m_ind",
         "STAF_hexacopter_ind",
         "STAF_hexacopter_ammo_ind",
@@ -65,6 +67,7 @@ class CfgPatches {
         "STAF_caiman_desert_ind",
         "STAF_husky_woodland_ind",
         "STAF_husky_desert_ind",
+        "STAF_lsv_ind",
         "STAF_quadcopter_ind"
       };
       weapons[] = {};

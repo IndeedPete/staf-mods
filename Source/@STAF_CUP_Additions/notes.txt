@@ -1,0 +1,13 @@
+Arid:
+
+CUP_B_Leopard2A6_GER
+
+CUP_B_M2StaticMG_GER
+CUP_B_M2StaticMG_MiniTripod_GER
+
+Woodland:
+
+CUP_B_M2StaticMG_GER_Fleck
+CUP_B_M2StaticMG_MiniTripod_GER_Fleck
+
+(Add Missing)

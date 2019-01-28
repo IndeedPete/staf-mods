@@ -12,24 +12,20 @@ class CfgVehicles {
     class C_Offroad_01_F;
     class C_SUV_01_F;
     class B_UAV_01_F;
-    class B_Heli_Light_01_F;
+    class CUP_B_MH6J_USA;
+    class CUP_B_AH6M_USA;
     class B_UAV_06_F;
     class B_UAV_06_medical_F;
-    class Heli_Light_01_dynamicLoadout_base_F;
-    class rhsusf_M1220_M2_usarmy_wd;
-    class rhsusf_M1220_M2_usarmy_d;
-    class RHS_UH60M;
+    class CUP_B_Mastiff_HMG_GB_W;
+    class CUP_B_Mastiff_HMG_GB_D;
+    class CUP_B_UH60M_US;
     class burnes_husky_W;
     class burnes_husky;
-    class B_Heli_Light_01_dynamicLoadout_F: Heli_Light_01_dynamicLoadout_base_F
-    {
-        class Components;
-    };
+    class B_LSV_01_unarmed_F;
 
     //----------------------------------BLUFOR---------------------------------
       //----------------------------------Air------------------------------------
-        class STAF_md500 : B_Heli_Light_01_F {
-
+        class STAF_md500 : CUP_B_MH6J_USA {
             author = "STAF";
             scope = 2;
             scopeCurator = 2;
@@ -38,72 +34,50 @@ class CfgVehicles {
             faction = "STAF_PMC";
             crew = "STAF_contractor_heli_pilot";
             editorPreview = "\staf_pmc_main\eden\STAF_md500.jpg";
-            animationList[] = {"AddDoors",0,"AddBenches",1,"AddBackseats",1,"BenchL_Up_instant",0,"BenchR_Up_instant",0,"AddHoldingFrame",1,"AddTread_Short",0,"AddTread",1};
+            animationList[] = {"hideBench",0,"hideFries",0,"hideFLIR",1,"hideUSARMY",1,"hideRACS",1};
 
-        		weapons[] = {"CMFlareLauncher"};
-        		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
-            memoryPointCM[] = {"flare_launcher1","flare_launcher2"};
-            memoryPointCMDir[] = {"flare_launcher1_dir","flare_launcher2_dir"};
-
-            hiddenSelections[] = {"Camo1","clan"};
+            hiddenSelections[] = {"camo1","camo2","camo_bench","clan"};
             selectionClan = "";
             maximumLoad = 600;
-            ace_fastroping_enabled = 1;
+            /*ace_fastroping_enabled = 1;
             ace_fastroping_ropeOrigins[] = {
                 {1.111,-0.075,-0.903},
                 {1.111,1.237,-0.903},
                 {-1.111,-0.075,-0.903},
                 {-1.111,1.237,-0.903}
-            };
-
-
+            };*/
 
             class EventHandlers: Eventhandlers {
               class STAF {
-                init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_helismallequipment.sqf"";";
+                init = "[(_this select 0), nil, [""hideBench"",0,""hideFries"",0,""hideFLIR"",1,""hideUSARMY"",1,""hideRACS"",1]] call BIS_fnc_initVehicle; [(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_helismallequipment.sqf"";";
                 class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
               };
             };
         };
 
-        /*class STAF_md500_defender : B_Heli_Light_01_dynamicLoadout_F {
+        class STAF_md500_defender : CUP_B_AH6M_USA {
+          author = "STAF";
+          scope = 2;
+          scopeCurator = 2;
+          displayName = "MD-500 Defender";
+          side = 1;
+          faction = "STAF_PMC";
+          crew = "STAF_contractor_heli_pilot";
+          editorPreview = "\staf_pmc_main\eden\STAF_md500.jpg";
+          animationList[] = {"hideBench",0,"hideFries",0,"hideFLIR",1,"hideUSARMY",1,"hideRACS",1};
 
-            author = "STAF";
-            scope = 2;
-            scopeCurator = 2;
-            displayName = "MD-500 Defender";
-            side = 1;
-            faction = "STAF_PMC";
-            crew = "STAF_contractor_heli_pilot";
-            editorPreview = "\staf_pmc_main\eden\STAF_md500.jpg";
-            animationList[] = {"AddTread_Short",0,"AddTread",1};
+          hiddenSelections[] = {"camo1","camo2","camo_weapons","clan"};
+          selectionClan = "";
 
-        		weapons[] = {"CMFlareLauncher","M134_minigun"};
-        		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","5000Rnd_762x51_Belt"};
-            memoryPointCM[] = {"flare_launcher1","flare_launcher2"};
-            memoryPointCMDir[] = {"flare_launcher1_dir","flare_launcher2_dir"};
-
-            hiddenSelections[] = {"Camo1","clan"};
-            selectionClan = "";
-            maximumLoad = 5000;
-
-            class EventHandlers: Eventhandlers {
-              class STAF {
-                init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";";
-                class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-              };
+          class EventHandlers: Eventhandlers {
+            class STAF {
+              init = "[(_this select 0), nil, [""hideBench"",0,""hideFries"",1,""hideFLIR"",1,""hideUSARMY"",1,""hideRACS"",1]] call BIS_fnc_initVehicle;";
+              class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
             };
+          };
+        };
 
-            class Components: Components
-            {
-              class TransportPylonsComponent{
-                uiPicture = "\A3\Air_F\Heli_Light_01\Data\UI\Heli_Light_01_3DEN_CA.paa";
-                class Pylons{};
-              };
-            };
-        };*/
-
-        class STAF_uh60m : RHS_UH60M {
+        class STAF_uh60m : CUP_B_UH60M_US {
 
             author = "STAF";
             scope = 2;
@@ -113,35 +87,17 @@ class CfgVehicles {
             faction = "STAF_PMC";
             crew = "STAF_contractor_heli_pilot";
             gunnerType = "STAF_contractor_heli_pilot";
-            editorPreview = "\staf_pmc_main\eden\STAF_md500.jpg";
-            animationList[] = {"AddDoors",0,"AddBenches",1,"AddBackseats",1,"BenchL_Up_instant",0,"BenchR_Up_instant",0,"AddHoldingFrame",1,"AddTread_Short",0,"AddTread",1};
-
-        		weapons[] = {"CMFlareLauncher"};
-        		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
-            memoryPointCM[] = {"flare_launcher1","flare_launcher2"};
-            memoryPointCMDir[] = {"flare_launcher1_dir","flare_launcher2_dir"};
-
-            hiddenSelections[] = {"camo1","camo2","camo3","filter","clan"};
+            editorPreview = "\staf_pmc_main\eden\STAF_uh60m.jpg";
+            animationList[] = {};
+            hiddenSelections[] = {"camo1","camo2","camo3","clan"};
             selectionClan = "";
-            hiddenSelectionsTextures[] = {"staf_pmc_vehicles\txt\STAF_uh60m_fuselage_co.paa","staf_pmc_vehicles\txt\STAF_uh60m_engine_co.paa","staf_pmc_vehicles\txt\STAF_default_co.paa","rhsusf\addons\rhsusf_a2port_air\uh60m\data\uh60m_dust_filter_co.paa"};
             maximumLoad = 600;
 
-
-            typicalCargo[] = {"STAF_contractor"};
-
-            class MainTurret
-            {
-              gunnerType = "STAF_contractor_heli_pilot";
-            };
-
-            class RightDoorGun
-            {
-              gunnerType = "STAF_contractor_heli_pilot";
-            };
+            typicalCargo[] = {"STAF_contractor_heli_pilot"};
 
             class EventHandlers: Eventhandlers {
               class STAF {
-                init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_helismallequipment.sqf"";";
+                init = "[(_this select 0), nil, [""Hide_ESSS2x"",1,""Hide_ESSS4x"",1,""Hide_Nose"",1,""Navyclan_hide"",1,""Navyclan2_hide"",1,""Blackhawk_Hide"",1,""Hide_FlirTurret"",1,""Hide_Probe"",1,""Doorcock_Hide"",0,""Filters_Hide"",1]] call BIS_fnc_initVehicle; [(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_helismallequipment.sqf"";";
                 class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
               };
             };
@@ -236,7 +192,7 @@ class CfgVehicles {
 
             class EventHandlers: Eventhandlers {
               class STAF {
-                init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_mrapequipment.sqf"";[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_mrapequipment.sqf"";";
+                init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";";
                 class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
               };
             };
@@ -344,20 +300,23 @@ class CfgVehicles {
             };
         };
 
-        class STAF_caiman : rhsusf_M1220_M2_usarmy_d {
+        class STAF_caiman : CUP_B_Mastiff_HMG_GB_D {
 
             scope = 2;
             scopeCurator = 2;
             side = 1;
-            displayName = "BAE Caiman (Black)";
+            displayName = "BAE Caiman";
             faction = "STAF_PMC";
             crew = "STAF_contractor";
             editorPreview = "\staf_pmc_main\eden\STAF_caiman.jpg";
             editorSubcategory = "EdSubcat_Cars";
-            hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8","clan"};
+            maximumLoad = 3300;
+
+            hiddenSelections[] = {"tex1","tex2","tex3","tex_turret","camo1","camo2","tex4","clan"};
             selectionClan = "";
-            HiddenSelectionsTextures[] = {"staf_pmc_vehicles\txt\STAF_cmn_Body_CO.paa","staf_pmc_vehicles\txt\STAF_cmn_Chassis_CO.paa","staf_pmc_vehicles\txt\STAF_cmn_Accessory2_CO.paa","staf_pmc_vehicles\txt\STAF_cmn_Armor_CO.paa","staf_pmc_vehicles\txt\STAF_RG33_TurretD_CO.paa","staf_pmc_vehicles\txt\STAF_cmn_wheel_d_co.paa","staf_pmc_vehicles\txt\STAF_mk64mount_d_co.paa","staf_pmc_vehicles\txt\STAF_cmn_AMB_CO.paa","staf_pmc_vehicles\txt\STAF_M153_CO.paa"};
-            maximumLoad = 2800;
+            hiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_tex1_blk_co.paa","\staf_pmc_vehicles\txt\STAF_tex2_blk_co.paa","\staf_pmc_vehicles\txt\STAF_tex3_blk_co.paa","\staf_pmc_vehicles\txt\STAF_turretbig_blk_co.paa","\staf_pmc_vehicles\txt\STAF_bar_armourF_blk_co.paa","\staf_pmc_vehicles\txt\STAF_bar_armourR_blk_co.paa","\staf_pmc_vehicles\txt\STAF_tex4_blk_co.paa"};
+
+            typicalCargo[] = {"STAF_contractor"};
 
             class EventHandlers: Eventhandlers {
               class STAF {
@@ -367,7 +326,7 @@ class CfgVehicles {
             };
         };
 
-        class STAF_caiman_woodland : rhsusf_M1220_M2_usarmy_wd {
+        /*class STAF_caiman_woodland : CUP_B_Mastiff_HMG_GB_W {
 
             scope = 2;
             scopeCurator = 2;
@@ -379,6 +338,10 @@ class CfgVehicles {
             editorSubcategory = "EdSubcat_Cars";
             maximumLoad = 2800;
 
+            hiddenSelections[] = {"tex1","tex2","tex3","tex_turret","camo1","camo2","tex4","clan"};
+            selectionClan = "";
+            hiddenSelectionsTextures[] = {"\cup\wheeledvehicles\cup_wheeledvehicles_ridgeback\data\woodland\wd_tex1_co.paa","\staf_pmc_vehicles\txt\STAF_tex2_wld_co.paa","\cup\wheeledvehicles\cup_wheeledvehicles_ridgeback\data\woodland\wd_tex3_co.paa","\cup\wheeledvehicles\cup_wheeledvehicles_ridgeback\data\woodland\wd_turretbig_co.paa","cup\wheeledvehicles\cup_wheeledvehicles_ridgeback\data\woodland\wd_bar_armourF_co.paa","cup\wheeledvehicles\cup_wheeledvehicles_ridgeback\data\woodland\wd_bar_armourR_co.paa","\cup\wheeledvehicles\cup_wheeledvehicles_ridgeback\data\woodland\wd_tex4_co.paa"};
+
             class EventHandlers: Eventhandlers {
               class STAF {
                 init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_mrapequipment.sqf"";";
@@ -387,7 +350,7 @@ class CfgVehicles {
             };
         };
 
-        class STAF_caiman_desert : rhsusf_M1220_M2_usarmy_d {
+        class STAF_caiman_desert : CUP_B_Mastiff_HMG_GB_D {
 
             scope = 2;
             scopeCurator = 2;
@@ -399,13 +362,17 @@ class CfgVehicles {
             editorSubcategory = "EdSubcat_Cars";
             maximumLoad = 2800;
 
+            hiddenSelections[] = {"tex1","tex2","tex3","tex_turret","camo1","camo2","tex4","clan"};
+            selectionClan = "";
+            hiddenSelectionsTextures[] = {"\cup\wheeledvehicles\cup_wheeledvehicles_ridgeback\data\woodland\wd_tex1_co.paa","\staf_pmc_vehicles\txt\STAF_tex2_tan_co.paa","\cup\wheeledvehicles\cup_wheeledvehicles_ridgeback\data\woodland\wd_tex3_co.paa","\cup\wheeledvehicles\cup_wheeledvehicles_ridgeback\data\woodland\wd_turretbig_co.paa","cup\wheeledvehicles\cup_wheeledvehicles_ridgeback\data\woodland\wd_bar_armourF_co.paa","cup\wheeledvehicles\cup_wheeledvehicles_ridgeback\data\woodland\wd_bar_armourR_co.paa","\cup\wheeledvehicles\cup_wheeledvehicles_ridgeback\data\woodland\wd_tex4_co.paa"};
+
             class EventHandlers: Eventhandlers {
               class STAF {
                 init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_mrapequipment.sqf"";";
                 class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
               };
             };
-        };
+        };*/
 
         class STAF_husky_woodland : burnes_husky_W {
 
@@ -440,6 +407,29 @@ class CfgVehicles {
             class EventHandlers: Eventhandlers {
               class STAF {
                 init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_mrapequipment.sqf"";";
+                class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+              };
+            };
+        };
+
+        class STAF_lsv : B_LSV_01_unarmed_F {
+
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "Polaris DAGOR";
+            side = 1;
+            faction = "STAF_PMC";
+            crew = "STAF_contractor";
+            editorPreview = "\staf_pmc_main\eden\STAF_lsv.jpg";
+            hiddenSelections[] = {"Camo_1","Camo_2","Camo_3","Camo_4","clan"};
+            selectionClan = "";
+            textureList[] = {"Black",1,"Olive",0,"Sand",0};
+            maximumLoad = 1500;
+
+            class EventHandlers: Eventhandlers {
+              class STAF {
+                init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_carequipment.sqf""; (_this select 0) setObjectTexture [4, """"];";
                 class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
               };
             };
@@ -547,7 +537,6 @@ class CfgVehicles {
     //----------------------------------OPFOR---------------------------------
       //----------------------------------Air------------------------------------
         class STAF_md500_opf : STAF_md500 {
-            displayName = "MD-500 (Modified)";
             Side = 0;
             scope = 2;
             scopeCurator = 2;
@@ -555,33 +544,21 @@ class CfgVehicles {
             crew = "STAF_contractor_heli_pilot_opf";
         };
 
-        /*class STAF_md500_defender_opf : B_Heli_Light_01_dynamicLoadout_F {
-            displayName = "MD-500 (Modified)";
+        class STAF_md500_defender_opf : STAF_md500_defender {
             Side = 0;
             scope = 2;
             scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_heli_pilot_opf";
-        };*/
+        };
 
         class STAF_uh60m_opf : STAF_uh60m {
-            displayName = "UH-60M";
             Side = 0;
             scope = 2;
             scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_heli_pilot_opf";
-            typicalCargo[] = {"STAF_contractor_opf"};
-
-            class MainTurret
-            {
-              gunnerType = "STAF_contractor_heli_pilot_opf";
-            };
-
-            class RightDoorGun
-        		{
-              gunnerType = "STAF_contractor_heli_pilot_opf";
-            };
+            typicalCargo[] = {"STAF_contractor_heli_pilot_opf"};
         };
 
       //----------------------------------Naval-----------------------------------
@@ -659,7 +636,7 @@ class CfgVehicles {
             crew = "STAF_contractor_opf";
         };
 
-        class STAF_caiman_woodland_opf : STAF_caiman_woodland {
+        /*class STAF_caiman_woodland_opf : STAF_caiman_woodland {
             Side = 0;
             scope = 2;
             scopeCurator = 2;
@@ -673,7 +650,7 @@ class CfgVehicles {
             scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_opf";
-        };
+        };*/
 
         class STAF_husky_woodland_opf : STAF_husky_woodland {
             Side = 0;
@@ -684,6 +661,14 @@ class CfgVehicles {
         };
 
         class STAF_husky_desert_opf : STAF_husky_desert {
+            Side = 0;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_opf";
+        };
+
+        class STAF_lsv_opf : STAF_lsv {
             Side = 0;
             scope = 2;
             scopeCurator = 2;
@@ -736,7 +721,6 @@ class CfgVehicles {
     //----------------------------------OPFOR---------------------------------
       //----------------------------------Air------------------------------------
         class STAF_md500_ind : STAF_md500 {
-            displayName = "MD-500 (Modified)";
             Side = 2;
             scope = 2;
             scopeCurator = 2;
@@ -744,33 +728,21 @@ class CfgVehicles {
             crew = "STAF_contractor_heli_pilot_ind";
         };
 
-        /*class STAF_md500_defender_ind : B_Heli_Light_01_dynamicLoadout_F {
-            displayName = "MD-500 (Modified)";
+        class STAF_md500_defender_ind : STAF_md500_defender {
             Side = 2;
             scope = 2;
             scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_heli_pilot_ind";
-        };*/
+        };
 
         class STAF_uh60m_ind : STAF_uh60m {
-            displayName = "UH-60M";
             Side = 2;
             scope = 2;
             scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_heli_pilot_ind";
-            typicalCargo[] = {"STAF_contractor_ind"};
-
-            class MainTurret
-            {
-              gunnerType = "STAF_contractor_heli_pilot_ind";
-            };
-
-            class RightDoorGun
-        		{
-              gunnerType = "STAF_contractor_heli_pilot_ind";
-            };
+            typicalCargo[] = {"STAF_contractor_heli_pilot_ind"};
         };
 
       //----------------------------------Naval-----------------------------------
@@ -848,7 +820,7 @@ class CfgVehicles {
             crew = "STAF_contractor_ind";
         };
 
-        class STAF_caiman_woodland_ind : STAF_caiman_woodland {
+        /*class STAF_caiman_woodland_ind : STAF_caiman_woodland {
             Side = 2;
             scope = 2;
             scopeCurator = 2;
@@ -862,7 +834,7 @@ class CfgVehicles {
             scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_ind";
-        };
+        };*/
 
         class STAF_husky_woodland_ind : STAF_husky_woodland {
             Side = 2;
@@ -873,6 +845,14 @@ class CfgVehicles {
         };
 
         class STAF_husky_desert_ind : STAF_husky_desert {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_ind";
+        };
+
+        class STAF_lsv_ind : STAF_lsv {
             Side = 2;
             scope = 2;
             scopeCurator = 2;

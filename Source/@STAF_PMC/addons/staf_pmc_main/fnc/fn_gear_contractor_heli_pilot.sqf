@@ -345,38 +345,21 @@ _uniform = [
               "tacs_Uniform_Garment_RS_TS_BP_BB"
               ] call BIS_fnc_selectRandom;
 _headGear = [
-              "rhsusf_hgu56p_black",
-              "rhsusf_hgu56p_mask_black",
-              "rhsusf_hgu56p_mask_black_skull",
-              "rhsusf_hgu56p_visor_black",
-              "rhsusf_hgu56p_visor_mask_black",
-              "rhsusf_hgu56p_visor_mask_black_skull",
-              "rhsusf_hgu56p_green",
-              "rhsusf_hgu56p_mask_green",
-              "rhsusf_hgu56p_mask_green_mo",
-              "rhsusf_hgu56p_visor_green",
-              "rhsusf_hgu56p_visor_mask_green",
-              "rhsusf_hgu56p_visor_mask_Empire_green",
-              "rhsusf_hgu56p_visor_mask_green_mo",
-              "rhsusf_hgu56p",
-              "rhsusf_hgu56p_mask",
-              "rhsusf_hgu56p_mask_mo",
-              "rhsusf_hgu56p_mask_skull",
-              "rhsusf_hgu56p_visor",
-              "rhsusf_hgu56p_visor_mask",
-              "rhsusf_hgu56p_visor_mask_mo",
-              "rhsusf_hgu56p_visor_mask_skull"
-] call BIS_fnc_selectRandom;
+              "CFP_SOARCREW_SKULL",
+              "H_CrewHelmetHeli_B",
+              "H_PilotHelmetHeli_B",
+              "H_HelmetCrew_B"
+              ] call BIS_fnc_selectRandom;
 _vest = [
               "V_TacVest_blk",
               "V_TacVest_brn",
               "V_TacVest_camo",
               "V_TacVest_khk",
               "V_TacVest_oli"
-] call BIS_fnc_selectRandom;
+              ] call BIS_fnc_selectRandom;
 _weapon = [
               "STAF_rifle_mp5"
-] call BIS_fnc_selectRandom;
+              ] call BIS_fnc_selectRandom;
 _unit addHeadgear _headGear;
 _unit addUniform _uniform;
 _unit addvest _vest;

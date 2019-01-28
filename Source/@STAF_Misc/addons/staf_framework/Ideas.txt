@@ -31,5 +31,54 @@ Add ACE Interaction "Gag":
 
 0.2 call TFAR_fnc_setVoiceVolume;
 
+_______________________________________________________________________________
+
+Triggerman IED (Zeus)
+
+-> Module creates IED and Triggerman
+--> Check activation side
+--> Triggerman needs to know about "enemy" presence (`who knowsAbout target`)
+--> Module creates Trigger on IED position (Side activate, present with condition)
+---> If "enemy" is in the area, triggerman is alive/not unconcious, Triggerman has phone, Triggerman is not handcuffed and no IED Jammer (next idea) is active the IED blows up
+--> Triggerman has phone (make a list of possible phones)
+--> Triggerman needs high skills
+--> IED can be many objects (list) (Random)
+--> IED can be small, medium or big (bigger IEDs need bigger objects but smaller IEDs don't need smaller objects)
+--> Delete Trigger if IEDs disarmed (!Alive)
+--> Triggerman plays animation and shortly after the IED blows up (If animation started playing the IED WILL blow up)
+
+Similar for Eden with multiple synced modules
 
 _______________________________________________________________________________
+
+Radio Jammer (Object)
+
+-> Which object? Device or Backpack...which backpack?
+("4G LTE800 LTE2600 Handheld Mobile Phone Signal Jammer / Cell Phone Blocking Device For Military" or "GM20 - 6 bands Jammer (7W)" or "Falcon - powerful military/convoy pelican case cell jammer")
+
+-> Jammer adds Self-Interaction
+--> Interaction sets variable (bound to the backpack?) that says if Jammer is on or not
+--> Turned on Jammer jams phones (IEDs) and Radios (TFAR = "tf_receivingDistanceMultiplicator" and "tf_sendingDistanceMultiplicator")
+-> Activated Jammer adds (Self-)Interaction to turn of the Jammer
+
+_______________________________________________________________________________
+
+QRF Module (Zeus):
+
+-> Place target marker
+-> Place Reinforcment Marker
+--> Faction
+--> Type
+--> What group
+--> How many
+--> Which Target
+(In best case it saves that)
+-> Spawn the units and put a waypoint to the Target (Combat, Up, Fast)
+
+_______________________________________________________________________________
+
+Disable Damage (Global) (Eden)
+
+_______________________________________________________________________________
+
+Boxrefiller Module (Eden and maybe Zeus)

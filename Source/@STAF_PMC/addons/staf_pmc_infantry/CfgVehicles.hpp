@@ -418,11 +418,11 @@ class CfgVehicles {
             uniformClass = "M81_Camo_crye";
 
 
-            linkedItems[] = { "ItemWatch" , "ItemRadio" , "ItemAndroid" , "LOP_V_Carrier_OLV" , "LOP_H_Beret_UN" };
+            linkedItems[] = { "ItemWatch" , "ItemRadio" , "ItemAndroid" , "SP_JackEllis1_UNBlue1" , "SP_Beret_Un1" };
             weapons[] = { "Throw" , "Put" };
             magazines[] = {};
 
-            respawnLinkedItems[] = { "ItemWatch" , "ItemRadio" , "ItemAndroid" , "LOP_V_Carrier_OLV" , "LOP_H_Beret_UN" };
+            respawnLinkedItems[] = { "ItemWatch" , "ItemRadio" , "ItemAndroid" , "SP_JackEllis1_UNBlue1" , "SP_Beret_Un1" };
             respawnWeapons[] = { "Throw" , "Put" };
             respawnMagazines[] = {};
         };
