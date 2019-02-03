@@ -1,7 +1,7 @@
 class CfgWeapons {
-  class hlc_rifle_416D165;
-  class hlc_rifle_416D165_gl;
-  class hlc_rifle_416C;
+  class CUP_arifle_HK416_Black;
+  class CUP_arifle_HK416_M203_Black;
+  class CUP_arifle_HK416_CQB_Black;
   class srifle_DMR_02_F;
   class hlc_lmg_mk48;
   class hgun_ACPC2_F;
@@ -9,18 +9,18 @@ class CfgWeapons {
 
 
   // Rifles
-  class STAF_rifle_416D165: hlc_rifle_416D165
+  class STAF_rifle_416D165: CUP_arifle_HK416_Black
   {
     class LinkedItems
     {
       class LinkedItemsOptic
       {
-      item = "rhsusf_acc_su230_mrds";
+      item = "hlc_optic_hensoldtzo_hi_docter";
       slot = "CowsSlot";
       };
       class LinkedItemsAcc
       {
-      item = "rhsusf_acc_anpeq15_bk";
+      item = "cfp_acc_anpeq15_black";
       slot = "PointerSlot";
       };
       class LinkedItemsMuzzle
@@ -31,18 +31,18 @@ class CfgWeapons {
     };
   };
 
-  class STAF_rifle_416D165_gl: hlc_rifle_416D165_gl
+  class STAF_rifle_416D165_gl: CUP_arifle_HK416_M203_Black
   {
     class LinkedItems
     {
       class LinkedItemsOptic
       {
-      item = "rhsusf_acc_su230_mrds";
+      item = "hlc_optic_hensoldtzo_hi_docter";
       slot = "CowsSlot";
       };
       class LinkedItemsAcc
       {
-      item = "rhsusf_acc_anpeq15_bk";
+      item = "cfp_acc_anpeq15_black";
       slot = "PointerSlot";
       };
       class LinkedItemsMuzzle
@@ -53,23 +53,23 @@ class CfgWeapons {
     };
   };
 
-  class STAF_rifle_416C: hlc_rifle_416C
+  class STAF_rifle_416C: CUP_arifle_HK416_CQB_Black
   {
     class LinkedItems
     {
       class LinkedItemsOptic
       {
-      item = "rhsusf_acc_su230_mrds";
+      item = "hlc_optic_hensoldtzo_hi_docter";
       slot = "CowsSlot";
       };
       class LinkedItemsAcc
       {
-      item = "rhsusf_acc_anpeq15_bk";
+      item = "cfp_acc_anpeq15_black";
       slot = "PointerSlot";
       };
       class LinkedItemsMuzzle
       {
-      item = "muzzle_snds_M";
+      item = "cup_muzzle_snds_m16";
       slot = "MuzzleSlot";
       };
     };
@@ -81,12 +81,12 @@ class CfgWeapons {
     {
       class LinkedItemsOptic
       {
-      item = "optic_nvs";
+      item = "optic_nightstalker";
       slot = "CowsSlot";
       };
       class LinkedItemsAcc
       {
-      item = "rhsusf_acc_anpeq15_bk";
+      item = "cfp_acc_anpeq15_black";
       slot = "PointerSlot";
       };
       class LinkedItemsMuzzle
@@ -103,12 +103,12 @@ class CfgWeapons {
     {
       class LinkedItemsOptic
       {
-      item = "rhsusf_acc_su230_mrds";
+      item = "hlc_optic_hensoldtzo_hi_docter";
       slot = "CowsSlot";
       };
       class LinkedItemsAcc
       {
-      item = "rhsusf_acc_anpeq15_bk";
+      item = "cfp_acc_anpeq15_black";
       slot = "PointerSlot";
       };
       class LinkedItemsMuzzle

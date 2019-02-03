@@ -13,12 +13,10 @@ _uniform = [
             "tacs_Uniform_Garment_RS_ES_BP_BB"
 ] call BIS_fnc_selectRandom;
 _headGear = [
-            "rhssaf_helmet_m97_black_nocamo",
-            "rhssaf_helmet_m97_black_nocamo_black_ess",
-            "rhssaf_helmet_m97_black_nocamo_black_ess_bare"
+            "CUP_H_RACS_Helmet_Headset_TPAT"
 ] call BIS_fnc_selectRandom;
 _vest = [
-            "LOP_V_CarrierRig_BLK"
+            "Specter_LBT_vest"
 ] call BIS_fnc_selectRandom;
 _facewear = [
             "VSM_balaclava_Black_Skull",

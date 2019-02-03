@@ -55,7 +55,6 @@ for "_i" from 1 to 2 do {_unit addItem "ACE_tourniquet";};
 for "_i" from 1 to 2 do {_unit addItem "HandGrenade";};
 for "_i" from 1 to 2 do {_unit addItem "ACE_M84";};
 for "_i" from 1 to 4 do {_unit addItem "SmokeShell";};
-for "_i" from 1 to 4 do {_unit addItem "rhsusf_mag_40Rnd_46x30_FMJ";};
 for "_i" from 1 to 4 do {_unit addItem "ClaymoreDirectionalMine_Remote_Mag";};
 for "_i" from 1 to 3 do {_unit addItem "APERSBoundingMine_Range_Mag";};
 _unit addItem "ACE_Flashlight_XL50";

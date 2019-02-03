@@ -19,7 +19,7 @@ class CfgWeapons {
       };
       class LinkedItemsAcc
       {
-      item = "rhs_acc_perst3";
+      item = "fhq_acc_llm01l";
       slot = "PointerSlot";
       };
       class LinkedItemsMuzzle
@@ -41,7 +41,7 @@ class CfgWeapons {
       };
       class LinkedItemsAcc
       {
-      item = "rhs_acc_perst3";
+      item = "fhq_acc_llm01l";
       slot = "PointerSlot";
       };
       class LinkedItemsMuzzle
@@ -63,7 +63,7 @@ class CfgWeapons {
       };
       class LinkedItemsAcc
       {
-      item = "rhs_acc_perst3";
+      item = "fhq_acc_llm01l";
       slot = "PointerSlot";
       };
       class LinkedItemsMuzzle
@@ -114,12 +114,12 @@ class CfgWeapons {
     {
       class LinkedItemsOptic
       {
-      item = "rhsusf_acc_RM05";
+      item = "cup_optic_trijiconrx01_black";
       slot = "CowsSlot";
       };
       class LinkedItemsAcc
       {
-      item = "rhs_acc_perst3";
+      item = "fhq_acc_llm01l";
       slot = "PointerSlot";
       };
       class LinkedItemsMuzzle

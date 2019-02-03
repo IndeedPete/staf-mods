@@ -9,12 +9,14 @@ removeAllWeapons _unit;
 removeAllItems _unit;
 
 _uniform = ["SURPAT_Camo"] call BIS_fnc_selectRandom;
-_headGear = ["rhs_altyn"] call BIS_fnc_selectRandom;
+_headGear = ["Altyn_F_ZN_ch_C","Altyn_F_ZN_ch_m_C"] call BIS_fnc_selectRandom;
 _vest = ["Specter_RAV_BLK"] call BIS_fnc_selectRandom;
+_facewear = ["CUP_RUS_Balaclava_blk"] call BIS_fnc_selectRandom;
 _unit addBackpack "B_ViperHarness_blk_F";
 _unit addHeadgear _headGear;
 _unit addUniform _uniform;
 _unit addvest _vest;
+_unit addGoggles _facewear;
 
 _weapon = ["hlc_lmg_mk46"] call BIS_fnc_selectRandom;
 

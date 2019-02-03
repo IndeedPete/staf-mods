@@ -13,7 +13,7 @@ _uniform = [
             "tacs_Uniform_Garment_RS_BS_BP_BB"
 ] call BIS_fnc_selectRandom;
 _headGear = [
-            "rhsusf_hgu56p_black"
+            "H_CrewHelmetHeli_B"
 ] call BIS_fnc_selectRandom;
 _vest = [
             "Specter_RAV_BLK"

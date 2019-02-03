@@ -70,13 +70,12 @@ _unit addItem "SmokeShellRed";
 
 //Ammo
 if (_weapon == "STAF_rifle_416D165_gl") then {
-  for "_i" from 1 to 11 do {_unit addItem "hlc_30rnd_556x45_TDim_PMAG";};
+  for "_i" from 1 to 11 do {_unit addItem "ACE_30Rnd_556x45_Stanag_Mk262_mag";};
   for "_i" from 1 to 12 do {_unit addItem "1Rnd_HE_Grenade_shell";};
   for "_i" from 1 to 4 do {_unit addItem "UGL_FlareWhite_F";};
   for "_i" from 1 to 4 do {_unit addItem "1Rnd_Smoke_Grenade_shell";};
   for "_i" from 1 to 2 do {_unit addItem "1Rnd_SmokeRed_Grenade_shell";};
   for "_i" from 1 to 2 do {_unit addItem "1Rnd_SmokeGreen_Grenade_shell";};
-  for "_i" from 1 to 2 do {_unit addItem "rhs_mag_m4009";};
   for "_i" from 1 to 3 do {_unit addItem "ACE_HuntIR_M203";};
 };
 

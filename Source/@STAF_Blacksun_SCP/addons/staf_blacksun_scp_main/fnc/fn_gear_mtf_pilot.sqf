@@ -9,7 +9,7 @@ removeAllWeapons _unit;
 removeAllItems _unit;
 
 _uniform = ["SURPAT_Camo"] call BIS_fnc_selectRandom;
-_headGear = ["rhsusf_hgu56p_black"] call BIS_fnc_selectRandom;
+_headGear = ["H_PilotHelmetHeli_B"] call BIS_fnc_selectRandom;
 _vest = ["Specter_RAV_BLK"] call BIS_fnc_selectRandom;
 _facewear = ["skn_m04_gas_mask_blk"] call BIS_fnc_selectRandom;
 _unit addHeadgear _headGear;

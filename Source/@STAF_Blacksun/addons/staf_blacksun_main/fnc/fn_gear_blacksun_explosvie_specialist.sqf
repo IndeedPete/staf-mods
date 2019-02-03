@@ -69,7 +69,7 @@ _unit addItem "SmokeShellRed";
 
 //Ammo
 if (_weapon == "STAF_rifle_416D165") then {
-  for "_i" from 1 to 11 do {_unit addItem "hlc_30rnd_556x45_TDim_PMAG";};
+  for "_i" from 1 to 11 do {_unit addItem "ACE_30Rnd_556x45_Stanag_Mk262_mag";};
 };
 
 for "_i" from 1 to 3 do {_unit addItem "9Rnd_45ACP_Mag";};

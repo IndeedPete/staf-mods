@@ -8,7 +8,7 @@ removeBackpack _unit;
 removeAllWeapons _unit;
 removeAllItems _unit;
 
-_uniform = ["LOP_U_CHR_Doctor_01"] call BIS_fnc_selectRandom;
+_uniform = ["CUP_U_C_Labcoat_01"] call BIS_fnc_selectRandom;
 _unit addUniform _uniform;
 
 _unit addItem "STAF_geiger_counter";

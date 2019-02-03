@@ -8,10 +8,10 @@ removeBackpack _unit;
 removeAllWeapons _unit;
 removeAllItems _unit;
 
-_uniform = ["U_Marshal"] call BIS_fnc_selectRandom;
-_headGear = ["H_MilCap_gry"] call BIS_fnc_selectRandom;
-_vest = ["V_TacVest_blk"] call BIS_fnc_selectRandom;
-_facewear = ["G_Shades_Black"] call BIS_fnc_selectRandom;
+_uniform = ["U_B_GEN_Soldier_F"] call BIS_fnc_selectRandom;
+_headGear = ["H_PASGT_basic_black_F"] call BIS_fnc_selectRandom;
+_vest = ["tacs_Vest_Tactical_DarkBlack"] call BIS_fnc_selectRandom;
+_facewear = ["milgp_f_tactical_khk"] call BIS_fnc_selectRandom;
 _unit addHeadgear _headGear;
 _unit addUniform _uniform;
 _unit addvest _vest;

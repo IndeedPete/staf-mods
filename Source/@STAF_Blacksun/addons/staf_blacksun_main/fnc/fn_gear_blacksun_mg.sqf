@@ -68,7 +68,7 @@ _unit addItem "SmokeShellRed";
 
 //Ammo
 if (_weapon == "STAF_lmg_mk48") then {
-  for "_i" from 1 to 5 do {_unit addItem "hlc_100Rnd_762x51_Mdim_M60E4";};
+  for "_i" from 1 to 5 do {_unit addItem "150Rnd_762x51_Box";};
 };
 
 for "_i" from 1 to 3 do {_unit addItem "9Rnd_45ACP_Mag";};
