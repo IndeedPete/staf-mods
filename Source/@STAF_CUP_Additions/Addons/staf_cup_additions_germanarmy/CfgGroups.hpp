@@ -199,7 +199,7 @@ class CfgGroups {
                       position[] = { -5 , -5 , 0 };
                       rank = "PRIVATE";
                       side = 1;
-                      vehicle = "STAF_CUP_B_GER_Army_Soldier_AAA";
+                      vehicle = "STAF_CUP_B_GER_Army_Soldier_AA";
                   };
                   class Unit3 {
                       position[] = { 10 , -10 , 0 };
@@ -468,7 +468,7 @@ class CfgGroups {
                       position[] = {-5,-5,0};
                       rank = "PRIVATE";
                       side = 1;
-                      vehicle = "STAF_CUP_B_Ger_Army_Fleck_soldier_AAA";
+                      vehicle = "STAF_CUP_B_Ger_Army_Fleck_soldier_AA";
                   };
                   class Unit3 {
                       position[] = {10,-10,0};

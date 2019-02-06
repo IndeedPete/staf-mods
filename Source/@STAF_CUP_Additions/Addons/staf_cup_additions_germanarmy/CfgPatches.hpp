@@ -3,7 +3,6 @@
 class CfgPatches {
     class STAF_cup_additions_germanarmy {
       units[] = {
-        "STAF_CUP_B_Ger_Army_soldier_AAA",
         "STAF_CUP_B_Ger_Army_soldier_AA",
         "STAF_CUP_B_Ger_Army_soldier_Ammo",
         "STAF_CUP_B_Ger_Army_soldier_AAT",
@@ -14,11 +13,12 @@ class CfgPatches {
         "STAF_CUP_B_Ger_Army_soldier_MG3",
         "STAF_CUP_B_Ger_Army_soldier_Medic",
         "STAF_CUP_B_Ger_Army_soldier_Pilot",
+        "STAF_CUP_B_Ger_Army_soldier_Jetpilot",
         "STAF_CUP_B_Ger_Army_soldier",
+        "STAF_CUP_B_Ger_Army_soldier_Crew",
         "STAF_CUP_B_Ger_Army_soldier_Scout",
         "STAF_CUP_B_Ger_Army_soldier_Sniper",
         "STAF_CUP_B_Ger_Army_soldier_TL",
-        "STAF_CUP_B_Ger_Army_Fleck_soldier_AAA",
         "STAF_CUP_B_Ger_Army_Fleck_soldier_AA",
         "STAF_CUP_B_Ger_Army_Fleck_soldier_Ammo",
         "STAF_CUP_B_Ger_Army_Fleck_soldier_AAT",
@@ -29,7 +29,9 @@ class CfgPatches {
         "STAF_CUP_B_Ger_Army_Fleck_soldier_MG3",
         "STAF_CUP_B_Ger_Army_Fleck_soldier_Medic",
         "STAF_CUP_B_Ger_Army_Fleck_soldier_Pilot",
+        "STAF_CUP_B_Ger_Army_Fleck_soldier_Jetpilot",
         "STAF_CUP_B_Ger_Army_Fleck_soldier",
+        "STAF_CUP_B_Ger_Army_Fleck_soldier_Crew",
         "STAF_CUP_B_Ger_Army_Fleck_soldier_Scout",
         "STAF_CUP_B_Ger_Army_Fleck_soldier_Sniper",
         "STAF_CUP_B_Ger_Army_Fleck_soldier_TL",
@@ -49,10 +51,6 @@ class CfgPatches {
         "STAF_CUP_B_Dingo_GER_Wdl",
         "STAF_CUP_B_Dingo_GL_GER_Des",
         "STAF_CUP_B_Dingo_GL_GER_Wdl",
-        "STAF_CUP_B_M2StaticMG_GER",
-        "STAF_CUP_B_M2StaticMG_GER_Fleck",
-        "STAF_CUP_B_M2StaticMG_MiniTripod_GER",
-        "STAF_CUP_B_M2StaticMG_MiniTripod_GER_Fleck",
         "STAF_AW159_BW_Trop",
         "STAF_AW159_BW_Fleck",
         "STAF_AW159_BW_Trop_Unbewaffnet",
@@ -61,6 +59,8 @@ class CfgPatches {
         "STAF_NH_90_Fleck",
         "STAF_BW_Euro_Hawk",
         "STAF_BW_Euro_Hawk_Fleck",
+        "STAF_BW_EF2000",
+        "STAF_BW_EF2000_Fleck",
         "STAF_BW_LKW_Transport_offen_Tropen",
         "STAF_BW_LKW_Transport_Tropen",
         "STAF_BW_LKW_Geraet_Tropen",
@@ -80,10 +80,30 @@ class CfgPatches {
         "STAF_KGB_B_MRAP_03_gmg_F",
         "STAF_KGB_B_MRAP_03_F_DES",
         "STAF_KGB_B_MRAP_03_hmg_F_DES",
-        "STAF_KGB_B_MRAP_03_gmg_F_DES"
+        "STAF_KGB_B_MRAP_03_gmg_F_DES",
+        "STAF_B_Leopard",
+        "STAF_B_Leopard_Fleck",
+        "STAF_B_Wiesel_AA",
+        "STAF_B_Wiesel_Fleck_AA",
+        "STAF_B_Wiesel_AT",
+        "STAF_B_Wiesel_Fleck_AT",
+        "STAF_B_Wiesel_cannon",
+        "STAF_B_Wiesel_Fleck_cannon",
+        "STAF_B_Wiesel_scout",
+        "STAF_B_Wiesel_Fleck_scout",
+        "STAF_Bardelas",
+        "STAF_Bardelas_Fleck",
+        "STAF_Sholef",
+        "STAF_Sholef_Fleck",
+        "STAF_CUP_B_M2StaticMG_GER",
+        "STAF_CUP_B_M2StaticMG_GER_Fleck",
+        "STAF_CUP_B_M2StaticMG_MiniTripod_GER",
+        "STAF_CUP_B_M2StaticMG_MiniTripod_GER_Fleck",
+        "STAF_Podnos_2B14",
+        "STAF_Podnos_2B14_Fleck"
       };
       weapons[] = {};
-      requiredAddons[] = {"cfp_cup_b_ger","CFP_B_DEARMY_WDL_WDL","CUP_AirVehicles_CH53E","CUP_AirVehicles_UH1H","CUP_WheeledVehicles_Dingo","CUP_TrackedVehicles_Leopard2","CUP_Weapons_StaticWeapons","BW_Choppers","BW_drohne","BW_Car","KGB_A3_Soft_F_MRAP_03"};
+      requiredAddons[] = {"cfp_cup_b_ger","CFP_B_DEARMY_WDL_WDL","CUP_AirVehicles_CH53E","CUP_AirVehicles_UH1H","CUP_WheeledVehicles_Dingo","CUP_TrackedVehicles_Leopard2","CUP_Weapons_StaticWeapons","BW_Choppers","BW_drohne","BW_Car","KGB_A3_Soft_F_MRAP_03","pook_EF2000","pook_EF2000_CUP"};
       requiredVersion = 1.62;
       author = "STAF";
       url = "http://www.stafclan.com";
