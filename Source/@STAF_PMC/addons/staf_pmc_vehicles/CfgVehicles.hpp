@@ -71,7 +71,7 @@ class CfgVehicles {
 
           class EventHandlers: Eventhandlers {
             class STAF {
-              init = "[(_this select 0), nil, [""hideBench"",0,""hideFries"",1,""hideFLIR"",1,""hideUSARMY"",1,""hideRACS"",1]] call BIS_fnc_initVehicle;";
+              init = "[(_this select 0), nil, [""hideBench"",0,""hideFries"",1,""hideFLIR"",1,""hideUSARMY"",1,""hideRACS"",1]] call BIS_fnc_initVehicle; [(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_attackhelisequipment.sqf"";";
               class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
             };
           };

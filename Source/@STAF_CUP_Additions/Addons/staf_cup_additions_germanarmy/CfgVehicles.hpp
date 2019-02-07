@@ -283,6 +283,7 @@ class CfgVehicles {
         Items[] = {"FirstAidKit"};
         faction = "CUP_B_GER";
         editorSubcategory = "EdSubcat_Personnel";
+        weapons[] = {"CUP_srifle_G22_wdl_SBPMII","CUP_hgun_glock17_flashlight","CUP_Vector21Nite"};
         editorPreview = "\staf_cup_additions_germanarmy\eden\STAF_CUP_B_Ger_Army_soldier_Sniper.jpg";
         linkedItems[] = {"CFP_LBT6094_operator_AOR1", "CFP_OPS2017_Helmet_Tropentarn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "CUP_NVG_PVS15_black"};
         respawnLinkedItems[] = {"CFP_LBT6094_operator_AOR1", "CFP_OPS2017_Helmet_Tropentarn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "CUP_NVG_PVS15_black"};
@@ -590,6 +591,7 @@ class CfgVehicles {
         faction = "CFP_B_DEARMY_WDL";
         editorSubcategory = "EdSubcat_Personnel";
         editorPreview = "\staf_cup_additions_germanarmy\eden\STAF_CUP_B_Ger_Army_Fleck_soldier_Sniper.jpg";
+        weapons[] = {"CUP_srifle_G22_des_SBPMII","CUP_hgun_glock17_flashlight","CUP_Vector21Nite"};
         linkedItems[] = {"CFP_LBT6094_operator_AOR1", "CFP_OPS2017_Helmet_Flecktarn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "CUP_NVG_PVS15_black"};
         respawnLinkedItems[] = {"CFP_LBT6094_operator_AOR1", "CFP_OPS2017_Helmet_Flecktarn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "CUP_NVG_PVS15_black"};
         magazines[] = {"CUP_5Rnd_762x67_G22","CUP_5Rnd_762x67_G22","CUP_5Rnd_762x67_G22","CUP_5Rnd_762x67_G22","CUP_5Rnd_762x67_G22","CUP_5Rnd_762x67_G22","CUP_5Rnd_762x67_G22","CUP_17Rnd_9x19_glock17","CUP_17Rnd_9x19_glock17","HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShell"};
