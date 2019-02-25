@@ -9,6 +9,8 @@ class CfgFunctions
 			class ambientFlyBy{};
 			class bombingRun{};
 			class deadBody{};
+			class civilianfleeing{};
+			class ambientCivilian{};
 		};
 		class Ares
 		{
@@ -117,7 +119,7 @@ class CfgFunctions
 				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
 				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
 			};
-			class togglefleeing{
+			class civilianfleeing_zeus{
 				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
 				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
 				preStart = 0; //1 to call the function upon game start, before title screen, but after all addons are loaded.
@@ -212,8 +214,6 @@ class CfgFunctions
 			class unlimitedAmmo {};
 			class unlimitedAmmoInit {};
 			class trackmarker {};
-			class disableFleeing {};
-			class enableFleeing {};
 		};
 		class Radio
 		{
@@ -255,5 +255,13 @@ class CfgFunctions
 				file = "\STAF_FRAMEWORK\fnc\ZBE_Cache\main.sqf";
 			};
 		};
+	};
+
+	class PLP
+	{
+		class animations
+		{
+			delete disabling;
+		}
 	};
 };

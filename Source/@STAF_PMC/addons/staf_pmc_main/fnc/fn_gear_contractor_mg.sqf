@@ -913,7 +913,9 @@ _backpack = [
           ] call BIS_fnc_selectRandom;
 _weapon = [
               "STAF_rifle_m249",
-              "STAF_rifle_ng7"
+              "STAF_rifle_ng7",
+              "STAF_rifle_ng7_black",
+              "STAF_rifle_ng7_woodland"
           ] call BIS_fnc_selectRandom;
 _goggles = [
               "H_Shemag_olive",
@@ -1109,6 +1111,12 @@ if (_weapon == "STAF_rifle_m249") then {
 if (_weapon == "STAF_rifle_ng7") then {
   for "_i" from 1 to 4 do {_unit addItem "150Rnd_762x54_Box";};
 };
+if (_weapon == "STAF_rifle_ng7_black") then {
+  for "_i" from 1 to 4 do {_unit addItem "150Rnd_762x54_Box";};
+};
+if (_weapon == "STAF_rifle_ng7_woodland") then {
+  for "_i" from 1 to 4 do {_unit addItem "150Rnd_762x54_Box";};
+};
 for "_i" from 1 to 2 do {_unit addItem "KA_17Rnd_9x19_Mag";};
 
 //Addweapons
@@ -1138,7 +1146,7 @@ _unit linkItem "ItemCompass";
 _unit linkItem "ItemWatch";
 _unit linkItem "TFAR_anprc152";
 
-if (isNull objectParent player) then {_unit switchmove ""};
+if (isNull objectParent _unit) then {_unit switchmove ""};
 
 //Save loadout in Eden
 save3DENInventory [_unit];

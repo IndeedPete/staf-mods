@@ -1,4 +1,4 @@
-["STAF", "PMC Arsenal",
+["STAF Equipment", "PMC Arsenal",
 {
 	// Get all the passed parameters
 	params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];

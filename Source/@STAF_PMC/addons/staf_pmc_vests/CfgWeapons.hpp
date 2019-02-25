@@ -2,7 +2,6 @@ class CfgWeapons {
 
   class VestItem;
   class ItemCore;
-  class ItemInfo;
   class V_PlateCarrier1_rgr;
   class V_PlateCarrier2_rgr;
   class V_TacVest_khk;
@@ -14,7 +13,6 @@ class CfgWeapons {
   };
 
   // Tactical
-
   class STAF_V_TacVest_digital_arctic: V_TacVest_khk
   {
   	displayName = "STAF Tactical Vest (Arctic, Digital)";
@@ -152,7 +150,7 @@ class CfgWeapons {
   };
 
   //Hidden Vest
-  class STAF_V_TacVest_hidden: V_TacVest_khk
+  class STAF_V_TacVest_hidden: Vest_Camo_Base
   {
   	displayName = "STAF Bulletproof Vest (Hidden)";
   	hiddenSelectionsTextures[] = {""};
@@ -198,7 +196,4 @@ class CfgWeapons {
       };
     };
   };
-
-  //GSG9 Vests
-
 };

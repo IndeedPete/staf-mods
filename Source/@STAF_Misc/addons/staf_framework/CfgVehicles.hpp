@@ -27,7 +27,7 @@ class CfgVehicles
 	{
 		category = "STAF";
 		displayName = "Insignia Manager";
-		function = "STAF_fnc_insigniaInit";
+		function = "STAF_fnc_ambientciviliansinit";
 		functionPriority = 10;
 		isDisposable = 0;
 		is3DEN = 0;
@@ -529,6 +529,130 @@ class CfgVehicles
 				duplicate = 0;
 				synced[] = {"AnyStaticObject", "AnyVehicle"};
 			};
+		};
+	};
+
+	class STAF_Module_AmbientCivilian_F: Module_F
+	{
+		category = "STAF";
+		displayName = "Ambient Civilians";
+		function = "STAF_fnc_ambientCivilian";
+		functionPriority = 10;
+		isDisposable = 0;
+		is3DEN = 0;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		scope = 2;
+
+		class Attributes: AttributesBase
+		{
+			class STAF_Module_AmbientCivilian_debug: Checkbox
+  		{
+				property = "STAF_Module_AmbientCivilian_debug_checkbox";
+				displayName = "Debug";
+				typeName = "Bool";
+				defaultValue = "false";
+			};
+
+			class STAF_Module_AmbientCivilian_type: Combo
+  		{
+				property = "STAF_Module_AmbientCivilian_type_combo";
+				displayName = "Civilian Type";
+				typeName = "STRING";
+				defaultValue = "4";
+				class Values
+				{
+					class Afghan {name = "Afghan"; value = Afghan;};
+					class African_christ {name = "African (Christian)"; value = African_christ;};
+					class African_islam {name = "African (Islamic)"; value = African_islam;};
+					class Asian {name = "Asian"; value = Asian;};
+					class European	{name = "European"; value = European;};
+					class Middle_Eastern {name = "Middle Eastern"; value = Middle_Eastern;};
+					class Russian {name = "Russian"; value = Russian;};
+					class Takistan {name = "Takistan"; value = Takistan;};
+					class Tanoan {name = "Tanoan"; value = Tanoan;};
+				};
+			};
+
+			class STAF_Module_AmbientCivilian_perBuilding: Edit
+  		{
+				property = "STAF_Module_AmbientCivilian_perBuilding_edit";
+				displayName = "Number of Units per Building";
+				typeName = "NUMBER";
+				defaultValue = "0.1";
+			};
+
+			class STAF_Module_AmbientCivilian_maxCount: Edit
+  		{
+				property = "STAF_Module_AmbientCivilian_maxCount_edit";
+				displayName = "Maximum Number of Groups";
+				typeName = "NUMBER";
+				defaultValue = "100";
+			};
+
+			class STAF_Module_AmbientCivilian_rate: Edit
+  		{
+				property = "STAF_Module_AmbientCivilian_rate_edit";
+				displayName = "Spawn rate (in sec)";
+				typeName = "NUMBER";
+				defaultValue = "3";
+			};
+
+			class STAF_Module_AmbientCivilian_minSpawn: Edit
+  		{
+				property = "STAF_Module_AmbientCivilian_minSpawn_edit";
+				displayName = "Minimum Spawn Distance";
+				typeName = "NUMBER";
+				defaultValue = "50";
+			};
+
+			class STAF_Module_AmbientCivilian_maxSpawn: Edit
+  		{
+				property = "STAF_Module_AmbientCivilian_maxSpawn_edit";
+				displayName = "Maximum Spawn Distance";
+				typeName = "NUMBER";
+				defaultValue = "500";
+			};
+
+			class STAF_Module_AmbientCivilian_blacklist: Edit
+  		{
+				property = "STAF_Module_AmbientCivilian_blacklist_edit";
+				displayName = "Blacklist Marker";
+				typeName = "String";
+			};
+
+			class STAF_Module_AmbientCivilian_hide: Checkbox
+  		{
+				property = "STAF_Module_AmbientCivilian_hide_checkbox";
+				displayName = "Hide Blacklist Marker";
+				typeName = "Bool";
+				defaultValue = "true";
+			};
+
+			class ModuleDescription: ModuleDescription{};
+		};
+
+		class ModuleDescription: ModuleDescription
+		{
+			description = "Spawns Ambient Civilians";
+		};
+	};
+
+	class STAF_Module_CivilianFleeing_F: Module_F
+	{
+		category = "STAF";
+		displayName = "Civilian Fleeing";
+		function = "STAF_fnc_civilianfleeing";
+		functionPriority = 10;
+		isDisposable = 0;
+		is3DEN = 0;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		scope = 2;
+
+		class ModuleDescription: ModuleDescription
+		{
+			description = "Makes AI Civilians flee when shots fired close to its location!";
 		};
 	};
 };

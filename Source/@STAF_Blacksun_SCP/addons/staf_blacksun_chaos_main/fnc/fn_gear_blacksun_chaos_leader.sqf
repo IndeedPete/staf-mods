@@ -84,7 +84,7 @@ _unit linkItem "TFAR_fadak";
 _unit linkItem "NVGoggles_OPFOR";
 [_unit, "chaos_insurgency"] call BIS_fnc_setUnitInsignia;
 
-if (isNull objectParent player) then {_unit switchmove ""};
+if (isNull objectParent _unit) then {_unit switchmove ""};
 
 //Save loadout in Eden
 save3DENInventory [_unit];

@@ -82,3 +82,17 @@ Disable Damage (Global) (Eden)
 _______________________________________________________________________________
 
 Boxrefiller Module (Eden and maybe Zeus)
+
+_______________________________________________________________________________
+
+Civilian Module (Eden)
+
+- Debug (Checkbox)
+- Choose Civilian Type (Dropdown)
+- Units per building
+- Max Group Count
+- Min Spawn Distance
+- Max Spawn Distance
+- Blacklist Marker
+- Make Civilians Flee firefights (Checkbox)
+- Hide Blacklist Marker (Checkbox)

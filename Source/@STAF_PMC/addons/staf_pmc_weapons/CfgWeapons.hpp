@@ -493,6 +493,51 @@ class CfgWeapons {
 
   class STAF_rifle_ng7: LMG_Zafir_F
   {
+    displayName = "Negev NG7 (Tan)";
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "cup_optic_elcan_reflex";
+        slot = "CowsSlot";
+      };
+    };
+  };
+
+  class STAF_rifle_ng7_black_base: LMG_Zafir_F
+  {
+    displayName = "Negev NG7 (Black)";
+    hiddenSelections[] = {"camo1","camo2"};
+    hiddenSelectionsTextures[] = {"\staf_pmc_weapons\txt\STAF_Zafir01_Black_CO.paa","\staf_pmc_weapons\txt\STAF_Zafir02_Black_CO.paa"};
+		scope = 2;
+    baseWeapon = "STAF_rifle_ng7_black_base";
+  };
+
+  class STAF_rifle_ng7_woodland_base: LMG_Zafir_F
+  {
+    displayName = "Negev NG7 (Woodland)";
+    hiddenSelections[] = {"camo1","camo2"};
+    hiddenSelectionsTextures[] = {"\staf_pmc_weapons\txt\STAF_Zafir01_Woodland_CO.paa","\staf_pmc_weapons\txt\STAF_Zafir02_Woodland_CO.paa"};
+		scope = 2;
+    baseWeapon = "STAF_rifle_ng7_woodland_base";
+  };
+
+  class STAF_rifle_ng7_black: STAF_rifle_ng7_black_base
+  {
+    baseWeapon = "STAF_rifle_ng7_black_base";
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "cup_optic_elcan_reflex";
+        slot = "CowsSlot";
+      };
+    };
+  };
+
+  class STAF_rifle_ng7_woodland: STAF_rifle_ng7_woodland_base
+  {
+    baseWeapon = "STAF_rifle_ng7_woodland_base";
     class LinkedItems
     {
       class LinkedItemsOptic

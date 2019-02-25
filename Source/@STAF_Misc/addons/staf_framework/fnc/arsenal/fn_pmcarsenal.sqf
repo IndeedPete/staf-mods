@@ -35,6 +35,8 @@ _weapons = [
             "arifle_AK12_F",
             "arifle_AK12_GL_F",
             "LMG_Zafir_F",
+            "STAF_rifle_ng7_black_base",
+            "STAF_rifle_ng7_woodland_base",
             "KA_glock_18_Single",
             "KA_glock_18",
             "CUP_arifle_Mk16_CQC",
@@ -1869,6 +1871,22 @@ _othermagazines = [
             "SmokeShell",
             "ACE_M84",
             "MiniGrenade",
+
+            //Underbarrel
+            "1Rnd_HE_Grenade_shell",
+            "UGL_FlareGreen_F",
+            "UGL_FlareCIR_F",
+            "UGL_FlareRed_F",
+            "UGL_FlareYellow_F",
+            "UGL_FlareWhite_F",
+            "1Rnd_SmokeBlue_Grenade_shell",
+            "1Rnd_SmokeGreen_Grenade_shell",
+            "1Rnd_SmokeOrange_Grenade_shell",
+            "1Rnd_SmokePurple_Grenade_shell",
+            "1Rnd_SmokeRed_Grenade_shell",
+            "1Rnd_Smoke_Grenade_shell",
+            "1Rnd_SmokeYellow_Grenade_shell",
+            "ACE_HuntIR_M203",
 
             //Explosives
             "APERSMineDispenser_Mag",

@@ -5,26 +5,39 @@ _box = _this select 0;
 
 _weapons = [
   "LIB_Binocular_GER",
-  "LIB_K98",
+  "GLIB_GER_G43",
+  "GLIB_GER_K98k",
+  "GLIB_GER_K98k_2",
+  "GLIB_GER_K98k_4",
+  "GLIB_GER_K98k_5",
+  "GLIB_GER_MP40",
+  "LIB_G3340",
+  "LIB_G41",
   "LIB_G43",
-  "LIB_K98ZF39",
+  "LIB_FG42G",
+  "LIB_K98",
+  "LIB_K98_Late",
+  "LIB_MP38",
   "LIB_MP40",
   "LIB_MP44",
-  "LIB_MG42",
-  "LIB_M1908",
-  "LIB_FLARE_PISTOL",
+  "GLIB_GER_PIS625f",
+  "GLIB_GER_PIS640b",
   "LIB_M1896",
-  "LIB_G3340",
+  "LIB_Faustpatrone",
+  "LIB_FLARE_PISTOL",
   "LIB_GrWr34_Barrel",
+  "LIB_GrWr34_Barrel_g",
   "LIB_GrWr34_Tripod",
-  "LIB_K98_Late",
+  "LIB_GrWr34_Tripod_g",
+  "LIB_K98ZF39",
+  "LIB_MG42",
   "LIB_MG34",
   "LIB_MG34_PT",
-  "LIB_MP38",
   "LIB_P08",
   "LIB_P38",
-  "LIB_WaltherPPK",
-  "LIB_PzFaust_30m"
+  "LIB_PzFaust_30m",
+  "LIB_PzFaust_60m",
+  "LIB_WaltherPPK"
 ];
 
 _backpacks = [
@@ -2257,69 +2270,6 @@ _items = [
   "ItemWatch"
 ];
 
-_magazines = [
-  "lib_5Rnd_792x57",
-  "lib_5Rnd_792x57_t",
-  "lib_5Rnd_792x57_sS",
-  "lib_5Rnd_792x57_SMK",
-  "lib_10Rnd_792x57",
-  "lib_10Rnd_792x57_T",
-  "lib_10Rnd_792x57_T2",
-  "lib_10Rnd_792x57_sS",
-  "lib_10Rnd_792x57_SMK",
-  "lib_5Rnd_792x57",
-  "lib_5Rnd_792x57_t",
-  "lib_5Rnd_792x57_sS",
-  "lib_5Rnd_792x57_SMK",
-  "lib_5Rnd_792x57",
-  "lib_5Rnd_792x57_t",
-  "lib_5Rnd_792x57_sS",
-  "lib_5Rnd_792x57_SMK",
-  "LIB_5Rnd_792x57",
-  "LIB_10Rnd_792x57",
-  "LIB_32Rnd_9x19",
-  "LIB_50Rnd_792x57",
-  "LIB_30Rnd_792x33",
-  "LIB_8Rnd_9x19",
-  "LIB_8Rnd_9x19_P08",
-  "LIB_pwm",
-  "LIB_m39",
-  "LIB_nb39",
-  "LIB_shg24",
-  "LIB_shg24x7",
-  "LIB_1Rnd_flare_white",
-  "LIB_1Rnd_flare_red",
-  "LIB_1Rnd_flare_yellow",
-  "LIB_100Rnd_792x57",
-  "LIB_50Rnd_792x57_sS",
-  "LIB_50Rnd_792x57_SMK",
-  "LIB_1Rnd_60mm_Mo_HE",
-  "LIB_1Rnd_60mm_Mo_Illum",
-  "LIB_1Rnd_60mm_Mo_Smoke",
-  "LIB_75Rnd_792x57",
-  "LIB_1Rnd_81mm_Mo_HE",
-  "LIB_1Rnd_81mm_Mo_Illum",
-  "LIB_1Rnd_81mm_Mo_Smoke",
-  "LIB_1Rnd_82mm_Mo_HE",
-  "LIB_1Rnd_82mm_Mo_Illum",
-  "LIB_1Rnd_82mm_Mo_Smoke",
-  "LIB_6Rnd_763x25",
-  "LIB_7Rnd_9x19",
-  "lib_50Rnd_792x57",
-  "lib_50Rnd_792x57_SMK",
-  "lib_50Rnd_792x57_sS",
-  "lib_50Rnd_792x57",
-  "lib_50Rnd_792x57_SMK",
-  "lib_50Rnd_792x57_sS",
-  "LIB_32Rnd_9x19",
-  "LIB_32rnd_9x19",
-  "LIB_32rnd_9x19_t",
-  "LIB_30rnd_792x33",
-  "LIB_30rnd_792x33_t",
-  "lib_8Rnd_9x19",
-  "LIB_32Rnd_9x19"
-];
-
 _ACE = [
   "ACE_VMM3",
   "ACE_fieldDressing",
@@ -2378,6 +2328,17 @@ _TFAR = [
   "TFAR_rt1523g_rhs"
 ];
 
+_othermagazines = [
+
+];
+
+_magazines = [];
+{
+    {
+        _magazines pushBackUnique _x;
+    } forEach ([_x] call CBA_fnc_compatibleMagazines);
+} forEach _weapons;
+
 _attachments = [];
 {
     {
@@ -2386,6 +2347,6 @@ _attachments = [];
 } forEach _weapons;
 
 //Adding Itemlists to the Arsenal
-[_box,(_items + _backpacks + _magazines + _weapons + _ACE + _TFAR + _attachments),true] call ace_arsenal_fnc_initBox;
+[_box,(_items + _backpacks + _magazines + _weapons + _ACE + _TFAR + _attachments + _othermagazines),true] call ace_arsenal_fnc_initBox;
 
 [_box,["<img image='\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\box_ca.paa' /> Open Arsenal",{[(_this select 0), player,false] call ace_arsenal_fnc_openBox;}]] remoteExec ["addAction",0,true];

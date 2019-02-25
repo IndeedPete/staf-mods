@@ -403,33 +403,6 @@ _items = [
   "H_LIB_US_Helmet_Tank"
 ];
 
-_magazines = [
-  "LIB_5Rnd_762x63",
-  "LIB_15Rnd_762x33",
-  "LIB_30Rnd_45ACP",
-  "LIB_8Rnd_762x63",
-  "LIB_20Rnd_762x63",
-  "LIB_7Rnd_45ACP",
-  "LIB_1Rnd_60mm_M6",
-  "LIB_US_Mk_2",
-  "LIB_US_M18",
-  "LIB_US_M18_Red",
-  "LIB_US_M18_Green",
-  "LIB_US_M18_Yellow",
-  "LIB_1Rnd_flare_white",
-  "LIB_1Rnd_flare_red",
-  "LIB_1Rnd_flare_green",
-  "LIB_1Rnd_flare_yellow",
-  "LIB_15Rnd_762x33_t",
-  "LIB_8Rnd_762x63_t",
-  "LIB_100Rnd_762x63",
-  "LIB_50Rnd_762x63",
-  "LIB_M2_Flamethrower_Mag",
-  "LIB_1Rnd_60mm_M6",
-  "ItemCompass",
-  "ItemWatch"
-];
-
 _ACE = [
   "ACE_VMM3",
   "ACE_fieldDressing",
@@ -480,6 +453,17 @@ _TFAR = [
   "TFAR_anprc155_coyote"
 ];
 
+_othermagazines = [
+
+];
+
+_magazines = [];
+{
+    {
+        _magazines pushBackUnique _x;
+    } forEach ([_x] call CBA_fnc_compatibleMagazines);
+} forEach _weapons;
+
 _attachments = [];
 {
     {
@@ -488,6 +472,6 @@ _attachments = [];
 } forEach _weapons;
 
 //Adding Itemlists to the Arsenal
-[_box,(_items + _backpacks + _magazines + _weapons + _ACE + _TFAR + _attachments),true] call ace_arsenal_fnc_initBox;
+[_box,(_items + _backpacks + _magazines + _weapons + _ACE + _TFAR + _attachments + _othermagazines),true] call ace_arsenal_fnc_initBox;
 
 [_box,["<img image='\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\box_ca.paa' /> Open Arsenal",{[(_this select 0), player,false] call ace_arsenal_fnc_openBox;}]] remoteExec ["addAction",0,true];
