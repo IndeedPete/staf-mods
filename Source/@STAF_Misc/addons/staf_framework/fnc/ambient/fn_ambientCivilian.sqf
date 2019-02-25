@@ -28,17 +28,19 @@ _ac_Takistan = ["CUP_C_TK_Man_04","CUP_C_TK_Man_04_Jack","CUP_C_TK_Man_04_Waist"
 _ac_Tanoan = ["C_Man_casual_1_F_tanoan","C_Man_casual_2_F_tanoan","C_Man_casual_3_F_tanoan","C_Man_sport_1_F_tanoan","C_Man_sport_2_F_tanoan","C_Man_sport_3_F_tanoan","C_Man_casual_4_F_tanoan","C_Man_casual_5_F_tanoan","C_Man_casual_6_F_tanoan"];
 
 _ac_typechoice = switch (_ac_type) do {
-  case (Afghan) : {_ac_Afghan};
-  case (African_christ) : {_ac_African_christ};
-  case (African_islam) : {_ac_African_islam};
-  case (Asian) : {_ac_Asian};
-  case (European) : {_ac_European};
-  case (Middle_Eastern) : {_ac_Middle_Eastern};
-  case (Russian) : {_ac_Russian};
-  case (Takistan) : {_ac_Takistan};
-  case (Tanoan) : {_ac_Tanoan};
+  case ("Afghan") : {_ac_Afghan};
+  case ("African_christ") : {_ac_African_christ};
+  case ("African_islam") : {_ac_African_islam};
+  case ("Asian") : {_ac_Asian};
+  case ("European") : {_ac_European};
+  case ("Middle_Eastern") : {_ac_Middle_Eastern};
+  case ("Russian") : {_ac_Russian};
+  case ("Takistan") : {_ac_Takistan};
+  case ("Tanoan") : {_ac_Tanoan};
   default {_ac_European};
 };
+
+hint format ["%1\n%2\n%3",_ac_type,_ac_typestr,_ac_typechoice];
 
 //===================================DEBUG=====================================//
 

@@ -559,18 +559,18 @@ class CfgVehicles
 				property = "STAF_Module_AmbientCivilian_type_combo";
 				displayName = "Civilian Type";
 				typeName = "STRING";
-				defaultValue = "4";
+				defaultValue = """European""";
 				class Values
 				{
-					class Afghan {name = "Afghan"; value = Afghan;};
-					class African_christ {name = "African (Christian)"; value = African_christ;};
-					class African_islam {name = "African (Islamic)"; value = African_islam;};
-					class Asian {name = "Asian"; value = Asian;};
-					class European	{name = "European"; value = European;};
-					class Middle_Eastern {name = "Middle Eastern"; value = Middle_Eastern;};
-					class Russian {name = "Russian"; value = Russian;};
-					class Takistan {name = "Takistan"; value = Takistan;};
-					class Tanoan {name = "Tanoan"; value = Tanoan;};
+					class Afghan {name = "Afghan"; value = "Afghan";};
+					class African_christ {name = "African (Christian)"; value = "African_christ";};
+					class African_islam {name = "African (Islamic)"; value = "African_islam";};
+					class Asian {name = "Asian"; value = "Asian";};
+					class European	{name = "European"; value = "European";};
+					class Middle_Eastern {name = "Middle Eastern"; value = "Middle_Eastern";};
+					class Russian {name = "Russian"; value = "Russian";};
+					class Takistan {name = "Takistan"; value = "Takistan";};
+					class Tanoan {name = "Tanoan"; value = "Tanoan";};
 				};
 			};
 
@@ -580,6 +580,7 @@ class CfgVehicles
 				displayName = "Number of Units per Building";
 				typeName = "NUMBER";
 				defaultValue = "0.1";
+				tooltip = "Example: With 10 houses in a Radius and this set to 0.1 there will be one spawned Civilian";
 			};
 
 			class STAF_Module_AmbientCivilian_maxCount: Edit
@@ -588,14 +589,16 @@ class CfgVehicles
 				displayName = "Maximum Number of Groups";
 				typeName = "NUMBER";
 				defaultValue = "100";
+				tooltip = "How many Civilians will be spawned at all";
 			};
 
 			class STAF_Module_AmbientCivilian_rate: Edit
   		{
 				property = "STAF_Module_AmbientCivilian_rate_edit";
-				displayName = "Spawn rate (in sec)";
+				displayName = "Spawn rate";
 				typeName = "NUMBER";
 				defaultValue = "3";
+				tooltip = "In seconds (lower than 1 is allowed)";
 			};
 
 			class STAF_Module_AmbientCivilian_minSpawn: Edit
@@ -619,6 +622,7 @@ class CfgVehicles
 				property = "STAF_Module_AmbientCivilian_blacklist_edit";
 				displayName = "Blacklist Marker";
 				typeName = "String";
+				tooltip = "Example: ""Marker1"",""Marker2"",""Marker3""";
 			};
 
 			class STAF_Module_AmbientCivilian_hide: Checkbox
