@@ -4,7 +4,9 @@ _HideBody = [
   "\a3\ui_f\data\IGUI\Cfg\Revive\overlayIcons\d100_ca.paa",
   {
     // Checking target variable
-    if (_target getVariable "STAF_HideBody_active") exitWith {hint "Someone is already hiding this body!"};
+    if (_target getVariable "STAF_HideBody_active") exitWith {
+    ["Someone already takes care of this Body!", 2, _caller, 12] call ace_common_fnc_displayTextStructured;
+    };
 
     // Setting the variable
     _target setVariable ["STAF_HideBody_active",true,true];
