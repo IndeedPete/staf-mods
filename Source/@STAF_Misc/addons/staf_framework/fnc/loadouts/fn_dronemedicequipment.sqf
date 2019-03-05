@@ -22,3 +22,5 @@ _objs addItemCargoGlobal ["adv_aceCPR_AED",1];
 _objs addItemCargoGlobal ["ACE_adenosine",5];
 _objs addItemCargoGlobal ["ACE_bodyBag",2];
 _objs addItemCargoGlobal ["ACE_personalAidKit",2];
+
+_objs addBackpackCargoGlobal ["STAF_B_RepairBag",1]; //Defibrillator Bagback

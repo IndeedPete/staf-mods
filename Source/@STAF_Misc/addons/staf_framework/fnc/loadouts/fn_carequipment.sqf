@@ -48,3 +48,4 @@ _objs addMagazineCargoGlobal ["SmokeShell",5]; //Grenade White
 _objs addMagazineCargoGlobal ["ACE_SpareBarrel",1]; //SpareBarrel
 
 _objs addBackpackCargoGlobal ["STAF_B_RepairBag",1]; //Mechanic Bagback
+_objs addBackpackCargoGlobal ["STAF_B_RepairBag",1]; //Defibrillator Bagback

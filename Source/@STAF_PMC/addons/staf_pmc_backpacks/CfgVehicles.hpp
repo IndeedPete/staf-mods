@@ -71,6 +71,17 @@ class CfgVehicles {
 		};
   };
 
+  class STAF_B_AEDBag: B_AssaultPack_blk
+  {
+    baseBackpack = "STAF_B_AEDBag";
+		displayName = "STAF Defibrillator Bagpack";
+
+		class TransportItems
+		{
+			item_xx(adv_aceCPR_AEDItem,1);
+		};
+  };
+
   // Carry-All
 
 	class STAF_B_Carryall_MCAM_Black: B_Carryall_khk

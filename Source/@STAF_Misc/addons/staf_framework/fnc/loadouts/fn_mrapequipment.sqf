@@ -51,3 +51,4 @@ _objs addMagazineCargoGlobal ["CUP_SMAW_HEAA_M",2]; //SMAW Missile
 _objs addWeaponCargoGlobal ["CUP_launch_M136",2]; //SMAW Missile
 
 _objs addBackpackCargoGlobal ["STAF_B_RepairBag",1]; //Mechanic Bagback
+_objs addBackpackCargoGlobal ["STAF_B_RepairBag",1]; //Defibrillator Bagback

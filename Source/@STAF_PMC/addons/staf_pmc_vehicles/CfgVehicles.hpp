@@ -460,7 +460,7 @@ class CfgVehicles {
             selectionClan = "";
             crew = "B_UAV_AI";
             editorPreview = "\staf_pmc_main\eden\STAF_hexacopter.jpg";
-            maximumLoad = 500;
+            maximumLoad = 600;
 
             class EventHandlers: Eventhandlers {
               class STAF {
@@ -481,7 +481,7 @@ class CfgVehicles {
             selectionClan = "";
             crew = "B_UAV_AI";
             editorPreview = "\staf_pmc_main\eden\STAF_hexacopter_ammo.jpg";
-            maximumLoad = 3000;
+            maximumLoad = 3200;
 
             class EventHandlers: Eventhandlers {
               class STAF {
@@ -502,7 +502,7 @@ class CfgVehicles {
             selectionClan = "";
             crew = "B_UAV_AI";
             editorPreview = "\staf_pmc_main\eden\STAF_hexacopter_medical.jpg";
-            maximumLoad = 300;
+            maximumLoad = 400;
 
             class EventHandlers: Eventhandlers {
               class STAF {
@@ -523,7 +523,7 @@ class CfgVehicles {
             selectionClan = "";
             crew = "B_UAV_AI";
             editorPreview = "\staf_pmc_main\eden\STAF_hexacopter.jpg";
-            maximumLoad = 800;
+            maximumLoad = 900;
 
             class EventHandlers: Eventhandlers {
               class STAF {
