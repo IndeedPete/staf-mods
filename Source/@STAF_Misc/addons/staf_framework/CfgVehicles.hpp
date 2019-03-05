@@ -621,8 +621,8 @@ class CfgVehicles
   		{
 				property = "STAF_Module_AmbientCivilian_blacklist_edit";
 				displayName = "Blacklist Marker";
-				typeName = "String";
-				tooltip = "Example: ""Marker1"",""Marker2"",""Marker3""";
+				defaultValue = "";
+				tooltip = "Seperate by comma, no spaces!";
 			};
 
 			class STAF_Module_AmbientCivilian_hide: Checkbox

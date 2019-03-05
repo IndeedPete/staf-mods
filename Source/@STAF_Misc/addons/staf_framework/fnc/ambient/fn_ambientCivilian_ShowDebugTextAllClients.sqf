@@ -1,0 +1,3 @@
+STAF_ambientCivilian_DebugTextEventArgs = _this;
+publicVariable "STAF_ambientCivilian_DebugTextEventArgs";
+STAF_ambientCivilian_DebugTextEventArgs call STAF_fnc_ambientCivilian_ShowDebugTextLocal;
