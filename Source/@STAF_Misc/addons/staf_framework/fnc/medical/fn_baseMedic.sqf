@@ -13,7 +13,7 @@ if (!(isServer) && {_medic getVariable ["STAF_BaseMedic", false]}) exitWith {};
 	[
 		(format ["<img size='1' shadow='1' image='\a3\ui_f\data\igui\cfg\Actions\heal_ca.paa'/> %1", _text]),
 		{
-			[player] call STAF_fnc_ACEHeal;
+			[player, player] call ACE_medical_fnc_treatmentAdvanced_fullHealLocal;
 			["STAF_notification_healed",[]] call bis_fnc_showNotification;
 		},
 		[],
@@ -38,7 +38,7 @@ if (!(isServer) && {_medic getVariable ["STAF_BaseMedic", false]}) exitWith {};
 		{
 			{
 				if(_x distance (getPos (_this select 0)) < 10) then {
-					[_x] call STAF_fnc_ACEHeal;
+					[player, _x] call ACE_medical_fnc_treatmentAdvanced_fullHealLocal;
 				}
 			} forEach allUnits;
 			["STAF_notification_sombodyhealed",[]] call bis_fnc_showNotification;

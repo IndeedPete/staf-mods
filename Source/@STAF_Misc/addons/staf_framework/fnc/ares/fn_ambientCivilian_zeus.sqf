@@ -11,7 +11,9 @@
 		    ["Max Count", "", "100"],
 		    ["Spawn Rate (in sec)", "", "3"],
 		    ["Min Spawn Distance", "", "5"],
-		    ["Max Spawn Distance", "", "500"]
+		    ["Max Spawn Distance", "", "500"],
+        ["Check for Blacklist Marker", ["Yes","No"], 1],
+        ["Hide Blacklist Marker", ["Yes","No"], 0],
 		]
 	] call Ares_fnc_showChooseDialog;
 
@@ -19,7 +21,7 @@
 	if (_dialogResult isEqualTo []) exitWith{};
 
 	// Get the selected data
-	_dialogResult params ["_ac_zeus_type","_ac_zeus_perbuilding","_ac_zeus_maxcount","_ac_zeus_rate","_ac_zeus_minspawn","_ac_zeus_maxspawn"];
+	_dialogResult params ["_ac_zeus_type","_ac_zeus_perbuilding","_ac_zeus_maxcount","_ac_zeus_rate","_ac_zeus_minspawn","_ac_zeus_maxspawn","_ac_zeus_blacklist","_ac_zeus_hide"];
 
   _ac_zeus_spawning_active_check = missionNamespace getVariable "STAF_AmbientCivilian_active";
 
@@ -41,8 +43,17 @@
   _ac_zeus_maxspawn_result = _dialogResult select 5;
   _ac_zeus_maxspawn = parseNumber _ac_zeus_maxspawn_result;
   _ac_zeus_debug = false;
-  _ac_zeus_blacklist = call STAF_fnc_countblacklistmarker;
-  _ac_zeus_hide = false;
+  if (_dialogResult select 6 = 0) then {
+    _ac_zeus_blacklist = call STAF_fnc_countblacklistmarker;
+  } else {
+    _ac_zeus_blacklist = [""];
+  };
+  if (_dialogResult select 6 = 0) then {
+    _ac_zeus_hide = true;
+  } else {
+    _ac_zeus_hide = false;
+  };
+
 
   _ac_zeus_Afghan = ["CFP_C_AFG_Civilian_02","CFP_C_AFG_Civilian_01"];
   _ac_zeus_African_christ = ["CFP_C_AFRCHRISTIAN_Civ_1_01","CFP_C_AFRCHRISTIAN_Civ_2_01","CFP_C_AFRCHRISTIAN_Civ_3_01","CFP_C_AFRCHRISTIAN_Civ_4_01","CFP_C_AFRCHRISTIAN_Civ_5_01","CFP_C_AFRCHRISTIAN_Civ_6_01","CFP_C_AFRCHRISTIAN_Civ_7_01","CFP_C_AFRCHRISTIAN_Civ_8_01","CFP_C_AFRCHRISTIAN_Civ_9_01","CFP_C_AFRCHRISTIAN_Civ_10_01","CFP_C_AFRCHRISTIAN_Civ_11_01","CFP_C_AFRCHRISTIAN_Civ_12_01","CFP_C_AFRCHRISTIAN_Civ_13_01","CFP_C_AFRCHRISTIAN_Civ_14_01"];
@@ -76,8 +87,8 @@
   _ac_zeus_mns_maxspawn = missionNamespace setVariable ["STAF_AmbientCivilian_maxspawn",_ac_zeus_maxspawn];
   _ac_zeus_mns_spawning_active = missionNamespace setVariable ["STAF_AmbientCivilian_active",true];
   _ac_zeus_mns_debug = missionNamespace setVariable ["STAF_AmbientCivilian_debug",false];
-  _ac_zeus_mns_blacklist = missionNamespace setVariable ["STAF_AmbientCivilian_blacklist",[""]];
-  _ac_zeus_mns_hide = missionNamespace setVariable ["STAF_AmbientCivilian_hide",false];
+  _ac_zeus_mns_blacklist = missionNamespace setVariable ["STAF_AmbientCivilian_blacklist",_ac_zeus_blacklist];
+  _ac_zeus_mns_hide = missionNamespace setVariable ["STAF_AmbientCivilian_hide",_ac_zeus_hide];
 
   //===================================DEBUG=====================================//
 

@@ -315,12 +315,6 @@ _items = [
             //ADV
             "adv_aceSplint_splint",
             "adv_aceCPR_AED",
-            //KAT
-            "KAT_accuvac",
-            "KAT_guedel",
-            "KAT_larynx",
-            "KAT_Pulseoximeter",
-            "KAT_X_AED",
             //Vanilla
             "H_EarProtectors_black_F",
             "H_EarProtectors_orange_F",

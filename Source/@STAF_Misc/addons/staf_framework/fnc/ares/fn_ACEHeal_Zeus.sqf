@@ -1,4 +1,4 @@
-["STAF Medical", "Base Medic",
+["STAF Medical", "Full Heal",
 {
 	// Get all the passed parameters
 	params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
@@ -29,6 +29,6 @@
 
 	// Call STAF Base medic
 	{
-		[_x] call STAF_fnc_baseMedic;
+		[_x] call STAF_fnc_ACEHeal;
 	} forEach _selectedObjects;
 }] remoteexeccall ["Ares_fnc_RegisterCustomModule", 0, true];

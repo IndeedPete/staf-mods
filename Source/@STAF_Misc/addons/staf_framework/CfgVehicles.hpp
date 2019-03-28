@@ -532,7 +532,7 @@ class CfgVehicles
 		};
 	};
 
-	class STAF_Module_AmbientCivilian_F: Module_F
+	/*class STAF_Module_AmbientCivilian_F: Module_F
 	{
 		category = "STAF";
 		displayName = "Ambient Civilians";
@@ -658,5 +658,5 @@ class CfgVehicles
 		{
 			description = "Makes AI Civilians flee when shots fired close to its location!";
 		};
-	};
+	};*/
 };
