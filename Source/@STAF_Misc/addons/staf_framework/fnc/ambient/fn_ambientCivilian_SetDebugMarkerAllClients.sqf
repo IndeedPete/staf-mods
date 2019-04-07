@@ -1,3 +1,0 @@
-STAF_ambientCivilian_DebugMarkerEventArgs = _this;
-publicVariable "STAF_ambientCivilian_DebugMarkerEventArgs";
-STAF_ambientCivilian_DebugMarkerEventArgs call STAF_fnc_ambientCivilian_SetDebugMarkerLocal;

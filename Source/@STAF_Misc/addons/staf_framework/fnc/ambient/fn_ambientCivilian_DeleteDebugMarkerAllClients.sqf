@@ -1,3 +1,0 @@
-STAF_ambientCivilian_DeleteDebugMarkerEventArgs = _this;
-publicVariable "STAF_ambientCivilian_DeleteDebugMarkerEventArgs";
-STAF_ambientCivilian_DeleteDebugMarkerEventArgs call STAF_fnc_ambientCivilian_DeleteDebugMarkerLocal;
