@@ -417,8 +417,6 @@ _headGear = [
               "H_HelmetSpecB_sand",
               "H_HelmetSpecB_snakeskin",
               "H_HelmetB_Enh_tna_F",
-              "H_CrewHelmetHeli_O",
-              "H_CrewHelmetHeli_B",
               "H_HelmetB_light",
               "H_HelmetB_light_black",
               "H_HelmetB_light_desert",
