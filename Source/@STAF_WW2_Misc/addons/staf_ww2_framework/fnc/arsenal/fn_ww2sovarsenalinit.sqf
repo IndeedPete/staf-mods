@@ -5,5 +5,5 @@ params [
 ];
 
 {
-	[_x] call STAF_fnc_ww2germanarsenal;
+	[_x] call STAF_fnc_ww2sovarsenal;
 } forEach _objs;
