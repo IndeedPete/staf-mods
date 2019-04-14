@@ -22,13 +22,14 @@ class CfgVehicles {
     class burnes_husky_W;
     class burnes_husky;
     class B_LSV_01_unarmed_F;
+    class CUP_I_SUV_ION;
 
     //----------------------------------BLUFOR---------------------------------
       //----------------------------------Air------------------------------------
         class STAF_md500 : CUP_B_MH6J_USA {
             author = "STAF";
-            scope = 2;
-            scopeCurator = 2;
+            scope = 1;
+            scopeCurator = 1;
             displayName = "MD-500 (Modified)";
             side = 1;
             faction = "STAF_PMC";
@@ -39,13 +40,6 @@ class CfgVehicles {
             hiddenSelections[] = {"camo1","camo2","camo_bench","clan"};
             selectionClan = "";
             maximumLoad = 600;
-            /*ace_fastroping_enabled = 1;
-            ace_fastroping_ropeOrigins[] = {
-                {1.111,-0.075,-0.903},
-                {1.111,1.237,-0.903},
-                {-1.111,-0.075,-0.903},
-                {-1.111,1.237,-0.903}
-            };*/
 
             class EventHandlers: Eventhandlers {
               class STAF {
@@ -300,6 +294,36 @@ class CfgVehicles {
             };
         };
 
+        class STAF_suv_2 : CUP_I_SUV_ION {
+
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "SUV (Large)";
+            side = 1;
+            faction = "STAF_PMC";
+            crew = "STAF_contractor";
+            //editorPreview = "\staf_pmc_main\eden\STAF_suv.jpg";
+
+            acceleration = 5;
+            armor = 130;
+            armorStructural = 5;
+            armorGlass = 2;
+            armorWheels = 0.75;
+            Maxspeed = 100;
+
+            hiddenSelections[] = {"camo","clan"};
+            selectionClan = "";
+            maximumLoad = 1500;
+
+            class EventHandlers: Eventhandlers {
+              class STAF {
+                init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_carequipment.sqf"";";
+                class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+              };
+            };
+        };
+
         class STAF_caiman : CUP_B_Mastiff_HMG_GB_D {
 
             scope = 2;
@@ -538,8 +562,8 @@ class CfgVehicles {
       //----------------------------------Air------------------------------------
         class STAF_md500_opf : STAF_md500 {
             Side = 0;
-            scope = 2;
-            scopeCurator = 2;
+            scope = 1;
+            scopeCurator = 1;
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_heli_pilot_opf";
         };
@@ -621,6 +645,14 @@ class CfgVehicles {
         };
 
         class STAF_suv_opf : STAF_suv {
+            Side = 0;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_opf";
+        };
+
+        class STAF_suv_2_opf : STAF_suv_2 {
             Side = 0;
             scope = 2;
             scopeCurator = 2;
@@ -722,8 +754,8 @@ class CfgVehicles {
       //----------------------------------Air------------------------------------
         class STAF_md500_ind : STAF_md500 {
             Side = 2;
-            scope = 2;
-            scopeCurator = 2;
+            scope = 1;
+            scopeCurator = 1;
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_heli_pilot_ind";
         };
@@ -805,6 +837,14 @@ class CfgVehicles {
         };
 
         class STAF_suv_ind : STAF_suv {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_ind";
+        };
+
+        class STAF_suv_2_ind : STAF_suv_2 {
             Side = 2;
             scope = 2;
             scopeCurator = 2;
