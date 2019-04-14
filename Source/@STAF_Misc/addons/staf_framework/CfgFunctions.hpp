@@ -5,55 +5,28 @@ class CfgFunctions
 		class Ambient
 		{
 			file = "\STAF_FRAMEWORK\fnc\ambient";
-			class arty{};
-			class ambientFlyBy{};
-			class bombingRun{};
 			class deadBody{};
 		};
 		class Ares
 		{
 			file = "\STAF_FRAMEWORK\fnc\ares";
+			class ace_carryable{
+				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
+				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
+				preStart = 0; //1 to call the function upon game start, before title screen, but after all addons are loaded.
+				recompile = 1; //1 to recompile the function upon mission start
+				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
+				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
+			};
+			class ace_dragable{
+				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
+				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
+				preStart = 0; //1 to call the function upon game start, before title screen, but after all addons are loaded.
+				recompile = 1; //1 to recompile the function upon mission start
+				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
+				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
+			};
 			class basemedic_zeus{
-				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
-				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
-				preStart = 0; //1 to call the function upon game start, before title screen, but after all addons are loaded.
-				recompile = 1; //1 to recompile the function upon mission start
-				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
-				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
-			};
-			class pmcarsenal_zeus{
-				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
-				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
-				preStart = 0; //1 to call the function upon game start, before title screen, but after all addons are loaded.
-				recompile = 1; //1 to recompile the function upon mission start
-				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
-				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
-			};
-			class unlimitedFuel_zeus{
-				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
-				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
-				preStart = 0; //1 to call the function upon game start, before title screen, but after all addons are loaded.
-				recompile = 1; //1 to recompile the function upon mission start
-				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
-				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
-			};
-			class unlimitedAmmo_zeus{
-				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
-				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
-				preStart = 0; //1 to call the function upon game start, before title screen, but after all addons are loaded.
-				recompile = 1; //1 to recompile the function upon mission start
-				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
-				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
-			};
-			class hatearmanotification{
-				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
-				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
-				preStart = 0; //1 to call the function upon game start, before title screen, but after all addons are loaded.
-				recompile = 1; //1 to recompile the function upon mission start
-				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
-				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
-			};
-			class warcrimesnotification{
 				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
 				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
 				preStart = 0; //1 to call the function upon game start, before title screen, but after all addons are loaded.
@@ -69,22 +42,6 @@ class CfgFunctions
 				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
 				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
 			};
-			class pmcinventories{
-				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
-				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
-				preStart = 0; //1 to call the function upon game start, before title screen, but after all addons are loaded.
-				recompile = 1; //1 to recompile the function upon mission start
-				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
-				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
-			};
-			class coldBreath_zeus{
-				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
-				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
-				preStart = 0; //1 to call the function upon game start, before title screen, but after all addons are loaded.
-				recompile = 1; //1 to recompile the function upon mission start
-				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
-				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
-			};
 			class createareamarkerzeus{
 				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
 				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
@@ -93,7 +50,7 @@ class CfgFunctions
 				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
 				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
 			};
-			class ace_carryable{
+			class hatearmanotification{
 				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
 				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
 				preStart = 0; //1 to call the function upon game start, before title screen, but after all addons are loaded.
@@ -101,7 +58,39 @@ class CfgFunctions
 				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
 				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
 			};
-			class ace_dragable{
+			class pmcarsenal_zeus{
+				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
+				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
+				preStart = 0; //1 to call the function upon game start, before title screen, but after all addons are loaded.
+				recompile = 1; //1 to recompile the function upon mission start
+				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
+				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
+			};
+			class pmcinventories{
+				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
+				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
+				preStart = 0; //1 to call the function upon game start, before title screen, but after all addons are loaded.
+				recompile = 1; //1 to recompile the function upon mission start
+				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
+				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
+			};
+			class unlimitedAmmo_zeus{
+				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
+				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
+				preStart = 0; //1 to call the function upon game start, before title screen, but after all addons are loaded.
+				recompile = 1; //1 to recompile the function upon mission start
+				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
+				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
+			};
+			class unlimitedFuel_zeus{
+				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
+				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
+				preStart = 0; //1 to call the function upon game start, before title screen, but after all addons are loaded.
+				recompile = 1; //1 to recompile the function upon mission start
+				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
+				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
+			};
+			class warcrimesnotification{
 				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
 				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
 				preStart = 0; //1 to call the function upon game start, before title screen, but after all addons are loaded.
@@ -140,7 +129,6 @@ class CfgFunctions
 		{
 			file = "\STAF_FRAMEWORK\fnc\insignia";
 			class insignia{};
-			class insigniaInit{};
 		};
 		class KeyValueMap
 		{
@@ -164,78 +152,31 @@ class CfgFunctions
 			class helibigequipment{};
 			class helismallequipment{};
 			class mrapequipment{};
+			class pmcvehicleequipment {};
 		};
 		class Medical
 		{
 			file = "\STAF_FRAMEWORK\fnc\medical";
-			class ACEHeal{};
 			class baseMedic{};
 			class baseMedicInit{};
 		};
 		class Misc
 		{
 			file = "\STAF_FRAMEWORK\fnc\misc";
-			class blackIn{};
-			class blackOut{};
-			class compileFinal{};
+			class ace_knockout {preInit = 1;};
+			class ambientanimationmp {};
+			class animation {};
 			class createFireEffect{};
 			class disable{};
 			class enable{};
-			class intLight{};
-			class launchFlare{};
-			class repetitiveCleanup{};
 			class hidebody {preInit = 1;};
-			class ace_knockout {preInit = 1;};
-			class inHouse {};
+			class intLight{};
 			class spawnwreck {};
-			class ambientanimationmp {};
-			class animation {};
-			class pmcvehicleequipment {};
+			class trackmarker {};
 			class unlimitedFuel {};
 			class unlimitedFuelInit {};
 			class unlimitedAmmo {};
 			class unlimitedAmmoInit {};
-			class trackmarker {};
-		};
-		class Radio
-		{
-			file = "\STAF_FRAMEWORK\fnc\radio";
-			class radio{};
-			class radioInit{};
-		};
-		class SHKPos
-		{
-			file = "\STAF_FRAMEWORK\fnc\SHK_pos";
-			class SHKPos{};
-		};
-		class View
-		{
-			file = "\STAF_FRAMEWORK\fnc\view";
-			class viewRestrictions{};
-		};
-		class Weather
-		{
-			file = "\STAF_FRAMEWORK\fnc\weather";
-			class coldBreath{};
-			class coldBreathACE{};
-			class coldBreathTalking{};
-			class monitorLifeSigns{};
-			class snowFall{};
-			//class snowFalllight{};
-			//class snowFallmedium{};
-			//class snowFallheavy{};
-			//class snowFallblizzard{};
-		};
-	};
-
-	class ZBE
-	{
-		class ZBE_Cache
-		{
-			class main
-			{
-				file = "\STAF_FRAMEWORK\fnc\ZBE_Cache\main.sqf";
-			};
 		};
 	};
 
