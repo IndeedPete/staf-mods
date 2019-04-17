@@ -32,9 +32,9 @@ class CfgVehicles
 
 	class STAF_Module_WW2_USAArsenal_F: Module_F
 	{
-		category = "STAF";
+		category = "STAF_WW2";
 		displayName = "(WW2) USA Arsenal";
-		function = "STAF_fnc_ww2usaarsenalInit";
+		function = "STAF_WW2_fnc_ww2usaarsenalInit";
 		functionPriority = 10;
 		isDisposable = 0;
 		is3DEN = 0;
@@ -66,9 +66,9 @@ class CfgVehicles
 
 	class STAF_Module_WW2_GerArsenal_F: Module_F
 	{
-		category = "STAF";
+		category = "STAF_WW2";
 		displayName = "(WW2) German Arsenal";
-		function = "STAF_fnc_ww2gerarsenalInit";
+		function = "STAF_WW2_fnc_ww2gerarsenalInit";
 		functionPriority = 10;
 		isDisposable = 0;
 		is3DEN = 0;
@@ -100,9 +100,9 @@ class CfgVehicles
 
 	class STAF_Module_WW2_UKArsenal_F: Module_F
 	{
-		category = "STAF";
+		category = "STAF_WW2";
 		displayName = "(WW2) UK Arsenal";
-		function = "STAF_fnc_ww2ukarsenalInit";
+		function = "STAF_WW2_fnc_ww2ukarsenalInit";
 		functionPriority = 10;
 		isDisposable = 0;
 		is3DEN = 0;
@@ -134,9 +134,9 @@ class CfgVehicles
 
 	class STAF_Module_WW2_SovArsenal_F: Module_F
 	{
-		category = "STAF";
+		category = "STAF_WW2";
 		displayName = "(WW2) Soviet Arsenal";
-		function = "STAF_fnc_ww2sovarsenalInit";
+		function = "STAF_WW2_fnc_ww2sovarsenalInit";
 		functionPriority = 10;
 		isDisposable = 0;
 		is3DEN = 0;
@@ -168,9 +168,9 @@ class CfgVehicles
 
 	class STAF_Module_WW2_JapArsenal_F: Module_F
 	{
-		category = "STAF";
+		category = "STAF_WW2";
 		displayName = "(WW2) Japanese Arsenal";
-		function = "STAF_fnc_ww2japarsenalInit";
+		function = "STAF_WW2_fnc_ww2japarsenalInit";
 		functionPriority = 10;
 		isDisposable = 0;
 		is3DEN = 0;

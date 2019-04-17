@@ -23,46 +23,6 @@ class CfgVehicles
 		};
 	};
 
-	class STAF_Module_Insignia_F: Module_F
-	{
-		category = "STAF";
-		displayName = "Insignia Manager";
-		function = "STAF_fnc_ambientciviliansinit";
-		functionPriority = 10;
-		isDisposable = 0;
-		is3DEN = 0;
-		isGlobal = 0;
-		isTriggerActivated = 0;
-		scope = 2;
-
-		class Attributes: AttributesBase
-		{
-			class Key: Edit
-			{
-			displayName = "Key";
-			description = "Enter a custom mission key if you set up a specific configuration in \userconfig\STAF\Insignias\insignias.sqf.";
-			defaultValue = "";
-			};
-			class ModuleDescription: ModuleDescription{};
-		};
-
-		class ModuleDescription: ModuleDescription
-		{
-			description = "Automatically adds a predefined country insignia to player.";
-			sync[] = {"LocationArea_F"};
-
-			class LocationArea_F
-			{
-				description[] = {"Automatically adds and maintains custom insignias."};
-				position = 0;
-				direction = 0;
-				optional = 0;
-				duplicate = 0;
-				synced[] = {"AnyBrain"};
-			};
-		};
-	};
-
 	class STAF_Module_Base_Medic_F: Module_F
 	{
 		category = "STAF";

@@ -1,3 +1,4 @@
+#include "CfgFactionClasses.hpp"
 #include "CfgFunctions.hpp"
 #include "CfgInventoryGlobalVariable.hpp"
 #include "CfgMovesFatigue.hpp"

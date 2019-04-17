@@ -125,11 +125,6 @@ class CfgFunctions
 			file = "\STAF_FRAMEWORK\fnc\diary";
 			class adddiaryentries{postInit = 1;};
 		};
-		class Insignia
-		{
-			file = "\STAF_FRAMEWORK\fnc\insignia";
-			class insignia{};
-		};
 		class KeyValueMap
 		{
 			file = "\STAF_FRAMEWORK\fnc\keyValueMap";

@@ -29,6 +29,6 @@
 
 	// Call STAF Arsenal
 	{
-		[_x] call STAF_fnc_ww2ukarsenal;
+		[_x] call STAF_WW2_fnc_ww2ukarsenal;
 	} forEach _selectedObjects;
 }] remoteexeccall ["Ares_fnc_RegisterCustomModule", 0, true];

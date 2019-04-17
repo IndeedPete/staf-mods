@@ -1,6 +1,6 @@
 class CfgFunctions
 {
-	class STAF
+	class STAF_WW2
 	{
 		class Arsenal_WW2
 		{

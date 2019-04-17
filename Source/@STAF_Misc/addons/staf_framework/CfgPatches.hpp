@@ -4,7 +4,6 @@ class CfgPatches
 	{
 		units[] =
 		{
-			"STAF_Module_Insignia_F",
 			"STAF_Module_Base_Medic_F",
 			"STAF_Module_PMC_Arsenal_F",
 			"STAF_Module_PMC_Vehicle_Equipment_F",
@@ -15,9 +14,7 @@ class CfgPatches
 			"STAF_Module_Base_Medic_Zeus_F",
 			"STAF_Module_PMC_Arsenal_Zeus_F",
 			"STAF_Module_Unlimited_Fuel_F",
-			"STAF_Module_Unlimited_Ammo_F",
-			"STAF_Module_AmbientCivilian_F",
-			"STAF_Module_CivilianFleeing_F"
+			"STAF_Module_Unlimited_Ammo_F"
 		};
 		weapons[] = {};
 		requiredVersion = 1.0;
