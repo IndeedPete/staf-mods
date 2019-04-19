@@ -32,13 +32,15 @@ while {Alive _radio} do {
     case "STAF_GER_Mondschein": {_radio setVariable ["STAF_WW2_Music_Time", 174];};
     case "STAF_GER_Musik_Musik": {_radio setVariable ["STAF_WW2_Music_Time", 173];};
     case "STAF_GER_Puszta": {_radio setVariable ["STAF_WW2_Music_Time", 205];};
-    case "STAF_GER_Schon": {_radio setVariable ["STAF_WW2_Music_Time", 162];};
+    case "STAF_GER_Schon": {_radio setVariable ["STAF_WW2_Music_Time", 163];};
   };
 
   _time = _radio getVariable "STAF_WW2_Music_Time";
 
   //Play the Music
   _sound = [_radio,[_song, 100]] remoteExec ["say3D", 0, true];
+  //_sound = [_radio,[_song, 100]] remoteExec ["say3D", 2, true];
+  //_sound = _radio say3D [_song, 100];
 
   sleep (_time + 2);
 };

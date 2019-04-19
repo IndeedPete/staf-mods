@@ -7,7 +7,7 @@ class CfgSounds
 		name = "Adieu";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\ger\Adieu.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\ger\Adieu.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -15,61 +15,61 @@ class CfgSounds
 	class STAF_GER_Bei_Mir
 	{
 		name = "Bei Mir";
-		sound[] = { "staf_ww2_framework\snd\ger\Bei_Mir.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\ger\Bei_Mir.ogg", 2, 1};
 		titles[] = {};
 	};
 	class STAF_GER_Einmal
 	{
 		name = "Einmal";
-		sound[] = { "staf_ww2_framework\snd\ger\Einmal.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\ger\Einmal.ogg", 2, 1};
 		titles[] = {};
 	};
 	class STAF_GER_Frag_mich_nicht
 	{
 		name = "Frag mich nicht";
-		sound[] = { "staf_ww2_framework\snd\ger\Frag_mich_nicht.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\ger\Frag_mich_nicht.ogg", 2, 1};
 		titles[] = {};
 	};
 	class STAF_GER_Frau_in_meinen_Jahren
 	{
 		name = "Frau in meinen Jahren";
-		sound[] = { "staf_ww2_framework\snd\ger\Frau_in_meinen_Jahren.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\ger\Frau_in_meinen_Jahren.ogg", 2, 1};
 		titles[] = {};
 	};
 	class STAF_GER_Jattendrai
 	{
 		name = "Jattendrai";
-		sound[] = { "staf_ww2_framework\snd\ger\Jattendrai.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\ger\Jattendrai.ogg", 2, 1};
 		titles[] = {};
 	};
 	class STAF_GER_Komm_Zuruck
 	{
 		name = "Komm Zuruck";
-		sound[] = { "staf_ww2_framework\snd\ger\Komm_Zuruck.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\ger\Komm_Zuruck.ogg", 2, 1};
 		titles[] = {};
 	};
 	class STAF_GER_Mondschein
 	{
 		name = "Mondschein";
-		sound[] = { "staf_ww2_framework\snd\ger\Mondschein.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\ger\Mondschein.ogg", 2, 1};
 		titles[] = {};
 	};
 	class STAF_GER_Musik_Musik
 	{
 		name = "Musik Musik";
-		sound[] = { "staf_ww2_framework\snd\ger\Musik_Musik.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\ger\Musik_Musik.ogg", 2, 1};
 		titles[] = {};
 	};
 	class STAF_GER_Puszta
 	{
 		name = "Puszta";
-		sound[] = { "staf_ww2_framework\snd\ger\Puszta.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\ger\Puszta.ogg", 2, 1};
 		titles[] = {};
 	};
 	class STAF_GER_Schon
 	{
 		name = "Schon";
-		sound[] = { "staf_ww2_framework\snd\ger\Schon.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\ger\Schon.ogg", 2, 1};
 		titles[] = {};
 	};
 
@@ -81,7 +81,7 @@ class CfgSounds
 		name = "Amapola";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\Amapola.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\Amapola.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -92,7 +92,7 @@ class CfgSounds
 		name = "Boogie Woogie Bugle Boy";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\Boogie_Woogie_Bugle_Boy.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\Boogie_Woogie_Bugle_Boy.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -103,7 +103,7 @@ class CfgSounds
 		name = "Buttons Bows";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\Buttons_Bows.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\Buttons_Bows.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -114,7 +114,7 @@ class CfgSounds
 		name = "Chattanooga Choo Choo";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\Chattanooga_Choo_Choo.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\Chattanooga_Choo_Choo.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -125,7 +125,7 @@ class CfgSounds
 		name = "Frenesi";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\Frenesi.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\Frenesi.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -136,7 +136,7 @@ class CfgSounds
 		name = "I've Heard that song before";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\Heard_that_song_before.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\Heard_that_song_before.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -147,7 +147,7 @@ class CfgSounds
 		name = "Jingle Jangle Jingle";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\Jingle_Jangle_Jingle.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\Jingle_Jangle_Jingle.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -158,7 +158,7 @@ class CfgSounds
 		name = "I've got a Gal in Kalamazoo";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\Kalamazoo.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\Kalamazoo.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -169,7 +169,7 @@ class CfgSounds
 		name = "Manana";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\Manana.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\Manana.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -180,7 +180,7 @@ class CfgSounds
 		name = "Moonlight Cocktail";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\Moonlight_Cocktail.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\Moonlight_Cocktail.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -191,7 +191,7 @@ class CfgSounds
 		name = "Nature Boy";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\Nature_Boy.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\Nature_Boy.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -202,7 +202,7 @@ class CfgSounds
 		name = "I'll never smile again";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\Never_smile_again.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\Never_smile_again.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -213,7 +213,7 @@ class CfgSounds
 		name = "Only Forever";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\Only_Forever.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\Only_Forever.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -224,7 +224,7 @@ class CfgSounds
 		name = "Paper Doll";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\Paper_doll.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\Paper_doll.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -235,7 +235,7 @@ class CfgSounds
 		name = "Rum and Coca Cola";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\Rum_and_coca_cola.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\Rum_and_coca_cola.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -246,7 +246,7 @@ class CfgSounds
 		name = "Sentimental Journey";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\Sentimental_Journey.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\Sentimental_Journey.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -257,7 +257,7 @@ class CfgSounds
 		name = "Sleepy Lagoon";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\Sleepy_Lagoon.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\Sleepy_Lagoon.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -268,7 +268,7 @@ class CfgSounds
 		name = "Stardust";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\Stardust.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\Stardust.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -279,7 +279,7 @@ class CfgSounds
 		name = "Sunday, Monday or always";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\Sunday_monday_or_always.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\Sunday_monday_or_always.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -290,7 +290,7 @@ class CfgSounds
 		name = "Swinging on a star";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\Swinging_on_a_star.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\Swinging_on_a_star.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -301,7 +301,7 @@ class CfgSounds
 		name = "Take the a Train";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\Take_the_a_Train.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\Take_the_a_Train.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -312,7 +312,7 @@ class CfgSounds
 		name = "Tangerine";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\Tangerine.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\Tangerine.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -323,7 +323,7 @@ class CfgSounds
 		name = "There are such things";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\There_are_such_things.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\There_are_such_things.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -334,7 +334,7 @@ class CfgSounds
 		name = "This land is your land";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\This_land_is_your_land.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\This_land_is_your_land.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -345,7 +345,7 @@ class CfgSounds
 		name = "Till the End of Time";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\us\Till_the_end_of_time.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\us\Till_the_end_of_time.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -359,7 +359,7 @@ class CfgSounds
 		name = "Bells Ring and Jingle";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\sov\Bells_Ring_and_Jingle.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\sov\Bells_Ring_and_Jingle.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -370,7 +370,7 @@ class CfgSounds
 		name = "Bimbambula";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\sov\Bimbambula.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\sov\Bimbambula.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -381,7 +381,7 @@ class CfgSounds
 		name = "By the long road";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\sov\By_the_long_road.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\sov\By_the_long_road.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -392,7 +392,7 @@ class CfgSounds
 		name = "Caravan";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\sov\Caravan.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\sov\Caravan.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -403,7 +403,7 @@ class CfgSounds
 		name = "Doll Foxtrot";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\sov\Doll_Foxtrot.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\sov\Doll_Foxtrot.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -414,7 +414,7 @@ class CfgSounds
 		name = "Kalinka";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\sov\Kalinka.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\sov\Kalinka.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -425,7 +425,7 @@ class CfgSounds
 		name = "Modern Times Foxtrot";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\sov\Modern_Times_Foxtrot.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\sov\Modern_Times_Foxtrot.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -436,7 +436,7 @@ class CfgSounds
 		name = "Rumba";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\sov\Rumba.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\sov\Rumba.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -447,7 +447,7 @@ class CfgSounds
 		name = "The Steamboat";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\sov\The_Steamboat.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\sov\The_Steamboat.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -458,7 +458,7 @@ class CfgSounds
 		name = "When Yuba plays the Rumba on the Tuba down in Cuba";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\sov\When_Yuba_plays_the_Rumba_on_the_Tuba_down_in_Cuba.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\sov\When_Yuba_plays_the_Rumba_on_the_Tuba_down_in_Cuba.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -472,7 +472,7 @@ class CfgSounds
 		name = "After the Rain";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\uk\After_The_Rain.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\uk\After_The_Rain.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -483,7 +483,7 @@ class CfgSounds
 		name = "Always in my heart";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\uk\Always_in_my_heart.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\uk\Always_in_my_heart.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -494,7 +494,7 @@ class CfgSounds
 		name = "Auf Wiedersehn sweetheart";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\uk\Auf_Wiedersehn_sweetheart.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\uk\Auf_Wiedersehn_sweetheart.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -505,7 +505,7 @@ class CfgSounds
 		name = "From The Time You Say Goodbye";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\uk\From_The_Time_You_Say_Goodbye.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\uk\From_The_Time_You_Say_Goodbye.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -516,7 +516,7 @@ class CfgSounds
 		name = "London Pride";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\uk\London_Pride.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\uk\London_Pride.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -527,7 +527,7 @@ class CfgSounds
 		name = "Run Rabbit Run";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\uk\Run_Rabbit_Run.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\uk\Run_Rabbit_Run.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -538,7 +538,7 @@ class CfgSounds
 		name = "Something to Remember You By";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\uk\Something_to_Remember_You_By.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\uk\Something_to_Remember_You_By.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -549,7 +549,7 @@ class CfgSounds
 		name = "Well Meet Again";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\uk\Well_Meet_Again.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\uk\Well_Meet_Again.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -560,7 +560,7 @@ class CfgSounds
 		name = "When I Grow too Old to Dream";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\uk\When_I_Grow_too_Old_to_Dream.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\uk\When_I_Grow_too_Old_to_Dream.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -571,7 +571,7 @@ class CfgSounds
 		name = "White Cliffs Of Dover";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\uk\White_Cliffs_Of_Dover.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\uk\White_Cliffs_Of_Dover.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -582,7 +582,7 @@ class CfgSounds
 		name = "Wish me luck as you wave me goodbye";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\uk\Wish_me_luck_as_you_wave_me_goodbye.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\uk\Wish_me_luck_as_you_wave_me_goodbye.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -593,7 +593,7 @@ class CfgSounds
 		name = "Youll_Never_Know";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\uk\Youll_Never_Know.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\uk\Youll_Never_Know.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -607,7 +607,7 @@ class CfgSounds
 		name = "Ano Onekoete";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\jap\Ano_Onekoete.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\jap\Ano_Onekoete.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -618,7 +618,7 @@ class CfgSounds
 		name = "Butterfly of Nagasaki";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\jap\Butterfly_of_Nagasaki.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\jap\Butterfly_of_Nagasaki.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -629,7 +629,7 @@ class CfgSounds
 		name = "Cherry Blossoms";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\jap\Cherry_Blossoms.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\jap\Cherry_Blossoms.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -640,7 +640,7 @@ class CfgSounds
 		name = "China Night";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\jap\China_Night.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\jap\China_Night.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -651,7 +651,7 @@ class CfgSounds
 		name = "Getsu getsu ka_sui moku kin kin";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\jap\Getsu_getsu_ka_sui_moku_kin_kin.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\jap\Getsu_getsu_ka_sui_moku_kin_kin.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -662,7 +662,7 @@ class CfgSounds
 		name = "Kimi Ga Yo";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\jap\Kimi_Ga_Yo.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\jap\Kimi_Ga_Yo.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -673,7 +673,7 @@ class CfgSounds
 		name = "Roei no Uta";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\jap\Roei_no_Uta.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\jap\Roei_no_Uta.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -684,7 +684,7 @@ class CfgSounds
 		name = "Sado Okesa";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\jap\Sado_Okesa.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\jap\Sado_Okesa.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -695,7 +695,7 @@ class CfgSounds
 		name = "Sendo Kawaiya";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\jap\Sendo_Kawaiya.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\jap\Sendo_Kawaiya.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};
@@ -706,7 +706,7 @@ class CfgSounds
 		name = "Wasurecha Iya Yo";
 
 		// filename, volume, pitch, distance (optional)
-		sound[] = { "staf_ww2_framework\snd\jap\Wasurecha_Iya_Yo.ogg", 2, 1};
+		sound[] = { "staf_ww2_music\snd\jap\Wasurecha_Iya_Yo.ogg", 2, 1};
 
 		// subtitle delay in seconds, subtitle text
 		titles[] = {};

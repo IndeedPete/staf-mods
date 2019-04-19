@@ -13,7 +13,7 @@ class CfgPatches
 		};
 		weapons[] = {};
 		requiredVersion = 1.0;
-		requiredAddons[] = {"A3_Modules_F"};
+		requiredAddons[] = {"A3_Modules_F","STAF_WW2_Music"};
 		author = "STAF";
 		authorUrl = "http://stafclan.com/index.php/BoardList/";
 		version = 1.0;
