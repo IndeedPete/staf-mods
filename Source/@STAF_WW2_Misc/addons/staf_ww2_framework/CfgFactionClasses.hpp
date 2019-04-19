@@ -1,8 +1,8 @@
 class CfgFactionClasses
 {
-	class NO_CATEGORY;
+	class STAF;
 
-	class STAF_WW2: NO_CATEGORY
+	class STAF_WW2: STAF
 	{
 		displayName = "STAF WW2";
 	};

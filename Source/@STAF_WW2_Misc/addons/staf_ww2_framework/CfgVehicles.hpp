@@ -200,6 +200,55 @@ class CfgVehicles
 		};
 	};
 
+	class STAF_Module_WW2_Music_Radio_F: Module_F
+	{
+		category = "STAF_WW2";
+		displayName = "Music Radio";
+		function = "STAF_WW2_fnc_radioinit";
+		functionPriority = 10;
+		isDisposable = 0;
+		is3DEN = 0;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		scope = 2;
+
+		class Attributes: AttributesBase
+		{
+			class STAF_Module_WW2_Music_Radio_Type: Combo
+  		{
+				property = "STAF_Module_WW2_Music_Radio_Type_Combo";
+				displayName = "What Radio Type?";
+				typeName = "NUMBER";
+				defaultValue = "0";
+				class Values
+				{
+					class german	{name = "German"; value = 0;};
+					class soviet	{name = "Soviet"; value = 1;};
+					class british	{name = "British"; value = 2;};
+					class us	{name = "US"; value = 3;};
+					class japan	{name = "Japanese"; value = 4;};
+				};
+			};
+			class ModuleDescription: ModuleDescription{};
+		};
+
+		class ModuleDescription: ModuleDescription
+		{
+			description = "Sync a Vehicle to this module to create a Radio loop to it!";
+			sync[] = {"LocationArea_F"};
+
+			class LocationArea_F
+			{
+				description[] =	{"Synchronise any Vehicle to this module."};
+				position = 0;
+				direction = 0;
+				optional = 0;
+				duplicate = 0;
+				synced[] = {"AnyVehicle"};
+			};
+		};
+	};
+
 	class STAF_Bagpipe_crate : LIB_BasicAmmunitionBox_US
 	{
 		displayName = "Bagpipe Create";

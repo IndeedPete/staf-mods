@@ -8,7 +8,8 @@ class CfgPatches
 			"STAF_Module_WW2_GerArsenal_F",
 			"STAF_Module_WW2_UKArsenal_F",
 			"STAF_Module_WW2_SovArsenal_F",
-			"STAF_Module_WW2_JapArsenal_F"
+			"STAF_Module_WW2_JapArsenal_F",
+			"STAF_Module_WW2_Music_Radio_F"
 		};
 		weapons[] = {};
 		requiredVersion = 1.0;
