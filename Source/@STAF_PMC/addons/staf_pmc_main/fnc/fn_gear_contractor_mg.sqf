@@ -1094,7 +1094,18 @@ _goggles = [
               "CUP_PMC_Facewrap_Tropical",
               "CUP_TK_NeckScarf",
               "CUP_FR_NeckScarf",
-              "CUP_FR_NeckScarf2"
+              "CUP_FR_NeckScarf2",
+              "CFP_Beard",
+              "CFP_Beard_Grey",
+              "CFP_Beard_Red",
+              "CFP_Scarfbeard_green",
+              "CFP_Scarfbeard_grey",
+              "CFP_Scarfbeard_tan",
+              "CFP_Scarfbeard_white",
+              "CFP_Scarfbeardshades_green",
+              "CFP_Scarfbeardshades_grey",
+              "CFP_Scarfbeardshades_tan",
+              "CFP_Scarfbeardshades_white"
               ] call BIS_fnc_selectRandom;
 _unit addGoggles _goggles;
 _unit addHeadgear _headGear;

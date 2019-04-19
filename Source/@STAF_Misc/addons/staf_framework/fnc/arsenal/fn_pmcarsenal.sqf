@@ -537,7 +537,18 @@ _items = [
             "CFP_Shemagh_Half_Black",
             "CFP_Shemagh_Half_Red",
             "CFP_Shemagh_Half_Tan",
-            "CFP_Shemagh_Half_White"
+            "CFP_Shemagh_Half_White",
+            "CFP_Beard",
+            "CFP_Beard_Grey",
+            "CFP_Beard_Red",
+            "CFP_Scarfbeard_green",
+            "CFP_Scarfbeard_grey",
+            "CFP_Scarfbeard_tan",
+            "CFP_Scarfbeard_white",
+            "CFP_Scarfbeardshades_green",
+            "CFP_Scarfbeardshades_grey",
+            "CFP_Scarfbeardshades_tan",
+            "CFP_Scarfbeardshades_white"
 ];
 
 _uniforms = [
