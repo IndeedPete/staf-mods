@@ -308,6 +308,20 @@ class CfgVehicles
 				property = "STAF_Module_AmbientAnimationMP_Snap_Object_Edit";
 				displayName = "Assign an Object to snap to!";
 			};
+
+			class STAF_Module_AmbientAnimationMP_Combat: Combo
+  		{
+				property = "STAF_Module_AmbientAnimationMP_Combat_Combo";
+				displayName = "Enable Combat Behaviour";
+				typeName = "NUMBER";
+				defaultValue = "0";
+				class Values
+				{
+					class answer_no	{name = "No"; value = 0;};
+					class answer_yes	{name = "Yes";	value = 1;};
+				};
+			};
+
 			class ModuleDescription: ModuleDescription{};
 		};
 
