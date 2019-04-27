@@ -25,9 +25,9 @@ class CfgVehicles
 
 	class STAF_Module_Unsung_USAArsenal_F: Module_F
 	{
-		category = "STAF";
+		category = "STAF_Unsung";
 		displayName = "(Unsung) USA Arsenal";
-		function = "STAF_fnc_unsungusaarsenalInit";
+		function = "STAF_Unsung_fnc_unsungusaarsenalInit";
 		functionPriority = 10;
 		isDisposable = 0;
 		is3DEN = 0;

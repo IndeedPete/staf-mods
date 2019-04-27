@@ -5,5 +5,5 @@ params [
 ];
 
 {
-	[_x] call STAF_fnc_unsungusaarsenal;
+	[_x] call STAF_Unsung_fnc_unsungusaarsenal;
 } forEach _objs;
