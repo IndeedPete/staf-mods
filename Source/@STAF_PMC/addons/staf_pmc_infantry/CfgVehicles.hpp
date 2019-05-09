@@ -2,6 +2,7 @@ class EventHandlers;
 class CfgVehicles {
     class B_Soldier_F;
     class B_soldier_AT_F;
+    class B_soldier_AA_F;
     class B_soldier_AR_F;
     class B_medic_F;
     class B_soldier_M_F;
@@ -554,124 +555,124 @@ class CfgVehicles {
 
         //----------------------------INDFOR---------------------------------------
           //----------------------------Men------------------------------------------
-          class STAF_contractor_ind : STAF_contractor {
-              Side = 2;
-              scope = 2;
-              scopeCurator = 2;
-              faction = "STAF_PMC_IND";
-          };
+        class STAF_contractor_ind : STAF_contractor {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+        };
 
-          class STAF_contractor_at_ind : STAF_contractor_at {
-              Side = 2;
-              scope = 2;
-              scopeCurator = 2;
-              faction = "STAF_PMC_IND";
-          };
+        class STAF_contractor_at_ind : STAF_contractor_at {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+        };
 
-          class STAF_contractor_mg_ind : STAF_contractor_mg {
-              Side = 2;
-              scope = 2;
-              scopeCurator = 2;
-              faction = "STAF_PMC_IND";
-          };
+        class STAF_contractor_mg_ind : STAF_contractor_mg {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+        };
 
-          class STAF_contractor_medic_ind : STAF_contractor_medic {
-              Side = 2;
-              scope = 2;
-              scopeCurator = 2;
-              faction = "STAF_PMC_IND";
-          };
+        class STAF_contractor_medic_ind : STAF_contractor_medic {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+        };
 
-          class STAF_contractor_marksman_ind : STAF_contractor_marksman {
-              Side = 2;
-              scope = 2;
-              scopeCurator = 2;
-              faction = "STAF_PMC_IND";
-          };
+        class STAF_contractor_marksman_ind : STAF_contractor_marksman {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+        };
 
-          class STAF_contractor_engineer_ind : STAF_contractor_engineer {
-              Side = 2;
-              scope = 2;
-              scopeCurator = 2;
-              faction = "STAF_PMC_IND";
-          };
+        class STAF_contractor_engineer_ind : STAF_contractor_engineer {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+        };
 
-          class STAF_contractor_bodyguard_ind : STAF_contractor_bodyguard {
-              Side = 2;
-              scope = 2;
-              scopeCurator = 2;
-              faction = "STAF_PMC_IND";
-          };
+        class STAF_contractor_bodyguard_ind : STAF_contractor_bodyguard {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+        };
 
-          class STAF_contractor_heli_pilot_ind : STAF_contractor_heli_pilot {
-              Side = 2;
-              scope = 2;
-              scopeCurator = 2;
-              faction = "STAF_PMC_IND";
-          };
+        class STAF_contractor_heli_pilot_ind : STAF_contractor_heli_pilot {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+        };
 
-          class STAF_contractor_diver_ind : STAF_contractor_diver {
-              Side = 2;
-              scope = 2;
-              scopeCurator = 2;
-              faction = "STAF_PMC_IND";
-          };
+        class STAF_contractor_diver_ind : STAF_contractor_diver {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+        };
 
-        //---------------------------VIP--------------------------------------------
+      //---------------------------VIP--------------------------------------------
 
-          class STAF_boss_ind : STAF_boss {
-              Side = 2;
-              scope = 2;
-              scopeCurator = 2;
-              faction = "STAF_PMC_IND";
-          };
+        class STAF_boss_ind : STAF_boss {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+        };
 
-          class STAF_client_american_ind : STAF_client_american {
-              Side = 2;
-              scope = 2;
-              scopeCurator = 2;
-              faction = "STAF_PMC_IND";
-          };
+        class STAF_client_american_ind : STAF_client_american {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+        };
 
-          class STAF_client_british_ind : STAF_client_british {
-              Side = 2;
-              scope = 2;
-              scopeCurator = 2;
-              faction = "STAF_PMC_IND";
-          };
+        class STAF_client_british_ind : STAF_client_british {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+        };
 
-          class STAF_client_chinese_ind : STAF_client_chinese {
-              Side = 2;
-              scope = 2;
-              scopeCurator = 2;
-              faction = "STAF_PMC_IND";
-          };
+        class STAF_client_chinese_ind : STAF_client_chinese {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+        };
 
-          class STAF_client_african_ind : STAF_client_african {
-              Side = 2;
-              scope = 2;
-              scopeCurator = 2;
-              faction = "STAF_PMC_IND";
-          };
+        class STAF_client_african_ind : STAF_client_african {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+        };
 
-          class STAF_client_greek_ind : STAF_client_greek {
-              Side = 2;
-              scope = 2;
-              scopeCurator = 2;
-              faction = "STAF_PMC_IND";
-          };
+        class STAF_client_greek_ind : STAF_client_greek {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+        };
 
-          class STAF_client_scientist_ind : STAF_client_scientist {
-              Side = 2;
-              scope = 2;
-              scopeCurator = 2;
-              faction = "STAF_PMC_IND";
-          };
+        class STAF_client_scientist_ind : STAF_client_scientist {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+        };
 
-          class STAF_client_un_ind : STAF_client_un {
-              Side = 2;
-              scope = 2;
-              scopeCurator = 2;
-              faction = "STAF_PMC_IND";
-          };
+        class STAF_client_un_ind : STAF_client_un {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+        };
 };

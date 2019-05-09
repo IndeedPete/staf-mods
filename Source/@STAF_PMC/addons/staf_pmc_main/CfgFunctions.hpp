@@ -7,6 +7,7 @@ class CfgFunctions
 			file = "\staf_pmc_main\fnc";
 			class gear_contractor{};
 			class gear_contractor_at{};
+			class gear_contractor_aa{};
 			class gear_contractor_bodyguard{};
 			class gear_contractor_engineer{};
 			class gear_contractor_heli_pilot{};
