@@ -133,6 +133,16 @@ class CfgFunctions
 			file = "\STAF_FRAMEWORK\fnc\diary";
 			class adddiaryentries{postInit = 1;};
 		};
+		class HideBody
+		{
+			file = "\STAF_FRAMEWORK\fnc\hidebody";			
+			class hidebody_notool_inside{};
+			class hidebody_notool_outside{};
+			class hidebody_tool_inside{};
+			class hidebody_tool_outside{};
+			class hidebodyaction{};
+			class hidebodyinit{preInit = 1;};
+		};
 		class KeyValueMap
 		{
 			file = "\STAF_FRAMEWORK\fnc\keyValueMap";
@@ -172,7 +182,7 @@ class CfgFunctions
 			class createFireEffect{};
 			class disable{};
 			class enable{};
-			class hidebody {preInit = 1;};
+			class inHouse {};
 			class intLight{};
 			class spawnwreck {};
 			class trackmarker {};
