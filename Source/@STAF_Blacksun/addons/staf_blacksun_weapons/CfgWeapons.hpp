@@ -20,7 +20,7 @@ class CfgWeapons {
       };
       class LinkedItemsAcc
       {
-      item = "cfp_acc_anpeq15_black";
+      item = "cup_acc_anpeq_15_flashlight_black_l";
       slot = "PointerSlot";
       };
       class LinkedItemsMuzzle
@@ -42,7 +42,7 @@ class CfgWeapons {
       };
       class LinkedItemsAcc
       {
-      item = "cfp_acc_anpeq15_black";
+      item = "cup_acc_anpeq_15_flashlight_black_l";
       slot = "PointerSlot";
       };
       class LinkedItemsMuzzle
@@ -64,12 +64,12 @@ class CfgWeapons {
       };
       class LinkedItemsAcc
       {
-      item = "cfp_acc_anpeq15_black";
+      item = "cup_acc_anpeq_15_flashlight_black_l";
       slot = "PointerSlot";
       };
       class LinkedItemsMuzzle
       {
-      item = "cup_muzzle_snds_m16";
+      item = "muzzle_snds_M";
       slot = "MuzzleSlot";
       };
     };
@@ -86,7 +86,7 @@ class CfgWeapons {
       };
       class LinkedItemsAcc
       {
-      item = "cfp_acc_anpeq15_black";
+      item = "cup_acc_anpeq_15_flashlight_black_l";
       slot = "PointerSlot";
       };
       class LinkedItemsMuzzle
@@ -108,7 +108,7 @@ class CfgWeapons {
       };
       class LinkedItemsAcc
       {
-      item = "cfp_acc_anpeq15_black";
+      item = "cup_acc_anpeq_15_flashlight_black_l";
       slot = "PointerSlot";
       };
       class LinkedItemsMuzzle
