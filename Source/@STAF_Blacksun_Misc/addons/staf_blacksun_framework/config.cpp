@@ -1,6 +1,7 @@
 #include "CfgFactionClasses.hpp"
 #include "CfgFunctions.hpp"
 #include "CfgPatches.hpp"
+#include "CfgSounds.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "ACE_Medical_Treatments.hpp"

@@ -2,8 +2,8 @@ class CfgPatches
 {
 	class STAF_Blacksun_FRAMEWORK
 	{
-		units[] = {"STAF_Item_geiger_counter","STAF_Item_TestingKit","STAF_Horror_Module_Arsenal_F"};
-		weapons[] = {"STAF_geiger_counter","STAF_TestingKit"};
+		units[] = {"STAF_Item_geiger_counter","STAF_Item_TestingKit","STAF_Item_AntiVirus_Pills","STAF_Item_AntiVirus_Injector","STAF_Horror_Module_Arsenal_F","STAF_Horror_Module_Infection_F"};
+		weapons[] = {"STAF_geiger_counter","STAF_TestingKit","STAF_Item_AntiVirus_Pills","STAF_Item_AntiVirus_Injector"};
 		requiredVersion = 1.0;
 		requiredAddons[] = {"A3_Modules_F","ace_medical","cba_settings"};
 		author = "STAF";

@@ -1,6 +1,6 @@
 params ["_caller","_target", "_selectionName"];
 
-_infection = _target getvariable "ryanzombiesinfected";
+_infection = _target getvariable "STAF_Horror_Infection";
 
 if (_infection > 0) then {
   if (_infection < 0.15) then {

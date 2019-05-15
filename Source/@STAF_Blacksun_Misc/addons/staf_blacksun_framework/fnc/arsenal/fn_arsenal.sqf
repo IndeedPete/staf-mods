@@ -119,12 +119,20 @@ _items = [
             //CFP
             "CFP_Beard",
             "CFP_Beard_Grey",
-            "CFP_Beard_Red"
+            "CFP_Beard_Red",
+            //JSHK
+            "JSHK_contam_mask_s10_blk",
+            "JSHK_contam_mask_m04_hoodless",
+            "JSHK_contam_mask_m50_hoodless",
+            "JSHK_contam_mask_m04_blk_hood",
+            "JSHK_contam_mask_m50_blk_hood"
 ];
 
 _uniforms = [
             "tacs_Uniform_Garment_LS_BS_BP_BB",
-            "tacs_Uniform_Garment_RS_BS_BP_BB"
+            "tacs_Uniform_Garment_RS_BS_BP_BB",
+            //JSHK
+            "JSHK_contam_suit_blk"
 ];
 
 _headgear = [
@@ -137,7 +145,8 @@ _headgear = [
 ];
 
 _vests = [
-            "Specter_RAV_BLK"
+            "Specter_RAV_BLK",
+            "V_O2Tank"
 ];
 
 _othermagazines = [

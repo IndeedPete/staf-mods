@@ -11,7 +11,7 @@ class ACE_Medical_Actions {
       requiredMedic = 1;
       treatmentTime = 10;
       items[] = {"STAF_TestingKit"};
-      callbackSuccess = "STAF_Horror_fnc_testforinfection";
+      callbackSuccess = "STAF_Horror_fnc_infectiontest";
       callbackFailure = "";
       callbackProgress = "";
       animationPatient = "";
@@ -20,28 +20,28 @@ class ACE_Medical_Actions {
       litter[] = {};
     };
 
-    class AntiVirusCure: fieldDressing {
-      displayName = "Inject Anti-Virus";
-      displayNameProgress = "Injecting Anti-Virus...";
-      allowedSelections[] = {"hand_l", "hand_r", "leg_l", "leg_r"};
-      category = "medication";
-      items[] = {"RyanZombiesAntiVirusCure_Item"};
-      treatmentTime = 3;
-      callbackSuccess = "STAF_Horror_fnc_useantiviruscure";
-      animationCaller = "AinvPknlMstpSnonWnonDnon_medic1";
-      litter[] = { {"All", "", {"ACE_MedicalLitter_morphine"}} };
-    };
-
     class AntiVirusPills: fieldDressing {
       displayName = "Use Pills";
       displayNameProgress = "Using Pills...";
       allowedSelections[] = {"head"};
       category = "medication";
-      items[] = {"RyanZombiesAntiVirusTemporary_Item"};
+      items[] = {"STAF_Item_AntiVirus_Pills"};
       treatmentTime = 3;
-      callbackSuccess = "STAF_Horror_fnc_useantiviruspills";
+      callbackSuccess = "STAF_Horror_fnc_infectionpill";
       animationCaller = "AinvPknlMstpSnonWnonDnon_medic1";
       litter[] = {};
+    };
+
+    class AntiVirusCure: fieldDressing {
+      displayName = "Inject Anti-Virus";
+      displayNameProgress = "Injecting Anti-Virus...";
+      allowedSelections[] = {"hand_l", "hand_r", "leg_l", "leg_r"};
+      category = "medication";
+      items[] = {"STAF_Item_AntiVirus_Injector"};
+      treatmentTime = 3;
+      callbackSuccess = "STAF_Horror_fnc_infectioninjection";
+      animationCaller = "AinvPknlMstpSnonWnonDnon_medic1";
+      litter[] = { {"All", "", {"ACE_MedicalLitter_morphine"}} };
     };
   };
 };
