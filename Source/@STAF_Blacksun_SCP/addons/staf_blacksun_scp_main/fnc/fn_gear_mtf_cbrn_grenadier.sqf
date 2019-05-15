@@ -8,10 +8,10 @@ removeBackpack _unit;
 removeAllWeapons _unit;
 removeAllItems _unit;
 
-_uniform = ["skn_u_nbc_indep_blu"] call BIS_fnc_selectRandom;
+_uniform = ["JSHK_contam_suit_blue"] call BIS_fnc_selectRandom;
 _headGear = ["Altyn_F_ZV_ch_C","Altyn_F_ZV_ch_m_C"] call BIS_fnc_selectRandom;
 _vest = ["Specter_RAV_BLK"] call BIS_fnc_selectRandom;
-_facewear = ["skn_m04_gas_mask_blu"] call BIS_fnc_selectRandom;
+_facewear = ["JSHK_contam_mask_m04_blue_hood"] call BIS_fnc_selectRandom;
 _unit addBackpack "B_ViperLightHarness_blk_F";
 _unit addHeadgear _headGear;
 _unit addUniform _uniform;

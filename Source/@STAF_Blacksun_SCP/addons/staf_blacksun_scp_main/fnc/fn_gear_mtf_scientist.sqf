@@ -11,7 +11,7 @@ removeAllItems _unit;
 _uniform = ["U_C_Scientist"] call BIS_fnc_selectRandom;
 _headGear = ["H_PASGT_basic_black_F"] call BIS_fnc_selectRandom;
 _vest = ["Specter_RAV_BLK"] call BIS_fnc_selectRandom;
-_facewear = ["skn_m04_gas_mask_blk"] call BIS_fnc_selectRandom;
+_facewear = ["JSHK_contam_mask_m04_hoodless"] call BIS_fnc_selectRandom;
 _unit addBackpack "B_Messenger_Black_F";
 _unit addHeadgear _headGear;
 _unit addUniform _uniform;
