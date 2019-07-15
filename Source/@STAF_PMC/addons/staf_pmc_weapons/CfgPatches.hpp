@@ -51,6 +51,7 @@ class CfgPatches {
   	    "STAF_pistol_glock17",
   	    "STAF_launcher_smaw",
   	    "STAF_launcher_m136_heat",
+        "STAF_launcher_Igla",
         "STAF_Xnooz_AppareilPhoto"
       };
       requiredAddons[] = {};

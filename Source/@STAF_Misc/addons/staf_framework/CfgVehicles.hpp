@@ -505,4 +505,38 @@ class CfgVehicles
 			};
 		};
 	};
+
+	class STAF_Module_Zeus_Action_F: Module_F
+	{
+		category = "STAF";
+		displayName = "Add Zeus Action";
+		function = "STAF_fnc_zeusactioninit";
+		functionPriority = 10;
+		isDisposable = 0;
+		is3DEN = 0;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		scope = 2;
+
+		class Attributes: AttributesBase
+		{
+			class ModuleDescription: ModuleDescription{};
+		};
+
+		class ModuleDescription: ModuleDescription
+		{
+			description = "Adds an ACE action to get zeus access.";
+			sync[] = {"LocationArea_F"};
+
+			class LocationArea_F
+			{
+				description[] =	{"Synchronise any object to this module."};
+				position = 0;
+				direction = 0;
+				optional = 0;
+				duplicate = 0;
+				synced[] = {"AnyStaticObject", "AnyVehicle"};
+			};
+		};
+	};
 };

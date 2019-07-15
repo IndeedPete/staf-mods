@@ -25,4 +25,11 @@ Creates a MHQ heavily based on many variables.
 -> When MHQ is disassmbled the fuel is put back in
 
 -> Can be used on an object aswell
--> Can (maybe) be used with an Item? 
+-> Can (maybe) be used with an Item?
+
+_______________________________________________________________________________
+
+Zeus Interaction for Admins
+
+Admins can promote themself Zeus and also remove themself as Zeus
+(Create a Eden module that when attached to a unit has the same effect on said unit)

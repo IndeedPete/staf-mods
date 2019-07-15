@@ -43,6 +43,7 @@ class CfgWeapons {
   class KA_glock_18; //KA Glock 18 Modular
   class CUP_launch_Mk153Mod0; //CUP SMAW
   class CUP_launch_M136; //CUP M136 HEAT
+  class CUP_launch_Igla; //CUP IGLA
   class Xnooz_AppareilPhoto; //Press Assets Handheld Camera
 
   // Rifles
@@ -701,6 +702,10 @@ class CfgWeapons {
   };
 
   class STAF_launcher_m136_heat: CUP_launch_M136
+  {
+  };
+
+  class STAF_launcher_Igla: CUP_launch_Igla
   {
   };
 

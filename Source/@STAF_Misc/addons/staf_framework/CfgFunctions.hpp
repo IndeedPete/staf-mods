@@ -42,6 +42,14 @@ class CfgFunctions
 				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
 				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
 			};
+			class convoy_zeus{
+				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
+				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
+				preStart = 0; //1 to call the function upon game start, before title screen, but after all addons are loaded.
+				recompile = 1; //1 to recompile the function upon mission start
+				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
+				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
+			};
 			class createareamarkerzeus{
 				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
 				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
@@ -75,6 +83,14 @@ class CfgFunctions
 				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
 			};
 			class pmcinventories{
+				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
+				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
+				preStart = 0; //1 to call the function upon game start, before title screen, but after all addons are loaded.
+				recompile = 1; //1 to recompile the function upon mission start
+				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
+				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
+			};
+			class respawntimer_zeus{
 				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
 				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
 				preStart = 0; //1 to call the function upon game start, before title screen, but after all addons are loaded.
@@ -123,6 +139,12 @@ class CfgFunctions
 			file = "\STAF_FRAMEWORK\fnc\convoyDefend";
 			class convoyDefend{};
 		};
+		class CuratorEars
+		{
+			file = "\STAF_FRAMEWORK\fnc\curatorears";
+			class curatorearsaddaction{};
+			class curatorearsinit{postInit = 1;};
+		};
 		class Debug
 		{
 			file = "\STAF_FRAMEWORK\fnc\debug";
@@ -135,12 +157,11 @@ class CfgFunctions
 		};
 		class HideBody
 		{
-			file = "\STAF_FRAMEWORK\fnc\hidebody";			
+			file = "\STAF_FRAMEWORK\fnc\hidebody";
 			class hidebody_notool_inside{};
 			class hidebody_notool_outside{};
 			class hidebody_tool_inside{};
 			class hidebody_tool_outside{};
-			class hidebodyaction{};
 			class hidebodyinit{preInit = 1;};
 		};
 		class KeyValueMap
@@ -165,7 +186,7 @@ class CfgFunctions
 			class helibigequipment{};
 			class helismallequipment{};
 			class mrapequipment{};
-			class pmcvehicleequipment {};
+			class pmcvehicleequipment{};
 		};
 		class Medical
 		{
@@ -177,19 +198,29 @@ class CfgFunctions
 		{
 			file = "\STAF_FRAMEWORK\fnc\misc";
 			//class ace_knockout {preInit = 1;};
-			class ambientanimationmp {};
-			class animation {};
+			class ambientanimationmp{};
+			class animation{};
 			class createFireEffect{};
 			class disable{};
 			class enable{};
-			class inHouse {};
+			class forceFollowRoad{};
+			class pushbackplane{postInit = 1;};
+			class inHouse{};
 			class intLight{};
-			class spawnwreck {};
-			class trackmarker {};
-			class unlimitedFuel {};
-			class unlimitedFuelInit {};
-			class unlimitedAmmo {};
-			class unlimitedAmmoInit {};
+			class setrespawntimer{};
+			class spawnwreck{};
+			class trackmarker{};
+			class unlimitedFuel{};
+			class unlimitedFuelInit{};
+			class unlimitedAmmo{};
+			class unlimitedAmmoInit{};
+		};
+		class ZeusAction
+		{
+			file = "\STAF_FRAMEWORK\fnc\zeusaction";
+			class zeusactionaddaction{};
+			class zeusactionadmin{postInit = 1;};
+			class zeusactioninit{};
 		};
 	};
 

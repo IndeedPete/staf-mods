@@ -8,7 +8,7 @@ params [
 if (!(isServer) && {_medic getVariable ["STAF_BaseMedic", false]}) exitWith {};
 
 // Adds "Heal me"
-[
+_heal = [
 	_medic,
 	[
 		(format ["<img size='1' shadow='1' image='\a3\ui_f\data\igui\cfg\Actions\heal_ca.paa'/> %1", _text]),
@@ -23,7 +23,7 @@ if (!(isServer) && {_medic getVariable ["STAF_BaseMedic", false]}) exitWith {};
 		"",
 		(
 			format [
-				"(_this distance _target < 3) && {%1}",
+				"(_this distance _target < 3) && {%1} && (Alive _target)",
 				_condition
 			]
 		)
@@ -31,7 +31,7 @@ if (!(isServer) && {_medic getVariable ["STAF_BaseMedic", false]}) exitWith {};
 ] remoteExec ["addAction", 0, true];
 
 // Adds Heal everyone
-[
+_healeveryone = [
 	_medic,
 	[
 		(format ["<img size='1' shadow='1' image='\a3\ui_f\data\igui\cfg\Actions\heal_ca.paa'/> %1", _text2]),
@@ -50,7 +50,7 @@ if (!(isServer) && {_medic getVariable ["STAF_BaseMedic", false]}) exitWith {};
 		"",
 		(
 			format [
-				"(_this distance _target < 3) && {%1}",
+				"(_this distance _target < 3) && {%1} && (Alive _target)",
 				_condition
 			]
 		)

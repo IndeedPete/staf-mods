@@ -5,6 +5,7 @@ class CfgPatches {
       units[] = {
         "STAF_contractor",
         "STAF_contractor_AT",
+        //"STAF_contractor_AA",
         "STAF_contractor_mg",
         "STAF_contractor_medic",
         "STAF_contractor_marksman",
@@ -22,6 +23,7 @@ class CfgPatches {
         "STAF_client_un",
         "STAF_contractor_opf",
         "STAF_contractor_AT_opf",
+        //"STAF_contractor_AA_opf",
         "STAF_contractor_mg_opf",
         "STAF_contractor_medic_opf",
         "STAF_contractor_marksman_opf",
@@ -39,6 +41,7 @@ class CfgPatches {
         "STAF_client_un_opf",
         "STAF_contractor_ind",
         "STAF_contractor_AT_ind",
+        //"STAF_contractor_AA_ind",
         "STAF_contractor_mg_ind",
         "STAF_contractor_medic_ind",
         "STAF_contractor_marksman_ind",

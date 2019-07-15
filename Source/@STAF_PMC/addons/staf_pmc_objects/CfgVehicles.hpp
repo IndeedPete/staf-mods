@@ -6,6 +6,8 @@
 class CfgVehicles {
 	class C_IDAP_supplyCrate_F;
 	class B_supplyCrate_F;
+	class plp_ct_MilBoxLongBlack;
+	class plp_ct_MilBoxSmallBlack;
 
 	class STAF_SuperBox_Orange: C_IDAP_supplyCrate_F
 	{
@@ -26,5 +28,28 @@ class CfgVehicles {
 		class TransportMagazines {};
 		class TransportItems {};
 		class TransportBackpacks {};
+	};
+
+	class STAF_Ammobox_Launcher_AA: plp_ct_MilBoxLongBlack
+	{
+		displayName = "Launchers AA [STAF]";
+
+		class TransportWeapons {};
+		class TransportMagazines {};
+	};
+
+	class STAF_Ammobox_Launcher_AT: plp_ct_MilBoxLongBlack
+	{
+		displayName = "Launchers AT [STAF]";
+
+		class TransportWeapons {};
+		class TransportMagazines {};
+	};
+
+	class STAF_Ammobox_Ammo: plp_ct_MilBoxSmallBlack
+	{
+		displayName = "Basic Ammo [STAF]";
+
+		class TransportMagazines {};
 	};
 };

@@ -5,7 +5,7 @@ _HideBody = [
   {
     // Checking target variable
     if (_target getVariable "STAF_HideBody_active") exitWith {
-    ["Someone already takes care of this Body!", 2, player, 12] call ace_common_fnc_displayTextStructured;
+    ["Someone is already taking care of this Body!", 2, player, 12] call ace_common_fnc_displayTextStructured;
     };
 
     // Setting the variable
