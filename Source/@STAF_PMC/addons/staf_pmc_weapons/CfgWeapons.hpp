@@ -31,6 +31,10 @@ class CfgWeapons {
   class hlc_smg_mp5a4; // HLC MP5
   class arifle_AK12_F; //Vanilla AK12
   class arifle_AK12_GL_F; //Vanilla AK12 GL
+  class arifle_AK12_arid_F; //Vanilla AK12 Arid
+  class arifle_AK12_arid_GL_F; //Vanilla AK12 GL Arid
+  class arifle_AK12_lush_F; //Vanilla AK12 lush
+  class arifle_AK12_lush_GL_F; //Vanilla AK12 GL Lush
   class srifle_DMR_06_olive_F; //Vanilla M14
   class srifle_DMR_06_camo_F; //Vanilla M14 Camo
   class srifle_DMR_03_F; //Vanilla SIG DMR
@@ -351,32 +355,120 @@ class CfgWeapons {
 
   class STAF_rifle_ak12: arifle_AK12_F
   {
+    magazines[] =
+     {
+         "30Rnd_762x39_AK12_Mag_F"
+     };
     class LinkedItems
     {
       class LinkedItemsOptic
       {
-      item = "fhq_optic_hws_g33";
+      item = "optic_arco_ak_blk_f";
       slot = "CowsSlot";
       };
       class LinkedItemsAcc
       {
-      item = "rh_peq15b";
+      item = "cup_acc_anpeq_15_flashlight_black_l";
       slot = "PointerSlot";
       };
     };
   };
   class STAF_rifle_ak12_gl: arifle_AK12_GL_F
   {
+    magazines[] =
+     {
+         "30Rnd_762x39_AK12_Mag_F"
+     };
     class LinkedItems
     {
       class LinkedItemsOptic
       {
-      item = "fhq_optic_hws_g33";
+      item = "optic_arco_ak_blk_f";
       slot = "CowsSlot";
       };
       class LinkedItemsAcc
       {
-      item = "rh_peq15b";
+      item = "cup_acc_anpeq_15_flashlight_black_l";
+      slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_rifle_ak12_arid: arifle_AK12_arid_F
+  {
+    magazines[] =
+     {
+         "30rnd_762x39_AK12_Arid_Mag_F"
+     };
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+      item = "optic_arco_ak_arid_f";
+      slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+      item = "cup_acc_anpeq_15_flashlight_tan_l";
+      slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_rifle_ak12_gl_arid: arifle_AK12_arid_GL_F
+  {
+    magazines[] =
+     {
+         "30rnd_762x39_AK12_Arid_Mag_F"
+     };
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+      item = "optic_arco_ak_arid_f";
+      slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+      item = "cup_acc_anpeq_15_flashlight_tan_l";
+      slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_rifle_ak12_lush: arifle_AK12_lush_F
+  {
+    magazines[] =
+     {
+         "30rnd_762x39_AK12_Lush_Mag_F"
+     };
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+      item = "optic_arco_ak_lush_f";
+      slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+      item = "cup_acc_anpeq_15_flashlight_od_l";
+      slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_rifle_ak12_gl_lush: arifle_AK12_lush_GL_F
+  {
+    magazines[] =
+     {
+         "30rnd_762x39_AK12_Lush_Mag_F"
+     };
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+      item = "optic_arco_ak_lush_f";
+      slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+      item = "cup_acc_anpeq_15_flashlight_od_l";
       slot = "PointerSlot";
       };
     };
