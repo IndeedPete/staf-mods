@@ -66,8 +66,6 @@ _headgearArray = [
   "H_Booniehat_eaf",
   "H_HelmetB_plain_wdl",
   "H_HelmetSpecB_wdl",
-  "H_CrewHelmetHeli_I_E",
-  "H_PilotHelmetHeli_I_E",
   "H_HelmetB_light_wdl",
   "H_MilCap_grn",
   "H_MilCap_taiga",

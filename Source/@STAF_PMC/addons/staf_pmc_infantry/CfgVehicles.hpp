@@ -67,7 +67,7 @@ class CfgVehicles {
             };
         };
 
-        /*class STAF_contractor_aa : B_soldier_AA_F {
+        class STAF_contractor_aa : B_soldier_AA_F {
             author = "STAF";
             scope = 2;
             scopeCurator = 2;
@@ -90,7 +90,7 @@ class CfgVehicles {
                   init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\random_uniform.sqf';";
               };
             };
-        };*/
+        };
 
         class STAF_contractor_mg : B_soldier_AR_F {
             author = "STAF";
@@ -470,12 +470,12 @@ class CfgVehicles {
             faction = "STAF_PMC_OPF";
         };
 
-        /*class STAF_contractor_aa_opf : STAF_contractor_aa {
+        class STAF_contractor_aa_opf : STAF_contractor_aa {
             Side = 0;
             scope = 2;
             scopeCurator = 2;
             faction = "STAF_PMC_OPF";
-        };*/
+        };
 
         class STAF_contractor_mg_opf : STAF_contractor_mg {
             Side = 0;
@@ -601,12 +601,12 @@ class CfgVehicles {
               faction = "STAF_PMC_IND";
           };
 
-          /*class STAF_contractor_aa_ind : STAF_contractor_aa {
+          class STAF_contractor_aa_ind : STAF_contractor_aa {
               Side = 2;
               scope = 2;
               scopeCurator = 2;
               faction = "STAF_PMC_IND";
-          };*/
+          };
 
           class STAF_contractor_mg_ind : STAF_contractor_mg {
               Side = 2;

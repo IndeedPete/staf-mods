@@ -95,6 +95,7 @@ _weapons = [
             "hlc_rifle_MG36",
             "CUP_launch_Mk153Mod0",
             "CUP_launch_M136",
+            "CUP_launch_Igla",
             "hlc_rifle_awcovert_BL",
             "hlc_rifle_awcovert_FDE",
             "hlc_rifle_awcovert",
