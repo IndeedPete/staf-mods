@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="CFP">
+    <Package name="Main">
+        <Key ID="STR_A3_CfgFactionClasses_OPF_F0">
+            <English>2035 CSAT (Iran)</English>
+        </Key>
+        <Key ID="STR_A3_CfgFactionClasses_OPF_T_F0">
+            <English>2035 CSAT (China, Pacific)</English>
+        </Key>
+        <Key ID="STR_A3_CfgGroups_East_OPF_F0">
+            <English>2035 CSAT (Iran)</English>
+        </Key>
+        <Key ID="STR_A3_CfgGroups_East_OPF_T_F0">
+            <English>2035 CSAT (China, Pacific)</English>
+        </Key>
+    </Package>
+</Project>
