@@ -1,3 +1,19 @@
+#include "\staf_pmc_main\fnc\defaults\assaultrifles.hpp"
+#include "\staf_pmc_main\fnc\defaults\pistols.hpp"
+#include "\staf_pmc_main\fnc\defaults\mg.hpp"
+#include "\staf_pmc_main\fnc\defaults\marksmanrifles.hpp"
+#include "\staf_pmc_main\fnc\defaults\smgs.hpp"
+
+#include "\staf_pmc_main\fnc\defaults\goggles.hpp"
+#include "\staf_pmc_main\fnc\defaults\headgear.hpp"
+#include "\staf_pmc_main\fnc\defaults\uniforms.hpp"
+#include "\staf_pmc_main\fnc\defaults\vests.hpp"
+#include "\staf_pmc_main\fnc\defaults\backpacks.hpp"
+
+#include "\staf_pmc_main\fnc\defaults\wetsuits.hpp"
+#include "\staf_pmc_main\fnc\defaults\rebreathers.hpp"
+#include "\staf_pmc_main\fnc\defaults\helihelmets.hpp"
+
 _unit = _this select 0;
 
 removeUniform _unit;
@@ -17,9 +33,8 @@ _headGear = [
 _vest = [
               "tacs_Vest_Tactical_DarkBlack"
 ] call BIS_fnc_selectRandom;
-_weapon = [
-              "STAF_rifle_mp5"
-] call BIS_fnc_selectRandom;
+_weapon =  = selectRandom _smgArray;
+_pistol = selectRandom _pistolsArray;
 _unit addHeadgear _headGear;
 _unit addUniform _uniform;
 _unit addvest _vest;
@@ -28,12 +43,21 @@ _unit addvest _vest;
 if (_weapon == "STAF_rifle_mp5") then {
   for "_i" from 1 to 4 do {_unit addItem "hlc_30Rnd_9x19_B_MP5";};
 };
-for "_i" from 1 to 2 do {_unit addItem "KA_17Rnd_9x19_Mag";};
+
+if (_weapon == "STAF_pistol_glock17") then {
+  for "_i" from 1 to 2 do {_unit addItem "CUP_17Rnd_9x19_glock17";};
+};
+if (_weapon == "STAF_pistol_glock17_tan") then {
+  for "_i" from 1 to 2 do {_unit addItem "CUP_17Rnd_9x19_glock17";};
+};
+if (_weapon == "STAF_pistol_glock17_blk") then {
+  for "_i" from 1 to 2 do {_unit addItem "CUP_17Rnd_9x19_glock17";};
+};
 
 //Addweapons
 _unit addweapon _weapon;
 _unit selectWeapon _weapon;
-_unit addweapon "STAF_pistol_glock18";
+_unit addweapon _pistol;
 
 //Items
 for "_i" from 1 to 3 do {_unit addItem "ACE_fieldDressing";};

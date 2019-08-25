@@ -41,8 +41,6 @@ _weapons = [
             "LMG_Zafir_F",
             "STAF_rifle_ng7_black_base",
             "STAF_rifle_ng7_woodland_base",
-            "KA_glock_18_Single",
-            "KA_glock_18",
             "CUP_arifle_Mk16_CQC",
             "CUP_arifle_Mk16_CQC_black",
             "CUP_arifle_Mk16_CQC_FG_black",
@@ -106,7 +104,9 @@ _weapons = [
             "hlc_rifle_awmagnum",
             "hlc_rifle_awMagnum_OD_ghillie",
             "ACE_VMM3",
-            "KA_TL_122_flashlight"
+            "CUP_hgun_Glock17",
+            "CUP_hgun_Glock17_tan",
+            "CUP_hgun_Glock17_blk"
 ];
 
 _backpacks = [

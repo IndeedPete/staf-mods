@@ -1,12 +1,18 @@
 #include "\staf_pmc_main\fnc\defaults\assaultrifles.hpp"
+#include "\staf_pmc_main\fnc\defaults\pistols.hpp"
 #include "\staf_pmc_main\fnc\defaults\mg.hpp"
 #include "\staf_pmc_main\fnc\defaults\marksmanrifles.hpp"
+#include "\staf_pmc_main\fnc\defaults\smgs.hpp"
 
 #include "\staf_pmc_main\fnc\defaults\goggles.hpp"
 #include "\staf_pmc_main\fnc\defaults\headgear.hpp"
 #include "\staf_pmc_main\fnc\defaults\uniforms.hpp"
 #include "\staf_pmc_main\fnc\defaults\vests.hpp"
 #include "\staf_pmc_main\fnc\defaults\backpacks.hpp"
+
+#include "\staf_pmc_main\fnc\defaults\wetsuits.hpp"
+#include "\staf_pmc_main\fnc\defaults\rebreathers.hpp"
+#include "\staf_pmc_main\fnc\defaults\helihelmets.hpp"
 
 _unit = _this select 0;
 
@@ -99,7 +105,6 @@ if (_weapon == "STAF_rifle_ak12_arid") then {
 if (_weapon == "STAF_rifle_ak12_lush") then {
   for "_i" from 1 to 7 do {_unit addItem "30rnd_762x39_AK12_Lush_Mag_F";};
 };
-for "_i" from 1 to 2 do {_unit addItem "KA_17Rnd_9x19_Mag";};
 
 //Addweapons
 _unit addweapon _weapon;

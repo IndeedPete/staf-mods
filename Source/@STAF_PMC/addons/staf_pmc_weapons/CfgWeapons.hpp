@@ -43,11 +43,12 @@ class CfgWeapons {
   class srifle_DMR_03_multicam_F; //Vanilla SIG DMR Multicam
   class srifle_DMR_03_woodland_F; //Vanilla SIG DMR Woodland
   class hlc_rifle_awmagnum_BL; //HLC AWM
-  class KA_glock_18_Single; //KA Glock 18
-  class KA_glock_18; //KA Glock 18 Modular
   class CUP_launch_Mk153Mod0; //CUP SMAW
   class CUP_launch_M136; //CUP M136 HEAT
   class CUP_launch_Igla; //CUP IGLA
+  class CUP_hgun_Glock17; //CUP GLock Green
+  class CUP_hgun_Glock17_tan; //CUP Glock Tan
+  class CUP_hgun_Glock17_blk; //CUP Glock Black
 
   // Rifles
   class STAF_rifle_G36MLIC: hlc_rifle_G36MLIC
@@ -756,24 +757,35 @@ class CfgWeapons {
   };
 
   //Sidearms
-  class STAF_pistol_glock18: KA_glock_18_Single
+  class STAF_pistol_glock17: CUP_hgun_Glock17
   {
     class LinkedItems
     {
       class LinkedItemsAcc
       {
-        item = "KA_Flashlight";
+        item = "hlc_acc_dbalpl_fl";
         slot = "PointerSlot";
       };
     };
   };
-  class STAF_pistol_glock18_modular: KA_glock_18
+  class STAF_pistol_glock17_tan: CUP_hgun_Glock17_tan
   {
     class LinkedItems
     {
       class LinkedItemsAcc
       {
-        item = "KA_Flashlight";
+        item = "hlc_acc_dbalpl_fl";
+        slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_pistol_glock17_blk: CUP_hgun_Glock17_blk
+  {
+    class LinkedItems
+    {
+      class LinkedItemsAcc
+      {
+        item = "hlc_acc_dbalpl_fl";
         slot = "PointerSlot";
       };
     };

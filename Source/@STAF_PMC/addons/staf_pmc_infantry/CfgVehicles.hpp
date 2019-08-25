@@ -285,12 +285,12 @@ class CfgVehicles {
 
 
             linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "HITMAN_47_Hidden_Vest" , "G_Aviator" };
-            weapons[] = { "Desert_Eagle" , "Throw" , "Put" };
-            magazines[] = { "7Rnd_50_AE" , "7Rnd_50_AE" };
+            weapons[] = { "CUP_hgun_TaurusTracker455_gold" , "Throw" , "Put" };
+            magazines[] = { "CUP_6Rnd_45ACP_M" , "CUP_6Rnd_45ACP_M" };
 
             respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "HITMAN_47_Hidden_Vest" , "G_Aviator" };
-            respawnWeapons[] = { "Desert_Eagle" , "Throw" , "Put" };
-            respawnMagazines[] = { "7Rnd_50_AE" , "7Rnd_50_AE" };
+            respawnWeapons[] = { "CUP_hgun_TaurusTracker455_gold" , "Throw" , "Put" };
+            respawnMagazines[] = { "CUP_6Rnd_45ACP_M" , "CUP_6Rnd_45ACP_M" };
         };
 
         class STAF_client_american : B_Soldier_F {

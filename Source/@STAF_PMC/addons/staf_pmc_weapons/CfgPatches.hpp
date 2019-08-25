@@ -53,6 +53,8 @@ class CfgPatches {
         "STAF_rifle_sig_woodland",
         "STAF_rifle_awm",
   	    "STAF_pistol_glock17",
+        "STAF_pistol_glock17_tan",
+        "STAF_pistol_glock17_blk",
   	    "STAF_launcher_smaw",
   	    "STAF_launcher_m136_heat",
         "STAF_launcher_Igla"

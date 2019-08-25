@@ -1,12 +1,18 @@
 #include "\staf_pmc_main\fnc\defaults\assaultrifles.hpp"
+#include "\staf_pmc_main\fnc\defaults\pistols.hpp"
 #include "\staf_pmc_main\fnc\defaults\mg.hpp"
 #include "\staf_pmc_main\fnc\defaults\marksmanrifles.hpp"
+#include "\staf_pmc_main\fnc\defaults\smgs.hpp"
 
 #include "\staf_pmc_main\fnc\defaults\goggles.hpp"
 #include "\staf_pmc_main\fnc\defaults\headgear.hpp"
 #include "\staf_pmc_main\fnc\defaults\uniforms.hpp"
 #include "\staf_pmc_main\fnc\defaults\vests.hpp"
 #include "\staf_pmc_main\fnc\defaults\backpacks.hpp"
+
+#include "\staf_pmc_main\fnc\defaults\wetsuits.hpp"
+#include "\staf_pmc_main\fnc\defaults\rebreathers.hpp"
+#include "\staf_pmc_main\fnc\defaults\helihelmets.hpp"
 
 _unit = _this select 0;
 
@@ -22,6 +28,7 @@ _uniform = selectRandom _uniformsArray;
 _headGear = selectRandom _headgearArray;
 _vest = selectRandom _vestsArray;
 _weapon = selectRandom _assaultrifleArray;
+_pistol = selectRandom _pistolsArray;
 _goggles = selectRandom _gogglesArray;
 _backpack = selectRandom _backpacksArray;
 _unit addGoggles _goggles;
@@ -94,14 +101,23 @@ if (_weapon == "STAF_rifle_ak12_arid") then {
 if (_weapon == "STAF_rifle_ak12_lush") then {
   for "_i" from 1 to 7 do {_unit addItem "30rnd_762x39_AK12_Lush_Mag_F";};
 };
-for "_i" from 1 to 2 do {_unit addItem "KA_17Rnd_9x19_Mag";};
+
+if (_weapon == "STAF_pistol_glock17") then {
+  for "_i" from 1 to 2 do {_unit addItem "CUP_17Rnd_9x19_glock17";};
+};
+if (_weapon == "STAF_pistol_glock17_tan") then {
+  for "_i" from 1 to 2 do {_unit addItem "CUP_17Rnd_9x19_glock17";};
+};
+if (_weapon == "STAF_pistol_glock17_blk") then {
+  for "_i" from 1 to 2 do {_unit addItem "CUP_17Rnd_9x19_glock17";};
+};
 for "_i" from 1 to 2 do {_unit addItem "CUP_SMAW_HEAA_M";};
 _unit addItem "CUP_SMAW_Spotting";
 
 //Addweapons
 _unit addweapon _weapon;
 _unit selectWeapon _weapon;
-_unit addweapon "STAF_pistol_glock18";
+_unit addweapon _pistol;
 _unit addweapon "STAF_launcher_smaw";
 
 //Items
