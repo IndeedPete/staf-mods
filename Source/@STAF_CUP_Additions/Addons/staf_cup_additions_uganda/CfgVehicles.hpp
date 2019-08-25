@@ -5,7 +5,7 @@ class CfgVehicles {
   class CFP_B_UGARMY_Helicopter_Pilot_01;
 
   class STAF_CFP_B_UGARMY_Pilot_01: CFP_B_UGARMY_Helicopter_Pilot_01 {
-    name = "Pilot"
+    name = "Pilot";
     faction = "CFP_B_UGARMY";
     displayName = "Pilot";
 

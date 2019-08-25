@@ -83,6 +83,7 @@ class CfgVehicles {
         property = "STAF_Horror_Module_Infection_Rate_edit";
         displayName = "Set infection rate";
         tooltip = "Defines how fast the infection takes from infecting to death. Only values between 0 and 1 are logical."
+        typeName = "NUMBER";
 				defaultValue = "0.01";
       };
 			class ModuleDescription: ModuleDescription{};

@@ -15,6 +15,7 @@ _ZeusPromotion = [
           sleep 0.001;
           _player assignCurator _moderatorModule;
           _player setVariable ["STAF_promoZeusModule", _moderatorModule, true];
+          _moderatorModule addCuratorEditableObjects [(allMissionObjects "All"),true];
         }
       ] remoteExec ["spawn", 2];
 

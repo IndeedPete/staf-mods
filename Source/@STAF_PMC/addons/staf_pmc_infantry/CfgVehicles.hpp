@@ -281,7 +281,7 @@ class CfgVehicles {
             genericNames = "STAF_VIPNames";
 
             identityTypes[] = { "TanoanHead_A3_08" , "Male02ENGFRE" };
-            uniformClass = "HITMAN_47_SUIT";
+            uniformClass = "CUP_U_C_Suit_01";
 
 
             linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "HITMAN_47_Hidden_Vest" , "G_Aviator" };
@@ -350,7 +350,7 @@ class CfgVehicles {
             editorSubcategory = "EdSubcat_client";
 
             identityTypes[] = { "Head_Asian" , "LanguageCHI_F" };
-            uniformClass = "HITMAN_47_SUIT";
+            uniformClass = "CUP_U_C_Suit_01";
 
 
             linkedItems[] = { "ItemWatch" , "ItemRadio" , "ItemAndroid" , "G_Aviator" };
@@ -373,7 +373,7 @@ class CfgVehicles {
             editorSubcategory = "EdSubcat_client";
 
             identityTypes[] = {"NoGlasses", "Head_African" , "LanguageENGFRE_F" };
-            uniformClass = "HITMAN_47_SUIT";
+            uniformClass = "CUP_U_C_Suit_01";
 
 
             linkedItems[] = { "ItemWatch" , "ItemRadio" , "ItemAndroid" , "H_Bandanna_gry" };

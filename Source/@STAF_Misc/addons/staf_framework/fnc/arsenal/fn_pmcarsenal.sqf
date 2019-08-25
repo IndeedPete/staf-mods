@@ -106,7 +106,6 @@ _weapons = [
             "hlc_rifle_awmagnum",
             "hlc_rifle_awMagnum_OD_ghillie",
             "ACE_VMM3",
-            "STAF_Xnooz_AppareilPhoto",
             "KA_TL_122_flashlight"
 ];
 

@@ -23,8 +23,7 @@ while {Alive _unit && _unit getVariable "STAF_Horror_Infected"} do {
     };
   };
 
-  _coughtime = _unit getVariable "STAF_Horror_CoughTime";
-  sleep _coughtime;
+  sleep (_unit getVariable "STAF_Horror_CoughTime");
   addCamShake [0.5, 3, 25];
   resetCamShake;
   if (Alive _unit) then {
