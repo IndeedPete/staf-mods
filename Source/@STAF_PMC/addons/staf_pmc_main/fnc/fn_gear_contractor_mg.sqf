@@ -38,28 +38,7 @@ _unit addvest _vest;
 _unit addBackpack _backpack;
 
 //Ammo
-if (_weapon == "STAF_rifle_m249") then {
-  for "_i" from 1 to 3 do {_unit addItem "hlc_200rnd_556x45_M_SAW";};
-};
-if (_weapon == "STAF_rifle_ng7") then {
-  for "_i" from 1 to 4 do {_unit addItem "150Rnd_762x54_Box";};
-};
-if (_weapon == "STAF_rifle_ng7_black") then {
-  for "_i" from 1 to 4 do {_unit addItem "150Rnd_762x54_Box";};
-};
-if (_weapon == "STAF_rifle_ng7_woodland") then {
-  for "_i" from 1 to 4 do {_unit addItem "150Rnd_762x54_Box";};
-};
-
-if (_weapon == "STAF_pistol_glock17") then {
-  for "_i" from 1 to 2 do {_unit addItem "CUP_17Rnd_9x19_glock17";};
-};
-if (_weapon == "STAF_pistol_glock17_tan") then {
-  for "_i" from 1 to 2 do {_unit addItem "CUP_17Rnd_9x19_glock17";};
-};
-if (_weapon == "STAF_pistol_glock17_blk") then {
-  for "_i" from 1 to 2 do {_unit addItem "CUP_17Rnd_9x19_glock17";};
-};
+#include "\staf_pmc_main\fnc\defaults\magazines.hpp"
 
 //Addweapons
 _unit addweapon _weapon;

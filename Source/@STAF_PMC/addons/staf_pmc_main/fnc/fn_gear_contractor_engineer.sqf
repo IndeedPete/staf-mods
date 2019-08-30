@@ -42,69 +42,7 @@ _unit addbackpack _backpack;
 _unit addweapon "ACE_VMM3";
 
 //Ammo
-if (_weapon == "STAF_rifle_scar_blk") then {
-  for "_i" from 1 to 10 do {_unit addItem "CUP_30Rnd_556x45_Stanag_Mk16_black";};
-};
-if (_weapon == "STAF_rifle_scar_tan") then {
-  for "_i" from 1 to 10 do {_unit addItem "CUP_30Rnd_556x45_Stanag_Mk16";};
-};
-if (_weapon == "STAF_rifle_scar_wld") then {
-  for "_i" from 1 to 10 do {_unit addItem "CUP_30Rnd_556x45_Stanag_Mk16_woodland";};
-};
-if (_weapon == "STAF_rifle_G36C") then {
-  for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
-};
-if (_weapon == "STAF_rifle_G36CV") then {
-  for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
-};
-if (_weapon == "STAF_rifle_G36CTac") then {
-  for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
-};
-if (_weapon == "STAF_rifle_G36KA1KSK") then {
-  for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
-};
-if (_weapon == "STAF_rifle_G36KV") then {
-  for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
-};
-if (_weapon == "STAF_rifle_g36KTac") then {
-  for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
-};
-if (_weapon == "STAF_rifle_G36V") then {
-  for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
-};
-if (_weapon == "STAF_rifle_G36TAC") then {
-  for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
-};
-if (_weapon == "STAF_rifle_G36A1") then {
-  for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
-};
-if (_weapon == "STAF_rifle_G36E1") then {
-  for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
-};
-if (_weapon == "STAF_rifle_G36KA1") then {
-  for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
-};
-if (_weapon == "STAF_rifle_G36KE1") then {
-  for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
-};
-if (_weapon == "STAF_rifle_G36MLIC") then {
-  for "_i" from 1 to 8 do {_unit addItem "30Rnd_65x39_caseless_mag";};
-};
-if (_weapon == "STAF_rifle_G36CMLIC") then {
-  for "_i" from 1 to 8 do {_unit addItem "30Rnd_65x39_caseless_mag";};
-};
-if (_weapon == "STAF_rifle_G36KMLIC") then {
-  for "_i" from 1 to 8 do {_unit addItem "30Rnd_65x39_caseless_mag";};
-};
-if (_weapon == "STAF_rifle_ak12") then {
-  for "_i" from 1 to 7 do {_unit addItem "30Rnd_762x39_AK12_Mag_F";};
-};
-if (_weapon == "STAF_rifle_ak12_arid") then {
-  for "_i" from 1 to 7 do {_unit addItem "30rnd_762x39_AK12_Arid_Mag_F";};
-};
-if (_weapon == "STAF_rifle_ak12_lush") then {
-  for "_i" from 1 to 7 do {_unit addItem "30rnd_762x39_AK12_Lush_Mag_F";};
-};
+#include "\staf_pmc_main\fnc\defaults\magazines.hpp"
 
 //Addweapons
 _unit addweapon _weapon;

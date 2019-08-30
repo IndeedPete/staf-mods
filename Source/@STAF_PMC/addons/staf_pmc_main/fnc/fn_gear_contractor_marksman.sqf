@@ -38,37 +38,7 @@ _unit addvest _vest;
 _unit addBackpack _backpack;
 
 //Ammo
-if (_weapon == "STAF_rifle_m14") then {
-  for "_i" from 1 to 6 do {_unit addItem "20Rnd_762x51_Mag";};
-};
-if (_weapon == "STAF_rifle_m14_camo") then {
-  for "_i" from 1 to 6 do {_unit addItem "20Rnd_762x51_Mag";};
-};
-if (_weapon == "STAF_rifle_sig_blk") then {
-  for "_i" from 1 to 6 do {_unit addItem "20Rnd_762x51_Mag";};
-};
-if (_weapon == "STAF_rifle_sig_khaki") then {
-  for "_i" from 1 to 6 do {_unit addItem "20Rnd_762x51_Mag";};
-};
-if (_weapon == "STAF_rifle_sig_tan") then {
-  for "_i" from 1 to 6 do {_unit addItem "20Rnd_762x51_Mag";};
-};
-if (_weapon == "STAF_rifle_sig_multicam") then {
-  for "_i" from 1 to 6 do {_unit addItem "20Rnd_762x51_Mag";};
-};
-if (_weapon == "STAF_rifle_sig_woodland") then {
-  for "_i" from 1 to 6 do {_unit addItem "20Rnd_762x51_Mag";};
-};
-
-if (_weapon == "STAF_pistol_glock17") then {
-  for "_i" from 1 to 2 do {_unit addItem "CUP_17Rnd_9x19_glock17";};
-};
-if (_weapon == "STAF_pistol_glock17_tan") then {
-  for "_i" from 1 to 2 do {_unit addItem "CUP_17Rnd_9x19_glock17";};
-};
-if (_weapon == "STAF_pistol_glock17_blk") then {
-  for "_i" from 1 to 2 do {_unit addItem "CUP_17Rnd_9x19_glock17";};
-};
+#include "\staf_pmc_main\fnc\defaults\magazines.hpp"
 
 //Addweapons
 _unit addweapon _weapon;

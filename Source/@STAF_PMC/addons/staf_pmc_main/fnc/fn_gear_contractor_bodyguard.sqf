@@ -33,16 +33,14 @@ _headGear = [
 _vest = [
               "tacs_Vest_Tactical_DarkBlack"
 ] call BIS_fnc_selectRandom;
-_weapon =  = selectRandom _smgArray;
+_weapon = selectRandom _smgArray;
 _pistol = selectRandom _pistolsArray;
 _unit addHeadgear _headGear;
 _unit addUniform _uniform;
 _unit addvest _vest;
 
 //Ammo
-if (_weapon == "STAF_rifle_mp5") then {
-  for "_i" from 1 to 4 do {_unit addItem "hlc_30Rnd_9x19_B_MP5";};
-};
+#include "\staf_pmc_main\fnc\defaults\magazines.hpp"
 
 if (_weapon == "STAF_pistol_glock17") then {
   for "_i" from 1 to 2 do {_unit addItem "CUP_17Rnd_9x19_glock17";};
