@@ -39,7 +39,7 @@ _objs addMagazineCargoGlobal ["ACE_30Rnd_556x45_Stanag_Mk318_mag",7]; //SCAR
 _objs addMagazineCargoGlobal ["30Rnd_762x39_Mag_F",7]; //AK12
 _objs addMagazineCargoGlobal ["20Rnd_762x51_Mag",3]; //SIG
 _objs addMagazineCargoGlobal ["hlc_5rnd_300WM_FMJ_AWM",2]; //T-5000
-_objs addMagazineCargoGlobal ["KA_17Rnd_9x19_Mag",2]; //Glock
+_objs addMagazineCargoGlobal ["CUP_17Rnd_9x19_glock17",2]; //Glock
 _objs addMagazineCargoGlobal ["1Rnd_HE_Grenade_shell",5]; //Under Grenade
 _objs addMagazineCargoGlobal ["1Rnd_Smoke_Grenade_shell",5]; //Under Grenade White
 _objs addMagazineCargoGlobal ["B_IR_Grenade",3]; //Grenade IR
