@@ -309,19 +309,6 @@ class CfgVehicles
 				displayName = "Assign an Object to snap to!";
 			};
 
-			class STAF_Module_AmbientAnimationMP_Combat: Combo
-  		{
-				property = "STAF_Module_AmbientAnimationMP_Combat_Combo";
-				displayName = "Enable Combat Behaviour";
-				typeName = "NUMBER";
-				defaultValue = "0";
-				class Values
-				{
-					class answer_no	{name = "No"; value = 0;};
-					class answer_yes	{name = "Yes";	value = 1;};
-				};
-			};
-
 			class ModuleDescription: ModuleDescription{};
 		};
 
@@ -364,43 +351,43 @@ class CfgVehicles
 					defaultValue = "0";
 					class Values
 					{
-						class Idle_Standing_1 {name = "Idle_Standing_1"; value = Idle_Standing_1;};
-						class Idle_Standing_2 {name = "Idle_Standing_2"; value = Idle_Standing_2;};
-						class Idle_Standing_3 {name = "Idle_Standing_3"; value = Idle_Standing_3;};
-						class Idle_Standing_4 {name = "Idle_Standing_4"; value = Idle_Standing_4;};
-						class Idle_Crossed_Arms_5 {name = "Idle_Crossed_Arms_5"; value = Idle_Crossed_Arms_5;};
-						class Idle_Standing_Weapon_1 {name = "Idle_Standing_Weapon_1"; value = Idle_Standing_Weapon_1;};
-						class Idle_Standing_Weapon_2 {name = "Idle_Standing_Weapon_2"; value = Idle_Standing_Weapon_2;};
-						class Idle_Standing_Weapon_3 {name = "Idle_Standing_Weapon_3"; value = Idle_Standing_Weapon_3;};
-						class Talking_1 {name = "Talking_1"; value = Talking_1;};
-						class Talking_2 {name = "Talking_2"; value = Talking_2;};
-						class Talking_Radio {name = "Talking_Radio"; value = Talking_Radio;};
-						class Listen_Radio {name = "Listen_Radio"; value = Listen_Radio;};
+						class Idle_Standing_1 {name = "Idle Standing 01"; value = Idle_Standing_1;};
+						class Idle_Standing_2 {name = "Idle Standing 02"; value = Idle_Standing_2;};
+						class Idle_Standing_3 {name = "Idle Standing 03"; value = Idle_Standing_3;};
+						class Idle_Standing_4 {name = "Idle Standing 04"; value = Idle_Standing_4;};
+						class Idle_Crossed_Arms_5 {name = "Idle Crossed Arms"; value = Idle_Crossed_Arms_5;};
+						class Idle_Standing_Weapon_1 {name = "Idle Standing 01 (Weapon)"; value = Idle_Standing_Weapon_1;};
+						class Idle_Standing_Weapon_2 {name = "Idle Standing 02 (Weapon)"; value = Idle_Standing_Weapon_2;};
+						class Idle_Standing_Weapon_3 {name = "Idle Standing 03 (Weapon)"; value = Idle_Standing_Weapon_3;};
+						class Talking_1 {name = "Talking 01"; value = Talking_1;};
+						class Talking_2 {name = "Talking 02"; value = Talking_2;};
+						class Talking_Radio {name = "Talking on Radio"; value = Talking_Radio;};
+						class Listen_Radio {name = "Listen on Radio"; value = Listen_Radio;};
 						class Speech {name = "Speech"; value = Speech;};
-						class Hostage_Sitting_1 {name = "Hostage_Sitting_1"; value = Hostage_Sitting_1;};
-						class Hostage_Sitting_2 {name = "Hostage_Sitting_2"; value = Hostage_Sitting_2;};
-						class Hostage_Sitting_3 {name = "Hostage_Sitting_3"; value = Hostage_Sitting_3;};
-						class Hostage_Sitting_4 {name = "Hostage_Sitting_4"; value = Hostage_Sitting_4;};
-						class Hostage_Sitting_5 {name = "Hostage_Sitting_5"; value = Hostage_Sitting_5;};
-						class Hostage_Kneeling {name = "Hostage_Kneeling"; value = Hostage_Kneeling;};
-						class Sit_Shocked_1 {name = "Sit_Shocked_1"; value = Sit_Shocked_1;};
-						class Sit_Shocked_2 {name = "Sit_Shocked_2"; value = Sit_Shocked_2;};
-						class Kneel_Afraid_1 {name = "Kneel_Afraid_1"; value = Kneel_Afraid_1;};
-						class Kneel_Afraid_2 {name = "Kneel_Afraid_2"; value = Kneel_Afraid_2;};
-						class Injured_Bed_1 {name = "Injured_Bed_1"; value = Injured_Bed_1;};
-						class Injured_Bed_2 {name = "Injured_Bed_2"; value = Injured_Bed_2;};
-						class Injured_Bed_3 {name = "Injured_Bed_3"; value = Injured_Bed_3;};
-						class Injured_lyingarm_1 {name = "Injured_lyingarm_1"; value = Injured_lyingarm_1;};
-						class Injured_lyingchest_2 {name = "Injured_lyingchest_2"; value = Injured_lyingchest_2;};
-						class Injured_lyinghead_3 {name = "Injured_lyinghead_3"; value = Injured_lyinghead_3;};
-						class Injured_lyingleg_4 {name = "Injured_lyingleg_4"; value = Injured_lyingleg_4;};
-						class Injured_lying_5 {name = "Injured_lying_5"; value = Injured_lying_5;};
-						class Injured_Weapon_Arm {name = "Injured_Weapon_Arm"; value = Injured_Weapon_Arm;};
-						class Injured_Weapon_Chest {name = "Injured_Weapon_Chest"; value = Injured_Weapon_Chest;};
-						class Injured_Weapon_Head {name = "Injured_Weapon_Head"; value = Injured_Weapon_Head;};
-						class Injured_Weapon_Leg {name = "Injured_Weapon_Leg"; value = Injured_Weapon_Leg;};
-						class Injured_Weapon_Angry {name = "Injured_Weapon_Angry"; value = Injured_Weapon_Angry;};
-						class Injured_Weapon_Coughing {name = "Injured_Weapon_Coughing"; value = Injured_Weapon_Coughing;};
+						class Hostage_Sitting_1 {name = "Hostage Sitting 01"; value = Hostage_Sitting_1;};
+						class Hostage_Sitting_2 {name = "Hostage Sitting 02"; value = Hostage_Sitting_2;};
+						class Hostage_Sitting_3 {name = "Hostage Sitting 03"; value = Hostage_Sitting_3;};
+						class Hostage_Sitting_4 {name = "Hostage Sitting 04"; value = Hostage_Sitting_4;};
+						class Hostage_Sitting_5 {name = "Hostage Sitting 05"; value = Hostage_Sitting_5;};
+						class Hostage_Kneeling {name = "Hostage Kneeling"; value = Hostage_Kneeling;};
+						class Sit_Shocked_1 {name = "Sit Shocked 01"; value = Sit_Shocked_1;};
+						class Sit_Shocked_2 {name = "Sit Shocked 02"; value = Sit_Shocked_2;};
+						class Kneel_Afraid_1 {name = "Kneel Afraid 01"; value = Kneel_Afraid_1;};
+						class Kneel_Afraid_2 {name = "Kneel Afraid 02"; value = Kneel_Afraid_2;};
+						class Injured_Bed_1 {name = "Injured Bed 01"; value = Injured_Bed_1;};
+						class Injured_Bed_2 {name = "Injured Bed 02"; value = Injured_Bed_2;};
+						class Injured_Bed_3 {name = "Injured Bed 03"; value = Injured_Bed_3;};
+						class Injured_lying_5 {name = "Lying Insured"; value = Injured_lying_5;};
+						class Injured_lyingarm_1 {name = "Lying Insured Arm"; value = Injured_lyingarm_1;};
+						class Injured_lyingchest_2 {name = "Lying Insured Chest"; value = Injured_lyingchest_2;};
+						class Injured_lyinghead_3 {name = "Lying Insured Head"; value = Injured_lyinghead_3;};
+						class Injured_lyingleg_4 {name = "Lying Insured Leg"; value = Injured_lyingleg_4;};
+						class Injured_Weapon_Arm {name = "Lying Insured Arm (Weapon)"; value = Injured_Weapon_Arm;};
+						class Injured_Weapon_Chest {name = "Lying Insured Chest (Weapon)"; value = Injured_Weapon_Chest;};
+						class Injured_Weapon_Head {name = "Lying Insured Head (Weapon)"; value = Injured_Weapon_Head;};
+						class Injured_Weapon_Leg {name = "Lying Insured Leg (Weapon)"; value = Injured_Weapon_Leg;};
+						class Injured_Weapon_Angry {name = "Lying Insured Angry"; value = Injured_Weapon_Angry;};
+						class Injured_Weapon_Coughing {name = "Lying Insured Coughing (Weapon)"; value = Injured_Weapon_Coughing;};
 						class Injured_Weapon_1 {name = "Injured_Weapon_1"; value = Injured_Weapon_1;};
 						class Injured_Weapon_2 {name = "Injured_Weapon_2"; value = Injured_Weapon_2;};
 						class Injured_Weapon_3 {name = "Injured_Weapon_3"; value = Injured_Weapon_3;};
@@ -412,10 +399,10 @@ class CfgVehicles
 						class Injured_Weapon_8 {name = "Injured_Weapon_8"; value = Injured_Weapon_8;};
 						class Injured_Pistol_1 {name = "Injured_Pistol_1"; value = Injured_Pistol_1;};
 						class Injured_Pistol_2 {name = "Injured_Pistol_2"; value = Injured_Pistol_2;};
-						class Dead_Captured {name = "Dead_Captured"; value = Dead_Captured;};
-						class Dead_Chair {name = "Dead_Chair"; value = Dead_Chair;};
-						class Typing_Combat_Bowed {name = "Typing_Combat_Bowed"; value = Typing_Combat_Bowed;};
-						class Typing_Combat_Kneeling {name = "Typing_Combat_Kneeling"; value = Typing_Combat_Kneeling;};
+						class Dead_Captured {name = "Dead Captured"; value = Dead_Captured;};
+						class Dead_Chair {name = "Dead in Chair"; value = Dead_Chair;};
+						class Typing_Combat_Bowed {name = "Typing Bowed"; value = Typing_Combat_Bowed;};
+						class Typing_Combat_Kneeling {name = "Typing Kneeling"; value = Typing_Combat_Kneeling;};
 					};
 			};
 			class ModuleDescription: ModuleDescription{};

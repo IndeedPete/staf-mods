@@ -353,6 +353,7 @@ _items = [
             "ACE_Kestrel4500",
             "ACE_ATragMX",
             "ACE_RangeCard",
+            "ACE_Tripod",
             //ADV
             "adv_aceSplint_splint",
             "adv_aceCPR_AED",
