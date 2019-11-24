@@ -66,6 +66,14 @@ class CfgFunctions
 				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
 				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
 			};
+			class disable_vcom_zeus{
+				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
+				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
+				preStart = 0; //1 to call the function upon game start, before title screen, but after all addons are loaded.
+				recompile = 1; //1 to recompile the function upon mission start
+				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
+				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
+			};
 			class hatearmanotification{
 				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
 				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
@@ -91,6 +99,22 @@ class CfgFunctions
 				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
 			};
 			class respawntimer_zeus{
+				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
+				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
+				preStart = 0; //1 to call the function upon game start, before title screen, but after all addons are loaded.
+				recompile = 1; //1 to recompile the function upon mission start
+				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
+				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
+			};
+			class stationary_ai_zeus{
+				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
+				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
+				preStart = 0; //1 to call the function upon game start, before title screen, but after all addons are loaded.
+				recompile = 1; //1 to recompile the function upon mission start
+				ext = ".sqf"; //Set file type, can be ".sqf" or ".fsm" (meaning scripted FSM). Default is ".sqf".
+				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
+			};
+			class stationary_group_zeus{
 				preInit = 0; //(formerly known as "forced") 1 to call the function upon mission start, before objects are initialized. Passed arguments are ["preInit"]
 				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
 				preStart = 0; //1 to call the function upon game start, before title screen, but after all addons are loaded.
@@ -202,6 +226,7 @@ class CfgFunctions
 			class animation{};
 			class createFireEffect{};
 			class disable{};
+			class disable_vcom{};
 			class enable{};
 			class forceFollowRoad{};
 			class pushbackplane{postInit = 1;};

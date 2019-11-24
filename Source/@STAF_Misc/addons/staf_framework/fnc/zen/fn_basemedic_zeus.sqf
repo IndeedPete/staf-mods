@@ -24,6 +24,6 @@
 	// Dialog
 
 	// Code
-	[_objectUnderCursor] call STAF_fnc_baseMedic;
+	_objectUnderCursor call STAF_fnc_baseMedic;
 
 }] remoteexeccall ["zen_custom_modules_fnc_register", 0, true];

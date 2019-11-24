@@ -15,7 +15,8 @@ class CfgPatches
 			"STAF_Module_PMC_Arsenal_Zeus_F",
 			"STAF_Module_Unlimited_Fuel_F",
 			"STAF_Module_Unlimited_Ammo_F",
-			"STAF_Module_Zeus_Action_F"
+			"STAF_Module_Zeus_Action_F",
+			"STAF_Module_DisableVcom_F"
 		};
 		weapons[] = {};
 		requiredVersion = 1.0;

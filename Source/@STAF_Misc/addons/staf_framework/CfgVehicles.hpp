@@ -526,4 +526,38 @@ class CfgVehicles
 			};
 		};
 	};
+
+	class STAF_Module_DisableVcom_F: Module_F
+	{
+		category = "STAF";
+		displayName = "Disable Vcom";
+		function = "STAF_fnc_disable_vcom";
+		functionPriority = 10;
+		isDisposable = 0;
+		is3DEN = 0;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		scope = 2;
+
+		class Attributes: AttributesBase
+		{
+			class ModuleDescription: ModuleDescription{};
+		};
+
+		class ModuleDescription: ModuleDescription
+		{
+			description = "Sync a unit to this module to disable Vcom on it!";
+			sync[] = {"LocationArea_F"};
+
+			class LocationArea_F
+			{
+				description[] =	{"Synchronise any unit to this module."};
+				position = 0;
+				direction = 0;
+				optional = 0;
+				duplicate = 0;
+				synced[] = {"AnyVehicle","AnyPerson","AnyAI"};
+			};
+		};
+	};
 };
