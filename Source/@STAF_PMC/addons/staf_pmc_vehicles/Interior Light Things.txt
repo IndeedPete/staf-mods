@@ -1,0 +1,94 @@
+Interior Lights:
+SUV: [-0.007,0.011,0.253]
+SUV2: [0.01,0.749,0.82]
+Husky: [-0.078,0.512,-0.423]
+Jeep: [-0.039,0.503,0.259]
+Kamaz:
+-> Cockpit [0.012,3.243,0.315]
+-> Back1 [0.012,-0.064,0.935]
+-> Back2  [0.012,-2.503,0.935]
+Offroad: [-0.041,0.638,0.23]
+Polaris: [-0.098,0.819,-0.803]
+Littlebird: [-0.004,0.476,0.942]
+Blackhawk:
+-> Cockpit [-0.006,4.825,0.15]
+-> Back [-0.006,2.182,0.15]
+
+
+
+
+
+Black Hawk Cockpit:
+light_emitter_0 setLightColor [0.928777,0.298719,0];
+light_emitter_0 setLightAmbient [0.928777,0.298719,0];
+light_emitter_0 setLightIntensity 100;
+light_emitter_0 setLightDayLight true;
+light_emitter_0 setLightAttenuation [0,0,3,1];
+
+Black Hawk Back:
+light_emitter_3 setLightColor [0.910775,0.285218,0];
+light_emitter_3 setLightAmbient [0.910775,0.285218,0];
+light_emitter_3 setLightIntensity 150;
+light_emitter_3 setLightDayLight true;
+light_emitter_3 setLightAttenuation [0,0,3,1];
+
+
+\a3\ui_f\data\IGUI\Cfg\VehicleToggles\LightsIconOn_ca.paa
+\a3\ui_f\data\IGUI\Cfg\VehicleToggles\LightsIconOn_ca.paa
+
+
+_HideBody = [
+  "STAF_HideBody",
+  "Hide Body",
+  "\a3\ui_f\data\IGUI\Cfg\Revive\overlayIcons\d100_ca.paa",
+  {
+    // Checking target variable
+    if (_target getVariable "STAF_HideBody_active") exitWith {
+    ["Someone is already taking care of this Body!", 2, player, 12] call ace_common_fnc_displayTextStructured;
+    };
+
+    // Setting the variable
+    _target setVariable ["STAF_HideBody_active",true,true];
+
+    if ((player call STAF_fnc_inHouse) OR (((getPosATL player) select 2) > 0.1)) then {
+      switch ("ACE_EntrenchingTool" in (vestItems player + uniformItems player + backpackItems player + assignedItems player)) do {
+        case true: {[player, _target] call STAF_fnc_hidebody_tool_inside;};
+        case false: {[player, _target] call STAF_fnc_hidebody_notool_inside;};
+      };
+    } else {
+      switch ("ACE_EntrenchingTool" in (vestItems player + uniformItems player + backpackItems player + assignedItems player)) do {
+        case true: {[player, _target] call STAF_fnc_hidebody_tool_outside;};
+        case false: {[player, _target] call STAF_fnc_hidebody_notool_outside;};
+      };
+    };
+  },
+  {!Alive _target}
+] call ace_interact_menu_fnc_createAction;
+
+
+
+
+["VEHICLECLASS", 0, ["ACE_MainActions"], _InteriorLightSub, true] call ace_interact_menu_fnc_addActionToClass;
+["VEHICLECLASS", 0, ["ACE_MainActions","STAF_InteriorLight"], _InteriorLightVEHICLE, true] call ace_interact_menu_fnc_addActionToClass;
+
+_InteriorLightOn = [
+  "STAF_InteriorLightOn",
+  "Turn on Interior Light",
+  "\a3\ui_f\data\IGUI\Cfg\VehicleToggles\LightsIconOn_ca.paa",
+  {
+      player setVariable ["STAF_ZeusAccess", false];
+
+      //Remove Zeus
+      _zeusassigned = player getVariable ["STAF_promoZeusModule", objNull];
+    	if (!isNull _zeusassigned) then {(group _zeusassigned) deleteGroupWhenEmpty true; deleteVehicle _zeusassigned};
+
+      ["You are no longer Zeus!", 2, player, 12] call ace_common_fnc_displayTextStructured;
+      player call STAF_fnc_zeusactionaddaction;
+  },
+  {true}
+] call ace_interact_menu_fnc_createAction;
+
+
+
+//Template
+_condition = _vehicle getVariable ["STAF_intLight_on", false];

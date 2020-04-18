@@ -13,7 +13,7 @@ _heal = [
 	[
 		(format ["<img size='1' shadow='1' image='\a3\ui_f\data\igui\cfg\Actions\heal_ca.paa'/> %1", _text]),
 		{
-			[player, player] call ACE_medical_fnc_treatmentAdvanced_fullHealLocal;
+			[player, player] call ace_medical_treatment_fnc_fullHeallocal;
 			["STAF_notification_healed",[]] call bis_fnc_showNotification;
 		},
 		[],
@@ -38,7 +38,7 @@ _healeveryone = [
 		{
 			{
 				if(_x distance (getPos (_this select 0)) < 10) then {
-					[player, _x] call ACE_medical_fnc_treatmentAdvanced_fullHealLocal;
+					[player, _x] call ace_medical_treatment_fnc_fullHeallocal;
 				}
 			} forEach allUnits;
 			["STAF_notification_sombodyhealed",[]] call bis_fnc_showNotification;

@@ -8,7 +8,7 @@ clearBackpackCargoGlobal _objs;
 _objs addItemCargoGlobal ["ACE_salineIV",2];
 _objs addItemCargoGlobal ["ACE_salineIV_250",4];
 _objs addItemCargoGlobal ["ACE_salineIV_500",3];
-_objs addItemCargoGlobal ["adv_aceSplint_splint",4];
+_objs addItemCargoGlobal ["ACE_splint",4];
 _objs addItemCargoGlobal ["ACE_tourniquet",4];
 _objs addItemCargoGlobal ["ACE_morphine",2];
 _objs addItemCargoGlobal ["ACE_packingBandage",10];
@@ -17,7 +17,6 @@ _objs addItemCargoGlobal ["ACE_EarPlugs",2];
 _objs addItemCargoGlobal ["ACE_quikclot",10];
 _objs addItemCargoGlobal ["ACE_elasticBandage",10];
 _objs addItemCargoGlobal ["ACE_fieldDressing",10];
-_objs addItemCargoGlobal ["adv_aceCPR_AED",1];
 _objs addItemCargoGlobal ["ACE_adenosine",2];
 _objs addItemCargoGlobal ["ACE_bodyBag",2];
 _objs addItemCargoGlobal ["TFAR_anprc152",2];
@@ -51,4 +50,3 @@ _objs addMagazineCargoGlobal ["CUP_SMAW_HEAA_M",2]; //SMAW Missile
 _objs addWeaponCargoGlobal ["CUP_launch_M136",2]; //M136 Launcher
 
 _objs addBackpackCargoGlobal ["STAF_B_RepairBag",1]; //Mechanic Bagback
-_objs addBackpackCargoGlobal ["STAF_B_RepairBag",1]; //Defibrillator Bagback

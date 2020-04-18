@@ -115,13 +115,14 @@ class CfgVehicles
 				{
 					class car	{name = "Car"; value = 0;};
 					class mrap	{name = "MRAP"; value = 1;};
+					class apc {name = "APC"; value = 2}
 					class truck	{name = "Truck"; value = 1;};
-					class helismall	{name = "Heli (Small)"; value = 2;};
-					class helibig	{name = "Heli (Big)"; value = 3;};
-					class boat {name = "Boat"; value = 4;};
-					class droneammo {name = "Drone (Ammo)"; value = 5;};
-					class dronemedic {name = "Drone (Medical)"; value = 6;};
-					class droneexplosive {name = "Drone (Explosive)"; value = 7;};
+					class helismall	{name = "Heli (Small)"; value = 3;};
+					class helibig	{name = "Heli (Big)"; value = 4;};
+					class boat {name = "Boat"; value = 5;};
+					class droneammo {name = "Drone (Ammo)"; value = 6;};
+					class dronemedic {name = "Drone (Medical)"; value = 7;};
+					class droneexplosive {name = "Drone (Explosive)"; value = 8;};
 				};
 			};
 			class ModuleDescription: ModuleDescription{};

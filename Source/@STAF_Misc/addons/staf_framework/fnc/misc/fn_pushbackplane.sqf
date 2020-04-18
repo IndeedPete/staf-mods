@@ -1,5 +1,5 @@
 // Put this in initPlayerLocal.sqf OR in a gamelogic
-if (isDedicated) exitwith {};
+/*if (isDedicated) exitwith {};
 
 ["AllowPlanesToReverseCheck", "onEachFrame", {
   if (
@@ -24,6 +24,6 @@ if (isDedicated) exitwith {};
     ];
    };
   };
-}] call BIS_fnc_addStackedEventHandler;
+}] call BIS_fnc_addStackedEventHandler;*/
 
 //By: Roque_THE_GAMER

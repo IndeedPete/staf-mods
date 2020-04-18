@@ -26,7 +26,8 @@ class CfgPatches
 			"ace_movement",
 			"A3_Structures_F_Mark",
 			"CBA_Main",
-			"cba_ui"
+			"cba_ui",
+			"zen_context_menu"
 		};
 		author = "STAF";
 		authorUrl = "http://stafclan.com/index.php/BoardList/";

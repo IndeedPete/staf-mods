@@ -10,6 +10,7 @@ class CfgPatches {
         "STAF_hexacopter_ammo",
         "STAF_hexacopter_medical",
         "STAF_hexacopter_explosive",
+        "STAF_demining_UGV",
         "STAF_rubberboat",
         "STAF_truck_transport",
         "STAF_truck_box",
@@ -25,6 +26,7 @@ class CfgPatches {
         "STAF_husky_woodland",
         "STAF_husky_desert",
         "STAF_lsv",
+        "STAF_btr90",
         "STAF_quadcopter",
         "STAF_md500_opf",
         "STAF_md500_defender_opf",
@@ -33,6 +35,7 @@ class CfgPatches {
         "STAF_hexacopter_ammo_opf",
         "STAF_hexacopter_medical_opf",
         "STAF_hexacopter_explosive_opf",
+        "STAF_demining_UGV_opf",
         "STAF_rubberboat_opf",
         "STAF_truck_transport_opf",
         "STAF_truck_box_opf",
@@ -48,6 +51,7 @@ class CfgPatches {
         "STAF_husky_woodland_opf",
         "STAF_husky_desert_opf",
         "STAF_lsv_opf",
+        "STAF_btr90_opf",
         "STAF_quadcopter_opf",
         "STAF_md500_ind",
         "STAF_md500_defender_ind",
@@ -56,6 +60,7 @@ class CfgPatches {
         "STAF_hexacopter_ammo_ind",
         "STAF_hexacopter_medical_ind",
         "STAF_hexacopter_explosive_ind",
+        "STAF_demining_UGV_ind",
         "STAF_rubberboat_ind",
         "STAF_truck_transport_ind",
         "STAF_truck_box_ind",
@@ -71,6 +76,7 @@ class CfgPatches {
         "STAF_husky_woodland_ind",
         "STAF_husky_desert_ind",
         "STAF_lsv_ind",
+        "STAF_btr90_ind",
         "STAF_quadcopter_ind"
       };
       weapons[] = {};

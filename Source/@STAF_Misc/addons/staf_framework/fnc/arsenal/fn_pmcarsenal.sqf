@@ -74,6 +74,21 @@ _weapons = [
             "CUP_arifle_Mk16_SV",
             "CUP_arifle_Mk16_SV_black",
             "CUP_arifle_Mk16_SV_woodland",
+            "CUP_arifle_M4A1_black",
+            "CUP_arifle_M4A1_desert",
+            "CUP_arifle_M4A1_camo",
+            "CUP_arifle_M4A3_black",
+            "CUP_arifle_M4A3_desert",
+            "CUP_arifle_M4A3_camo",
+            "CUP_arifle_M4A1",
+            "CUP_arifle_M4A1_desert_carryhandle",
+            "CUP_arifle_M4A1_camo_carryhandle",
+            "CUP_arifle_M4A1_BUIS_GL",
+            "CUP_arifle_M4A1_BUIS_desert_GL",
+            "CUP_arifle_M4A1_BUIS_camo_GL",
+            "CUP_arifle_M4A1_GL_carryhandle",
+            "CUP_arifle_M4A1_GL_carryhandle_desert",
+            "CUP_arifle_M4A1_GL_carryhandle_camo",
             "hlc_m249_pip2",
             "hlc_smg_mp5a4",
             "hlc_rifle_G36MLIC",
@@ -163,6 +178,9 @@ _backpacks = [
             "B_UAV_01_backpack_F",
             "I_UAV_01_backpack_F",
             "O_UAV_01_backpack_F",
+            "B_UGV_02_Demining_backpack_F",
+            "O_UGV_02_Demining_backpack_F",
+            "I_UGV_02_Demining_backpack_F",
             "B_AssaultPack_eaf_F",
             "B_AssaultPack_wdl_F",
             "B_Carryall_eaf_F",
@@ -346,6 +364,7 @@ _items = [
             "ACE_plasmaIV",
             "ACE_plasmaIV_250",
             "ACE_plasmaIV_500",
+            "ACE_splint",
             "ACE_SpraypaintRed",
             "ACE_SpottingScope",
             "ACE_UAVBattery",
@@ -354,9 +373,6 @@ _items = [
             "ACE_ATragMX",
             "ACE_RangeCard",
             "ACE_Tripod",
-            //ADV
-            "adv_aceSplint_splint",
-            "adv_aceCPR_AED",
             //Vanilla
             "H_EarProtectors_black_F",
             "H_EarProtectors_orange_F",
@@ -590,7 +606,10 @@ _items = [
             "CFP_Scarfbeardshades_green",
             "CFP_Scarfbeardshades_grey",
             "CFP_Scarfbeardshades_tan",
-            "CFP_Scarfbeardshades_white"
+            "CFP_Scarfbeardshades_white",
+            // Other
+            "JAS_Surgical_Mask_Blue",
+            "JAS_Surgical_Mask_White"
 ];
 
 _uniforms = [
@@ -1204,6 +1223,7 @@ _headgear = [
             "H_MilCap_taiga",
             "H_MilCap_wdl",
             "H_MilCap_eaf",
+            "H_Tank_black_F",
             //VSM
             "ABU_Helmet1",
             "ABU_Helmet2",
@@ -1949,7 +1969,10 @@ _vests = [
             "STAF_V_PlateCarrier2_medic_arctic",
             "STAF_V_PlateCarrier1_mcam_alpine",
             "STAF_V_PlateCarrier2_mcam_alpine",
-            "STAF_V_TacVest_hidden"
+            "STAF_V_TacVest_hidden",
+            // Other
+            "mgsr_poncho_dry_vest",
+            "mgsr_poncho_wet_vest9"
 ];
 
 _othermagazines = [

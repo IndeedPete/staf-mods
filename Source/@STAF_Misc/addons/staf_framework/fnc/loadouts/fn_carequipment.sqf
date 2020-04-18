@@ -8,7 +8,7 @@ clearBackpackCargoGlobal _objs;
 _objs addItemCargoGlobal ["ACE_salineIV",1];
 _objs addItemCargoGlobal ["ACE_salineIV_250",3];
 _objs addItemCargoGlobal ["ACE_salineIV_500",2];
-_objs addItemCargoGlobal ["adv_aceSplint_splint",2];
+_objs addItemCargoGlobal ["ACE_splint",2];
 _objs addItemCargoGlobal ["ACE_tourniquet",2];
 _objs addItemCargoGlobal ["ACE_morphine",2];
 _objs addItemCargoGlobal ["ACE_packingBandage",5];
@@ -17,7 +17,6 @@ _objs addItemCargoGlobal ["ACE_EarPlugs",2];
 _objs addItemCargoGlobal ["ACE_quikclot",5];
 _objs addItemCargoGlobal ["ACE_elasticBandage",5];
 _objs addItemCargoGlobal ["ACE_fieldDressing",5];
-_objs addItemCargoGlobal ["adv_aceCPR_AED",1];
 _objs addItemCargoGlobal ["ACE_adenosine",2];
 //_objs addItemCargoGlobal ["ACE_bodyBag",2];
 _objs addItemCargoGlobal ["TFAR_anprc152",1];
@@ -48,4 +47,3 @@ _objs addMagazineCargoGlobal ["SmokeShell",5]; //Grenade White
 _objs addMagazineCargoGlobal ["ACE_SpareBarrel",1]; //SpareBarrel
 
 _objs addBackpackCargoGlobal ["STAF_B_RepairBag",1]; //Mechanic Bagback
-_objs addBackpackCargoGlobal ["STAF_B_RepairBag",1]; //Defibrillator Bagback

@@ -11,6 +11,7 @@ class CfgVehicles {
     class B_Helipilot_F;
     class B_helicrew_F;
     class B_Assault_Diver;
+    class B_crew_F;
     class B_Pilot_F;
     class C_Man_1;
 
@@ -32,14 +33,6 @@ class CfgVehicles {
             linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid"};
             weapons[] = {"Throw","Put" };
             magazines[] = {};
-
-            class Eventhandlers: Eventhandlers
-            {
-              class InitEH
-              {
-                  init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\random_uniform.sqf';";
-              };
-            };
         };
 
         class STAF_contractor_at : B_soldier_AT_F {
@@ -57,14 +50,6 @@ class CfgVehicles {
             linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid"};
             weapons[] = {"Throw","Put" };
             magazines[] = {};
-
-            class Eventhandlers: Eventhandlers
-            {
-              class InitEH
-              {
-                  init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\random_uniform.sqf';";
-              };
-            };
         };
 
         class STAF_contractor_aa : B_soldier_AA_F {
@@ -82,14 +67,6 @@ class CfgVehicles {
             linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid"};
             weapons[] = {"Throw","Put" };
             magazines[] = {};
-
-            class Eventhandlers: Eventhandlers
-            {
-              class InitEH
-              {
-                  init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\random_uniform.sqf';";
-              };
-            };
         };
 
         class STAF_contractor_mg : B_soldier_AR_F {
@@ -107,14 +84,6 @@ class CfgVehicles {
             linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid"};
             weapons[] = {"Throw","Put" };
             magazines[] = {};
-
-            class Eventhandlers: Eventhandlers
-            {
-              class InitEH
-              {
-                  init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\random_uniform.sqf';";
-              };
-            };
         };
 
         class STAF_contractor_medic : B_medic_F {
@@ -132,14 +101,6 @@ class CfgVehicles {
             linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid"};
             weapons[] = {"Throw","Put" };
             magazines[] = {};
-
-            class Eventhandlers: Eventhandlers
-            {
-              class InitEH
-              {
-                  init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\random_uniform.sqf';";
-              };
-            };
         };
 
         class STAF_contractor_marksman : B_soldier_M_F {
@@ -157,14 +118,6 @@ class CfgVehicles {
             linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid"};
             weapons[] = {"Throw","Put" };
             magazines[] = {};
-
-            class Eventhandlers: Eventhandlers
-            {
-              class InitEH
-              {
-                  init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\random_uniform.sqf';";
-              };
-            };
         };
 
         class STAF_contractor_engineer : B_engineer_F {
@@ -182,14 +135,6 @@ class CfgVehicles {
             linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid"};
             weapons[] = {"Throw","Put" };
             magazines[] = {};
-
-            class Eventhandlers: Eventhandlers
-            {
-              class InitEH
-              {
-                  init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\random_uniform.sqf';";
-              };
-            };
         };
 
         class STAF_contractor_bodyguard : B_Soldier_F {
@@ -207,14 +152,6 @@ class CfgVehicles {
             linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid"};
             weapons[] = {"Throw","Put" };
             magazines[] = {};
-
-            class Eventhandlers: Eventhandlers
-            {
-              class InitEH
-              {
-                  init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\random_uniform.sqf';";
-              };
-            };
         };
 
         class STAF_contractor_heli_pilot : B_Helipilot_F {
@@ -232,14 +169,6 @@ class CfgVehicles {
             linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid"};
             weapons[] = {"Throw","Put" };
             magazines[] = {};
-
-            class Eventhandlers: Eventhandlers
-            {
-              class InitEH
-              {
-                  init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\random_uniform.sqf';";
-              };
-            };
         };
 
         class STAF_contractor_diver : B_Assault_Diver {
@@ -257,14 +186,24 @@ class CfgVehicles {
             linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid", "G_Diving"};
             weapons[] = {"Throw","Put" };
             magazines[] = {};
+        };
 
-            class Eventhandlers: Eventhandlers
-            {
-              class InitEH
-              {
-                  init = "[(_this select 0)] execVM '\staf_pmc_main\scripts\random_uniform.sqf';";
-              };
-            };
+        class STAF_contractor_crew : B_crew_F {
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "Crewman";
+            side = 1;
+            faction = "STAF_PMC";
+            editorPreview = "\staf_pmc_main\eden\STAF_contractor_crew.jpg";
+
+            //identityTypes[] = { "NoGlasses", "Head_NATO" , "LanguageENG_F"}; // Just as a working Backup
+            identityTypes[] = { "NoGlasses", "Head_African" , "Head_Asian" , "female_01" , "female_02" , "female_03" , "female_04" , "female_05" , "female2_01" , "female2_02" , "female2_03" , "female2_04" , "female3_01" , "female3_02" , "female3_03" , "female3_04" , "Head_Russian" , "Head_Euro" , "LanguageENG_F", "LanguageENGB_F"};
+            uniformClass = "STAF_Scientist";
+
+            linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid"};
+            weapons[] = {"Throw","Put" };
+            magazines[] = {};
         };
 
       //---------------------------VIP--------------------------------------------
@@ -526,6 +465,13 @@ class CfgVehicles {
             faction = "STAF_PMC_OPF";
         };
 
+        class STAF_contractor_crew_opf : STAF_contractor_crew {
+            Side = 0;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_OPF";
+        };
+
       //---------------------------VIP--------------------------------------------
 
         class STAF_boss_opf : STAF_boss {
@@ -651,6 +597,13 @@ class CfgVehicles {
           };
 
           class STAF_contractor_diver_ind : STAF_contractor_diver {
+              Side = 2;
+              scope = 2;
+              scopeCurator = 2;
+              faction = "STAF_PMC_IND";
+          };
+
+          class STAF_contractor_crew_ind : STAF_contractor_crew {
               Side = 2;
               scope = 2;
               scopeCurator = 2;

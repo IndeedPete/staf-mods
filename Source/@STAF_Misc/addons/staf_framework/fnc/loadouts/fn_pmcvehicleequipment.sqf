@@ -20,43 +20,50 @@ if (_condition == 1) then {
   } foreach _objs;
 };
 
-// Heli Small
+// APC
 if (_condition == 2) then {
+  {
+  	[_x] call STAF_fnc_apcequipment;
+  } foreach _objs;
+};
+
+// Heli Small
+if (_condition == 3) then {
   {
   	[_x] call STAF_fnc_helismallequipment;
   } foreach _objs;
 };
 
 // Heli Big
-if (_condition == 3) then {
+if (_condition == 4) then {
   {
   	[_x] call STAF_fnc_helibigequipment;
   } foreach _objs;
 };
 
 // Boat
-if (_condition == 4) then {
+if (_condition == 5) then {
   {
   	[_x] call STAF_fnc_boatequipment;
   } foreach _objs;
 };
 
 // Drone Ammo
-if (_condition == 5) then {
+if (_condition == 6) then {
   {
   	[_x] call STAF_fnc_droneammoequipment;
   } foreach _objs;
 };
 
 // Drone Medical
-if (_condition == 6) then {
+if (_condition == 7) then {
   {
   	[_x] call STAF_fnc_dronemedicequipment;
   } foreach _objs;
 };
 
 // Drone Explosions
-if (_condition == 7) then {
+if (_condition == 8) then {
   {
   	[_x] call STAF_fnc_droneexplosionequipment;
   } foreach _objs;

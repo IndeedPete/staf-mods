@@ -13,6 +13,7 @@ if ((uniform _unit) in _startUniform) then {
     if ((typeOf _unit) isEqualTo "STAF_contractor_heli_pilot") then {[_this select 0] call STAF_fnc_gear_contractor_heli_pilot};
     if ((typeOf _unit) isEqualTo "STAF_contractor_marksman") then {[_this select 0] call STAF_fnc_gear_contractor_marksman};
     if ((typeOf _unit) isEqualTo "STAF_contractor_diver") then {[_this select 0] call STAF_fnc_gear_contractor_diver};
+    if ((typeOf _unit) isEqualTo "STAF_contractor_crew") then {[_this select 0] call STAF_fnc_gear_contractor_crew};
     // OPFOR
     if ((typeOf _unit) isEqualTo "STAF_contractor_opf") then {[_this select 0] call STAF_fnc_gear_contractor};
     if ((typeOf _unit) isEqualTo "STAF_contractor_at_opf") then {[_this select 0] call STAF_fnc_gear_contractor_at};
@@ -24,6 +25,7 @@ if ((uniform _unit) in _startUniform) then {
     if ((typeOf _unit) isEqualTo "STAF_contractor_heli_pilot_opf") then {[_this select 0] call STAF_fnc_gear_contractor_heli_pilot};
     if ((typeOf _unit) isEqualTo "STAF_contractor_marksman_opf") then {[_this select 0] call STAF_fnc_gear_contractor_marksman};
     if ((typeOf _unit) isEqualTo "STAF_contractor_diver_opf") then {[_this select 0] call STAF_fnc_gear_contractor_diver};
+    if ((typeOf _unit) isEqualTo "STAF_contractor_crew_opf") then {[_this select 0] call STAF_fnc_gear_contractor_crew};
     //INDFOR
     if ((typeOf _unit) isEqualTo "STAF_contractor_ind") then {[_this select 0] call STAF_fnc_gear_contractor};
     if ((typeOf _unit) isEqualTo "STAF_contractor_at_ind") then {[_this select 0] call STAF_fnc_gear_contractor_at};
@@ -35,6 +37,7 @@ if ((uniform _unit) in _startUniform) then {
     if ((typeOf _unit) isEqualTo "STAF_contractor_heli_pilot_ind") then {[_this select 0] call STAF_fnc_gear_contractor_heli_pilot};
     if ((typeOf _unit) isEqualTo "STAF_contractor_marksman_ind") then {[_this select 0] call STAF_fnc_gear_contractor_marksman};
     if ((typeOf _unit) isEqualTo "STAF_contractor_diver_ind") then {[_this select 0] call STAF_fnc_gear_contractor_diver};
+    if ((typeOf _unit) isEqualTo "STAF_contractor_crew_ind") then {[_this select 0] call STAF_fnc_gear_contractor_crew};
 }
 else {
 };

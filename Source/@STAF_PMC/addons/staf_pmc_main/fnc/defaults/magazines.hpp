@@ -1,12 +1,12 @@
 //Assault Rifles
 if (_weapon == "STAF_rifle_scar_blk") then {
-  for "_i" from 1 to 10 do {_unit addItem "CUP_30Rnd_556x45_Stanag_Mk16_black";};
+  for "_i" from 1 to 10 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
 };
 if (_weapon == "STAF_rifle_scar_tan") then {
-  for "_i" from 1 to 10 do {_unit addItem "CUP_30Rnd_556x45_Stanag_Mk16";};
+  for "_i" from 1 to 10 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP_Tan";};
 };
 if (_weapon == "STAF_rifle_scar_wld") then {
-  for "_i" from 1 to 10 do {_unit addItem "CUP_30Rnd_556x45_Stanag_Mk16_woodland";};
+  for "_i" from 1 to 10 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP_Olive";};
 };
 if (_weapon == "STAF_rifle_G36C") then {
   for "_i" from 1 to 8 do {_unit addItem "hlc_30rnd_556x45_EPR_G36";};
@@ -70,6 +70,24 @@ if (_weapon == "STAF_rifle_ak12u_arid") then {
 };
 if (_weapon == "STAF_rifle_ak12u_lush") then {
   for "_i" from 1 to 7 do {_unit addItem "30rnd_762x39_AK12_Lush_Mag_F";};
+};
+if (_weapon == "STAF_rifle_m4a1_blk") then {
+  for "_i" from 1 to 7 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
+};
+if (_weapon == "STAF_rifle_m4a1_tan") then {
+  for "_i" from 1 to 7 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP_Tan";};
+};
+if (_weapon == "STAF_rifle_m4a1_wld") then {
+  for "_i" from 1 to 7 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP_Olive";};
+};
+if (_weapon == "STAF_rifle_m4a3_blk") then {
+  for "_i" from 1 to 7 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
+};
+if (_weapon == "STAF_rifle_m4a3_tan") then {
+  for "_i" from 1 to 7 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP_Tan";};
+};
+if (_weapon == "STAF_rifle_m4a3_wld") then {
+  for "_i" from 1 to 7 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP_Olive";};
 };
 
 //SMGs
