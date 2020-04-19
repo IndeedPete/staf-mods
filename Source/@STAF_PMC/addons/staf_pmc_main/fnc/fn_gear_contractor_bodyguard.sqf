@@ -13,6 +13,7 @@
 #include "\staf_pmc_main\fnc\defaults\wetsuits.hpp"
 #include "\staf_pmc_main\fnc\defaults\rebreathers.hpp"
 #include "\staf_pmc_main\fnc\defaults\helihelmets.hpp"
+#include "\staf_pmc_main\fnc\defaults\nvgs.hpp"
 
 _unit = _this select 0;
 

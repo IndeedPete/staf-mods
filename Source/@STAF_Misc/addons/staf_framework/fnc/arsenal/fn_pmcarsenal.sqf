@@ -373,6 +373,7 @@ _items = [
             "ACE_ATragMX",
             "ACE_RangeCard",
             "ACE_Tripod",
+            "ACE_Vector",
             //Vanilla
             "H_EarProtectors_black_F",
             "H_EarProtectors_orange_F",
@@ -514,6 +515,10 @@ _items = [
             "tacs_Goggles_Tan",
             //CUP
             "CUP_NVG_PVS7",
+            "CUP_NVG_PVS15_black",
+            "CUP_NVG_PVS15_green",
+            "CUP_NVG_PVS15_tan",
+            "CUP_NVG_PVS15_winter",
             "CUP_RUS_Balaclava_blk",
             "CUP_RUS_Balaclava_grn",
             "CUP_PMC_Facewrap_Black",

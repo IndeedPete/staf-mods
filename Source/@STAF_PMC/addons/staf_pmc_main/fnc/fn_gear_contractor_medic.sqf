@@ -13,6 +13,7 @@
 #include "\staf_pmc_main\fnc\defaults\wetsuits.hpp"
 #include "\staf_pmc_main\fnc\defaults\rebreathers.hpp"
 #include "\staf_pmc_main\fnc\defaults\helihelmets.hpp"
+#include "\staf_pmc_main\fnc\defaults\nvgs.hpp"
 
 _unit = _this select 0;
 
@@ -58,6 +59,8 @@ for "_i" from 1 to 2 do {_unit addItem "SmokeShellRed";};
 _unit addItem "ACE_EarPlugs";
 _unit addItem "ACE_Flashlight_XL50";
 
+_nvg = selectRandom _nvgsArray;
+_unit linkItem _nvg;
 _unit linkItem "ItemMap";
 _unit linkItem "ItemGPS";
 _unit linkItem "ItemCompass";
