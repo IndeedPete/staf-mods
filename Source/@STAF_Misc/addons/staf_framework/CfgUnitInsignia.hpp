@@ -28,6 +28,13 @@ class CfgUnitInsignia
 		texture = "\staf_framework\img\capybara.paa";
 		textureVehicle = "";
 	};
+	class STAF_capybara
+	{
+		displayName = "Kill me now!";
+		author = "STAF|JustRico";
+		texture = "\staf_framework\img\kmn.paa";
+		textureVehicle = "";
+	};
 
 	// Country
 
