@@ -28,11 +28,18 @@ class CfgUnitInsignia
 		texture = "\staf_framework\img\capybara.paa";
 		textureVehicle = "";
 	};
-	class STAF_capybara
+	class STAF_kmn
 	{
 		displayName = "Kill me now!";
 		author = "STAF|JustRico";
 		texture = "\staf_framework\img\kmn.paa";
+		textureVehicle = "";
+	};
+	class STAF_kmn2
+	{
+		displayName = "Kill me now! 2";
+		author = "STAF|JustRico";
+		texture = "\staf_framework\img\kmn2.paa";
 		textureVehicle = "";
 	};
 
