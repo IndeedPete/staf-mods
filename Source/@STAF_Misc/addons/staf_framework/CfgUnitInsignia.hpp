@@ -48,35 +48,56 @@ class CfgUnitInsignia
 	class STAF_india
 	{
 		displayName = "India";
-		author = "STAF|IndeedPete and STAF|Moony";
+		author = "STAF|Moony";
 		texture = "\staf_framework\img\India.paa";
 		textureVehicle = "";
 	};
+	class STAF_southafrica
+	{
+		displayName = "South Africa";
+		author = "STAF|Moony";
+		texture = "\staf_framework\img\southafrica.paa";
+		textureVehicle = "";
+	};
+	class STAF_southafrica_old
+	{
+		displayName = "South Africa (Old)";
+		author = "STAF|Moony";
+		texture = "\staf_framework\img\southafrica_old.paa";
+		textureVehicle = "";
+	};
+	/*class STAF_abw
+	{
+		displayName = "Afrikaner Weerstand Beweging";
+		author = "STAF|Moony";
+		texture = "\staf_framework\img\abw.paa";
+		textureVehicle = "";
+	};*/
 	class STAF_usa
 	{
 		displayName = "USA";
-		author = "STAF|IndeedPete and STAF|Moony";
+		author = "STAF|Moony";
 		texture = "\staf_framework\img\United_States_of_America.paa";
 		textureVehicle = "";
 	};
 	class STAF_israel
 	{
 		displayName = "Israel";
-		author = "STAF|IndeedPete and STAF|Moony";
+		author = "STAF|Moony";
 		texture = "\staf_framework\img\Israel.paa";
 		textureVehicle = "";
 	};
 	class STAF_ukraine
 	{
 		displayName = "Ukraine";
-		author = "STAF|IndeedPete and STAF|Moony";
+		author = "STAF|Moony";
 		texture = "\staf_framework\img\Ukraine.paa";
 		textureVehicle = "";
 	};
 	class STAF_faroes
 	{
 		displayName = "Faroes";
-		author = "STAF|IndeedPete and STAF|Moony";
+		author = "STAF|Moony";
 		texture = "\staf_framework\img\Faroes.paa";
 		textureVehicle = "";
 	};
