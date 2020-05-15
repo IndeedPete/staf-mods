@@ -21,6 +21,15 @@ class CfgVehicles {
     class CUP_I_SUV_ION;
     class CUP_BTR90_Base;
     class B_UGV_02_Demining_F;
+    class CUP_B_M1126_ICV_M2_Desert;
+    class CUP_B_M1128_MGS_Desert;
+    class CUP_B_M1126_ICV_MK19_Desert;
+    class CUP_B_M1135_ATGMV_Desert;
+    class CUP_B_M1130_CV_M2_Desert;
+    class CUP_B_M1129_MC_MK19_Desert;
+    class CUP_B_M2StaticMG_US;
+    class CUP_B_M2StaticMG_MiniTripod_US;
+    class CUP_O_2b14_82mm_RU;
 
 
     //----------------------------------BLUFOR---------------------------------
@@ -239,7 +248,6 @@ class CfgVehicles {
             Maxspeed = 100;
 
             hiddenSelections[] = {"camo","clan"};
-            selectionClan = "";
             maximumLoad = 1500;
         };
 
@@ -297,6 +305,7 @@ class CfgVehicles {
             crew = "STAF_contractor";
             editorPreview = "\staf_pmc_main\eden\STAF_lsv.jpg";
             hiddenSelections[] = {"Camo_1","Camo_2","Camo_3","Camo_4","clan"};
+            hiddenSelectionsTextures[] = {"\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_01_black_CO.paa.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_02_black_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_black_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_black_CO.paa"};
             selectionClan = "";
             textureList[] = {"Black",1,"Olive",0,"Sand",0};
             maximumLoad = 1500;
@@ -316,6 +325,76 @@ class CfgVehicles {
             hiddenSelections[] = {"Camo1","Camo2","clan"};
             selectionClan = "";
             hiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\staf_btr90_body_co.paa","\staf_pmc_vehicles\txt\staf_btr90_body2_co.paa"};
+
+            typicalCargo[] = {"STAF_contractor_crew","STAF_contractor_crew","STAF_contractor_crew"};
+        };
+
+        class STAF_M1126_ICV_M2 : CUP_B_M1126_ICV_M2_Desert {
+            scope = 2;
+            scopeCurator = 2;
+            side = 1;
+            displayName = "M1126 Infantry Carrier Vehicle";
+            faction = "STAF_PMC";
+            crew = "STAF_contractor_crew";
+            editorPreview = "\staf_pmc_main\eden\STAF_M1126_ICV_M2.jpg";
+            editorSubcategory = "EdSubcat_APCs";
+            maximumLoad = 4500;
+
+            HiddenSelections[] = {"camo","camo1","camo6","camo8","camo7","camo9","camo10","camo11","camoDefault","clan"};
+            selectionClan = "";
+            HiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_stryker_body1_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_body2_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_body2_blk_co.paa","\staf_pmc_vehicles\txt\STAF_icv_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_alfa_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_alfa_blk_co.paa","\staf_pmc_vehicles\txt\STAF_slat_armor_blk_co.paa","\staf_pmc_vehicles\txt\STAF_slat_armor_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_default_co.paa"};
+            typicalCargo[] = {"STAF_contractor_crew","STAF_contractor_crew","STAF_contractor_crew"};
+        };
+
+        class STAF_M1128_MGS : CUP_B_M1128_MGS_Desert {
+            scope = 2;
+            scopeCurator = 2;
+            side = 1;
+            displayName = "M1128 Mobile Gun System";
+            faction = "STAF_PMC";
+            crew = "STAF_contractor_crew";
+            editorPreview = "\staf_pmc_main\eden\STAF_M1128_MGS.jpg";
+            editorSubcategory = "EdSubcat_APCs";
+            maximumLoad = 4500;
+
+            HiddenSelections[] = {"camo","camo1","camo2","camo6","camo7","camo10","camoDefault","clan"};
+            selectionClan = "";
+            HiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_stryker_mgs_body1_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_body2_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_mgs_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_body2_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_alfa_blk_co.paa","\staf_pmc_vehicles\txt\STAF_slat_armor_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_default_co.paa"};
+
+            typicalCargo[] = {"STAF_contractor_crew","STAF_contractor_crew","STAF_contractor_crew"};
+        };
+
+        class STAF_M1130_CV_M2 : CUP_B_M1130_CV_M2_Desert {
+            scope = 2;
+            scopeCurator = 2;
+            side = 1;
+            displayName = "M1130 Commander's Vehicle";
+            faction = "STAF_PMC";
+            crew = "STAF_contractor_crew";
+            editorPreview = "\staf_pmc_main\eden\STAF_M1130_CV_M2.jpg";
+            editorSubcategory = "EdSubcat_APCs";
+            maximumLoad = 4500;
+
+            HiddenSelections[] = {"camo","camo1","camo2","camo10","camo8","camoDefault","clan"};
+            selectionClan = "";
+            HiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_stryker_body1_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_body2_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_command_des_co.paa","\staf_pmc_vehicles\txt\STAF_slat_armor_blk_co.paa","\staf_pmc_vehicles\txt\STAF_icv_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_default_co.paa"};
+            typicalCargo[] = {"STAF_contractor_crew","STAF_contractor_crew","STAF_contractor_crew"};
+        };
+
+        class STAF_M1129_MC_MK19 : CUP_B_M1129_MC_MK19_Desert {
+            scope = 2;
+            scopeCurator = 2;
+            side = 1;
+            displayName = "M1129 Mortar Carrier";
+            faction = "STAF_PMC";
+            crew = "STAF_contractor_crew";
+            editorPreview = "\staf_pmc_main\eden\STAF_M1129_MC_MK19.jpg";
+            editorSubcategory = "EdSubcat_APCs";
+            maximumLoad = 4500;
+
+            HiddenSelections[] = {"camo","camo1","camo2","camo10","camo8","camoDefault","clan"};
+            selectionClan = "";
+            HiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_stryker_body1_mortar_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_body2_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_interior1_mortar_blk_co.paa","\staf_pmc_vehicles\txt\STAF_slat_armor_blk_co.paa","\staf_pmc_vehicles\txt\STAF_icv_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_default_co.paa"};
 
             typicalCargo[] = {"STAF_contractor_crew","STAF_contractor_crew","STAF_contractor_crew"};
         };
@@ -400,6 +479,44 @@ class CfgVehicles {
             selectionClan = "";
             crew = "B_UAV_AI";
             editorPreview = "\staf_pmc_main\eden\STAF_demining_UGV.jpg";
+        };
+
+      //----------------------------------Statics---------------------------------
+
+        class STAF_m2_high : CUP_B_M2StaticMG_US {
+
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "M2 Browning (High)";
+            side = 1;
+            faction = "STAF_PMC";
+            crew = "STAF_contractor";
+            editorPreview = "\staf_pmc_main\eden\STAF_m2_high.jpg";
+        };
+
+        class STAF_m2_low : CUP_B_M2StaticMG_MiniTripod_US {
+
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "M2 Browning (Low)";
+            side = 1;
+            faction = "STAF_PMC";
+            crew = "STAF_contractor";
+            editorPreview = "\staf_pmc_main\eden\STAF_m2_low.jpg";
+        };
+
+        class STAF_2B14 : CUP_O_2b14_82mm_RU {
+
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "Podnos 2B14";
+            side = 1;
+            faction = "STAF_PMC";
+            crew = "STAF_contractor";
+            editorPreview = "\staf_pmc_main\eden\STAF_2B14.jpg";
         };
 
     //----------------------------------OPFOR---------------------------------
@@ -545,6 +662,42 @@ class CfgVehicles {
             typicalCargo[] = {"STAF_contractor_crew_OPF","STAF_contractor_crew_OPF","STAF_contractor_crew_OPF"};
         };
 
+        class STAF_M1126_ICV_M2_opf : STAF_M1126_ICV_M2 {
+            Side = 0;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_crew_OPF";
+            typicalCargo[] = {"STAF_contractor_crew_OPF","STAF_contractor_crew_OPF","STAF_contractor_crew_OPF"};
+        };
+
+        class STAF_M1128_MGS_opf : STAF_M1128_MGS {
+            Side = 0;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_crew_OPF";
+            typicalCargo[] = {"STAF_contractor_crew_OPF","STAF_contractor_crew_OPF","STAF_contractor_crew_OPF"};
+        };
+
+        class STAF_M1130_CV_M2_opf : STAF_M1130_CV_M2 {
+            Side = 0;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_crew_OPF";
+            typicalCargo[] = {"STAF_contractor_crew_OPF","STAF_contractor_crew_OPF","STAF_contractor_crew_OPF"};
+        };
+
+        class STAF_M1129_MC_MK19_opf : STAF_M1129_MC_MK19 {
+            Side = 0;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_crew_OPF";
+            typicalCargo[] = {"STAF_contractor_crew_OPF","STAF_contractor_crew_OPF","STAF_contractor_crew_OPF"};
+        };
+
       //----------------------------------Drones----------------------------------
         class STAF_quadcopter_opf : STAF_quadcopter {
             Side = 0;
@@ -593,6 +746,33 @@ class CfgVehicles {
             faction = "STAF_PMC_OPF";
             crew = "I_UAV_AI";
         };
+
+      //----------------------------------Statics---------------------------------
+
+        class STAF_m2_high_opf : STAF_m2_high {
+            Side = 0;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_OPF";
+        };
+
+        class STAF_m2_low_opf : STAF_m2_low {
+            Side = 0;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_OPF";
+        };
+
+        class STAF_2B14_opf : STAF_2B14 {
+            Side = 0;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_OPF";
+        };
+
 
 
     //----------------------------------OPFOR---------------------------------
@@ -738,6 +918,42 @@ class CfgVehicles {
             typicalCargo[] = {"STAF_contractor_crew_IND","STAF_contractor_crew_IND","STAF_contractor_crew_IND"};
         };
 
+        class STAF_M1126_ICV_M2_ind : STAF_M1126_ICV_M2 {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_crew_IND";
+            typicalCargo[] = {"STAF_contractor_crew_IND","STAF_contractor_crew_IND","STAF_contractor_crew_IND"};
+        };
+
+        class STAF_M1128_MGS_ind : STAF_M1128_MGS {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_crew_IND";
+            typicalCargo[] = {"STAF_contractor_crew_IND","STAF_contractor_crew_IND","STAF_contractor_crew_IND"};
+        };
+
+        class STAF_M1130_CV_M2_ind : STAF_M1130_CV_M2 {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_crew_IND";
+            typicalCargo[] = {"STAF_contractor_crew_IND","STAF_contractor_crew_IND","STAF_contractor_crew_IND"};
+        };
+
+        class STAF_M1129_MC_MK19_ind : STAF_M1129_MC_MK19 {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_crew_IND";
+            typicalCargo[] = {"STAF_contractor_crew_IND","STAF_contractor_crew_IND","STAF_contractor_crew_IND"};
+        };
+
       //----------------------------------Drones----------------------------------
         class STAF_quadcopter_ind : STAF_quadcopter {
             Side = 2;
@@ -785,5 +1001,31 @@ class CfgVehicles {
             scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "I_UAV_AI";
+        };
+
+      //----------------------------------Statics---------------------------------
+
+        class STAF_m2_high_ind : STAF_m2_high {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_ind";
+        };
+
+        class STAF_m2_low_ind : STAF_m2_low {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_ind";
+        };
+
+        class STAF_2B14_ind : STAF_2B14 {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_ind";
         };
 };
