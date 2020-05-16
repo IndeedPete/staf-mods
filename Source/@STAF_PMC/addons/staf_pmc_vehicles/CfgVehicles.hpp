@@ -116,6 +116,7 @@ class CfgVehicles {
 
             hiddenSelections[] = {"Camo1","Camo2","camo3","clan"};
             selectionClan = "";
+            hiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_truck_02_kab_blk_co.paa","\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
             maximumLoad = 4000;
         };
 
@@ -132,6 +133,7 @@ class CfgVehicles {
 
             hiddenSelections[] = {"Camo1","Camo2","camo3","clan"};
             selectionClan = "";
+            hiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_truck_02_kab_blk_co.paa","\a3\soft_f_beta\Truck_02\data\truck_02_repair_co.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
             maximumLoad = 4000;
             ace_refuel_fuelCargo = 10000;
             ace_refuel_hooks[] = {{0.99,-3.47,-0.67},{-1.04,-3.47,-0.67}};
@@ -152,6 +154,7 @@ class CfgVehicles {
 
             hiddenSelections[] = {"Camo1","Camo2","camo3","clan"};
             selectionClan = "";
+            hiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_truck_02_kab_blk_co.paa","\a3\soft_f_beta\Truck_02\data\truck_02_fuel_co.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
             maximumLoad = 500;
         };
 
@@ -168,6 +171,7 @@ class CfgVehicles {
 
             hiddenSelections[] = {"Camo1","Camo2","camo3","clan"};
             selectionClan = "";
+            hiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_truck_02_kab_blk_co.paa","\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
             maximumLoad = 4000;
         };
 
@@ -201,7 +205,8 @@ class CfgVehicles {
 
             hiddenSelections[] = {"Camo","camo2","clan"};
             selectionClan = "";
-            textureList[] = {"Red",0,"Beige",0,"White",0,"Blue",0,"Darkred",0,"Bluecustom",1};
+            hiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_offroad_01_ext_blk_co.paa","\staf_pmc_vehicles\txt\STAF_offroad_01_ext_blk_co.paa"};
+            textureList[] = {"Red",0,"Beige",0,"White",0,"Blue",0,"Darkred",0,"Bluecustom",0};
             maximumLoad = 1500;
         };
 
@@ -324,7 +329,7 @@ class CfgVehicles {
 
             hiddenSelections[] = {"Camo1","Camo2","clan"};
             selectionClan = "";
-            hiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\staf_btr90_body_co.paa","\staf_pmc_vehicles\txt\staf_btr90_body2_co.paa"};
+            hiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_btr90_body_co.paa","\staf_pmc_vehicles\txt\STAF_btr90_body2_co.paa"};
 
             typicalCargo[] = {"STAF_contractor_crew","STAF_contractor_crew","STAF_contractor_crew"};
         };
@@ -377,7 +382,7 @@ class CfgVehicles {
 
             HiddenSelections[] = {"camo","camo1","camo2","camo10","camo8","camoDefault","clan"};
             selectionClan = "";
-            HiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_stryker_body1_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_body2_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_command_des_co.paa","\staf_pmc_vehicles\txt\STAF_slat_armor_blk_co.paa","\staf_pmc_vehicles\txt\STAF_icv_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_default_co.paa"};
+            HiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_stryker_body1_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_body2_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_command_blk_co.paa","\staf_pmc_vehicles\txt\STAF_slat_armor_blk_co.paa","\staf_pmc_vehicles\txt\STAF_icv_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_default_co.paa"};
             typicalCargo[] = {"STAF_contractor_crew","STAF_contractor_crew","STAF_contractor_crew"};
         };
 

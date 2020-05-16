@@ -17,11 +17,5 @@ class CfgFunctions
 			class gear_contractor_crew{};
 			class gear_contractor_diver{};
 		};
-
-		class InteriorLight
-		{
-			file = "\staf_pmc_main\fnc\interiorlight";
-			class interiorlight_blackhawk{};
-		};
 	};
 };

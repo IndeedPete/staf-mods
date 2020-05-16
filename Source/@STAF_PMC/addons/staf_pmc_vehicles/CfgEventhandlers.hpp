@@ -23,22 +23,17 @@ class Extended_Init_EventHandlers {
 
     class STAF_truck_transport {
         class STAF_truck_transport_init_eh {
-          init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_mrapequipment.sqf"";";
+          init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_mrapequipment.sqf"";";
         };
     };
     class STAF_truck_box {
         class STAF_truck_box_init_eh {
-          init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_mrapequipment.sqf"";";
-        };
-    };
-    class STAF_truck_fuel {
-        class STAF_truck_fuel_init_eh {
-          init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";";
+          init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_mrapequipment.sqf"";";
         };
     };
     class STAF_truck_covered {
         class STAF_truck_covered_init_eh {
-          init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf"";[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_mrapequipment.sqf"";";
+          init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_mrapequipment.sqf"";";
         };
     };
     class STAF_offroad {
@@ -48,7 +43,7 @@ class Extended_Init_EventHandlers {
     };
     class STAF_offroad_pickup {
         class STAF_offroad_init_eh {
-          init = "[(_this select 0)] execVM ""\staf_pmc_main\scripts\blacktexture.sqf""; [(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_carequipment.sqf"";";
+          init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_carequipment.sqf"";";
         };
     };
     class STAF_suv {

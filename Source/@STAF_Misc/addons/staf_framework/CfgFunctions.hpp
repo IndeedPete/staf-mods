@@ -92,7 +92,6 @@ class CfgFunctions
 			class forceFollowRoad{};
 			class pushbackplane{postInit = 1;};
 			class inHouse{};
-			class intLight{};
 			class setrespawntimer{};
 			class spawnwreck{};
 			class trackmarker{};
