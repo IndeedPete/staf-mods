@@ -38,7 +38,7 @@ class CfgVehicles {
             author = "STAF";
             scope = 1;
             scopeCurator = 1;
-            displayName = "MD-500 (Modified)";
+            displayName = "MD-500";
             side = 1;
             faction = "STAF_PMC";
             crew = "STAF_contractor_heli_pilot";
@@ -229,8 +229,9 @@ class CfgVehicles {
             Maxspeed = 100;
 
             hiddenSelections[] = {"Camo1","clan"};
+            hiddenSelectionsTextures[] = {"\A3\Soft_F_Gamma\SUV_01\Data\SUV_01_ext_02_CO.paa"};
             selectionClan = "";
-            textureList[] = {"Red",0,"Black",1,"Gey",0,"Orange",0};
+            textureList[] = {"Red",0,"Black",0,"Gey",0,"Orange",0};
             maximumLoad = 1500;
         };
 

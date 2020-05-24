@@ -26,20 +26,45 @@ if (!isServer) exitWith {};
 
 	// Toggle Vcom
 
-	switch (_objectUnderCursor getVariable ["Vcm_Disable",false]) do {
-    case true:
-			{
-				{
-					_x setVariable ["Vcm_Disable",false]
-				}	forEach units group _objectUnderCursor;
-				[objNull, "VCOM ENABLED ON UNIT/GROUP"] call BIS_fnc_showCuratorFeedbackMessage;
+switch (_objectUnderCursor isKindOf "Man") do {
+	case true:
+		{
+			switch (_objectUnderCursor getVariable ["Vcm_Disable",false]) do {
+		    case true:
+					{
+						{
+							_x setVariable ["Vcm_Disable",false]
+						}	forEach units group _objectUnderCursor;
+						[objNull, "VCOM ENABLED ON UNIT/GROUP"] call BIS_fnc_showCuratorFeedbackMessage;
+					};
+		    case false:
+					{
+						{
+							_x setVariable ["Vcm_Disable",true]
+						}	forEach units group _objectUnderCursor;
+						[objNull, "VCOM DISABLED ON UNIT/GROUP"] call BIS_fnc_showCuratorFeedbackMessage;
+					};
 			};
-    case false:
-			{
-				{
-					_x setVariable ["Vcm_Disable",true]
-				}	forEach units group _objectUnderCursor;
-				[objNull, "VCOM DISABLED ON UNIT/GROUP"] call BIS_fnc_showCuratorFeedbackMessage;
+		};
+	case false:
+		{
+			_fullcrew = ((fullcrew _objectUnderCursor select 0) select 0);
+			switch (_fullcrew getVariable ["Vcm_Disable",false]) do {
+				case true:
+					{
+						{
+							_x setVariable ["Vcm_Disable",false]
+						}	forEach units group _fullcrew;
+						[objNull, "VCOM ENABLED ON UNIT/GROUP"] call BIS_fnc_showCuratorFeedbackMessage;
+					};
+				case false:
+					{
+						{
+							_x setVariable ["Vcm_Disable",true]
+						}	forEach units group _fullcrew;
+						[objNull, "VCOM DISABLED ON UNIT/GROUP"] call BIS_fnc_showCuratorFeedbackMessage;
+					};
 			};
-	};
+		};
+};
 }] remoteexeccall ["zen_custom_modules_fnc_register", 0, true];
