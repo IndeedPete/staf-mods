@@ -29,15 +29,13 @@ _objs addItemCargoGlobal ["ACE_Clacker",1];
 _objs addItemCargoGlobal ["ACE_UAVBattery",2];
 
 _objs addMagazineCargoGlobal ["30Rnd_65x39_caseless_mag",7]; //G36 MLI
-_objs addMagazineCargoGlobal ["hlc_30rnd_556x45_SOST_G36",7]; //G36
+_objs addMagazineCargoGlobal ["hlc_30rnd_556x45_EPR_G36",7]; //G36
 _objs addMagazineCargoGlobal ["hlc_30Rnd_9x19_B_MP5",4]; //MP5
-_objs addMagazineCargoGlobal ["ACE_20Rnd_762x51_M118LR_Mag",3]; //M14
-_objs addMagazineCargoGlobal ["200Rnd_556x45_Box_F",4]; //M249
+_objs addMagazineCargoGlobal ["20Rnd_762x51_Mag",3]; //M14
+_objs addMagazineCargoGlobal ["hlc_200rnd_556x45_B_SAW",4]; //M249
 _objs addMagazineCargoGlobal ["150Rnd_762x54_Box",4]; //Negev
-_objs addMagazineCargoGlobal ["ACE_30Rnd_556x45_Stanag_Mk318_mag",7]; //SCAR
-_objs addMagazineCargoGlobal ["30Rnd_762x39_Mag_F",7]; //AK12
-_objs addMagazineCargoGlobal ["20Rnd_762x51_Mag",3]; //SIG
-_objs addMagazineCargoGlobal ["hlc_5rnd_300WM_FMJ_AWM",2]; //T-5000
+_objs addMagazineCargoGlobal ["CUP_30Rnd_556x45_PMAG_QP",7]; //SCAR
+_objs addMagazineCargoGlobal ["30Rnd_762x39_AK12_Mag_F",7]; //AK12
 _objs addMagazineCargoGlobal ["CUP_17Rnd_9x19_glock17",2]; //Glock
 _objs addMagazineCargoGlobal ["1Rnd_HE_Grenade_shell",5]; //Under Grenade
 _objs addMagazineCargoGlobal ["1Rnd_Smoke_Grenade_shell",5]; //Under Grenade White

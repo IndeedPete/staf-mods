@@ -4,12 +4,9 @@ class CfgPatches {
     class STAF_pmc_objects {
       units[] = {};
       weapons[] = {
-        "STAF_MapBoard_CoC_F",
-        "STAF_MapBoard_MHQ_F",
-        "STAF_SupplyBox_F",
-        "STAF_Ammobox_F",
-        "STAF_Weaponsbox_F",
-        "STAF_Launcherbox_F"
+        "STAF_SuperBox_Orange",
+        "STAF_SuperBox_Green",
+        "STAF_Ammobox_Ammo"
       };
       requiredAddons[] = {};
       requiredVersion = 1.62;

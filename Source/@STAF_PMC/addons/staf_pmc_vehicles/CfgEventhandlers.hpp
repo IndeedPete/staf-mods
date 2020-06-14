@@ -14,6 +14,11 @@ class Extended_Init_EventHandlers {
             init = "[(_this select 0), nil, [""Hide_ESSS2x"",1,""Hide_ESSS4x"",1,""Hide_Nose"",1,""Navyclan_hide"",1,""Navyclan2_hide"",1,""Blackhawk_Hide"",1,""Hide_FlirTurret"",1,""Hide_Probe"",1,""Doorcock_Hide"",0,""Filters_Hide"",1]] call BIS_fnc_initVehicle; [(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_helismallequipment.sqf"";";
         };
     };
+    class STAF_uh1h {
+        class STAF_uh1h_init_eh {
+            init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_helismallequipment.sqf"";";
+        };
+    };
 
     class STAF_rubberboat {
         class STAF_rubberboat_init_eh {
@@ -84,22 +89,32 @@ class Extended_Init_EventHandlers {
 
     class STAF_hexacopter {
         class STAF_hexacopter_init_eh {
-          init = "(_this select 0) setcaptive true;";
+          init = "{_x setcaptive true; _x setVariable [""Vcm_Disable"",true];} foreach (crew (_this select 0))";
         };
     };
     class STAF_hexacopter_ammo {
         class STAF_hexacopter_ammo_init_eh {
-          init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_droneammoequipment.sqf""; (_this select 0) setcaptive true;";
+          init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_droneammoequipment.sqf""; {_x setcaptive true; _x setVariable [""Vcm_Disable"",true];} foreach (crew (_this select 0));";
         };
     };
     class STAF_hexacopter_medical {
         class STAF_hexacopter_medical_init_eh {
-          init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_dronemedicequipment.sqf""; (_this select 0) setcaptive true;";
+          init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_dronemedicequipment.sqf""; {_x setcaptive true; _x setVariable [""Vcm_Disable"",true];} foreach (crew (_this select 0));";
         };
     };
     class STAF_hexacopter_explosive {
         class STAF_hexacopter_explosive_init_eh {
-          init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_droneexplosionequipment.sqf""; (_this select 0) setcaptive true;";
+          init = "[(_this select 0)] execVM ""staf_framework\fnc\loadouts\fn_droneexplosionequipment.sqf""; {_x setcaptive true; _x setVariable [""Vcm_Disable"",true];} foreach (crew (_this select 0));";
+        };
+    };
+    class STAF_quadcopter {
+        class STAF_quadcopter_init_eh {
+          init = "{_x setcaptive true; _x setVariable [""Vcm_Disable"",true];} foreach (crew (_this select 0))";
+        };
+    };
+    class STAF_demining_UGV {
+        class STAF_demining_UGV_init_eh {
+          init = "{_x setcaptive true; _x setVariable [""Vcm_Disable"",true];} foreach (crew (_this select 0))";
         };
     };
 };

@@ -1,3 +1,16 @@
+if (!(player getvariable ["STAF_ZeusActionModule", false])) then {
+  _ZeusSubAction = [
+    "STAF_Zeus",
+    "Zeus",
+    "\a3\ui_f_curator\Data\Logos\arma3_zeus_icon_ca.paa",
+    {},
+    {}
+  ] call ace_interact_menu_fnc_createAction;
+
+  [player, 1, ["ACE_SelfActions"], _ZeusSubAction, true] call ace_interact_menu_fnc_addActionToObject;
+  player setvariable ["STAF_ZeusActionModule", true];
+};
+
 [] spawn {
   while {true} do {
 

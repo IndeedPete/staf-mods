@@ -30,11 +30,12 @@ class CfgVehicles {
     class CUP_B_M2StaticMG_US;
     class CUP_B_M2StaticMG_MiniTripod_US;
     class CUP_O_2b14_82mm_RU;
+    class CUP_O_UH1H_gunship_SLA;
 
 
     //----------------------------------BLUFOR---------------------------------
       //----------------------------------Air------------------------------------
-        class STAF_md500 : CUP_B_MH6J_USA {
+        /*class STAF_md500 : CUP_B_MH6J_USA {
             author = "STAF";
             scope = 1;
             scopeCurator = 1;
@@ -48,7 +49,7 @@ class CfgVehicles {
             hiddenSelections[] = {"camo1","camo2","camo_bench","clan"};
             selectionClan = "";
             maximumLoad = 600;
-        };
+        };*/
 
         class STAF_md500_defender : CUP_B_AH6M_USA {
           author = "STAF";
@@ -78,6 +79,26 @@ class CfgVehicles {
             editorPreview = "\staf_pmc_main\eden\STAF_uh60m.jpg";
             animationList[] = {};
             hiddenSelections[] = {"camo1","camo2","camo3","clan"};
+            selectionClan = "";
+            maximumLoad = 600;
+
+            typicalCargo[] = {"STAF_contractor_heli_pilot"};
+        };
+
+        class STAF_uh1h : CUP_O_UH1H_gunship_SLA {
+
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "UH-1H (Gunship)";
+            side = 1;
+            faction = "STAF_PMC";
+            crew = "STAF_contractor_heli_pilot";
+            gunnerType = "STAF_contractor_heli_pilot";
+            editorPreview = "\staf_pmc_main\eden\STAF_uh1h.jpg";
+            animationList[] = {};
+            hiddenSelections[] = {"Camo1","Camo2","Camo_mlod","clan"};
+            hiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_UH1D_CO.paa","\staf_pmc_vehicles\txt\STAF_UH1D_in_CO.paa","\staf_pmc_vehicles\txt\STAF_UH1D_default_co.paa"};
             selectionClan = "";
             maximumLoad = 600;
 
@@ -311,13 +332,13 @@ class CfgVehicles {
             crew = "STAF_contractor";
             editorPreview = "\staf_pmc_main\eden\STAF_lsv.jpg";
             hiddenSelections[] = {"Camo_1","Camo_2","Camo_3","Camo_4","clan"};
-            hiddenSelectionsTextures[] = {"\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_01_black_CO.paa.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_02_black_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_black_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_black_CO.paa"};
+            hiddenSelectionsTextures[] = {"\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_01_black_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_02_black_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_black_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_black_CO.paa"};
             selectionClan = "";
             textureList[] = {"Black",1,"Olive",0,"Sand",0};
             maximumLoad = 1500;
         };
 
-        class STAF_btr90 : CUP_BTR90_Base {
+        /*class STAF_btr90 : CUP_BTR90_Base {
             scope = 2;
             scopeCurator = 2;
             side = 1;
@@ -403,7 +424,7 @@ class CfgVehicles {
             HiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_stryker_body1_mortar_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_body2_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_interior1_mortar_blk_co.paa","\staf_pmc_vehicles\txt\STAF_slat_armor_blk_co.paa","\staf_pmc_vehicles\txt\STAF_icv_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_default_co.paa"};
 
             typicalCargo[] = {"STAF_contractor_crew","STAF_contractor_crew","STAF_contractor_crew"};
-        };
+        };*/
 
       //----------------------------------Drones----------------------------------
         class STAF_quadcopter : B_UAV_01_F {
@@ -527,13 +548,13 @@ class CfgVehicles {
 
     //----------------------------------OPFOR---------------------------------
       //----------------------------------Air------------------------------------
-        class STAF_md500_opf : STAF_md500 {
+        /*class STAF_md500_opf : STAF_md500 {
             Side = 0;
             scope = 1;
             scopeCurator = 1;
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_heli_pilot_opf";
-        };
+        };*/
 
         class STAF_md500_defender_opf : STAF_md500_defender {
             Side = 0;
@@ -544,6 +565,15 @@ class CfgVehicles {
         };
 
         class STAF_uh60m_opf : STAF_uh60m {
+            Side = 0;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_heli_pilot_opf";
+            typicalCargo[] = {"STAF_contractor_heli_pilot_opf"};
+        };
+
+        class STAF_uh1h_opf : STAF_uh1h {
             Side = 0;
             scope = 2;
             scopeCurator = 2;
@@ -659,7 +689,7 @@ class CfgVehicles {
             crew = "STAF_contractor_opf";
         };
 
-        class STAF_btr90_opf : STAF_btr90 {
+        /*class STAF_btr90_opf : STAF_btr90 {
             Side = 0;
             scope = 2;
             scopeCurator = 2;
@@ -702,7 +732,7 @@ class CfgVehicles {
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_crew_OPF";
             typicalCargo[] = {"STAF_contractor_crew_OPF","STAF_contractor_crew_OPF","STAF_contractor_crew_OPF"};
-        };
+        };*/
 
       //----------------------------------Drones----------------------------------
         class STAF_quadcopter_opf : STAF_quadcopter {
@@ -779,17 +809,15 @@ class CfgVehicles {
             crew = "STAF_contractor_OPF";
         };
 
-
-
     //----------------------------------OPFOR---------------------------------
       //----------------------------------Air------------------------------------
-        class STAF_md500_ind : STAF_md500 {
+        /*class STAF_md500_ind : STAF_md500 {
             Side = 2;
             scope = 1;
             scopeCurator = 1;
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_heli_pilot_ind";
-        };
+        };*/
 
         class STAF_md500_defender_ind : STAF_md500_defender {
             Side = 2;
@@ -800,6 +828,15 @@ class CfgVehicles {
         };
 
         class STAF_uh60m_ind : STAF_uh60m {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_heli_pilot_ind";
+            typicalCargo[] = {"STAF_contractor_heli_pilot_ind"};
+        };
+
+        class STAF_uh1h_ind : STAF_uh1h {
             Side = 2;
             scope = 2;
             scopeCurator = 2;
@@ -915,7 +952,7 @@ class CfgVehicles {
             crew = "STAF_contractor_ind";
         };
 
-        class STAF_btr90_ind : STAF_btr90 {
+        /*class STAF_btr90_ind : STAF_btr90 {
             Side = 2;
             scope = 2;
             scopeCurator = 2;
@@ -958,7 +995,7 @@ class CfgVehicles {
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_crew_IND";
             typicalCargo[] = {"STAF_contractor_crew_IND","STAF_contractor_crew_IND","STAF_contractor_crew_IND"};
-        };
+        };*/
 
       //----------------------------------Drones----------------------------------
         class STAF_quadcopter_ind : STAF_quadcopter {

@@ -82,7 +82,7 @@ class CfgFunctions
 		class Misc
 		{
 			file = "\STAF_FRAMEWORK\fnc\misc";
-			//class ace_knockout {preInit = 1;};
+			class ace_knockout {preInit = 1;};
 			class ambientanimationmp{};
 			class animation{};
 			class createFireEffect{};
@@ -222,6 +222,7 @@ class CfgFunctions
 			class zeusactionaddaction{};
 			class zeusactionadmin{postInit = 1;};
 			class zeusactioninit{};
+			class zeusactionsubaction{};
 		};
 	};
 
