@@ -1,8 +1,11 @@
 class CfgPatches {
     class STAF_pmc_main {
-      units[] = {};
+      units[] = {
+  			"STAF_Module_PMC_Arsenal_F",
+  			"STAF_Module_PMC_Vehicle_Equipment_F"
+      };
       weapons[] = {};
-      requiredAddons[] = {"staf_pmc_backpacks","staf_pmc_headgear","staf_pmc_infantry","staf_pmc_objects","staf_pmc_uniforms","staf_pmc_vehicles","staf_pmc_vests","staf_pmc_weapons"};    
+      requiredAddons[] = {};
       requiredVersion = 1.62;
       author = "STAF";
       url = "http://www.stafclan.com";

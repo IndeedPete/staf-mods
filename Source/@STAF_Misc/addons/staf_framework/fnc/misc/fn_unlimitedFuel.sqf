@@ -15,33 +15,29 @@ if (_objectUnderCursor isKindOf "CAManBase") exitWith {
 	[objNull, "PLACE ON AN OBJECT OR VEHICLE"] call BIS_fnc_showCuratorFeedbackMessage;
 };
 
-
-
-
-
 switch (_vehicle getvariable ["STAF_UnlimitedFuel", false]) do {
 	case true: {
-
 		[objNull, "VEHICLE HAS LIMITED FUEL NOW"] call BIS_fnc_showCuratorFeedbackMessage;
-		_vehicle setvariable ["STAF_UnlimitedFuel", false];
-		_vehicle setvariable ["STAF_UnlimitedFuelState", false];
-	};
-	case false: {
 
-		[_vehicle] spawn
-		{
-			while {alive (_this select 0) OR ((_this select 0) getvariable ["STAF_UnlimitedFuelState", false])} do
-			{
-				if ((fuel (_this select 0)) < 0.8) then
-				{
-					(_this select 0) setFuel 1;
+		_vehicle setvariable ["STAF_UnlimitedFuelState", false];
+		_vehicle setvariable ["STAF_UnlimitedFuel", false];
+	};
+
+	case false: {
+		[objNull, "VEHICLE HAS UNLIMITED FUEL NOW"] call BIS_fnc_showCuratorFeedbackMessage;
+
+		[_vehicle] spawn {
+			_vehicle = _this select 0;
+
+			while {(alive _vehicle) OR ((_vehicle getvariable ["STAF_UnlimitedFuelState", false]) == false )} do {
+				if (fuel _vehicle < 0.8) then {
+						_vehicle setFuel 1;
 				};
 				sleep 120;
 			};
 		};
 
-		[objNull, "VEHICLE HAS UNLIMITED FUEL NOW"] call BIS_fnc_showCuratorFeedbackMessage;
-		_vehicle setvariable ["STAF_UnlimitedFuel", true];
 		_vehicle setvariable ["STAF_UnlimitedFuelState", true];
+		_vehicle setvariable ["STAF_UnlimitedFuel", true];
 	};
 };

@@ -6,17 +6,12 @@ class CfgFunctions
 		{
 			file = "\STAF_FRAMEWORK\fnc\ambient";
 			class deadBody{};
+			class ambientanimationmp{};
 		};
 		class Array
 		{
 			file = "\STAF_FRAMEWORK\fnc\array";
 			class clusterArray{};
-		};
-		class Arsenal
-		{
-			file = "\STAF_FRAMEWORK\fnc\arsenal";
-			class pmcarsenalInit{};
-			class pmcarsenal{};
 		};
 		class ConvoyDefend
 		{
@@ -59,20 +54,6 @@ class CfgFunctions
 			class light{};
 			class lightinit{};
 		};
-		class Loadouts
-		{
-			file = "\STAF_FRAMEWORK\fnc\loadouts";
-			class apcequipment{};
-			class boatequipment{};
-			class carequipment{};
-			class droneammoequipment{};
-			class droneexplosionequipment{};
-			class dronemedicequipment{};
-			class helibigequipment{};
-			class helismallequipment{};
-			class mrapequipment{};
-			class pmcvehicleequipment{};
-		};
 		class Medical
 		{
 			file = "\STAF_FRAMEWORK\fnc\medical";
@@ -83,7 +64,7 @@ class CfgFunctions
 		{
 			file = "\STAF_FRAMEWORK\fnc\misc";
 			class ace_knockout {preInit = 1;};
-			class ambientanimationmp{};
+			class ace_silentkill {preInit = 1;};
 			class animation{};
 			class createFireEffect{};
 			class disable{};
@@ -100,7 +81,7 @@ class CfgFunctions
 			class unlimitedAmmo{};
 			class unlimitedAmmoInit{};
 		};
-		class ZenContext_STAF
+		class ZenContext_Misc_STAF
 		{
 			file = "\STAF_FRAMEWORK\fnc\zencontext";
 
@@ -111,7 +92,7 @@ class CfgFunctions
 			class stationary_group_context{};
 			class unstationary_group_context{};
 		};
-		class Zenmodule_STAF
+		class Zenmodule_Misc_STAF
 		{
 			file = "\STAF_FRAMEWORK\fnc\zenmodule\STAF";
 
@@ -151,7 +132,7 @@ class CfgFunctions
 				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
 			};
 		};
-		class Zenmodule_STAF_AI
+		class Zenmodule_Misc_STAF_AI
 		{
 			file = "\STAF_FRAMEWORK\fnc\zenmodule\STAF_AI";
 
@@ -171,7 +152,7 @@ class CfgFunctions
 				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
 			};
 		};
-		class Zenmodule_STAF_Equipment
+		class Zenmodule_STAF_Misc_Equipment
 		{
 			file = "\STAF_FRAMEWORK\fnc\zenmodule\STAF_Equipment";
 
@@ -180,18 +161,8 @@ class CfgFunctions
 				recompile = 1; //1 to recompile the function upon mission start
 				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
 			};
-			class pmcarsenal_zeus{
-				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
-				recompile = 1; //1 to recompile the function upon mission start
-				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
-			};
-			class pmcinventories{
-				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
-				recompile = 1; //1 to recompile the function upon mission start
-				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
-			};
 		};
-		class Zenmodule_STAF_Fun
+		class Zenmodule_STAF_Misc_Fun
 		{
 			file = "\STAF_FRAMEWORK\fnc\zenmodule\STAF_Fun";
 
@@ -206,7 +177,7 @@ class CfgFunctions
 				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
 			};
 		};
-		class Zenmodule_STAF_Medical
+		class Zenmodule_STAF_Misc_Medical
 		{
 			file = "\STAF_FRAMEWORK\fnc\zenmodule\STAF_Medical";
 

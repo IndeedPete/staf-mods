@@ -5,3 +5,4 @@
 #include "CfgGroups.hpp"
 #include "CfgWorlds.hpp"
 #include "CfgEditorSubcategories.hpp"
+#include "CfgVehicles.hpp"

@@ -5,8 +5,6 @@ class CfgPatches
 		units[] =
 		{
 			"STAF_Module_Base_Medic_F",
-			"STAF_Module_PMC_Arsenal_F",
-			"STAF_Module_PMC_Vehicle_Equipment_F",
 			"STAF_Module_SpawnWreck_F",
 			"STAF_Module_CreateLight_F",
 			"STAF_Module_AmbientAnimationMP_F",
