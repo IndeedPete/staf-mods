@@ -16,6 +16,7 @@ if ((local (_vehicle select 0))) then {
   //Checks if a snapping object name is provided
   if (isNil _string) then {
     //Checks if "None" is chosen
+    //Test
     if (_condition isEqualTo "None") then {
       {
         _x call BIS_fnc_ambientAnim__terminate;
