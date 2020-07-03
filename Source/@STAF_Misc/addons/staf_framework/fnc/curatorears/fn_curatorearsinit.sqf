@@ -1,43 +1,5 @@
-if (!(player getvariable ["STAF_ZeusActionModule", false])) then {
-  _ZeusSubAction = [
-    "STAF_Zeus",
-    "Zeus",
-    "\a3\ui_f_curator\Data\Logos\arma3_zeus_icon_ca.paa",
-    {},
-    {}
-  ] call ace_interact_menu_fnc_createAction;
+#include "fn_curatorearsearsunitaction.sqf"
+#include "fn_curatorearsearszeusaction.sqf"
 
-  [player, 1, ["ACE_SelfActions"], _ZeusSubAction, true] call ace_interact_menu_fnc_addActionToObject;
-  player setvariable ["STAF_ZeusActionModule", true];
-};
-
-[] spawn {
-  while {true} do {
-
-    if (!isNull (getAssignedCuratorLogic player)) then {
-      if (!(player getVariable ["STAF_CuratorCheck",false])) then {
-        player setVariable ["STAF_CuratorCheck",true];
-        switch (player getVariable ["TFAR_CuratorCamEars",false]) do {
-          case true: {
-            //Add "Hear Voices from Unit Position"
-            #include "fn_curatorearsearsunitaction.sqf"
-
-            [player, 1, ["ACE_SelfActions", "STAF_Zeus"], _EarsUnit, true] call ace_interact_menu_fnc_addActionToObject;
-          };
-          case false: {
-            //Add "Hear Voices from Curator Cam Position"
-            #include "fn_curatorearsearszeusaction.sqf"
-
-            [player, 1, ["ACE_SelfActions", "STAF_Zeus"], _EarsZeus, true] call ace_interact_menu_fnc_addActionToObject;
-          };
-        };
-      };
-    } else {
-      player setVariable ["STAF_CuratorCheck",false];
-      [player, 1, ["ACE_SelfActions", "STAF_Zeus", "STAF_CuratorHearingUnit"]] call ace_interact_menu_fnc_removeActionFromObject;
-      [player, 1, ["ACE_SelfActions", "STAF_Zeus", "STAF_CuratorHearingCam"]] call ace_interact_menu_fnc_removeActionFromObject;
-    };
-
-    sleep 10;
-  };
-};
+[player, 1, ["ACE_SelfActions", "STAF_Zeus"], _EarsUnit, true] call ace_interact_menu_fnc_addActionToObject;
+[player, 1, ["ACE_SelfActions", "STAF_Zeus"], _EarsZeus, true] call ace_interact_menu_fnc_addActionToObject;

@@ -168,14 +168,13 @@ class CfgVehicles
 		class Attributes: AttributesBase
 		{
 			class STAF_Module_AmbientAnimationMP: Combo
-  		{
+  			{
 				property = "STAF_Module_AmbientAnimationMP_Combo";
 				displayName = "Choose an Ambient Animation";
 				typeName = "STRING";
 				defaultValue = "0";
 				class Values
 				{
-					class None	{name = "None"; value = None;};
 					class Stand1	{name = "STAND1";	value = STAND1;};
 					class Stand2	{name = "STAND2";	value = STAND2;};
 					class Stand_U1	{name = "STAND_U1";	value = STAND_U1;};
@@ -410,7 +409,7 @@ class CfgVehicles
 	{
 		category = "STAF";
 		displayName = "Add Zeus Action";
-		function = "STAF_fnc_zeusactioninit";
+		function = "STAF_fnc_zeusactionmodule";
 		functionPriority = 10;
 		isDisposable = 0;
 		is3DEN = 0;

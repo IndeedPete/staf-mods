@@ -21,7 +21,8 @@ class CfgFunctions
 		class CuratorEars
 		{
 			file = "\STAF_FRAMEWORK\fnc\curatorears";
-			class curatorearsaddaction{};
+			class curatorearsearszeusaction{};
+			class curatorearsearsunitaction{};
 			class curatorearsinit{postInit = 1;};
 		};
 		class Debug
@@ -190,9 +191,10 @@ class CfgFunctions
 		class ZeusAction
 		{
 			file = "\STAF_FRAMEWORK\fnc\zeusaction";
-			class zeusactionaddaction{};
-			class zeusactionadmin{postInit = 1;};
-			class zeusactioninit{};
+			class zeusactiondemotion{};
+			class zeusactioninit{postInit = 1;};
+			class zeusactionmodule{};
+			class zeusactionpromotion{};
 			class zeusactionsubaction{};
 		};
 	};

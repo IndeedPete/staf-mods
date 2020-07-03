@@ -11,7 +11,7 @@ _ambient = {};
 _regular = {};
 
 //Run Code only on the server
-if ((local (_vehicle select 0))) then {
+if (local (_vehicle select 0)) then {
   
   //Checks if a snapping object name is provided
   if (isNil _string) then {

@@ -3,7 +3,7 @@ _ZeusPromotion = [
   "Become Zeus",
   "\a3\ui_f_curator\Data\Logos\arma3_zeus_icon_ca.paa",
   {
-      player setVariable ["STAF_ZeusAccess", true];
+      player setVariable ["STAF_var_ZeusAction", true];
 
       //Add Zeus
       [
@@ -22,5 +22,5 @@ _ZeusPromotion = [
       ["You are Zeus now!", 2, player, 12] call ace_common_fnc_displayTextStructured;
       player call STAF_fnc_zeusactionaddaction;
   },
-  {true}
+  {!(player getVariable ["STAF_var_ZeusAction", false]) && (player getVariable ["STAF_var_ZeusActionEligible", false])}
 ] call ace_interact_menu_fnc_createAction;
