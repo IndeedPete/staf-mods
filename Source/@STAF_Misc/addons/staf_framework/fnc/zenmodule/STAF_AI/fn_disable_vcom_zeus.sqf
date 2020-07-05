@@ -33,14 +33,14 @@ switch (_objectUnderCursor isKindOf "Man") do {
 		    case true:
 					{
 						{
-							_x setVariable ["Vcm_Disable",false]
+							_x setVariable ["Vcm_Disable", false, true]
 						}	forEach units group _objectUnderCursor;
 						[objNull, "VCOM ENABLED ON UNIT/GROUP"] call BIS_fnc_showCuratorFeedbackMessage;
 					};
 		    case false:
 					{
 						{
-							_x setVariable ["Vcm_Disable",true]
+							_x setVariable ["Vcm_Disable", true, true]
 						}	forEach units group _objectUnderCursor;
 						[objNull, "VCOM DISABLED ON UNIT/GROUP"] call BIS_fnc_showCuratorFeedbackMessage;
 					};
@@ -53,14 +53,14 @@ switch (_objectUnderCursor isKindOf "Man") do {
 				case true:
 					{
 						{
-							_x setVariable ["Vcm_Disable",false]
+							_x setVariable ["Vcm_Disable", false, true]
 						}	forEach units group _fullcrew;
 						[objNull, "VCOM ENABLED ON UNIT/GROUP"] call BIS_fnc_showCuratorFeedbackMessage;
 					};
 				case false:
 					{
 						{
-							_x setVariable ["Vcm_Disable",true]
+							_x setVariable ["Vcm_Disable", true, true]
 						}	forEach units group _fullcrew;
 						[objNull, "VCOM DISABLED ON UNIT/GROUP"] call BIS_fnc_showCuratorFeedbackMessage;
 					};

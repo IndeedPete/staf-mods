@@ -9,7 +9,7 @@ _HideBody = [
     };
 
     // Setting the variable
-    _target setVariable ["STAF_HideBody_active",true,true];
+    _target setVariable ["STAF_HideBody_active", true, true];
 
     if ((_player call STAF_fnc_inHouse) OR (((getPosATL _player) select 2) > 0.1)) then {
       switch ("ACE_EntrenchingTool" in (vestItems _player + uniformItems _player + backpackItems _player + assignedItems _player)) do {
