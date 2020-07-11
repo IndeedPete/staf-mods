@@ -1,0 +1,1 @@
+missionNamespace setVariable ["STAF_var_Respawn_Loadout_MissionNamespace", true, true];

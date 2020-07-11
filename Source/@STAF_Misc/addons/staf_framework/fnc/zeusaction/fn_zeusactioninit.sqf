@@ -4,7 +4,7 @@
 
 _ZeusSubActionAdded = player getVariable ["STAF_var_SubZeusAction", false];
 _ZeusActionEligible = player getVariable ["STAF_var_ZeusActionEligible", false];
-_ZeusAdmin = ["76561198071715471","76561197980877311","76561197999146691","76561197971387924","76561198063419944"]; //Jeromer, Killerfish, Liffy, Moony
+_ZeusAdmin = ["76561198071715471","76561197980877311","76561197999146691","76561197971387924","76561198063419944","_SP_PLAYER_"]; //Jeromer, Killerfish, Liffy, Moony
 
 if (!(_ZeusSubActionAdded)) then {
 	[player, 1, ["ACE_SelfActions"], _ZeusSubAction, true] call ace_interact_menu_fnc_addActionToObject;

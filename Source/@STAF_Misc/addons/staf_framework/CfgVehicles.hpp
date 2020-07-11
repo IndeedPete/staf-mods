@@ -472,4 +472,38 @@ class CfgVehicles
 			};
 		};
 	};
+
+	class STAF_Module_Respawn_Loadout_F: Module_F
+	{
+		category = "STAF";
+		displayName = "Enable Respawn Arsenal Loadout";
+		function = "STAF_fnc_respawn_equipment_Module";
+		functionPriority = 10;
+		isDisposable = 0;
+		is3DEN = 0;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		scope = 2;
+
+		class Attributes: AttributesBase
+		{
+			class ModuleDescription: ModuleDescription{};
+		};
+
+		class ModuleDescription: ModuleDescription
+		{
+			description = "Reapplies the last chosen Arsenal Loadout after respawn";
+			sync[] = {"LocationArea_F"};
+
+			class LocationArea_F
+			{
+				description[] =	{"Does not need to be Syncronised"};
+				position = 0;
+				direction = 0;
+				optional = 0;
+				duplicate = 0;
+				synced[] = {};
+			};
+		};
+	};
 };

@@ -27,28 +27,15 @@ if (!isServer) exitWith {};
 	// Toggle Group Stationary
 	if (_objectUnderCursor getVariable ["STAF_var_AI_Stationary",false]) then {
 		{
-			_x forceSpeed -1;
+			[_x, -1] remoteExec ["forceSpeed", 0, true];
 			_x setVariable ["STAF_var_AI_Stationary", false, true];
-			_StationaryEventhandler = _x getVariable "STAF_var_AI_Stationary_EH";
-			_x removeEventHandler ["Local", _StationaryEventhandler];
-			[objNull, "GROUP CAN MOVE AGAIN"] call BIS_fnc_showCuratorFeedbackMessage;
 		} forEach units group _objectUnderCursor;
+		[objNull, "GROUP CAN MOVE AGAIN"] call BIS_fnc_showCuratorFeedbackMessage;
 	} else {
 		{
-			_x forceSpeed 0;
+			[_x, 0] remoteExec ["forceSpeed", 0, true];
 			_x setVariable ["STAF_var_AI_Stationary", true, true];
-			_StationaryEventhandler = _x addEventHandler ["Local", {
-				params ["_unit", "_isLocal"];
-
-				_VarCheck = _unit getVariable "STAF_var_AI_Stationary";
-				if (_VarCheck) then {
-					_unit forceSpeed 0;
-				} else {
-					_unit forceSpeed -1;
-				}
-			}];
-			_x setVariable ["STAF_var_AI_Stationary_EH", _StationaryEventhandler, true];
-			[objNull, "AI IS STATIONARY"] call BIS_fnc_showCuratorFeedbackMessage;
 		} forEach units group _objectUnderCursor;
+		[objNull, "AI IS STATIONARY"] call BIS_fnc_showCuratorFeedbackMessage;
 	};
 }] remoteexeccall ["zen_custom_modules_fnc_register", 0, true];

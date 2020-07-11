@@ -82,6 +82,13 @@ class CfgFunctions
 			class unlimitedAmmo{};
 			class unlimitedAmmoInit{};
 		};
+		class Respawn
+		{
+			file = "\STAF_FRAMEWORK\fnc\respawn";
+			class respawn_equipment {postInit = 1;};
+			class respawn_equipment_EH {};
+			class respawn_equipment_Module {};
+		};
 		class ZenContext_Misc_STAF
 		{
 			file = "\STAF_FRAMEWORK\fnc\zencontext";
@@ -162,6 +169,11 @@ class CfgFunctions
 				recompile = 1; //1 to recompile the function upon mission start
 				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
 			};
+			class toggle_respawn_loadout{
+				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
+				recompile = 1; //1 to recompile the function upon mission start
+				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
+			};
 		};
 		class Zenmodule_STAF_Misc_Fun
 		{
@@ -195,6 +207,7 @@ class CfgFunctions
 			class zeusactioninit{postInit = 1;};
 			class zeusactionmodule{};
 			class zeusactionpromotion{};
+			class zeusactionpromotion_exec{};
 			class zeusactionsubaction{};
 		};
 	};
