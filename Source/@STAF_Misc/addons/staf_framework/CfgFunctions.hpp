@@ -24,6 +24,7 @@ class CfgFunctions
 			class curatorearsearszeusaction{};
 			class curatorearsearsunitaction{};
 			class curatorearsinit{postInit = 1;};
+			class curatorearssubaction{};
 		};
 		class Debug
 		{
@@ -139,6 +140,11 @@ class CfgFunctions
 				recompile = 1; //1 to recompile the function upon mission start
 				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
 			};
+			class zeusaction_zeus{
+				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
+				recompile = 1; //1 to recompile the function upon mission start
+				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
+			};
 		};
 		class Zenmodule_Misc_STAF_AI
 		{
@@ -165,11 +171,6 @@ class CfgFunctions
 			file = "\STAF_FRAMEWORK\fnc\zenmodule\STAF_Equipment";
 
 			class clearinventory{
-				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
-				recompile = 1; //1 to recompile the function upon mission start
-				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
-			};
-			class toggle_respawn_loadout{
 				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
 				recompile = 1; //1 to recompile the function upon mission start
 				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
@@ -204,6 +205,7 @@ class CfgFunctions
 		{
 			file = "\STAF_FRAMEWORK\fnc\zeusaction";
 			class zeusactiondemotion{};
+			class zeusactiondemotion_exec{};
 			class zeusactioninit{postInit = 1;};
 			class zeusactionmodule{};
 			class zeusactionpromotion{};

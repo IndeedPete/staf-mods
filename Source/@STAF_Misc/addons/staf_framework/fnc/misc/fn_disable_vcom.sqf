@@ -7,6 +7,9 @@ params [
 
 if (_activated) then {
   {
-    _x setVariable ["Vcm_Disable",true];
+    _x setVariable ["Vcm_Disable", false, true];
   } forEach group _unit;
+  {
+    _x setVariable ["lambs_danger_disableAI", false, true];
+  } forEach _unit;
 };

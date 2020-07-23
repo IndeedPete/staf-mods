@@ -32,18 +32,18 @@ switch (_objectUnderCursor isKindOf "Man") do {
 			switch (_objectUnderCursor getVariable ["Vcm_Disable",false]) do {
 		    case true:
 					{
+						(group _objectUnderCursor) setVariable ["Vcm_Disable", false, true];
 						{
-							_x setVariable ["Vcm_Disable", false, true];
 							_x setVariable ["lambs_danger_disableAI", false, true];
-						}	forEach units group _objectUnderCursor;
+						} forEach units group _objectUnderCursor;
 						[objNull, "VCOM ENABLED ON UNIT/GROUP"] call BIS_fnc_showCuratorFeedbackMessage;
 					};
 		    case false:
 					{
+						(group _objectUnderCursor) setVariable ["Vcm_Disable", true, true];
 						{
-							_x setVariable ["Vcm_Disable", true, true];
 							_x setVariable ["lambs_danger_disableAI", true, true];
-						}	forEach units group _objectUnderCursor;
+						} forEach units group _objectUnderCursor;
 						[objNull, "VCOM DISABLED ON UNIT/GROUP"] call BIS_fnc_showCuratorFeedbackMessage;
 					};
 			};
@@ -54,16 +54,16 @@ switch (_objectUnderCursor isKindOf "Man") do {
 			switch (_fullcrew getVariable ["Vcm_Disable",false]) do {
 				case true:
 					{
+						(group _fullcrew) setVariable ["Vcm_Disable", false, true];
 						{
-							_x setVariable ["Vcm_Disable", false, true];
 							_x setVariable ["lambs_danger_disableAI", false, true];
 						}	forEach units group _fullcrew;
 						[objNull, "VCOM ENABLED ON UNIT/GROUP"] call BIS_fnc_showCuratorFeedbackMessage;
 					};
 				case false:
 					{
+						(group _fullcrew) setVariable ["Vcm_Disable", true, true];
 						{
-							_x setVariable ["Vcm_Disable", true, true];
 							_x setVariable ["lambs_danger_disableAI", true, true];
 						}	forEach units group _fullcrew;
 						[objNull, "VCOM DISABLED ON UNIT/GROUP"] call BIS_fnc_showCuratorFeedbackMessage;
