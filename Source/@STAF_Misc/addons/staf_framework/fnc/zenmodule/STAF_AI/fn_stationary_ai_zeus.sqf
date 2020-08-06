@@ -26,14 +26,27 @@ if (!isServer) exitWith {};
 
 	// Toggle AI Stationary
 	if (_objectUnderCursor getVariable ["STAF_var_AI_Stationary",false]) then {
-		[_objectUnderCursor, -1] remoteExec ["forceSpeed", 0, true];
-
+		_objectUnderCursor enableAI "PATH";
 		_objectUnderCursor setVariable ["STAF_var_AI_Stationary", false, true];
+
+		_localEHGet = _objectUnderCursor getVariable "STAF_var_AI_Stationary_localEH";		
+		_objectUnderCursor removeEventHandler ["local", _localEHGet];
+		_objectUnderCursor setVariable ["STAF_var_AI_Stationary_localEH", nil, true];
 		[objNull, "AI CAN MOVE AGAIN"] call BIS_fnc_showCuratorFeedbackMessage;
 	} else {
-		[_objectUnderCursor, 0] remoteExec ["forceSpeed", 0, true];
-
+		_objectUnderCursor disableAI "PATH";
 		_objectUnderCursor setVariable ["STAF_var_AI_Stationary", true, true];
+
+		_localEH = _objectUnderCursor addEventHandler ["Local", {
+			params ["_entity", "_isLocal"];
+
+			_entity disableAI "PATH";
+		}];
+		objectUnderCursor setVariable ["STAF_var_AI_Stationary_localEH", _localEH, true];
 		[objNull, "AI IS STATIONARY"] call BIS_fnc_showCuratorFeedbackMessage;
 	};
 }] remoteexeccall ["zen_custom_modules_fnc_register", 0, true];
+
+
+		
+		

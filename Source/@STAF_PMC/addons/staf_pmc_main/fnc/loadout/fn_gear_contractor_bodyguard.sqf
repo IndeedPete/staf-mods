@@ -3,6 +3,7 @@
 #include "\staf_pmc_main\fnc\loadout\defaults\mg.hpp"
 #include "\staf_pmc_main\fnc\loadout\defaults\marksmanrifles.hpp"
 #include "\staf_pmc_main\fnc\loadout\defaults\smgs.hpp"
+#include "\staf_pmc_main\fnc\loadout\defaults\launchers.hpp"
 
 #include "\staf_pmc_main\fnc\loadout\defaults\goggles.hpp"
 #include "\staf_pmc_main\fnc\loadout\defaults\headgear.hpp"
@@ -40,19 +41,6 @@ _unit addHeadgear _headGear;
 _unit addUniform _uniform;
 _unit addvest _vest;
 
-//Ammo
-#include "\staf_pmc_main\fnc\loadout\defaults\magazines.hpp"
-
-if (_weapon == "STAF_pistol_glock17") then {
-  for "_i" from 1 to 2 do {_unit addItem "CUP_17Rnd_9x19_glock17";};
-};
-if (_weapon == "STAF_pistol_glock17_tan") then {
-  for "_i" from 1 to 2 do {_unit addItem "CUP_17Rnd_9x19_glock17";};
-};
-if (_weapon == "STAF_pistol_glock17_blk") then {
-  for "_i" from 1 to 2 do {_unit addItem "CUP_17Rnd_9x19_glock17";};
-};
-
 //Addweapons
 _unit addweapon _weapon;
 _unit selectWeapon _weapon;
@@ -79,6 +67,9 @@ _unit linkItem "ItemGPS";
 _unit linkItem "ItemCompass";
 _unit linkItem "ItemWatch";
 _unit linkItem "TFAR_anprc152";
+
+//Ammo
+#include "\staf_pmc_main\fnc\loadout\defaults\magazines.hpp"
 
 if (isNull objectParent _unit) then {_unit switchmove ""};
 

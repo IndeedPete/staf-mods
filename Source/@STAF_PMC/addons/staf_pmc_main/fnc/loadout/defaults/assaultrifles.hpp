@@ -28,14 +28,5 @@ _assaultrifleArray = [
   "STAF_rifle_m4a1_tan",
   "STAF_rifle_m4a1_wld",
   "STAF_rifle_m4a1_wld",
-  "STAF_rifle_m4a1_wld",
-  "STAF_rifle_m4a1_blk_carry_handle",
-  "STAF_rifle_m4a1_blk_carry_handle",
-  "STAF_rifle_m4a1_blk_carry_handle",
-  "STAF_rifle_m4a1_tan_carry_handle",
-  "STAF_rifle_m4a1_tan_carry_handle",
-  "STAF_rifle_m4a1_tan_carry_handle",
-  "STAF_rifle_m4a1_wld_carry_handle",
-  "STAF_rifle_m4a1_wld_carry_handle",
-  "STAF_rifle_m4a1_wld_carry_handle"
+  "STAF_rifle_m4a1_wld"
 ];

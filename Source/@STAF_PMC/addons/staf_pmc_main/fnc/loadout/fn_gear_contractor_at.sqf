@@ -3,6 +3,7 @@
 #include "\staf_pmc_main\fnc\loadout\defaults\mg.hpp"
 #include "\staf_pmc_main\fnc\loadout\defaults\marksmanrifles.hpp"
 #include "\staf_pmc_main\fnc\loadout\defaults\smgs.hpp"
+#include "\staf_pmc_main\fnc\loadout\defaults\launchers.hpp"
 
 #include "\staf_pmc_main\fnc\loadout\defaults\goggles.hpp"
 #include "\staf_pmc_main\fnc\loadout\defaults\headgear.hpp"
@@ -32,22 +33,18 @@ _weapon = selectRandom _assaultrifleArray;
 _pistol = selectRandom _pistolsArray;
 _goggles = selectRandom _gogglesArray;
 _backpack = selectRandom _backpacksArray;
+_launcher = selectRandom _launcherArray;
 _unit addGoggles _goggles;
 _unit addHeadgear _headGear;
 _unit addUniform _uniform;
 _unit addvest _vest;
 _unit addBackpack _backpack;
 
-//Ammo
-#include "\staf_pmc_main\fnc\loadout\defaults\magazines.hpp"
-for "_i" from 1 to 2 do {_unit addItem "CUP_SMAW_HEAA_M";};
-_unit addItem "CUP_SMAW_Spotting";
-
 //Addweapons
 _unit addweapon _weapon;
 _unit selectWeapon _weapon;
 _unit addweapon _pistol;
-_unit addweapon "STAF_launcher_smaw";
+_unit addweapon _launcher;
 
 //Items
 for "_i" from 1 to 3 do {_unit addItem "ACE_fieldDressing";};
@@ -72,6 +69,17 @@ _unit linkItem "ItemGPS";
 _unit linkItem "ItemCompass";
 _unit linkItem "ItemWatch";
 _unit linkItem "TFAR_anprc152";
+
+//Ammo
+#include "\staf_pmc_main\fnc\loadout\defaults\magazines.hpp"
+
+// Launcher Ammo
+if (_launcher == "STAF_launcher_smaw") then {
+  _unit addWeaponItem [_launcher, "CUP_SMAW_HEAA_M", true];
+  _unit addWeaponItem [_launcher, "CUP_SMAW_Spotting", true];
+  for "_i" from 1 to 3 do {_unit addItem "CUP_SMAW_HEAA_M";};
+  for "_i" from 1 to 1 do {_unit addItem "CUP_SMAW_Spotting";};
+};
 
 if (isNull objectParent _unit) then {_unit switchmove ""};
 

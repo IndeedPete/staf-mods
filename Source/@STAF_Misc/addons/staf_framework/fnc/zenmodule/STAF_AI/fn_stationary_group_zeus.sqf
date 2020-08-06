@@ -27,15 +27,44 @@ if (!isServer) exitWith {};
 	// Toggle Group Stationary
 	if (_objectUnderCursor getVariable ["STAF_var_AI_Stationary",false]) then {
 		{
-			[_x, -1] remoteExec ["forceSpeed", 0, true];
+
+			_x enableAI "PATH";
 			_x setVariable ["STAF_var_AI_Stationary", false, true];
+
+			_localEHGet = _x getVariable "STAF_var_AI_Stationary_localEH";		
+			_x removeEventHandler ["local", _localEHGet];
+			_x setVariable ["STAF_var_AI_Stationary_localEH", nil, true];
 		} forEach units group _objectUnderCursor;
 		[objNull, "GROUP CAN MOVE AGAIN"] call BIS_fnc_showCuratorFeedbackMessage;
 	} else {
 		{
-			[_x, 0] remoteExec ["forceSpeed", 0, true];
+			_x disableAI "PATH";
 			_x setVariable ["STAF_var_AI_Stationary", true, true];
+
+			_localEH = _x addEventHandler ["local", {
+				params ["_entity", "_isLocal"];
+
+				_entity disableAI "PATH";
+			}];
+
+			_x setVariable ["STAF_var_AI_Stationary_localEH", _localEH, true];
 		} forEach units group _objectUnderCursor;
 		[objNull, "AI IS STATIONARY"] call BIS_fnc_showCuratorFeedbackMessage;
 	};
 }] remoteexeccall ["zen_custom_modules_fnc_register", 0, true];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
