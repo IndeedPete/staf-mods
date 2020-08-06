@@ -3,6 +3,7 @@
 #include "\staf_pmc_main\fnc\loadout\defaults\mg.hpp"
 #include "\staf_pmc_main\fnc\loadout\defaults\marksmanrifles.hpp"
 #include "\staf_pmc_main\fnc\loadout\defaults\smgs.hpp"
+#include "\staf_pmc_main\fnc\loadout\defaults\launchers.hpp"
 
 #include "\staf_pmc_main\fnc\loadout\defaults\goggles.hpp"
 #include "\staf_pmc_main\fnc\loadout\defaults\headgear.hpp"
@@ -47,9 +48,6 @@ _unit addUniform _uniform;
 _unit addvest _vest;
 _unit addBackpack _backpack;
 
-//Ammo
-#include "\staf_pmc_main\fnc\loadout\defaults\magazines.hpp"
-
 //Addweapons
 _unit addweapon _weapon;
 _unit selectWeapon _weapon;
@@ -78,6 +76,9 @@ _unit linkItem "ItemGPS";
 _unit linkItem "ItemCompass";
 _unit linkItem "ItemWatch";
 _unit linkItem "TFAR_anprc152";
+
+//Ammo
+#include "\staf_pmc_main\fnc\loadout\defaults\magazines.hpp"
 
 if (isNull objectParent _unit) then {_unit switchmove ""};
 

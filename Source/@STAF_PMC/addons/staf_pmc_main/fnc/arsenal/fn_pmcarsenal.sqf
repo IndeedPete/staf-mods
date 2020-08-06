@@ -127,7 +127,8 @@ _weapons = [
             "ACE_VMM3",
             "CUP_hgun_Glock17",
             "CUP_hgun_Glock17_tan",
-            "CUP_hgun_Glock17_blk"
+            "CUP_hgun_Glock17_blk",
+            "CUP_hgun_Duty"
 ];
 
 _backpacks = [
@@ -2074,4 +2075,17 @@ _attachments = [];
 //Adding Itemlists to the Arsenal
 [_box,(_weapons + _backpacks + _items + _uniforms + _headgear + _vests + _othermagazines + _magazines + _attachments),true] call ace_arsenal_fnc_initBox;
 
-[_box,["<img image='\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\box_ca.paa' /> Open Arsenal",{[(_this select 0), player,false] call ace_arsenal_fnc_openBox;}]] remoteExec ["addAction",0,true];
+[_box,
+{
+  _actionID = _box addaction [
+    "<img image='\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\box_ca.paa' /> Open Arsenal",
+    {
+      [
+        (_this select 0),
+        (_this select 1),
+        false
+      ] call ace_arsenal_fnc_openBox;
+    }
+  ];
+  _box setVariable ["STAF_var_pmcarsenal_actionID", _actionID, true];
+}] remoteExec ["call", 0, true];

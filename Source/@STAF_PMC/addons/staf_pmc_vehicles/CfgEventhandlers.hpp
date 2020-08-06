@@ -49,17 +49,17 @@ class Extended_Init_EventHandlers {
   };
   class STAF_caiman {
       class STAF_caiman_init_eh {
-        init = "_this call STAF_PMC_fnc_pmcvehicle_mrapequipment;";
+        init = "[(_this select 0), nil, [""hide_ogpkover"",0,""hide_ogpknet"",0,""hide_ogpkbust"",0,""DUKE_Hide"",1]] call BIS_fnc_initVehicle; _this call STAF_PMC_fnc_pmcvehicle_mrapequipment;";
       };
   };
-  class STAF_husky_woodland {
-      class STAF_husky_woodland_init_eh {
-        init = "_this call STAF_PMC_fnc_pmcvehicle_mrapequipment;";
+  class STAF_MATV_M240 {
+      class STAF_MATV_M240_init_eh {
+        init = "[(_this select 0), nil, [""hide_ogpkover"",0,""hide_ogpknet"",0,""hide_ogpkbust"",0,""hide_rhino"",1,""DoorLF"",0,""DoorRF"",0,""DoorLB"",0,""DoorRB"",0,""DUKE_Hide"",1,""hide_spare"",0]] call BIS_fnc_initVehicle; _this call STAF_PMC_fnc_pmcvehicle_mrapequipment;";
       };
   };
-  class STAF_husky_desert {
-      class STAF_husky_desert_init_eh {
-        init = "_this call STAF_PMC_fnc_pmcvehicle_mrapequipment;";
+  class STAF_MATV_M2 {
+      class STAF_MATV_M2_init_eh {
+        init = "[(_this select 0), nil, [""hide_ogpkover"",0,""hide_ogpknet"",0,""hide_ogpkbust"",0,""hide_rhino"",1,""DoorLF"",0,""DoorRF"",0,""DoorLB"",0,""DoorRB"",0,""DUKE_Hide"",1,""hide_spare"",0]] call BIS_fnc_initVehicle; _this call STAF_PMC_fnc_pmcvehicle_mrapequipment;";
       };
   };
 

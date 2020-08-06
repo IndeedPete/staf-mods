@@ -31,6 +31,10 @@ class CfgVehicles {
     class CUP_B_M2StaticMG_MiniTripod_US;
     class CUP_O_2b14_82mm_RU;
     class CUP_O_UH1H_gunship_SLA;
+    class rhsusf_m1240a1_m240_usarmy_d;
+    class rhsusf_M1232_M2_usarmy_d;
+    class rhsusf_m1240a1_m2_usarmy_d;
+    class RHSGREF_A29B_HIDF;
 
 
     //----------------------------------BLUFOR---------------------------------
@@ -103,6 +107,36 @@ class CfgVehicles {
             maximumLoad = 600;
 
             typicalCargo[] = {"STAF_contractor_heli_pilot"};
+        };
+
+        class STAF_EMB314: RHSGREF_A29B_HIDF {
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "Embraer EMB 314 Super Tucano";
+            side = 1;
+            faction = "STAF_PMC";
+            crew = "STAF_contractor_heli_pilot";
+            gunnerType = "STAF_contractor_heli_pilot";
+            editorPreview = "\staf_pmc_main\eden\STAF_EMB314.jpg";
+            hiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_ST_Fuselage_co.paa","\staf_pmc_vehicles\txt\STAF_ST_WingsAndStabs_co.paa","\staf_pmc_vehicles\txt\STAF_ST_EverythingElse_co.paa","rhsgref\addons\rhsgref_a29\tex\jst_prop_blur.paa"};
+            animationList[] = {};
+            hiddenSelections[] = {"camo0","camo1","camo2","camo3","MFD_Pilot_L","MFD_Pilot_R","MFD_WSO_L","MFD_WSO_R","n1","n2","n3","n4","n5","n6","clan"};
+            textureList[] = {"STAF",1};
+            selectionClan = "";
+            maximumLoad = 600;
+
+            typicalCargo[] = {"STAF_contractor_heli_pilot","STAF_contractor_heli_pilot"};
+            class textureSources
+            {
+                class STAF
+                {
+                    author = "STAF";
+                    displayName = "STAF";
+                    textures[] = {"\staf_pmc_vehicles\txt\STAF_ST_Fuselage_co.paa","\staf_pmc_vehicles\txt\STAF_ST_WingsAndStabs_co.paa","\staf_pmc_vehicles\txt\STAF_ST_EverythingElse_co.paa","rhsgref\addons\rhsgref_a29\tex\jst_prop_blur.paa"};
+                    factions[] = {};
+                };
+            };
         };
 
       //----------------------------------Naval-----------------------------------
@@ -278,7 +312,7 @@ class CfgVehicles {
             maximumLoad = 1500;
         };
 
-        /*class STAF_caiman : CUP_B_Mastiff_HMG_GB_D {
+        class STAF_caiman : rhsusf_M1232_M2_usarmy_d {
 
             scope = 2;
             scopeCurator = 2;
@@ -290,35 +324,65 @@ class CfgVehicles {
             editorSubcategory = "EdSubcat_Cars";
             maximumLoad = 3300;
 
-            hiddenSelections[] = {"tex1","tex2","tex3","tex_turret","camo1","camo2","tex4","clan"};
+            hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","pintle","camo7","camo8","camo9","clan"};
             selectionClan = "";
-            hiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_tex1_blk_co.paa","\staf_pmc_vehicles\txt\STAF_tex2_blk_co.paa","\staf_pmc_vehicles\txt\STAF_tex3_blk_co.paa","\staf_pmc_vehicles\txt\STAF_turretbig_blk_co.paa","\staf_pmc_vehicles\txt\STAF_bar_armourF_blk_co.paa","\staf_pmc_vehicles\txt\STAF_bar_armourR_blk_co.paa","\staf_pmc_vehicles\txt\STAF_tex4_blk_co.paa"};
+            HiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_RG33_Body_CO.paa","\staf_pmc_vehicles\txt\STAF_RG33_Chassis_CO.paa","\staf_pmc_vehicles\txt\STAF_RG33_Accessory2_CO.paa","\staf_pmc_vehicles\txt\STAF_RG33_Armor_CO.paa","\staf_pmc_vehicles\txt\STAF_RG33_TurretD_CO.paa","\staf_pmc_vehicles\txt\STAF_RG33_Wheels_CO.paa","\staf_pmc_vehicles\txt\STAF_mk64mount_d_co.paa","\staf_pmc_vehicles\txt\STAF_MCTAGS_CO.paa","\staf_pmc_vehicles\txt\STAF_camonet_co.paa","\staf_pmc_vehicles\txt\STAF_RG33_USARMY_Decal_ca.paa"};
 
             typicalCargo[] = {"STAF_contractor"};
-        };*/
-
-        class STAF_husky_woodland : burnes_husky_W {
-
-            scope = 2;
-            scopeCurator = 2;
-            side = 1;
-            displayName = "Husky TSV (Woodland)";
-            faction = "STAF_PMC";
-            crew = "STAF_contractor";
-            editorPreview = "\staf_pmc_main\eden\STAF_husky_woodland.jpg";
-            maximumLoad = 2800;
         };
 
-        class STAF_husky_desert : burnes_husky {
+        class STAF_MATV_M240 : rhsusf_m1240a1_m240_usarmy_d {
 
             scope = 2;
             scopeCurator = 2;
             side = 1;
-            displayName = "Husky TSV (Desert)";
+            displayName = "Oshkosh M-ATV (M249)";
             faction = "STAF_PMC";
             crew = "STAF_contractor";
-            editorPreview = "\staf_pmc_main\eden\STAF_husky_desert.jpg";
+            editorPreview = "\staf_pmc_main\eden\STAF_MATV_M240.jpg";
+            editorSubcategory = "EdSubcat_Cars";
             maximumLoad = 2800;
+
+            hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","pintle","camo5","camo6","","BFT_screen","clan"};
+            selectionClan = "";
+            HiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_matv_ext_co.paa","\staf_pmc_vehicles\txt\STAF_matv_wheel_co.paa","\staf_pmc_vehicles\txt\STAF_rg33_turretd_co.paa","\staf_pmc_vehicles\txt\STAF_matv_decal_ca.paa","\staf_pmc_vehicles\txt\STAF_camonet_co.paa","\staf_pmc_vehicles\txt\STAF_mk64mount_d_co.paa","\staf_pmc_vehicles\txt\STAF_m153_co.paa","\staf_pmc_vehicles\txt\STAF_matv_sof_d_co.paa"};
+            textureList[] = {"Desert",0,"Olive",0,"Woodland",0,"STAF",1};
+
+            class textureSources {
+                class STAF_MATV_M240_black {
+                    displayName = "STAF";
+                    author = "Moony";
+                    textures[] = {"\staf_pmc_vehicles\txt\STAF_matv_ext_co.paa","\staf_pmc_vehicles\txt\STAF_matv_wheel_co.paa","\staf_pmc_vehicles\txt\STAF_rg33_turretd_co.paa","\staf_pmc_vehicles\txt\STAF_matv_decal_ca.paa","\staf_pmc_vehicles\txt\STAF_camonet_co.paa","\staf_pmc_vehicles\txt\STAF_mk64mount_d_co.paa","\staf_pmc_vehicles\txt\STAF_m153_co.paa","\staf_pmc_vehicles\txt\STAF_matv_sof_d_co.paa"};
+                    factions[] = {"STAF_PMC", "STAF_PMC_OPF", "STAF_PMC_IND"};
+                };
+            };
+        };
+
+        class STAF_MATV_M2 : rhsusf_m1240a1_m2_usarmy_d {
+
+            scope = 2;
+            scopeCurator = 2;
+            side = 1;
+            displayName = "Oshkosh M-ATV (M2)";
+            faction = "STAF_PMC";
+            crew = "STAF_contractor";
+            editorPreview = "\staf_pmc_main\eden\STAF_MATV_M2.jpg";
+            editorSubcategory = "EdSubcat_Cars";
+            maximumLoad = 2800;
+
+            hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","pintle","camo5","camo6","","BFT_screen","clan"};
+            selectionClan = "";
+            HiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_matv_ext_co.paa","\staf_pmc_vehicles\txt\STAF_matv_wheel_co.paa","\staf_pmc_vehicles\txt\STAF_rg33_turretd_co.paa","\staf_pmc_vehicles\txt\STAF_matv_decal_ca.paa","\staf_pmc_vehicles\txt\STAF_camonet_co.paa","\staf_pmc_vehicles\txt\STAF_mk64mount_d_co.paa","\staf_pmc_vehicles\txt\STAF_m153_co.paa","\staf_pmc_vehicles\txt\STAF_matv_sof_d_co.paa"};
+            textureList[] = {"Desert",0,"Olive",0,"Woodland",0,"STAF",1};
+
+            class textureSources {
+                class STAF_MATV_M2_black {
+                    displayName = "STAF";
+                    author = "Moony";
+                    textures[] = {"\staf_pmc_vehicles\txt\STAF_matv_ext_co.paa","\staf_pmc_vehicles\txt\STAF_matv_wheel_co.paa","\staf_pmc_vehicles\txt\STAF_rg33_turretd_co.paa","\staf_pmc_vehicles\txt\STAF_matv_decal_ca.paa","\staf_pmc_vehicles\txt\STAF_camonet_co.paa","\staf_pmc_vehicles\txt\STAF_mk64mount_d_co.paa","\staf_pmc_vehicles\txt\STAF_m153_co.paa","\staf_pmc_vehicles\txt\STAF_matv_sof_d_co.paa"};
+                    factions[] = {"STAF_PMC", "STAF_PMC_OPF", "STAF_PMC_IND"};
+                };
+            };
         };
 
         class STAF_lsv : B_LSV_01_unarmed_F {
@@ -354,7 +418,7 @@ class CfgVehicles {
             hiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_btr90_body_co.paa","\staf_pmc_vehicles\txt\STAF_btr90_body2_co.paa"};
 
             typicalCargo[] = {"STAF_contractor_crew","STAF_contractor_crew","STAF_contractor_crew"};
-        };
+        };*/
 
         class STAF_M1126_ICV_M2 : CUP_B_M1126_ICV_M2_Desert {
             scope = 2;
@@ -424,7 +488,7 @@ class CfgVehicles {
             HiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_stryker_body1_mortar_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_body2_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_interior1_mortar_blk_co.paa","\staf_pmc_vehicles\txt\STAF_slat_armor_blk_co.paa","\staf_pmc_vehicles\txt\STAF_icv_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_default_co.paa"};
 
             typicalCargo[] = {"STAF_contractor_crew","STAF_contractor_crew","STAF_contractor_crew"};
-        };*/
+        };
 
       //----------------------------------Drones----------------------------------
         class STAF_quadcopter : B_UAV_01_F {
@@ -582,6 +646,15 @@ class CfgVehicles {
             typicalCargo[] = {"STAF_contractor_heli_pilot_opf"};
         };
 
+        class STAF_EMB314_opf: STAF_EMB314 {
+            Side = 0;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_heli_pilot_opf";
+            typicalCargo[] = {"STAF_contractor_heli_pilot_opf","STAF_contractor_heli_pilot_opf"};
+        };
+
       //----------------------------------Naval-----------------------------------
         class STAF_rubberboat_opf : STAF_rubberboat {
             Side = 0;
@@ -657,15 +730,7 @@ class CfgVehicles {
             crew = "STAF_contractor_opf";
         };
 
-        /*class STAF_caiman_opf : STAF_caiman {
-            Side = 0;
-            scope = 2;
-            scopeCurator = 2;
-            faction = "STAF_PMC_OPF";
-            crew = "STAF_contractor_opf";
-        };*/
-
-        class STAF_husky_woodland_opf : STAF_husky_woodland {
+        class STAF_caiman_opf : STAF_caiman {
             Side = 0;
             scope = 2;
             scopeCurator = 2;
@@ -673,7 +738,15 @@ class CfgVehicles {
             crew = "STAF_contractor_opf";
         };
 
-        class STAF_husky_desert_opf : STAF_husky_desert {
+        class STAF_MATV_M240_opf : STAF_MATV_M240 {
+            Side = 0;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_opf";
+        };
+
+        class STAF_MATV_M2_opf : STAF_MATV_M2 {
             Side = 0;
             scope = 2;
             scopeCurator = 2;
@@ -696,7 +769,7 @@ class CfgVehicles {
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_crew_OPF";
             typicalCargo[] = {"STAF_contractor_crew_OPF","STAF_contractor_crew_OPF","STAF_contractor_crew_OPF"};
-        };
+        };*/
 
         class STAF_M1126_ICV_M2_opf : STAF_M1126_ICV_M2 {
             Side = 0;
@@ -732,7 +805,7 @@ class CfgVehicles {
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_crew_OPF";
             typicalCargo[] = {"STAF_contractor_crew_OPF","STAF_contractor_crew_OPF","STAF_contractor_crew_OPF"};
-        };*/
+        };
 
       //----------------------------------Drones----------------------------------
         class STAF_quadcopter_opf : STAF_quadcopter {
@@ -809,7 +882,7 @@ class CfgVehicles {
             crew = "STAF_contractor_OPF";
         };
 
-    //----------------------------------OPFOR---------------------------------
+    //----------------------------------INDFOR---------------------------------
       //----------------------------------Air------------------------------------
         /*class STAF_md500_ind : STAF_md500 {
             Side = 2;
@@ -843,6 +916,15 @@ class CfgVehicles {
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_heli_pilot_ind";
             typicalCargo[] = {"STAF_contractor_heli_pilot_ind"};
+        };
+
+        class STAF_EMB314_ind: STAF_EMB314 {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_heli_pilot_ind";
+            typicalCargo[] = {"STAF_contractor_heli_pilot_ind","STAF_contractor_heli_pilot_ind"};
         };
 
       //----------------------------------Naval-----------------------------------
@@ -920,15 +1002,7 @@ class CfgVehicles {
             crew = "STAF_contractor_ind";
         };
 
-        /*class STAF_caiman_ind : STAF_caiman {
-            Side = 2;
-            scope = 2;
-            scopeCurator = 2;
-            faction = "STAF_PMC_IND";
-            crew = "STAF_contractor_ind";
-        };*/
-
-        class STAF_husky_woodland_ind : STAF_husky_woodland {
+        class STAF_caiman_ind : STAF_caiman {
             Side = 2;
             scope = 2;
             scopeCurator = 2;
@@ -936,7 +1010,15 @@ class CfgVehicles {
             crew = "STAF_contractor_ind";
         };
 
-        class STAF_husky_desert_ind : STAF_husky_desert {
+        class STAF_MATV_M240_ind : STAF_MATV_M240 {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_ind";
+        };
+
+        class STAF_MATV_M2_ind : STAF_MATV_M2 {
             Side = 2;
             scope = 2;
             scopeCurator = 2;
@@ -959,7 +1041,7 @@ class CfgVehicles {
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_crew_IND";
             typicalCargo[] = {"STAF_contractor_crew_IND","STAF_contractor_crew_IND","STAF_contractor_crew_IND"};
-        };
+        };*/
 
         class STAF_M1126_ICV_M2_ind : STAF_M1126_ICV_M2 {
             Side = 2;
@@ -995,7 +1077,7 @@ class CfgVehicles {
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_crew_IND";
             typicalCargo[] = {"STAF_contractor_crew_IND","STAF_contractor_crew_IND","STAF_contractor_crew_IND"};
-        };*/
+        };
 
       //----------------------------------Drones----------------------------------
         class STAF_quadcopter_ind : STAF_quadcopter {

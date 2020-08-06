@@ -8,7 +8,7 @@ class RscDisplayLoadMission: RscStandardDisplay
         class STAF_Logo: RscPictureKeepAspect
         {
             idc = 56897;
-            text = "\STAF_FRAMEWORK\STAF_Logo_Desat.paa";
+            text = "\STAF_FRAMEWORK\icon\STAF_Logo_Desat.paa";
             x = 0.425 * safezoneW + safezoneX;
             y = 0.8 * safezoneH + safezoneY;
             w = 0.15 * safezoneW;

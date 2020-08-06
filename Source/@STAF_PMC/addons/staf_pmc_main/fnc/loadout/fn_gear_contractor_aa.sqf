@@ -3,6 +3,7 @@
 #include "\staf_pmc_main\fnc\loadout\defaults\mg.hpp"
 #include "\staf_pmc_main\fnc\loadout\defaults\marksmanrifles.hpp"
 #include "\staf_pmc_main\fnc\loadout\defaults\smgs.hpp"
+#include "\staf_pmc_main\fnc\loadout\defaults\launchers.hpp"
 
 #include "\staf_pmc_main\fnc\loadout\defaults\goggles.hpp"
 #include "\staf_pmc_main\fnc\loadout\defaults\headgear.hpp"
@@ -31,19 +32,17 @@ _vest = selectRandom _vestsArray;
 _weapon = selectRandom _assaultrifleArray;
 _pistol = selectRandom _pistolsArray;
 _goggles = selectRandom _gogglesArray;
+_launcher = selectRandom _AAlauncherArray;
 _unit addGoggles _goggles;
 _unit addHeadgear _headGear;
 _unit addUniform _uniform;
 _unit addvest _vest;
 
-//Ammo
-#include "\staf_pmc_main\fnc\loadout\defaults\magazines.hpp"
-
 //Addweapons
 _unit addweapon _weapon;
 _unit selectWeapon _weapon;
 _unit addweapon _pistol;
-_unit addweapon "STAF_launcher_Igla";
+_unit addweapon _launcher;
 
 //Items
 for "_i" from 1 to 3 do {_unit addItem "ACE_fieldDressing";};
@@ -68,6 +67,9 @@ _unit linkItem "ItemGPS";
 _unit linkItem "ItemCompass";
 _unit linkItem "ItemWatch";
 _unit linkItem "TFAR_anprc152";
+
+//Ammo
+#include "\staf_pmc_main\fnc\loadout\defaults\magazines.hpp"
 
 if (isNull objectParent _unit) then {_unit switchmove ""};
 
