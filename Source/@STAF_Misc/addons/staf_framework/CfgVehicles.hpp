@@ -408,8 +408,8 @@ class CfgVehicles
 	class STAF_Module_Zeus_Action_F: Module_F
 	{
 		category = "STAF";
-		displayName = "Add Zeus Action";
-		function = "STAF_fnc_zeusactionmodule";
+		displayName = "(LEGACY) Add Zeus Action";
+		function = "";
 		functionPriority = 10;
 		isDisposable = 0;
 		is3DEN = 0;
@@ -476,8 +476,8 @@ class CfgVehicles
 	class STAF_Module_Respawn_Loadout_F: Module_F
 	{
 		category = "STAF";
-		displayName = "Enable Respawn Arsenal Loadout";
-		function = "STAF_fnc_respawn_equipment_Module";
+		displayName = "(LEGACY) Enable Respawn Arsenal Loadout";
+		function = "";
 		functionPriority = 10;
 		isDisposable = 0;
 		is3DEN = 0;

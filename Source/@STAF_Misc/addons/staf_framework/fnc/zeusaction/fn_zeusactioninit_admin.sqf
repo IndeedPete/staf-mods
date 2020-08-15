@@ -8,5 +8,5 @@ _isZeusAdmin = _playerUID in _ZeusAdmin;
 if (_ZeusActionEligible) exitwith {};
 
 if (_isZeusAdmin) then {
-  _player setVariable ["STAF_var_ZeusActionEligible", true, true];
+  [_player, ["STAF_var_ZeusActionEligible", true, true]] remoteExec ["setVariable", 0, true];
 };

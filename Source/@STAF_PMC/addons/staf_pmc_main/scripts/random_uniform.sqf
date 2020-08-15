@@ -1,8 +1,8 @@
 _unit = _this select 0;
 _startUniform = ["STAF_Scientist","STAF_Scientist_opf","STAF_Scientist_ind"];
-_SavedLoadout = _unit getVariable "STAF_var_Unit_Loadout";
+_SavedLoadout = _unit getVariable ["STAF_var_Unit_Loadout_Set", false];
 
-if (isNil {_SavedLoadout}) then {
+if !(_SavedLoadout) then {
     if ((uniform _unit) in _startUniform) then {
         //BLUFOR
         if ((typeOf _unit) isEqualTo "STAF_contractor") then {[_this select 0] call STAF_PMC_fnc_gear_contractor};

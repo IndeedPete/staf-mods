@@ -1,4 +1,5 @@
 //#include "CfgContext.hpp"
+#include "Cfg3den.hpp"
 #include "CfgEventhandlers.hpp"
 #include "CfgFactionClasses.hpp"
 #include "CfgFunctions.hpp"

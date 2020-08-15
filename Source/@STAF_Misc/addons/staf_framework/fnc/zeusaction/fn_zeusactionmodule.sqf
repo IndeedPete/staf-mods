@@ -4,6 +4,7 @@ params [
 ];
 
 {
-	_x setVariable ["STAF_var_ZeusActionEligible", true, true];
-	_x setVariable ["STAF_var_ZeusAction", false, true];
+	[_x, ["STAF_var_ZeusActionEligible", true, true]] remoteExec ["setVariable", 0, true];
+	[_x, ["STAF_var_ZeusAction", false, true]] remoteExec ["setVariable", 0, true];
 } forEach _unit;
+

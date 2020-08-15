@@ -5,7 +5,7 @@ class CfgPatches {
   			"STAF_Module_PMC_Vehicle_Equipment_F"
       };
       weapons[] = {};
-      requiredAddons[] = {};
+      requiredAddons[] = {"acex_main", "ace_interaction"};
       requiredVersion = 1.62;
       author = "STAF";
       url = "http://www.stafclan.com";

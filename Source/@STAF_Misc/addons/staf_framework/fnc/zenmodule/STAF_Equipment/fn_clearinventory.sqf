@@ -24,5 +24,6 @@ if (!isServer) exitWith {};
 	clearMagazineCargoGlobal _objectUnderCursor;
 	clearItemCargoGlobal _objectUnderCursor;
 	clearBackpackCargoGlobal _objectUnderCursor;
+	[objNull, "INVENTORY CLEARED"] call BIS_fnc_showCuratorFeedbackMessage;
 
 }] remoteexeccall ["zen_custom_modules_fnc_register", 0, true];

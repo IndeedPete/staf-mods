@@ -6,10 +6,9 @@ _ZeusDemotion = [
     _player setVariable ["STAF_var_ZeusAction", false];
 
     //Remove Zeus
-    ["STAF_fnc_zeusactiondemotion_exec", _player] call CBA_fnc_serverEvent;    
+    _player remoteExec ["STAF_fnc_zeusactiondemotion_exec", 2];
 
     ["You are no longer Zeus!", 2, _player, 12] call ace_common_fnc_displayTextStructured;
-    _player call STAF_fnc_zeusactionaddaction;
   },
   {
     _player getVariable ["STAF_var_ZeusAction", false]

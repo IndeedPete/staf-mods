@@ -69,6 +69,7 @@ _unit linkItem "TFAR_anprc152";
 #include "\staf_pmc_main\fnc\loadout\defaults\magazines.hpp"
 
 if (isNull objectParent _unit) then {_unit switchmove ""};
+_unit setVariable ["STAF_var_Unit_Loadout", getUnitLoadout _unit];
 
 //Save loadout in Eden
 save3DENInventory [_unit];

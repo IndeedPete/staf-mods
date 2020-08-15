@@ -85,9 +85,8 @@ class CfgFunctions
 		class Respawn
 		{
 			file = "\STAF_FRAMEWORK\fnc\respawn";
-			class respawn_equipment {postInit = 1;};
-			class respawn_equipment_EH {};
-			class respawn_equipment_Module {};
+			class respawn_equipment {};
+			class respawn_equipment_init {preInit = 1;};
 		};
 		class ZenContext_Misc_STAF
 		{
@@ -149,6 +148,11 @@ class CfgFunctions
 		{
 			file = "\STAF_FRAMEWORK\fnc\zenmodule\STAF_AI";
 
+			class ai_suicide{
+				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
+				recompile = 1; //1 to recompile the function upon mission start
+				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
+			};
 			class disable_vcom_zeus{
 				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
 				recompile = 1; //1 to recompile the function upon mission start
@@ -159,6 +163,8 @@ class CfgFunctions
 				recompile = 1; //1 to recompile the function upon mission start
 				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
 			};
+			class stationary_ai_stationary{};
+			class stationary_ai_moving{};
 			class stationary_group_zeus{
 				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
 				recompile = 1; //1 to recompile the function upon mission start
@@ -210,6 +216,7 @@ class CfgFunctions
 			class zeusactionmodule{};
 			class zeusactionpromotion{};
 			class zeusactionpromotion_exec{};
+			class zeusactionpromotion_handleDC{};
 			class zeusactionsubaction{};
 		};
 	};

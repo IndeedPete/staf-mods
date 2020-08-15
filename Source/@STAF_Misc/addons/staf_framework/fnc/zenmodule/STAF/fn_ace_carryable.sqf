@@ -1,6 +1,6 @@
 if (!isServer) exitWith {};
 
-["STAF", "Make Carryable (ACE)",
+["STAF", "Toggle Carryable (ACE)",
 {
 	// Get all the passed parameters
 	params [
@@ -21,6 +21,16 @@ if (!isServer) exitWith {};
 	// Dialog
 
 	// Code
-	[_objectUnderCursor, true, [0, 1, 1], 0] call ace_dragging_fnc_setCarryable;
+	_canCarry = _objectUnderCursor getVariable ["STAF_var_canCarry", false];
 
+	if (_canCarry) then {
+		[_objectUnderCursor, false] call ace_dragging_fnc_setCarryable;
+		_objectUnderCursor setVariable ["STAF_var_canCarry", true, true];
+		[objNull, "OBJECT CAN NOT BE CARRIED ANYMORE"] call BIS_fnc_showCuratorFeedbackMessage;
+		
+	} else {
+		[_objectUnderCursor, true, [0, 1, 1], 0] call ace_dragging_fnc_setCarryable;
+		_objectUnderCursor setVariable ["STAF_var_canCarry", true, true];
+		[objNull, "OBJECT CAN NOW BE CARRIED"] call BIS_fnc_showCuratorFeedbackMessage;
+	};
 }] remoteexeccall ["zen_custom_modules_fnc_register", 0, true];

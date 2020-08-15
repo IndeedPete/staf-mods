@@ -17,7 +17,7 @@ _heal = [
 			["STAF_notification_healed",[]] call bis_fnc_showNotification;
 		},
 		[],
-		6,
+		9,
 		false,
 		true,
 		"",
@@ -36,13 +36,22 @@ _healeveryone = [
 	[
 		(format ["<img size='1' shadow='1' image='\a3\ui_f\data\igui\cfg\Actions\heal_ca.paa'/> %1", _text2]),
 		{
+			params ["_target", "_caller", "_actionId", "_arguments"];
+
+			_radiusUnits = _target nearEntities ["Man", 10];
+			_healedUnits = _radiusUnits - [_caller];
+
 			{
 				[_x] call ace_medical_treatment_fnc_fullHeallocal;
-			} forEach ((_this select 0) nearEntities ["Man", 10]);
+			} forEach _radiusUnits;
+
+			{
+				["STAF_notification_healedbysomeone",[]] remoteExecCall ["bis_fnc_showNotification", _x];
+			} forEach _healedUnits;
 			["STAF_notification_sombodyhealed",[]] call bis_fnc_showNotification;
 		},
 		[],
-		6,
+		8.5,
 		false,
 		true,
 		"",

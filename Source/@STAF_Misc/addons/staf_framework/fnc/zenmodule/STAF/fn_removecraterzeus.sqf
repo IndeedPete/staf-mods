@@ -19,5 +19,6 @@ if (!isServer) exitWith {};
 
 	// Code
 	nearestObject [_position, "#crater"] hideObject true;
+	[objNull, "CRATER REMOVES"] call BIS_fnc_showCuratorFeedbackMessage;
 
 }] remoteexeccall ["zen_custom_modules_fnc_register", 0, true];

@@ -42,6 +42,8 @@ if (!isServer) exitWith {};
 			_dialogValues params ["_time"];
 
 			[_objectUnderCursor, _time] call STAF_fnc_setrespawntimer;
+			_text = format ["PLAYERS RESPAWN TIME HAS BEEN SET TO %1 SECONDS", _time];
+			[objNull, _text] call BIS_fnc_showCuratorFeedbackMessage;
 		},
 		{},
 		_objectUnderCursor

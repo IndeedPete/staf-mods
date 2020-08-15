@@ -336,7 +336,7 @@ class CfgVehicles {
             scope = 2;
             scopeCurator = 2;
             side = 1;
-            displayName = "Oshkosh M-ATV (M249)";
+            displayName = "Oshkosh M-ATV (M240)";
             faction = "STAF_PMC";
             crew = "STAF_contractor";
             editorPreview = "\staf_pmc_main\eden\STAF_MATV_M240.jpg";

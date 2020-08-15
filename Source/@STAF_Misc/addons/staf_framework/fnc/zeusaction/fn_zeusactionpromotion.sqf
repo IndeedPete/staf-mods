@@ -6,10 +6,10 @@ _ZeusPromotion = [
     _player setVariable ["STAF_var_ZeusAction", true];
     
     //Add Zeus
-    ["STAF_fnc_zeusactionpromotion_exec", _player] call CBA_fnc_serverEvent;
+    _player remoteExec ["STAF_fnc_zeusactionpromotion_exec", 2];
+    [] remoteExec ["STAF_fnc_zeusactionpromotion_handleDC", 0, true];
 
     ["You are Zeus now!", 2, _player, 12] call ace_common_fnc_displayTextStructured;
-    _player call STAF_fnc_zeusactionaddaction;
   },
   {
     (!(_player getVariable ["STAF_var_ZeusAction", false])) and ((_player getVariable ["STAF_var_ZeusActionEligible", false]) or (serverCommandAvailable "#logout"))

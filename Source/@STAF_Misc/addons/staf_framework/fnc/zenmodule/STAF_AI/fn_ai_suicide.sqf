@@ -1,6 +1,6 @@
 if (!isServer) exitWith {};
 
-["STAF Medical", "Base Medic",
+["STAF AI", "Make Unit Kill Itself",
 {
 	// Get all the passed parameters
 	params [
@@ -8,12 +8,13 @@ if (!isServer) exitWith {};
 		"_objectUnderCursor"
 	];
 
-	// Check if Module is placed on Object/Unit
+	// If Object is supposed to be a Unit
+	/// Check if Module is placed on Object/Unit
 	if (isNull _objectUnderCursor) exitWith {
 		[objNull, "PLACE ON A UNIT"] call BIS_fnc_showCuratorFeedbackMessage;
 	};
 
-	// Check if Object under Module is a Unit
+	//Check if Object under Module is a Unit
 	if !(_objectUnderCursor isKindOf "CAManBase") exitWith {
 		[objNull, "PLACE ON A UNIT"] call BIS_fnc_showCuratorFeedbackMessage;
 	};
@@ -23,10 +24,11 @@ if (!isServer) exitWith {};
 		[objNull, "UNIT MUST BE ALIVE"] call BIS_fnc_showCuratorFeedbackMessage;
 	};
 
-	// Dialog
-
-	// Code
-	[_objectUnderCursor] call STAF_fnc_baseMedic;
-	[objNull, "BASE MEDIC ADDED"] call BIS_fnc_showCuratorFeedbackMessage;
+	if (isPlayer _objectUnderCursor) then {
+		[_objectUnderCursor, 5] call STAF_fnc_setrespawntimer;
+		[_objectUnderCursor, true] spawn murshun_easywayout_fnc_suicide;
+	} else {
+		[_objectUnderCursor] spawn murshun_easywayout_fnc_suicide_AI;
+	};
 
 }] remoteexeccall ["zen_custom_modules_fnc_register", 0, true];

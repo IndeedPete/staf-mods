@@ -1,5 +1,5 @@
 //Init of the box and arsenal
-_box = _this select 0;
+params ["_box"];
 
 //Picture on arsenal
 if (isServer) then {
@@ -375,6 +375,7 @@ _items = [
             "ACE_RangeCard",
             "ACE_Tripod",
             "ACE_Vector",
+            "ACE_Fortify",
             //Vanilla
             "H_EarProtectors_black_F",
             "H_EarProtectors_orange_F",
@@ -514,6 +515,8 @@ _items = [
             "tacs_Goggles_Black",
             "tacs_Goggles_Green",
             "tacs_Goggles_Tan",
+            // Headlamps
+            "SAN_Headlamp_v2",
             //CUP
             "CUP_NVG_PVS7",
             "CUP_NVG_PVS15_black",
@@ -1016,8 +1019,8 @@ _uniforms = [
             "tacs_Uniform_Garment_RS_TS_GP_BB",
             "tacs_Uniform_Garment_RS_OS_TP_TB",
             "tacs_Uniform_Garment_RS_TS_BP_BB",
-            // Headlamps
-            "SAN_Headlamp_v2",
+            "tacs_Uniform_Combat_LS_CBPS_BP_BB",
+            "tacs_Uniform_Combat_RS_CBPS_BP_BB",
             //Military Gear
             "milgp_u_fleece_grey_g3_field_pants_3CD",
             "milgp_u_fleece_khk_g3_field_pants_3CD",
@@ -1144,6 +1147,19 @@ _uniforms = [
             "CUP_I_B_PMC_Unit_28",
             "CUP_I_B_PMC_Unit_29",
             "CUP_I_B_PMC_Unit_30",
+            "CUP_I_B_PMC_Unit_31",
+            "CUP_I_B_PMC_Unit_32",
+            "CUP_I_B_PMC_Unit_33",
+            "CUP_I_B_PMC_Unit_34",
+            "CUP_I_B_PMC_Unit_35",
+            "CUP_I_B_PMC_Unit_36",
+            "CUP_I_B_PMC_Unit_37",
+            "CUP_I_B_PMC_Unit_38",
+            "CUP_I_B_PMC_Unit_39",
+            "CUP_I_B_PMC_Unit_40",
+            "CUP_I_B_PMC_Unit_41",
+            "CUP_I_B_PMC_Unit_42",
+            "CUP_I_B_PMC_Unit_43",
             //CFP
             "SP_0000_Standard_TacticalUniform_ATacsFG_TS",
             "SP_0000_Standard_TacticalUniform_Black_TS",
@@ -1979,7 +1995,36 @@ _vests = [
             "STAF_V_TacVest_hidden",
             // Other
             "mgsr_poncho_dry_vest",
-            "mgsr_poncho_wet_vest9"
+            "mgsr_poncho_wet_vest9",
+            "dr_ALPfacp_br",
+            "dr_ALPfacp_mg",
+            "dr_ALPfacp_op",
+            "dr_ALPlbt_br",
+            "dr_ALPlbt_mg",
+            "dr_ALPpar_br",
+            "dr_ALPpar_mg",
+            "dr_ALPpar_op",
+            "dr_MBSS_PACA",
+            "dr_MBSS_Green",
+            "dr_ALPlbt_op",
+            "dr_ARDfacp_br",
+            "dr_ARDfacp_mg",
+            "dr_ARDfacp_op",
+            "dr_ARDlbt_br",
+            "dr_ARDlbt_mg",
+            "dr_ARDlbt_op",
+            "dr_ARDpar_br",
+            "dr_ARDpar_mg",
+            "dr_ARDpar_op",
+            "dr_BLKfacp_br",
+            "dr_BLKfacp_mg",
+            "dr_BLKfacp_op",
+            "dr_BLKlbt_br",
+            "dr_BLKlbt_mg",
+            "dr_BLKlbt_op",
+            "dr_BLKpar_br",
+            "dr_BLKpar_mg",
+            "dr_BLKpar_op"
 ];
 
 _othermagazines = [
@@ -2075,17 +2120,29 @@ _attachments = [];
 //Adding Itemlists to the Arsenal
 [_box,(_weapons + _backpacks + _items + _uniforms + _headgear + _vests + _othermagazines + _magazines + _attachments),true] call ace_arsenal_fnc_initBox;
 
-[_box,
-{
-  _actionID = _box addaction [
-    "<img image='\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\box_ca.paa' /> Open Arsenal",
-    {
-      [
-        (_this select 0),
-        (_this select 1),
-        false
-      ] call ace_arsenal_fnc_openBox;
-    }
-  ];
-  _box setVariable ["STAF_var_pmcarsenal_actionID", _actionID, true];
-}] remoteExec ["call", 0, true];
+[
+  [_box],
+  {
+    params ["_box"];
+    
+    _actionId = _box addaction [
+      "<img image='\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\box_ca.paa' /> Open Arsenal",
+      {
+        params ["_target", "_caller"];
+        [
+          _target,
+          _caller,
+          false
+        ] call ace_arsenal_fnc_openBox;
+      },
+      nil,
+      25,
+      true,
+      false,
+      ""
+    ];
+    _box setVariable ["STAF_var_pmcarsenal_actionId", _actionId, true];
+  }
+] remoteExec ["spawn", 0, true];
+
+_box setVariable ["STAF_var_pmcarsenal", true, true];

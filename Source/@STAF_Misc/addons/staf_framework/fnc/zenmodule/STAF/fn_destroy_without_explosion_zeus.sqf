@@ -24,5 +24,6 @@ if (!isServer) exitWith {};
 	_objectUnderCursor setVariable ["ace_cookoff_enable", false, true];
 	_objectUnderCursor setVariable ["ace_cookoff_enableAmmoCookoff", false, true];
 	_objectUnderCursor setDamage [1, false];
+	[objNull, "OBJECT IS DESTROYED WITHOUT AN EXPLOSION"] call BIS_fnc_showCuratorFeedbackMessage;
 
 }] remoteexeccall ["zen_custom_modules_fnc_register", 0, true];
