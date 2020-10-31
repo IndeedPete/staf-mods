@@ -1,0 +1,25 @@
+Uniforms:
+tacs_Uniform_Garment_RS_BS_BP_BB
+tacs_Uniform_Garment_LS_BS_BP_BB
+tacs_Uniform_Combat_LS_BS_BP_BB
+tacs_Uniform_Combat_RS_BS_BP_BB
+U_O_R_Gorka_01_black_F
+
+Vest:
+All: CUP_V_B_Ciras_Black2; CUP_V_B_Ciras_Black3; CUP_V_PMC_CIRAS_Black_Patrol; CUP_V_PMC_IOTV_Black_AR; CUP_V_PMC_IOTV_Black_Patrol; TEC_V_Hamel_Gunner_Black; TEC_V_Hamel_Heavy_Black; TEC_V_Hamel_Patrol_Black; 
+Leader: CUP_V_PMC_CIRAS_Black_TL; CUP_V_PMC_IOTV_Black_TL; TEC_V_Hamel_Command_Black; 
+Medic: CUP_V_B_Ciras_Black; TEC_V_Hamel_Medic_Black
+
+Helmet:
+tacs_Helmet_Enc_Ballistic_DarkBlack; CFP_OPS2017_Helmet_Black2
+
+Backpack:
+B_ViperHarness_blk_F
+
+Medic: STAF_B_Kitbag_medic_blk
+
+
+
+Weapons:
+All: rhs_weap_hk416d145; rhs_weap_hk416d10; 
+-> Optic: rhsusf_acc_su230a_mrds

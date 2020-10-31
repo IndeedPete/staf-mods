@@ -24,21 +24,21 @@ class CfgWeapons {
 	{
 		displayName = "STAF Pete's Enhanced Combat Helmet (Arid)";
 		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\equip1_Pete_arid_co.paa"};
-  	picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+  		picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
 	};
 
 	class STAF_H_HelmetSpecB_Pete_Lush: H_HelmetSpecB
 	{
 		displayName = "STAF Pete's Enhanced Combat Helmet (Lush)";
 		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\equip1_Pete_lush_co.paa"};
-  	picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+  		picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
 	};
 
 	class STAF_H_HelmetSpecB_Pete_Winter: H_HelmetSpecB
 	{
 		displayName = "STAF Pete's Enhanced Combat Helmet (Winter)";
 		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\equip1_Pete_Winter_co.paa"};
-  	picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
+  		picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
 	};
 
 	class STAF_H_HelmetSpecB_white: H_HelmetSpecB
@@ -139,18 +139,7 @@ class CfgWeapons {
 		picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
 	};
 
-
-
-
-
-
-
-
-
-
-
-
-
+	// Airframe
 	class STAF_h_airframe_01_white: milgp_h_airframe_01_khk
 	{
 		displayName = "Airframe 01 (White)";
@@ -223,77 +212,77 @@ class CfgWeapons {
 		picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
 		hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_white_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
 	};
-	class STAF_h_airframe_01_white_splinter: milgp_h_airframe_01_khk
+	class STAF_h_airframe_01_white_digi: milgp_h_airframe_01_khk
 	{
-	  displayName = "Airframe 01 (White, Splinter)";
+	  displayName = "Airframe 01 (White, Digi)";
 	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
-	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_splinter_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_digi_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
 	};
-	class STAF_h_airframe_01_goggles_white_splinter: milgp_h_airframe_01_goggles_khk
+	class STAF_h_airframe_01_goggles_white_digi: milgp_h_airframe_01_goggles_khk
 	{
-	  displayName = "Airframe 01 + Goggles (White, Splinter)";
+	  displayName = "Airframe 01 + Goggles (White, Digi)";
 	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
-	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_splinter_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_digi_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
 	};
-	class STAF_h_airframe_02_white_splinter: milgp_h_airframe_02_khk
+	class STAF_h_airframe_02_white_digi: milgp_h_airframe_02_khk
 	{
-	  displayName = "Airframe 02 (White, Splinter)";
+	  displayName = "Airframe 02 (White, Digi)";
 	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
-	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_splinter_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_digi_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
 	};
-	class STAF_h_airframe_02_goggles_white_splinter: milgp_h_airframe_02_goggles_khk
+	class STAF_h_airframe_02_goggles_white_digi: milgp_h_airframe_02_goggles_khk
 	{
-	  displayName = "Airframe 02 + Goggles (White, Splinter)";
+	  displayName = "Airframe 02 + Goggles (White, Digi)";
 	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
-	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_splinter_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_digi_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
 	};
-	class STAF_h_airframe_03_white_splinter: milgp_h_airframe_03_khk
+	class STAF_h_airframe_03_white_digi: milgp_h_airframe_03_khk
 	{
-	  displayName = "Airframe 03 (White, Splinter)";
+	  displayName = "Airframe 03 (White, Digi)";
 	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
-	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_splinter_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_digi_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
 	};
-	class STAF_h_airframe_03_goggles_white_splinter: milgp_h_airframe_03_goggles_khk
+	class STAF_h_airframe_03_goggles_white_digi: milgp_h_airframe_03_goggles_khk
 	{
-	  displayName = "Airframe 03 + Goggles (White, Splinter)";
+	  displayName = "Airframe 03 + Goggles (White, Digi)";
 	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
-	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_splinter_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_digi_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
 	};
-	class STAF_h_airframe_04_white_splinter: milgp_h_airframe_04_khk
+	class STAF_h_airframe_04_white_digi: milgp_h_airframe_04_khk
 	{
-	  displayName = "Airframe 04 (White, Splinter)";
+	  displayName = "Airframe 04 (White, Digi)";
 	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
-	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_splinter_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_digi_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
 	};
-	class STAF_h_airframe_04_goggles_white_splinter: milgp_h_airframe_04_goggles_khk
+	class STAF_h_airframe_04_goggles_white_digi: milgp_h_airframe_04_goggles_khk
 	{
-	  displayName = "Airframe 04 + Goggles (White, Splinter)";
+	  displayName = "Airframe 04 + Goggles (White, Digi)";
 	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
-	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_splinter_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_digi_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
 	};
-	class STAF_h_airframe_05_white_splinter: milgp_h_airframe_05_khk
+	class STAF_h_airframe_05_white_digi: milgp_h_airframe_05_khk
 	{
-	  displayName = "Airframe 05 (White, Splinter)";
+	  displayName = "Airframe 05 (White, Digi)";
 	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
-	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_splinter_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_digi_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
 	};
-	class STAF_h_airframe_05_goggles_white_splinter: milgp_h_airframe_05_goggles_khk
+	class STAF_h_airframe_05_goggles_white_digi: milgp_h_airframe_05_goggles_khk
 	{
-	  displayName = "Airframe 05 + Goggles (White, Splinter)";
+	  displayName = "Airframe 05 + Goggles (White, Digi)";
 	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
-	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_splinter_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_digi_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
 	};
-	class STAF_h_airframe_06_white_splinter: milgp_h_airframe_06_khk
+	class STAF_h_airframe_06_white_digi: milgp_h_airframe_06_khk
 	{
-	  displayName = "Airframe 06 (White, Splinter)";
+	  displayName = "Airframe 06 (White, Digi)";
 	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
-	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_splinter_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_digi_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
 	};
-	class STAF_h_airframe_06_goggles_white_splinter: milgp_h_airframe_06_goggles_khk
+	class STAF_h_airframe_06_goggles_white_digi: milgp_h_airframe_06_goggles_khk
 	{
-	  displayName = "Airframe 06 + Goggles (White, Splinter)";
+	  displayName = "Airframe 06 + Goggles (White, Digi)";
 	  picture = "\staf_pmc_main\arsenal\staf_iconsmall.paa";
-	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_splinter_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
+	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\h_airframe_digi_co.paa","\staf_pmc_headgear\txt\h_opscore_white_co.paa","\staf_pmc_headgear\txt\h_gear_01_white_co.paa"};
 	};
 	class STAF_h_airframe_01_white_hex: milgp_h_airframe_01_khk
 	{

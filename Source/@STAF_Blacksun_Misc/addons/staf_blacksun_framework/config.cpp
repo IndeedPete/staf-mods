@@ -4,4 +4,4 @@
 #include "CfgSounds.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
-#include "ACE_Medical_Treatments.hpp"
+#include "ACE_Medical_Treatment.hpp"

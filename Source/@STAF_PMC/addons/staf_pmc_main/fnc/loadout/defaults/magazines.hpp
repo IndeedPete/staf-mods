@@ -107,19 +107,19 @@ if (_weapon == "STAF_rifle_m4a1_wld") then {
   _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP_Olive", true];
   for "_i" from 1 to 7 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP_Olive";};
 };
-if (_weapon == "STAF_rifle_m4a1_blk_grip") then {
+if (_weapon == "STAF_rifle_m4a1_mstock_blk") then {
   _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
   for "_i" from 1 to 7 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
 };
-if (_weapon == "STAF_rifle_m4a1_tan_grip") then {
+if (_weapon == "STAF_rifle_m4a1_mstock_tan") then {
   _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP_Tan", true];
   for "_i" from 1 to 7 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP_Tan";};
 };
-if (_weapon == "STAF_rifle_m4a1_wld_grip") then {
+if (_weapon == "STAF_rifle_m4a1_mstock_wld") then {
   _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP_Olive", true];
   for "_i" from 1 to 7 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP_Olive";};
 };
-if (_weapon == "STAF_rifle_m4a1_blk_m203") then {
+if (_weapon == "STAF_rifle_m4a1_m203s_blk") then {
   _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
   _unit addWeaponItem [_weapon, "1Rnd_HE_Grenade_shell", true];
   for "_i" from 1 to 7 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
@@ -128,7 +128,7 @@ if (_weapon == "STAF_rifle_m4a1_blk_m203") then {
   for "_i" from 1 to 2 do {_unit addItem "1Rnd_SmokeRed_Grenade_shell";};
   for "_i" from 1 to 2 do {_unit addItem "1Rnd_SmokeGreen_Grenade_shell";};
 };
-if (_weapon == "STAF_rifle_m4a1_tan_m203") then {
+if (_weapon == "STAF_rifle_m4a1_m203s_tan") then {
   _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP_Tan", true];
   _unit addWeaponItem [_weapon, "1Rnd_HE_Grenade_shell", true];
   for "_i" from 1 to 7 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP_Tan";};
@@ -137,7 +137,7 @@ if (_weapon == "STAF_rifle_m4a1_tan_m203") then {
   for "_i" from 1 to 2 do {_unit addItem "1Rnd_SmokeRed_Grenade_shell";};
   for "_i" from 1 to 2 do {_unit addItem "1Rnd_SmokeGreen_Grenade_shell";};
 };
-if (_weapon == "STAF_rifle_m4a1_wld_m203") then {
+if (_weapon == "STAF_rifle_m4a1_m203s_wld") then {
   _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP_Olive", true];
   _unit addWeaponItem [_weapon, "1Rnd_HE_Grenade_shell", true];
   for "_i" from 1 to 7 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP_Olive";};
@@ -184,10 +184,31 @@ if (_weapon == "STAF_rifle_sig_woodland") then {
 };
 
 //MG
-if (_weapon == "STAF_rifle_m249") then {
-  _unit addWeaponItem [_weapon, "hlc_200rnd_556x45_M_SAW", true];
-  for "_i" from 1 to 3 do {_unit addItem "hlc_200rnd_556x45_M_SAW";};
+if (_weapon == "STAF_rifle_m249_pip_S") then {
+  _unit addWeaponItem [_weapon, "rhsusf_200Rnd_556x45_box", true];
+  for "_i" from 1 to 3 do {_unit addItem "rhsusf_200Rnd_556x45_box";};
 };
+if (_weapon == "STAF_rifle_m249_pip_S_para") then {
+  _unit addWeaponItem [_weapon, "rhsusf_200Rnd_556x45_box", true];
+  for "_i" from 1 to 3 do {_unit addItem "rhsusf_200Rnd_556x45_box";};
+};
+if (_weapon == "STAF_rifle_m249_pip_ris") then {
+  _unit addWeaponItem [_weapon, "rhsusf_200Rnd_556x45_box", true];
+  for "_i" from 1 to 3 do {_unit addItem "rhsusf_200Rnd_556x45_box";};
+};
+if (_weapon == "STAF_rifle_m249_pip_L") then {
+  _unit addWeaponItem [_weapon, "rhsusf_200Rnd_556x45_box", true];
+  for "_i" from 1 to 3 do {_unit addItem "rhsusf_200Rnd_556x45_box";};
+};
+if (_weapon == "STAF_rifle_m249_pip_L_para") then {
+  _unit addWeaponItem [_weapon, "rhsusf_200Rnd_556x45_box", true];
+  for "_i" from 1 to 3 do {_unit addItem "rhsusf_200Rnd_556x45_box";};
+};
+if (_weapon == "STAF_rifle_m249_pip") then {
+  _unit addWeaponItem [_weapon, "rhsusf_200Rnd_556x45_box", true];
+  for "_i" from 1 to 3 do {_unit addItem "rhsusf_200Rnd_556x45_box";};
+};
+
 if (_weapon == "STAF_rifle_ng7") then {
   _unit addWeaponItem [_weapon, "150Rnd_762x54_Box", true];
   for "_i" from 1 to 4 do {_unit addItem "150Rnd_762x54_Box";};

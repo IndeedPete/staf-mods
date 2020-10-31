@@ -402,9 +402,9 @@ class CfgVehicles {
             maximumLoad = 1500;
         };
 
-        /*class STAF_btr90 : CUP_BTR90_Base {
-            scope = 2;
-            scopeCurator = 2;
+        class STAF_btr90 : CUP_BTR90_Base {
+            scope = 0;
+            scopeCurator = 0;
             side = 1;
             displayName = "BTR-90";
             faction = "STAF_PMC";
@@ -418,7 +418,7 @@ class CfgVehicles {
             hiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_btr90_body_co.paa","\staf_pmc_vehicles\txt\STAF_btr90_body2_co.paa"};
 
             typicalCargo[] = {"STAF_contractor_crew","STAF_contractor_crew","STAF_contractor_crew"};
-        };*/
+        };
 
         class STAF_M1126_ICV_M2 : CUP_B_M1126_ICV_M2_Desert {
             scope = 2;
@@ -601,8 +601,8 @@ class CfgVehicles {
         class STAF_2B14 : CUP_O_2b14_82mm_RU {
 
             author = "STAF";
-            scope = 2;
-            scopeCurator = 2;
+            scope = 0;
+            scopeCurator = 0;
             displayName = "Podnos 2B14";
             side = 1;
             faction = "STAF_PMC";

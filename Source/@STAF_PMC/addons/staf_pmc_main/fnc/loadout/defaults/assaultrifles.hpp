@@ -22,11 +22,11 @@ _assaultrifleArray = [
   "STAF_rifle_scar_wld",
   "STAF_rifle_m4a1_blk",
   "STAF_rifle_m4a1_blk",
-  "STAF_rifle_m4a1_blk",
+  "STAF_rifle_m4a1_mstock_blk",
   "STAF_rifle_m4a1_tan",
   "STAF_rifle_m4a1_tan",
-  "STAF_rifle_m4a1_tan",
+  "STAF_rifle_m4a1_mstock_tan",
   "STAF_rifle_m4a1_wld",
   "STAF_rifle_m4a1_wld",
-  "STAF_rifle_m4a1_wld"
+  "STAF_rifle_m4a1_mstock_wld"
 ];

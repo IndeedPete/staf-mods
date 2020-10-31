@@ -66,6 +66,7 @@ class CfgFunctions
 			file = "\STAF_FRAMEWORK\fnc\misc";
 			class ace_knockout {preInit = 1;};
 			class ace_silentkill {preInit = 1;};
+			class acex_fortify {postInit = 1;};
 			class animation{};
 			class createFireEffect{};
 			class disable{};
@@ -86,7 +87,7 @@ class CfgFunctions
 		{
 			file = "\STAF_FRAMEWORK\fnc\respawn";
 			class respawn_equipment {};
-			class respawn_equipment_init {preInit = 1;};
+			class respawn_equipment_init {postInit = 1;};
 		};
 		class ZenContext_Misc_STAF
 		{
@@ -175,6 +176,16 @@ class CfgFunctions
 		{
 			file = "\STAF_FRAMEWORK\fnc\zenmodule\STAF_Equipment";
 
+			class acex_fortify_budget{
+				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
+				recompile = 1; //1 to recompile the function upon mission start
+				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
+			};
+			class acex_fortify_toggle{
+				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
+				recompile = 1; //1 to recompile the function upon mission start
+				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
+			};
 			class clearinventory{
 				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
 				recompile = 1; //1 to recompile the function upon mission start
@@ -186,6 +197,11 @@ class CfgFunctions
 			file = "\STAF_FRAMEWORK\fnc\zenmodule\STAF_Fun";
 
 			class hatearmanotification{
+				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
+				recompile = 1; //1 to recompile the function upon mission start
+				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
+			};
+			class zeushatesplayerbase{
 				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
 				recompile = 1; //1 to recompile the function upon mission start
 				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.

@@ -10,6 +10,16 @@ class CfgNotifications
 		priority = 7; // Priority; higher number = more important; tasks in queue are selected by priority
 	};
 
+	class STAF_notification_zeushatesplayer
+	{
+		title = "Zeus hates Playerbase"; // Tile displayed as text on black background. Filled by arguments.
+		description = "Fuck you guys!"; // Brief description displayed as structured text. Colored by "color", filled by arguments
+		iconPicture = "\staf_framework\img\fuckyou.paa";
+		color[] = {1,1,1,1};
+		duration = 5; // How many seconds will the notification be displayed
+		priority = 7; // Priority; higher number = more important; tasks in queue are selected by priority
+	};
+
 	class STAF_notification_warcrimes
 	{
 		title = "Congratulations!"; // Tile displayed as text on black background. Filled by arguments.

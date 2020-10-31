@@ -83,6 +83,7 @@ if (_launcher == "STAF_launcher_smaw") then {
 
 if (isNull objectParent _unit) then {_unit switchmove ""};
 _unit setVariable ["STAF_var_Unit_Loadout", getUnitLoadout _unit];
+_unit setVariable ["STAF_var_Unit_Loadout_Set", true, true];
 
 //Save loadout in Eden
 save3DENInventory [_unit];

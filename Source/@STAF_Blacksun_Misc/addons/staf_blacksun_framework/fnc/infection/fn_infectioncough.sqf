@@ -27,7 +27,7 @@ while {Alive _unit && _unit getVariable "STAF_Horror_Infected"} do {
   addCamShake [0.5, 3, 25];
   resetCamShake;
   if (Alive _unit) then {
-      _unit say3D [_cough,10];
+      _unit say3D [_cough, 10];
   };
   _unit setVariable ["STAF_Horror_CoughTime",nil];
 };

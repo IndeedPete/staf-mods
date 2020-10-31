@@ -37,6 +37,7 @@ class CfgWeapons
 		displayName = "Antivirus Pills";
 		descriptionShort = "Pills to temporarily stop the infection process.";
 		author = "Sanchez";
+		picture = "\staf_blacksun_framework\img\antiviruspills_ca.paa";
 		model = "\staf_blacksun_framework\model\pillbottle.p3d";
 		mapSize = 0.034;
 		class ItemInfo: CBA_MiscItem_ItemInfo
@@ -52,6 +53,7 @@ class CfgWeapons
 		displayName = "Antivirus Injector";
 		descriptionShort = "Cures infection.";
 		author = "Sanchez";
+		picture = "\staf_blacksun_framework\img\antivirus_ca.paa";
 		model = "\staf_blacksun_framework\model\injector.p3d";
 		mapSize = 0.034;
 		class ItemInfo: CBA_MiscItem_ItemInfo
