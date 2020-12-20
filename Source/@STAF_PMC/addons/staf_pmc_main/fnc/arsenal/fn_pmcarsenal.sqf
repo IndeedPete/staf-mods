@@ -45,9 +45,11 @@ _weapons = [
             "arifle_RPK12_arid_F",
             "arifle_RPK12_lush_F",
             "LMG_Zafir_F",
+            "MMG_01_tan_F",
             //STAF
-            "STAF_rifle_ng7_black_base",
-            "STAF_rifle_ng7_woodland_base",
+            "STAF_rifle_ng7_black",
+            "STAF_rifle_ng7_woodland",
+            "STAF_rifle_hk121_wld",
             //CUP
             "CUP_arifle_Mk16_CQC",
             "CUP_arifle_Mk16_CQC_black",
@@ -83,6 +85,33 @@ _weapons = [
             "CUP_hgun_Glock17_tan",
             "CUP_hgun_Glock17_blk",
             "CUP_hgun_Duty",
+            "CUP_arifle_Mk17_CQC",
+            "CUP_arifle_Mk17_CQC_AFG",
+            "CUP_arifle_Mk17_CQC_AFG_black",
+            "CUP_arifle_Mk17_CQC_AFG_woodland",
+            "CUP_arifle_Mk17_CQC_Black",
+            "CUP_arifle_Mk17_CQC_FG",
+            "CUP_arifle_Mk17_CQC_FG_black",
+            "CUP_arifle_Mk17_CQC_FG_woodland",
+            "CUP_arifle_Mk17_CQC_woodland",
+            "CUP_arifle_Mk17_CQC_EGLM",
+            "CUP_arifle_Mk17_CQC_EGLM_black",
+            "CUP_arifle_Mk17_CQC_EGLM_woodland",
+            "CUP_arifle_Mk17_STD",
+            "CUP_arifle_Mk17_STD_AFG",
+            "CUP_arifle_Mk17_STD_AFG_black",
+            "CUP_arifle_Mk17_STD_AFG_woodland",
+            "CUP_arifle_Mk17_STD_woodland",
+            "CUP_arifle_Mk17_STD_black",
+            "CUP_arifle_Mk17_STD_FG",
+            "CUP_arifle_Mk17_STD_FG_black",
+            "CUP_arifle_Mk17_STD_FG_woodland",
+            "CUP_arifle_Mk17_STD_EGLM",
+            "CUP_arifle_Mk17_STD_EGLM_black",
+            "CUP_arifle_Mk17_STD_EGLM_woodland",
+            "CUP_arifle_Mk20",
+            "CUP_arifle_Mk20_black",
+            "CUP_arifle_Mk20_woodland",
             //RHS
             "rhs_weap_m4a1",
             "rhs_weap_m4a1_m203s",
@@ -132,7 +161,11 @@ _weapons = [
             "hlc_rifle_awmagnum",
             "hlc_rifle_awMagnum_OD_ghillie",
             //ACE
-            "ACE_VMM3"
+            "ACE_VMM3",
+            //Other
+            "MMG_01_black_F",
+            "bg21_famas_HG",
+            "bg21_famas2"
 ];
 
 _backpacks = [

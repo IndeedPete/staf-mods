@@ -50,7 +50,7 @@ _KnockOut = [
               };
             },
             {
-              (_player distance _target < 1.3) AND (Alive _target) AND !(_target getVariable ["ACE_isUnconscious", false]) AND (vehicle _target == _target)
+              (_player distance _target < 2.5) AND (Alive _target) AND !(_target getVariable ["ACE_isUnconscious", false]) AND (vehicle _target == _target)
             }
           ] call ace_interact_menu_fnc_createAction;
 

@@ -20,12 +20,18 @@ class CfgWeapons {
   class hlc_rifle_G36KA1;
   class hlc_rifle_G36KE1;
   class hlc_rifle_MG36;
-  class CUP_arifle_Mk16_STD_black; // CUP SCAR
-  class CUP_arifle_Mk16_STD_EGLM_black; // CUP SCAR GL
-  class CUP_arifle_Mk16_STD; // CUP SCAR Tan
-  class CUP_arifle_Mk16_STD_EGLM; // CUP SCAR GL
-  class CUP_arifle_Mk16_STD_woodland; // CUP SCAR Woodland
-  class CUP_arifle_Mk16_STD_EGLM_woodland; // CUP SCAR Woodland GL
+  class CUP_arifle_Mk16_STD_black; // CUP SCAR16
+  class CUP_arifle_Mk16_STD_EGLM_black; // CUP SCAR16 GL
+  class CUP_arifle_Mk16_STD; // CUP SCAR16 Tan
+  class CUP_arifle_Mk16_STD_EGLM; // CUP SCAR16 Tan GL
+  class CUP_arifle_Mk16_STD_woodland; // CUP SCAR16 Woodland
+  class CUP_arifle_Mk16_STD_EGLM_woodland; // CUP SCAR16 Woodland GL
+  class CUP_arifle_Mk17_STD; // CUP SCAR17 Tan
+  class CUP_arifle_Mk17_STD_woodland; // CUP SCAR17 Woodland
+  class CUP_arifle_Mk17_STD_black; // CUP SCAR17
+  class CUP_arifle_Mk17_STD_EGLM; // CUP SCAR17 Tan
+  class CUP_arifle_Mk17_STD_EGLM_woodland; // CUP SCAR17 Woodland
+  class CUP_arifle_Mk17_STD_EGLM_black; // CUP SCAR17
   class LMG_Zafir_F;  //Vanilla Negev
   class hlc_smg_mp5a4; // HLC MP5
   class arifle_AK12_F; //Vanilla AK12
@@ -72,7 +78,20 @@ class CfgWeapons {
   class rhs_weap_m249_pip_L; // RHS M249 Long
   class rhs_weap_m249_pip_L_para; // RHS M249 Long Para
   class rhs_weap_m249_pip; // RHS M249 RIS
-  class rhs_weap_m249; // RHS M249 
+  class rhs_weap_m249; // RHS M249
+  class MMG_01_tan_F; // Vanilla HK121 Tan 
+  class R3F_Famas_felin;
+  class R3F_Famas_felin_DES;
+  class R3F_Famas_G2;
+  class R3F_Famas_G2_DES;
+  class R3F_Famas_G2_HG;
+  class R3F_Famas_G2_HG_DES;
+  class R3F_Famas_G2_M203;
+  class R3F_Famas_G2_M203_DES;
+  class SMG_03C_black;
+  class SMG_03C_TR_black;
+  class SMG_03_black;
+  class SMG_03_TR_black;
 
   // Rifles
   class STAF_rifle_G36MLIC: hlc_rifle_G36MLIC
@@ -680,6 +699,127 @@ class CfgWeapons {
     };
   };
 
+  class STAF_rifle_scar17_blk: CUP_arifle_Mk17_STD_black
+  {
+    magazines[] =
+     {
+         "CUP_20Rnd_762x51_B_SCAR_bkl"
+     };
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "rhsusf_acc_g33_xps3";
+        slot = "CUP_PicatinnyTopMountSCAR";
+      };
+      class LinkedItemsAcc
+      {
+        item = "cup_acc_anpeq_15_flashlight_black_l";
+        slot = "CUP_PicatinnySideMountSCAR";
+      };
+    };
+  };
+  class STAF_rifle_scar17_gl_blk: CUP_arifle_Mk17_STD_EGLM_black
+  {
+    magazines[] =
+     {
+         "CUP_20Rnd_762x51_B_SCAR_bkl"
+     };
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "rhsusf_acc_g33_xps3";
+        slot = "CUP_PicatinnyTopMountSCAR";
+      };
+      class LinkedItemsAcc
+      {
+        item = "cup_acc_anpeq_15_flashlight_black_l";
+        slot = "CUP_PicatinnySideMountSCAR";
+      };
+    };
+  };
+  class STAF_rifle_scar17_tan: CUP_arifle_Mk17_STD
+  {
+    magazines[] =
+     {
+         "CUP_20Rnd_762x51_B_SCAR"
+     };
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "cup_optic_g33_hws_coyote";
+        slot = "CUP_PicatinnyTopMountSCAR";
+      };
+      class LinkedItemsAcc
+      {
+        item = "cup_acc_anpeq_15_flashlight_black_l";
+        slot = "CUP_PicatinnySideMountSCAR";
+      };
+    };
+  };
+  class STAF_rifle_scar17_gl_tan: CUP_arifle_Mk17_STD_EGLM
+  {
+    magazines[] =
+     {
+         "CUP_20Rnd_762x51_B_SCAR"
+     };
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "cup_optic_g33_hws_coyote";
+        slot = "CUP_PicatinnyTopMountSCAR";
+      };
+      class LinkedItemsAcc
+      {
+        item = "cup_acc_anpeq_15_flashlight_black_l";
+        slot = "CUP_PicatinnySideMountSCAR";
+      };
+    };
+  };
+  class STAF_rifle_scar17_wld: CUP_arifle_Mk17_STD_woodland
+  {
+    magazines[] =
+     {
+         "CUP_20Rnd_762x51_B_SCAR_wdl"
+     };
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "cup_optic_g33_hws_od";
+        slot = "CUP_PicatinnyTopMountSCAR";
+      };
+      class LinkedItemsAcc
+      {
+        item = "cup_acc_anpeq_15_flashlight_black_l";
+        slot = "CUP_PicatinnySideMountSCAR";
+      };
+    };
+  };
+  class STAF_rifle_scar17_gl_wld: CUP_arifle_Mk17_STD_EGLM_woodland
+  {
+    magazines[] =
+     {
+         "CUP_20Rnd_762x51_B_SCAR_wdl"
+     };
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "cup_optic_g33_hws_od";
+        slot = "CUP_PicatinnyTopMountSCAR";
+      };
+      class LinkedItemsAcc
+      {
+        item = "cup_acc_anpeq_15_flashlight_black_l";
+        slot = "CUP_PicatinnySideMountSCAR";
+      };
+    };
+  };
+
   class STAF_rifle_m4a1_blk: rhs_weap_m4a1
   {
     magazines[] =
@@ -861,6 +1001,167 @@ class CfgWeapons {
     };
   };
 
+  class STAF_rifle_famas_felin_blk: R3F_Famas_felin
+  {
+    magazines[] =
+     {
+         "CUP_30Rnd_556x45_PMAG_QP"
+     };
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "rhsusf_acc_g33_xps3";
+        slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+        item = "cup_acc_anpeq_15_flashlight_black_l";
+        slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_rifle_famas_felin_des: R3F_Famas_felin_DES
+  {
+    magazines[] =
+     {
+         "CUP_30Rnd_556x45_PMAG_QP"
+     };
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "rhsusf_acc_g33_xps3";
+        slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+        item = "cup_acc_anpeq_15_flashlight_black_l";
+        slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_rifle_famas_g2_blk: R3F_Famas_G2
+  {
+    magazines[] =
+     {
+         "CUP_30Rnd_556x45_PMAG_QP"
+     };
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "rhsusf_acc_g33_xps3";
+        slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+        item = "cup_acc_anpeq_15_flashlight_black_l";
+        slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_rifle_famas_g2_des: R3F_Famas_G2_DES
+  {
+    magazines[] =
+     {
+         "CUP_30Rnd_556x45_PMAG_QP"
+     };
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "rhsusf_acc_g33_xps3";
+        slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+        item = "cup_acc_anpeq_15_flashlight_black_l";
+        slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_rifle_famas_g2_hg_blk: R3F_Famas_G2_HG
+  {
+    magazines[] =
+     {
+         "CUP_30Rnd_556x45_PMAG_QP"
+     };
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "rhsusf_acc_g33_xps3";
+        slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+        item = "cup_acc_anpeq_15_flashlight_black_l";
+        slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_rifle_famas_g2_hg_des: R3F_Famas_G2_HG_DES
+  {
+    magazines[] =
+     {
+         "CUP_30Rnd_556x45_PMAG_QP"
+     };
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "rhsusf_acc_g33_xps3";
+        slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+        item = "cup_acc_anpeq_15_flashlight_black_l";
+        slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_rifle_famas_g2_gl_blk: R3F_Famas_G2_M203
+  {
+    magazines[] =
+     {
+         "CUP_30Rnd_556x45_PMAG_QP"
+     };
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "rhsusf_acc_g33_xps3";
+        slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+        item = "cup_acc_anpeq_15_flashlight_black_l";
+        slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_rifle_famas_g2_gl_des: R3F_Famas_G2_M203_DES
+  {
+    magazines[] =
+     {
+         "CUP_30Rnd_556x45_PMAG_QP"
+     };
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "rhsusf_acc_g33_xps3";
+        slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+        item = "cup_acc_anpeq_15_flashlight_black_l";
+        slot = "PointerSlot";
+      };
+    };
+  };
+
   //Machine Guns
   class STAF_rifle_m249_pip_S: rhs_weap_m249_pip_S
   {
@@ -929,6 +1230,101 @@ class CfgWeapons {
     };
   };
 
+  class MMG_01_Black_F: MMG_01_tan_F
+  {
+    scope = 0;
+    delete baseWeapon;
+  };
+  class STAF_rifle_hk121_blk: MMG_01_black_F
+  {
+    scope = 2;
+    baseWeapon = "STAF_rifle_hk121_blk";
+    displayName = "HK121 (Black)";
+    magazines[] =
+    {
+        "150Rnd_93x64_Mag"
+    };
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "cup_optic_elcan_reflex";
+        slot = "CowsSlot";
+      };
+      class LinkedItemsUnder
+      {
+        item = "cup_bipod_harris_1a2_l_blk";
+        slot = "UnderBarrelSlot";
+      };
+      class LinkedItemsAcc
+      {
+        item = "cup_acc_anpeq_15_flashlight_black_l";
+        slot = "GripodSlot";
+      };
+    };
+  };
+  class STAF_rifle_hk121_tan: MMG_01_tan_F
+  {
+    magazines[] =
+    {
+        "150Rnd_93x64_Mag"
+    };
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "cup_optic_elcan_reflex";
+        slot = "CowsSlot";
+      };
+      class LinkedItemsUnder
+      {
+        item = "cup_bipod_harris_1a2_l_blk";
+        slot = "UnderBarrelSlot";
+      };
+      class LinkedItemsAcc
+      {
+        item = "cup_acc_anpeq_15_flashlight_black_l";
+        slot = "GripodSlot";
+      };
+    };
+  };
+  class STAF_rifle_hk121_wld_base: MMG_01_tan_F
+  {
+    scope = 0;
+    displayName = "HK121 (Woodland)";
+    author = "STAF|Moony";
+		hiddenSelections[] = {"camo1","camo2","camo3"};
+		hiddenSelectionsTextures[] = {"\staf_pmc_weapons\txt\STAF_MMG_01_01_wld_CO.paa","\staf_pmc_weapons\txt\STAF_MMG_01_02_wld_CO.paa","\staf_pmc_weapons\txt\STAF_MMG_01_03_wld_CO.paa"};
+  };
+  class STAF_rifle_hk121_wld: STAF_rifle_hk121_wld_base
+  {
+    author = "STAF|Moony";
+    scope = 2;
+    baseWeapon = "STAF_rifle_hk121_wld";
+    magazines[] =
+    {
+        "150Rnd_93x64_Mag"
+    };
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        item = "cup_optic_elcan_reflex";
+        slot = "CowsSlot";
+      };
+      class LinkedItemsUnder
+      {
+        item = "cup_bipod_harris_1a2_l_blk";
+        slot = "UnderBarrelSlot";
+      };
+      class LinkedItemsAcc
+      {
+        item = "cup_acc_anpeq_15_flashlight_black_l";
+        slot = "GripodSlot";
+      };
+    };
+  };
+
   class STAF_rifle_ng7: LMG_Zafir_F
   {
     displayName = "Negev NG7 (Tan)";
@@ -947,7 +1343,6 @@ class CfgWeapons {
     hiddenSelections[] = {"camo1","camo2"};
     hiddenSelectionsTextures[] = {"\staf_pmc_weapons\txt\STAF_Zafir01_Black_CO.paa","\staf_pmc_weapons\txt\STAF_Zafir02_Black_CO.paa"};
 		scope = 2;
-    baseWeapon = "STAF_rifle_ng7_black_base";
   };
   class STAF_rifle_ng7_woodland_base: LMG_Zafir_F
   {
@@ -955,11 +1350,10 @@ class CfgWeapons {
     hiddenSelections[] = {"camo1","camo2"};
     hiddenSelectionsTextures[] = {"\staf_pmc_weapons\txt\STAF_Zafir01_Woodland_CO.paa","\staf_pmc_weapons\txt\STAF_Zafir02_Woodland_CO.paa"};
 		scope = 2;
-    baseWeapon = "STAF_rifle_ng7_woodland_base";
   };
   class STAF_rifle_ng7_black: STAF_rifle_ng7_black_base
   {
-    baseWeapon = "STAF_rifle_ng7_black_base";
+    baseWeapon = "STAF_rifle_ng7_black";
     class LinkedItems
     {
       class LinkedItemsOptic
@@ -971,7 +1365,7 @@ class CfgWeapons {
   };
   class STAF_rifle_ng7_woodland: STAF_rifle_ng7_woodland_base
   {
-    baseWeapon = "STAF_rifle_ng7_woodland_base";
+    baseWeapon = "STAF_rifle_ng7_woodland";
     class LinkedItems
     {
       class LinkedItemsOptic
@@ -1036,6 +1430,41 @@ class CfgWeapons {
       class LinkedItemsOptic
       {
         item = "optic_Aco_smg";
+        slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+        item = "acc_flashlight";
+        slot = "PointerSlot";
+      };
+    };
+  };
+
+  class STAF_rifle_p90c: SMG_03C_black {};
+  class STAF_rifle_tr_p90c: SMG_03C_TR_black
+  {
+    class LinkedItems
+      {
+      class LinkedItemsOptic
+      {
+        item = "cup_optic_vortexrazor_uh1_black";
+        slot = "CowsSlot";
+      };
+      class LinkedItemsAcc
+      {
+        item = "acc_flashlight";
+        slot = "PointerSlot";
+      };
+    };
+  };
+  class STAF_rifle_p90: SMG_03_black {};
+  class STAF_rifle_tr_p90: SMG_03_TR_black
+  {
+    class LinkedItems
+      {
+      class LinkedItemsOptic
+      {
+        item = "cup_optic_vortexrazor_uh1_black";
         slot = "CowsSlot";
       };
       class LinkedItemsAcc

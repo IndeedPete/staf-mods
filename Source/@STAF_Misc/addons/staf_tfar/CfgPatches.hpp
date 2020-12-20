@@ -17,7 +17,7 @@ class CfgPatches
 		weapons[] = {};
 		requiredVersion = 1.0;
 		requiredAddons[] = {
-			"A3_Supplies_F_Enoch_Bags",
+			"A3_Supplies_F_Enoch_Bags"
 		};
 		author = "STAF";
 		authorUrl = "http://stafclan.com/index.php/BoardList/";

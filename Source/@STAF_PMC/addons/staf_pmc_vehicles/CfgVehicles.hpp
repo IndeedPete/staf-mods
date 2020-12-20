@@ -35,6 +35,7 @@ class CfgVehicles {
     class rhsusf_M1232_M2_usarmy_d;
     class rhsusf_m1240a1_m2_usarmy_d;
     class RHSGREF_A29B_HIDF;
+    class O_APC_Tracked_02_cannon_F;
 
 
     //----------------------------------BLUFOR---------------------------------
@@ -403,8 +404,8 @@ class CfgVehicles {
         };
 
         class STAF_btr90 : CUP_BTR90_Base {
-            scope = 0;
-            scopeCurator = 0;
+            scope = 2;
+            scopeCurator = 2;
             side = 1;
             displayName = "BTR-90";
             faction = "STAF_PMC";
@@ -416,8 +417,36 @@ class CfgVehicles {
             hiddenSelections[] = {"Camo1","Camo2","clan"};
             selectionClan = "";
             hiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_btr90_body_co.paa","\staf_pmc_vehicles\txt\STAF_btr90_body2_co.paa"};
-
             typicalCargo[] = {"STAF_contractor_crew","STAF_contractor_crew","STAF_contractor_crew"};
+        };
+
+        class STAF_bm2t : O_APC_Tracked_02_cannon_F {
+            scope = 2;
+            scopeCurator = 2;
+            side = 1;
+            displayName = "BM-2T";
+            faction = "STAF_PMC";
+            crew = "STAF_contractor_crew";
+            editorPreview = "\staf_pmc_main\eden\STAF_bm2t.jpg";
+            editorSubcategory = "EdSubcat_APCs";
+            maximumLoad = 4500;
+        	
+            hiddenSelections[] = {"camo1","camo2","camo3","CamoNet","CamoSlat","clan"};
+            selectionClan = "";
+            hiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_apc_tracked_02_ext_01_aa_co.paa","\staf_pmc_vehicles\txt\STAF_apc_tracked_02_ext_02_co.paa","\staf_pmc_vehicles\txt\STAF_RCWS30_CO.paa"};
+            typicalCargo[] = {"STAF_contractor_crew","STAF_contractor_crew","STAF_contractor_crew"};
+
+            class TextureSources
+            {
+                class STAF
+                {
+                    displayName = "STAF";
+                    author = "STAF|Moony";
+                    textures[] = {"\staf_pmc_vehicles\txt\STAF_apc_tracked_02_ext_01_aa_co.paa","\staf_pmc_vehicles\txt\STAF_apc_tracked_02_ext_02_co.paa","\staf_pmc_vehicles\txt\STAF_RCWS30_CO.paa","A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa","A3\armor_f\data\cage_csat_co.paa"};
+                    factions[] = {"STAF_PMC"};
+                };
+            };
+            textureList[] = {"STAF",1};
         };
 
         class STAF_M1126_ICV_M2 : CUP_B_M1126_ICV_M2_Desert {
@@ -601,8 +630,8 @@ class CfgVehicles {
         class STAF_2B14 : CUP_O_2b14_82mm_RU {
 
             author = "STAF";
-            scope = 0;
-            scopeCurator = 0;
+            scope = 2;
+            scopeCurator = 2;
             displayName = "Podnos 2B14";
             side = 1;
             faction = "STAF_PMC";
@@ -762,14 +791,23 @@ class CfgVehicles {
             crew = "STAF_contractor_opf";
         };
 
-        /*class STAF_btr90_opf : STAF_btr90 {
+        class STAF_btr90_opf : STAF_btr90 {
             Side = 0;
             scope = 2;
             scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_crew_OPF";
             typicalCargo[] = {"STAF_contractor_crew_OPF","STAF_contractor_crew_OPF","STAF_contractor_crew_OPF"};
-        };*/
+        };
+
+        class STAF_bm2t_opf : STAF_bm2t {
+            Side = 0;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_crew_OPF";
+            typicalCargo[] = {"STAF_contractor_crew_OPF","STAF_contractor_crew_OPF","STAF_contractor_crew_OPF"};
+        };
 
         class STAF_M1126_ICV_M2_opf : STAF_M1126_ICV_M2 {
             Side = 0;
@@ -1034,14 +1072,23 @@ class CfgVehicles {
             crew = "STAF_contractor_ind";
         };
 
-        /*class STAF_btr90_ind : STAF_btr90 {
+        class STAF_btr90_ind : STAF_btr90 {
             Side = 2;
             scope = 2;
             scopeCurator = 2;
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_crew_IND";
             typicalCargo[] = {"STAF_contractor_crew_IND","STAF_contractor_crew_IND","STAF_contractor_crew_IND"};
-        };*/
+        };
+
+        class STAF_bm2t_ind : STAF_bm2t {
+            Side = 2;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_IND";
+            crew = "STAF_contractor_crew_IND";
+            typicalCargo[] = {"STAF_contractor_crew_IND","STAF_contractor_crew_IND","STAF_contractor_crew_IND"};
+        };
 
         class STAF_M1126_ICV_M2_ind : STAF_M1126_ICV_M2 {
             Side = 2;

@@ -172,6 +172,21 @@ class CfgFunctions
 				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
 			};
 		};
+		class Zenmodule_STAF_Misc_Environment
+		{
+			file = "\STAF_FRAMEWORK\fnc\zenmodule\STAF_Environment";
+
+			class enable_sandstorm_zeus{
+				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
+				recompile = 1; //1 to recompile the function upon mission start
+				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
+			};
+			class disable_sandstorm_zeus{
+				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
+				recompile = 1; //1 to recompile the function upon mission start
+				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
+			};
+		};
 		class Zenmodule_STAF_Misc_Equipment
 		{
 			file = "\STAF_FRAMEWORK\fnc\zenmodule\STAF_Equipment";
@@ -237,6 +252,18 @@ class CfgFunctions
 		};
 	};
 
+	class STAF_Scripts
+	{
+		class ROS_Sandstorm
+		{
+			file = "\STAF_FRAMEWORK\scr\ROS\scripts";
+			class ROS_Sandstorm_Scheduler{};
+			class ROShatblowsoff{};
+			class ROShurt{};
+			class ROSsandstorm{};
+			class ROSwindloop{};
+		};
+	};
 	class PLP
 	{
 		class animations

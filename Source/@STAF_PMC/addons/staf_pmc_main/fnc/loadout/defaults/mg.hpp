@@ -10,5 +10,11 @@ _mgArray = [
   "STAF_rifle_ng7_woodland",
   "STAF_rifle_ng7",
   "STAF_rifle_ng7_black",
-  "STAF_rifle_ng7_woodland"
+  "STAF_rifle_ng7_woodland",
+  "STAF_rifle_hk121_tan",
+  "STAF_rifle_hk121_blk",
+  "STAF_rifle_hk121_wld",
+  "STAF_rifle_hk121_tan",
+  "STAF_rifle_hk121_blk",
+  "STAF_rifle_hk121_wld"
 ];

@@ -20,6 +20,12 @@ _assaultrifleArray = [
   "STAF_rifle_scar_blk",
   "STAF_rifle_scar_tan",
   "STAF_rifle_scar_wld",
+  "STAF_rifle_scar17_blk",
+  "STAF_rifle_scar17_tan",
+  "STAF_rifle_scar17_wld",
+  "STAF_rifle_scar17_blk",
+  "STAF_rifle_scar17_tan",
+  "STAF_rifle_scar17_wld",
   "STAF_rifle_m4a1_blk",
   "STAF_rifle_m4a1_blk",
   "STAF_rifle_m4a1_mstock_blk",
@@ -28,5 +34,11 @@ _assaultrifleArray = [
   "STAF_rifle_m4a1_mstock_tan",
   "STAF_rifle_m4a1_wld",
   "STAF_rifle_m4a1_wld",
-  "STAF_rifle_m4a1_mstock_wld"
+  "STAF_rifle_m4a1_mstock_wld",
+  "STAF_rifle_famas_felin_blk",
+  "STAF_rifle_famas_g2_blk",
+  "STAF_rifle_famas_g2_hg_blk",
+  "STAF_rifle_famas_felin_blk",
+  "STAF_rifle_famas_g2_blk",
+  "STAF_rifle_famas_g2_hg_blk"
 ];
