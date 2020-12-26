@@ -50,6 +50,10 @@ _weapons = [
             "STAF_rifle_ng7_black",
             "STAF_rifle_ng7_woodland",
             "STAF_rifle_hk121_wld",
+            "SMG_03C_black",
+            "SMG_03C_TR_black",
+            "SMG_03_black",
+            "SMG_03_TR_black",
             //CUP
             "CUP_arifle_Mk16_CQC",
             "CUP_arifle_Mk16_CQC_black",
@@ -128,6 +132,7 @@ _weapons = [
             "rhs_weap_m249_pip_L",
             "rhs_weap_m249_pip_L_para",
             "rhs_weap_m249_pip",
+            "rhs_weap_M320",
             //HLC
             "hlc_smg_mp5a4",
             "hlc_rifle_G36MLIC",
@@ -164,8 +169,14 @@ _weapons = [
             "ACE_VMM3",
             //Other
             "MMG_01_black_F",
-            "bg21_famas_HG",
-            "bg21_famas2"
+            "R3F_Famas_felin",
+            "R3F_Famas_felin_DES",
+            "R3F_Famas_G2",
+            "R3F_Famas_G2_DES",
+            "R3F_Famas_G2_HG",
+            "R3F_Famas_G2_HG_DES",
+            "R3F_Famas_G2_M203",
+            "R3F_Famas_G2_M203_DES"
 ];
 
 _backpacks = [

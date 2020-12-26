@@ -1,0 +1,12 @@
+Box Classname:
+Internal Classname: STAF_box_launcher
+
+Content:
+STAF_launcher_smaw
+STAF_launcher_Igla
+STAF_launcher_m136_heat
+
+CUP_SMAW_HEAA_M
+CUP_SMAW_NE_M
+CUP_SMAW_HEDP_M
+CUP_SMAW_Spotting

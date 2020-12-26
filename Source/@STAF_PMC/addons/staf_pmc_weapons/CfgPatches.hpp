@@ -101,7 +101,8 @@ class CfgPatches {
         //"STAF_pistol_cz75_phantom",
   	    "STAF_launcher_smaw",
   	    "STAF_launcher_m136_heat",
-        "STAF_launcher_Igla"
+        "STAF_launcher_Igla",
+        "STAF_Launcher_M320"
       };
       requiredAddons[] = {"CSAT_Marksmen", "A3_Weapons_F_Mark_Machineguns_MMG_01"};
       requiredVersion = 1.62;

@@ -15,12 +15,12 @@ class CfgPatches
 			"STAF_B_RadioBag_01_wdl_F"
 		};
 		weapons[] = {};
-		requiredVersion = 1.0;
 		requiredAddons[] = {
 			"A3_Supplies_F_Enoch_Bags"
 		};
+		requiredVersion = 1.62;
 		author = "STAF";
-		authorUrl = "http://stafclan.com/index.php/BoardList/";
+		url = "http://www.stafclan.com";
 		version = 1.0;
 		versionStr = "1.0";
 		versionAr[] = {1,0};

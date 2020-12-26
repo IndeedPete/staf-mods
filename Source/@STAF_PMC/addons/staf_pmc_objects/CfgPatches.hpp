@@ -6,9 +6,13 @@ class CfgPatches {
       weapons[] = {
         "STAF_SuperBox_Orange",
         "STAF_SuperBox_Green",
-        "STAF_Ammobox_Ammo"
+        "STAF_Ammobox_Ammo",
+        "STAF_Ammobox_Other",
+        "STAF_Ammobox_Launcher",
+        "STAF_Ammobox_MG",
+        "STAF_Ammobox_Rifle"
       };
-      requiredAddons[] = {};
+      requiredAddons[] = {"plp_containers"};
       requiredVersion = 1.62;
       author = "STAF";
       url = "http://www.stafclan.com";

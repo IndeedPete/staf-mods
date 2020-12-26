@@ -1,0 +1,20 @@
+Box Classname:
+Internal Classname: STAF_box_essentials
+
+Content:
+
+ACE_VMM3
+
+ACE_wirecutter
+ToolKit
+ACE_SpraypaintGreen
+ACE_SpraypaintRed
+ACE_Flashlight_XL50
+ACE_Clacker
+ACE_HuntIR_monitor
+ItemAndroid
+ACE_Fortify
+ACE_EntrenchingTool
+ACE_EarPlugs
+ACE_DefusalKit
+ACE_CableTie

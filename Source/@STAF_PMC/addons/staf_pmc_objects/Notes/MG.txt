@@ -1,0 +1,12 @@
+Box Classname:
+Internal Classname: STAF_box_mg
+
+Content:
+STAF_rifle_m249_pip_ris
+STAF_rifle_ng7_black
+STAF_rifle_hk121_blk
+
+rhsusf_200Rnd_556x45_box
+150Rnd_762x54_Box
+150Rnd_93x64_Mag
+75rnd_762x39_AK12_Mag_F

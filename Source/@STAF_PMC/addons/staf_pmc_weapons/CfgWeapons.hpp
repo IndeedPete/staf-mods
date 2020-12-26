@@ -92,6 +92,7 @@ class CfgWeapons {
   class SMG_03C_TR_black;
   class SMG_03_black;
   class SMG_03_TR_black;
+  class rhs_weap_M320;
 
   // Rifles
   class STAF_rifle_G36MLIC: hlc_rifle_G36MLIC
@@ -1670,6 +1671,14 @@ class CfgWeapons {
     magazines[] =
     {
       "CUP_Igla_M"
+    };
+  };
+
+  class STAF_Launcher_M320: rhs_weap_M320
+  {
+    magazines[] =
+    {
+      "1Rnd_HE_Grenade_shell"
     };
   };
 };

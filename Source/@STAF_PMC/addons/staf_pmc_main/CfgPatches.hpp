@@ -1,5 +1,7 @@
-class CfgPatches {
-    class STAF_pmc_main {
+class CfgPatches 
+{
+    class STAF_pmc_main 
+    {
       units[] = {
   			"STAF_Module_PMC_Arsenal_F",
   			"STAF_Module_PMC_Vehicle_Equipment_F"

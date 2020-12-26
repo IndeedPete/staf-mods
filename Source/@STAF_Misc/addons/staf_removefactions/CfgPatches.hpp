@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class STAF_TFAR
+	class STAF_RemoveFactions
 	{
 		units[] = {};
 		weapons[] = {};
@@ -34,15 +34,7 @@ class CfgPatches
 			"VSM_OGA_Config",
 			"VSM_ProjectHonor_Config",
 			"VSM_Scorpion_Config",
-			"FEMAL3_Uniforms_v2",
-			"FEMAL3_Uniforms_Dusty_extras",
-			"FEMAL3_rolled_Dusty_extras",
-			"FEMALE_FEMALE_SOTG",
-			"FEMALE_jeanshoodie",
-			"female_jeans_shortsleeve_shortsleeve",
-			"FEMALE_jeans",
-			"FEMALE_reb",
-			"FEMALE_boss"
+			"fsog3"
 		};
 		author = "STAF";
 		authorUrl = "http://stafclan.com/index.php/BoardList/";
