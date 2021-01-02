@@ -12,7 +12,7 @@ class CfgPatches {
         "STAF_Ammobox_MG",
         "STAF_Ammobox_Rifle"
       };
-      requiredAddons[] = {"plp_containers"};
+      requiredAddons[] = {"STAF_pmc_main","plp_containers"};
       requiredVersion = 1.62;
       author = "STAF";
       url = "http://www.stafclan.com";

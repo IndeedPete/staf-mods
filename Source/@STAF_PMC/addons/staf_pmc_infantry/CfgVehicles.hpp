@@ -216,7 +216,7 @@ class CfgVehicles {
             side = 1;
             faction = "STAF_PMC";
             editorPreview = "\staf_pmc_main\eden\STAF_boss.jpg";
-            editorSubcategory = "EdSubcat_vip";
+            editorSubcategory = "EdSubcat_STAF_vip";
             genericNames = "STAF_VIPNames";
 
             identityTypes[] = { "TanoanHead_A3_08" , "Male02ENGFRE" };
@@ -240,7 +240,7 @@ class CfgVehicles {
             side = 1;
             faction = "STAF_PMC";
             editorPreview = "\staf_pmc_main\eden\STAF_client_american.jpg";
-            editorSubcategory = "EdSubcat_client";
+            editorSubcategory = "EdSubcat_STAF_client";
 
             identityTypes[] = { "NoGlasses" , "LanguageENG_F" ,"Head_NATO"};
             uniformClass = "tacs_Suit_VIP";
@@ -263,7 +263,7 @@ class CfgVehicles {
             side = 1;
             faction = "STAF_PMC";
             editorPreview = "\staf_pmc_main\eden\STAF_client_british.jpg";
-            editorSubcategory = "EdSubcat_client";
+            editorSubcategory = "EdSubcat_STAF_client";
 
             identityTypes[] = {"NoGlasses", "Head_Euro" , "LanguageENGB_F" };
             uniformClass = "tacs_Suit_VIP";
@@ -286,7 +286,7 @@ class CfgVehicles {
             side = 1;
             faction = "STAF_PMC";
             editorPreview = "\staf_pmc_main\eden\STAF_client_chinese.jpg";
-            editorSubcategory = "EdSubcat_client";
+            editorSubcategory = "EdSubcat_STAF_client";
 
             identityTypes[] = { "Head_Asian" , "LanguageCHI_F" };
             uniformClass = "CUP_U_C_Suit_01";
@@ -309,7 +309,7 @@ class CfgVehicles {
             side = 1;
             faction = "STAF_PMC";
             editorPreview = "\staf_pmc_main\eden\STAF_client_african.jpg";
-            editorSubcategory = "EdSubcat_client";
+            editorSubcategory = "EdSubcat_STAF_client";
 
             identityTypes[] = {"NoGlasses", "Head_African" , "LanguageENGFRE_F" };
             uniformClass = "CUP_U_C_Suit_01";
@@ -332,7 +332,7 @@ class CfgVehicles {
             side = 1;
             faction = "STAF_PMC";
             editorPreview = "\staf_pmc_main\eden\STAF_client_greek.jpg";
-            editorSubcategory = "EdSubcat_client";
+            editorSubcategory = "EdSubcat_STAF_client";
 
             identityTypes[] = {"NoGlasses", "Head_Greek" , "LanguageGRE_F" };
             uniformClass = "STAF_Marshal";
@@ -355,7 +355,7 @@ class CfgVehicles {
             side = 1;
             faction = "STAF_PMC";
             editorPreview = "\staf_pmc_main\eden\STAF_client_scientist.jpg";
-            editorSubcategory = "EdSubcat_client";
+            editorSubcategory = "EdSubcat_STAF_client";
 
             identityTypes[] = {"NoGlasses", "Head_Euro" , "LanguageENGB_F" };
             uniformClass = "STAF_Scientist";
@@ -377,7 +377,7 @@ class CfgVehicles {
             side = 1;
             faction = "STAF_PMC";
             editorPreview = "\staf_pmc_main\eden\STAF_client_un.jpg";
-            editorSubcategory = "EdSubcat_client";
+            editorSubcategory = "EdSubcat_STAF_client";
 
             identityTypes[] = {"NoGlasses", "Head_Euro" , "LanguageENGFRE_F" };
             uniformClass = "M81_Camo_crye";

@@ -34,7 +34,8 @@ class CfgPatches {
         "STAF_B_FieldPack_white_mcam",
         "STAF_B_FieldPack_white_splinter",
         "STAF_B_FieldPack_white",
-        "STAF_B_RepairBag"
+        "STAF_B_RepairBag",
+        "STAF_B_RepairBag_field"
       };
       weapons[] = {};
       requiredAddons[] = {"A3_Weapons_F"};

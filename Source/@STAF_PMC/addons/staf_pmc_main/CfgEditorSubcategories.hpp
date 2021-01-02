@@ -1,11 +1,17 @@
 class CfgEditorSubcategories
 {
-	class EdSubcat_client // Category class, you point to it in editorSubcategory property
+	class EdSubcat_STAF_client
 	{
-		displayName = "Men (Client)"; // Name visible in the list
+		displayName = "Men (Client)";
 	};
-  class EdSubcat_vip // Category class, you point to it in editorSubcategory property
-  {
-    displayName = "Men (VIP)"; // Name visible in the list
-  };
+
+	class EdSubcat_STAF_vip
+	{
+		displayName = "Men (VIP)";
+	};
+
+	class EdSubcat_STAF_Supplies
+	{
+		displayName = "STAF"
+	};
 };

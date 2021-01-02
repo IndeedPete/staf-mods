@@ -7,3 +7,4 @@
 #include "CfgWorlds.hpp"
 #include "CfgEditorSubcategories.hpp"
 #include "CfgVehicles.hpp"
+#include "RscDefines.hpp"

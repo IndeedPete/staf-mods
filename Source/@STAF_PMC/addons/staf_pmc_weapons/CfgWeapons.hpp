@@ -55,6 +55,8 @@ class CfgWeapons {
   class srifle_DMR_03_woodland_F; //Vanilla SIG DMR Woodland
   class hlc_rifle_awmagnum_BL; //HLC AWM
   class CUP_launch_Mk153Mod0; //CUP SMAW
+  class CUP_launch_M136; //CUP M136 HEAT
+  class CUP_launch_Igla; //CUP IGLA
   class CUP_launch_M136_Loaded; //CUP M136 HEAT
   class CUP_launch_Igla_Loaded; //CUP IGLA
   class CUP_hgun_Glock17; //CUP GLock Green
@@ -1658,7 +1660,7 @@ class CfgWeapons {
     };
   };
 
-  class STAF_launcher_m136_heat: CUP_launch_M136_Loaded
+  class STAF_launcher_m136_heat: CUP_launch_M136
   {
     magazines[] =
     {
@@ -1666,7 +1668,7 @@ class CfgWeapons {
     };
   };
 
-  class STAF_launcher_Igla: CUP_launch_Igla_Loaded
+  class STAF_launcher_Igla: CUP_launch_Igla
   {
     magazines[] =
     {

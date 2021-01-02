@@ -15,6 +15,8 @@ class CfgVehicles {
 	{
 		displayName = "Super Box (Orange)";
 		maximumLoad = 999999999999;
+		editorCategory = "EdCat_Supplies";
+		editorSubcategory = "EdSubcat_STAF_Supplies";
 
 		class TransportWeapons {};
 		class TransportMagazines {};
@@ -25,6 +27,8 @@ class CfgVehicles {
 	{
 		displayName = "Super Box (Green)";
 		maximumLoad = 999999999999;
+		editorCategory = "EdCat_Supplies";
+		editorSubcategory = "EdSubcat_STAF_Supplies";
 
 		class TransportWeapons {};
 		class TransportMagazines {};
@@ -35,7 +39,9 @@ class CfgVehicles {
 	class STAF_Ammobox_Rifle: plp_ct_MilBoxBigBlack
 	{
 		displayName = "Rifle Box (STAF)";
-		maximumLoad = 2500;
+		maximumLoad = 3500;
+		editorCategory = "EdCat_Supplies";
+		editorSubcategory = "EdSubcat_STAF_Supplies";
 
 		class TransportWeapons
 		{
@@ -66,12 +72,16 @@ class CfgVehicles {
 			mag_xx(1Rnd_Smoke_Grenade_shell,5);
 			mag_xx(ACE_HuntIR_M203,2);
 		};
+		class TransportItems {};
+		class TransportBackpacks {};
 	};
 
 	class STAF_Ammobox_MG: plp_ct_MilBoxBigBlack
 	{
 		displayName = "MG Box (STAF)";
-		maximumLoad = 2500;
+		maximumLoad = 3500;
+		editorCategory = "EdCat_Supplies";
+		editorSubcategory = "EdSubcat_STAF_Supplies";
 
 		class TransportWeapons
 		{
@@ -88,12 +98,16 @@ class CfgVehicles {
 			mag_xx(75rnd_762x39_AK12_Mag_F,12);
 			mag_xx(ACE_SpareBarrel,3);
 		};
+		class TransportItems {};
+		class TransportBackpacks {};
 	};
 
 	class STAF_Ammobox_Launcher: plp_ct_MilBoxBigBlack
 	{
 		displayName = "Launcher Box (STAF)";
-		maximumLoad = 2500;
+		maximumLoad = 3500;
+		editorCategory = "EdCat_Supplies";
+		editorSubcategory = "EdSubcat_STAF_Supplies";
 
 		class TransportWeapons
 		{
@@ -109,12 +123,16 @@ class CfgVehicles {
 			mag_xx(CUP_SMAW_HEDP_M,4);
 			mag_xx(CUP_SMAW_Spotting,6);
 		};
+		class TransportItems {};
+		class TransportBackpacks {};
 	};
 
 	class STAF_Ammobox_Other: plp_ct_MilBoxMediumBlack
 	{
 		displayName = "Essential Box (STAF)";
 		maximumLoad = 750;
+		editorCategory = "EdCat_Supplies";
+		editorSubcategory = "EdSubcat_STAF_Supplies";
 
 		class TransportWeapons
 		{
@@ -137,12 +155,16 @@ class CfgVehicles {
 			item_xx(ToolKit,1);
 			item_xx(ACE_wirecutter,1);
 		};
+		class TransportBackpacks {};
+		class TransportMagazines {};
 	};
 
 	class STAF_Ammobox_Ammo: C_IDAP_supplyCrate_F
 	{
 		displayName = "Ammo Box (STAF)";
-		maximumLoad = 3000;
+		maximumLoad = 5000;
+		editorCategory = "EdCat_Supplies";
+		editorSubcategory = "EdSubcat_STAF_Supplies";
 
 		class TransportMagazines
 		{
@@ -198,5 +220,8 @@ class CfgVehicles {
 			mag_xx(DemoCharge_Remote_Mag,4);
 			mag_xx(SatchelCharge_Remote_Mag,2);
 		};
+		class TransportItems {};
+		class TransportBackpacks {};
+		class TransportWeapons {};
 	};
 };

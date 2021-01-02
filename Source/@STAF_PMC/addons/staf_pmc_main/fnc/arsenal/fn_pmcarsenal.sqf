@@ -23,6 +23,7 @@ if (isServer) then {
 
 //Itemlists
 
+
 _weapons = [
             "Binocular",
             "srifle_DMR_06_camo_F",
@@ -327,6 +328,7 @@ _backpacks = [
             "STAF_B_Bergen_inv",
             "STAF_B_Kitbag_blk",
             "STAF_B_RepairBag",
+            "STAF_B_RepairBag_field",
             //CUP
             "CUP_B_GER_Pack_Flecktarn",
             "CUP_B_GER_Pack_Tropentarn",
