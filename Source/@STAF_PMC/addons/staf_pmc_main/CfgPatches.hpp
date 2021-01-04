@@ -39,7 +39,9 @@ class CfgPatches
         "VSM_ProjectHonor_Config",
         "VSM_Scorpion_Config",
         "fsog3",
-        "STAF_pmc_backpacks"
+        "STAF_pmc_backpacks",
+        "A3_ui_f",
+        "A3_ui_f_oldman"
       };
       requiredVersion = 1.62;
       author = "STAF";

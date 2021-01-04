@@ -2134,6 +2134,7 @@ _othermagazines = [
             "SmokeShell",
             "ACE_M84",
             "MiniGrenade",
+            "ACE_CTS9",
 
             //Underbarrel
             "1Rnd_HE_Grenade_shell",
