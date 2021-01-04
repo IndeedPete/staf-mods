@@ -46,4 +46,7 @@ _objs addMagazineCargoGlobal ["SmokeShell",5]; //Grenade White
 _objs addMagazineCargoGlobal ["ACE_SpareBarrel",2]; //SpareBarrel
 _objs addMagazineCargoGlobal ["CUP_SMAW_HEAA_M",2]; //SMAW Missile
 
-//_objs addBackpackCargoGlobal ["STAF_B_RepairBag",1]; //Mechanic Bagback
+_objs addBackpackCargoGlobal ["B_AssaultPack_blk",1]; //Mechanic Bagback
+{
+	_x addItemCargoGlobal ["ToolKit", 1];
+} forEach (everyBackpack _objs);
