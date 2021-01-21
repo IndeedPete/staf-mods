@@ -43,7 +43,7 @@ _objs addMagazineCargoGlobal ["HandGrenade",5]; //Grenade
 _objs addMagazineCargoGlobal ["SmokeShell",5]; //Grenade White
 _objs addMagazineCargoGlobal ["ACE_SpareBarrel",1]; //SpareBarrel
 
-_objs addBackpackCargoGlobal ["B_AssaultPack_blk",1]; //Mechanic Bagback
+/*_objs addBackpackCargoGlobal ["B_AssaultPack_blk",1]; //Mechanic Bagback
 {
 	_x addItemCargoGlobal ["ToolKit", 1];
-} forEach (everyBackpack _objs);
+} forEach (everyBackpack _objs);*/

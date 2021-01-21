@@ -1,0 +1,22 @@
+_divinggogglesArray = [
+  "G_B_Diving",
+  "G_B_Diving",
+  "G_B_Diving",
+  "G_B_Diving",
+  "G_B_Diving",
+  "G_B_Diving",
+  "G_B_Diving",
+  "G_B_Diving",
+  "G_O_Diving",
+  "G_O_Diving",
+  "G_O_Diving",
+  "G_O_Diving",
+  "G_O_Diving",
+  "G_I_Diving",
+  "G_I_Diving",
+  "G_I_Diving",
+  "G_I_Diving",
+  "G_I_Diving",
+  "G_I_Diving",
+  "G_I_Diving"
+];

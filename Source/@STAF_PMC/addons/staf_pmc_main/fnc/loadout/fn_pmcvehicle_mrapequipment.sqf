@@ -47,7 +47,7 @@ _objs addMagazineCargoGlobal ["CUP_SMAW_HEAA_M",2]; //SMAW Missile
 
 _objs addWeaponCargoGlobal ["CUP_launch_M136",2]; //M136 Launcher
 
-_objs addBackpackCargoGlobal ["B_AssaultPack_blk",1]; //Mechanic Bagback
+/*_objs addBackpackCargoGlobal ["B_AssaultPack_blk",1]; //Mechanic Bagback
 {
 	_x addItemCargoGlobal ["ToolKit", 1];
-} forEach (everyBackpack _objs);
+} forEach (everyBackpack _objs);*/

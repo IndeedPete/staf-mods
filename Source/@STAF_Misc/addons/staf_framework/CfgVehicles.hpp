@@ -506,4 +506,50 @@ class CfgVehicles
 			};
 		};
 	};
+
+	class STAF_Module_AI_Stationary_F: Module_F
+	{
+		category = "STAF";
+		displayName = "Turn AI Stationary";
+		function = "STAF_fnc_stationary_ai_init";
+		functionPriority = 10;
+		isDisposable = 0;
+		is3DEN = 0;
+		isGlobal = 0;
+		isTriggerActivated = 0;
+		scope = 2;
+
+		class Attributes: AttributesBase
+		{
+			class STAF_Module_AI_Stationary: Combo
+  			{
+					property = "STAF_Module_AI_Stationary_Combo";
+					displayName = "Single AI or Group?";
+					typeName = "STRING";
+					defaultValue = "0";
+					class Values
+					{
+						class group {name = "Group"; value = group;};
+						class single {name = "Single AI"; value = single;};
+					};
+			};
+			class ModuleDescription: ModuleDescription{};
+		};
+
+		class ModuleDescription: ModuleDescription
+		{
+			description = "Turns AI Stationary";
+			sync[] = {"LocationArea_F"};
+
+			class LocationArea_F
+			{
+				description[] =	{"Synchronise any object to this module."};
+				position = 0;
+				direction = 0;
+				optional = 0;
+				duplicate = 0;
+				synced[] = {"AnyStaticObject", "AnyVehicle"};
+			};
+		};
+	};
 };

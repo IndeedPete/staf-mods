@@ -34,7 +34,7 @@ if (!isServer) exitWith {};
 		{
 			[_x] remoteexec ["STAF_fnc_stationary_ai_stationary", _x];
 		} forEach units group _objectUnderCursor;
-		[objNull, "AI IS STATIONARY"] call BIS_fnc_showCuratorFeedbackMessage;
+		[objNull, "GROUP IS STATIONARY"] call BIS_fnc_showCuratorFeedbackMessage;
 	};
 }] remoteexeccall ["zen_custom_modules_fnc_register", 0, true];
 

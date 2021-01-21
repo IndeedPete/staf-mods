@@ -15,8 +15,6 @@ class CfgVehicles {
     class CUP_B_Mastiff_HMG_GB_W;
     class CUP_B_Mastiff_HMG_GB_D;
     class CUP_B_UH60M_US;
-    class burnes_husky_W;
-    class burnes_husky;
     class B_LSV_01_unarmed_F;
     class CUP_I_SUV_ION;
     class CUP_BTR90_Base;
@@ -36,6 +34,7 @@ class CfgVehicles {
     class rhsusf_m1240a1_m2_usarmy_d;
     class RHSGREF_A29B_HIDF;
     class O_APC_Tracked_02_cannon_F;
+    class I_C_Boat_Transport_02_F;
 
 
     //----------------------------------BLUFOR---------------------------------
@@ -155,7 +154,26 @@ class CfgVehicles {
             hiddenSelections[] = {"camo1","clan"};
             selectionClan = "";
             maximumLoad = 160;
+            Maxspeed = 100;
         };
+
+        /*class STAF_rhib : I_C_Boat_Transport_02_F {
+
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "RHIB";
+            side = 1;
+            faction = "STAF_PMC";
+            crew = "STAF_contractor";
+            //editorPreview = "\staf_pmc_main\eden\STAF_rhib.jpg";
+
+            hiddenSelections[] = {"Camo_1","Camo_2","clan"};
+            hiddenSelectionsTextures[] = {"\A3\Boat_F_Exp\Boat_Transport_02\Data\Boat_Transport_02_exterior_CO.paa","\A3\Boat_F_Exp\Boat_Transport_02\Data\Boat_Transport_02_interior_2_CO.paa"};
+            selectionClan = "";
+            maximumLoad = 160;
+            Maxspeed = 100;
+        };*/
 
       //----------------------------------Ground----------------------------------
 
@@ -397,7 +415,7 @@ class CfgVehicles {
             crew = "STAF_contractor";
             editorPreview = "\staf_pmc_main\eden\STAF_lsv.jpg";
             hiddenSelections[] = {"Camo_1","Camo_2","Camo_3","Camo_4","clan"};
-            hiddenSelectionsTextures[] = {"\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_01_black_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_02_black_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_black_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_black_CO.paa"};
+		    hiddenSelectionsTextures[] = {"\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_01_black_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_02_black_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_black_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_black_CO.paa"};
             selectionClan = "";
             textureList[] = {"Black",1,"Olive",0,"Sand",0};
             maximumLoad = 1500;
@@ -693,6 +711,14 @@ class CfgVehicles {
             crew = "STAF_contractor_opf";
         };
 
+        /*class STAF_rhib_opf : STAF_rhib {
+            Side = 0;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_opf";
+        };*/
+
       //----------------------------------Ground----------------------------------
 
         class STAF_truck_transport_opf : STAF_truck_transport {
@@ -973,6 +999,14 @@ class CfgVehicles {
             faction = "STAF_PMC_IND";
             crew = "STAF_contractor_ind";
         };
+
+        /*class STAF_rhib_ind : STAF_rhib {
+            Side = 0;
+            scope = 2;
+            scopeCurator = 2;
+            faction = "STAF_PMC_OPF";
+            crew = "STAF_contractor_opf";
+        };*/
 
       //----------------------------------Ground----------------------------------
 

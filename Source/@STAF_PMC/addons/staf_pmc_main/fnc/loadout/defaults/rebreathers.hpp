@@ -1,5 +1,25 @@
 _rebreatherArray = [
+  "V_RebreatherB",
+  "V_RebreatherB",
+  "V_RebreatherB",
+  "V_RebreatherB",
+  "V_RebreatherB",
+  "V_RebreatherB",
+  "V_RebreatherB",
+  "V_RebreatherB",
+  "V_RebreatherB",
+  "V_RebreatherB",
+  "V_RebreatherB",
+  "V_RebreatherIA",
+  "V_RebreatherIA",
+  "V_RebreatherIA",
+  "V_RebreatherIA",
+  "V_RebreatherIA",
+  "V_RebreatherIA",
+  "V_RebreatherIA",
   "V_RebreatherIA",
   "V_RebreatherIR",
-  "V_RebreatherIB"
+  "V_RebreatherIR",
+  "V_RebreatherIR",
+  "V_RebreatherIR"
 ];

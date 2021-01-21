@@ -2,6 +2,13 @@ class CfgFunctions
 {
 	class STAF
 	{
+		class Ai
+		{
+			file = "\STAF_FRAMEWORK\fnc\ai";
+			class stationary_ai_stationary{};
+			class stationary_ai_moving{};
+			class stationary_ai_init{};
+		};
 		class Ambient
 		{
 			file = "\STAF_FRAMEWORK\fnc\ambient";
@@ -29,6 +36,11 @@ class CfgFunctions
 		{
 			file = "\STAF_FRAMEWORK\fnc\debug";
 			class track{};
+		};
+		class Environment
+		{
+			file = "\STAF_FRAMEWORK\fnc\Environment";
+			class winter_effects_breath{};
 		};
 		class Diary
 		{
@@ -164,8 +176,6 @@ class CfgFunctions
 				recompile = 1; //1 to recompile the function upon mission start
 				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
 			};
-			class stationary_ai_stationary{};
-			class stationary_ai_moving{};
 			class stationary_group_zeus{
 				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
 				recompile = 1; //1 to recompile the function upon mission start
@@ -186,6 +196,11 @@ class CfgFunctions
 				recompile = 1; //1 to recompile the function upon mission start
 				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
 			};
+			/*class winter_effects_zeus{
+				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
+				recompile = 1; //1 to recompile the function upon mission start
+				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
+			};*/
 		};
 		class Zenmodule_STAF_Misc_Equipment
 		{
@@ -262,6 +277,12 @@ class CfgFunctions
 			class ROShurt{};
 			class ROSsandstorm{};
 			class ROSwindloop{};
+		};
+
+		class GF_Breath
+		{
+			file = "\STAF_FRAMEWORK\scr\GF_Breath";
+			class gf_breath{};
 		};
 	};
 	class PLP
