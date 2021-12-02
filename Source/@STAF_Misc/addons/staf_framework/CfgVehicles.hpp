@@ -468,7 +468,7 @@ class CfgVehicles
 				direction = 0;
 				optional = 0;
 				duplicate = 0;
-				synced[] = {"AnyVehicle","AnyPerson","AnyAI"};
+				synced[] = {"AnyVehicle','AnyPerson','AnyAI"};
 			};
 		};
 	};
@@ -549,6 +549,88 @@ class CfgVehicles
 				optional = 0;
 				duplicate = 0;
 				synced[] = {"AnyStaticObject", "AnyVehicle"};
+			};
+		};
+	};
+
+	// ACE Self Interactions
+
+	class Man;
+	class CAManBase: Man {
+		class ACE_SelfActions {
+			class ACE_Equipment {
+				class STAF_UpTurban {
+					displayName = "Pull up Turban";
+					condition = "(headgear _player) in ['lxWS_H_turban_02_black','lxWS_H_turban_02_blue','lxWS_H_turban_02_green','lxWS_H_turban_02_green_pattern','lxWS_H_turban_02_orange','lxWS_H_turban_02_red','lxWS_H_turban_02_sand','lxWS_H_turban_02_gray','lxWS_H_turban_02_yellow']";
+					exceptions[] = {};
+					statement = "_player call STAF_fnc_turbanUp";
+					icon = "";
+				};
+
+				class STAF_DownTurban {
+					displayName = "Pull down Turban";
+					condition = "(headgear _player) in ['lxWS_H_turban_03_black','lxWS_H_turban_03_blue','lxWS_H_turban_03_green','lxWS_H_turban_03_green_pattern','lxWS_H_turban_03_orange','lxWS_H_turban_03_red','lxWS_H_turban_03_sand','lxWS_H_turban_03_gray','lxWS_H_turban_03_yellow']";
+					exceptions[] = {};
+					statement = "_player call STAF_fnc_turbanDown";
+					icon = "";
+				};
+			};
+
+			class STAF_Zeus {
+				displayName = "Zeus";
+				condition = "";
+				exceptions[] = {};
+				statement = "";
+				icon = "\a3\ui_f_curator\Data\Logos\arma3_zeus_icon_ca.paa";
+				showDisabled = 0;
+
+				class STAF_ZeusPromotion {
+					displayName = "Become Zeus";
+					condition = "(!(_player getVariable ['STAF_var_ZeusAction', false])) and ((_player getVariable ['STAF_var_ZeusActionEligible', false]) or (serverCommandAvailable '#logout'))";
+					exceptions[] = {};
+					statement = "_player call STAF_fnc_zeusactionpromotion";
+					icon = "\a3\ui_f_curator\Data\Logos\arma3_zeus_icon_ca.paa";
+					showDisabled = 0;
+				};
+				class STAF_ZeusDemotion {
+					displayName = "Step down as Zeus";
+					condition = "_player getVariable ['STAF_var_ZeusAction', false]";
+					exceptions[] = {};
+					statement = "_player call STAF_fnc_zeusactiondemotion";
+					icon = "\a3\ui_f_curator\Data\Logos\arma3_zeus_icon_ca.paa";
+					showDisabled = 0;
+				};
+			};
+		};
+
+		
+
+		class ACE_Actions {
+			class ACE_MainActions {
+				class STAF_HideBody {
+					displayName = "Hide Body";
+					condition = "(!(Alive _target))";
+					exceptions[] = {};
+					statement = "[_player, _target] call STAF_fnc_hidebodyaction";
+					icon = "\a3\ui_f_curator\Data\Logos\arma3_zeus_icon_ca.paa";				
+				};
+			};
+
+			class ACE_Head {
+				class STAF_KnockOut {
+					displayName = "Knock Out";
+					condition = "(_player distance _target < 2.5) AND (Alive _target) AND !(_target getVariable ['ACE_isUnconscious', false]) AND (vehicle _target == _target)";
+					exceptions[] = {};
+					statement = "[_player, _target] call STAF_fnc_ace_knockout";
+					icon = "\staf_framework\img\knockout.paa";
+				};
+				class STAF_Silentkill {
+					displayName = "Break Neck";
+					condition = "(stance _player == 'CROUCH') AND (_target getVariable ['ACE_isUnconscious', false]) AND (Alive _target) AND (vehicle _target == _target)";
+					exceptions[] = {};
+					statement = "[_player, _target] call STAF_fnc_ace_silentkill";
+					icon = "\staf_framework\img\knockout.paa";
+				};
 			};
 		};
 	};

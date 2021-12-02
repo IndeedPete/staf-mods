@@ -6,10 +6,10 @@ class Extended_Respawn_EventHandlers {
   };
 };
 
-class Extended_Init_EventHandlers {
-  class CAManBase {
-    class STAF_CAManBase_Zeus_init_eh {
-      Init = "_this call STAF_fnc_zeusactioninit;";
-    };
-  };
+class Extended_PreInit_EventHandlers {
+    STAF_PreInit = call compile preprocessFileLineNumbers "\staf_framework\XEH_preInit.sqf";
+};
+
+class Extended_PostInit_EventHandlers {
+    STAF_postInit = call compile preprocessFileLineNumbers "\staf_framework\XEH_postInit.sqf";
 };

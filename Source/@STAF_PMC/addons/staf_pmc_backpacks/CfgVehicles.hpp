@@ -15,6 +15,36 @@ class CfgVehicles
 	class B_AssaultPack_rgr;
 	class B_AssaultPack_blk;
 	class B_FieldPack_blk;
+	class B_Messenger_Black_F;
+	class B_Messenger_Coyote_F;
+	class B_Messenger_Gray_F;
+	class B_Messenger_Olive_F;
+
+	// Messenger Bags (Bigger)
+
+	class STAF_B_Messenger_Black_F: B_Messenger_Black_F
+	{
+		maximumLoad = 200;
+		mass = 20;
+	};
+
+	class STAF_B_Messenger_Coyote_F: B_Messenger_Coyote_F
+	{
+		maximumLoad = 200;
+		mass = 20;
+	};
+	
+	class STAF_B_Messenger_Gray_F: B_Messenger_Gray_F
+	{
+		maximumLoad = 200;
+		mass = 20;
+	};
+	
+	class STAF_B_Messenger_Olive_F: B_Messenger_Olive_F
+	{
+		maximumLoad = 200;
+		mass = 20;
+	};
 
 	// Assault Pack
 

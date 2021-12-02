@@ -72,6 +72,14 @@ class CfgMainMenuSpotlight {
     class SP_FD14 {
 		condition = "false";
 	};
+
+    class AoW_Showcase_AoW {
+		condition = "false";
+	};
+
+    class AoW_Showcase_Future {
+		condition = "false";
+	};
 };
 
 

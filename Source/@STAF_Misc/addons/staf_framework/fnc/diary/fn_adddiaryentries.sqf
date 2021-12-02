@@ -31,7 +31,7 @@
 <t font='Zeppelin33'>Gambit</t><br />
 <br />
 <t align='center' font='Zeppelin33' size='2'>------------Air------------</t><br />
-<t underline='true'>Transport</t> <t font='Zeppelin33'>Prodigy</t><br />
+<t underline='true'>Transport</t> <t font='Zeppelin33'>Valkyrie</t><br />
 <t underline='true'>Attack</t> <t font='Zeppelin33'>Phoenix</t><br />
 <br />------------------------------------------------<br />"]]] remoteExec ["createDiaryRecord", 0, true];
 

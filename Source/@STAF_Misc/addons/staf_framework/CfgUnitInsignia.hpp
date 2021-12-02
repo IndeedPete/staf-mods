@@ -14,11 +14,25 @@ class CfgUnitInsignia
 		texture = "\staf_framework\img\archangel.paa";
 		textureVehicle = "";
 	};
-	class STAF_what_is_life
+	class STAF_steve
 	{
-		displayName = "What is Life?";
+		displayName = "Steve";
 		author = "STAF|Liffy";
-		texture = "\staf_framework\img\whatislife.paa";
+		texture = "\staf_framework\img\steve.paa";
+		textureVehicle = "";
+	};
+	class STAF_steve_detective
+	{
+		displayName = "Steve (Detective)";
+		author = "STAF|Liffy";
+		texture = "\staf_framework\img\steve_detective.paa";
+		textureVehicle = "";
+	};
+	class STAF_steve_christmas
+	{
+		displayName = "Steve (Christmas)";
+		author = "STAF|Liffy";
+		texture = "\staf_framework\img\steve_christmas.paa";
 		textureVehicle = "";
 	};
 	class STAF_capybara
@@ -26,6 +40,13 @@ class CfgUnitInsignia
 		displayName = "Capybara";
 		author = "STAF|Liffy";
 		texture = "\staf_framework\img\capybara.paa";
+		textureVehicle = "";
+	};
+	class STAF_donaldduck
+	{
+		displayName = "Donald Duck";
+		author = "STAF|Moony";
+		texture = "\staf_framework\img\donaldduck.paa";
 		textureVehicle = "";
 	};
 	class STAF_kmn

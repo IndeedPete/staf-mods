@@ -3,7 +3,7 @@ class Extended_Init_EventHandlers {
   // Heli Small: _this call STAF_PMC_fnc_fn_pmcvehicle_helismallequipment;
   class STAF_md500 {
     class STAF_MD500_init_eh {
-        init = "[(_this select 0), nil, [""hideBench"",0,""hideFries"",0,""hideFLIR"",1,""hideUSARMY"",1,""hideRACS"",1]] call BIS_fnc_initVehicle; _this call STAF_PMC_fnc_fn_pmcvehicle_helismallequipment;";
+        init = "[(_this select 0), nil, [""hideBench"",0,""hideFries"",0,""hideFLIR"",0,""hideUSARMY"",1,""hideRACS"",1]] call BIS_fnc_initVehicle; _this call STAF_PMC_fnc_fn_pmcvehicle_helismallequipment;";
     };
   };
   class STAF_uh60m {
@@ -20,7 +20,7 @@ class Extended_Init_EventHandlers {
   // Attack Heli: _this call STAF_PMC_fnc_pmcvehicle_attackhelisequipment;
   class STAF_md500_defender {
     class STAF_MD500_defender_init_eh {
-        init = "[(_this select 0), nil, [""hideBench"",0,""hideFries"",1,""hideFLIR"",1,""hideUSARMY"",1,""hideRACS"",1]] call BIS_fnc_initVehicle; _this call STAF_PMC_fnc_pmcvehicle_attackhelisequipment;";
+        init = "[(_this select 0), nil, [""hideBench"",0,""hideFries"",1,""hideFLIR"",0,""hideUSARMY"",1,""hideRACS"",1]] call BIS_fnc_initVehicle; _this call STAF_PMC_fnc_pmcvehicle_attackhelisequipment;";
     };
   };
 
@@ -86,9 +86,11 @@ class Extended_Init_EventHandlers {
   };
   class STAF_lsv {
     class STAF_lsv_init_eh {
-      init = "(_this select 0) setObjectTexture [4, """"]; _this call STAF_PMC_fnc_pmcvehicle_carequipment;";
+      init = "_this call STAF_PMC_fnc_pmcvehicle_carequipment;";
     };
   };
+  //(_this select 0) setObjectTexture [4, """"]; 
+
 
   //APC: _this call STAF_PMC_fnc_pmcvehicle_apcequipment;
   class STAF_btr90 {
@@ -119,6 +121,11 @@ class Extended_Init_EventHandlers {
   class STAF_M1129_MC_MK19 {
     class STAF_M1129_MC_MK19_init_eh {
       init = "(_this select 0) removeWeaponTurret [""CUP_Vgmg_AGS17_veh"", [0]]; (_this select 0) removeMagazinesTurret [""CUP_400Rnd_30mm_AGS17_M"",[0]]; _this call STAF_PMC_fnc_pmcvehicle_apcequipment;";
+    };
+  };  
+  class STAF_merkava {
+    class STAF_merkava_init_eh {
+      init = "(_this select 0) setObjectTexture [0,'#(argb,8,8,3)color(0.05,0.05,0.05,1)']; (_this select 0) setObjectTexture [1,'#(argb,8,8,3)color(0.05,0.05,0.05,1)']; _this call STAF_PMC_fnc_pmcvehicle_apcequipment;";
     };
   };
 

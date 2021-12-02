@@ -171,6 +171,10 @@ if (_weapon == "STAF_rifle_famas_g2_hg_blk") then {
   _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
   for "_i" from 1 to 7 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
 };
+if (_weapon == "STAF_rifle_falosw") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_762x51_FNFAL_M", true];
+  for "_i" from 1 to 7 do {_unit addItem "CUP_30Rnd_762x51_FNFAL_M";};
+};
 
 //SMGs
 
@@ -264,6 +268,8 @@ if (_weapon == "STAF_rifle_hk121_wld") then {
   for "_i" from 1 to 3 do {_unit addItem "150Rnd_93x64_Mag";};
 };
 
+
+
 if (_weapon == "STAF_rifle_ng7") then {
   _unit addWeaponItem [_weapon, "150Rnd_762x54_Box", true];
   for "_i" from 1 to 4 do {_unit addItem "150Rnd_762x54_Box";};
@@ -302,15 +308,15 @@ if (_pistol == "STAF_pistol_glock17_blk") then {
   _unit addWeaponItem [_pistol, "CUP_17Rnd_9x19_glock17", true];
   for "_i" from 1 to 2 do {_unit addItem "CUP_17Rnd_9x19_glock17";};
 };
-/*if (_pistol == "STAF_pistol_cz75_compact") then {
+if (_pistol == "STAF_pistol_cz75_compact") then {
   _unit addWeaponItem [_pistol, "CUP_10Rnd_9x19_Compact", true];
   for "_i" from 1 to 2 do {_unit addItem "CUP_10Rnd_9x19_Compact";};
-};*/
+};
 if (_pistol == "STAF_pistol_cz75_duty") then {
   _unit addWeaponItem [_pistol, "16Rnd_9x21_Mag", true];
   for "_i" from 1 to 2 do {_unit addItem "16Rnd_9x21_Mag";};
 };
-/*if (_pistol == "STAF_pistol_cz75_phantom") then {
+if (_pistol == "STAF_pistol_cz75_phantom") then {
   _unit addWeaponItem [_pistol, "CUP_18Rnd_9x19_Phantom", true];
   for "_i" from 1 to 2 do {_unit addItem "CUP_18Rnd_9x19_Phantom";};
-};*/
+};

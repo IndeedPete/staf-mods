@@ -23,3 +23,5 @@ _objs addMagazineCargoGlobal ["HandGrenade",10]; //Grenade
 _objs addMagazineCargoGlobal ["SmokeShell",10]; //Grenade White
 _objs addMagazineCargoGlobal ["ACE_SpareBarrel",2]; //SpareBarrel
 _objs addMagazineCargoGlobal ["CUP_SMAW_HEAA_M",4]; //SMAW Missiles
+_objs addItemCargoGlobal ["ACE_rope6",1];
+_objs addItemCargoGlobal ["ACE_rope3",1];

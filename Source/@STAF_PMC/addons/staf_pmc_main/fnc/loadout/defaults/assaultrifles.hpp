@@ -40,5 +40,7 @@ _assaultrifleArray = [
   "STAF_rifle_famas_g2_hg_blk",
   "STAF_rifle_famas_felin_blk",
   "STAF_rifle_famas_g2_blk",
-  "STAF_rifle_famas_g2_hg_blk"
+  "STAF_rifle_famas_g2_hg_blk",
+  "STAF_rifle_falosw",
+  "STAF_rifle_falosw"
 ];

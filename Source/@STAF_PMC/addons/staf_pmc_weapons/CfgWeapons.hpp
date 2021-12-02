@@ -20,6 +20,7 @@ class CfgWeapons {
   class hlc_rifle_G36KA1;
   class hlc_rifle_G36KE1;
   class hlc_rifle_MG36;
+  class hlc_rifle_falosw;
   class CUP_arifle_Mk16_STD_black; // CUP SCAR16
   class CUP_arifle_Mk16_STD_EGLM_black; // CUP SCAR16 GL
   class CUP_arifle_Mk16_STD; // CUP SCAR16 Tan
@@ -95,6 +96,10 @@ class CfgWeapons {
   class SMG_03_black;
   class SMG_03_TR_black;
   class rhs_weap_M320;
+  class Knife_m3;
+  class Police_Bat;
+  class Weap_melee_knife;
+  class Knife_kukri;
 
   // Rifles
   class STAF_rifle_G36MLIC: hlc_rifle_G36MLIC
@@ -1425,6 +1430,22 @@ class CfgWeapons {
    };
   };
 
+  class STAF_rifle_falosw: hlc_rifle_falosw
+  {
+    magazines[] =
+     {
+         "CUP_30Rnd_762x51_FNFAL_M"
+     };
+   class LinkedItems
+   {
+     class LinkedItemsOptic
+     {
+       item = "cup_optic_elcan_reflex";
+       slot = "CowsSlot";
+     };
+   };
+  };
+
   //SMGs
   class STAF_rifle_mp5: hlc_smg_mp5a4
   {
@@ -1609,7 +1630,7 @@ class CfgWeapons {
       };
     };
   };
-  /*class STAF_pistol_cz75_compact: CUP_hgun_Compact
+  class STAF_pistol_cz75_compact: CUP_hgun_Compact
   {
     class LinkedItems
     {
@@ -1619,7 +1640,7 @@ class CfgWeapons {
         slot = "PointerSlot";
       };
     };
-  };*/
+  };
   class STAF_pistol_cz75_duty: CUP_hgun_Duty
   {
     class LinkedItems
@@ -1631,7 +1652,7 @@ class CfgWeapons {
       };
     };
   };
-  /*class STAF_pistol_cz75_phantom: CUP_hgun_Phantom
+  class STAF_pistol_cz75_phantom: CUP_hgun_Phantom
   {
     class LinkedItems
     {
@@ -1641,7 +1662,19 @@ class CfgWeapons {
         slot = "PointerSlot";
       };
     };
-  };*/
+  };
+  class STAF_melee_kukri: Knife_kukri {
+
+  };
+  class STAF_melee_kerabit: Weap_melee_knife {
+
+  };
+  class STAF_melee_m3: Knife_m3 {
+    
+  };
+  class STAF_melee_baton: Police_Bat {
+    
+  };
 
   //Launchers
   class STAF_launcher_smaw: CUP_launch_Mk153Mod0

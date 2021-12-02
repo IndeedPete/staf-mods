@@ -1,24 +1,12 @@
-if (!isServer) exitWith {};
+// Get all the passed parameters
+params [
+	"_position",
+	"_objectUnderCursor"
+];
 
-["STAF Fun", "Zeus hates Playerbase",
-{
-	// Get all the passed parameters
-	params [
-		"_position",
-		"_objectUnderCursor"
-	];
+#include "\staf_framework\fnc\zenmodule\Checks\fn_doNotPlaceOnObjectUnit.hpp"
+#include "\staf_framework\fnc\zenmodule\Checks\fn_placeOnNothing.hpp"
 
-	// Check if placed on Unit or Object
-	if (_objectUnderCursor isKindOf "CAManBase") exitWith {
-		[objNull, "DON'T PLACE ON UNIT/OBJECT"] call BIS_fnc_showCuratorFeedbackMessage;
-	};
-
-	if !(isNull _objectUnderCursor) exitWith {
-		[objNull, "DON'T PLACE ON UNIT/OBJECT"] call BIS_fnc_showCuratorFeedbackMessage;
-	};
-
-	// Code
-	//Show Notification
-	["STAF_notification_zeushatesplayer",[]] remoteExecCall ["bis_fnc_showNotification", allPlayers];
-
-}] remoteexeccall ["zen_custom_modules_fnc_register", 0, true];
+// Code
+//Show Notification
+["STAF_notification_zeushatesplayer",[]] remoteExecCall ["bis_fnc_showNotification", allPlayers];

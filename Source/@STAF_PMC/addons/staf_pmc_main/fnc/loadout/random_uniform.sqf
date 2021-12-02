@@ -4,6 +4,9 @@ _SavedLoadout = _unit getVariable ["STAF_var_Unit_Loadout_Set", false];
 
 if !(_SavedLoadout) then {
     if ((uniform _unit) in _startUniform) then {
+        
+        if (missionNamespace getvariable ["STAF_cbaDebug", false]) then {systemChat "Unit Randomization was used";};
+
         //BLUFOR
         if ((typeOf _unit) isEqualTo "STAF_contractor") then {[_this select 0] call STAF_PMC_fnc_gear_contractor};
         if ((typeOf _unit) isEqualTo "STAF_contractor_at") then {[_this select 0] call STAF_PMC_fnc_gear_contractor_at};

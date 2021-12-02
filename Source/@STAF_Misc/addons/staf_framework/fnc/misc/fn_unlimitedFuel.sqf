@@ -4,17 +4,6 @@ params [
 	["_condition", "true", [""]]
 ];
 
-//If Object is supposed to be an Object
-// Check if Module is placed on Object/Unit
-if (isNull _objectUnderCursor) exitWith {
-	[objNull, "PLACE ON AN OBJECT OR VEHICLE"] call BIS_fnc_showCuratorFeedbackMessage;
-};
-
-// Check if Object under Module is an Object
-if (_objectUnderCursor isKindOf "CAManBase") exitWith {
-	[objNull, "PLACE ON AN OBJECT OR VEHICLE"] call BIS_fnc_showCuratorFeedbackMessage;
-};
-
 switch (_vehicle getvariable ["STAF_UnlimitedFuel", false]) do {
 	case true: {
 		[objNull, "VEHICLE HAS LIMITED FUEL NOW"] call BIS_fnc_showCuratorFeedbackMessage;

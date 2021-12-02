@@ -14,3 +14,5 @@ _objs addItemCargoGlobal ["ACE_wirecutter",1];
 _objs addItemCargoGlobal ["ACE_DefusalKit",1];
 _objs addItemCargoGlobal ["ACE_Clacker",1];
 _objs addMagazineCargoGlobal ["SmokeShell",5]; //Grenade White
+_objs addItemCargoGlobal ["ACE_rope6",1];
+_objs addItemCargoGlobal ["ACE_rope3",1];

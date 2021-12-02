@@ -35,7 +35,11 @@ class CfgPatches {
         "STAF_B_FieldPack_white_splinter",
         "STAF_B_FieldPack_white",
         "STAF_B_RepairBag",
-        "STAF_B_RepairBag_field"
+        "STAF_B_RepairBag_field",
+        "STAF_B_Messenger_Black_F",
+        "STAF_B_Messenger_Coyote_F",
+        "STAF_B_Messenger_Gray_F",
+        "STAF_B_Messenger_Olive_F"
       };
       weapons[] = {};
       requiredAddons[] = {"A3_Weapons_F"};
