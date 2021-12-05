@@ -43,7 +43,7 @@ class Cfg3DEN
 						typeName = "BOOL"; // Defines data type of saved value, can be STRING, NUMBER or BOOL. Used only when control is "Combo", "Edit" or their variants
 					};
 					// Attribute class, can be anything
-					class STAF_att_Arsenal_Loadout
+					/*class STAF_att_Arsenal_Loadout
 					{
 						//--- Mandatory properties
 						displayName = "[TEST] Disable Respawn Loadout?"; // Name assigned to UI control class Title
@@ -70,7 +70,7 @@ class Cfg3DEN
 						validate = "bool"; // Validate the value before saving. If the value is not of given type e.g. "number", the default value will be set. Can be "none", "expression", "condition", "number" or "variable"
 						condition = "objectBrain"; // Condition for attribute to appear (see the table below)
 						typeName = "BOOL"; // Defines data type of saved value, can be STRING, NUMBER or BOOL. Used only when control is "Combo", "Edit" or their variants
-					};
+					};*/
 					// Attribute class, can be anything
 					class STAF_att_ACEX_fortify_fortify_box
 					{

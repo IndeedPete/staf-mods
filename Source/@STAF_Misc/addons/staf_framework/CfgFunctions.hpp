@@ -66,7 +66,6 @@ class CfgFunctions
 			file = "\STAF_FRAMEWORK\fnc\misc";
 			class ace_knockout {};
 			class ace_silentkill {};
-			class acex_fortify {postInit = 1;};
 			class animation{};
 			class createFireEffect{};
 			class disable{};
@@ -133,6 +132,7 @@ class CfgFunctions
 
 			class fortifyBudget{};
 			class fortifyToggle{};
+			class fortifyBox{};
 			class clearInventory{};
 		};
 		class Zenmodule_STAF_Fun

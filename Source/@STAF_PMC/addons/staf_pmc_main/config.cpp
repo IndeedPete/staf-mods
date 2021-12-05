@@ -1,5 +1,3 @@
-#include "ACEX_Fortify_Presets.hpp"
-#include "CfgMainMenuSpotlight.hpp"
 #include "CfgPatches.hpp"
 #include "CfgFaces.hpp"
 #include "CfgFactionClasses.hpp"

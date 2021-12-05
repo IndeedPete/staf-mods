@@ -1,6 +1,10 @@
 params [
+	"_position",
 	"_objectUnderCursor"
 ];
+
+#include "\staf_pmc_main\fnc\zenmodule\Checks\fn_notNullObject.hpp"
+#include "\staf_pmc_main\fnc\zenmodule\Checks\fn_placeOnObject.hpp"
 
 _arsenalvar = _objectUnderCursor getVariable ["STAF_var_pmcarsenal", false];
 _actionID = _objectUnderCursor getVariable "STAF_var_pmcarsenal_actionID";
@@ -31,3 +35,4 @@ if (_arsenalvar) then {
 	[_objectUnderCursor] call STAF_PMC_fnc_pmcarsenal;
 	[objNull, "PMC ARSENAL ADDED"] call BIS_fnc_showCuratorFeedbackMessage;
 };
+

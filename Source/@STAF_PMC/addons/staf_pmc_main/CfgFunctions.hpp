@@ -34,25 +34,17 @@ class CfgFunctions
 			class pmcvehicle_mrapequipment{};
 			class pmcvehicle_equipment{};
 		};
-		class Misc
+		class Zenmodule_STAF
 		{
-			file = "\staf_pmc_main\fnc\misc";
-			class fortificaton_simulation{preInit = 1;};
+			file = "\staf_pmc_main\fnc\zenmodule";
+
+			class zenInit{postinit = 1;};
 		};
 		class Zenmodule_STAF_Equipment
 		{
 			file = "\staf_pmc_main\fnc\zenmodule\STAF_Equipment";
-			class pmcarsenal_zeus_init{
-				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
-				recompile = 1; //1 to recompile the function upon mission start
-				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
-			};
-			class pmcarsenal_zeus{};
-			class pmcinventories{
-				postInit = 1; //1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit"]
-				recompile = 1; //1 to recompile the function upon mission start
-				headerType = -1; //Set function header type: -1 - no header; 0 - default header; 1 - system header.
-			};
+			class pmcArsenalZeus{};
+			class pmcInventories{};
 		};
 	};
 };

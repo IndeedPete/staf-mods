@@ -5,7 +5,7 @@ class ACEX_Fortify_Presets {
             {"EFM_mobile_barrier_A", 5},
             {"EFM_mobile_barrier_B", 5},
             {"EFM_mobile_dragons_teeth_small", 10},
-            {"Fort_RazorWire", 20},
+            {"Land_Razorwire_F", 20},
             {"Land_BagFence_Long_F", 5},
             {"Land_BagFence_Round_F", 5},
             {"Land_BagFence_Corner_F", 3},

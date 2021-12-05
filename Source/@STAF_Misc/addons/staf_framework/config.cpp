@@ -1,4 +1,6 @@
 //#include "CfgContext.hpp"
+#include "ACEX_Fortify_Presets.hpp"
+#include "CfgMainMenuSpotlight.hpp"
 #include "Cfg3den.hpp"
 #include "CfgEventhandlers.hpp"
 #include "CfgFactionClasses.hpp"

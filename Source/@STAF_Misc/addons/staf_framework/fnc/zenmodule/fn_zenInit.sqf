@@ -45,6 +45,7 @@ private _wait = [] spawn
 		private _stafEquipment = [
 			["Clear Inventory",{_this call STAF_fnc_clearInventory}],
 			["Add ACE Fortify Budget",{_this call STAF_fnc_fortifyBudget}],
+			["Toggle Fortify Box",{_this call STAF_fnc_fortifyBox}],
 			["Toggle ACE Fortify",{_this call STAF_fnc_fortifyToggle}]
 		];
 
