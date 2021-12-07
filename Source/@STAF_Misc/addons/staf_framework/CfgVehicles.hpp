@@ -555,83 +555,884 @@ class CfgVehicles
 
 	// ACE Self Interactions
 
-	class Man;
-	class CAManBase: Man {
-		class ACE_SelfActions {
-			class ACE_Equipment {
-				class STAF_UpTurban {
-					displayName = "Pull up Turban";
-					condition = "(headgear _player) in ['lxWS_H_turban_02_black','lxWS_H_turban_02_blue','lxWS_H_turban_02_green','lxWS_H_turban_02_green_pattern','lxWS_H_turban_02_orange','lxWS_H_turban_02_red','lxWS_H_turban_02_sand','lxWS_H_turban_02_gray','lxWS_H_turban_02_yellow']";
-					exceptions[] = {};
-					statement = "_player call STAF_fnc_turbanUp";
-					icon = "";
+		class Man;
+		class CAManBase: Man {
+			class ACE_SelfActions {
+				class ACE_Equipment {
+					class STAF_UpTurban {
+						displayName = "Pull up Turban";
+						condition = "(headgear _player) in ['lxWS_H_turban_02_black','lxWS_H_turban_02_blue','lxWS_H_turban_02_green','lxWS_H_turban_02_green_pattern','lxWS_H_turban_02_orange','lxWS_H_turban_02_red','lxWS_H_turban_02_sand','lxWS_H_turban_02_gray','lxWS_H_turban_02_yellow']";
+						exceptions[] = {};
+						statement = "_player call STAF_fnc_turbanUp";
+						icon = "";
+					};
+
+					class STAF_DownTurban {
+						displayName = "Pull down Turban";
+						condition = "(headgear _player) in ['lxWS_H_turban_03_black','lxWS_H_turban_03_blue','lxWS_H_turban_03_green','lxWS_H_turban_03_green_pattern','lxWS_H_turban_03_orange','lxWS_H_turban_03_red','lxWS_H_turban_03_sand','lxWS_H_turban_03_gray','lxWS_H_turban_03_yellow']";
+						exceptions[] = {};
+						statement = "_player call STAF_fnc_turbanDown";
+						icon = "";
+					};
 				};
 
-				class STAF_DownTurban {
-					displayName = "Pull down Turban";
-					condition = "(headgear _player) in ['lxWS_H_turban_03_black','lxWS_H_turban_03_blue','lxWS_H_turban_03_green','lxWS_H_turban_03_green_pattern','lxWS_H_turban_03_orange','lxWS_H_turban_03_red','lxWS_H_turban_03_sand','lxWS_H_turban_03_gray','lxWS_H_turban_03_yellow']";
+				class STAF_Zeus {
+					displayName = "Zeus";
+					condition = "";
 					exceptions[] = {};
-					statement = "_player call STAF_fnc_turbanDown";
-					icon = "";
+					statement = "";
+					icon = "\a3\ui_f_curator\Data\Logos\arma3_zeus_icon_ca.paa";
+					showDisabled = 0;
+
+					class STAF_ZeusPromotion {
+						displayName = "Become Zeus";
+						condition = "(!(_player getVariable ['STAF_var_ZeusAction', false])) and ((_player getVariable ['STAF_var_ZeusActionEligible', false]) or (serverCommandAvailable '#logout'))";
+						exceptions[] = {};
+						statement = "_player call STAF_fnc_zeusactionpromotion";
+						icon = "\a3\ui_f_curator\Data\Logos\arma3_zeus_icon_ca.paa";
+						showDisabled = 0;
+					};
+					class STAF_ZeusDemotion {
+						displayName = "Step down as Zeus";
+						condition = "_player getVariable ['STAF_var_ZeusAction', false]";
+						exceptions[] = {};
+						statement = "_player call STAF_fnc_zeusactiondemotion";
+						icon = "\a3\ui_f_curator\Data\Logos\arma3_zeus_icon_ca.paa";
+						showDisabled = 0;
+					};
 				};
 			};
 
-			class STAF_Zeus {
-				displayName = "Zeus";
-				condition = "";
-				exceptions[] = {};
-				statement = "";
-				icon = "\a3\ui_f_curator\Data\Logos\arma3_zeus_icon_ca.paa";
-				showDisabled = 0;
+			
 
-				class STAF_ZeusPromotion {
-					displayName = "Become Zeus";
-					condition = "(!(_player getVariable ['STAF_var_ZeusAction', false])) and ((_player getVariable ['STAF_var_ZeusActionEligible', false]) or (serverCommandAvailable '#logout'))";
-					exceptions[] = {};
-					statement = "_player call STAF_fnc_zeusactionpromotion";
-					icon = "\a3\ui_f_curator\Data\Logos\arma3_zeus_icon_ca.paa";
-					showDisabled = 0;
+			class ACE_Actions {
+				class ACE_MainActions {
+					class STAF_HideBody {
+						displayName = "Hide Body";
+						condition = "(!(Alive _target))";
+						exceptions[] = {};
+						statement = "[_player, _target] call STAF_fnc_hidebodyaction";
+						icon = "\a3\ui_f_curator\Data\Logos\arma3_zeus_icon_ca.paa";				
+					};
 				};
-				class STAF_ZeusDemotion {
-					displayName = "Step down as Zeus";
-					condition = "_player getVariable ['STAF_var_ZeusAction', false]";
-					exceptions[] = {};
-					statement = "_player call STAF_fnc_zeusactiondemotion";
-					icon = "\a3\ui_f_curator\Data\Logos\arma3_zeus_icon_ca.paa";
-					showDisabled = 0;
+
+				class ACE_Head {
+					class STAF_KnockOut {
+						displayName = "Knock Out";
+						condition = "(_player distance _target < 2.5) AND (Alive _target) AND !(_target getVariable ['ACE_isUnconscious', false]) AND (vehicle _target == _target)";
+						exceptions[] = {};
+						statement = "[_player, _target] call STAF_fnc_ace_knockout";
+						icon = "\staf_framework\img\knockout.paa";
+					};
+					class STAF_Silentkill {
+						displayName = "Break Neck";
+						condition = "(stance _player == 'CROUCH') AND (_target getVariable ['ACE_isUnconscious', false]) AND (Alive _target) AND (vehicle _target == _target)";
+						exceptions[] = {};
+						statement = "[_player, _target] call STAF_fnc_ace_silentkill";
+						icon = "\staf_framework\img\knockout.paa";
+					};
 				};
 			};
 		};
+	
+	// END //
 
+	// Webknight Meele Faction
+
+		class B_Soldier_Base_F;
+		class O_Soldier_Base_F;
+
+		class B_soldier_STEALTH: B_Soldier_Base_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class B_soldier_Melee: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class B_soldier_Melee_fists: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class B_soldier_Melee_RUSH_fists: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class B_soldier_Melee_Hybrid: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class B_soldier_Melee_RUSH: O_Soldier_Base_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+
+		class O_soldier_Melee: O_Soldier_Base_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class O_soldier_Melee_fists: O_Soldier_Base_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class O_soldier_Melee_RUSH_fists: O_Soldier_Base_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class O_soldier_Melee_Hybrid: O_Soldier_Base_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class O_soldier_Melee_RUSH: O_Soldier_Base_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class O_soldier_STEALTH: O_Soldier_Base_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+
+	// END //
+
+	// PMCA Faction
+
+		class C_IDAP_Man_AidWorker_05_F;
+		class I_G_Soldier_GL_F;
+		class B_GEN_Commander_F;
+		class I_C_Soldier_Para_7_F;
+		class I_C_Soldier_Bandit_6_F; 
+		class I_C_Soldier_base_unarmed_F;
+
+
+		class PMCA_casual_b_b: C_IDAP_Man_AidWorker_05_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_casual_b_r: C_IDAP_Man_AidWorker_05_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_casual_b_u: C_IDAP_Man_AidWorker_05_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_casual_b_o: C_IDAP_Man_AidWorker_05_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_casual_b_w: C_IDAP_Man_AidWorker_05_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_casual_t_b: C_IDAP_Man_AidWorker_05_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_casual_t_r: C_IDAP_Man_AidWorker_05_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_casual_t_u: C_IDAP_Man_AidWorker_05_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_casual_t_o: C_IDAP_Man_AidWorker_05_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_casual_t_w: C_IDAP_Man_AidWorker_05_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_casual_j_b: C_IDAP_Man_AidWorker_05_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_casual_j_r: C_IDAP_Man_AidWorker_05_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_casual_j_u: C_IDAP_Man_AidWorker_05_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_casual_j_o: C_IDAP_Man_AidWorker_05_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_casual_j_w: C_IDAP_Man_AidWorker_05_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+
+		class PMCA_buttonup_b_b: I_G_Soldier_GL_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_buttonup_b_g: I_G_Soldier_GL_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_buttonup_b_o: I_G_Soldier_GL_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_buttonup_b_r: I_G_Soldier_GL_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_buttonup_b_u: I_G_Soldier_GL_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_buttonup_o_b: I_G_Soldier_GL_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_buttonup_o_g: I_G_Soldier_GL_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_buttonup_o_o: I_G_Soldier_GL_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_buttonup_o_r: I_G_Soldier_GL_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_buttonup_o_u: I_G_Soldier_GL_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_buttonup_r_b: I_G_Soldier_GL_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_buttonup_r_g: I_G_Soldier_GL_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_buttonup_r_o: I_G_Soldier_GL_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_buttonup_r_r: I_G_Soldier_GL_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_buttonup_r_u: I_G_Soldier_GL_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_buttonup_t_b: I_G_Soldier_GL_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_buttonup_t_g: I_G_Soldier_GL_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_buttonup_t_o: I_G_Soldier_GL_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_buttonup_t_r: I_G_Soldier_GL_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_buttonup_t_u: I_G_Soldier_GL_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+
+		class PMCA_sweater_b_b: B_GEN_Commander_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_sweater_b_g: B_GEN_Commander_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_sweater_b_o: B_GEN_Commander_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_sweater_b_r: B_GEN_Commander_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_sweater_b_t: B_GEN_Commander_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_sweater_g_b: B_GEN_Commander_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_sweater_g_g: B_GEN_Commander_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_sweater_g_o: B_GEN_Commander_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_sweater_g_r: B_GEN_Commander_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_sweater_g_t: B_GEN_Commander_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_sweater_o_b: B_GEN_Commander_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_sweater_o_g: B_GEN_Commander_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_sweater_o_o: B_GEN_Commander_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_sweater_o_r: B_GEN_Commander_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_sweater_o_t: B_GEN_Commander_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_sweater_t_b: B_GEN_Commander_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_sweater_t_g: B_GEN_Commander_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_sweater_t_o: B_GEN_Commander_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_sweater_t_r: B_GEN_Commander_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_sweater_t_t: B_GEN_Commander_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+
+		class PMCA_tanktop_b_g: I_C_Soldier_Para_7_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_tanktop_t_g: I_C_Soldier_Para_7_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_tanktop_o_g: I_C_Soldier_Para_7_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_tanktop_g_g: I_C_Soldier_Para_7_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_tanktop_b_o: I_C_Soldier_Para_7_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_tanktop_t_o: I_C_Soldier_Para_7_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_tanktop_o_o: I_C_Soldier_Para_7_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_tanktop_g_o: I_C_Soldier_Para_7_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_tanktop_b_b: I_C_Soldier_Para_7_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_tanktop_t_b: I_C_Soldier_Para_7_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_tanktop_o_b: I_C_Soldier_Para_7_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_tanktop_g_b: I_C_Soldier_Para_7_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
 		
-
-		class ACE_Actions {
-			class ACE_MainActions {
-				class STAF_HideBody {
-					displayName = "Hide Body";
-					condition = "(!(Alive _target))";
-					exceptions[] = {};
-					statement = "[_player, _target] call STAF_fnc_hidebodyaction";
-					icon = "\a3\ui_f_curator\Data\Logos\arma3_zeus_icon_ca.paa";				
-				};
-			};
-
-			class ACE_Head {
-				class STAF_KnockOut {
-					displayName = "Knock Out";
-					condition = "(_player distance _target < 2.5) AND (Alive _target) AND !(_target getVariable ['ACE_isUnconscious', false]) AND (vehicle _target == _target)";
-					exceptions[] = {};
-					statement = "[_player, _target] call STAF_fnc_ace_knockout";
-					icon = "\staf_framework\img\knockout.paa";
-				};
-				class STAF_Silentkill {
-					displayName = "Break Neck";
-					condition = "(stance _player == 'CROUCH') AND (_target getVariable ['ACE_isUnconscious', false]) AND (Alive _target) AND (vehicle _target == _target)";
-					exceptions[] = {};
-					statement = "[_player, _target] call STAF_fnc_ace_silentkill";
-					icon = "\staf_framework\img\knockout.paa";
-				};
-			};
+		class PMCA_tee_b: I_C_Soldier_Bandit_6_F
+		{
+			scope = 1;
+			scopeCurator = 1;
 		};
-	};
+		class PMCA_tee_l: I_C_Soldier_Bandit_6_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_tee_o: I_C_Soldier_Bandit_6_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_tee_r: I_C_Soldier_Bandit_6_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_tee_u: I_C_Soldier_Bandit_6_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+
+		class PMCA_cargo_b_b: I_C_Soldier_base_unarmed_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_cargo_l_b: I_C_Soldier_base_unarmed_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_cargo_o_b: I_C_Soldier_base_unarmed_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_cargo_r_b: I_C_Soldier_base_unarmed_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_cargo_u_b: I_C_Soldier_base_unarmed_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_cargo_b_g: I_C_Soldier_base_unarmed_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_cargo_l_g: I_C_Soldier_base_unarmed_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_cargo_o_g: I_C_Soldier_base_unarmed_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_cargo_r_g: I_C_Soldier_base_unarmed_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_cargo_u_g: I_C_Soldier_base_unarmed_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_cargo_b_o: I_C_Soldier_base_unarmed_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_cargo_l_o: I_C_Soldier_base_unarmed_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_cargo_o_o: I_C_Soldier_base_unarmed_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_cargo_r_o: I_C_Soldier_base_unarmed_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_cargo_u_o: I_C_Soldier_base_unarmed_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_cargo_b_t: I_C_Soldier_base_unarmed_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_cargo_l_t: I_C_Soldier_base_unarmed_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_cargo_o_t: I_C_Soldier_base_unarmed_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_cargo_r_t: I_C_Soldier_base_unarmed_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class PMCA_cargo_u_t: I_C_Soldier_base_unarmed_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+
+	// END //
+
+	/*---FEMAL3---//
+
+		class B_Soldier_F;
+
+		class FEM_NATO_M81_F: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class FEM_NATO_M81_rolled_F: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class F_boss_01: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class F_boss_02: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class F_reb_01: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class F_jeans_01: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class F_jeans_02: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class F_jeans_03: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class F_jeans_shortsleeve_01: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class F_jeans_shortsleeve_02: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class F_jeans_shortsleeve_03: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class F_jeans_shortsleeve_04: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class F_jeans_shortsleeve_05: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class F_jeanshoodie_01: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class F_jeanshoodie_02: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class F_jeanshoodie_03: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class F_FEMALE_SOTG_01: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class rolled_NATO_01: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class rolled_NATO_02: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class rolled_NATO_03: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class rolled_NATO_04: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class rolled_NATO_088: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class FEM_NATO_01: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class FEM_NATO_02: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class FEM_NATO_03: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class FEM_NATO_04: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+	//---End---*/
+
+	//---Fifty Shades of Female---//
+
+		class fsog3_gen3_male_base;
+
+		class fsog3_gen3_male_multi: fsog3_gen3_male_base
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class fsog3_gen3_male_natow: fsog3_gen3_male_base
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class fsog3_gen3_male_aafw: fsog3_gen3_male_base
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class fsog3_gen3_male_aor1: fsog3_gen3_male_base
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class fsog3_gen3_male_aor2: fsog3_gen3_male_base
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class fsog3_gen3_male_ctrg: fsog3_gen3_male_base
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class fsog3_gen3_male_ldf: fsog3_gen3_male_base
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class fsog3_gen3_male_m81: fsog3_gen3_male_base
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class fsog3_gen3_male_marpd: fsog3_gen3_male_base
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class fsog3_gen3_male_marpw: fsog3_gen3_male_base
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class fsog3_gen3_male_ucpd: fsog3_gen3_male_base
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class fsog3_gen3_female_multi: fsog3_gen3_female_base
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class fsog3_gen3_female_natow: fsog3_gen3_female_base
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class fsog3_gen3_female_aafw: fsog3_gen3_female_base
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class fsog3_gen3_female_aor1: fsog3_gen3_female_base
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class fsog3_gen3_female_aor2: fsog3_gen3_female_base
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class fsog3_gen3_female_ctrg: fsog3_gen3_female_base
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class fsog3_gen3_female_ldf: fsog3_gen3_female_base
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class fsog3_gen3_female_m81: fsog3_gen3_female_base
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class fsog3_gen3_female_marpd: fsog3_gen3_female_base
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class fsog3_gen3_female_marpw: fsog3_gen3_female_base
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class fsog3_gen3_female_ucpd: fsog3_gen3_female_base
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+	//---End---//
 };

@@ -110,148 +110,11 @@ class CfgVehicles
 			};
 		};
 	};
-
-	class B_Soldier_F;
-	class B_Soldier_03_f;
-	class O_Soldier_F;
-	class fsog3_gen3_male_base;
-	class fsog3_gen3_female_base;
-
-	/*---FEMAL3---//
-
-		class FEM_NATO_M81_F: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class FEM_NATO_M81_rolled_F: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class F_boss_01: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class F_boss_02: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class F_reb_01: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class F_jeans_01: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class F_jeans_02: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class F_jeans_03: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class F_jeans_shortsleeve_01: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class F_jeans_shortsleeve_02: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class F_jeans_shortsleeve_03: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class F_jeans_shortsleeve_04: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class F_jeans_shortsleeve_05: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class F_jeanshoodie_01: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class F_jeanshoodie_02: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class F_jeanshoodie_03: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class F_FEMALE_SOTG_01: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class rolled_NATO_01: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class rolled_NATO_02: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class rolled_NATO_03: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class rolled_NATO_04: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class rolled_NATO_088: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class FEM_NATO_01: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class FEM_NATO_02: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class FEM_NATO_03: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class FEM_NATO_04: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-	//---End---*/
-
+	
 	//---VSM---//
+
+		class B_Soldier_F;
+		
 		class Operator_Mcam: B_Soldier_F
 		{
 			scope = 1;
@@ -441,11 +304,6 @@ class CfgVehicles
 			scopeCurator = 1;
 		};
 		class AOR_2_SS_uniform: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class AOR2_Uniform_TShirt: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
@@ -701,152 +559,152 @@ class CfgVehicles
 			scopeCurator = 1;
 		};
 
-		class VSM_M81_Crye_Uniform
+		class VSM_M81_Crye_Uniform: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_Crye_SS_Uniform
+		class VSM_M81_Crye_SS_Uniform: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_Crye_od_pants_Uniform
+		class VSM_M81_Crye_od_pants_Uniform: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_Crye_SS_od_pants_Uniform
+		class VSM_M81_Crye_SS_od_pants_Uniform: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_Crye_od_shirt_Uniform
+		class VSM_M81_Crye_od_shirt_Uniform: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_Crye_SS_od_shirt_Uniform
+		class VSM_M81_Crye_SS_od_shirt_Uniform: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_Crye_tan_pants_Uniform
+		class VSM_M81_Crye_tan_pants_Uniform: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_Crye_SS_tan_pants_Uniform
+		class VSM_M81_Crye_SS_tan_pants_Uniform: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_Crye_tan_shirt_Uniform
+		class VSM_M81_Crye_tan_shirt_Uniform: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_Crye_SS_tan_shirt_Uniform
+		class VSM_M81_Crye_SS_tan_shirt_Uniform: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_Crye_Tee_Uniform
+		class VSM_M81_Crye_Tee_Uniform: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_Crye_grey_pants_Uniform
+		class VSM_M81_Crye_grey_pants_Uniform: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_Crye_SS_grey_pants_Uniform
+		class VSM_M81_Crye_SS_grey_pants_Uniform: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_Crye_grey_shirt_Uniform
+		class VSM_M81_Crye_grey_shirt_Uniform: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_Crye_SS_grey_shirt_Uniform
+		class VSM_M81_Crye_SS_grey_shirt_Uniform: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_Casual_uniform
+		class VSM_M81_Casual_uniform: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_Uniform
+		class VSM_M81_Uniform: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_Uniform_SS
+		class VSM_M81_Uniform_SS: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_od_pants_Uniform
+		class VSM_M81_od_pants_Uniform: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_od_pants_Uniform_SS
+		class VSM_M81_od_pants_Uniform_SS: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_od_shirt_Uniform
+		class VSM_M81_od_shirt_Uniform: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_od_shirt_Uniform_SS
+		class VSM_M81_od_shirt_Uniform_SS: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_tan_pants_Uniform
+		class VSM_M81_tan_pants_Uniform: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_tan_pants_Uniform_SS
+		class VSM_M81_tan_pants_Uniform_SS: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_tan_shirt_Uniform
+		class VSM_M81_tan_shirt_Uniform: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_tan_shirt_Uniform_SS
+		class VSM_M81_tan_shirt_Uniform_SS: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_BDU_OD_pants_Uniform
+		class VSM_M81_BDU_OD_pants_Uniform: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_BDU_Uniform
+		class VSM_M81_BDU_Uniform: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_BDU_tan_pants_Uniform
+		class VSM_M81_BDU_tan_pants_Uniform: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class VSM_M81_Uniform_TShirt
+		class VSM_M81_Uniform_TShirt: B_Soldier_F
 		{
 			scope = 1;
 			scopeCurator = 1;
@@ -1144,152 +1002,6 @@ class CfgVehicles
 			scopeCurator = 1;
 		};
 		class VSM_MulticamTropic_Uniform_TShirt: B_Soldier_F
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-
-		class VSM_OGA_Camo: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_Camo_SS: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_od_pants_Camo: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_od_pants_Camo_SS: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_od_Camo: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_od_Camo_SS: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_od_tan_pants_Camo: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_od_tan_pants_Camo_SS: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_Crye_Camo: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_Crye_SS_Camo: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_Crye_od_pants_Camo: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_Crye_SS_od_pants_Camo: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_Crye_Grey_pants_Camo: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_Crye_SS_grey_pants_Camo: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_Crye_od_Camo: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_Crye_SS_od_Camo: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_Crye_od_tan_pants_Camo: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_Crye_SS_OD_tan_pants_Camo: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_Crye_od_grey_pants_Camo: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_Crye_SS_OD_grey_pants_Camo: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_Crye_grey_Camo: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_Crye_SS_grey_Camo: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_Crye_grey_od_pants_Camo: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_Crye_SS_grey_od_pants_Camo: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_Crye_grey_tan_pants_Camo: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_Crye_SS_grey_tan_pants_Camo: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_OD_casual_Camo: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_tan_casual_Camo: Uniform_Base    
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class VSM_OGA_grey_casual_Camo: Uniform_Base    
 		{
 			scope = 1;
 			scopeCurator = 1;
@@ -3541,118 +3253,121 @@ class CfgVehicles
 			scopeCurator = 1;
 		};
 
-	//---End---//
+		class OGA_G_Uniform: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class OGA_G_Uniform_SS: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class OGA_Uniform_Cyre_Green: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class M81_Uniform_crye_Tee: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class M81_Uniform_crye: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class M81_Uniform_crye_TP: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class M81_Uniform_crye_TS: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class M81_Uniform_crye_GP: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class M81_Uniform_crye_GS: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class VSM_MulticamTropic_Uniform: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class VSM_OGA_Uniform_TShirt: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class VSM_OGA_OD_Uniform_TShirt: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class VSM_Scorpion_Uniform: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class VSM_Scorpion_Uniform_SS: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class VSM_Scorpion_od_pants_Uniform: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class VSM_Scorpion_od_pants_Uniform_SS: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class VSM_Scorpion_od_shirt_Uniform: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class VSM_Scorpion_od_shirt_Uniform_SS: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class VSM_Scorpion_tan_pants_Uniform_SS: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class VSM_Scorpion_tan_pants_Uniform: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class VSM_Scorpion_tan_shirt_Uniform: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class VSM_Scorpion_tan_shirt_Uniform_SS: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
+		class VSM_Scorpion_Uniform_TShirt: B_Soldier_F
+		{
+			scope = 1;
+			scopeCurator = 1;
+		};
 
-	//---Fifty Shades of Female---//
-		class fsog3_gen3_male_multi: fsog3_gen3_male_base
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class fsog3_gen3_male_natow: fsog3_gen3_male_base
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class fsog3_gen3_male_aafw: fsog3_gen3_male_base
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class fsog3_gen3_male_aor1: fsog3_gen3_male_base
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class fsog3_gen3_male_aor2: fsog3_gen3_male_base
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class fsog3_gen3_male_ctrg: fsog3_gen3_male_base
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class fsog3_gen3_male_ldf: fsog3_gen3_male_base
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class fsog3_gen3_male_m81: fsog3_gen3_male_base
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class fsog3_gen3_male_marpd: fsog3_gen3_male_base
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class fsog3_gen3_male_marpw: fsog3_gen3_male_base
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class fsog3_gen3_male_ucpd: fsog3_gen3_male_base
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class fsog3_gen3_female_multi: fsog3_gen3_female_base
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class fsog3_gen3_female_natow: fsog3_gen3_female_base
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class fsog3_gen3_female_aafw: fsog3_gen3_female_base
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class fsog3_gen3_female_aor1: fsog3_gen3_female_base
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class fsog3_gen3_female_aor2: fsog3_gen3_female_base
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class fsog3_gen3_female_ctrg: fsog3_gen3_female_base
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class fsog3_gen3_female_ldf: fsog3_gen3_female_base
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class fsog3_gen3_female_m81: fsog3_gen3_female_base
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class fsog3_gen3_female_marpd: fsog3_gen3_female_base
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class fsog3_gen3_female_marpw: fsog3_gen3_female_base
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
-		class fsog3_gen3_female_ucpd: fsog3_gen3_female_base
-		{
-			scope = 1;
-			scopeCurator = 1;
-		};
 	//---End---//
 };

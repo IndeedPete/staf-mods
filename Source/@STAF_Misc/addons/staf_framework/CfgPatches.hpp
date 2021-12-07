@@ -27,7 +27,10 @@ class CfgPatches
 			"A3_Structures_F_Mark",
 			"CBA_Main",
 			"cba_ui",
-			"zen_context_menu"
+			"zen_context_menu",
+			"WBK_MeleeMechanics",
+        	"fsog3",
+			"PMCA_UNIFORMS"
 		};
 		author = "STAF";
 		authorUrl = "http://stafclan.com/index.php/BoardList/";

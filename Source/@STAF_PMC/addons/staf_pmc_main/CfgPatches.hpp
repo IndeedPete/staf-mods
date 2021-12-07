@@ -38,7 +38,6 @@ class CfgPatches
         "VSM_OGA_Config",
         "VSM_ProjectHonor_Config",
         "VSM_Scorpion_Config",
-        "fsog3",
         "STAF_pmc_backpacks",
         "A3_ui_f",
         "A3_ui_f_oldman"
