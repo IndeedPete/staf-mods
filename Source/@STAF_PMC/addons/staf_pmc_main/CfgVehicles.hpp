@@ -114,6 +114,9 @@ class CfgVehicles
 	//---VSM---//
 
 		class B_Soldier_F;
+		class B_Soldier_03_f;
+		class I_C_Soldier_base_F;
+		class O_Soldier_F;
 		
 		class Operator_Mcam: B_Soldier_F
 		{

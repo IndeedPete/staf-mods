@@ -642,63 +642,62 @@ class CfgVehicles
 		class B_Soldier_Base_F;
 		class O_Soldier_Base_F;
 
-		class B_soldier_STEALTH: B_Soldier_Base_F
+		class O_soldier_Melee_Hybrid: B_Soldier_base_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class B_soldier_Melee: B_Soldier_F
+		class B_soldier_Melee_Hybrid: B_Soldier_base_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class B_soldier_Melee_fists: B_Soldier_F
+		class B_soldier_Melee: B_Soldier_base_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class B_soldier_Melee_RUSH_fists: B_Soldier_F
+		class B_soldier_Melee_RUSH: B_Soldier_base_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class B_soldier_Melee_Hybrid: B_Soldier_F
+		class O_soldier_Melee: O_Soldier_base_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class B_soldier_Melee_RUSH: O_Soldier_Base_F
+		class O_soldier_Melee_RUSH: O_Soldier_base_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-
-		class O_soldier_Melee: O_Soldier_Base_F
+		class O_soldier_STEALTH: O_Soldier_base_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class O_soldier_Melee_fists: O_Soldier_Base_F
+		class B_soldier_STEALTH: B_Soldier_base_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class O_soldier_Melee_RUSH_fists: O_Soldier_Base_F
+		class B_soldier_Melee_fists: B_Soldier_base_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class O_soldier_Melee_Hybrid: O_Soldier_Base_F
+		class B_soldier_Melee_RUSH_fists: B_Soldier_base_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class O_soldier_Melee_RUSH: O_Soldier_Base_F
+		class O_soldier_Melee_fists: O_Soldier_base_F
 		{
 			scope = 1;
 			scopeCurator = 1;
 		};
-		class O_soldier_STEALTH: O_Soldier_Base_F
+		class O_soldier_Melee_RUSH_fists: O_Soldier_base_F
 		{
 			scope = 1;
 			scopeCurator = 1;
@@ -1323,6 +1322,7 @@ class CfgVehicles
 	//---Fifty Shades of Female---//
 
 		class fsog3_gen3_male_base;
+		class fsog3_gen3_female_base;
 
 		class fsog3_gen3_male_multi: fsog3_gen3_male_base
 		{
