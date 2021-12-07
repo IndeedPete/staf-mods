@@ -441,5 +441,5 @@ _vestsArray = [
   "Specter_LBT_vest_WL_BLK",
   "Specter_LBT_vest_WL_CB",
   "Specter_LBT_vest_WL_GRN",
-  "Specter_LBT_vest_WL_TAN",
+  "Specter_LBT_vest_WL_TAN"
 ];
