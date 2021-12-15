@@ -7,10 +7,12 @@ class CfgPatches {
         "STAF_SuperBox_Orange",
         "STAF_SuperBox_Green",
         "STAF_Ammobox_Ammo",
-        "STAF_Ammobox_Other",
+        "STAF_Ammobox_Ammo_MG",
+        "STAF_Ammobox_Medical",
         "STAF_Ammobox_Launcher",
-        "STAF_Ammobox_MG",
-        "STAF_Ammobox_Rifle"
+        "STAF_Ammobox_cbrn",
+        "STAF_Ammobox_STAF",
+        "STAF_SniperBox"
       };
       requiredAddons[] = {"STAF_pmc_main","plp_containers"};
       requiredVersion = 1.62;
