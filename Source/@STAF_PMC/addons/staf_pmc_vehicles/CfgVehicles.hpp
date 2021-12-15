@@ -57,18 +57,19 @@ class CfgVehicles {
         };
 
         class STAF_md500_defender : CUP_B_AH6M_USA {
-          author = "STAF";
-          scope = 2;
-          scopeCurator = 2;
-          displayName = "MD-500 Defender";
-          side = 1;
-          faction = "STAF_PMC";
-          crew = "STAF_contractor_heli_pilot";
-          editorPreview = "\staf_pmc_main\eden\STAF_md500.jpg";
-          animationList[] = {"hideBench",0,"hideFries",0,"hideFLIR",1,"hideUSARMY",1,"hideRACS",1};
+            author = "STAF";
+            scope = 2;
+            scopeCurator = 2;
+            displayName = "MD-500 Defender";
+            side = 1;
+            faction = "STAF_PMC";
+            crew = "STAF_contractor_heli_pilot";
+            editorPreview = "\staf_pmc_main\eden\STAF_md500.jpg";
+            animationList[] = {"hideBench",0,"hideFries",0,"hideFLIR",1,"hideUSARMY",1,"hideRACS",1};
+            maximumLoad = 300;
 
-          hiddenSelections[] = {"camo1","camo2","camo_weapons","clan"};
-          selectionClan = "";
+            hiddenSelections[] = {"camo1","camo2","camo_weapons","clan"};
+            selectionClan = "";
         };
 
         class STAF_uh60m : CUP_B_UH60M_US {
@@ -85,7 +86,7 @@ class CfgVehicles {
             animationList[] = {};
             hiddenSelections[] = {"camo1","camo2","camo3","clan"};
             selectionClan = "";
-            maximumLoad = 600;
+            maximumLoad = 900;
 
             typicalCargo[] = {"STAF_contractor_heli_pilot"};
         };
@@ -105,7 +106,7 @@ class CfgVehicles {
             hiddenSelections[] = {"Camo1","Camo2","Camo_mlod","clan"};
             hiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_UH1D_CO.paa","\staf_pmc_vehicles\txt\STAF_UH1D_in_CO.paa","\staf_pmc_vehicles\txt\STAF_UH1D_default_co.paa"};
             selectionClan = "";
-            maximumLoad = 600;
+            maximumLoad = 900;
 
             typicalCargo[] = {"STAF_contractor_heli_pilot"};
         };
@@ -125,7 +126,7 @@ class CfgVehicles {
             hiddenSelections[] = {"camo0","camo1","camo2","camo3","MFD_Pilot_L","MFD_Pilot_R","MFD_WSO_L","MFD_WSO_R","n1","n2","n3","n4","n5","n6","clan"};
             textureList[] = {"STAF",1};
             selectionClan = "";
-            maximumLoad = 600;
+            maximumLoad = 200;
 
             typicalCargo[] = {"STAF_contractor_heli_pilot","STAF_contractor_heli_pilot"};
             class textureSources
@@ -158,7 +159,7 @@ class CfgVehicles {
             Maxspeed = 100;
         };
 
-        /*class STAF_rhib : I_C_Boat_Transport_02_F {
+        class STAF_rhib : I_C_Boat_Transport_02_F {
 
             author = "STAF";
             scope = 2;
@@ -172,9 +173,9 @@ class CfgVehicles {
             hiddenSelections[] = {"Camo_1","Camo_2","clan"};
             hiddenSelectionsTextures[] = {"\A3\Boat_F_Exp\Boat_Transport_02\Data\Boat_Transport_02_exterior_CO.paa","\A3\Boat_F_Exp\Boat_Transport_02\Data\Boat_Transport_02_interior_2_CO.paa"};
             selectionClan = "";
-            maximumLoad = 160;
+            maximumLoad = 400;
             Maxspeed = 100;
-        };*/
+        };
 
       //----------------------------------Ground----------------------------------
 
@@ -361,7 +362,7 @@ class CfgVehicles {
             crew = "STAF_contractor";
             editorPreview = "\staf_pmc_main\eden\STAF_MATV_M240.jpg";
             editorSubcategory = "EdSubcat_Cars";
-            maximumLoad = 2800;
+            maximumLoad = 3000;
 
             hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","pintle","camo5","camo6","","BFT_screen","clan"};
             selectionClan = "";
@@ -388,7 +389,7 @@ class CfgVehicles {
             crew = "STAF_contractor";
             editorPreview = "\staf_pmc_main\eden\STAF_MATV_M2.jpg";
             editorSubcategory = "EdSubcat_Cars";
-            maximumLoad = 2800;
+            maximumLoad = 3000;
 
             hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","pintle","camo5","camo6","","BFT_screen","clan"};
             selectionClan = "";
@@ -580,7 +581,7 @@ class CfgVehicles {
             selectionClan = "";
             crew = "B_UAV_AI";
             editorPreview = "\staf_pmc_main\eden\STAF_hexacopter.jpg";
-            maximumLoad = 600;
+            maximumLoad = 1000;
         };
 
         class STAF_hexacopter_ammo : B_UAV_06_F {
@@ -608,7 +609,7 @@ class CfgVehicles {
             selectionClan = "";
             crew = "B_UAV_AI";
             editorPreview = "\staf_pmc_main\eden\STAF_hexacopter_medical.jpg";
-            maximumLoad = 400;
+            maximumLoad = 1000;
         };
 
         class STAF_hexacopter_explosive : B_UAV_06_F {
@@ -622,7 +623,7 @@ class CfgVehicles {
             selectionClan = "";
             crew = "B_UAV_AI";
             editorPreview = "\staf_pmc_main\eden\STAF_hexacopter.jpg";
-            maximumLoad = 900;
+            maximumLoad = 1200;
         };
 
         class STAF_demining_UGV : B_UGV_02_Demining_F {
@@ -729,13 +730,13 @@ class CfgVehicles {
             crew = "STAF_contractor_opf";
         };
 
-        /*class STAF_rhib_opf : STAF_rhib {
+        class STAF_rhib_opf : STAF_rhib {
             Side = 0;
             scope = 2;
             scopeCurator = 2;
             faction = "STAF_PMC_OPF";
             crew = "STAF_contractor_opf";
-        };*/
+        };
 
       //----------------------------------Ground----------------------------------
 
