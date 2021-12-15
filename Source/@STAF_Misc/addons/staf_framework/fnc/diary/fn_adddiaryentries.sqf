@@ -6,10 +6,10 @@
 <t align='center' underline='true' font='Zeppelin33' size='3'>STAF Radio Frequencies</t><br />
 <br />
 <t align='center' font='Zeppelin33' size='2'>Short Range</t>
-<br /><t font='Zeppelin33'>90,110,130,150,170</t><br />
+<br /><t font='Zeppelin33'>37.6, 62.3, 116.4, 212.7, 409.8</t><br />
 <br />
 <t align='center' font='Zeppelin33' size='2'>Long Range</t><br />
-<t font='Zeppelin33'>100,120,140,160,180</t><br />
+<t font='Zeppelin33'>32.5,39.6,43.2,63.4,83.1</t><br />
 <br />------------------------<br />"
 ]]] remoteExec ["createDiaryRecord", 0, true];
 
@@ -30,18 +30,9 @@
 <t font='Zeppelin33'>Avalange</t><br />
 <t font='Zeppelin33'>Gambit</t><br />
 <br />
-<t align='center' font='Zeppelin33' size='2'>------------Air------------</t><br />
-<t underline='true'>Transport</t> <t font='Zeppelin33'>Valkyrie</t><br />
-<t underline='true'>Attack</t> <t font='Zeppelin33'>Phoenix</t><br />
+<t align='center' font='Zeppelin33' size='2'>------------Support------------</t><br />
+<t underline='true'>Transport Helicopter</t> <t font='Zeppelin33'>Valkyrie</t><br />
+<t underline='true'>Attack Helicopter</t> <t font='Zeppelin33'>Phoenix</t><br />
+<t underline='true'>Plane</t> <t font='Zeppelin33'>Eagle</t><br />
+<t underline='true'>Mortar Artillery</t> <t font='Zeppelin33'>Drake</t><br />
 <br />------------------------------------------------<br />"]]] remoteExec ["createDiaryRecord", 0, true];
-
-/* Structure
-<br />------------------------<br />
-<t align='center' underline='true' font='Zeppelin33' size='3'>STAF Radio Frequencies</t><br />
-<br />
-<t align='center' font='Zeppelin33' size='2'>Short Range</t><br />
-<t font='Zeppelin33'>90,110,130,150,170</t><br />
-<br />
-<t align='center' font='Zeppelin33' size='2'>Long Range</t><br />
-<t font='Zeppelin33'>100,120,140,160,180</t><br />
-<br />------------------------<br />*/

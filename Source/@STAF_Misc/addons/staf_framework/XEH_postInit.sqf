@@ -103,3 +103,15 @@ if ((vehicleVarName player) in _zeusVarNames) then {
 		false;
 	};
 }] call ace_fortify_fnc_addDeployHandler;
+
+// ACE Carry & Drag
+ACE_maxWeightDrag = 1600;
+ACE_maxWeightCarry = 1200;
+
+// Grad Civ
+["grad_civs_lifecycle_civ_added", {     
+    { 
+        _x setVariable ["lambs_danger_disableAI", true, true];
+		_x setVariable ["Vcm_Disable", true, true];
+    } forEach _this; 
+}] call CBA_fnc_addEventHandler;
