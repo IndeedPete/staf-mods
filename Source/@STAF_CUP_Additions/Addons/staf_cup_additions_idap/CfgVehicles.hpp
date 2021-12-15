@@ -1,3 +1,0 @@
-class EventHandlers;
-class CfgVehicles {
-};
