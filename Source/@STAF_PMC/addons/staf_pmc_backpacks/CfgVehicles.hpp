@@ -211,7 +211,11 @@ class CfgVehicles
 			item_xx(ACE_surgicalKit,1)
 			item_xx(ACE_personalAidKit,4);
 			item_xx(ACE_EarPlugs,2);
-			item_xx(ACE_splint,10);
+			item_xx(kat_guedel,1);
+			item_xx(kat_larynx,1);
+			item_xx(kat_stethoscope,1);
+			item_xx(kat_Pulseoximeter,1);
+			item_xx(kat_aatKit,2);
 		};
 	};
 
@@ -238,6 +242,11 @@ class CfgVehicles
 			item_xx(ACE_personalAidKit,4);
 			item_xx(ACE_EarPlugs,2);
 			item_xx(ACE_splint,10);
+			item_xx(kat_guedel,1);
+			item_xx(kat_larynx,1);
+			item_xx(kat_stethoscope,1);
+			item_xx(kat_Pulseoximeter,1);
+			item_xx(kat_aatKit,2);
 		};
 	};
 
@@ -264,6 +273,11 @@ class CfgVehicles
 			item_xx(ACE_personalAidKit,4);
 			item_xx(ACE_EarPlugs,2);
 			item_xx(ACE_splint,10);
+			item_xx(kat_guedel,1);
+			item_xx(kat_larynx,1);
+			item_xx(kat_stethoscope,1);
+			item_xx(kat_Pulseoximeter,1);
+			item_xx(kat_aatKit,2);
 		};
 	};
 
