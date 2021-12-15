@@ -28,6 +28,11 @@ _objs addItemCargoGlobal ["ACE_wirecutter",1];
 _objs addItemCargoGlobal ["ACE_DefusalKit",1];
 _objs addItemCargoGlobal ["ACE_Clacker",1];
 _objs addItemCargoGlobal ["ACE_UAVBattery",2];
+_objs addItemCargoGlobal ["kat_X_AED",1];
+_objs addItemCargoGlobal ["kat_guedel",1];
+_objs addItemCargoGlobal ["kat_larynx",1];
+_objs addItemCargoGlobal ["kat_Pulseoximeter",1];
+_objs addItemCargoGlobal ["kat_stethoscope",1];
 
 _objs addMagazineCargoGlobal ["30Rnd_65x39_caseless_mag",7]; //G36 MLI
 _objs addMagazineCargoGlobal ["hlc_30rnd_556x45_EPR_G36",7]; //G36

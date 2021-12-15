@@ -21,3 +21,8 @@ _objs addItemCargoGlobal ["ACE_fieldDressing",20];
 _objs addItemCargoGlobal ["ACE_adenosine",5];
 _objs addItemCargoGlobal ["ACE_bodyBag",2];
 _objs addItemCargoGlobal ["ACE_personalAidKit",2];
+_objs addItemCargoGlobal ["kat_X_AED",1];
+_objs addItemCargoGlobal ["kat_guedel",2];
+_objs addItemCargoGlobal ["kat_larynx",2];
+_objs addItemCargoGlobal ["kat_Pulseoximeter",2];
+_objs addItemCargoGlobal ["kat_stethoscope",2];

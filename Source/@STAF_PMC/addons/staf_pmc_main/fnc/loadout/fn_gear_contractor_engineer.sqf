@@ -65,3 +65,17 @@ _unit setVariable ["STAF_var_Unit_Loadout_Set", true, true];
 
 //Save loadout in Eden
 save3DENInventory [_unit];
+
+if (missionNamespace getvariable ["STAF_cbaDebug", false]) then {
+	hint format ["Uniform: %1 <br/> Vest: %2 <br/> Helmet: %3",_uniform,_vest,_headGear];
+
+	if (uniform _unit == "") then {
+		diag_log format ["This Uniform does not excist: %1", _uniform];
+	};
+	if (vest _unit == "") then {
+		diag_log format ["This Vest does not excist: %1", _uniform];
+	};
+	if (headgear _unit == "") then {
+		diag_log format ["This Headgear does not excist: %1", _uniform];
+	};
+};

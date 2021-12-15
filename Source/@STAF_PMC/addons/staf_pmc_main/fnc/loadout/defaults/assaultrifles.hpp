@@ -26,6 +26,21 @@ _assaultrifleArray = [
   "STAF_rifle_scar17_blk",
   "STAF_rifle_scar17_tan",
   "STAF_rifle_scar17_wld",
+  /*"STAF_arifle_MX_tan_F",
+  "STAF_arifle_MX_black_F",
+  "STAF_arifle_MX_khk_F",
+  "STAF_VSM_MX",
+  "STAF_tacs_MX_BlackCamo",
+  "STAF_arifle_MX_GL_tan_F",
+  "STAF_arifle_MX_GL_black_F",
+  "STAF_arifle_MX_GL_khk_F",
+  "STAF_VSM_MX_GL",
+  "STAF_tacs_MX_GL_BlackCamo",
+  "STAF_arifle_MXC_tan_F",
+  "STAF_arifle_MXC_black_F",
+  "STAF_arifle_MXC_khk_F",
+  "STAF_VSM_MXC",
+  "STAF_tacs_MXC_BlackCamo",*/
   "STAF_rifle_m4a1_blk",
   "STAF_rifle_m4a1_blk",
   "STAF_rifle_m4a1_mstock_blk",
@@ -40,7 +55,5 @@ _assaultrifleArray = [
   "STAF_rifle_famas_g2_hg_blk",
   "STAF_rifle_famas_felin_blk",
   "STAF_rifle_famas_g2_blk",
-  "STAF_rifle_famas_g2_hg_blk",
-  "STAF_rifle_falosw",
-  "STAF_rifle_falosw"
+  "STAF_rifle_famas_g2_hg_blk"
 ];

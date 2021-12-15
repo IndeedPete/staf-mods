@@ -171,9 +171,71 @@ if (_weapon == "STAF_rifle_famas_g2_hg_blk") then {
   _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
   for "_i" from 1 to 7 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
 };
+
 if (_weapon == "STAF_rifle_falosw") then {
   _unit addWeaponItem [_weapon, "CUP_30Rnd_762x51_FNFAL_M", true];
   for "_i" from 1 to 7 do {_unit addItem "CUP_30Rnd_762x51_FNFAL_M";};
+};
+
+if (_weapon == "STAF_arifle_MX_tan_F") then {
+  _unit addWeaponItem [_weapon, "30Rnd_65x39_caseless_black_mag", true];
+  for "_i" from 1 to 5 do {_unit addItem "30Rnd_65x39_caseless_black_mag";};
+};
+if (_weapon == "STAF_arifle_MX_GL_tan_F") then {
+  _unit addWeaponItem [_weapon, "30Rnd_65x39_caseless_black_mag", true];
+  for "_i" from 1 to 5 do {_unit addItem "30Rnd_65x39_caseless_black_mag";};
+};
+if (_weapon == "STAF_arifle_MXC_tan_F") then {
+  _unit addWeaponItem [_weapon, "30Rnd_65x39_caseless_black_mag", true];
+  for "_i" from 1 to 5 do {_unit addItem "30Rnd_65x39_caseless_black_mag";};
+};
+if (_weapon == "STAF_arifle_MX_black_F") then {
+  _unit addWeaponItem [_weapon, "30Rnd_65x39_caseless_black_mag", true];
+  for "_i" from 1 to 5 do {_unit addItem "30Rnd_65x39_caseless_black_mag";};
+};
+if (_weapon == "STAF_arifle_MX_GL_black_F") then {
+  _unit addWeaponItem [_weapon, "30Rnd_65x39_caseless_black_mag", true];
+  for "_i" from 1 to 5 do {_unit addItem "30Rnd_65x39_caseless_black_mag";};
+};
+if (_weapon == "STAF_arifle_MXC_black_F") then {
+  _unit addWeaponItem [_weapon, "30Rnd_65x39_caseless_black_mag", true];
+  for "_i" from 1 to 5 do {_unit addItem "30Rnd_65x39_caseless_black_mag";};
+};
+if (_weapon == "STAF_arifle_MX_khk_F") then {
+  _unit addWeaponItem [_weapon, "30Rnd_65x39_caseless_khaki_mag", true];
+  for "_i" from 1 to 5 do {_unit addItem "30Rnd_65x39_caseless_khaki_mag";};
+};
+if (_weapon == "STAF_arifle_MX_GL_khk_F") then {
+  _unit addWeaponItem [_weapon, "30Rnd_65x39_caseless_khaki_mag", true];
+  for "_i" from 1 to 5 do {_unit addItem "30Rnd_65x39_caseless_khaki_mag";};
+};
+if (_weapon == "STAF_arifle_MXC_khk_F") then {
+  _unit addWeaponItem [_weapon, "30Rnd_65x39_caseless_khaki_mag", true];
+  for "_i" from 1 to 5 do {_unit addItem "30Rnd_65x39_caseless_khaki_mag";};
+};
+if (_weapon == "STAF_VSM_MX") then {
+  _unit addWeaponItem [_weapon, "30Rnd_65x39_caseless_black_mag", true];
+  for "_i" from 1 to 5 do {_unit addItem "30Rnd_65x39_caseless_black_mag";};
+};
+if (_weapon == "STAF_VSM_MX_GL") then {
+  _unit addWeaponItem [_weapon, "30Rnd_65x39_caseless_black_mag", true];
+  for "_i" from 1 to 5 do {_unit addItem "30Rnd_65x39_caseless_black_mag";};
+};
+if (_weapon == "STAF_VSM_MXC") then {
+  _unit addWeaponItem [_weapon, "30Rnd_65x39_caseless_black_mag", true];
+  for "_i" from 1 to 5 do {_unit addItem "30Rnd_65x39_caseless_black_mag";};
+};
+if (_weapon == "STAF_tacs_MX_BlackCamo") then {
+  _unit addWeaponItem [_weapon, "30Rnd_65x39_caseless_khaki_mag", true];
+  for "_i" from 1 to 5 do {_unit addItem "30Rnd_65x39_caseless_khaki_mag";};
+};
+if (_weapon == "STAF_tacs_MX_GL_BlackCamo") then {
+  _unit addWeaponItem [_weapon, "30Rnd_65x39_caseless_khaki_mag", true];
+  for "_i" from 1 to 5 do {_unit addItem "30Rnd_65x39_caseless_khaki_mag";};
+};
+if (_weapon == "STAF_tacs_MXC_BlackCamo") then {
+  _unit addWeaponItem [_weapon, "30Rnd_65x39_caseless_khaki_mag", true];
+  for "_i" from 1 to 5 do {_unit addItem "30Rnd_65x39_caseless_khaki_mag";};
 };
 
 //SMGs
