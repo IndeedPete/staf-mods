@@ -74,6 +74,7 @@ class CfgFunctions
 			class forceFollowRoad{};
 			class replaceInString{};
 			class inHouse{};
+			class randomArtillery{};
 			class setrespawntimer{};
 			class spawnwreck{};
 			class turbanDown{};
