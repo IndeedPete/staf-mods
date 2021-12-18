@@ -12,6 +12,7 @@ class CfgVehicles {
 	class plp_ct_KappaCaseBlackBig;
 	class plp_ct_MilCaseCompactBlack;
 	class plp_ct_RifleCaseBlack;
+	class plp_ct_WoodBoxDarkMedium;
 
 	class STAF_SuperBox_Orange: C_IDAP_supplyCrate_F
 	{
@@ -38,12 +39,15 @@ class CfgVehicles {
 		class TransportBackpacks {};
 	};
 
-	class STAF_Ammobox_Ammo: plp_ct_KappaCaseBlackFlat
+	class STAF_Building_Supplies: plp_ct_WoodBoxDarkMedium
 	{
-		displayName = "Ammo Box (STAF)";
+		displayName = "Building Supplies (STAF)";
 		maximumLoad = 1600;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
+		scope = 2;
+		scopeCurator = 2;
+
 		// Dragging
         ace_dragging_canDrag = 1;  // Can be dragged (0-no, 1-yes)
         ace_dragging_dragPosition[] = {0, 1.2, 0};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1.5, 0])
@@ -55,9 +59,34 @@ class CfgVehicles {
         ace_dragging_carryDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
 
 		// Cargo
-		ace_cargo_size = 2;  // Cargo space the object takes
+		ace_cargo_size = 1;  // Cargo space the object takes
         ace_cargo_canLoad = 1;  // Enables the object to be loaded (1-yes, 0-no)
-        ace_cargo_noRename = 1;  // Blocks renaming object (1-blocked, 0-allowed)
+        ace_cargo_noRename = 1;  // Blocks renaming object (1-blocked, 0-allowed)	
+	}
+
+	class STAF_Ammobox_Ammo: plp_ct_KappaCaseBlackFlat
+	{
+		displayName = "Ammo Box (STAF)";
+		maximumLoad = 1600;
+		editorCategory = "EdCat_Supplies";
+		editorSubcategory = "EdSubcat_STAF_Supplies";
+		scope = 2;
+		scopeCurator = 2;
+
+		// Dragging
+        ace_dragging_canDrag = 1;  // Can be dragged (0-no, 1-yes)
+        ace_dragging_dragPosition[] = {0, 1.2, 0};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1.5, 0])
+        ace_dragging_dragDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
+
+        // Carrying
+        ace_dragging_canCarry = 1;  // Can be carried (0-no, 1-yes)
+        ace_dragging_carryPosition[] = {0, 1.2, 1.2};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1, 1])
+        ace_dragging_carryDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
+
+		// Cargo
+		ace_cargo_size = 1;  // Cargo space the object takes
+        ace_cargo_canLoad = 1;  // Enables the object to be loaded (1-yes, 0-no)
+        ace_cargo_noRename = 1;  // Blocks renaming object (1-blocked, 0-allowed)	
 
 		class TransportMagazines {
 			mag_xx(30Rnd_762x39_AK12_Mag_F,12);
@@ -87,6 +116,9 @@ class CfgVehicles {
 		maximumLoad = 2000;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
+		scope = 2;
+		scopeCurator = 2;
+		
 		// Dragging
         ace_dragging_canDrag = 1;  // Can be dragged (0-no, 1-yes)
         ace_dragging_dragPosition[] = {0, 1.2, 0};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1.5, 0])
@@ -119,6 +151,9 @@ class CfgVehicles {
 		maximumLoad = 1000;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
+		scope = 2;
+		scopeCurator = 2;
+		
 		// Dragging
         ace_dragging_canDrag = 1;  // Can be dragged (0-no, 1-yes)
         ace_dragging_dragPosition[] = {0, 1.2, 0};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1.5, 0])
@@ -130,7 +165,7 @@ class CfgVehicles {
         ace_dragging_carryDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
 
 		// Cargo
-		ace_cargo_size = 4;  // Cargo space the object takes
+		ace_cargo_size = 1;  // Cargo space the object takes
         ace_cargo_canLoad = 1;  // Enables the object to be loaded (1-yes, 0-no)
         ace_cargo_noRename = 1;  // Blocks renaming object (1-blocked, 0-allowed)
 
@@ -174,6 +209,9 @@ class CfgVehicles {
 		maximumLoad = 1600;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
+		scope = 2;
+		scopeCurator = 2;
+		
 		// Dragging
         ace_dragging_canDrag = 1;  // Can be dragged (0-no, 1-yes)
         ace_dragging_dragPosition[] = {0, 1.2, 0};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1.5, 0])
@@ -185,7 +223,7 @@ class CfgVehicles {
         ace_dragging_carryDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
 
 		// Cargo
-		ace_cargo_size = 4;  // Cargo space the object takes
+		ace_cargo_size = 1;  // Cargo space the object takes
         ace_cargo_canLoad = 1;  // Enables the object to be loaded (1-yes, 0-no)
         ace_cargo_noRename = 1;  // Blocks renaming object (1-blocked, 0-allowed)
 
@@ -207,6 +245,9 @@ class CfgVehicles {
 		maximumLoad = 2000;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
+		scope = 2;
+		scopeCurator = 2;
+		
 		// Dragging
         ace_dragging_canDrag = 1;  // Can be dragged (0-no, 1-yes)
         ace_dragging_dragPosition[] = {0, 1.2, 0};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1.5, 0])
@@ -218,7 +259,7 @@ class CfgVehicles {
         ace_dragging_carryDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
 
 		// Cargo
-		ace_cargo_size = 3;  // Cargo space the object takes
+		ace_cargo_size = 1;  // Cargo space the object takes
         ace_cargo_canLoad = 1;  // Enables the object to be loaded (1-yes, 0-no)
         ace_cargo_noRename = 1;  // Blocks renaming object (1-blocked, 0-allowed)
 
@@ -238,6 +279,9 @@ class CfgVehicles {
 		maximumLoad = 2000;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
+		scope = 2;
+		scopeCurator = 2;
+		
 		// Dragging
         ace_dragging_canDrag = 1;  // Can be dragged (0-no, 1-yes)
         ace_dragging_dragPosition[] = {0, 1.2, 0};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1.5, 0])
@@ -249,7 +293,7 @@ class CfgVehicles {
         ace_dragging_carryDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
 
 		// Cargo
-		ace_cargo_size = 2;  // Cargo space the object takes
+		ace_cargo_size = 1;  // Cargo space the object takes
         ace_cargo_canLoad = 1;  // Enables the object to be loaded (1-yes, 0-no)
         ace_cargo_noRename = 1;  // Blocks renaming object (1-blocked, 0-allowed)
 
@@ -302,6 +346,9 @@ class CfgVehicles {
 		maximumLoad = 400;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
+		scope = 2;
+		scopeCurator = 2;
+		
 		// Dragging
         ace_dragging_canDrag = 1;  // Can be dragged (0-no, 1-yes)
         ace_dragging_dragPosition[] = {0, 1.2, 0};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1.5, 0])
@@ -313,7 +360,7 @@ class CfgVehicles {
         ace_dragging_carryDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
 
 		// Cargo
-		ace_cargo_size = 3;  // Cargo space the object takes
+		ace_cargo_size = 1;  // Cargo space the object takes
         ace_cargo_canLoad = 1;  // Enables the object to be loaded (1-yes, 0-no)
         ace_cargo_noRename = 1;  // Blocks renaming object (1-blocked, 0-allowed)
 

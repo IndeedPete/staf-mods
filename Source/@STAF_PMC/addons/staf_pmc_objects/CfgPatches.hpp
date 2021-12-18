@@ -12,7 +12,8 @@ class CfgPatches {
         "STAF_Ammobox_Launcher",
         "STAF_Ammobox_cbrn",
         "STAF_Ammobox_STAF",
-        "STAF_SniperBox"
+        "STAF_SniperBox",
+        "STAF_Building_Supplies"
       };
       requiredAddons[] = {"STAF_pmc_main","plp_containers"};
       requiredVersion = 1.62;
