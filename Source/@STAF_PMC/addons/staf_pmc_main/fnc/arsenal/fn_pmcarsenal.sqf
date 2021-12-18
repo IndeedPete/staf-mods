@@ -786,6 +786,7 @@ _items = [
             //CTAB
             "ItemAndroid",
             "ItemcTab",
+            "ItemcTabHCam",
             //VSM
             "VSM_FaceMask_tan",
             "VSM_FaceMask_black",
