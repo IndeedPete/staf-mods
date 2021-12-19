@@ -2,8 +2,7 @@
 
 class CfgPatches {
     class STAF_pmc_objects {
-      units[] = {};
-      weapons[] = {
+      units[] = {        
         "STAF_SuperBox_Orange",
         "STAF_SuperBox_Green",
         "STAF_Ammobox_Ammo",
@@ -15,6 +14,7 @@ class CfgPatches {
         "STAF_SniperBox",
         "STAF_Building_Supplies"
       };
+      weapons[] = {};
       requiredAddons[] = {"STAF_pmc_main","plp_containers"};
       requiredVersion = 1.62;
       author = "STAF";

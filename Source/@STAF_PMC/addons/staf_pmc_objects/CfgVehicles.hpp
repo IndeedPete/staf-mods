@@ -3,6 +3,7 @@
 #define item_xx(a,b) class _xx_##a {name = a; count = b;}
 #define back_xx(a,b) class _xx_##a {backpack = a; count = b;}
 
+class EventHandlers;
 class CfgVehicles {
 	class C_IDAP_supplyCrate_F;
 	class B_supplyCrate_F;
@@ -20,6 +21,9 @@ class CfgVehicles {
 		maximumLoad = 999999999999;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
+		side = 4;
+		scope = 2;
+		scopeCurator = 2;
 
 		class TransportWeapons {};
 		class TransportMagazines {};
@@ -32,6 +36,9 @@ class CfgVehicles {
 		maximumLoad = 999999999999;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
+		side = 4;
+		scope = 2;
+		scopeCurator = 2;
 
 		class TransportWeapons {};
 		class TransportMagazines {};
@@ -45,6 +52,7 @@ class CfgVehicles {
 		maximumLoad = 1600;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
+		side = 4;
 		scope = 2;
 		scopeCurator = 2;
 
@@ -68,8 +76,9 @@ class CfgVehicles {
 	{
 		displayName = "Ammo Box (STAF)";
 		maximumLoad = 1600;
-		editorCategory = "EdCat_Supplies";
+		//editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
+		side = 4;
 		scope = 2;
 		scopeCurator = 2;
 
@@ -116,6 +125,7 @@ class CfgVehicles {
 		maximumLoad = 2000;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
+		side = 4;
 		scope = 2;
 		scopeCurator = 2;
 		
@@ -151,6 +161,7 @@ class CfgVehicles {
 		maximumLoad = 1000;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
+		side = 4;
 		scope = 2;
 		scopeCurator = 2;
 		
@@ -209,6 +220,7 @@ class CfgVehicles {
 		maximumLoad = 1600;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
+		side = 4;
 		scope = 2;
 		scopeCurator = 2;
 		
@@ -245,6 +257,7 @@ class CfgVehicles {
 		maximumLoad = 2000;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
+		side = 4;
 		scope = 2;
 		scopeCurator = 2;
 		
@@ -279,6 +292,7 @@ class CfgVehicles {
 		maximumLoad = 2000;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
+		side = 4;
 		scope = 2;
 		scopeCurator = 2;
 		
@@ -346,6 +360,7 @@ class CfgVehicles {
 		maximumLoad = 400;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
+		side = 4;
 		scope = 2;
 		scopeCurator = 2;
 		
