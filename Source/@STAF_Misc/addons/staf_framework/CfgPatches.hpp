@@ -23,6 +23,7 @@ class CfgPatches
 		requiredAddons[] = {
 			"A3_Modules_F",
 			"A3_Modules_F_Curator",
+			"A3_data_f_lxws",
 			"ace_movement",
 			"A3_Structures_F_Mark",
 			"CBA_Main",

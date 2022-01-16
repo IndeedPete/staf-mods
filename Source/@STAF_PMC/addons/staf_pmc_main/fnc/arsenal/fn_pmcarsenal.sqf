@@ -48,7 +48,13 @@ _weapons = [
             "LMG_Zafir_F",
             "MMG_01_tan_F",
             "Camera_lxWS",
-            "STAF_arifle_MX_black_F",
+            "hgun_esd_01_F",
+            "SMG_03C_black",
+            "SMG_03C_TR_black",
+            "SMG_03_black",
+            "SMG_03_TR_black",
+            //STAF
+            /*"STAF_arifle_MX_black_F",
             "STAF_arifle_MX_khk_F",
             "STAF_VSM_MX",
             "STAF_tacs_MX_BlackCamo",
@@ -61,15 +67,10 @@ _weapons = [
             "STAF_arifle_MXC_black_F",
             "STAF_arifle_MXC_khk_F",
             "STAF_VSM_MXC",
-            "STAF_tacs_MXC_BlackCamo",
-            //STAF
+            "STAF_tacs_MXC_BlackCamo",*/
             "STAF_rifle_ng7_black",
             "STAF_rifle_ng7_woodland",
             "STAF_rifle_hk121_wld",
-            "SMG_03C_black",
-            "SMG_03C_TR_black",
-            "SMG_03_black",
-            "SMG_03_TR_black",
             //CUP
             "CUP_arifle_Mk16_CQC",
             "CUP_arifle_Mk16_CQC_black",
