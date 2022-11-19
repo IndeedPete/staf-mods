@@ -442,8 +442,8 @@ class CfgVehicles
 	class STAF_Module_DisableVcom_F: Module_F
 	{
 		category = "STAF";
-		displayName = "Disable Vcom";
-		function = "STAF_fnc_disable_vcom";
+		displayName = "(LEGACY) Disable Vcom";
+		function = "";
 		functionPriority = 10;
 		isDisposable = 0;
 		is3DEN = 0;

@@ -7,11 +7,6 @@ params [
 #include "\staf_framework\fnc\zenmodule\Checks\fn_doNotPlaceOnObjectUnit.hpp"
 #include "\staf_framework\fnc\zenmodule\Checks\fn_placeOnNothing.hpp"
 
-if (isNil {missionNamespace getVariable "ACE_fortify_fortifyAllowed"}) exitWith 
-{
-	[objNull, "ACE FORTIFY IS NOT ENABLED"] call BIS_fnc_showCuratorFeedbackMessage;
-};
-
 // Dialog
 [
 	"Add Fortify Budget",
@@ -25,16 +20,21 @@ if (isNil {missionNamespace getVariable "ACE_fortify_fortifyAllowed"}) exitWith
 			west
 		],
 		[
-			"SLIDER",
+			"EDIT",
 			[
-				"Add Fortify Budget",
-				"How much Fortify Budget should be added?"
+				"Update Fortify Budget",
+				"Sets the change ammount (onyl use Numbers)"
+			],
+			1000
+		],
+		[
+			"CHECKBOX",
+			[
+				"Subtract",
+				"Do you want to subtract the chosen budget?"
 			],
 			[
-				1, // Min. Value
-				2000, // Max. Value
-				50, // Default Value
-				0 // Number of Decimals
+				false
 			]
 		],
 		[
@@ -61,24 +61,41 @@ if (isNil {missionNamespace getVariable "ACE_fortify_fortifyAllowed"}) exitWith
 	{
 		params ["_dialogValues", "_objectUnderCursor"];
 
-		_dialogValues params ["_side", "_budget", "_infBudget", "_hint"];
+		_dialogValues params ["_side", "_budgetString", "_subtract", "_infBudget", "_hint"];
 		
-		// Check if Budget is unlimited
-		_format = format ["ACE_fortify_Budget_%1", _side];
-		_getBudget = missionNamespace getVariable [_format, 0];
-		if (_getBudget == -1) then {
-			missionNamespace setVariable [_format, 0];
+		_budget = parseNumber _budgetString;
+		_getBudget = [_side] call ace_fortify_fnc_getBudget;
+
+		_sideForText = switch (_side) do {
+			case (west): {"WEST"};
+			case (east): {"EAST"};
+			case (resistance): {"RESISTANCE"};
+			case (civilian): {"CIVILIANS"};
 		};
-		
+
 		if (_infBudget) then {
+			_infBudgetChange = (_getBudget + 1) * (-1); 
+
+			_format = format ["ACE_fortify_Budget_%1", _side];
 			missionNamespace setVariable [_format, -1];
 
-			[objNull, "THE FORTIFY BUDGET HAS BEEN SET TO INFINITE"] call BIS_fnc_showCuratorFeedbackMessage;
+			[objNull, "THE FORTIFY BUDGET HAS BEEN SET TO INFINITE FOR %1", _sideForText] call BIS_fnc_showCuratorFeedbackMessage;
 		} else {
-			[_side, _budget, _hint] call ace_fortify_fnc_updateBudget;
+			if (_getBudget == -1) then {
+				_format = format ["ACE_fortify_Budget_%1", _side];
+				missionNamespace setVariable [_format, 0];
+			};
 
-			_text = format ["THE FORTIFY BUDGET HAS BEEN CHANGED BY %1", _budget];
-			[objNull, _text] call BIS_fnc_showCuratorFeedbackMessage;
+			if (_subtract) then {
+				_subtractBudget = _budget * (-1);
+
+				[_side, _subtractBudget, _hint] call ace_fortify_fnc_updateBudget;
+				_text = format ["$%1 HAS BEEN SUBTRACTED FROM %2", _budget, _sideForText];
+			} else {
+				[_side, _budget, _hint] call ace_fortify_fnc_updateBudget;
+
+				_text = format ["$%1 HAS BEEN ADDED TO %2", _budget, _sideForText];
+			};
 		};
 	},
 	{},

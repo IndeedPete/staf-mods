@@ -44,6 +44,12 @@ class CfgFunctions
 			class hidebody_tool_outside{};
 			class hidebodyaction{};
 		};
+		/*class ied
+		{
+			file = "\STAF_FRAMEWORK\fnc\ied";
+			class addvbied{};
+			class addobjied{};
+		};*/
 		class KeyValueMap
 		{
 			file = "\STAF_FRAMEWORK\fnc\keyValueMap";

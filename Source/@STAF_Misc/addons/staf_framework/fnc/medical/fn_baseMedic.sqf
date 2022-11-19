@@ -13,7 +13,7 @@ _heal = [
 	[
 		(format ["<img size='1' shadow='1' image='\a3\ui_f\data\igui\cfg\Actions\heal_ca.paa'/> %1", _text]),
 		{
-			[player] call ace_medical_treatment_fnc_fullHeallocal;
+			player call kat_breathing_fnc_fullHeallocal;
 			["STAF_notification_healed",[]] call bis_fnc_showNotification;
 		},
 		[],
@@ -42,7 +42,7 @@ _healeveryone = [
 			_healedUnits = _radiusUnits - [_caller];
 
 			{
-				[_x] call ace_medical_treatment_fnc_fullHeallocal;
+				_x call kat_breathing_fnc_fullHeallocal;
 			} forEach _radiusUnits;
 
 			{

@@ -21,7 +21,6 @@ class CfgVehicles {
 		maximumLoad = 999999999999;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
-		side = 4;
 		scope = 2;
 		scopeCurator = 2;
 
@@ -36,7 +35,6 @@ class CfgVehicles {
 		maximumLoad = 999999999999;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
-		side = 4;
 		scope = 2;
 		scopeCurator = 2;
 
@@ -52,7 +50,6 @@ class CfgVehicles {
 		maximumLoad = 1600;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
-		side = 4;
 		scope = 2;
 		scopeCurator = 2;
 
@@ -76,9 +73,8 @@ class CfgVehicles {
 	{
 		displayName = "Ammo Box (STAF)";
 		maximumLoad = 1600;
-		//editorCategory = "EdCat_Supplies";
+		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
-		side = 4;
 		scope = 2;
 		scopeCurator = 2;
 
@@ -125,7 +121,6 @@ class CfgVehicles {
 		maximumLoad = 2000;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
-		side = 4;
 		scope = 2;
 		scopeCurator = 2;
 		
@@ -161,7 +156,6 @@ class CfgVehicles {
 		maximumLoad = 1000;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
-		side = 4;
 		scope = 2;
 		scopeCurator = 2;
 		
@@ -182,12 +176,24 @@ class CfgVehicles {
 
 		class TransportMagazines{};
 		class TransportItems {
-			/*item_xx(kat_aatKit,10);
+			item_xx(kat_aatKit,10);
+			item_xx(kat_IV_16,10);
+			item_xx(kat_amiodarone,3);
+			item_xx(kat_lidocaine,3);
+			item_xx(kat_atropine,3);
+			item_xx(kat_naloxone,3);
+			item_xx(kat_nitroglycerin,3);
+			item_xx(kat_norepinephrine,3);
+			item_xx(kat_phenylephrine,3);
+			item_xx(kat_TXA,3);
+			item_xx(kat_Carbonate,3);
+			item_xx(kat_Painkiller,3);
+			item_xx(kat_IO_FAST,5);
 			item_xx(kat_accuvac,2);
 			item_xx(ACE_adenosine,15);
 			item_xx(kat_X_AED,1);
 			item_xx(digi_Antidot,10);
-			item_xx(kat_AED,2);*/
+			item_xx(kat_AED,2);
 			item_xx(ACE_fieldDressing,50);
 			item_xx(ACE_elasticBandage,20);
 			item_xx(ACE_packingBandage,60);
@@ -220,7 +226,6 @@ class CfgVehicles {
 		maximumLoad = 1600;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
-		side = 4;
 		scope = 2;
 		scopeCurator = 2;
 		
@@ -257,7 +262,6 @@ class CfgVehicles {
 		maximumLoad = 2000;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
-		side = 4;
 		scope = 2;
 		scopeCurator = 2;
 		
@@ -292,7 +296,6 @@ class CfgVehicles {
 		maximumLoad = 2000;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
-		side = 4;
 		scope = 2;
 		scopeCurator = 2;
 		
@@ -360,7 +363,6 @@ class CfgVehicles {
 		maximumLoad = 400;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
-		side = 4;
 		scope = 2;
 		scopeCurator = 2;
 		

@@ -16,7 +16,7 @@ _vest = selectRandom _vestsArray;
 _weapon = selectRandom _assaultrifleArray;
 _pistol = selectRandom _pistolsArray;
 _goggles = selectRandom _gogglesArray;
-_backpack = selectRandom _backpacksArray;
+_backpack = selectRandom ["milgp_b_patrol_01_khk","milgp_b_patrol_01_cb","milgp_b_patrol_01_rgr"];
 _launcher = selectRandom _launcherArray;
 _unit addGoggles _goggles;
 _unit addHeadgear _headGear;
@@ -58,13 +58,42 @@ _unit linkItem "TFAR_anprc152";
 #include "\staf_pmc_main\fnc\loadout\defaults\magazines.hpp"
 
 // Launcher Ammo
-if (_launcher == "STAF_launcher_smaw") then {
+if (_launcher == "CUP_launch_Mk153Mod0") then {
   _unit addWeaponItem [_launcher, "CUP_SMAW_HEAA_M", true];
   _unit addWeaponItem [_launcher, "CUP_SMAW_Spotting", true];
   for "_i" from 1 to 3 do {_unit addItem "CUP_SMAW_HEAA_M";};
   for "_i" from 1 to 1 do {_unit addItem "CUP_SMAW_Spotting";};
 };
-
+if (_launcher == "launch_O_Titan_short_F") then {
+  _unit addWeaponItem [_launcher, "Titan_AT", true];
+  for "_i" from 1 to 2 do {_unit addItem "Titan_AT";};
+  for "_i" from 1 to 1 do {_unit addItem "Titan_AP";};
+};
+if (_launcher == "launch_I_Titan_short_F") then {
+  _unit addWeaponItem [_launcher, "Titan_AT", true];
+  for "_i" from 1 to 2 do {_unit addItem "Titan_AT";};
+  for "_i" from 1 to 1 do {_unit addItem "Titan_AP";};
+};
+if (_launcher == "launch_B_Titan_short_F") then {
+  _unit addWeaponItem [_launcher, "Titan_AT", true];
+  for "_i" from 1 to 2 do {_unit addItem "Titan_AT";};
+  for "_i" from 1 to 1 do {_unit addItem "Titan_AP";};
+};
+if (_launcher == "launch_O_Titan_short_ghex_F") then {
+  _unit addWeaponItem [_launcher, "Titan_AT", true];
+  for "_i" from 1 to 2 do {_unit addItem "Titan_AT";};
+  for "_i" from 1 to 1 do {_unit addItem "Titan_AP";};
+};
+if (_launcher == "launch_B_Titan_short_tna_F") then {
+  _unit addWeaponItem [_launcher, "Titan_AT", true];
+  for "_i" from 1 to 2 do {_unit addItem "Titan_AT";};
+  for "_i" from 1 to 1 do {_unit addItem "Titan_AP";};
+};
+if (_launcher == "TEC_Launch_Titan_APRL_Short") then {
+  _unit addWeaponItem [_launcher, "Titan_AT", true];
+  for "_i" from 1 to 2 do {_unit addItem "Titan_AT";};
+  for "_i" from 1 to 1 do {_unit addItem "Titan_AP";};
+};
 if (isNull objectParent _unit) then {_unit switchmove ""};
 _unit setVariable ["STAF_var_Unit_Loadout", getUnitLoadout _unit];
 _unit setVariable ["STAF_var_Unit_Loadout_Set", true, true];

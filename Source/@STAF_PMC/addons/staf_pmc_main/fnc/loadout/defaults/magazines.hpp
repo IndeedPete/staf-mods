@@ -237,6 +237,152 @@ if (_weapon == "STAF_tacs_MXC_BlackCamo") then {
   _unit addWeaponItem [_weapon, "30Rnd_65x39_caseless_khaki_mag", true];
   for "_i" from 1 to 5 do {_unit addItem "30Rnd_65x39_caseless_khaki_mag";};
 };
+if (_weapon == "STAF_arifle_XMS_Base_lxWS") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_BLACK_PULL", true];
+  for "_i" from 1 to 5 do {_unit addItem "CUP_30Rnd_556x45_PMAG_BLACK_PULL";};
+};
+if (_weapon == "STAF_arifle_XMS_Base_khk_lxWS") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_OD_PULL", true];
+  for "_i" from 1 to 5 do {_unit addItem "CUP_30Rnd_556x45_PMAG_OD_PULL";};
+};
+if (_weapon == "STAF_arifle_XMS_Base_Sand_lxWS") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_COYOTE_PULL", true];
+  for "_i" from 1 to 5 do {_unit addItem "CUP_30Rnd_556x45_PMAG_COYOTE_PULL";};
+};
+if (_weapon == "STAF_rifle_augsrcarb_b") then {
+  _unit addWeaponItem [_weapon, "hlc_30Rnd_556x45_B_AUG", true];
+  for "_i" from 1 to 5 do {_unit addItem "hlc_30Rnd_556x45_B_AUG";};
+};
+if (_weapon == "STAF_rifle_augsrcarb") then {
+  _unit addWeaponItem [_weapon, "hlc_30Rnd_556x45_B_AUG", true];
+  for "_i" from 1 to 5 do {_unit addItem "hlc_30Rnd_556x45_B_AUG";};
+};
+if (_weapon == "STAF_rifle_augsrcarb_t") then {
+  _unit addWeaponItem [_weapon, "hlc_30Rnd_556x45_B_AUG", true];
+  for "_i" from 1 to 5 do {_unit addItem "hlc_30Rnd_556x45_B_AUG";};
+};
+if (_weapon == "STAF_rifle_auga1carb_B") then {
+  _unit addWeaponItem [_weapon, "hlc_30Rnd_556x45_B_AUG", true];
+  for "_i" from 1 to 5 do {_unit addItem "hlc_30Rnd_556x45_B_AUG";};
+};
+if (_weapon == "STAF_rifle_auga1carb") then {
+  _unit addWeaponItem [_weapon, "hlc_30Rnd_556x45_B_AUG", true];
+  for "_i" from 1 to 5 do {_unit addItem "hlc_30Rnd_556x45_B_AUG";};
+};
+if (_weapon == "STAF_rifle_auga1carb_t") then {
+  _unit addWeaponItem [_weapon, "hlc_30Rnd_556x45_B_AUG", true];
+  for "_i" from 1 to 5 do {_unit addItem "hlc_30Rnd_556x45_B_AUG";};
+};
+if (_weapon == "STAF_rifle_auga2carb_b") then {
+  _unit addWeaponItem [_weapon, "hlc_30Rnd_556x45_B_AUG", true];
+  for "_i" from 1 to 5 do {_unit addItem "hlc_30Rnd_556x45_B_AUG";};
+};
+if (_weapon == "STAF_rifle_auga2carb") then {
+  _unit addWeaponItem [_weapon, "hlc_30Rnd_556x45_B_AUG", true];
+  for "_i" from 1 to 5 do {_unit addItem "hlc_30Rnd_556x45_B_AUG";};
+};
+if (_weapon == "STAF_rifle_auga2carb_t") then {
+  _unit addWeaponItem [_weapon, "hlc_30Rnd_556x45_B_AUG", true];
+  for "_i" from 1 to 5 do {_unit addItem "hlc_30Rnd_556x45_B_AUG";};
+};
+if (_weapon == "STAF_rifle_auga3_b") then {
+  _unit addWeaponItem [_weapon, "hlc_30Rnd_556x45_B_AUG", true];
+  for "_i" from 1 to 5 do {_unit addItem "hlc_30Rnd_556x45_B_AUG";};
+};
+if (_weapon == "STAF_rifle_auga3_bl") then {
+  _unit addWeaponItem [_weapon, "hlc_30Rnd_556x45_B_AUG", true];
+  for "_i" from 1 to 5 do {_unit addItem "hlc_30Rnd_556x45_B_AUG";};
+};
+if (_weapon == "STAF_rifle_auga3") then {
+  _unit addWeaponItem [_weapon, "hlc_30Rnd_556x45_B_AUG", true];
+  for "_i" from 1 to 5 do {_unit addItem "hlc_30Rnd_556x45_B_AUG";};
+};
+
+
+if (_weapon == "STAF_hlc_rifle_416D10") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
+  for "_i" from 1 to 5 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
+};
+if (_weapon == "STAF_hlc_rifle_416D10_st6") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
+  for "_i" from 1 to 5 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
+};
+if (_weapon == "STAF_hlc_rifle_416D10_ptato") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
+  for "_i" from 1 to 5 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
+};
+if (_weapon == "STAF_hlc_rifle_416D10_RAHG") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
+  for "_i" from 1 to 5 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
+};
+if (_weapon == "STAF_hlc_rifle_416D10_geissele") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
+  for "_i" from 1 to 5 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
+};
+if (_weapon == "STAF_hlc_rifle_416D10_tan") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
+  for "_i" from 1 to 5 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
+};
+if (_weapon == "STAF_hlc_rifle_416D10_wdl") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
+  for "_i" from 1 to 5 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
+};
+if (_weapon == "STAF_hlc_rifle_416D10C") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
+  for "_i" from 1 to 5 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
+};
+if (_weapon == "STAF_hlc_rifle_416D145") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
+  for "_i" from 1 to 5 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
+};
+if (_weapon == "STAF_hlc_rifle_416D145_CAG") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
+  for "_i" from 1 to 5 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
+};
+if (_weapon == "STAF_hlc_rifle_416D145_tan") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
+  for "_i" from 1 to 5 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
+};
+if (_weapon == "STAF_hlc_rifle_416D145_wdl") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
+  for "_i" from 1 to 5 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
+};
+if (_weapon == "STAF_hlc_rifle_416D145C") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
+  for "_i" from 1 to 5 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
+};
+if (_weapon == "STAF_hlc_rifle_416D165") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
+  for "_i" from 1 to 5 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
+};
+if (_weapon == "STAF_hlc_rifle_416D165_tan") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
+  for "_i" from 1 to 5 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
+};
+if (_weapon == "STAF_hlc_rifle_416D165_wdl") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
+  for "_i" from 1 to 5 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
+};
+if (_weapon == "STAF_hlc_rifle_416D20") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
+  for "_i" from 1 to 5 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
+};
+if (_weapon == "STAF_hlc_rifle_416D20_tan") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
+  for "_i" from 1 to 5 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
+};
+if (_weapon == "STAF_hlc_rifle_416D20_wdl") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
+  for "_i" from 1 to 5 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
+};
+if (_weapon == "STAF_hlc_rifle_416C") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
+  for "_i" from 1 to 5 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
+};
+if (_weapon == "STAF_hlc_rifle_416N") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
+  for "_i" from 1 to 5 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
+};
 
 //SMGs
 

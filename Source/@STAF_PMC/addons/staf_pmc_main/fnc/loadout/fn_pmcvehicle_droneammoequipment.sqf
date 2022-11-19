@@ -12,6 +12,7 @@ _objs addMagazineCargoGlobal ["20Rnd_762x51_Mag",5]; //M14
 _objs addMagazineCargoGlobal ["hlc_200rnd_556x45_B_SAW",10]; //M249
 _objs addMagazineCargoGlobal ["150Rnd_762x54_Box",10]; //Negev
 _objs addMagazineCargoGlobal ["CUP_30Rnd_556x45_PMAG_QP",15]; //SCAR
+_objs addMagazineCargoGlobal ["hlc_30Rnd_556x45_B_AUG", 15]; // AUG
 _objs addMagazineCargoGlobal ["30Rnd_762x39_AK12_Mag_F",15]; //AK12
 _objs addMagazineCargoGlobal ["hlc_5rnd_300WM_FMJ_AWM",5]; //T-5000
 _objs addMagazineCargoGlobal ["CUP_17Rnd_9x19_glock17",5]; //Glock

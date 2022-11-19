@@ -80,6 +80,18 @@ class CfgMainMenuSpotlight {
     class AoW_Showcase_Future {
 		condition = "false";
 	};
+
+    class Extraction_lxWS {
+		condition = "false";
+	};
+
+    class Showcase_VR_lxWS {
+		condition = "false";
+	};
+
+	class Showcase_Alchemist_lxWS {
+		condition = "false";
+	};
 };
 
 

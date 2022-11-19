@@ -31,7 +31,7 @@ private _wait = [] spawn
 
 		private _stafAI = [
 			["Make Unit Kill Itself",{_this call STAF_fnc_aiSuicide}],
-			["Toggle VCOM on Group",{_this call STAF_fnc_disableVcom}],
+			["Toggle LAMBS on Group",{_this call STAF_fnc_disableVcom}],
 			//["Toggle Group Behaviour",{_this call STAF_fnc_groupCombatBehaviour}],
 			["Toggle AI Stationary",{_this call STAF_fnc_stationaryAI}],
 			["Toggle Group Stationary",{_this call STAF_fnc_stationaryGroup}]
@@ -44,9 +44,9 @@ private _wait = [] spawn
 
 		private _stafEquipment = [
 			["Clear Inventory",{_this call STAF_fnc_clearInventory}],
-			["Add ACE Fortify Budget",{_this call STAF_fnc_fortifyBudget}],
-			["Toggle Fortify Box",{_this call STAF_fnc_fortifyBox}],
-			["Toggle ACE Fortify",{_this call STAF_fnc_fortifyToggle}]
+			["Fortify: Update Budget",{_this call STAF_fnc_fortifyBudget}],
+			["Fortify: Toggle Fortify Box",{_this call STAF_fnc_fortifyBox}],
+			["Fortify: Enable ACE Fortify",{_this call STAF_fnc_fortifyToggle}]
 		];
 
 		private _stafFun = [

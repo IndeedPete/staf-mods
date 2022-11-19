@@ -4,12 +4,14 @@ params [
   ["_activated",true ,[true]]
 ];
 
+hint format ["%1", _unit];
+
+_logic getVariable ["Side", 1];
 
 if (_activated) then {
   {
-    _x setVariable ["Vcm_Disable", false, true];
-  } forEach group _unit;
-  {
-    _x setVariable ["lambs_danger_disableAI", false, true];
+    {
+      _x setVariable ["lambs_danger_disableAI", false, true];
+    } forEach group _x
   } forEach _unit;
 };

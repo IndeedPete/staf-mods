@@ -17,3 +17,5 @@ _objs addItemCargoGlobal ["ACE_EarPlugs",2];
 _objs addItemCargoGlobal ["ACE_quikclot",4];
 _objs addItemCargoGlobal ["ACE_elasticBandage",4];
 _objs addItemCargoGlobal ["ACE_fieldDressing",4];
+_objs addItemCargoGlobal ["kat_IV_16",1];
+_objs addItemCargoGlobal ["kat_aatKit",1];

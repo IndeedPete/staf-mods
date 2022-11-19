@@ -34,6 +34,23 @@ _objs addItemCargoGlobal ["kat_guedel",1];
 _objs addItemCargoGlobal ["kat_larynx",1];
 _objs addItemCargoGlobal ["kat_Pulseoximeter",1];
 _objs addItemCargoGlobal ["kat_stethoscope",1];
+_objs addItemCargoGlobal ["kat_IV_16",10];
+_objs addItemCargoGlobal ["kat_aatKit",1];
+_objs addItemCargoGlobal ["kat_amiodarone",2];
+_objs addItemCargoGlobal ["kat_CarbonateItem",2];
+_objs addItemCargoGlobal ["kat_EACA",2];
+_objs addItemCargoGlobal ["kat_etomidate",2];
+_objs addItemCargoGlobal ["kat_fentanyl",2];
+_objs addItemCargoGlobal ["kat_flumazenil",2];
+_objs addItemCargoGlobal ["kat_ketamine",2];
+_objs addItemCargoGlobal ["kat_lidocaine",2];
+_objs addItemCargoGlobal ["kat_lorazepam",2];
+_objs addItemCargoGlobal ["kat_naloxone",2];
+_objs addItemCargoGlobal ["kat_nalbuphine",2];
+_objs addItemCargoGlobal ["kat_nitroglycerin",2];
+_objs addItemCargoGlobal ["kat_norepinephrine",2];
+_objs addItemCargoGlobal ["kat_phenylephrine",2];
+_objs addItemCargoGlobal ["kat_TXA",2];
 
 _objs addMagazineCargoGlobal ["30Rnd_65x39_caseless_mag",14]; //G36 MLI
 _objs addMagazineCargoGlobal ["hlc_30rnd_556x45_EPR_G36",14]; //G36
@@ -42,6 +59,7 @@ _objs addMagazineCargoGlobal ["20Rnd_762x51_Mag",6]; //M14
 _objs addMagazineCargoGlobal ["hlc_200rnd_556x45_B_SAW",8]; //M249
 _objs addMagazineCargoGlobal ["150Rnd_762x54_Box",8]; //Negev
 _objs addMagazineCargoGlobal ["CUP_30Rnd_556x45_PMAG_QP",14]; //SCAR
+_objs addMagazineCargoGlobal ["hlc_30Rnd_556x45_B_AUG", 8]; // AUG
 _objs addMagazineCargoGlobal ["30Rnd_762x39_AK12_Mag_F",14]; //AK12
 _objs addMagazineCargoGlobal ["hlc_5rnd_300WM_FMJ_AWM",2]; //T-5000
 _objs addMagazineCargoGlobal ["CUP_17Rnd_9x19_glock17",4]; //Glock
