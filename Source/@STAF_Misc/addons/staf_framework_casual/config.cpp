@@ -1,0 +1,6 @@
+#include "CfgMainMenuSpotlight.hpp"
+#include "CfgEventhandlers.hpp"
+#include "CfgFunctions.hpp"
+#include "CfgPatches.hpp"
+#include "CfgUnitInsignia.hpp"
+#include "RscDisplayLoadMission.hpp"

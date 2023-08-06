@@ -54,7 +54,7 @@ _items = [
             "ACE_rope18",
             "ACE_rope27",
             "ACE_rope36",
-            "ACE_MRE_BeefStew",
+            /*"ACE_MRE_BeefStew",
             "ACE_MRE_ChickenTikkaMasala",
             "ACE_MRE_ChickenHerbDumplings",
             "ACE_MRE_CreamChickenSoup",
@@ -64,12 +64,20 @@ _items = [
             "ACE_MRE_SteakVegetables",
             "ACE_WaterBottle",
             "ACE_Canteen",
-            "ACE_Humanitarian_Ration",
+            "ACE_Humanitarian_Ration",*/
+            "ACE_IR_Strobe_Item",
+            "ACE_artilleryTable",
+            "ACE_RangeTable_82mm",
+
             //KAT
             "kat_aatKit",
             "kat_accuvac",
             "kat_X_AED",
             "kat_AED",
+            "kat_BVM",
+            "kat_pocketBVM",
+            "kat_oxygenTank_150_Item",
+            "kat_oxygenTank_300_Item",
             "kat_chestSeal",
             "kat_guedel",
             "kat_larynx",
@@ -87,6 +95,20 @@ _items = [
             "kat_TXA",
             "kat_Carbonate",
             "kat_Painkiller",
+            "kat_plate",
+            "kat_CaffeineItem",
+            "kat_clamp",
+            "kat_vacuum",
+            "kat_EACA",
+            "kat_etomidate",
+            "kat_flumazenil",
+            "kat_fentanyl",
+            "kat_ketamine",
+            "kat_lorazepam",
+            "kat_nalbuphine",
+            "kat_ncdKit",
+            "kat_retractor",
+            "kat_scalpel",
             //Vanilla
             "H_EarProtectors_black_F",
             "H_EarProtectors_orange_F",
@@ -161,7 +183,12 @@ _items = [
             "G_Combat_lxWS",
             "G_Headset_lxWS",
             //TFAR
-            "TFAR_anprc152",
+            //"TFAR_anprc152",
+
+            // ACRE
+            "ACRE_PRC117F",
+            "ACRE_PRC152",
+            
             //CTAB
             "ItemAndroid",
             "ItemcTab",
@@ -284,8 +311,6 @@ _items = [
             "tacs_Goggles_Black",
             "tacs_Goggles_Green",
             "tacs_Goggles_Tan",
-            // Headlamps
-            "SAN_Headlamp_v2",
             //CUP
             "CUP_NVG_PVS7",
             "CUP_NVG_PVS15_black",
@@ -501,29 +526,9 @@ _items = [
             // Hate's Camera
             "Nikon_DSLR_HUD",
             "Hate_Smartphone_HUD",
-            // PMC Uniforms Expansion
-            "HG_Cargo_KneePad_L_Blk",
-            "HG_Cargo_KneePad_L_MC",
-            "HG_Cargo_KneePad_L",
-            "HG_Cargo_KneePad_L_Tan",
-            "HG_Cargo_KneePad_Both_Blk",
-            "HG_Cargo_KneePad_Both_MC",
-            "HG_Cargo_KneePad_Both",
-            "HG_Cargo_KneePad_Both_Tan",
-            "HG_Cargo_KneePad_R_Blk",
-            "HG_Cargo_KneePad_R_MC",
-            "HG_Cargo_KneePad_R",
-            "HG_Cargo_KneePad_R_Tan",
-            "HG_Jean_KneePad_L_Blk",
-            "HG_Jean_KneePad_L_MC",
-            "HG_Jean_KneePad_L",
-            "HG_Jean_KneePad_L_Tan",
-            "HG_Jean_KneePad_Both_Blk",
-            "HG_Jean_KneePad_Both_MC",
-            "HG_Jean_KneePad_Both",
-            "HG_Jean_KneePad_Both_Tan",
-            "HG_Jean_KneePad_R_Blk",
-            "HG_Jean_KneePad_R_MC",
-            "HG_Jean_KneePad_R",
-            "HG_Jean_KneePad_R_Tan"
+            // Other
+            "tsp_lockpick",
+            "tsp_paperclip",
+            "kat_gasmaskFilter",
+            "WBK_HeadLampItem"
 ];

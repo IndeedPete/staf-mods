@@ -45,6 +45,14 @@ class CfgVehicles
 		maximumLoad = 200;
 		mass = 20;
 	};
+	
+	class STAF_B_Messenger_Purple_Moony_F: B_Messenger_Gray_F
+	{
+		displayName = "STAF Messenger Bag (Moony)";
+		maximumLoad = 320;
+		mass = 35;
+		hiddenSelectionsTextures[] = {"\staf_pmc_backpacks\txt\B_Messenger_Puprle_Moony_F_CO.paa"};
+	};
 
 	// Assault Pack
 

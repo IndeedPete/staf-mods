@@ -44,6 +44,21 @@ _othermagazines = [
             "1Rnd_Smoke_Grenade_shell",
             "1Rnd_SmokeYellow_Grenade_shell",
             "ACE_HuntIR_M203",
+            "6rnd_HE_Mag_lxWS",
+            "6Rnd_12Gauge_Slug",
+            "6rnd_Smoke_Mag_lxWS",
+            "ACE_6Rnd_12Gauge_Pellets_No0_Buck",
+            "6Rnd_12Gauge_Pellets",
+            "ACE_6Rnd_12Gauge_Pellets_No1_Buck",
+            "ACE_6Rnd_12Gauge_Pellets_No2_Buck",
+            "ACE_6Rnd_12Gauge_Pellets_No3_Buck",
+            "ACE_6Rnd_12Gauge_Pellets_No4_Bird",
+            "ACE_6Rnd_12Gauge_Pellets_No4_Buck",
+
+            // Rifle Grenades
+            "1Rnd_40mm_HE_lxWS",
+            "1Rnd_50mm_Smoke_lxWS",
+            "1Rnd_58mm_AT_lxWS",
 
             //Explosives
             "APERSMineDispenser_Mag",
@@ -60,16 +75,15 @@ _othermagazines = [
             //SMAW Spotting Round
             "CUP_SMAW_Spotting",
 
-            // Cigs and Pops
-            "murshun_cigs_matches",
-            "murshun_cigs_lighter",
-            "murshun_cigs_cigpack",
-            "murshun_cigs_cig0",
-            "immersion_pops_poppack",
-            "immersion_pops_pop0",
-
             //Camera Tapes
             "Tape_F",
+
+            // Breach
+            "tsp_frameCharge_mag",
+            "tsp_popperCharge_mag",
+            "tsp_popperCharge_auto_mag",
+            "tsp_stickCharge_mag",
+            "tsp_stickCharge_auto_mag",
 
             //Other
             "ACE_SpareBarrel",

@@ -1,3 +1,18 @@
+/*
+			class TransportMagazines {
+				mag_xx(SatchelCharge_Remote_Mag,4);
+				mag_xx(DemoCharge_Remote_Mag,6);
+				mag_xx(ClaymoreDirectionalMine_Remote_Mag,3);
+				mag_xx(APERSBoundingMine_Range_Mag,3);
+			};
+			class TransportItems {
+				item_xx(ACE_DefusalKit,2);
+				item_xx(ACE_Clacker,2);
+			};
+			class TransportBackpacks {};
+			class TransportWeapons {};
+*/
+
 _objs = _this select 0;
 
 clearMagazineCargoGlobal _objs;

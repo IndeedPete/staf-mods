@@ -14,7 +14,7 @@ _launcherArray = [
   "launch_B_Titan_short_F",
   "launch_O_Titan_short_ghex_F",
   "launch_B_Titan_short_tna_F",
-  "TEC_Launch_Titan_APRL_Short"
+  "STAF_Launch_Titan_Short_blk"
 ];
 
 _AAlauncherArray = [

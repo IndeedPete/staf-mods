@@ -29,9 +29,7 @@ class CfgPatches
 			"CBA_Main",
 			"cba_ui",
 			"zen_context_menu",
-			"WBK_MeleeMechanics",
-        	"fsog3",
-			"PMCA_UNIFORMS"
+			"WBK_MeleeMechanics"
 		};
 		author = "STAF";
 		authorUrl = "http://stafclan.com/index.php/BoardList/";

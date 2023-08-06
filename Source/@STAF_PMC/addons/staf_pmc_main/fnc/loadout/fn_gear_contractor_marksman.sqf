@@ -43,6 +43,7 @@ _unit addItem "ACE_EarPlugs";
 _unit addItem "ACE_Flashlight_XL50";
 _unit addItem "SmokeShellGreen";
 _unit addItem "SmokeShellRed";
+_unit addItem "ACRE_PRC152";
 
 _nvg = selectRandom _nvgsArray;
 _unit linkItem _nvg;
@@ -50,7 +51,6 @@ _unit linkItem "ItemMap";
 _unit linkItem "ItemGPS";
 _unit linkItem "ItemCompass";
 _unit linkItem "ItemWatch";
-_unit linkItem "TFAR_anprc152";
 
 //Ammo
 #include "\staf_pmc_main\fnc\loadout\defaults\magazines.hpp"
@@ -63,15 +63,18 @@ _unit setVariable ["STAF_var_Unit_Loadout_Set", true, true];
 save3DENInventory [_unit];
 
 if (missionNamespace getvariable ["STAF_cbaDebug", false]) then {
-	hint format ["Uniform: %1 <br/> Vest: %2 <br/> Helmet: %3",_uniform,_vest,_headGear];
+	hint format ["Uniform: %1 <br/> Vest: %2 <br/> Helmet: %3 <br/> Goggles: %4",_uniform,_vest,_headGear,_goggles];
 
 	if (uniform _unit == "") then {
 		diag_log format ["This Uniform does not excist: %1", _uniform];
 	};
 	if (vest _unit == "") then {
-		diag_log format ["This Vest does not excist: %1", _uniform];
+		diag_log format ["This Vest does not excist: %1", _vest];
 	};
 	if (headgear _unit == "") then {
-		diag_log format ["This Headgear does not excist: %1", _uniform];
+		diag_log format ["This Headgear does not excist: %1", _headGear];
+	};
+	if (goggles _unit == "") then {
+		diag_log format ["This Accessory does not excist: %1", _goggles];
 	};
 };

@@ -5,8 +5,9 @@ if (STAF_cbaRespawnEquipment) then {
 	player setVariable ["STAF_var_Unit_Loadout_Set", true, true];
 
 	_respawnLoadoutCBAEHid = ["ace_arsenal_displayClosed", {
-	_loadout = getUnitLoadout player;
-	player setVariable ["STAF_var_Unit_Loadout", (getUnitLoadout player), true];
+		_loadout = getUnitLoadout player;
+		player setVariable ["STAF_var_Unit_Loadout", _loadout, true];
+		player setVariable ["STAF_var_Unit_Loadout_Set", true, true];
 	}] call CBA_fnc_addEventHandler;
 
 	missionNamespace setVariable ["STAF_var_RespawnLoadoutCBAEHid", _respawnLoadoutCBAEHid];
@@ -107,11 +108,3 @@ if ((vehicleVarName player) in _zeusVarNames) then {
 // ACE Carry & Drag
 ACE_maxWeightDrag = 1600;
 ACE_maxWeightCarry = 1200;
-
-// Grad Civ
-["grad_civs_lifecycle_civ_added", {     
-    { 
-        _x setVariable ["lambs_danger_disableAI", true, true];
-		_x setVariable ["Vcm_Disable", true, true];
-    } forEach _this; 
-}] call CBA_fnc_addEventHandler;

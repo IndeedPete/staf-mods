@@ -1,3 +1,49 @@
+/*
+			class TransportMagazines {};
+			class TransportItems {
+				item_xx(ACE_salineIV,3);
+				item_xx(ACE_salineIV_250,9);
+				item_xx(ACE_salineIV_500,6);
+				item_xx(ACE_splint,6);
+				item_xx(ACE_surgicalKit,1);
+				item_xx(ACE_tourniquet,10);
+				item_xx(ACE_morphine,5);
+				item_xx(ACE_packingBandage,20);
+				item_xx(ACE_epinephrine,5);
+				item_xx(ACE_EarPlugs,5);
+				item_xx(ACE_quikclot,20);
+				item_xx(ACE_elasticBandage,20);
+				item_xx(ACE_fieldDressing,20);
+				item_xx(ACE_adenosine,5);
+				item_xx(ACE_bodyBag,2);
+				item_xx(ACE_personalAidKit,2);
+				item_xx(kat_X_AED,1);
+				item_xx(kat_guedel,2);
+				item_xx(kat_larynx,2);
+				item_xx(kat_Pulseoximeter,2);
+				item_xx(kat_stethoscope,2);
+				item_xx(kat_IV_16,10);
+				item_xx(kat_aatKit,1);
+				item_xx(kat_amiodarone,2);
+				item_xx(kat_CarbonateItem,2);
+				item_xx(kat_EACA,2);
+				item_xx(kat_etomidate,2);
+				item_xx(kat_fentanyl,2);
+				item_xx(kat_flumazenil,2);
+				item_xx(kat_ketamine,2);
+				item_xx(kat_lidocaine,2);
+				item_xx(kat_lorazepam,2);
+				item_xx(kat_naloxone,2);
+				item_xx(kat_nalbuphine,2);
+				item_xx(kat_nitroglycerin,2);
+				item_xx(kat_norepinephrine,2);
+				item_xx(kat_phenylephrine,2);
+				item_xx(kat_TXA,2);
+			};
+			class TransportBackpacks {};
+			class TransportWeapons {};
+*/
+
 _objs = _this select 0;
 
 clearMagazineCargoGlobal _objs;

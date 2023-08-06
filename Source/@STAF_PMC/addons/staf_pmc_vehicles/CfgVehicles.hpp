@@ -1,3 +1,8 @@
+#define mag_xx(a,b) class _xx_##a {magazine = a; count = b;}
+#define weap_xx(a,b) class _xx_##a {weapon = a; count = b;}
+#define item_xx(a,b) class _xx_##a {name = a; count = b;}
+#define back_xx(a,b) class _xx_##a {backpack = a; count = b;}
+
 class CfgVehicles {
     class B_Boat_Transport_01_F;
     class C_Truck_02_transport_F;
@@ -36,6 +41,7 @@ class CfgVehicles {
     class O_APC_Tracked_02_cannon_F;
     class I_C_Boat_Transport_02_F;
     class B_MBT_01_cannon_F;
+    class rhs_btr80a_msv;
 
 
     //----------------------------------BLUFOR---------------------------------
@@ -54,6 +60,75 @@ class CfgVehicles {
             hiddenSelections[] = {"camo1","camo2","camo_bench","clan"};
             selectionClan = "";
             maximumLoad = 600;
+
+            class TransportMagazines {
+                mag_xx(30Rnd_65x39_caseless_mag,7);
+                mag_xx(hlc_30rnd_556x45_EPR_G36,7);
+                mag_xx(hlc_30Rnd_9x19_B_MP5,4);
+                mag_xx(20Rnd_762x51_Mag,3);
+                mag_xx(hlc_200rnd_556x45_B_SAW,4);
+                mag_xx(150Rnd_762x54_Box,4);
+                mag_xx(CUP_30Rnd_556x45_PMAG_QP,7);
+                mag_xx(hlc_30Rnd_556x45_B_AUG, 7);
+                mag_xx(30Rnd_762x39_AK12_Mag_F,7);
+                mag_xx(CUP_17Rnd_9x19_glock17,2);
+                mag_xx(1Rnd_HE_Grenade_shell,5);
+                mag_xx(1Rnd_Smoke_Grenade_shell,5);
+                mag_xx(B_IR_Grenade,3);
+                mag_xx(HandGrenade,5);
+                mag_xx(SmokeShell,5);
+                mag_xx(ACE_SpareBarrel,2);
+                                mag_xx(Titan_AT,2);
+		        mag_xx(CUP_SMAW_HEAA_M,2);
+            };
+            class TransportItems {
+                item_xx(ACE_salineIV,2);
+                item_xx(ACE_salineIV_250,4);
+                item_xx(ACE_salineIV_500,3);
+                item_xx(adv_aceSplint_splint,4);
+                item_xx(ACE_tourniquet,4);
+                item_xx(ACE_morphine,2);
+                item_xx(ACE_packingBandage,10);
+                item_xx(ACE_epinephrine,2);
+                item_xx(ACE_EarPlugs,2);
+                item_xx(ACE_quikclot,10);
+                item_xx(ACE_elasticBandage,10);
+                item_xx(ACE_fieldDressing,10);
+                item_xx(ACE_adenosine,2);
+                item_xx(ACE_bodyBag,2);
+                item_xx(ACRE_PRC152,1);
+                item_xx(ACE_CableTie,3);
+                item_xx(ACE_Flashlight_XL50,1);
+                item_xx(ACE_EntrenchingTool,1);
+                item_xx(ACE_wirecutter,1);
+                item_xx(ACE_DefusalKit,1);
+                item_xx(ACE_Clacker,1);
+                item_xx(ACE_UAVBattery,2);
+                item_xx(kat_X_AED,1);
+                item_xx(kat_guedel,1);
+                item_xx(kat_larynx,1);
+                item_xx(kat_Pulseoximeter,1);
+                item_xx(kat_stethoscope,1);
+                item_xx(kat_IV_16,10);
+                item_xx(kat_aatKit,1);
+                item_xx(kat_amiodarone,2);
+                item_xx(kat_CarbonateItem,2);
+                item_xx(kat_EACA,2);
+                item_xx(kat_etomidate,2);
+                item_xx(kat_fentanyl,2);
+                item_xx(kat_flumazenil,2);
+                item_xx(kat_ketamine,2);
+                item_xx(kat_lidocaine,2);
+                item_xx(kat_lorazepam,2);
+                item_xx(kat_naloxone,2);
+                item_xx(kat_nalbuphine,2);
+                item_xx(kat_nitroglycerin,2);
+                item_xx(kat_norepinephrine,2);
+                item_xx(kat_phenylephrine,2);
+                item_xx(kat_TXA,2);
+            };
+            class TransportBackpacks {};
+            class TransportWeapons {};
         };
 
         class STAF_md500_defender : CUP_B_AH6M_USA {
@@ -89,6 +164,79 @@ class CfgVehicles {
             maximumLoad = 900;
 
             typicalCargo[] = {"STAF_contractor_heli_pilot"};
+
+            class TransportMagazines {
+                mag_xx(30Rnd_65x39_caseless_mag,7);
+                mag_xx(hlc_30rnd_556x45_EPR_G36,7);
+                mag_xx(hlc_30Rnd_9x19_B_MP5,4);
+                mag_xx(20Rnd_762x51_Mag,3);
+                mag_xx(hlc_200rnd_556x45_B_SAW,4);
+                mag_xx(150Rnd_762x54_Box,4);
+                mag_xx(CUP_30Rnd_556x45_PMAG_QP,7);
+                mag_xx(hlc_30Rnd_556x45_B_AUG, 7);
+                mag_xx(30Rnd_762x39_AK12_Mag_F,7);
+                mag_xx(CUP_17Rnd_9x19_glock17,2);
+                mag_xx(1Rnd_HE_Grenade_shell,5);
+                mag_xx(1Rnd_Smoke_Grenade_shell,5);
+                mag_xx(B_IR_Grenade,3);
+                mag_xx(HandGrenade,5);
+                mag_xx(SmokeShell,5);
+                mag_xx(ACE_SpareBarrel,2);
+                                mag_xx(Titan_AT,2);
+		        mag_xx(CUP_SMAW_HEAA_M,2);
+                mag_xx(rhsusf_5Rnd_Slug,2);
+            };
+            class TransportItems {
+                item_xx(ACE_salineIV,2);
+                item_xx(ACE_salineIV_250,4);
+                item_xx(ACE_salineIV_500,3);
+                item_xx(adv_aceSplint_splint,4);
+                item_xx(ACE_tourniquet,4);
+                item_xx(ACE_morphine,2);
+                item_xx(ACE_packingBandage,10);
+                item_xx(ACE_epinephrine,2);
+                item_xx(ACE_EarPlugs,2);
+                item_xx(ACE_quikclot,10);
+                item_xx(ACE_elasticBandage,10);
+                item_xx(ACE_fieldDressing,10);
+                item_xx(ACE_adenosine,2);
+                item_xx(ACE_bodyBag,2);
+                item_xx(ACRE_PRC152,1);
+                item_xx(ACE_CableTie,3);
+                item_xx(ACE_Flashlight_XL50,1);
+                item_xx(ACE_EntrenchingTool,1);
+                item_xx(ACE_wirecutter,1);
+                item_xx(ACE_DefusalKit,1);
+                item_xx(ACE_Clacker,1);
+                item_xx(ACE_UAVBattery,2);
+                item_xx(kat_X_AED,1);
+                item_xx(kat_guedel,1);
+                item_xx(kat_larynx,1);
+                item_xx(kat_Pulseoximeter,1);
+                item_xx(kat_stethoscope,1);
+                item_xx(kat_IV_16,10);
+                item_xx(kat_aatKit,1);
+                item_xx(kat_amiodarone,2);
+                item_xx(kat_CarbonateItem,2);
+                item_xx(kat_EACA,2);
+                item_xx(kat_etomidate,2);
+                item_xx(kat_fentanyl,2);
+                item_xx(kat_flumazenil,2);
+                item_xx(kat_ketamine,2);
+                item_xx(kat_lidocaine,2);
+                item_xx(kat_lorazepam,2);
+                item_xx(kat_naloxone,2);
+                item_xx(kat_nalbuphine,2);
+                item_xx(kat_nitroglycerin,2);
+                item_xx(kat_norepinephrine,2);
+                item_xx(kat_phenylephrine,2);
+                item_xx(kat_TXA,2);
+                item_xx(CUP_NVG_PVS15_black,2);
+            };
+            class TransportBackpacks {};
+            class TransportWeapons {
+                weap_xx(STAF_weap_M590,1);
+            };
         };
 
         class STAF_uh1h : CUP_O_UH1H_gunship_SLA {
@@ -109,6 +257,79 @@ class CfgVehicles {
             maximumLoad = 900;
 
             typicalCargo[] = {"STAF_contractor_heli_pilot"};
+
+            class TransportMagazines {
+                mag_xx(30Rnd_65x39_caseless_mag,7);
+                mag_xx(hlc_30rnd_556x45_EPR_G36,7);
+                mag_xx(hlc_30Rnd_9x19_B_MP5,4);
+                mag_xx(20Rnd_762x51_Mag,3);
+                mag_xx(hlc_200rnd_556x45_B_SAW,4);
+                mag_xx(150Rnd_762x54_Box,4);
+                mag_xx(CUP_30Rnd_556x45_PMAG_QP,7);
+                mag_xx(hlc_30Rnd_556x45_B_AUG, 7);
+                mag_xx(30Rnd_762x39_AK12_Mag_F,7);
+                mag_xx(CUP_17Rnd_9x19_glock17,2);
+                mag_xx(1Rnd_HE_Grenade_shell,5);
+                mag_xx(1Rnd_Smoke_Grenade_shell,5);
+                mag_xx(B_IR_Grenade,3);
+                mag_xx(HandGrenade,5);
+                mag_xx(SmokeShell,5);
+                mag_xx(ACE_SpareBarrel,2);
+                                mag_xx(Titan_AT,2);
+		        mag_xx(CUP_SMAW_HEAA_M,2);
+                mag_xx(rhsusf_5Rnd_Slug,2);
+            };
+            class TransportItems {
+                item_xx(ACE_salineIV,2);
+                item_xx(ACE_salineIV_250,4);
+                item_xx(ACE_salineIV_500,3);
+                item_xx(adv_aceSplint_splint,4);
+                item_xx(ACE_tourniquet,4);
+                item_xx(ACE_morphine,2);
+                item_xx(ACE_packingBandage,10);
+                item_xx(ACE_epinephrine,2);
+                item_xx(ACE_EarPlugs,2);
+                item_xx(ACE_quikclot,10);
+                item_xx(ACE_elasticBandage,10);
+                item_xx(ACE_fieldDressing,10);
+                item_xx(ACE_adenosine,2);
+                item_xx(ACE_bodyBag,2);
+                item_xx(ACRE_PRC152,1);
+                item_xx(ACE_CableTie,3);
+                item_xx(ACE_Flashlight_XL50,1);
+                item_xx(ACE_EntrenchingTool,1);
+                item_xx(ACE_wirecutter,1);
+                item_xx(ACE_DefusalKit,1);
+                item_xx(ACE_Clacker,1);
+                item_xx(ACE_UAVBattery,2);
+                item_xx(kat_X_AED,1);
+                item_xx(kat_guedel,1);
+                item_xx(kat_larynx,1);
+                item_xx(kat_Pulseoximeter,1);
+                item_xx(kat_stethoscope,1);
+                item_xx(kat_IV_16,10);
+                item_xx(kat_aatKit,1);
+                item_xx(kat_amiodarone,2);
+                item_xx(kat_CarbonateItem,2);
+                item_xx(kat_EACA,2);
+                item_xx(kat_etomidate,2);
+                item_xx(kat_fentanyl,2);
+                item_xx(kat_flumazenil,2);
+                item_xx(kat_ketamine,2);
+                item_xx(kat_lidocaine,2);
+                item_xx(kat_lorazepam,2);
+                item_xx(kat_naloxone,2);
+                item_xx(kat_nalbuphine,2);
+                item_xx(kat_nitroglycerin,2);
+                item_xx(kat_norepinephrine,2);
+                item_xx(kat_phenylephrine,2);
+                item_xx(kat_TXA,2);
+                item_xx(CUP_NVG_PVS15_black,2);
+            };
+            class TransportBackpacks {};
+            class TransportWeapons {
+                weap_xx(STAF_weap_M590,1);
+            };
         };
 
         class STAF_EMB314: RHSGREF_A29B_HIDF {
@@ -139,6 +360,26 @@ class CfgVehicles {
                     factions[] = {};
                 };
             };
+
+            class TransportMagazines {};
+            class TransportItems {
+                item_xx(ACE_salineIV,1);
+                item_xx(ACE_salineIV_250,2);
+                item_xx(ACE_salineIV_500,1);
+                item_xx(ACE_splint,2);
+                item_xx(ACE_tourniquet,2);
+                item_xx(ACE_morphine,1);
+                item_xx(ACE_packingBandage,4);
+                item_xx(ACE_epinephrine,1);
+                item_xx(ACE_EarPlugs,2);
+                item_xx(ACE_quikclot,4);
+                item_xx(ACE_elasticBandage,4);
+                item_xx(ACE_fieldDressing,4);
+                item_xx(kat_IV_16,1);
+                item_xx(kat_aatKit,1);
+            };
+            class TransportBackpacks {};
+            class TransportWeapons {};
         };
 
       //----------------------------------Naval-----------------------------------
@@ -157,6 +398,24 @@ class CfgVehicles {
             selectionClan = "";
             maximumLoad = 160;
             Maxspeed = 100;
+
+            class TransportMagazines {
+                mag_xx(SmokeShell,5);
+            };
+            class TransportItems {
+                item_xx(ACE_EarPlugs,2);
+                item_xx(kat_X_AED,1);
+                item_xx(ACRE_PRC152,1);
+                item_xx(ACE_CableTie,3);
+                item_xx(ACE_EntrenchingTool,1);
+                item_xx(ACE_wirecutter,1);
+                item_xx(ACE_DefusalKit,1);
+                item_xx(ACE_Clacker,1);
+                item_xx(ACE_rope6,1);
+                item_xx(ACE_rope3,1);
+            };
+            class TransportBackpacks {};
+            class TransportWeapons {};
         };
 
         class STAF_rhib : I_C_Boat_Transport_02_F {
@@ -175,6 +434,27 @@ class CfgVehicles {
             selectionClan = "";
             maximumLoad = 400;
             Maxspeed = 100;
+
+            class TransportMagazines {
+                mag_xx(SmokeShell,5);
+                mag_xx(rhsusf_5Rnd_Slug,2);
+            };
+            class TransportItems {
+                item_xx(ACE_EarPlugs,2);
+                item_xx(kat_X_AED,1);
+                item_xx(ACRE_PRC152,1);
+                item_xx(ACE_CableTie,3);
+                item_xx(ACE_EntrenchingTool,1);
+                item_xx(ACE_wirecutter,1);
+                item_xx(ACE_DefusalKit,1);
+                item_xx(ACE_Clacker,1);
+                item_xx(ACE_rope6,1);
+                item_xx(ACE_rope3,1);
+            };
+            class TransportBackpacks {};
+            class TransportWeapons {
+                weap_xx(STAF_weap_M590,1);
+            };
         };
 
       //----------------------------------Ground----------------------------------
@@ -194,6 +474,82 @@ class CfgVehicles {
             selectionClan = "";
             hiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_truck_02_kab_blk_co.paa","\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
             maximumLoad = 4000;
+
+            class TransportMagazines {
+				mag_xx(30Rnd_65x39_caseless_mag,7);
+				mag_xx(hlc_30rnd_556x45_EPR_G36,7);
+				mag_xx(hlc_30Rnd_9x19_B_MP5,4);
+				mag_xx(20Rnd_762x51_Mag,3);
+				mag_xx(hlc_200rnd_556x45_B_SAW,4);
+				mag_xx(150Rnd_762x54_Box,4);
+				mag_xx(CUP_30Rnd_556x45_PMAG_QP,7);
+				mag_xx(hlc_30Rnd_556x45_B_AUG, 7);
+				mag_xx(30Rnd_762x39_AK12_Mag_F,7);
+				mag_xx(CUP_17Rnd_9x19_glock17,2);
+				mag_xx(1Rnd_HE_Grenade_shell,5);
+				mag_xx(1Rnd_Smoke_Grenade_shell,5);
+				mag_xx(B_IR_Grenade,3);
+				mag_xx(HandGrenade,5);
+				mag_xx(SmokeShell,5);
+				mag_xx(ACE_SpareBarrel,2);
+                mag_xx(Titan_AT,2);
+		        mag_xx(CUP_SMAW_HEAA_M,2);
+                mag_xx(rhsusf_5Rnd_Slug,2);
+			};
+			class TransportItems {
+				item_xx(ACE_salineIV,2);
+				item_xx(ACE_salineIV_250,4);
+				item_xx(ACE_salineIV_500,3);
+				item_xx(ACE_splint,4);
+				item_xx(ACE_tourniquet,4);
+				item_xx(ACE_morphine,2);
+				item_xx(ACE_packingBandage,10);
+				item_xx(ACE_epinephrine,2);
+				item_xx(ACE_EarPlugs,2);
+				item_xx(ACE_quikclot,10);
+				item_xx(ACE_elasticBandage,10);
+				item_xx(ACE_fieldDressing,10);
+				item_xx(ACE_adenosine,2);
+				item_xx(ACE_bodyBag,2);
+				item_xx(ACRE_PRC152,2);
+				item_xx(ACE_CableTie,3);
+				item_xx(ACE_Flashlight_XL50,1);
+				item_xx(ACE_EntrenchingTool,1);
+				item_xx(ACE_wirecutter,1);
+				item_xx(ACE_DefusalKit,1);
+				item_xx(ACE_Clacker,1);
+				item_xx(ACE_UAVBattery,2);
+				item_xx(ACE_rope6,1);
+				item_xx(ACE_rope3,1);
+				item_xx(kat_X_AED,1);
+				item_xx(kat_guedel,1);
+				item_xx(kat_larynx,1);
+				item_xx(kat_Pulseoximeter,1);
+				item_xx(kat_stethoscope,1);
+				item_xx(kat_IV_16,10);
+				item_xx(kat_aatKit,1);
+				item_xx(kat_amiodarone,2);
+				item_xx(kat_CarbonateItem,2);
+				item_xx(kat_EACA,2);
+				item_xx(kat_etomidate,2);
+				item_xx(kat_fentanyl,2);
+				item_xx(kat_flumazenil,2);
+				item_xx(kat_ketamine,2);
+				item_xx(kat_lidocaine,2);
+				item_xx(kat_lorazepam,2);
+				item_xx(kat_naloxone,2);
+				item_xx(kat_nalbuphine,2);
+				item_xx(kat_nitroglycerin,2);
+				item_xx(kat_norepinephrine,2);
+				item_xx(kat_phenylephrine,2);
+				item_xx(kat_TXA,2);
+                item_xx(CUP_NVG_PVS15_black,2);
+			};
+			class TransportBackpacks {};
+			class TransportWeapons {
+				weap_xx(CUP_launch_M136,2);
+                weap_xx(STAF_weap_M590,1);
+			};
         };
 
         class STAF_truck_box : C_Truck_02_box_F {
@@ -215,6 +571,82 @@ class CfgVehicles {
             ace_refuel_hooks[] = {{0.99,-3.47,-0.67},{-1.04,-3.47,-0.67}};
             ace_rearm_defaultSupply = 1200;
             ace_repair_canRepair = 1;
+
+			class TransportMagazines {
+				mag_xx(30Rnd_65x39_caseless_mag,7);
+				mag_xx(hlc_30rnd_556x45_EPR_G36,7);
+				mag_xx(hlc_30Rnd_9x19_B_MP5,4);
+				mag_xx(20Rnd_762x51_Mag,3);
+				mag_xx(hlc_200rnd_556x45_B_SAW,4);
+				mag_xx(150Rnd_762x54_Box,4);
+				mag_xx(CUP_30Rnd_556x45_PMAG_QP,7);
+				mag_xx(hlc_30Rnd_556x45_B_AUG, 7);
+				mag_xx(30Rnd_762x39_AK12_Mag_F,7);
+				mag_xx(CUP_17Rnd_9x19_glock17,2);
+				mag_xx(1Rnd_HE_Grenade_shell,5);
+				mag_xx(1Rnd_Smoke_Grenade_shell,5);
+				mag_xx(B_IR_Grenade,3);
+				mag_xx(HandGrenade,5);
+				mag_xx(SmokeShell,5);
+				mag_xx(ACE_SpareBarrel,2);
+                mag_xx(Titan_AT,2);
+		        mag_xx(CUP_SMAW_HEAA_M,2);
+                mag_xx(rhsusf_5Rnd_Slug,2);
+			};
+			class TransportItems {
+				item_xx(ACE_salineIV,2);
+				item_xx(ACE_salineIV_250,4);
+				item_xx(ACE_salineIV_500,3);
+				item_xx(ACE_splint,4);
+				item_xx(ACE_tourniquet,4);
+				item_xx(ACE_morphine,2);
+				item_xx(ACE_packingBandage,10);
+				item_xx(ACE_epinephrine,2);
+				item_xx(ACE_EarPlugs,2);
+				item_xx(ACE_quikclot,10);
+				item_xx(ACE_elasticBandage,10);
+				item_xx(ACE_fieldDressing,10);
+				item_xx(ACE_adenosine,2);
+				item_xx(ACE_bodyBag,2);
+				item_xx(ACRE_PRC152,2);
+				item_xx(ACE_CableTie,3);
+				item_xx(ACE_Flashlight_XL50,1);
+				item_xx(ACE_EntrenchingTool,1);
+				item_xx(ACE_wirecutter,1);
+				item_xx(ACE_DefusalKit,1);
+				item_xx(ACE_Clacker,1);
+				item_xx(ACE_UAVBattery,2);
+				item_xx(ACE_rope6,1);
+				item_xx(ACE_rope3,1);
+				item_xx(kat_X_AED,1);
+				item_xx(kat_guedel,1);
+				item_xx(kat_larynx,1);
+				item_xx(kat_Pulseoximeter,1);
+				item_xx(kat_stethoscope,1);
+				item_xx(kat_IV_16,10);
+				item_xx(kat_aatKit,1);
+				item_xx(kat_amiodarone,2);
+				item_xx(kat_CarbonateItem,2);
+				item_xx(kat_EACA,2);
+				item_xx(kat_etomidate,2);
+				item_xx(kat_fentanyl,2);
+				item_xx(kat_flumazenil,2);
+				item_xx(kat_ketamine,2);
+				item_xx(kat_lidocaine,2);
+				item_xx(kat_lorazepam,2);
+				item_xx(kat_naloxone,2);
+				item_xx(kat_nalbuphine,2);
+				item_xx(kat_nitroglycerin,2);
+				item_xx(kat_norepinephrine,2);
+				item_xx(kat_phenylephrine,2);
+				item_xx(kat_TXA,2);
+                item_xx(CUP_NVG_PVS15_black,2);
+			};
+			class TransportBackpacks {};
+			class TransportWeapons {
+				weap_xx(CUP_launch_M136,2);
+                weap_xx(STAF_weap_M590,1);
+			};
         };
 
         class STAF_truck_fuel : C_Truck_02_fuel_F {
@@ -249,6 +681,82 @@ class CfgVehicles {
             selectionClan = "";
             hiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_truck_02_kab_blk_co.paa","\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
             maximumLoad = 4000;
+
+			class TransportMagazines {
+				mag_xx(30Rnd_65x39_caseless_mag,7);
+				mag_xx(hlc_30rnd_556x45_EPR_G36,7);
+				mag_xx(hlc_30Rnd_9x19_B_MP5,4);
+				mag_xx(20Rnd_762x51_Mag,3);
+				mag_xx(hlc_200rnd_556x45_B_SAW,4);
+				mag_xx(150Rnd_762x54_Box,4);
+				mag_xx(CUP_30Rnd_556x45_PMAG_QP,7);
+				mag_xx(hlc_30Rnd_556x45_B_AUG, 7);
+				mag_xx(30Rnd_762x39_AK12_Mag_F,7);
+				mag_xx(CUP_17Rnd_9x19_glock17,2);
+				mag_xx(1Rnd_HE_Grenade_shell,5);
+				mag_xx(1Rnd_Smoke_Grenade_shell,5);
+				mag_xx(B_IR_Grenade,3);
+				mag_xx(HandGrenade,5);
+				mag_xx(SmokeShell,5);
+				mag_xx(ACE_SpareBarrel,2);
+                mag_xx(Titan_AT,2);
+		        mag_xx(CUP_SMAW_HEAA_M,2);
+                mag_xx(rhsusf_5Rnd_Slug,2);
+			};
+			class TransportItems {
+				item_xx(ACE_salineIV,2);
+				item_xx(ACE_salineIV_250,4);
+				item_xx(ACE_salineIV_500,3);
+				item_xx(ACE_splint,4);
+				item_xx(ACE_tourniquet,4);
+				item_xx(ACE_morphine,2);
+				item_xx(ACE_packingBandage,10);
+				item_xx(ACE_epinephrine,2);
+				item_xx(ACE_EarPlugs,2);
+				item_xx(ACE_quikclot,10);
+				item_xx(ACE_elasticBandage,10);
+				item_xx(ACE_fieldDressing,10);
+				item_xx(ACE_adenosine,2);
+				item_xx(ACE_bodyBag,2);
+				item_xx(ACRE_PRC152,2);
+				item_xx(ACE_CableTie,3);
+				item_xx(ACE_Flashlight_XL50,1);
+				item_xx(ACE_EntrenchingTool,1);
+				item_xx(ACE_wirecutter,1);
+				item_xx(ACE_DefusalKit,1);
+				item_xx(ACE_Clacker,1);
+				item_xx(ACE_UAVBattery,2);
+				item_xx(ACE_rope6,1);
+				item_xx(ACE_rope3,1);
+				item_xx(kat_X_AED,1);
+				item_xx(kat_guedel,1);
+				item_xx(kat_larynx,1);
+				item_xx(kat_Pulseoximeter,1);
+				item_xx(kat_stethoscope,1);
+				item_xx(kat_IV_16,10);
+				item_xx(kat_aatKit,1);
+				item_xx(kat_amiodarone,2);
+				item_xx(kat_CarbonateItem,2);
+				item_xx(kat_EACA,2);
+				item_xx(kat_etomidate,2);
+				item_xx(kat_fentanyl,2);
+				item_xx(kat_flumazenil,2);
+				item_xx(kat_ketamine,2);
+				item_xx(kat_lidocaine,2);
+				item_xx(kat_lorazepam,2);
+				item_xx(kat_naloxone,2);
+				item_xx(kat_nalbuphine,2);
+				item_xx(kat_nitroglycerin,2);
+				item_xx(kat_norepinephrine,2);
+				item_xx(kat_phenylephrine,2);
+				item_xx(kat_TXA,2);
+                item_xx(CUP_NVG_PVS15_black,2);
+			};
+			class TransportBackpacks {};
+			class TransportWeapons {
+				weap_xx(CUP_launch_M136,2);
+                weap_xx(STAF_weap_M590,1);
+			};
         };
 
         class STAF_offroad : C_Offroad_02_unarmed_F {
@@ -266,6 +774,75 @@ class CfgVehicles {
             selectionClan = "";
             textureList[] = {"Black",1,"Blue",0,"Green",0,"Orange",0,"Red",0,"White",0};
             maximumLoad = 1500;
+
+			class TransportMagazines {
+				mag_xx(30Rnd_65x39_caseless_mag,5);
+				mag_xx(hlc_30rnd_556x45_EPR_G36,5);
+				mag_xx(hlc_30Rnd_9x19_B_MP5,2);
+				mag_xx(20Rnd_762x51_Mag,2);
+				mag_xx(hlc_200rnd_556x45_B_SAW,4);
+				mag_xx(150Rnd_762x54_Box,4);
+				mag_xx(CUP_30Rnd_556x45_PMAG_QP,10);
+				mag_xx(hlc_30Rnd_556x45_B_AUG, 6);
+				mag_xx(30Rnd_762x39_AK12_Mag_F,5);
+				mag_xx(CUP_17Rnd_9x19_glock17,2);
+				mag_xx(1Rnd_HE_Grenade_shell,5);
+				mag_xx(1Rnd_Smoke_Grenade_shell,5);
+				mag_xx(B_IR_Grenade,2);
+				mag_xx(HandGrenade,5);
+				mag_xx(SmokeShell,5);
+				mag_xx(ACE_SpareBarrel,1);
+			};
+			class TransportItems {
+				item_xx(ACE_salineIV,1);
+				item_xx(ACE_salineIV_250,3);
+				item_xx(ACE_salineIV_500,2);
+				item_xx(ACE_splint,2);
+				item_xx(ACE_tourniquet,2);
+				item_xx(ACE_morphine,2);
+				item_xx(ACE_packingBandage,5);
+				item_xx(ACE_epinephrine,2);
+				item_xx(ACE_EarPlugs,2);
+				item_xx(ACE_quikclot,5);
+				item_xx(ACE_elasticBandage,5);
+				item_xx(ACE_fieldDressing,5);
+				item_xx(ACE_adenosine,2);
+				item_xx(ACRE_PRC152,1);
+				item_xx(ACE_CableTie,2);
+				item_xx(ACE_Flashlight_XL50,1);
+				item_xx(ACE_EntrenchingTool,1);
+				item_xx(ACE_wirecutter,1);
+				item_xx(ACE_DefusalKit,1);
+				item_xx(ACE_Clacker,1);
+				item_xx(ACE_UAVBattery,1);
+				item_xx(ACE_rope6,1);
+				item_xx(ACE_rope3,1);
+				item_xx(kat_X_AED,1);
+				item_xx(kat_guedel,1);
+				item_xx(kat_larynx,1);
+				item_xx(kat_Pulseoximeter,1);
+				item_xx(kat_stethoscope,1);
+				item_xx(kat_IV_16,10);
+				item_xx(kat_aatKit,1);
+				item_xx(kat_amiodarone,2);
+				item_xx(kat_CarbonateItem,2);
+				item_xx(kat_EACA,2);
+				item_xx(kat_etomidate,2);
+				item_xx(kat_fentanyl,2);
+				item_xx(kat_flumazenil,2);
+				item_xx(kat_ketamine,2);
+				item_xx(kat_lidocaine,2);
+				item_xx(kat_lorazepam,2);
+				item_xx(kat_naloxone,2);
+				item_xx(kat_nalbuphine,2);
+				item_xx(kat_nitroglycerin,2);
+				item_xx(kat_norepinephrine,2);
+				item_xx(kat_phenylephrine,2);
+				item_xx(kat_TXA,2);
+                item_xx(CUP_NVG_PVS15_black,2);
+			};
+			class TransportBackpacks {};
+			class TransportWeapons {};
         };
 
         class STAF_offroad_pickup : C_Offroad_01_F {
@@ -284,6 +861,75 @@ class CfgVehicles {
             hiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_offroad_01_ext_blk_co.paa","\staf_pmc_vehicles\txt\STAF_offroad_01_ext_blk_co.paa"};
             textureList[] = {"Red",0,"Beige",0,"White",0,"Blue",0,"Darkred",0,"Bluecustom",0};
             maximumLoad = 1500;
+
+			class TransportMagazines {
+				mag_xx(30Rnd_65x39_caseless_mag,5);
+				mag_xx(hlc_30rnd_556x45_EPR_G36,5);
+				mag_xx(hlc_30Rnd_9x19_B_MP5,2);
+				mag_xx(20Rnd_762x51_Mag,2);
+				mag_xx(hlc_200rnd_556x45_B_SAW,4);
+				mag_xx(150Rnd_762x54_Box,4);
+				mag_xx(CUP_30Rnd_556x45_PMAG_QP,10);
+				mag_xx(hlc_30Rnd_556x45_B_AUG, 6);
+				mag_xx(30Rnd_762x39_AK12_Mag_F,5);
+				mag_xx(CUP_17Rnd_9x19_glock17,2);
+				mag_xx(1Rnd_HE_Grenade_shell,5);
+				mag_xx(1Rnd_Smoke_Grenade_shell,5);
+				mag_xx(B_IR_Grenade,2);
+				mag_xx(HandGrenade,5);
+				mag_xx(SmokeShell,5);
+				mag_xx(ACE_SpareBarrel,1);
+			};
+			class TransportItems {
+				item_xx(ACE_salineIV,1);
+				item_xx(ACE_salineIV_250,3);
+				item_xx(ACE_salineIV_500,2);
+				item_xx(ACE_splint,2);
+				item_xx(ACE_tourniquet,2);
+				item_xx(ACE_morphine,2);
+				item_xx(ACE_packingBandage,5);
+				item_xx(ACE_epinephrine,2);
+				item_xx(ACE_EarPlugs,2);
+				item_xx(ACE_quikclot,5);
+				item_xx(ACE_elasticBandage,5);
+				item_xx(ACE_fieldDressing,5);
+				item_xx(ACE_adenosine,2);
+				item_xx(ACRE_PRC152,1);
+				item_xx(ACE_CableTie,2);
+				item_xx(ACE_Flashlight_XL50,1);
+				item_xx(ACE_EntrenchingTool,1);
+				item_xx(ACE_wirecutter,1);
+				item_xx(ACE_DefusalKit,1);
+				item_xx(ACE_Clacker,1);
+				item_xx(ACE_UAVBattery,1);
+				item_xx(ACE_rope6,1);
+				item_xx(ACE_rope3,1);
+				item_xx(kat_X_AED,1);
+				item_xx(kat_guedel,1);
+				item_xx(kat_larynx,1);
+				item_xx(kat_Pulseoximeter,1);
+				item_xx(kat_stethoscope,1);
+				item_xx(kat_IV_16,10);
+				item_xx(kat_aatKit,1);
+				item_xx(kat_amiodarone,2);
+				item_xx(kat_CarbonateItem,2);
+				item_xx(kat_EACA,2);
+				item_xx(kat_etomidate,2);
+				item_xx(kat_fentanyl,2);
+				item_xx(kat_flumazenil,2);
+				item_xx(kat_ketamine,2);
+				item_xx(kat_lidocaine,2);
+				item_xx(kat_lorazepam,2);
+				item_xx(kat_naloxone,2);
+				item_xx(kat_nalbuphine,2);
+				item_xx(kat_nitroglycerin,2);
+				item_xx(kat_norepinephrine,2);
+				item_xx(kat_phenylephrine,2);
+				item_xx(kat_TXA,2);
+                item_xx(CUP_NVG_PVS15_black,2);
+			};
+			class TransportBackpacks {};
+			class TransportWeapons {};
         };
 
         class STAF_suv : C_SUV_01_F {
@@ -309,6 +955,75 @@ class CfgVehicles {
             selectionClan = "";
             textureList[] = {"Red",0,"Black",0,"Gey",0,"Orange",0};
             maximumLoad = 1500;
+
+			class TransportMagazines {
+				mag_xx(30Rnd_65x39_caseless_mag,5);
+				mag_xx(hlc_30rnd_556x45_EPR_G36,5);
+				mag_xx(hlc_30Rnd_9x19_B_MP5,2);
+				mag_xx(20Rnd_762x51_Mag,2);
+				mag_xx(hlc_200rnd_556x45_B_SAW,4);
+				mag_xx(150Rnd_762x54_Box,4);
+				mag_xx(CUP_30Rnd_556x45_PMAG_QP,10);
+				mag_xx(hlc_30Rnd_556x45_B_AUG, 6);
+				mag_xx(30Rnd_762x39_AK12_Mag_F,5);
+				mag_xx(CUP_17Rnd_9x19_glock17,2);
+				mag_xx(1Rnd_HE_Grenade_shell,5);
+				mag_xx(1Rnd_Smoke_Grenade_shell,5);
+				mag_xx(B_IR_Grenade,2);
+				mag_xx(HandGrenade,5);
+				mag_xx(SmokeShell,5);
+				mag_xx(ACE_SpareBarrel,1);
+			};
+			class TransportItems {
+				item_xx(ACE_salineIV,1);
+				item_xx(ACE_salineIV_250,3);
+				item_xx(ACE_salineIV_500,2);
+				item_xx(ACE_splint,2);
+				item_xx(ACE_tourniquet,2);
+				item_xx(ACE_morphine,2);
+				item_xx(ACE_packingBandage,5);
+				item_xx(ACE_epinephrine,2);
+				item_xx(ACE_EarPlugs,2);
+				item_xx(ACE_quikclot,5);
+				item_xx(ACE_elasticBandage,5);
+				item_xx(ACE_fieldDressing,5);
+				item_xx(ACE_adenosine,2);
+				item_xx(ACRE_PRC152,1);
+				item_xx(ACE_CableTie,2);
+				item_xx(ACE_Flashlight_XL50,1);
+				item_xx(ACE_EntrenchingTool,1);
+				item_xx(ACE_wirecutter,1);
+				item_xx(ACE_DefusalKit,1);
+				item_xx(ACE_Clacker,1);
+				item_xx(ACE_UAVBattery,1);
+				item_xx(ACE_rope6,1);
+				item_xx(ACE_rope3,1);
+				item_xx(kat_X_AED,1);
+				item_xx(kat_guedel,1);
+				item_xx(kat_larynx,1);
+				item_xx(kat_Pulseoximeter,1);
+				item_xx(kat_stethoscope,1);
+				item_xx(kat_IV_16,10);
+				item_xx(kat_aatKit,1);
+				item_xx(kat_amiodarone,2);
+				item_xx(kat_CarbonateItem,2);
+				item_xx(kat_EACA,2);
+				item_xx(kat_etomidate,2);
+				item_xx(kat_fentanyl,2);
+				item_xx(kat_flumazenil,2);
+				item_xx(kat_ketamine,2);
+				item_xx(kat_lidocaine,2);
+				item_xx(kat_lorazepam,2);
+				item_xx(kat_naloxone,2);
+				item_xx(kat_nalbuphine,2);
+				item_xx(kat_nitroglycerin,2);
+				item_xx(kat_norepinephrine,2);
+				item_xx(kat_phenylephrine,2);
+				item_xx(kat_TXA,2);
+                item_xx(CUP_NVG_PVS15_black,2);
+			};
+			class TransportBackpacks {};
+			class TransportWeapons {};
         };
 
         class STAF_suv_2 : CUP_I_SUV_ION {
@@ -331,6 +1046,75 @@ class CfgVehicles {
 
             hiddenSelections[] = {"camo","clan"};
             maximumLoad = 1500;
+
+			class TransportMagazines {
+				mag_xx(30Rnd_65x39_caseless_mag,5);
+				mag_xx(hlc_30rnd_556x45_EPR_G36,5);
+				mag_xx(hlc_30Rnd_9x19_B_MP5,2);
+				mag_xx(20Rnd_762x51_Mag,2);
+				mag_xx(hlc_200rnd_556x45_B_SAW,4);
+				mag_xx(150Rnd_762x54_Box,4);
+				mag_xx(CUP_30Rnd_556x45_PMAG_QP,10);
+				mag_xx(hlc_30Rnd_556x45_B_AUG, 6);
+				mag_xx(30Rnd_762x39_AK12_Mag_F,5);
+				mag_xx(CUP_17Rnd_9x19_glock17,2);
+				mag_xx(1Rnd_HE_Grenade_shell,5);
+				mag_xx(1Rnd_Smoke_Grenade_shell,5);
+				mag_xx(B_IR_Grenade,2);
+				mag_xx(HandGrenade,5);
+				mag_xx(SmokeShell,5);
+				mag_xx(ACE_SpareBarrel,1);
+			};
+			class TransportItems {
+				item_xx(ACE_salineIV,1);
+				item_xx(ACE_salineIV_250,3);
+				item_xx(ACE_salineIV_500,2);
+				item_xx(ACE_splint,2);
+				item_xx(ACE_tourniquet,2);
+				item_xx(ACE_morphine,2);
+				item_xx(ACE_packingBandage,5);
+				item_xx(ACE_epinephrine,2);
+				item_xx(ACE_EarPlugs,2);
+				item_xx(ACE_quikclot,5);
+				item_xx(ACE_elasticBandage,5);
+				item_xx(ACE_fieldDressing,5);
+				item_xx(ACE_adenosine,2);
+				item_xx(ACRE_PRC152,1);
+				item_xx(ACE_CableTie,2);
+				item_xx(ACE_Flashlight_XL50,1);
+				item_xx(ACE_EntrenchingTool,1);
+				item_xx(ACE_wirecutter,1);
+				item_xx(ACE_DefusalKit,1);
+				item_xx(ACE_Clacker,1);
+				item_xx(ACE_UAVBattery,1);
+				item_xx(ACE_rope6,1);
+				item_xx(ACE_rope3,1);
+				item_xx(kat_X_AED,1);
+				item_xx(kat_guedel,1);
+				item_xx(kat_larynx,1);
+				item_xx(kat_Pulseoximeter,1);
+				item_xx(kat_stethoscope,1);
+				item_xx(kat_IV_16,10);
+				item_xx(kat_aatKit,1);
+				item_xx(kat_amiodarone,2);
+				item_xx(kat_CarbonateItem,2);
+				item_xx(kat_EACA,2);
+				item_xx(kat_etomidate,2);
+				item_xx(kat_fentanyl,2);
+				item_xx(kat_flumazenil,2);
+				item_xx(kat_ketamine,2);
+				item_xx(kat_lidocaine,2);
+				item_xx(kat_lorazepam,2);
+				item_xx(kat_naloxone,2);
+				item_xx(kat_nalbuphine,2);
+				item_xx(kat_nitroglycerin,2);
+				item_xx(kat_norepinephrine,2);
+				item_xx(kat_phenylephrine,2);
+				item_xx(kat_TXA,2);
+                item_xx(CUP_NVG_PVS15_black,2);
+			};
+			class TransportBackpacks {};
+			class TransportWeapons {};
         };
 
         class STAF_caiman : rhsusf_M1232_M2_usarmy_d {
@@ -350,6 +1134,82 @@ class CfgVehicles {
             HiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_RG33_Body_CO.paa","\staf_pmc_vehicles\txt\STAF_RG33_Chassis_CO.paa","\staf_pmc_vehicles\txt\STAF_RG33_Accessory2_CO.paa","\staf_pmc_vehicles\txt\STAF_RG33_Armor_CO.paa","\staf_pmc_vehicles\txt\STAF_RG33_TurretD_CO.paa","\staf_pmc_vehicles\txt\STAF_RG33_Wheels_CO.paa","\staf_pmc_vehicles\txt\STAF_mk64mount_d_co.paa","\staf_pmc_vehicles\txt\STAF_MCTAGS_CO.paa","\staf_pmc_vehicles\txt\STAF_camonet_co.paa","\staf_pmc_vehicles\txt\STAF_RG33_USARMY_Decal_ca.paa"};
 
             typicalCargo[] = {"STAF_contractor"};
+
+			class TransportMagazines {
+				mag_xx(30Rnd_65x39_caseless_mag,7);
+				mag_xx(hlc_30rnd_556x45_EPR_G36,7);
+				mag_xx(hlc_30Rnd_9x19_B_MP5,4);
+				mag_xx(20Rnd_762x51_Mag,3);
+				mag_xx(hlc_200rnd_556x45_B_SAW,4);
+				mag_xx(150Rnd_762x54_Box,4);
+				mag_xx(CUP_30Rnd_556x45_PMAG_QP,7);
+				mag_xx(hlc_30Rnd_556x45_B_AUG, 7);
+				mag_xx(30Rnd_762x39_AK12_Mag_F,7);
+				mag_xx(CUP_17Rnd_9x19_glock17,2);
+				mag_xx(1Rnd_HE_Grenade_shell,5);
+				mag_xx(1Rnd_Smoke_Grenade_shell,5);
+				mag_xx(B_IR_Grenade,3);
+				mag_xx(HandGrenade,5);
+				mag_xx(SmokeShell,5);
+				mag_xx(ACE_SpareBarrel,2);
+                mag_xx(Titan_AT,2);
+		        mag_xx(CUP_SMAW_HEAA_M,2);
+                mag_xx(rhsusf_5Rnd_Slug,2);
+			};
+			class TransportItems {
+				item_xx(ACE_salineIV,2);
+				item_xx(ACE_salineIV_250,4);
+				item_xx(ACE_salineIV_500,3);
+				item_xx(ACE_splint,4);
+				item_xx(ACE_tourniquet,4);
+				item_xx(ACE_morphine,2);
+				item_xx(ACE_packingBandage,10);
+				item_xx(ACE_epinephrine,2);
+				item_xx(ACE_EarPlugs,2);
+				item_xx(ACE_quikclot,10);
+				item_xx(ACE_elasticBandage,10);
+				item_xx(ACE_fieldDressing,10);
+				item_xx(ACE_adenosine,2);
+				item_xx(ACE_bodyBag,2);
+				item_xx(ACRE_PRC152,2);
+				item_xx(ACE_CableTie,3);
+				item_xx(ACE_Flashlight_XL50,1);
+				item_xx(ACE_EntrenchingTool,1);
+				item_xx(ACE_wirecutter,1);
+				item_xx(ACE_DefusalKit,1);
+				item_xx(ACE_Clacker,1);
+				item_xx(ACE_UAVBattery,2);
+				item_xx(ACE_rope6,1);
+				item_xx(ACE_rope3,1);
+				item_xx(kat_X_AED,1);
+				item_xx(kat_guedel,1);
+				item_xx(kat_larynx,1);
+				item_xx(kat_Pulseoximeter,1);
+				item_xx(kat_stethoscope,1);
+				item_xx(kat_IV_16,10);
+				item_xx(kat_aatKit,1);
+				item_xx(kat_amiodarone,2);
+				item_xx(kat_CarbonateItem,2);
+				item_xx(kat_EACA,2);
+				item_xx(kat_etomidate,2);
+				item_xx(kat_fentanyl,2);
+				item_xx(kat_flumazenil,2);
+				item_xx(kat_ketamine,2);
+				item_xx(kat_lidocaine,2);
+				item_xx(kat_lorazepam,2);
+				item_xx(kat_naloxone,2);
+				item_xx(kat_nalbuphine,2);
+				item_xx(kat_nitroglycerin,2);
+				item_xx(kat_norepinephrine,2);
+				item_xx(kat_phenylephrine,2);
+				item_xx(kat_TXA,2);
+                item_xx(CUP_NVG_PVS15_black,2);
+			};
+			class TransportBackpacks {};
+			class TransportWeapons {
+				weap_xx(CUP_launch_M136,2);
+                weap_xx(STAF_weap_M590,1);
+			};
         };
 
         class STAF_MATV_M240 : rhsusf_m1240a1_m240_usarmy_d {
@@ -377,6 +1237,82 @@ class CfgVehicles {
                     factions[] = {"STAF_PMC", "STAF_PMC_OPF", "STAF_PMC_IND"};
                 };
             };
+
+			class TransportMagazines {
+				mag_xx(30Rnd_65x39_caseless_mag,7);
+				mag_xx(hlc_30rnd_556x45_EPR_G36,7);
+				mag_xx(hlc_30Rnd_9x19_B_MP5,4);
+				mag_xx(20Rnd_762x51_Mag,3);
+				mag_xx(hlc_200rnd_556x45_B_SAW,4);
+				mag_xx(150Rnd_762x54_Box,4);
+				mag_xx(CUP_30Rnd_556x45_PMAG_QP,7);
+				mag_xx(hlc_30Rnd_556x45_B_AUG, 7);
+				mag_xx(30Rnd_762x39_AK12_Mag_F,7);
+				mag_xx(CUP_17Rnd_9x19_glock17,2);
+				mag_xx(1Rnd_HE_Grenade_shell,5);
+				mag_xx(1Rnd_Smoke_Grenade_shell,5);
+				mag_xx(B_IR_Grenade,3);
+				mag_xx(HandGrenade,5);
+				mag_xx(SmokeShell,5);
+				mag_xx(ACE_SpareBarrel,2);
+                mag_xx(Titan_AT,2);
+		        mag_xx(CUP_SMAW_HEAA_M,2);
+                mag_xx(rhsusf_5Rnd_Slug,2);
+			};
+			class TransportItems {
+				item_xx(ACE_salineIV,2);
+				item_xx(ACE_salineIV_250,4);
+				item_xx(ACE_salineIV_500,3);
+				item_xx(ACE_splint,4);
+				item_xx(ACE_tourniquet,4);
+				item_xx(ACE_morphine,2);
+				item_xx(ACE_packingBandage,10);
+				item_xx(ACE_epinephrine,2);
+				item_xx(ACE_EarPlugs,2);
+				item_xx(ACE_quikclot,10);
+				item_xx(ACE_elasticBandage,10);
+				item_xx(ACE_fieldDressing,10);
+				item_xx(ACE_adenosine,2);
+				item_xx(ACE_bodyBag,2);
+				item_xx(ACRE_PRC152,2);
+				item_xx(ACE_CableTie,3);
+				item_xx(ACE_Flashlight_XL50,1);
+				item_xx(ACE_EntrenchingTool,1);
+				item_xx(ACE_wirecutter,1);
+				item_xx(ACE_DefusalKit,1);
+				item_xx(ACE_Clacker,1);
+				item_xx(ACE_UAVBattery,2);
+				item_xx(ACE_rope6,1);
+				item_xx(ACE_rope3,1);
+				item_xx(kat_X_AED,1);
+				item_xx(kat_guedel,1);
+				item_xx(kat_larynx,1);
+				item_xx(kat_Pulseoximeter,1);
+				item_xx(kat_stethoscope,1);
+				item_xx(kat_IV_16,10);
+				item_xx(kat_aatKit,1);
+				item_xx(kat_amiodarone,2);
+				item_xx(kat_CarbonateItem,2);
+				item_xx(kat_EACA,2);
+				item_xx(kat_etomidate,2);
+				item_xx(kat_fentanyl,2);
+				item_xx(kat_flumazenil,2);
+				item_xx(kat_ketamine,2);
+				item_xx(kat_lidocaine,2);
+				item_xx(kat_lorazepam,2);
+				item_xx(kat_naloxone,2);
+				item_xx(kat_nalbuphine,2);
+				item_xx(kat_nitroglycerin,2);
+				item_xx(kat_norepinephrine,2);
+				item_xx(kat_phenylephrine,2);
+				item_xx(kat_TXA,2);
+                item_xx(CUP_NVG_PVS15_black,2);
+			};
+			class TransportBackpacks {};
+			class TransportWeapons {
+				weap_xx(CUP_launch_M136,2);
+                weap_xx(STAF_weap_M590,1);
+			};
         };
 
         class STAF_MATV_M2 : rhsusf_m1240a1_m2_usarmy_d {
@@ -404,6 +1340,82 @@ class CfgVehicles {
                     factions[] = {"STAF_PMC", "STAF_PMC_OPF", "STAF_PMC_IND"};
                 };
             };
+
+			class TransportMagazines {
+				mag_xx(30Rnd_65x39_caseless_mag,7);
+				mag_xx(hlc_30rnd_556x45_EPR_G36,7);
+				mag_xx(hlc_30Rnd_9x19_B_MP5,4);
+				mag_xx(20Rnd_762x51_Mag,3);
+				mag_xx(hlc_200rnd_556x45_B_SAW,4);
+				mag_xx(150Rnd_762x54_Box,4);
+				mag_xx(CUP_30Rnd_556x45_PMAG_QP,7);
+				mag_xx(hlc_30Rnd_556x45_B_AUG, 7);
+				mag_xx(30Rnd_762x39_AK12_Mag_F,7);
+				mag_xx(CUP_17Rnd_9x19_glock17,2);
+				mag_xx(1Rnd_HE_Grenade_shell,5);
+				mag_xx(1Rnd_Smoke_Grenade_shell,5);
+				mag_xx(B_IR_Grenade,3);
+				mag_xx(HandGrenade,5);
+				mag_xx(SmokeShell,5);
+				mag_xx(ACE_SpareBarrel,2);
+		        mag_xx(Titan_AT,2);
+		        mag_xx(CUP_SMAW_HEAA_M,2);
+                mag_xx(rhsusf_5Rnd_Slug,2);
+			};
+			class TransportItems {
+				item_xx(ACE_salineIV,2);
+				item_xx(ACE_salineIV_250,4);
+				item_xx(ACE_salineIV_500,3);
+				item_xx(ACE_splint,4);
+				item_xx(ACE_tourniquet,4);
+				item_xx(ACE_morphine,2);
+				item_xx(ACE_packingBandage,10);
+				item_xx(ACE_epinephrine,2);
+				item_xx(ACE_EarPlugs,2);
+				item_xx(ACE_quikclot,10);
+				item_xx(ACE_elasticBandage,10);
+				item_xx(ACE_fieldDressing,10);
+				item_xx(ACE_adenosine,2);
+				item_xx(ACE_bodyBag,2);
+				item_xx(ACRE_PRC152,2);
+				item_xx(ACE_CableTie,3);
+				item_xx(ACE_Flashlight_XL50,1);
+				item_xx(ACE_EntrenchingTool,1);
+				item_xx(ACE_wirecutter,1);
+				item_xx(ACE_DefusalKit,1);
+				item_xx(ACE_Clacker,1);
+				item_xx(ACE_UAVBattery,2);
+				item_xx(ACE_rope6,1);
+				item_xx(ACE_rope3,1);
+				item_xx(kat_X_AED,1);
+				item_xx(kat_guedel,1);
+				item_xx(kat_larynx,1);
+				item_xx(kat_Pulseoximeter,1);
+				item_xx(kat_stethoscope,1);
+				item_xx(kat_IV_16,10);
+				item_xx(kat_aatKit,1);
+				item_xx(kat_amiodarone,2);
+				item_xx(kat_CarbonateItem,2);
+				item_xx(kat_EACA,2);
+				item_xx(kat_etomidate,2);
+				item_xx(kat_fentanyl,2);
+				item_xx(kat_flumazenil,2);
+				item_xx(kat_ketamine,2);
+				item_xx(kat_lidocaine,2);
+				item_xx(kat_lorazepam,2);
+				item_xx(kat_naloxone,2);
+				item_xx(kat_nalbuphine,2);
+				item_xx(kat_nitroglycerin,2);
+				item_xx(kat_norepinephrine,2);
+				item_xx(kat_phenylephrine,2);
+				item_xx(kat_TXA,2);
+                item_xx(CUP_NVG_PVS15_black,2);
+			};
+			class TransportBackpacks {};
+			class TransportWeapons {
+				weap_xx(CUP_launch_M136,2);
+                weap_xx(STAF_weap_M590,1);
+			};
         };
 
         class STAF_lsv : B_LSV_01_unarmed_F {
@@ -422,6 +1434,75 @@ class CfgVehicles {
             //selectionClan = "";
             textureList[] = {"Black",1,"Olive",0,"Sand",0};
             maximumLoad = 1500;
+
+			class TransportMagazines {
+				mag_xx(30Rnd_65x39_caseless_mag,5);
+				mag_xx(hlc_30rnd_556x45_EPR_G36,5);
+				mag_xx(hlc_30Rnd_9x19_B_MP5,2);
+				mag_xx(20Rnd_762x51_Mag,2);
+				mag_xx(hlc_200rnd_556x45_B_SAW,4);
+				mag_xx(150Rnd_762x54_Box,4);
+				mag_xx(CUP_30Rnd_556x45_PMAG_QP,10);
+				mag_xx(hlc_30Rnd_556x45_B_AUG, 6);
+				mag_xx(30Rnd_762x39_AK12_Mag_F,5);
+				mag_xx(CUP_17Rnd_9x19_glock17,2);
+				mag_xx(1Rnd_HE_Grenade_shell,5);
+				mag_xx(1Rnd_Smoke_Grenade_shell,5);
+				mag_xx(B_IR_Grenade,2);
+				mag_xx(HandGrenade,5);
+				mag_xx(SmokeShell,5);
+				mag_xx(ACE_SpareBarrel,1);
+			};
+			class TransportItems {
+				item_xx(ACE_salineIV,1);
+				item_xx(ACE_salineIV_250,3);
+				item_xx(ACE_salineIV_500,2);
+				item_xx(ACE_splint,2);
+				item_xx(ACE_tourniquet,2);
+				item_xx(ACE_morphine,2);
+				item_xx(ACE_packingBandage,5);
+				item_xx(ACE_epinephrine,2);
+				item_xx(ACE_EarPlugs,2);
+				item_xx(ACE_quikclot,5);
+				item_xx(ACE_elasticBandage,5);
+				item_xx(ACE_fieldDressing,5);
+				item_xx(ACE_adenosine,2);
+				item_xx(ACRE_PRC152,1);
+				item_xx(ACE_CableTie,2);
+				item_xx(ACE_Flashlight_XL50,1);
+				item_xx(ACE_EntrenchingTool,1);
+				item_xx(ACE_wirecutter,1);
+				item_xx(ACE_DefusalKit,1);
+				item_xx(ACE_Clacker,1);
+				item_xx(ACE_UAVBattery,1);
+				item_xx(ACE_rope6,1);
+				item_xx(ACE_rope3,1);
+				item_xx(kat_X_AED,1);
+				item_xx(kat_guedel,1);
+				item_xx(kat_larynx,1);
+				item_xx(kat_Pulseoximeter,1);
+				item_xx(kat_stethoscope,1);
+				item_xx(kat_IV_16,10);
+				item_xx(kat_aatKit,1);
+				item_xx(kat_amiodarone,2);
+				item_xx(kat_CarbonateItem,2);
+				item_xx(kat_EACA,2);
+				item_xx(kat_etomidate,2);
+				item_xx(kat_fentanyl,2);
+				item_xx(kat_flumazenil,2);
+				item_xx(kat_ketamine,2);
+				item_xx(kat_lidocaine,2);
+				item_xx(kat_lorazepam,2);
+				item_xx(kat_naloxone,2);
+				item_xx(kat_nalbuphine,2);
+				item_xx(kat_nitroglycerin,2);
+				item_xx(kat_norepinephrine,2);
+				item_xx(kat_phenylephrine,2);
+				item_xx(kat_TXA,2);
+                item_xx(CUP_NVG_PVS15_black,2);
+			};
+			class TransportBackpacks {};
+			class TransportWeapons {};
         };
 
         class STAF_btr90 : CUP_BTR90_Base {
@@ -439,6 +1520,83 @@ class CfgVehicles {
             selectionClan = "";
             hiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_btr90_body_co.paa","\staf_pmc_vehicles\txt\STAF_btr90_body2_co.paa"};
             typicalCargo[] = {"STAF_contractor_crew","STAF_contractor_crew","STAF_contractor_crew"};
+
+			class TransportMagazines {
+				mag_xx(30Rnd_65x39_caseless_mag,14);
+				mag_xx(hlc_30rnd_556x45_EPR_G36,14);
+				mag_xx(hlc_30Rnd_9x19_B_MP5,8);
+				mag_xx(20Rnd_762x51_Mag,6);
+				mag_xx(hlc_200rnd_556x45_B_SAW,8);
+				mag_xx(150Rnd_762x54_Box,8);
+				mag_xx(CUP_30Rnd_556x45_PMAG_QP,14);
+				mag_xx(hlc_30Rnd_556x45_B_AUG,8);
+				mag_xx(30Rnd_762x39_AK12_Mag_F,14);
+				mag_xx(hlc_5rnd_300WM_FMJ_AWM,2);
+				mag_xx(CUP_17Rnd_9x19_glock17,4);
+				mag_xx(1Rnd_HE_Grenade_shell,10);
+				mag_xx(1Rnd_Smoke_Grenade_shell,10);
+				mag_xx(B_IR_Grenade,6);
+				mag_xx(HandGrenade,10);
+				mag_xx(SmokeShell,10);
+				mag_xx(ACE_SpareBarrel,2);
+				mag_xx(CUP_SMAW_HEAA_M,4);
+                mag_xx(rhsusf_5Rnd_Slug,2);
+			};
+			class TransportItems {
+				item_xx(ACE_salineIV,4);
+				item_xx(ACE_salineIV_250,8);
+				item_xx(ACE_salineIV_500,6);
+				item_xx(ACE_splint,8);
+				item_xx(ACE_tourniquet,8);
+				item_xx(ACE_morphine,4);
+				item_xx(ACE_packingBandage,20);
+				item_xx(ACE_epinephrine,4);
+				item_xx(ACE_EarPlugs,2);
+				item_xx(ACE_quikclot,20);
+				item_xx(ACE_elasticBandage,20);
+				item_xx(ACE_fieldDressing,20);
+				item_xx(ACE_adenosine,4);
+				item_xx(ACE_bodyBag,2);
+				item_xx(ACRE_PRC152,2);
+				item_xx(ACE_CableTie,6);
+				item_xx(ACE_Flashlight_XL50,1);
+				item_xx(ACE_EntrenchingTool,1);
+				item_xx(ACE_wirecutter,1);
+				item_xx(ACE_DefusalKit,1);
+				item_xx(ACE_Clacker,1);
+				item_xx(ACE_UAVBattery,2);
+				item_xx(ACE_rope6,1);
+				item_xx(ACE_rope3,1);
+				item_xx(kat_X_AED,1);
+				item_xx(kat_guedel,1);
+				item_xx(kat_larynx,1);
+				item_xx(kat_Pulseoximeter,1);
+				item_xx(kat_stethoscope,1);
+				item_xx(kat_IV_16,10);
+				item_xx(kat_aatKit,1);
+				item_xx(kat_amiodarone,2);
+				item_xx(kat_CarbonateItem,2);
+				item_xx(kat_EACA,2);
+				item_xx(kat_etomidate,2);
+				item_xx(kat_fentanyl,2);
+				item_xx(kat_flumazenil,2);
+				item_xx(kat_ketamine,2);
+				item_xx(kat_lidocaine,2);
+				item_xx(kat_lorazepam,2);
+				item_xx(kat_naloxone,2);
+				item_xx(kat_nalbuphine,2);
+				item_xx(kat_nitroglycerin,2);
+				item_xx(kat_norepinephrine,2);
+				item_xx(kat_phenylephrine,2);
+				item_xx(kat_TXA,2);
+                item_xx(CUP_NVG_PVS15_black,2);
+			};
+			class TransportBackpacks {};
+			class TransportWeapons {
+				weap_xx(CUP_launch_M136,2);
+				weap_xx(CUP_launch_Igla,2);
+                weap_xx(STAF_weap_M590,1);
+			};
         };
 
         class STAF_bm2t : O_APC_Tracked_02_cannon_F {
@@ -468,6 +1626,83 @@ class CfgVehicles {
                 };
             };
             textureList[] = {"STAF",1};
+
+			class TransportMagazines {
+				mag_xx(30Rnd_65x39_caseless_mag,14);
+				mag_xx(hlc_30rnd_556x45_EPR_G36,14);
+				mag_xx(hlc_30Rnd_9x19_B_MP5,8);
+				mag_xx(20Rnd_762x51_Mag,6);
+				mag_xx(hlc_200rnd_556x45_B_SAW,8);
+				mag_xx(150Rnd_762x54_Box,8);
+				mag_xx(CUP_30Rnd_556x45_PMAG_QP,14);
+				mag_xx(hlc_30Rnd_556x45_B_AUG,8);
+				mag_xx(30Rnd_762x39_AK12_Mag_F,14);
+				mag_xx(hlc_5rnd_300WM_FMJ_AWM,2);
+				mag_xx(CUP_17Rnd_9x19_glock17,4);
+				mag_xx(1Rnd_HE_Grenade_shell,10);
+				mag_xx(1Rnd_Smoke_Grenade_shell,10);
+				mag_xx(B_IR_Grenade,6);
+				mag_xx(HandGrenade,10);
+				mag_xx(SmokeShell,10);
+				mag_xx(ACE_SpareBarrel,2);
+				mag_xx(CUP_SMAW_HEAA_M,4);
+                mag_xx(rhsusf_5Rnd_Slug,2);
+			};
+			class TransportItems {
+				item_xx(ACE_salineIV,4);
+				item_xx(ACE_salineIV_250,8);
+				item_xx(ACE_salineIV_500,6);
+				item_xx(ACE_splint,8);
+				item_xx(ACE_tourniquet,8);
+				item_xx(ACE_morphine,4);
+				item_xx(ACE_packingBandage,20);
+				item_xx(ACE_epinephrine,4);
+				item_xx(ACE_EarPlugs,2);
+				item_xx(ACE_quikclot,20);
+				item_xx(ACE_elasticBandage,20);
+				item_xx(ACE_fieldDressing,20);
+				item_xx(ACE_adenosine,4);
+				item_xx(ACE_bodyBag,2);
+				item_xx(ACRE_PRC152,2);
+				item_xx(ACE_CableTie,6);
+				item_xx(ACE_Flashlight_XL50,1);
+				item_xx(ACE_EntrenchingTool,1);
+				item_xx(ACE_wirecutter,1);
+				item_xx(ACE_DefusalKit,1);
+				item_xx(ACE_Clacker,1);
+				item_xx(ACE_UAVBattery,2);
+				item_xx(ACE_rope6,1);
+				item_xx(ACE_rope3,1);
+				item_xx(kat_X_AED,1);
+				item_xx(kat_guedel,1);
+				item_xx(kat_larynx,1);
+				item_xx(kat_Pulseoximeter,1);
+				item_xx(kat_stethoscope,1);
+				item_xx(kat_IV_16,10);
+				item_xx(kat_aatKit,1);
+				item_xx(kat_amiodarone,2);
+				item_xx(kat_CarbonateItem,2);
+				item_xx(kat_EACA,2);
+				item_xx(kat_etomidate,2);
+				item_xx(kat_fentanyl,2);
+				item_xx(kat_flumazenil,2);
+				item_xx(kat_ketamine,2);
+				item_xx(kat_lidocaine,2);
+				item_xx(kat_lorazepam,2);
+				item_xx(kat_naloxone,2);
+				item_xx(kat_nalbuphine,2);
+				item_xx(kat_nitroglycerin,2);
+				item_xx(kat_norepinephrine,2);
+				item_xx(kat_phenylephrine,2);
+				item_xx(kat_TXA,2);
+                item_xx(CUP_NVG_PVS15_black,2);
+			};
+			class TransportBackpacks {};
+			class TransportWeapons {
+				weap_xx(CUP_launch_M136,2);
+				weap_xx(CUP_launch_Igla,2);
+                weap_xx(STAF_weap_M590,1);
+			};
         };
 
         class STAF_M1126_ICV_M2 : CUP_B_M1126_ICV_M2_Desert {
@@ -485,6 +1720,83 @@ class CfgVehicles {
             selectionClan = "";
             HiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_stryker_body1_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_body2_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_body2_blk_co.paa","\staf_pmc_vehicles\txt\STAF_icv_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_alfa_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_alfa_blk_co.paa","\staf_pmc_vehicles\txt\STAF_slat_armor_blk_co.paa","\staf_pmc_vehicles\txt\STAF_slat_armor_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_default_co.paa"};
             typicalCargo[] = {"STAF_contractor_crew","STAF_contractor_crew","STAF_contractor_crew"};
+
+			class TransportMagazines {
+				mag_xx(30Rnd_65x39_caseless_mag,14);
+				mag_xx(hlc_30rnd_556x45_EPR_G36,14);
+				mag_xx(hlc_30Rnd_9x19_B_MP5,8);
+				mag_xx(20Rnd_762x51_Mag,6);
+				mag_xx(hlc_200rnd_556x45_B_SAW,8);
+				mag_xx(150Rnd_762x54_Box,8);
+				mag_xx(CUP_30Rnd_556x45_PMAG_QP,14);
+				mag_xx(hlc_30Rnd_556x45_B_AUG,8);
+				mag_xx(30Rnd_762x39_AK12_Mag_F,14);
+				mag_xx(hlc_5rnd_300WM_FMJ_AWM,2);
+				mag_xx(CUP_17Rnd_9x19_glock17,4);
+				mag_xx(1Rnd_HE_Grenade_shell,10);
+				mag_xx(1Rnd_Smoke_Grenade_shell,10);
+				mag_xx(B_IR_Grenade,6);
+				mag_xx(HandGrenade,10);
+				mag_xx(SmokeShell,10);
+				mag_xx(ACE_SpareBarrel,2);
+				mag_xx(CUP_SMAW_HEAA_M,4);
+                mag_xx(rhsusf_5Rnd_Slug,2);
+			};
+			class TransportItems {
+				item_xx(ACE_salineIV,4);
+				item_xx(ACE_salineIV_250,8);
+				item_xx(ACE_salineIV_500,6);
+				item_xx(ACE_splint,8);
+				item_xx(ACE_tourniquet,8);
+				item_xx(ACE_morphine,4);
+				item_xx(ACE_packingBandage,20);
+				item_xx(ACE_epinephrine,4);
+				item_xx(ACE_EarPlugs,2);
+				item_xx(ACE_quikclot,20);
+				item_xx(ACE_elasticBandage,20);
+				item_xx(ACE_fieldDressing,20);
+				item_xx(ACE_adenosine,4);
+				item_xx(ACE_bodyBag,2);
+				item_xx(ACRE_PRC152,2);
+				item_xx(ACE_CableTie,6);
+				item_xx(ACE_Flashlight_XL50,1);
+				item_xx(ACE_EntrenchingTool,1);
+				item_xx(ACE_wirecutter,1);
+				item_xx(ACE_DefusalKit,1);
+				item_xx(ACE_Clacker,1);
+				item_xx(ACE_UAVBattery,2);
+				item_xx(ACE_rope6,1);
+				item_xx(ACE_rope3,1);
+				item_xx(kat_X_AED,1);
+				item_xx(kat_guedel,1);
+				item_xx(kat_larynx,1);
+				item_xx(kat_Pulseoximeter,1);
+				item_xx(kat_stethoscope,1);
+				item_xx(kat_IV_16,10);
+				item_xx(kat_aatKit,1);
+				item_xx(kat_amiodarone,2);
+				item_xx(kat_CarbonateItem,2);
+				item_xx(kat_EACA,2);
+				item_xx(kat_etomidate,2);
+				item_xx(kat_fentanyl,2);
+				item_xx(kat_flumazenil,2);
+				item_xx(kat_ketamine,2);
+				item_xx(kat_lidocaine,2);
+				item_xx(kat_lorazepam,2);
+				item_xx(kat_naloxone,2);
+				item_xx(kat_nalbuphine,2);
+				item_xx(kat_nitroglycerin,2);
+				item_xx(kat_norepinephrine,2);
+				item_xx(kat_phenylephrine,2);
+				item_xx(kat_TXA,2);
+                item_xx(CUP_NVG_PVS15_black,2);
+			};
+			class TransportBackpacks {};
+			class TransportWeapons {
+				weap_xx(CUP_launch_M136,2);
+				weap_xx(CUP_launch_Igla,2);
+                weap_xx(STAF_weap_M590,1);
+			};
         };
 
         class STAF_M1128_MGS : CUP_B_M1128_MGS_Desert {
@@ -503,6 +1815,83 @@ class CfgVehicles {
             HiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_stryker_mgs_body1_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_body2_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_mgs_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_body2_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_alfa_blk_co.paa","\staf_pmc_vehicles\txt\STAF_slat_armor_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_default_co.paa"};
 
             typicalCargo[] = {"STAF_contractor_crew","STAF_contractor_crew","STAF_contractor_crew"};
+
+			class TransportMagazines {
+				mag_xx(30Rnd_65x39_caseless_mag,14);
+				mag_xx(hlc_30rnd_556x45_EPR_G36,14);
+				mag_xx(hlc_30Rnd_9x19_B_MP5,8);
+				mag_xx(20Rnd_762x51_Mag,6);
+				mag_xx(hlc_200rnd_556x45_B_SAW,8);
+				mag_xx(150Rnd_762x54_Box,8);
+				mag_xx(CUP_30Rnd_556x45_PMAG_QP,14);
+				mag_xx(hlc_30Rnd_556x45_B_AUG,8);
+				mag_xx(30Rnd_762x39_AK12_Mag_F,14);
+				mag_xx(hlc_5rnd_300WM_FMJ_AWM,2);
+				mag_xx(CUP_17Rnd_9x19_glock17,4);
+				mag_xx(1Rnd_HE_Grenade_shell,10);
+				mag_xx(1Rnd_Smoke_Grenade_shell,10);
+				mag_xx(B_IR_Grenade,6);
+				mag_xx(HandGrenade,10);
+				mag_xx(SmokeShell,10);
+				mag_xx(ACE_SpareBarrel,2);
+				mag_xx(CUP_SMAW_HEAA_M,4);
+                mag_xx(rhsusf_5Rnd_Slug,2);
+			};
+			class TransportItems {
+				item_xx(ACE_salineIV,4);
+				item_xx(ACE_salineIV_250,8);
+				item_xx(ACE_salineIV_500,6);
+				item_xx(ACE_splint,8);
+				item_xx(ACE_tourniquet,8);
+				item_xx(ACE_morphine,4);
+				item_xx(ACE_packingBandage,20);
+				item_xx(ACE_epinephrine,4);
+				item_xx(ACE_EarPlugs,2);
+				item_xx(ACE_quikclot,20);
+				item_xx(ACE_elasticBandage,20);
+				item_xx(ACE_fieldDressing,20);
+				item_xx(ACE_adenosine,4);
+				item_xx(ACE_bodyBag,2);
+				item_xx(ACRE_PRC152,2);
+				item_xx(ACE_CableTie,6);
+				item_xx(ACE_Flashlight_XL50,1);
+				item_xx(ACE_EntrenchingTool,1);
+				item_xx(ACE_wirecutter,1);
+				item_xx(ACE_DefusalKit,1);
+				item_xx(ACE_Clacker,1);
+				item_xx(ACE_UAVBattery,2);
+				item_xx(ACE_rope6,1);
+				item_xx(ACE_rope3,1);
+				item_xx(kat_X_AED,1);
+				item_xx(kat_guedel,1);
+				item_xx(kat_larynx,1);
+				item_xx(kat_Pulseoximeter,1);
+				item_xx(kat_stethoscope,1);
+				item_xx(kat_IV_16,10);
+				item_xx(kat_aatKit,1);
+				item_xx(kat_amiodarone,2);
+				item_xx(kat_CarbonateItem,2);
+				item_xx(kat_EACA,2);
+				item_xx(kat_etomidate,2);
+				item_xx(kat_fentanyl,2);
+				item_xx(kat_flumazenil,2);
+				item_xx(kat_ketamine,2);
+				item_xx(kat_lidocaine,2);
+				item_xx(kat_lorazepam,2);
+				item_xx(kat_naloxone,2);
+				item_xx(kat_nalbuphine,2);
+				item_xx(kat_nitroglycerin,2);
+				item_xx(kat_norepinephrine,2);
+				item_xx(kat_phenylephrine,2);
+				item_xx(kat_TXA,2);
+                item_xx(CUP_NVG_PVS15_black,2);
+			};
+			class TransportBackpacks {};
+			class TransportWeapons {
+				weap_xx(CUP_launch_M136,2);
+				weap_xx(CUP_launch_Igla,2);
+                weap_xx(STAF_weap_M590,1);
+			};
         };
 
         class STAF_M1130_CV_M2 : CUP_B_M1130_CV_M2_Desert {
@@ -520,6 +1909,83 @@ class CfgVehicles {
             selectionClan = "";
             HiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_stryker_body1_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_body2_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_command_blk_co.paa","\staf_pmc_vehicles\txt\STAF_slat_armor_blk_co.paa","\staf_pmc_vehicles\txt\STAF_icv_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_default_co.paa"};
             typicalCargo[] = {"STAF_contractor_crew","STAF_contractor_crew","STAF_contractor_crew"};
+
+			class TransportMagazines {
+				mag_xx(30Rnd_65x39_caseless_mag,14);
+				mag_xx(hlc_30rnd_556x45_EPR_G36,14);
+				mag_xx(hlc_30Rnd_9x19_B_MP5,8);
+				mag_xx(20Rnd_762x51_Mag,6);
+				mag_xx(hlc_200rnd_556x45_B_SAW,8);
+				mag_xx(150Rnd_762x54_Box,8);
+				mag_xx(CUP_30Rnd_556x45_PMAG_QP,14);
+				mag_xx(hlc_30Rnd_556x45_B_AUG,8);
+				mag_xx(30Rnd_762x39_AK12_Mag_F,14);
+				mag_xx(hlc_5rnd_300WM_FMJ_AWM,2);
+				mag_xx(CUP_17Rnd_9x19_glock17,4);
+				mag_xx(1Rnd_HE_Grenade_shell,10);
+				mag_xx(1Rnd_Smoke_Grenade_shell,10);
+				mag_xx(B_IR_Grenade,6);
+				mag_xx(HandGrenade,10);
+				mag_xx(SmokeShell,10);
+				mag_xx(ACE_SpareBarrel,2);
+				mag_xx(CUP_SMAW_HEAA_M,4);
+                mag_xx(rhsusf_5Rnd_Slug,2);
+			};
+			class TransportItems {
+				item_xx(ACE_salineIV,4);
+				item_xx(ACE_salineIV_250,8);
+				item_xx(ACE_salineIV_500,6);
+				item_xx(ACE_splint,8);
+				item_xx(ACE_tourniquet,8);
+				item_xx(ACE_morphine,4);
+				item_xx(ACE_packingBandage,20);
+				item_xx(ACE_epinephrine,4);
+				item_xx(ACE_EarPlugs,2);
+				item_xx(ACE_quikclot,20);
+				item_xx(ACE_elasticBandage,20);
+				item_xx(ACE_fieldDressing,20);
+				item_xx(ACE_adenosine,4);
+				item_xx(ACE_bodyBag,2);
+				item_xx(ACRE_PRC152,2);
+				item_xx(ACE_CableTie,6);
+				item_xx(ACE_Flashlight_XL50,1);
+				item_xx(ACE_EntrenchingTool,1);
+				item_xx(ACE_wirecutter,1);
+				item_xx(ACE_DefusalKit,1);
+				item_xx(ACE_Clacker,1);
+				item_xx(ACE_UAVBattery,2);
+				item_xx(ACE_rope6,1);
+				item_xx(ACE_rope3,1);
+				item_xx(kat_X_AED,1);
+				item_xx(kat_guedel,1);
+				item_xx(kat_larynx,1);
+				item_xx(kat_Pulseoximeter,1);
+				item_xx(kat_stethoscope,1);
+				item_xx(kat_IV_16,10);
+				item_xx(kat_aatKit,1);
+				item_xx(kat_amiodarone,2);
+				item_xx(kat_CarbonateItem,2);
+				item_xx(kat_EACA,2);
+				item_xx(kat_etomidate,2);
+				item_xx(kat_fentanyl,2);
+				item_xx(kat_flumazenil,2);
+				item_xx(kat_ketamine,2);
+				item_xx(kat_lidocaine,2);
+				item_xx(kat_lorazepam,2);
+				item_xx(kat_naloxone,2);
+				item_xx(kat_nalbuphine,2);
+				item_xx(kat_nitroglycerin,2);
+				item_xx(kat_norepinephrine,2);
+				item_xx(kat_phenylephrine,2);
+				item_xx(kat_TXA,2);
+                item_xx(CUP_NVG_PVS15_black,2);
+			};
+			class TransportBackpacks {};
+			class TransportWeapons {
+				weap_xx(CUP_launch_M136,2);
+				weap_xx(CUP_launch_Igla,2);
+                weap_xx(STAF_weap_M590,1);
+			};
         };
 
         class STAF_M1129_MC_MK19 : CUP_B_M1129_MC_MK19_Desert {
@@ -538,6 +2004,83 @@ class CfgVehicles {
             HiddenSelectionsTextures[] = {"\staf_pmc_vehicles\txt\STAF_stryker_body1_mortar_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_body2_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_interior1_mortar_blk_co.paa","\staf_pmc_vehicles\txt\STAF_slat_armor_blk_co.paa","\staf_pmc_vehicles\txt\STAF_icv_blk_co.paa","\staf_pmc_vehicles\txt\STAF_stryker_default_co.paa"};
 
             typicalCargo[] = {"STAF_contractor_crew","STAF_contractor_crew","STAF_contractor_crew"};
+
+			class TransportMagazines {
+				mag_xx(30Rnd_65x39_caseless_mag,14);
+				mag_xx(hlc_30rnd_556x45_EPR_G36,14);
+				mag_xx(hlc_30Rnd_9x19_B_MP5,8);
+				mag_xx(20Rnd_762x51_Mag,6);
+				mag_xx(hlc_200rnd_556x45_B_SAW,8);
+				mag_xx(150Rnd_762x54_Box,8);
+				mag_xx(CUP_30Rnd_556x45_PMAG_QP,14);
+				mag_xx(hlc_30Rnd_556x45_B_AUG,8);
+				mag_xx(30Rnd_762x39_AK12_Mag_F,14);
+				mag_xx(hlc_5rnd_300WM_FMJ_AWM,2);
+				mag_xx(CUP_17Rnd_9x19_glock17,4);
+				mag_xx(1Rnd_HE_Grenade_shell,10);
+				mag_xx(1Rnd_Smoke_Grenade_shell,10);
+				mag_xx(B_IR_Grenade,6);
+				mag_xx(HandGrenade,10);
+				mag_xx(SmokeShell,10);
+				mag_xx(ACE_SpareBarrel,2);
+				mag_xx(CUP_SMAW_HEAA_M,4);
+                mag_xx(rhsusf_5Rnd_Slug,2);
+			};
+			class TransportItems {
+				item_xx(ACE_salineIV,4);
+				item_xx(ACE_salineIV_250,8);
+				item_xx(ACE_salineIV_500,6);
+				item_xx(ACE_splint,8);
+				item_xx(ACE_tourniquet,8);
+				item_xx(ACE_morphine,4);
+				item_xx(ACE_packingBandage,20);
+				item_xx(ACE_epinephrine,4);
+				item_xx(ACE_EarPlugs,2);
+				item_xx(ACE_quikclot,20);
+				item_xx(ACE_elasticBandage,20);
+				item_xx(ACE_fieldDressing,20);
+				item_xx(ACE_adenosine,4);
+				item_xx(ACE_bodyBag,2);
+				item_xx(ACRE_PRC152,2);
+				item_xx(ACE_CableTie,6);
+				item_xx(ACE_Flashlight_XL50,1);
+				item_xx(ACE_EntrenchingTool,1);
+				item_xx(ACE_wirecutter,1);
+				item_xx(ACE_DefusalKit,1);
+				item_xx(ACE_Clacker,1);
+				item_xx(ACE_UAVBattery,2);
+				item_xx(ACE_rope6,1);
+				item_xx(ACE_rope3,1);
+				item_xx(kat_X_AED,1);
+				item_xx(kat_guedel,1);
+				item_xx(kat_larynx,1);
+				item_xx(kat_Pulseoximeter,1);
+				item_xx(kat_stethoscope,1);
+				item_xx(kat_IV_16,10);
+				item_xx(kat_aatKit,1);
+				item_xx(kat_amiodarone,2);
+				item_xx(kat_CarbonateItem,2);
+				item_xx(kat_EACA,2);
+				item_xx(kat_etomidate,2);
+				item_xx(kat_fentanyl,2);
+				item_xx(kat_flumazenil,2);
+				item_xx(kat_ketamine,2);
+				item_xx(kat_lidocaine,2);
+				item_xx(kat_lorazepam,2);
+				item_xx(kat_naloxone,2);
+				item_xx(kat_nalbuphine,2);
+				item_xx(kat_nitroglycerin,2);
+				item_xx(kat_norepinephrine,2);
+				item_xx(kat_phenylephrine,2);
+				item_xx(kat_TXA,2);
+                item_xx(CUP_NVG_PVS15_black,2);
+			};
+			class TransportBackpacks {};
+			class TransportWeapons {
+				weap_xx(CUP_launch_M136,2);
+				weap_xx(CUP_launch_Igla,2);
+                weap_xx(STAF_weap_M590,1);
+			};
         };
 
         class STAF_merkava : B_MBT_01_cannon_F {
@@ -554,6 +2097,83 @@ class CfgVehicles {
             selectionClan = "";
 
             typicalCargo[] = {"STAF_contractor_crew","STAF_contractor_crew","STAF_contractor_crew"};
+
+			class TransportMagazines {
+				mag_xx(30Rnd_65x39_caseless_mag,14);
+				mag_xx(hlc_30rnd_556x45_EPR_G36,14);
+				mag_xx(hlc_30Rnd_9x19_B_MP5,8);
+				mag_xx(20Rnd_762x51_Mag,6);
+				mag_xx(hlc_200rnd_556x45_B_SAW,8);
+				mag_xx(150Rnd_762x54_Box,8);
+				mag_xx(CUP_30Rnd_556x45_PMAG_QP,14);
+				mag_xx(hlc_30Rnd_556x45_B_AUG,8);
+				mag_xx(30Rnd_762x39_AK12_Mag_F,14);
+				mag_xx(hlc_5rnd_300WM_FMJ_AWM,2);
+				mag_xx(CUP_17Rnd_9x19_glock17,4);
+				mag_xx(1Rnd_HE_Grenade_shell,10);
+				mag_xx(1Rnd_Smoke_Grenade_shell,10);
+				mag_xx(B_IR_Grenade,6);
+				mag_xx(HandGrenade,10);
+				mag_xx(SmokeShell,10);
+				mag_xx(ACE_SpareBarrel,2);
+				mag_xx(CUP_SMAW_HEAA_M,4);
+                mag_xx(rhsusf_5Rnd_Slug,2);
+			};
+			class TransportItems {
+				item_xx(ACE_salineIV,4);
+				item_xx(ACE_salineIV_250,8);
+				item_xx(ACE_salineIV_500,6);
+				item_xx(ACE_splint,8);
+				item_xx(ACE_tourniquet,8);
+				item_xx(ACE_morphine,4);
+				item_xx(ACE_packingBandage,20);
+				item_xx(ACE_epinephrine,4);
+				item_xx(ACE_EarPlugs,2);
+				item_xx(ACE_quikclot,20);
+				item_xx(ACE_elasticBandage,20);
+				item_xx(ACE_fieldDressing,20);
+				item_xx(ACE_adenosine,4);
+				item_xx(ACE_bodyBag,2);
+				item_xx(ACRE_PRC152,2);
+				item_xx(ACE_CableTie,6);
+				item_xx(ACE_Flashlight_XL50,1);
+				item_xx(ACE_EntrenchingTool,1);
+				item_xx(ACE_wirecutter,1);
+				item_xx(ACE_DefusalKit,1);
+				item_xx(ACE_Clacker,1);
+				item_xx(ACE_UAVBattery,2);
+				item_xx(ACE_rope6,1);
+				item_xx(ACE_rope3,1);
+				item_xx(kat_X_AED,1);
+				item_xx(kat_guedel,1);
+				item_xx(kat_larynx,1);
+				item_xx(kat_Pulseoximeter,1);
+				item_xx(kat_stethoscope,1);
+				item_xx(kat_IV_16,10);
+				item_xx(kat_aatKit,1);
+				item_xx(kat_amiodarone,2);
+				item_xx(kat_CarbonateItem,2);
+				item_xx(kat_EACA,2);
+				item_xx(kat_etomidate,2);
+				item_xx(kat_fentanyl,2);
+				item_xx(kat_flumazenil,2);
+				item_xx(kat_ketamine,2);
+				item_xx(kat_lidocaine,2);
+				item_xx(kat_lorazepam,2);
+				item_xx(kat_naloxone,2);
+				item_xx(kat_nalbuphine,2);
+				item_xx(kat_nitroglycerin,2);
+				item_xx(kat_norepinephrine,2);
+				item_xx(kat_phenylephrine,2);
+				item_xx(kat_TXA,2);
+                item_xx(CUP_NVG_PVS15_black,2);
+			};
+			class TransportBackpacks {};
+			class TransportWeapons {
+				weap_xx(CUP_launch_M136,2);
+				weap_xx(CUP_launch_Igla,2);
+                weap_xx(STAF_weap_M590,1);
+			};
         };
 
       //----------------------------------Drones----------------------------------
@@ -596,6 +2216,35 @@ class CfgVehicles {
             crew = "B_UAV_AI";
             editorPreview = "\staf_pmc_main\eden\STAF_hexacopter_ammo.jpg";
             maximumLoad = 3200;
+
+			class TransportMagazines {
+				mag_xx(30Rnd_65x39_caseless_mag,15);
+				mag_xx(hlc_30rnd_556x45_EPR_G36,15);
+				mag_xx(hlc_30Rnd_9x19_B_MP5,5);
+				mag_xx(20Rnd_762x51_Mag,5);
+				mag_xx(hlc_200rnd_556x45_B_SAW,10);
+				mag_xx(150Rnd_762x54_Box,10);
+				mag_xx(CUP_30Rnd_556x45_PMAG_QP,15);
+				mag_xx(hlc_30Rnd_556x45_B_AUG, 15);
+				mag_xx(30Rnd_762x39_AK12_Mag_F,15);
+				mag_xx(hlc_5rnd_300WM_FMJ_AWM,5);
+				mag_xx(CUP_17Rnd_9x19_glock17,5);
+				mag_xx(1Rnd_HE_Grenade_shell,5);
+				mag_xx(ACE_HuntIR_M203,2);
+				mag_xx(1Rnd_Smoke_Grenade_shell,5);
+				mag_xx(B_IR_Grenade,5);
+				mag_xx(HandGrenade,10);
+				mag_xx(SmokeShell,10);
+				mag_xx(ACE_SpareBarrel,2);
+				mag_xx(CUP_SMAW_HEAA_M,4);
+                mag_xx(rhsusf_5Rnd_Slug,2);
+			};
+			class TransportItems {
+				item_xx(ACE_rope6,1);
+				item_xx(ACE_rope3,1);
+			};
+			class TransportBackpacks {};
+			class TransportWeapons {};
         };
 
         class STAF_hexacopter_medical : B_UAV_06_medical_F {
@@ -610,6 +2259,50 @@ class CfgVehicles {
             crew = "B_UAV_AI";
             editorPreview = "\staf_pmc_main\eden\STAF_hexacopter_medical.jpg";
             maximumLoad = 1000;
+
+			class TransportMagazines {};
+			class TransportItems {
+				item_xx(ACE_salineIV,3);
+				item_xx(ACE_salineIV_250,9);
+				item_xx(ACE_salineIV_500,6);
+				item_xx(ACE_splint,6);
+				item_xx(ACE_surgicalKit,1);
+				item_xx(ACE_tourniquet,10);
+				item_xx(ACE_morphine,5);
+				item_xx(ACE_packingBandage,20);
+				item_xx(ACE_epinephrine,5);
+				item_xx(ACE_EarPlugs,5);
+				item_xx(ACE_quikclot,20);
+				item_xx(ACE_elasticBandage,20);
+				item_xx(ACE_fieldDressing,20);
+				item_xx(ACE_adenosine,5);
+				item_xx(ACE_bodyBag,2);
+				item_xx(ACE_personalAidKit,2);
+				item_xx(kat_X_AED,1);
+				item_xx(kat_guedel,2);
+				item_xx(kat_larynx,2);
+				item_xx(kat_Pulseoximeter,2);
+				item_xx(kat_stethoscope,2);
+				item_xx(kat_IV_16,10);
+				item_xx(kat_aatKit,1);
+				item_xx(kat_amiodarone,2);
+				item_xx(kat_CarbonateItem,2);
+				item_xx(kat_EACA,2);
+				item_xx(kat_etomidate,2);
+				item_xx(kat_fentanyl,2);
+				item_xx(kat_flumazenil,2);
+				item_xx(kat_ketamine,2);
+				item_xx(kat_lidocaine,2);
+				item_xx(kat_lorazepam,2);
+				item_xx(kat_naloxone,2);
+				item_xx(kat_nalbuphine,2);
+				item_xx(kat_nitroglycerin,2);
+				item_xx(kat_norepinephrine,2);
+				item_xx(kat_phenylephrine,2);
+				item_xx(kat_TXA,2);
+			};
+			class TransportBackpacks {};
+			class TransportWeapons {};            
         };
 
         class STAF_hexacopter_explosive : B_UAV_06_F {
@@ -624,6 +2317,19 @@ class CfgVehicles {
             crew = "B_UAV_AI";
             editorPreview = "\staf_pmc_main\eden\STAF_hexacopter.jpg";
             maximumLoad = 1200;
+
+			class TransportMagazines {
+				mag_xx(SatchelCharge_Remote_Mag,4);
+				mag_xx(DemoCharge_Remote_Mag,6);
+				mag_xx(ClaymoreDirectionalMine_Remote_Mag,3);
+				mag_xx(APERSBoundingMine_Range_Mag,3);
+			};
+			class TransportItems {
+				item_xx(ACE_DefusalKit,2);
+				item_xx(ACE_Clacker,2);
+			};
+			class TransportBackpacks {};
+			class TransportWeapons {};
         };
 
         class STAF_demining_UGV : B_UGV_02_Demining_F {

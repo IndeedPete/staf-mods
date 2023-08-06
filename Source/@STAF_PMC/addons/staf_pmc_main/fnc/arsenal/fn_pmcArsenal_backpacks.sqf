@@ -155,9 +155,9 @@ _backpacks = [
             "TIGER_Backpack_Kitbag",
             "TIGER_Backpack_Compact",
             //TFAR
-            "TFAR_rt1523g",
+            //"TFAR_rt1523g",
             //ILBE
-            "tfw_ilbe_whip_wd",
+            /*"tfw_ilbe_whip_wd",
             "tfw_ilbe_whip_d",
             "tfw_ilbe_whip_coy",
             "tfw_ilbe_whip_gr",
@@ -200,9 +200,9 @@ _backpacks = [
             "tfw_ilbe_blade_mct",
             "tfw_ilbe_blade_mc",
             "tfw_ilbe_blade_ocp",
-            "tfw_ilbe_blade_wd2",
+            "tfw_ilbe_blade_wd2",*/
             // YSA
-            "YSA_ilbe_whip_Black",
+            /*"YSA_ilbe_whip_Black",
             "YSA_ilbe_whip_DPMWoodland",
             "YSA_ilbe_whip_EMRSummer",
             "YSA_ilbe_whip_Flecktarn",
@@ -329,7 +329,7 @@ _backpacks = [
             "YSA_ilbe_dd_ATACSAU",
             "YSA_ilbe_dd_AOR2",
             "YSA_ilbe_dd_93Wdl",
-            "YSA_ilbe_dd_93Des",
+            "YSA_ilbe_dd_93Des",*/
             //TACS
             "tacs_Backpack_Kitbag_DarkBlack",
             "tacs_Backpack_Carryall_DarkBlack",
@@ -351,6 +351,7 @@ _backpacks = [
             "STAF_B_Kitbag_white_MCAM",
             "STAF_B_Kitbag_white_splinter",
             "STAF_B_Kitbag_white",
+            "STAF_B_Messenger_Purple_Moony_F",
             /*"STAF_B_UAV_01_backpack_white_F",
             "STAF_O_UAV_01_backpack_white_F",
             "STAF_I_UAV_01_backpack_white_F",*/
@@ -376,7 +377,7 @@ _backpacks = [
             "STAF_B_Kitbag_blk",
             "STAF_B_RepairBag",
             "STAF_B_RepairBag_field",
-            "STAF_B_RadioBag_01_black_F",
+            /*"STAF_B_RadioBag_01_black_F",
       			"STAF_B_RadioBag_01_digi_F",
       			"STAF_B_RadioBag_01_eaf_F",
       			"STAF_B_RadioBag_01_ghex_F",
@@ -388,7 +389,7 @@ _backpacks = [
             "STAF_B_Messenger_Black_F",
             "STAF_B_Messenger_Coyote_F",
             "STAF_B_Messenger_Gray_F",
-            "STAF_B_Messenger_Olive_F",
+            "STAF_B_Messenger_Olive_F",*/
             //CUP
             "CUP_B_GER_Pack_Flecktarn",
             "CUP_B_GER_Pack_Tropentarn",

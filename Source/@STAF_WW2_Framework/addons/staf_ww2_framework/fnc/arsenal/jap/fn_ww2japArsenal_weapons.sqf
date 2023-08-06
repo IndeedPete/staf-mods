@@ -1,0 +1,19 @@
+_weapons = [
+   "fow_w_type100",
+   "fow_w_type99",
+   "fow_w_type99_lmg",
+   "fow_w_type99_sniper",
+   "fow_w_type10",
+   "fow_w_type14",
+   "NORTH_fin_panzerschreck",
+   "NORTH_fin_panzerschreck_camo",
+   "NORTH_fin_panzerschreck_green",
+   "SPE_Binocular_GER",
+   "fow_i_dienstglas",
+   "SPE_GrW278_1_Barrel",
+   "SPE_GrW278_1_Stand",
+   "WBK_survival_weapon_4",
+   "WBK_survival_weapon_4_r",
+	"Shovel_Russian",
+	"Shovel_Russian_Rotated"
+];

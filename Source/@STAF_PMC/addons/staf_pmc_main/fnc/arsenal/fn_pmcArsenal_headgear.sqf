@@ -347,8 +347,6 @@ _headgear = [
             "VSM_beard_2_hair",
             "VSM_beard_3",
             "VSM_beard_3_hair",
-            //Cigs
-            "immersion_cigs_cigar0",
             //Military Gear
             "milgp_h_airframe_01_khk",
             "milgp_h_airframe_01_goggles_khk",

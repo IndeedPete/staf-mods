@@ -32,7 +32,6 @@ class CfgFunctions
 			class pmcvehicle_helibigequipment{};
 			class pmcvehicle_helismallequipment{};
 			class pmcvehicle_mrapequipment{};
-			class pmcvehicle_equipment{};
 		};
 		class Zenmodule_STAF
 		{
@@ -45,6 +44,7 @@ class CfgFunctions
 			file = "\staf_pmc_main\fnc\zenmodule\STAF_Equipment";
 			class pmcArsenalZeus{};
 			class pmcInventories{};
+			class pmcRandomizeEquipment{};
 		};
 	};
 };

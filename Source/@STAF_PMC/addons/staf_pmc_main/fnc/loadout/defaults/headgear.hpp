@@ -265,7 +265,6 @@ _headgearArray = [
   "MCB_Cap",
   "OGA_Helmet1",
   "OGA_Helmet2",
-  "OGA_Boonie",
   "OGA_Cap",
   "Project_Honor_Helmet1",
   "Project_Honor_Helmet2",

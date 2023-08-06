@@ -19,6 +19,7 @@ private _wait = [] spawn
 
 		private _stafEquipment = [
 			["Toggle PMC Arsenal",{_this call STAF_PMC_fnc_pmcArsenalZeus}],
+			["Randomize PMC Unit",{_this call STAF_PMC_fnc_pmcRandomizeEquipment}],
 			["Add PMC Inventory",{_this call STAF_PMC_fnc_pmcInventories}]
 		];
 

@@ -388,4 +388,11 @@ class CfgUnitInsignia
 		texture = "\staf_framework\img\wales.paa";
 		textureVehicle = "";
 	};
+	class STAF_schmirler
+	{
+		displayName = "Schmirler, the Curler";
+		author = "STAF|Thom and STAF|Moony";
+		texture = "\staf_framework\img\schmirler.paa";
+		textureVehicle = "";
+	};
 };

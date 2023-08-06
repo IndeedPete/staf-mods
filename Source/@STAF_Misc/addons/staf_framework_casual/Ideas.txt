@@ -1,0 +1,35 @@
+Add ACE Interaction (Eden and Zeus)
+
+-> Choose Name
+-> Choose Where
+-> Choose Interaction time (with Progressbar)
+|-> Value has to be typed in with 0 being instant
+-> ACE notification
+|-> Empty = skip
+-> On screen notification
+|-> Would need to be preplaced
+|-> None would skip
+-> Create an Intel in a new Intel Map Tab
+|-> Empty will skip
+-> Choose if interaction will be removed on use
+-> Choose if the object will be removed on use
+
+_______________________________________________________________________________
+
+MHQ (Eden and Zeus)
+
+Creates a MHQ heavily based on many variables.
+
+-> Vehicle have to be stationary (and engine off?)
+-> MHQ removes fuel (stores it in a variable)
+-> When MHQ is disassmbled the fuel is put back in
+
+-> Can be used on an object aswell
+-> Can (maybe) be used with an Item?
+
+_______________________________________________________________________________
+
+Zeus Interaction for Admins
+
+Admins can promote themself Zeus and also remove themself as Zeus
+(Create a Eden module that when attached to a unit has the same effect on said unit)
