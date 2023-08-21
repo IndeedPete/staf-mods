@@ -1,35 +1,35 @@
-params ["_unit"];
+params ["_unit","_infection"];
 
-while {Alive _unit && _unit getVariable "STAF_Horror_Infected"} do {
-  _cough = [] call STAF_Horror_fnc_infectionrandomcough;
-  enableCamShake true;
-  _coughtime = -1;
+_cough = [
+  "STAF_Horror_cough1",
+  "STAF_Horror_cough2",
+  "STAF_Horror_cough3",
+  "STAF_Horror_cough4",
+  "STAF_Horror_cough5",
+  "STAF_Horror_cough6",
+  "STAF_Horror_cough7",
+  "STAF_Horror_cough8",
+  "STAF_Horror_cough9"
+] call BIS_fnc_selectRandom;
 
-  if (isNil {_unit getVariable ["STAF_Horror_CoughTime",nil]}) then {
-    if ((_unit getVariable "STAF_Horror_Infection") < 0.5) then {
-      _unit setVariable ["STAF_Horror_CoughTime", (round(random(60)+10))]
-    };
-    if ((_unit getVariable "STAF_Horror_Infection") >= 0.5 && (_unit getVariable "STAF_Horror_Infection") < 0.75) then {
-      _infection = _unit getVariable ["STAF_Horror_Infection", 0];
-      _unit setVariable ["STAF_Horror_CoughTime", (round(random(5/_infection)+15))]
-    };
-    if ((_unit getVariable "STAF_Horror_Infection") >= 0.75 && (_unit getVariable "STAF_Horror_Infection") < 0.9) then {
-      _infection = _unit getVariable ["STAF_Horror_Infection", 0];
-      _unit setVariable ["STAF_Horror_CoughTime", (round(random(5/_infection)+10))]
-    };
-    if ((_unit getVariable "STAF_Horror_Infection") >= 0.9) then {
-      _infection = _unit getVariable ["STAF_Horror_Infection", 0];
-      _unit setVariable ["STAF_Horror_CoughTime", (round(random(5/_infection)*5))]
-    };
-  };
+enableCamShake true;
 
-  sleep (_unit getVariable "STAF_Horror_CoughTime");
+switch (true) do { 
+  case (_infection <= 0.5): {_unit setVariable ["STAF_Horror_CoughTime", (round(random(60)+10))]}; 
+  case ((_infection > 0.5) && (_infection < 0.75)): {_unit setVariable ["STAF_Horror_CoughTime", (round(random(5/_infection)+15))]}; 
+  case ((_infection >= 0.75) && (_infection <= 0.9)): {_unit setVariable ["STAF_Horror_CoughTime", (round(random(5/_infection)+10))]}; 
+  case (_infection > 0.9): {_unit setVariable ["STAF_Horror_CoughTime", (round(random(5/_infection)+10))]}; 
+};
+
+_coughTime = _unit getVariable "STAF_Horror_CoughTime";
+
+[_unit, _coughTime, _cough] spawn {
+  params ["_unit", "_coughtime", "_cough"];
+  
+  sleep _coughTime;
   addCamShake [0.5, 3, 25];
   resetCamShake;
   if (Alive _unit) then {
-      _unit say3D [_cough, 10];
+    _unit say3D [_cough, 10];
   };
-  _unit setVariable ["STAF_Horror_CoughTime",nil];
 };
-
-_unit setVariable ["STAF_Horror_CoughTime",nil];

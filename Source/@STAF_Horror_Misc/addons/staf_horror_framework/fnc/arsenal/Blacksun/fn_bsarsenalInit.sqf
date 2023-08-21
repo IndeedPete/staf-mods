@@ -5,5 +5,5 @@ params [
 ];
 
 {
-	[_x] call STAF_Horror_fnc_arsenal;
+	[_x] call STAF_Horror_fnc_bsarsenal;
 } forEach _objs;

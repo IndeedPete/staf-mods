@@ -92,11 +92,6 @@ class CfgFunctions
 			class unlimitedAmmoInit{};
 			class m_perpetualVehicleConvoy{};
 		};
-		class Respawn
-		{
-			file = "\STAF_FRAMEWORK\fnc\respawn";
-			class respawn_equipment {};
-		};
 		class Zenmodule_STAF
 		{
 			file = "\STAF_FRAMEWORK\fnc\zenmodule";

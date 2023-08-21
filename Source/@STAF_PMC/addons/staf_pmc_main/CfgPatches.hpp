@@ -40,7 +40,8 @@ class CfgPatches
         "VSM_Scorpion_Config",
         "STAF_pmc_backpacks",
         "A3_ui_f",
-        "A3_ui_f_oldman"
+        "A3_ui_f_oldman",
+        "STAF_FRAMEWORK"
       };
       requiredVersion = 1.62;
       author = "STAF";

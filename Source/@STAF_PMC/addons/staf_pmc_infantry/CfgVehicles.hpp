@@ -1,4 +1,5 @@
 class EventHandlers;
+
 class CfgVehicles {
     class B_Soldier_F;
     class B_soldier_AT_F;

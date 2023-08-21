@@ -264,7 +264,7 @@ class CfgWeapons {
         {
           class LinkedItemsOptic
           {
-          item = "cup_optic_g33_hws_blk";
+          item = "cup_optic_aimm_microt1_blk";
           slot = "CowsSlot";
           };
           class LinkedItemsAcc
@@ -348,7 +348,7 @@ class CfgWeapons {
         {
           class LinkedItemsOptic
           {
-          item = "cup_optic_g33_hws_blk";
+          item = "cup_optic_aimm_microt1_blk";
           slot = "CowsSlot";
           };
           class LinkedItemsAcc
@@ -416,7 +416,7 @@ class CfgWeapons {
         {
           class LinkedItemsOptic
           {
-          item = "cup_optic_g33_hws_blk";
+          item = "cup_optic_aimm_microt1_blk";
           slot = "CowsSlot";
           };
           class LinkedItemsAcc
@@ -1325,7 +1325,7 @@ class CfgWeapons {
         {
           class LinkedItemsOptic
           {
-            item = "cup_optic_g33_hws_blk";
+            item = "cup_optic_aimm_microt1_blk";
             slot = "CowsSlot";
           };
           class LinkedItemsAcc
@@ -1345,7 +1345,7 @@ class CfgWeapons {
         {
           class LinkedItemsOptic
           {
-            item = "cup_optic_g33_hws_blk";
+            item = "cup_optic_aimm_microt1_blk";
             slot = "CowsSlot";
           };
           class LinkedItemsAcc
@@ -1365,7 +1365,7 @@ class CfgWeapons {
         {
           class LinkedItemsOptic
           {
-            item = "cup_optic_g33_hws_blk";
+            item = "cup_optic_aimm_microt1_blk";
             slot = "CowsSlot";
           };
           class LinkedItemsAcc
@@ -1386,7 +1386,7 @@ class CfgWeapons {
         {
           class LinkedItemsOptic
           {
-            item = "cup_optic_g33_hws_blk";
+            item = "cup_optic_aimm_microt1_blk";
             slot = "CowsSlot";
           };
           class LinkedItemsAcc
@@ -1406,7 +1406,7 @@ class CfgWeapons {
         {
           class LinkedItemsOptic
           {
-            item = "cup_optic_g33_hws_blk";
+            item = "cup_optic_aimm_microt1_blk";
             slot = "CowsSlot";
           };
           class LinkedItemsAcc
@@ -1426,7 +1426,7 @@ class CfgWeapons {
         {
           class LinkedItemsOptic
           {
-            item = "cup_optic_g33_hws_blk";
+            item = "cup_optic_aimm_microt1_blk";
             slot = "CowsSlot";
           };
           class LinkedItemsAcc
@@ -1447,7 +1447,7 @@ class CfgWeapons {
         {
           class LinkedItemsOptic
           {
-            item = "cup_optic_g33_hws_blk";
+            item = "cup_optic_aimm_microt1_blk";
             slot = "CowsSlot";
           };
           class LinkedItemsAcc
@@ -1467,7 +1467,7 @@ class CfgWeapons {
         {
           class LinkedItemsOptic
           {
-            item = "cup_optic_g33_hws_blk";
+            item = "cup_optic_aimm_microt1_blk";
             slot = "CowsSlot";
           };
           class LinkedItemsAcc
@@ -1487,7 +1487,7 @@ class CfgWeapons {
         {
           class LinkedItemsOptic
           {
-            item = "cup_optic_g33_hws_blk";
+            item = "cup_optic_aimm_microt1_blk";
             slot = "CowsSlot";
           };
           class LinkedItemsAcc
@@ -1508,7 +1508,7 @@ class CfgWeapons {
         {
           class LinkedItemsOptic
           {
-            item = "cup_optic_g33_hws_blk";
+            item = "cup_optic_aimm_microt1_blk";
             slot = "CowsSlot";
           };
           class LinkedItemsAcc
@@ -1528,7 +1528,7 @@ class CfgWeapons {
         {
           class LinkedItemsOptic
           {
-            item = "cup_optic_g33_hws_blk";
+            item = "cup_optic_aimm_microt1_blk";
             slot = "CowsSlot";
           };
           class LinkedItemsAcc
@@ -1548,7 +1548,7 @@ class CfgWeapons {
         {
           class LinkedItemsOptic
           {
-            item = "cup_optic_g33_hws_blk";
+            item = "cup_optic_aimm_microt1_blk";
             slot = "CowsSlot";
           };
           class LinkedItemsAcc
@@ -1568,7 +1568,7 @@ class CfgWeapons {
         {
           class LinkedItemsOptic
           {
-            item = "cup_optic_g33_hws_blk";
+            item = "cup_optic_aimm_microt1_blk";
             slot = "CowsSlot";
           };
           class LinkedItemsAcc
@@ -1588,7 +1588,7 @@ class CfgWeapons {
         {
           class LinkedItemsOptic
           {
-            item = "cup_optic_g33_hws_blk";
+            item = "cup_optic_aimm_microt1_blk";
             slot = "CowsSlot";
           };
           class LinkedItemsAcc
@@ -1608,7 +1608,7 @@ class CfgWeapons {
         {
           class LinkedItemsOptic
           {
-            item = "cup_optic_g33_hws_blk";
+            item = "cup_optic_aimm_microt1_blk";
             slot = "CowsSlot";
           };
           class LinkedItemsAcc
@@ -1630,7 +1630,7 @@ class CfgWeapons {
         {
           class LinkedItemsOptic
           {
-            item = "cup_optic_aimm_microt1_blk";
+            item = "cup_optic_g33_hws_blk";
             slot = "CowsSlot";
           };
           class LinkedItemsAcc
@@ -1650,7 +1650,7 @@ class CfgWeapons {
         {
           class LinkedItemsOptic
           {
-            item = "cup_optic_aimm_microt1_blk";
+            item = "cup_optic_g33_hws_blk";
             slot = "CowsSlot";
           };
           class LinkedItemsAcc
@@ -1670,7 +1670,7 @@ class CfgWeapons {
         {
           class LinkedItemsOptic
           {
-            item = "cup_optic_aimm_microt1_blk";
+            item = "cup_optic_g33_hws_blk";
             slot = "CowsSlot";
           };
           class LinkedItemsAcc
@@ -1690,7 +1690,7 @@ class CfgWeapons {
         {
           class LinkedItemsOptic
           {
-            item = "cup_optic_aimm_microt1_blk";
+            item = "cup_optic_g33_hws_blk";
             slot = "CowsSlot";
           };
           class LinkedItemsAcc
@@ -1710,7 +1710,7 @@ class CfgWeapons {
         {
           class LinkedItemsOptic
           {
-            item = "cup_optic_aimm_microt1_blk";
+            item = "cup_optic_g33_hws_blk";
             slot = "CowsSlot";
           };
           class LinkedItemsAcc
@@ -1730,7 +1730,7 @@ class CfgWeapons {
         {
           class LinkedItemsOptic
           {
-            item = "cup_optic_aimm_microt1_blk";
+            item = "cup_optic_g33_hws_blk";
             slot = "CowsSlot";
           };
           class LinkedItemsAcc

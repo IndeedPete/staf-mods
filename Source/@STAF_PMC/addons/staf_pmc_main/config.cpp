@@ -5,4 +5,6 @@
 #include "CfgGroups.hpp"
 #include "CfgWorlds.hpp"
 #include "CfgEditorSubcategories.hpp"
+#include "CfgEventhandlers.hpp"
 #include "CfgVehicles.hpp"
+

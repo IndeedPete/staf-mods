@@ -4,7 +4,7 @@
 }
 
 class CfgVehicles {
-  class Logic;
+	class Logic;
 	class Module_F: Logic
 	{
 		class AttributesBase
@@ -27,12 +27,12 @@ class CfgVehicles {
 		};
 	};
 
-	class STAF_Horror_Module_Arsenal_F: Module_F
+	class STAF_Horror_Module_BSArsenal_F: Module_F
 	{
 		category = "STAF_Horror";
-		displayName = "Arsenal";
-		function = "STAF_Horror_fnc_arsenalInit";
-	  icon = "\staf_horror_framework\img\horror_logo_blk.paa";
+		displayName = "Blacksun Arsenal";
+		function = "STAF_Horror_fnc_bsarsenalInit";
+		icon = "\staf_horror_framework\img\horror_logo_blk.paa";
 		functionPriority = 10;
 		isDisposable = 0;
 		is3DEN = 0;
@@ -47,7 +47,7 @@ class CfgVehicles {
 
 		class ModuleDescription: ModuleDescription
 		{
-			description = "This Adds the Horror Arsenal to any Synced Object.";
+			description = "This Adds the Blacksun Arsenal to any Synced Object.";
 			sync[] = {"LocationArea_F"};
 
 			class LocationArea_F
@@ -62,12 +62,12 @@ class CfgVehicles {
 		};
 	};
 
-	class STAF_Horror_Module_Infection_F: Module_F
+	/*class STAF_Horror_Module_Infection_F: Module_F
 	{
 		category = "STAF_Horror";
 		displayName = "Infection";
 		function = "STAF_Horror_fnc_infectioneh";
-	  icon = "\staf_horror_framework\img\horror_logo_blk.paa";
+		icon = "\staf_horror_framework\img\horror_logo_blk.paa";
 		functionPriority = 10;
 		isDisposable = 0;
 		is3DEN = 0;
@@ -84,7 +84,7 @@ class CfgVehicles {
 				displayName = "Set infection rate";
 				tooltip = "Defines how fast the infection takes from infecting to death. Only values between 0 and 1 are logical."
 				typeName = "NUMBER";
-						defaultValue = "0.01";
+				defaultValue = "0.01";
 			};
 			class STAF_Horror_Module_Infection_Chance: Edit
 			{
@@ -92,7 +92,7 @@ class CfgVehicles {
 				displayName = "Set infection chance";
 				tooltip = "Defines how likely a unit is infected by a zombie bite (1 = Always)"
 				typeName = "NUMBER";
-						defaultValue = "0.65";
+				defaultValue = "0.65";
 			};
 			class ModuleDescription: ModuleDescription{};
 		};
@@ -102,20 +102,21 @@ class CfgVehicles {
 			description = "This enables infection for all player!";
 			sync[] = {"LocationArea_F"};
 		};
-	};
+	};*/
 
 	class Item_Base_F;
 
-	class STAF_Item_geiger_counter: Item_Base_F {
-    scope = 2;
-    scopeCurator = 2;
-    displayName = "Geiger Counter";
-    author = "Moony";
-    vehicleClass = "Items";
-    class TransportItems
-    {
-      MACRO_ADDITEM(STAF_geiger_counter,1);
-    };
+	class STAF_Item_geiger_counter: Item_Base_F 
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Geiger Counter";
+		author = "Moony";
+		vehicleClass = "Items";
+		class TransportItems
+		{
+			MACRO_ADDITEM(STAF_geiger_counter,1);
+		};
 	};
 
   class STAF_Item_TestingKit: STAF_Item_geiger_counter {

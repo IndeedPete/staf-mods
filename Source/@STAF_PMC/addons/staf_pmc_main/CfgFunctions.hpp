@@ -32,12 +32,17 @@ class CfgFunctions
 			class pmcvehicle_helibigequipment{};
 			class pmcvehicle_helismallequipment{};
 			class pmcvehicle_mrapequipment{};
+			class random_gear{};
 		};
 		class Zenmodule_STAF
 		{
 			file = "\staf_pmc_main\fnc\zenmodule";
-
 			class zenInit{postinit = 1;};
+		};
+		class Respawn
+		{
+			file = "\staf_pmc_main\fnc\respawn";
+			class respawn_equipment {};
 		};
 		class Zenmodule_STAF_Equipment
 		{

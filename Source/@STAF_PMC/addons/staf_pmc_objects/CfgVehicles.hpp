@@ -223,7 +223,7 @@ class CfgVehicles {
 	class STAF_Ammobox_Launcher: plp_ct_KappaCaseBlackBig
 	{
 		displayName = "Launcher Box (STAF)";
-		maximumLoad = 1600;
+		maximumLoad = 2000;
 		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "EdSubcat_STAF_Supplies";
 		scope = 2;
@@ -252,8 +252,109 @@ class CfgVehicles {
 		class TransportItems {};
 		class TransportBackpacks {};
 		class TransportWeapons {
-			weap_xx(CUP_launch_M136_Loaded,3);
-			weap_xx(CUP_launch_Igla_Loaded,3);
+			weap_xx(CUP_launch_M136,3);
+			weap_xx(CUP_launch_Igla,3);
+		};
+	};
+	class STAF_Ammobox_Titan: plp_ct_KappaCaseBlackBig
+	{
+		displayName = "Titan Launcher Box (STAF)";
+		maximumLoad = 2000;
+		editorCategory = "EdCat_Supplies";
+		editorSubcategory = "EdSubcat_STAF_Supplies";
+		scope = 2;
+		scopeCurator = 2;
+		
+		// Dragging
+        ace_dragging_canDrag = 1;  // Can be dragged (0-no, 1-yes)
+        ace_dragging_dragPosition[] = {0, 1.2, 0};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1.5, 0])
+        ace_dragging_dragDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
+
+        // Carrying
+        ace_dragging_canCarry = 1;  // Can be carried (0-no, 1-yes)
+        ace_dragging_carryPosition[] = {0, 1.2, 1.2};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1, 1])
+        ace_dragging_carryDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
+
+		// Cargo
+		ace_cargo_size = 1;  // Cargo space the object takes
+        ace_cargo_canLoad = 1;  // Enables the object to be loaded (1-yes, 0-no)
+        ace_cargo_noRename = 1;  // Blocks renaming object (1-blocked, 0-allowed)
+
+		class TransportMagazines{
+			mag_xx(Titan_AT,8);
+			mag_xx(Titan_AP,5);
+		};
+		class TransportItems {};
+		class TransportBackpacks {};
+		class TransportWeapons {
+			weap_xx(STAF_Launch_Titan_Short_blk,2);
+		};
+	};
+	class STAF_Ammobox_Smaw: plp_ct_KappaCaseBlackBig
+	{
+		displayName = "SMAW Launcher Box (STAF)";
+		maximumLoad = 2000;
+		editorCategory = "EdCat_Supplies";
+		editorSubcategory = "EdSubcat_STAF_Supplies";
+		scope = 2;
+		scopeCurator = 2;
+		
+		// Dragging
+        ace_dragging_canDrag = 1;  // Can be dragged (0-no, 1-yes)
+        ace_dragging_dragPosition[] = {0, 1.2, 0};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1.5, 0])
+        ace_dragging_dragDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
+
+        // Carrying
+        ace_dragging_canCarry = 1;  // Can be carried (0-no, 1-yes)
+        ace_dragging_carryPosition[] = {0, 1.2, 1.2};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1, 1])
+        ace_dragging_carryDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
+
+		// Cargo
+		ace_cargo_size = 1;  // Cargo space the object takes
+        ace_cargo_canLoad = 1;  // Enables the object to be loaded (1-yes, 0-no)
+        ace_cargo_noRename = 1;  // Blocks renaming object (1-blocked, 0-allowed)
+
+		class TransportMagazines{
+			mag_xx(CUP_SMAW_HEDP_M,4);
+			mag_xx(CUP_SMAW_HEAA_M,6);
+			mag_xx(CUP_SMAW_NE_M,3);
+			mag_xx(CUP_SMAW_Spotting,3);
+		};
+		class TransportItems {};
+		class TransportBackpacks {};
+		class TransportWeapons {
+			weap_xx(CUP_launch_Mk153Mod0,2);
+		};
+	};
+	class STAF_Ammobox_IGLA: plp_ct_KappaCaseBlackBig
+	{
+		displayName = "IGLA Launcher Box (STAF)";
+		maximumLoad = 2000;
+		editorCategory = "EdCat_Supplies";
+		editorSubcategory = "EdSubcat_STAF_Supplies";
+		scope = 2;
+		scopeCurator = 2;
+		
+		// Dragging
+        ace_dragging_canDrag = 1;  // Can be dragged (0-no, 1-yes)
+        ace_dragging_dragPosition[] = {0, 1.2, 0};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1.5, 0])
+        ace_dragging_dragDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
+
+        // Carrying
+        ace_dragging_canCarry = 1;  // Can be carried (0-no, 1-yes)
+        ace_dragging_carryPosition[] = {0, 1.2, 1.2};  // Offset of the model from the body while dragging (same as attachTo) (default: [0, 1, 1])
+        ace_dragging_carryDirection = 0;  // Model direction while dragging (same as setDir after attachTo) (default: 0)
+
+		// Cargo
+		ace_cargo_size = 1;  // Cargo space the object takes
+        ace_cargo_canLoad = 1;  // Enables the object to be loaded (1-yes, 0-no)
+        ace_cargo_noRename = 1;  // Blocks renaming object (1-blocked, 0-allowed)
+
+		class TransportMagazines{};
+		class TransportItems {};
+		class TransportBackpacks {};
+		class TransportWeapons {
+			weap_xx(CUP_launch_Igla,7);
 		};
 	};
 	class STAF_Ammobox_cbrn: plp_ct_MilCaseCompactBlack

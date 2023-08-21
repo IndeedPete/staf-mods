@@ -1,6 +1,6 @@
 #include "\staf_pmc_main\fnc\loadout\defaults\includes.hpp"
 
-_unit = _this select 0;
+params ["_unit"];
 
 removeUniform _unit;
 removeHeadgear _unit;
@@ -56,25 +56,43 @@ _unit linkItem "ItemWatch";
 #include "\staf_pmc_main\fnc\loadout\defaults\magazines.hpp"
 
 if (isNull objectParent _unit) then {_unit switchmove ""};
-_unit setVariable ["STAF_var_Unit_Loadout", getUnitLoadout _unit];
-_unit setVariable ["STAF_var_Unit_Loadout_Set", true, true];
+if (STAF_cbaRespawnEquipment) then {
+	_unit setVariable ["STAF_var_Unit_Loadout", getUnitLoadout _unit];
+	_unit setVariable ["STAF_var_Unit_Loadout_Set", true, true];
+};
 
 //Save loadout in Eden
 save3DENInventory [_unit];
 
 if (missionNamespace getvariable ["STAF_cbaDebug", false]) then {
-	hint format ["Uniform: %1 <br/> Vest: %2 <br/> Helmet: %3 <br/> Goggles: %4",_uniform,_vest,_headGear,_goggles];
+	hint format ["Uniform: %1 <br/> Vest: %2 <br/> Helmet: %3 <br/> Goggles: %4 <br/> Weapon: %5 <br/> Handgun: %6 <br/> Launcher: %7",_uniform,_vest,_headGear,_goggles,_weapon,_pistol,_launcher];
 
 	if (uniform _unit == "") then {
 		diag_log format ["This Uniform does not excist: %1", _uniform];
+		systemChat "Missing Uniform";
 	};
 	if (vest _unit == "") then {
 		diag_log format ["This Vest does not excist: %1", _vest];
+		systemChat "Missing Vest";
 	};
 	if (headgear _unit == "") then {
 		diag_log format ["This Headgear does not excist: %1", _headGear];
+		systemChat "Missing Headgear";
 	};
 	if (goggles _unit == "") then {
 		diag_log format ["This Accessory does not excist: %1", _goggles];
+		systemChat "Missing Goggles";
+	};
+	if (primaryWeapon _unit == "") then {
+		diag_log format ["This Weapon does not excist: %1", _weapon];
+		systemChat "Missing Primary Weapon";
+	};
+	if (handgunWeapon _unit == "") then {
+		diag_log format ["This Handgun does not excist: %1", _weapon];
+		systemChat "Missing Handgun Weapon";
+	};
+	if (secondaryWeapon _unit == "") then {
+		diag_log format ["This Launcher does not excist: %1", _weapon];
+		systemChat "Missing Secondary Weapon";
 	};
 };
