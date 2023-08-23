@@ -1,17 +1,39 @@
-if (STAF_Horror_Infection) then {
-	private _createInfectionEvent = [
-	"IMS_EventHandler_Hit", 
+if (STAF_Horror_Infection_Init) then {
+	_createInfectionEvent = [
+		"STAF_Horror_InfectionEH",
 		{
-			if !(isNil {_hitter getVariable "WBK_AI_ISZombie"}) then {
-				params ["_unit","_hitter","_weapon"];
+			params ["_unit"];
+			
+			if (STAF_cbaDebug) then {
+				systemChat format ["Infection Eventhandler %1", _unit];
+				diag_log format ["Infection Eventhandler %1", _unit];
+			};
+			if (STAF_cbaDebug) then {
+				systemChat "Infection Eventhandler Fired";
+				diag_log format ["Infection Eventhandler Fired"];
+			};
 
-				_random = random 1;
-				_chance = STAF_Horror_Infection_Chance;
+			_random = random 1;
+			_chance = parseNumber STAF_Horror_Infection_Chance;
 
-				if (_random >= _chance) then {
-					_unit spawn STAF_Horror_fnc_infection;
-				};
+			// Debug Message
+			if (STAF_cbaDebug) then {
+				systemChat format ["Infection Random Chance = %1", _random];
+				diag_log format ["Infection Random Chance = %1", _random];
+			};
+
+			if (_random >= _chance) then {
+				_unit spawn STAF_Horror_fnc_infection;
 			};
 		}
 	] call CBA_fnc_addEventHandler;
+
+	// Debug Message
+	if (STAF_cbaDebug) then {
+		systemChat "Infection Eventhandler added";
+		diag_log format ["Infection Eventhandler added"];
+	};
 };
+
+//Add this to Line 293 in XEH_postinit (bootstrap) in the Zombie Mod
+//["STAF_Horror_InfectionEH", ["_personWhoIsGrabbed","_zombie"]] call CBA_fnc_localEvent;

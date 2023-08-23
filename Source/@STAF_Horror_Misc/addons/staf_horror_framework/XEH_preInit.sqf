@@ -1,5 +1,5 @@
 [
-    "STAF_Horror_Infection", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "STAF_Horror_Infection_Init", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
     "CHECKBOX", // setting type
     ["Enable Infection","Player can get infected when bitten by a Zombie"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
     ["STAF Settings", "STAF Horror"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
@@ -13,7 +13,7 @@
     "EDITBOX", // setting type
     ["Infection Rate","Defines how fast the infection kills a unit (Use Numbers 0 - 1)"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
     ["STAF Settings", "STAF Horror"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
-    "0.01", // data for this setting: [min, max, default, number of shown trailing decimals]
+    "0.02", // data for this setting: [min, max, default, number of shown trailing decimals]
     2, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
     {} // function that will be executed once on mission start and every time the setting is changed.
 ] call CBA_fnc_addSetting;

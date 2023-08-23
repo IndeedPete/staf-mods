@@ -1,0 +1,4 @@
+if (STAF_cbaDebug) then {
+    systemChat "YOUR MESSAGE";
+    diag_log format ["YOUR LOG MESSAGE"];
+};

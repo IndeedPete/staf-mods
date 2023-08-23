@@ -159,15 +159,27 @@ if (_weapon == "STAF_rifle_m4a1_m203s_wld") then {
   for "_i" from 1 to 2 do {_unit addItem "1Rnd_SmokeGreen_Grenade_shell";};
 };
 
-if (_weapon == "STAF_rifle_famas_felin_blk") then {
+if (_weapon == "STAF_KLYN_famasG2") then {
   _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
   for "_i" from 1 to 7 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
 };
-if (_weapon == "STAF_rifle_famas_g2_blk") then {
+if (_weapon == "STAF_KLYN_famasG2_Grip") then {
   _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
   for "_i" from 1 to 7 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
 };
-if (_weapon == "STAF_rifle_famas_g2_hg_blk") then {
+if (_weapon == "STAF_KLYN_famasG2_Tan") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP_Tan", true];
+  for "_i" from 1 to 7 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP_Tan";};
+};
+if (_weapon == "STAF_KLYN_famasG2_Grip_Tan") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP_Tan", true];
+  for "_i" from 1 to 7 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP_Tan";};
+};
+if (_weapon == "STAF_KLYN_famasG4") then {
+  _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
+  for "_i" from 1 to 7 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
+};
+if (_weapon == "STAF_KLYN_famasG4_Grip") then {
   _unit addWeaponItem [_weapon, "CUP_30Rnd_556x45_PMAG_QP", true];
   for "_i" from 1 to 7 do {_unit addItem "CUP_30Rnd_556x45_PMAG_QP";};
 };
