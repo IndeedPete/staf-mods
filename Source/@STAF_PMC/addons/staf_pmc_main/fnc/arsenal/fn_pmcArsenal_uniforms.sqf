@@ -67,6 +67,13 @@ _uniforms = [
             "U_lxWS_SFIA_pilot_O",
             "U_lxWS_UN_Pilot",
             "U_lxWS_B_CombatUniform_desert_vest",
+            "U_C_HeliPilotCoveralls_Black_RF",
+            "U_C_HeliPilotCoveralls_Blue_RF",
+            "U_C_HeliPilotCoveralls_Green_RF",
+            "U_B_HeliPilotCoveralls_MTP_RF",
+            "U_C_HeliPilotCoveralls_Rescue_RF",
+            "U_C_HeliPilotCoveralls_Yellow_RF",
+            "U_BG_Guerrilla_RF",
             //VSM
             "VSM_Warfighter_g3_aridPH_full_Camo",
             "VSM_Warfighter_g3_aridPH_Camo",

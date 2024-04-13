@@ -284,7 +284,7 @@ _vestsArray = [
   "VSM_FAPC_Breacher_AOR1",
   "VSM_FAPC_MG_AOR1",
   "VSM_RAV_operator_OCP",
-  "SM_RAV_MG_OCP",
+  "VSM_RAV_MG_OCP",
   "VSM_RAV_Breacher_OCP",
   "VSM_CarrierRig_Operator_OCP",
   "VSM_CarrierRig_Breacher_OCP",

@@ -26,7 +26,7 @@ params [
 	],
 	{
 		params ["_dialogValues", "_objectUnderCursor"];
-	_dialogValues params ["_inventoryType"];
+		_dialogValues params ["_inventoryType"];
 
 		_switch = switch _inventoryType do {
 			case "_car": {[_objectUnderCursor] call STAF_PMC_fnc_pmcvehicle_carequipment};

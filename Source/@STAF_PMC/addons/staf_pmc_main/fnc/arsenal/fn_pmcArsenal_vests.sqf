@@ -82,6 +82,12 @@ _vests = [
             "V_lxWS_PlateCarrierSpec_desert",
             "V_lxWS_HarnessO_oli",
             "V_lxWS_TacVestIR_oli",
+            "V_PlateCarrierLite_black_noFlag_RF",
+            "V_TacVest_rig_blk_RF",
+            "V_TacVest_rig_khk_RF",
+            "V_TacVest_rig_oli_RF",
+            "V_lxWS_UN_Vest_Lite_F",
+            "V_lxWS_UN_Vest_F",
             //TACS
             "tacs_Vest_Tactical_DarkBlack",
             //???

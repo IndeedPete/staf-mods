@@ -1862,7 +1862,7 @@ class CfgWeapons {
           };
         };
       };
-      class STAF_hlc_rifle_416D10_wdl0: hlc_rifle_416D10_wdl
+      class STAF_hlc_rifle_416D10_wdl: hlc_rifle_416D10_wdl
       {
         magazines[] =
         {

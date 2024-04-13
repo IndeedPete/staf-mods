@@ -63,6 +63,12 @@ _weapons = [
             "launch_B_Titan_short_F",
             "launch_O_Titan_short_ghex_F",
             "launch_B_Titan_short_tna_F",
+            "hgun_Glock19_RF",
+            "hgun_Glock19_khk_RF",
+            "hgun_Glock19_Tan_RF",
+            "hgun_Glock19_auto_RF",
+            "hgun_Glock19_auto_khk_RF",
+            "hgun_Glock19_auto_Tan_RF",
             //CUP
             "CUP_launch_Mk153Mod0",
             "CUP_launch_M136",

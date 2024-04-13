@@ -7,6 +7,9 @@ class CfgFunctions
 			file = "\staf_pmc_main\fnc\arsenal";
 			class pmcarsenalInit{};
 			class pmcarsenal{};
+			class pmcarsenalInit_takistan{};
+			class pmcarsenal_takistan{};
+			class pmcarsenalInit_module{};
 		};
 		class Loadout
 		{
@@ -48,6 +51,7 @@ class CfgFunctions
 		{
 			file = "\staf_pmc_main\fnc\zenmodule\STAF_Equipment";
 			class pmcArsenalZeus{};
+			class pmcArsenalZeus_takistan{};
 			class pmcInventories{};
 			class pmcRandomizeEquipment{};
 		};

@@ -40,7 +40,8 @@ class CfgPatches {
         "STAF_B_Messenger_Coyote_F",
         "STAF_B_Messenger_Gray_F",
         "STAF_B_Messenger_Olive_F",
-        "STAF_B_Messenger_Purple_Moony_F"
+        "STAF_B_Messenger_Purple_Moony_F",
+        "STAF_B_FieldPack_zeus"
       };
       weapons[] = {};
       requiredAddons[] = {"A3_Weapons_F"};

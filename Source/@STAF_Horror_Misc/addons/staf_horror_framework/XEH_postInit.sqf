@@ -3,6 +3,8 @@ if (STAF_Horror_Infection_Init) then {
 		"STAF_Horror_InfectionEH",
 		{
 			params ["_unit"];
+
+			if (_unit getVariable "STAF_Horror_Infected") exitWith {};
 			
 			if (STAF_cbaDebug) then {
 				systemChat format ["Infection Eventhandler %1", _unit];

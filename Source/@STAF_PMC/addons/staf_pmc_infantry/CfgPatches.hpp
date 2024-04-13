@@ -21,7 +21,7 @@ class CfgPatches {
         "STAF_client_african",
         "STAF_client_greek",
         "STAF_client_scientist",
-        "STAF_client_un",
+        "STAF_client_una",
         "STAF_contractor_opf",
         "STAF_contractor_AT_opf",
         "STAF_contractor_AA_opf",
@@ -40,7 +40,7 @@ class CfgPatches {
         "STAF_client_african_opf",
         "STAF_client_greek_opf",
         "STAF_client_scientist_opf",
-        "STAF_client_un_opf",
+        "STAF_client_una_opf",
         "STAF_contractor_ind",
         "STAF_contractor_AT_ind",
         "STAF_contractor_AA_ind",
@@ -59,7 +59,7 @@ class CfgPatches {
         "STAF_client_african_ind",
         "STAF_client_greek_ind",
         "STAF_client_scientist_ind",
-        "STAF_client_un_ind"
+        "STAF_client_una_ind"
       };
       weapons[] = {};
       requiredAddons[] = {};

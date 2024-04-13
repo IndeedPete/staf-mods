@@ -56,10 +56,8 @@ _unit linkItem "ItemWatch";
 #include "\staf_pmc_main\fnc\loadout\defaults\magazines.hpp"
 
 if (isNull objectParent _unit) then {_unit switchmove ""};
-if (STAF_cbaRespawnEquipment) then {
-	_unit setVariable ["STAF_var_Unit_Loadout", getUnitLoadout _unit];
-	_unit setVariable ["STAF_var_Unit_Loadout_Set", true, true];
-};
+_unit setVariable ["STAF_var_Unit_Loadout", getUnitLoadout _unit];
+_unit setVariable ["STAF_var_Unit_Loadout_Set", true, true];
 
 //Save loadout in Eden
 save3DENInventory [_unit];

@@ -27,7 +27,7 @@ class CfgVehicles
 	{
 		category = "STAF";
 		displayName = "PMC Arsenal";
-		function = "STAF_PMC_fnc_pmcarsenalInit";
+		function = "STAF_PMC_fnc_pmcarsenalInit_module";
 		functionPriority = 10;
 		isDisposable = 0;
 		is3DEN = 0;
@@ -37,6 +37,18 @@ class CfgVehicles
 
 		class Attributes: AttributesBase
 		{
+			class STAF_Module_PMC_Arsenal_Type: Combo
+  			{
+				property = "STAF_Module_PMC_Arsenal_Type_Combo";
+				displayName = "Add a Covert Arsenal?";
+				typeName = "NUMBER";
+				defaultValue = "0";
+				class Values
+				{
+					class no	{name = "No"; value = 0;};
+					class takistan	{name = "Takistan"; value = 1;};
+				};
+			};
 			class ModuleDescription: ModuleDescription{};
 		};
 
@@ -72,7 +84,7 @@ class CfgVehicles
 		class Attributes: AttributesBase
 		{
 			class STAF_Module_PMC_Vehicle_Equipment_Type: Combo
-  		{
+  			{
 				property = "STAF_Module_PMC_Vehicle_Equipment_Type_Combo";
 				displayName = "What Vehicle Type?";
 				typeName = "NUMBER";

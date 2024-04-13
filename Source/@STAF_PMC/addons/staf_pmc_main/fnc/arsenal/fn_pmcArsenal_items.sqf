@@ -15,6 +15,8 @@ _items = [
             "ACE_salineIV_250",
             "ACE_surgicalKit",
             "ACE_bodyBag",
+            "ACE_bodyBag_blue",
+            "ACE_bodyBag_white",
             "ACE_adenosine",
             "ACE_epinephrine",
             "ACE_quikclot",
@@ -68,6 +70,7 @@ _items = [
             "ACE_IR_Strobe_Item",
             "ACE_artilleryTable",
             "ACE_RangeTable_82mm",
+            "ACE_PlottingBoard",
 
             //KAT
             "kat_aatKit",
@@ -109,6 +112,8 @@ _items = [
             "kat_ncdKit",
             "kat_retractor",
             "kat_scalpel",
+            "kat_PenthroxItem",
+            "kat_suction",
             //Vanilla
             "H_EarProtectors_black_F",
             "H_EarProtectors_orange_F",
@@ -182,6 +187,9 @@ _items = [
             "G_Balaclava_snd_lxWS",
             "G_Combat_lxWS",
             "G_Headset_lxWS",
+            "G_Bandanna_yellow_RF",
+            "G_Glasses_black_RF",
+            "G_Glasses_white_RF",
             //TFAR
             //"TFAR_anprc152",
 

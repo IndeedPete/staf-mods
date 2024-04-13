@@ -30,4 +30,14 @@ class CfgGlasses
 	  displayName = "Veil Mask (White)";
 	  hiddenSelectionsTextures[] = {"\staf_pmc_headgear\txt\staf_veil_white_co.paa"};
 	};
+
+	// Empty Goggles
+	class STAF_empty_goggles: G_Bandanna_blk
+	{
+	  displayName = "Empty Goggles";
+	  hiddenSelectionsTextures[] = {""};
+      scope=0;
+	  scopeCurator=0;
+	  scopeArsenal=0;
+	};
 };

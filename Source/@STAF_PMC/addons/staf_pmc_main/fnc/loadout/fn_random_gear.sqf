@@ -1,9 +1,15 @@
 params ["_unit"];
 
 _startUniform = ["STAF_Scientist","STAF_Scientist_opf","STAF_Scientist_ind"];
-_SavedLoadout = _unit getVariable ["STAF_var_Unit_Loadout_Set", false];
+_savedLoadoutSet = _unit getVariable ["STAF_var_Unit_Loadout_Set", false];
+_savedLoadout = _unit getVariable ["STAF_var_Unit_Loadout", getUnitLoadout _unit];
 
-if (_SavedLoadout) exitWith {};
+if (_savedLoadoutSet) exitWith 
+{
+    _unit setUnitLoadout [_savedLoadout, true];
+    _unit setVariable ["STAF_var_Unit_Loadout", getUnitLoadout _unit];
+    _unit setVariable ["STAF_var_Unit_Loadout_Set", true, true];
+};
 
 if ((uniform _unit) in _startUniform) then {
     

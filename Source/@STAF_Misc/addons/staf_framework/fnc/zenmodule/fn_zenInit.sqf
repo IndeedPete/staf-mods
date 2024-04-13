@@ -34,7 +34,8 @@ private _wait = [] spawn
 			["Toggle LAMBS on Group",{_this call STAF_fnc_disableVcom}],
 			//["Toggle Group Behaviour",{_this call STAF_fnc_groupCombatBehaviour}],
 			["Toggle AI Stationary",{_this call STAF_fnc_stationaryAI}],
-			["Toggle Group Stationary",{_this call STAF_fnc_stationaryGroup}]
+			["Toggle Group Stationary",{_this call STAF_fnc_stationaryGroup}],
+			["Change Behaviour/Stance in Area",{_this call STAF_fnc_behaviour_in_area}]
 		];
 
 		private _stafEnvironment = [

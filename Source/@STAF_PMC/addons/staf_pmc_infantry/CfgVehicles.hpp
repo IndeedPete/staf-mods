@@ -208,7 +208,7 @@ class CfgVehicles {
             magazines[] = {};
         };
 
-      //---------------------------VIP--------------------------------------------
+      //----------------------------VIP------------------------------------------
 
         class STAF_boss : B_Soldier_F {
             author = "STAF";
@@ -222,16 +222,16 @@ class CfgVehicles {
             genericNames = "STAF_VIPNames";
 
             identityTypes[] = { "TanoanHead_A3_08" , "Male02ENGFRE" };
-            uniformClass = "CUP_U_C_Suit_01";
+            uniformClass = "U_C_FormalSuit_01_black_F";
 
 
             linkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "HITMAN_47_Hidden_Vest" , "G_Aviator" };
-            weapons[] = { "CUP_hgun_TaurusTracker455_gold" , "Throw" , "Put" };
-            magazines[] = { "CUP_6Rnd_45ACP_M" , "CUP_6Rnd_45ACP_M" };
+            weapons[] = { "hgun_DEagle_gold_RF" , "Throw" , "Put" };
+            magazines[] = { "7Rnd_50AE_Mag_RF" , "7Rnd_50AE_Mag_RF" };
 
             respawnLinkedItems[] = { "ItemMap" , "ItemCompass" , "ItemWatch" , "ItemRadio" , "ItemAndroid" , "HITMAN_47_Hidden_Vest" , "G_Aviator" };
-            respawnWeapons[] = { "CUP_hgun_TaurusTracker455_gold" , "Throw" , "Put" };
-            respawnMagazines[] = { "CUP_6Rnd_45ACP_M" , "CUP_6Rnd_45ACP_M" };
+            respawnWeapons[] = { "hgun_DEagle_gold_RF" , "Throw" , "Put" };
+            respawnMagazines[] = { "7Rnd_50AE_Mag_RF" , "7Rnd_50AE_Mag_RF" };
         };
 
         class STAF_client_american : B_Soldier_F {
@@ -291,7 +291,7 @@ class CfgVehicles {
             editorSubcategory = "EdSubcat_STAF_client";
 
             identityTypes[] = { "Head_Asian" , "LanguageCHI_F" };
-            uniformClass = "CUP_U_C_Suit_01";
+            uniformClass = "U_C_FormalSuit_01_black_F";
 
 
             linkedItems[] = { "ItemWatch" , "ItemRadio" , "ItemAndroid" , "G_Aviator" };
@@ -314,7 +314,7 @@ class CfgVehicles {
             editorSubcategory = "EdSubcat_STAF_client";
 
             identityTypes[] = {"NoGlasses", "Head_African" , "LanguageENGFRE_F" };
-            uniformClass = "CUP_U_C_Suit_01";
+            uniformClass = "U_C_FormalSuit_01_black_F";
 
 
             linkedItems[] = { "ItemWatch" , "ItemRadio" , "ItemAndroid" , "H_Bandanna_gry" };
@@ -371,25 +371,25 @@ class CfgVehicles {
             respawnMagazines[] = {};
         };
 
-        class STAF_client_un : B_Soldier_F {
+        class STAF_client_una : B_Soldier_F {
             author = "STAF";
             scope = 2;
             scopeCurator = 2;
-            displayName = "Client (UN)";
+            displayName = "Client (UNA)";
             side = 1;
             faction = "STAF_PMC";
             editorPreview = "\staf_pmc_main\eden\STAF_client_un.jpg";
             editorSubcategory = "EdSubcat_STAF_client";
 
             identityTypes[] = {"NoGlasses", "Head_Euro" , "LanguageENGFRE_F" };
-            uniformClass = "M81_Camo_crye";
+            uniformClass = "U_lxWS_UN_Camo1";
 
 
-            linkedItems[] = { "ItemWatch" , "ItemRadio" , "ItemAndroid" , "SP_JackEllis1_UNBlue1" , "SP_Beret_Un1" };
+            linkedItems[] = { "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_lxWS_UN_Vest_Lite_F" , "lxWS_H_Beret_Colonel" };
             weapons[] = { "Throw" , "Put" };
             magazines[] = {};
 
-            respawnLinkedItems[] = { "ItemWatch" , "ItemRadio" , "ItemAndroid" , "SP_JackEllis1_UNBlue1" , "SP_Beret_Un1" };
+            respawnLinkedItems[] = { "ItemWatch" , "ItemRadio" , "ItemAndroid" , "V_lxWS_UN_Vest_Lite_F" , "lxWS_H_Beret_Colonel" };
             respawnWeapons[] = { "Throw" , "Put" };
             respawnMagazines[] = {};
         };
@@ -525,7 +525,7 @@ class CfgVehicles {
             faction = "STAF_PMC_OPF";
         };
 
-        class STAF_client_un_opf : STAF_client_un {
+        class STAF_client_una_opf : STAF_client_una {
             Side = 0;
             scope = 2;
             scopeCurator = 2;
@@ -612,7 +612,7 @@ class CfgVehicles {
             faction = "STAF_PMC_IND";
         };
 
-        //---------------------------VIP--------------------------------------------
+      //---------------------------VIP--------------------------------------------
 
         class STAF_boss_ind : STAF_boss {
             Side = 2;
@@ -663,7 +663,7 @@ class CfgVehicles {
             faction = "STAF_PMC_IND";
         };
 
-        class STAF_client_un_ind : STAF_client_un {
+        class STAF_client_una_ind : STAF_client_una {
             Side = 2;
             scope = 2;
             scopeCurator = 2;

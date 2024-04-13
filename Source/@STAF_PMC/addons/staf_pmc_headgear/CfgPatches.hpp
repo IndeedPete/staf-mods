@@ -83,7 +83,8 @@ class CfgPatches {
         "STAF_h_airframe_06_goggles_black",
         "STAF_veil_black",
         "STAF_veil_tan",
-        "STAF_veil_white"
+        "STAF_veil_white",
+        "STAF_empty_goggles"
       };
       requiredAddons[] = {};
       requiredVersion = 1.62;

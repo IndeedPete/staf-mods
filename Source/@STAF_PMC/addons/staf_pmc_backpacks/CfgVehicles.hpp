@@ -154,6 +154,9 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {""};
 		picture = "";
 		maximumLoad = 999999999999;
+        scope=0;
+	    scopeCurator=0;
+	    scopeArsenal=0;
 	};
 
   //Kitbag
@@ -458,5 +461,18 @@ class CfgVehicles
 		{
 			item_xx(ToolKit,1);
 		};
+	};
+
+	class STAF_B_FieldPack_zeus: B_FieldPack_blk
+	{
+		baseBackpack = "STAF_B_FieldPack_zeus";
+		displayName = "STAF Field Pack (Invisible, Zeus)";
+		hiddenSelectionsTextures[] = {""};
+		picture = "";
+		
+		class TransportItems
+			{
+				item_xx(ACRE_PRC117F,1);
+			};
 	};
 };

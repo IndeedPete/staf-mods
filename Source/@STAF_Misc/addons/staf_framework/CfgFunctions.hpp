@@ -120,6 +120,7 @@ class CfgFunctions
 			class disableVcom{};
 			class stationaryAI{};
 			class stationaryGroup{};
+			class behaviour_in_area{};
 		};
 		class Zenmodule_STAF_Environment
 		{
